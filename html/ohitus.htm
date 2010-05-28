@@ -1,0 +1,88 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21 - ohitettavat merkit</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21<br>
+		Ohitusindikaattorit</h1>
+		<p align="center"><font size="2">Käännösten pohjana <a href="http://www.loc.gov/marc/">
+		MARC 21 Concise Formats</a><br>
+		(Library of Congress, <a href="http://www.loc.gov/marc/ndmso.html">
+		Network Development MARC Standards Office</a>)</font></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 22.2.2008.<br>
+Ks. <a href="ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<hr>
+<h2>Ohitettavien merkkien määrä</h2>
+<p>Joissakin MARC 21 -kentissä indikaattoria käytetään osoittamaan kentän alusta 
+lajittelussa ohitettavien merkkien määrä (0-9 kpl). Kyseiset kentät sisältävät 
+hakuelementtejä ja nimekkeitä. Ohitusindikaattorina voi toimia joko ensimmäinen 
+tai toinen indikaattori, useammissa kentissä toinen. Ohitettavien merkkien määrä 
+voidaan merkitä indikaattorin avulla seuraavissa kentissä:</p>
+<h3>Bibliografinen formaatti:</h3>
+<ul>
+	<li><i>Ensimmäinen</i> indikaattori: 130, 630, 730, 740</li>
+	<li><i>Toinen</i> indikaattori: 222, 240, 242, 243, 245, 440, 830</li>
+</ul>
+<h3>Auktoriteettiformaatti:</h3>
+<ul>
+	<li><i>Toinen</i> indikaattori: 130, 430, 530</li>
+</ul>
+<p>Ohitusindikaattorin arvo <b>0</b> tarkoittaa, että lajittelu alkaa kentän 
+ensimmäisestä aakkosnumeerisesta merkistä. Arvoa 0 käytetään myös silloin, kun 
+ensimmäistä lajiteltavaa aakkosnumeerista merkkiä edeltää vain jokin 
+erikoismerkki, kuten sulku- tai lainausmerkki.</p>
+<p>Ohitusindikaattorin arvot <b>1-9</b> tarkoittavat, että kenttä sisältää 
+aakkosnumeerisia merkkejä, jotka pitää ohittaa lajittelussa. Indikaattorin 
+arvoksi annetaan niiden merkkien määrä, jotka edeltävät lajittelun aloittavaa 
+merkkiä. Tyypillisiä tapauksia ovat vieraiden kielten määräiset ja epämääräiset 
+artikkelit (esim. <i>En, A, Le, Les, The, Der</i>) --
+ks. lisää 
+<i><a href="http://www.loc.gov/marc/bibliographic/bdapp-e.html">esimerkkejä 
+määräisistä ja epämääräisistä artikkeleista</a></i> (Library of Congress).</p>
+<p>Indikaattoriarvon pitää vastata kaikkia merkkipaikkoja, jotka jätetään pois 
+lajittelun alusta, tällöin myös välilyönnit ja erikoismerkit (esim. 
+heittomerkki, väliviiva) lasketaan mukaan.</p>
+<h4>Esimerkkejä (lajittelujärjestyksessä):</h4>
+<ul>
+	<li>245 1<b>0</b>&#8225;aSuomalainen hevonen</li>
+	<li>245 1<b>0</b>&#8225;a&quot;Erotikk og galskap&quot;</li>
+	<li>245 1<b>3</b>&#8225;aEn historisk sommar</li>
+	<li>245 1<b>2</b>&#8225;aL'homme dans la paysage</li>
+	<li>245 1<b>0</b>&#8225;a-in real time</li>
+	<li>245 1<b>0</b>&#8225;a¿Quiénes gobiernan América latina?</li>
+	<li>245 1<b>5</b>&#8225;a&quot;Den samiska samlingen&quot; på statens historiska museum 
+	(SHM)</li>
+	<li>245 1<b>4</b>&#8225;aThe stranger from paradise</li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.htm">MARC 21 -etusivulle</a><br>
+<a href="aukt/index.htm">Auktoriteettitiedot</a> | 
+<a href="bib/index.htm">Bibliografiset tiedot</a> |
+<a href="hold/index.htm">Varastotiedot</a></p>
+<hr>
+<p align="left">&nbsp;</p>
+
+</body>
+
+</html>

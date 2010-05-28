@@ -1,0 +1,288 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Auktoriteettitiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		AUKTORITEETTITIEDOT</h1>
+		</td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 27.11.2009.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Viittaukset--yleistä tietoa</h2>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<ul>
+	<li><a href="#johdanto">JOHDANTO</a></li>
+	<li><a href="#viittaus">VIITTAUSKENTÄT</a></li>
+	<li><a href="#huomautus">VIITTAUSTEN HUOMAUTUSKENTÄT</a></li>
+	<li><a href="#y-risti">YKSINKERTAISTEN RISTIVIITTAUSTEN KENTÄT</a></li>
+	<li><a href="#m-risti">MONITAHOISTEN RISTIVIITTAUSTEN KENTÄT</a></li>
+</ul>
+
+<hr>
+<h3><a name="johdanto"></a>JOHDANTO</h3>
+<p>Ristiviittaus johtaa ei-ohjeellisesta otsikkomuodosta ohjeelliseen 
+otsikkomuotoon 
+(katso-viittaus) tai ohjeellisesta otsikkomuodosta toiseen ohjeelliseen 
+otsikkomuotoon (katso myös 
+-viittaus). Varsinaisia ristiviittauksia ei yleensä esitetä 
+auktoriteettitietueen 1XX-kentissä. Sen sijaan otsikkomuotojen variantit ja niihin 
+liittyvät muut otsikkomuodot sisältyvät auktoriteettitietueen <i>viittaus- tai viittausten huomautuskenttiin</i>. Ristiviittausten näytöt voidaan järjestelmissä 
+muodostaa yhdistämällä viittaus- tai viittauksen huomautuskentän ja 1XX-kentän sisällöt.</p>
+<p>MARC 21 auktoriteettitietojen formaatissa on määritelty useita 
+viittauskenttiä, joten yksinkertaisten ja monitahoisten viittausten tekeminen on 
+mahdollista. Tietoelementit voidaan jakaa seuraaviin ryhmiin:</p>
+<ul>
+	<li><a href="2XX-3XX.htm">Monitahoisten asiasanaviittausten kentät (2XX-3XX)</a></li>
+	<li><a href="4XX.htm">Katso-viittausten kentät (4XX)</a></li>
+	<li><a href="5XX.htm">Katso myös -viittausten kentät (5XX)</a></li>
+	<li><a href="663-666.htm">Monitahoisten nimiviittausten kentät (663-666)</a></li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="viittaus"></a>VIITTAUSKENTÄT</h3>
+<p>Viittauskentät johtavat suoraan yhdestä otsikkomuodosta toiseen 
+yksittäiseen otsikkomuotoon. 
+4XX-kenttä (katso-viittaus) johtaa ei-ohjeellisesta otsikkomuodosta ohjeelliseen. 
+5XX-kenttä (katso myös -viittaus) johtaa ohjeellisesta otsikkomuodosta toiseen 
+ohjeelliseen otsikkomuotoon. 4XX- ja 5XX-kenttiä käytetään vain vahvistettujen 
+otsikkomuotojen tietueissa ja lisämääretietueissa.</p>
+<p>Viittauskentistä muodostettuja ristiviittauksia kutsutaan <i>yksinkertaisiksi 
+ristiviittauksiksi</i>. Yksinkertaisen ristiviittauksen näytössä 4XX- tai 5XX-kentän 
+sisältö on se <i>otsikkomuoto, josta viitataan</i> ja 1XX-kentän sisältö on se <i>
+otsikkomuoto, johon viitataan</i>. 1XX-kentän sisältöä edeltää viittauksen ohjefraasi. 
+Viittauskenttien ohjefraasit voivat muodostua kenttäkoodin perusteella tai 
+osakenttä &#8225;w/0 (Erityissuhde) koodin perusteella. In some cases, the reference 
+instruction phrase may be carried explicitly in subfield &#8225;i (Relationship 
+information) or associated with a relationship designation expressed in subfield 
+&#8225;i or, in coded form in subfield &#8225;4.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="huomautus"></a>VIITTAUSTEN HUOMAUTUSKENTÄT</h3>
+<p>Viittausten huomautuskentät johtavat yhdestä otsikkomuodosta toiseen tai useampaan 
+yksittäiseen otsikkomuotoon. Viittausten huomautuskenttiä käytetään, kun 
+monitahoisten viittausten ohjeita tarvitaan ja yksi tai useampi 4XX- ja/tai 5XX-kentän 
+yksinkertainen ristiviittaus ei riitä ohjeita ilmaisemaan. Ristiviittaukset, jotka on muodostettu 
+viittausten huomautuskentistä, ovat <i>monitahoisia ristiviittauksia</i>. 
+Monitahoisessa ristiviittauksessa 1XX-kentän sisältö on se <i>otsikkomuoto, josta 
+viitataan</i> ja viittausten huomautuskentän sisältö on se <i>otsikkomuoto tai ne 
+otsikkomuodot, joihin viitataan</i>. Kentissä 260 ja 360 viittauksen ohje voi muodostua 
+yhdistelmänä kenttäkoodin perusteella annettavasta oletusfraasista ja osakentän 
+&#8225;i selittävästä tekstistä. Kentissä 663, 664, 665 ja 666 viittauksen ohjeteksti 
+tallennetaan osakenttään &#8225;a (Selittävä teksti).</p>
+<p>Viittausten huomautuskenttiä on kahta tyyppiä: 1) toisia käytetään 
+vahvistettujen otsikkomuotojen tietueissa ja 2) toisia käytetään 
+viittaustietueissa. <i>Katso myös -viittausten</i> huomautuskenttiä (360, 663 ja 
+665) käytetään johtamaan vahvistetusta otsikkomuodosta toiseen 
+vahvistettuun otsikkomuotoon. <i>Katso-viittausten</i> huomautuskenttiä 
+(260, 664 ja 666) käytetään viittaustietueissa johtamaan vahvistamattomasta 
+otsikkomuodosta vahvistettuun otsikkomuotoon.</p>
+<p>Nykyinen luettelointikäytäntö ei kannusta viittausten huomautuskenttien 
+käyttöön, mikäli yksi tai useampi 4XX- ja/tai 5XX-kentistä muodostettu 
+ristiviittaus tarjoaa tyydyttävän opastuksen käyttäjälle. Esimerkiksi, sen 
+sijaan että jokaisessa yhteisönnimen muutosta kuvaavassa auktoriteettitietueessa 
+kuljetettaisiin kenttää 665, jokainen yhteisönnimi tallennetaankin viittauksina 
+4XX- tai 5XX-kenttään. Nimien ajallinen suhde (aikaisempi, myöhempi) kerrotaan 
+koodilla osakentässä &#8225;w/0 (Erityissuhde).</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="y-risti"></a>YKSINKERTAISTEN RISTIVIITTAUSTEN KENTÄT</h3>
+<p>Yksinkertaiset ristiviittaukset muodostetaan näyttöihin viittauskentistä. 
+Seuraava kuvaus on järjestetty sen mukaan, mistä viittauksen ohjeteksti 
+ristiviittauksessa muodostuu: kenttäkoodin perusteella, osakentästä &#8225;i tai 
+osakentästä &#8225;w. Osakentän &#8225;w merkkipaikat kuvaillaan myös alla.</p>
+<h3>Viittauksen ohjefraasi kenttäkoodin perusteella</h3>
+<p>Ohjefraasi kuten <i>katso:</i> tai <i>käytä:</i> voidaan muodostaa 
+ristiviittauksen näyttöön automaattisesti 4XX-kentän kenttäkoodin perusteella. 
+Ohjefraasi kuten <i>katso myös:</i> tai <i>käytä myös:</i> voidaan muodostaa 
+ristiviittauksen näyttöön automaattisesti 5XX-kentän kenttäkoodin perusteella.</p>
+<h3>Osakenttä <b>&#8225;i</b> - Relationship information (T)</h3>
+<p>Subfield may contain either a <i>designation of a relationship</i> of the 
+entity in a 4XX or 5XX field to the 1XX entity in the record or it may contain 
+a textual <i>reference instruction phrase</i> that is to be used for a user 
+display indicating the relationship of the 1XX entity in the record to the 
+entity in a 4XX or 5XX field. If the subfield contains a Relationship 
+designation, the appropriate reference instruction phrase may be derived from 
+it. The relationship may be name to name (if only names of persons, families, 
+or corporate bodies are involved) or resource to resource (if name/titles or 
+titles are involved).</p>
+<p><i>Relationship designation:</i> When a tracing field contains a relationship 
+designation in subfield &#8225;i, control subfield &#8225;w/0 contains code r (Relationship 
+designation in subfield &#8225;i or &#8225;4). Code r indicates that the generation of a 
+tag related reference instruction phrase in a cross reference display should 
+be suppressed. The content of subfield &#8225;i or &#8225;4 should be used to generate the 
+reference instruction phrase that is used in a cross reference display.</p>
+<p><i>Reference instruction phrase:</i> When a tracing field contains a reference 
+instruction phrase in subfield &#8225;i, control subfield &#8225;w/0 contains code i 
+(Reference instruction phrase in subfield &#8225;i). Code i indicates that the 
+generation of a tag-related reference instruction phrase in a cross reference 
+display should be suppressed. The content of subfield &#8225;i is the reference 
+instruction phrase that is used in a cross reference display.</p>
+
+<h3>Osakenttä <b>&#8225;4</b> - Relationship code (T)</h3>
+<p>Contains in coded form the designation of a relationship of the entity in a 4XX or 
+5XX field to the 1XX entity in the record. See subfield &#8225;i for further information 
+on relationship designators.</p>
+
+<h3>Osakenttä <b>&#8225;w</b> - Kontrollitiedot (ET)</h3>
+<p>Neljä kiinteätä merkkipaikkaa (merkitään &#8225;w/0, &#8225;w/1 jne.), jotka kertovat 
+järjestelmälle onko 4XX- tai 5XX-kenttien näytön muodostuksessa erityisehtoja 
+tai onko viittauksen rakenne rajoitettu tietyn tyyppiseen auktoriteettiin (nimi- 
+tai asiasana). Osakenttää &#8225;w ei tarvitse käyttää, jos kaikki sen määrityksistä 
+ovat soveltumattomia. Koska koodien merkitys riippuu niiden merkkipaikasta, 
+käytettyjä koodeja edeltävät merkkipaikat on myös täytettävä joko koodein tai 
+täyttömerkillä (|). Jälkimmäisiä merkkipaikkoja ei tarvitse täyttää. 
+Esimerkiksi, jos &#8225;w/0 ja &#8225;w/1 ovat soveltumattomia mutta &#8225;w/2 soveltuu, silloin 
+merkkipaikkoihin &#8225;w/0 ja &#8225;w/1 tallennetaan joko koodin n (Soveltumaton) tai 
+täyttömerkki (|).</p>
+<h4>&#8225;w/0 - Erityissuhde</h4>
+<p>Yksimerkkinen koodi, joka kuvaa 1XX ja 4XX- tai 5XX-kenttien välistä suhdetta 
+silloin, kun suhde ei käy ilmi pelkästään käytetyn viittauskentän perusteella. Koodien 
+avulla voidaan muodostaa ristiviittauksen näyttöön 
+erityinen viittauksen ohjefraasi.</p>
+<ul>
+	<li><b>a</b> - Aikaisempi otsikkomuoto<br>
+	Viittauskentän vahvistettu otsikkomuoto on 1XX-kentässä olevan otsikkomuodon 
+	aikaisempi nimimuoto. Koodia voidaan käyttää ristiviittausnäytön 
+	erityisohjefraasin muodostamiseen; esim. <i>Katso myös myöhempää muotoa:</i>.</li>
+	<li><b>b</b> - Myöhempi otsikkomuoto<br>
+	Viittauskentän otsikkomuoto on 1XX-kentässä olevan otsikkomuodon myöhempi 
+	nimimuoto. Koodia voidaan käyttää ohjefraasin 
+	muodostamiseen; esim. <i>Katso myös aikaisempaa muotoa:</i>.</li>
+	<li><b>d</b> - Akronyymi<br>
+	4XX-kentän otsikkomuoto on akronyymi 1XX-kentän otsikkomuodolle. Koodia 
+	voidaan käyttää ohjefraasin muodostamiseen; esim. <i>käytä täydellistä 
+	muotoa:</i>.</li>
+	<li><b>f</b> - Musiikkiteos<br>
+	Viittauskentässä oleva otsikkomuoto osoittaa kirjallisen teoksen, johon 
+	1XX-kentässä mainittu musiikkiteos perustuu. Koodia voidaan käyttää 
+	ohjefraasin muodostamiseen; esim. <i>Hae tähän teokseen perustuvia 
+	musiikkiteoksia:</i>.</li>
+	<li><b>g</b> - Laajempi termi<br>
+	Viittauskentässä oleva otsikkomuoto on laajempi termi kuin 1XX-kentässä oleva 
+	otsikkomuoto. Koodia voidaan käyttää ohjefraasin muodostamiseen; esim. <i>
+	Katso 
+	myös suppeampaa termiä:</i>.</li>
+	<li><b>h</b> - Suppeampi termi<br>
+	Viittauskentässä oleva otsikkomuoto on suppeampi termi kuin 1XX-kentässä oleva 
+	otsikkomuoto. Koodia voidaan käyttää ohjefraasin muodostamiseen; esim. <i>
+	Katso 
+	myös laajempaa termiä:</i>.</li>
+	<li><b>i</b> - Viittauksen ohjefraasi osakentässä &#8225;i<br>
+	Käytetään osakentän &#8225;i (Viittauksen ohjefraasi) yhteydessä. Katso osakentän 
+	&#8225;i käyttöohjeet yltä.</li>
+	<li><b>n</b> - Soveltumaton<br>
+	4XX- tai 5XX-kentän otsikkomuodon suhde 1XX-kentän otsikkomuotoon on sellainen, että 
+	mikään muu &#8225;w/0 koodeista ei sovellu sen kuvaamiseen. Näytön muodostamiseen 
+	voidaan käyttää kenttäkoodiin perustuvaa fraasia, esim. <i>Katso:</i> tai <i>
+	Katso myös:</i>. Jos koodi <b>n</b> on sopiva, sitä ei tarvitse tallentaa, ellei 
+	jotakin seuraavista merkkipaikoista aiota käyttää.</li>
+	<li><b>r</b> - Relationship designation in subfield &#8225;i or &#8225;4<br>
+      Used in conjunction with subfield &#8225;i (Relationship information) or subfield 
+      &#8225;4 (Relationship code). Guidelines for applying code i are given under the 
+      description of subfield &#8225;i. </li>
+	<li><b>t</b> - Isäntäyhteisö<br>
+	5XX-kentässä oleva otsikkomuoto on 1XX-kentässä olevan yhteisön isäntäyhteisö. 
+	Koodi <b>t</b> soveltuu käytettäväksi vain yhteisönnimien yhteydessä.</li>
+</ul>
+<h4>&#8225;w/1 - Viittauksen käytön rajoitus</h4>
+<p>Yksimerkkinen koodi, joka määrittelee auktoriteettiviittauksen rakenteen, 
+jossa 4XX- tai 5XX-kenttää voidaan käyttää ristiviittauksen muodostamiseen. Kun 
+viittauksen rakenteen käyttö eroaa siitä miten 1XX-kentän otsikkomuotoa 
+käytetään, tämä koodi ehkäisee tai mahdollistaa ristiviittauksen syntymisen 
+viittaustyypin rakenteelle soveltuvassa muodossa.</p>
+<ul>
+	<li><b>a</b> - Vain nimiviittaukset</li>
+	<li><b>b</b> - Vain asiasanaviittaukset</li>
+	<li><b>c</b> - Vain sarjaviittaukset</li>
+	<li><b>d</b> - Nimi- ja asiasanaviittaukset</li>
+	<li><b>e</b> - Nimi- ja sarjaviittaukset</li>
+	<li><b>f</b> - Asiasana- ja sarjaviittaukset</li>
+	<li><b>g</b> - Nimi-, asiasana- ja sarjaviittaukset</li>
+	<li><b>n</b> - Soveltumaton<br>
+	Auktoriteettiviittauksen rakenteen käyttö on sama kuin 1XX otsikkomuodon käyttö 
+	bibliografisessa tietueessa.</li>
+</ul>
+<h4>&#8225;w/2 - Aikaisempi otsikkomuoto</h4>
+<p>Yksimerkkinen koodi, joka kertoo onko 4XX-kentässä oleva otsikkomuoto aikaisempi 
+muoto, jossa nimi tai asiasana vahvistettiin joko kansallisessa 
+auktoriteettitiedostossa tai jossakin muussa auktoriteettitiedostossa.</p>
+<ul>
+	<li><b>a</b> - AACR 2:sta edeltävä otsikkomuoto (kansallinen 
+	nimiauktoriteettitiedosto)<br>
+	4XX-kentässä annetaan otsikkomuoto, jossa 1XX-kentän otsikkomuoto oli kansallisessa 
+	nimiauktoriteettitiedostossa silloin, kun siirryttiin AACR 2 -sääntöjen 
+	käyttöön.</li>
+	<li><b>e</b> - Aikaisempi vahvistettu otsikkomuoto (kansallinen 
+	auktoriteettitiedosto)<br>
+	4XX-kentässä annetaan otsikkomuoto, jossa 1XX-kentän otsikkomuoto oli aikaisemmin 
+	vahvistettu kansallisessa auktoriteettitiedostossa. Käytetään, kun koodi a 
+	ei sovellu.</li>
+	<li><b>o</b> - Aikaisempi vahvistettu otsikkomuoto (muu auktoriteettitiedosto)<br>
+	Viittauskentissä annetaan otsikkomuoto, jossa 1XX-kentän otsikkomuoto oli aikaisemmin 
+	vahvistettu jossakin muussa kuin kansallisessa auktoriteettitiedostossa.</li>
+	<li><b>n</b> - Soveltumaton<br>
+	Viittauskenttä ei sisällä 1XX-kentän otsikkomuotoa edeltävää muotoa.</li>
+</ul>
+<h4>&#8225;w/3 - Viittausnäyttö</h4>
+<p>Yksimerkkinen koodi, joka mahdollistaa ristiviittausnäytön muodostamisen tai 
+muodostamatta jättämisen kentistä 4XX tai 5XX.</p>
+<ul>
+	<li><b>a</b> - Viittausta ei näytetä</li>
+	<li><b>b</b> - Viittausta ei näytetä, käytetään kenttää 664</li>
+	<li><b>c</b> - Viittausta ei näytetä, käytetään kenttää 663</li>
+	<li><b>d</b> - Viittausta ei näytetä, käytetään kenttää 665</li>
+	<li><b>n</b> - Soveltumaton<br>
+	Viittauskenttien näytön muodostamiseen ei liity rajoituksia.</li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="m-risti"></a>MONITAHOISTEN RISTIVIITTAUSTEN KENTÄT</h3>
+<p>Monitahoiset ristiviittaukset kuljetetaan tietueiden viittausten 
+huomautuskentissä. Seuraava kuvaus on järjestetty sen mukaan, mistä viittauksen 
+ohjeteksti ristiviittauksessa muodostuu: kenttäkoodin perusteella (osakentän &#8225;i 
+kanssa) ja osakentästä &#8225;a.</p>
+<h3>Kenttäkoodista generoituva viittauksen ohjefraasi osakentän &#8225;i kanssa</h3>
+<p>Kenttää 260 voidaan käyttää muodostamaan ristiviittauksen ohjefraasi, esim.
+<i>Katso:</i>. Kenttää 360 voidaan käyttää muodostamaan 
+ristiviittauksen ohjefraasi, esim. <i>Katso myös:</i>. 
+Teksti osakentässä &#8225;i (Selittävä teksti) täydentää kenttäkoodista generoituvaa 
+ohjefraasia.</p>
+<h3>&#8225;a - Selittävä teksti</h3>
+<p>Mikä tahansa viittauksen ohjefraasi, jota tarvitaan kentissä 663, 664, 665 ja 666.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p align="left">&nbsp;</p>
+<hr>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

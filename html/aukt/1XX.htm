@@ -1,0 +1,861 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Auktoriteettitiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		AUKTORITEETTITIEDOT</h1>
+		</td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 27.11.2009.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Otsikkomuotojen kentät (1XX ja 3XX)</h2>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Kentät 100-185 sisältävät nimiä, yhtenäistettyjä nimekkeitä ja termejä, joita 
+käytetään otsikkomuotoina tai otsikkomuotojen lisämääreinä. Tavallisesti ne on 
+muodostettu yleisesti hyväksyttyjen luettelointisääntöjen ja asiasanastojen 
+käytäntöjen mukaisesti. MARC 21 -auktoriteettitietueissa <b>otsikkomuoto</b> 
+sisältyy kenttiin 1XX, 4XX tai 5XX, joihin on tallennettu tiedon tallennuksessa ja tiedonhaussa tai 
+auktoriteettitiedoston järjestämisessä käytetty nimen, nimekkeen tai termin muoto. Otsikkomuotojen 1XX-kenttien sekä 4XX/5XX-viittauskenttien 
+osakenttärakenteet ovat yhtenäiset.</p>
+<ul>
+	<li><a href="#yleista">OTSIKKOMUODOT--YLEISTÄ TIETOA</a></li>
+	<li><a href="#100">100 - OTSIKKOMUOTO - HENKILÖNNIMI</a> (ET)</li>
+	<li><a href="#110">110 - OTSIKKOMUOTO - YHTEISÖNNIMI</a> (ET)</li>
+	<li><a href="#111">111 - OTSIKKOMUOTO - KOKOUKSEN NIMI</a> (ET)</li>
+	<li><a href="#130">130 - OTSIKKOMUOTO - YHTENÄISTETTY NIMEKE</a> (ET)</li>
+	<li><a href="#148">148 - OTSIKKOMUOTO - AIKAA ILMAISEVA TERMI</a> (ET)</li>
+	<li><a href="#150">150 - OTSIKKOMUOTO - AIHETTA ILMAISEVA TERMI</a> (ET)</li>
+	<li><a href="#151">151 - OTSIKKOMUOTO - MAANTIETEELLINEN NIMI</a> (ET)</li>
+	<li><a href="#155">155 - OTSIKKOMUOTO - LAJITYYPPIÄ/MUOTOA ILMAISEVA TERMI</a> (ET)</li>
+	<li><a href="#180">180 - OTSIKKOMUOTO - YLEINEN LISÄMÄÄRE</a> (ET)</li>
+	<li><a href="#181">181 - OTSIKKOMUOTO - MAANTIETEELLINEN LISÄMÄÄRE</a> (ET)</li>
+	<li><a href="#182">182 - OTSIKKOMUOTO - AIKAA ILMAISEVA LISÄMÄÄRE</a> (ET)</li>
+	<li><a href="#185">185 - OTSIKKOMUOTO - MUOTOA ILMAISEVA LISÄMÄÄRE</a> (ET)</li>
+</ul>
+<p>The 046 and 3XX fields contain additional information about characteristics 
+of the heading entities in fields 100-185. Alla mainitut kentät on lisätty MARC 21 
+-formaattiin marraskuussa 2009. Tarkemmat tiedot toistaiseksi englanninkielisestä 
+formaatista, linkit alla.</p>
+<ul>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad046.html">046 - SPECIAL CODED DATES</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad336.html">336 - CONTENT TYPE</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad370.html">370 - ASSOCIATED PLACE</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad371.html">371 - ADDRESS</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad372.html">372 - FIELD OF ACTIVITY</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad373.html">373 - AFFILIATION</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad374.html">374 - OCCUPATION</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad375.html">375 - GENDER</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad376.html">376 - FAMILY INFORMATION</a> (T)</li>
+	<li><a href="http://www.loc.gov/marc/authority/concise/ad377.html">377 - ASSOCIATED LANGUAGE</a> (T)</li>
+</ul>
+
+<hr>
+<h3><a name="yleista"></a>OTSIKKOMUODOT--YLEISTÄ TIETOA</h3>
+<p>Auktoriteettitietojen formaatissa erotetaan kahdenlaisia otsikkomuotoja:</p>
+<blockquote>
+	<p><b>Vahvistettu otsikkomuoto</b><br>Käytetään bibliografisten tietueiden pääkirjauksena (1XX), lisäkirjauksena (700-730), 
+sarjalisäkirjauksena (440 tai 800-830) tai ensimmäisenä elementtinä 
+asiasanakentissä (600-651, 654-657). Auktoriteettitietueissa vahvistettuja otsikkomuotoja käytetään otsikkomuotojen kentissä 100-155 ja niihin 
+	viittaavissa kentissä 500-555. Edellinen koskee vahvistettujen otsikkomuotojen tietueita (008/09, Tietueen laatu, koodi <b>a</b> tai <b>f</b>) ja 
+lisämääreiden tietueita (008/09, Tietueen laatu, koodi <b>d</b>).</p>
+	<p><b>Vahvistamaton otsikkomuoto</b><br>
+	Vahvistamatonta otsikkomuotoa ei saa käyttää muissa MARC-tietueissa pää-, lisä-, 
+	sarjalisäkirjauskenttien tai asiasanakenttien ensimmäisenä elementtinä. 
+	Vahvistamaton otsikkomuoto voi olla vahvistetun otsikkomuodon variantti 
+	tai sen epätäydellinen osa, tai sen ainoa tarkoitus voi liittyä 
+	auktoriteettitiedoston järjestelyyn. Vahvistamatonta otsikkomuotoa ei käytetä 
+	bibliografisissa tietueissa, mutta vahvistettujen otsikkomuotojen 
+	tietueissa sitä voidaan käyttää 4XX-viittauskentässä. 
+	1XX-kenttä sisältää vahvistamattoman otsikkomuodon seuraavissa 
+	tietuelajeissa: viittaus, lisämääre, viittaus ja lisämääre, alanmukaisen 
+	ryhmän otsikko.</p>
+</blockquote>
+<p>Otsikkomuodot voivat olla tyypeiltään seuraavanlaisia:</p>
+<blockquote>
+	<ul>
+		<li><b>Nimi</b><br>Otsikkomuoto on henkilön- tai yhteisönnimi, kokouksen tai virallistahon 
+	nimi.</li>
+		<li><b>Tekijä/nimeke</b><br>Otsikkomuoto koostuu kahdesta osasta, 
+		tekijän nimestä ja teoksen nimekkeestä. Tekijäosassa voi olla henkilön- 
+		tai yhteisönnimi, kokouksen tai virallistahon nimi. Nimekeosassa voi 
+		olla yhtenäistetty tai tavallinen nimeke, teoksen nimiösivun nimeke tai 
+		sarjan nimeke.</li>
+		<li><b>Yhtenäistetty nimeke</b><br>Otsikkomuoto käsittää yhtenäistetyn tai tavallisen nimekkeen, 
+	nimiösivun nimekkeen tai sarjan nimekkeen, jota ei ole liitetty 
+	tekijä/nimeke-yhdistelmään.</li>
+		<li><b>Aihetta ilmaiseva termi</b></li>
+		<li><b>Aikaa ilmaiseva termi</b></li>
+		<li><b>Lajityyppiä/muotoa ilmaiseva termi</b></li>
+		<li><b>Lisämääre</b><br>Otsikkomuoto yleisestä (aihetta tai kieltä 
+		ilmaisevasta), maantieteellisestä, aikaa tai muotoa ilmaisevasta 
+		asialisämääretermistä. Lisämääreketju sisältää useamman kuin yhden 
+		asialisämääretermin (osakentät &#8225;v, &#8225;x, &#8225;y ja &#8225;z).</li>
+		<li><b>Asiasanaketju</b><br>Nimi, tekijä/nimeke, yhtenäistetty nimeke, aihetta tai 
+	lajityyppiä/muotoa ilmaiseva termi, joka sisältää yhden tai useampia yleisiä, 
+		maantieteellisiä, aikaa tai muotoa ilmaisevia asialisämääretermejä (osakentät &#8225;v, &#8225;x, &#8225;y 
+	tai &#8225;z).</li>
+		<li><b>Alanmukaisen ryhmän otsikko</b><br>Otsikkomuoto, jota voidaan käyttää asiasanaston systemaattisessa osassa 
+	otsikkona ilmaisemassa termikategorioiden jakoperusteita. Kaksoisväliviivaa 
+	(--), joka edeltää asialisämääreitä ei tallenneta MARC-tietueeseen, vaan se voidaan muodostaa näyttöön 
+	osakenttien &#8225;v, &#8225;x, &#8225;y tai &#8225;z perusteella.</li>
+	</ul>
+</blockquote>
+<h3>Otsikkomuotojen käyttö</h3>
+<p>Vain 1XX-kentän vahvistettua otsikkomuotoa 
+voidaan käyttää bibliografisissa tietueissa hakuelementtinä. Nimiä, 
+tekijä/nimekkeitä ja yhtenäistettyjä nimekkeitä voidaan käyttää <b>pää- tai 
+lisäkirjauksina</b> (008/14, koodi <b>a</b>); nimiä, tekijä/nimekkeitä ja 
+yhtenäistettyjä nimekkeitä, aihetta ja lajityyppiä/muotoa ilmaisevia termejä 
+sekä asiasanaketjuja voidaan käyttää <b>asiasanoina</b> (008/15, koodi
+<b>a</b>); tekijä/nimekkeitä ja yhtenäistettyjä nimekkeitä voidaan käyttää <b>
+sarjalisäkirjauksina</b> (008/16, koodi <b>a</b>). Lisämääreiden otsikkomuotoja voidaan käyttää vain asiasanaketjuissa.</p>
+<h3>Nimi- ja asiasana-auktoriteetit</h3>
+<p>Otsikkomuoto voidaan määritellä soveltuvaksi joko nimi- tai 
+asiasana-auktoriteetin rakenteeseen.</p>
+<p>Otsikkomuodot, jotka on laadittu luettelointisääntöjen käytäntöjen mukaisesti 
+(008/10) ovat soveltuvia <b>nimiauktoriteeteiksi</b>. Näitä ovat nimien, 
+tekijä/nimekkeiden ja yhtenäistettyjen nimekkeiden otsikkomuodot 
+vahvistettujen otsikkomuotojen tietueissa sekä vahvistettujen otsikkomuotojen ja lisämääreiden tietueissa, ja näiden vahvistamattomat 
+otsikkomuodot 
+viittaustietueissa. Tiettyjä 
+huomautus- ja viittauskenttiä voidaan käyttää vain nimiauktoriteeteissa.</p>
+<p>Otsikkomuodot, jotka on laadittu jonkin asiasanaston käytäntöjen mukaisesti (008/11) 
+ovat soveltuvia <b>asiasanoiksi</b>. Näitä ovat nimien, 
+tekijä/nimekkeiden, yhtenäistettyjen nimekkeiden, aihetta, aikaa tai 
+lajityyppiä/muotoa ilmaisevien termien (sekä näistä laadittujen asiasanaketjujen) otsikkomuodot vahvistettujen otsikkomuotojen tietueissa 
+sekä vahvistettujen otsikkomuotojen ja lisämääreiden tietueissa. Näiden 
+vahvistamattomia otsikkomuotoja käytetään viittaustietueissa sekä viittaus ja lisämääre 
+-tietueissa. Vahvistamattomia otsikkomuotoja käytetään myös 
+alanmukaisen ryhmän otsikkotietueissa. Tiettyjä huomautus- ja viittauskenttiä 
+voidaan käyttää vain asiasana-auktoriteeteissa.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="100"></a>100 - OTSIKKOMUOTO - HENKILÖNNIMI (ET)</h3>
+<p>Vahvistettu henkilönnimi, jota käytetään nimen, tekijä/nimekkeen tai 
+asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen tietueissa tai 
+vahvistamaton henkilönnimi, 
+jota käytetään viittaustietueissa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Nimikirjauksen muoto<ul>
+		<li><b>0</b> - Nimen osien järjestys suora<br>
+		Etunimi ennen sukunimeä tai nimi, joka koostuu sanoista, 
+		alkukirjaimista, kirjaimista jne. suorassa järjestyksessä. Tähän myös yksittäinen 
+		sana tai nimi, joka voi olla joko 
+		etu- tai sukunimi.</li>
+		<li><b>1</b> - Nimen osien järjestys käänteinen<br>
+		Sukunimi ennen etunimeä. Tähän myös yksittäinen nimi, joka varmasti 
+		tiedetään sukunimeksi.</li>
+		<li><b>3</b> - Suvun nimi<br>
+		Nimi edustaa perhettä, heimoa, hallitsijasukua, taloa tms. ryhmää ja 
+		voidaan tallentaa joko suorassa tai käänteisessä järjestyksessä.</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Henkilönnimi (ET)<br>
+	Sukunimi ja/tai etunimi; nimen tilalla käytetyt kirjaimet, alkukirjaimet, 
+	lyhenteet, fraasit tai numerot; suvun nimi.</li>
+	<li><b>&#8225;b</b> - Numerointi (ET)<br>
+	Roomalainen numero, tai roomalainen numero ja sitä seuraava etunimen osa, 
+	kun ensimmäisen indikaattorin arvo on 0.</li>
+	<li><b>&#8225;c</b> - Arvonimet ja muut nimeen liittyvät sanat (T)</li>
+	<li><b>&#8225;d</b> - Nimeen liittyvät aikamääreet (ET)<br>
+	Syntymä- ja/tai kuolinvuodet, kukoistuskaudet tai muut nimeen liittyvät 
+	aikamääreet. Tietosuojavaltuutetun lausunnon mukaan suomalaisten henkilöiden 
+	syntymä- ja kuolinvuosia ei saa tallentaa, ellei kuolinvuosi ole 1899 tai 
+	varhaisempi.</li>
+	<li><b>&#8225;e</b> - Funktiotermi (T)<br>
+	Kuvaa henkilön suhdetta teokseen. 
+	Käytetään rajoitetusti, lähinnä silloin kun sopiva funktiokoodi (&#8225;4) 
+	puuttuu tai tekijän funktio ei yksiselitteisesti käy ilmi muusta 
+	kuvailusta.</li>
+	<li><b>&#8225;f</b> - Teoksen julkaisuaika (ET)<br>
+	Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;g</b> - Muut tiedot (ET)<br>
+	Nimeen liittyvät tiedot, jotka eivät sovellu muihin osakenttiin.</li>
+	<li><b>&#8225;h</b> - Aineiston yleismääre (ET)<br>
+	Yleismääre, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;j</b> - Nimen määrite (T)<br>
+	Tietoa nimestä, kun vastuullisuus on tuntematon, epävarma, 
+	kuvitteellinen tai salanimellä toteutettu.</li>
+	<li><b>&#8225;k</b> - Muotoa kuvaava kokoava nimeke (T)<br>
+	Esimerkiksi <i>käsikirjoitus</i>, <i>pöytäkirja</i>, <i>valikoima</i>.</li>
+	<li><b>&#8225;l</b> - Teoksen kieli (ET)<br>
+	Kieli tai kielet, joita käytetään 
+	teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;m</b> - Musiikin esityskokoonpano (T)</li>
+	<li><b>&#8225;n</b> - Numerointitieto (T)<br>
+	Teoksen osan numero, opus- tai järjestysnumero, jota käytetään 
+	teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>	
+	<li><b>&#8225;o</b> - Musiikin sovitusmerkintö (ET)<br>
+	Lyhennettä <i>arr.</i> käytettään yhtenäistetyn nimekkeen kanssa 
+	tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;p</b> - Teoksen osan nimeke (T)<br>Teoksen osan nimeke, jota 
+	käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;q</b> - Henkilönnimen täydellisempi muoto (ET)<br>Täydellisempi kuin osakentässä &#8225;a.</li>
+	<li><b>&#8225;r</b> - Sävellaji (ET)<br>
+	Yhtenäistetyn nimekkeen kanssa käytetty sävellaji tekijä/nimeke 
+	-otsikkomuodossa.</li>
+	<li><b>&#8225;s</b> - Versio (ET)<br>
+	Versio-, painos - tms. tieto, jota käytetään teoksen nimekkeen kanssa 
+	tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;t</b> - Teoksen nimeke (ET)<br>Yhtenäistetty nimeke, nimiösivun 
+	nimeke tai sarjan nimeke, jota käytetään tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>100 1#&#8225;a</b>Olearius, Adam,<b>&#8225;d</b>1603-1671</p>
+<p><b>100 1#&#8225;a</b>De Angelini, Anna</p>
+<p><b>100 1#&#8225;a</b>McCoy, Hal</p>
+<p><b>100 1#&#8225;a</b>O'Brien, Gerard</p>
+<p><b>100 3#&#8225;a</b>Arey family</p>
+<p><b>100 3#&#8225;a</b>Guelf, House of</p>
+<p><b>100 3#&#8225;a</b>Attalid dynasty,<b>&#8225;d</b>282-133 B.C.</p>
+<p><b>100 0#&#8225;a</b>Thomas<b>&#8225;c</b>(Anglo-Norman poet)</p>
+<p><b>100 0#&#8225;a</b>W. P.,<b>&#8225;c</b>Esq.</p>
+<p><b>100 0#&#8225;a</b>Gustaf<b>&#8225;b</b>V,<b>&#8225;c</b>King of Sweden,<b>&#8225;d</b>1858-1950</p>
+<p><b>100 1#&#8225;a</b>Appleton, Victor,<b>&#8225;c</b>II</p>
+<p><b>100 1#&#8225;a</b>Salisbury, James Cecil,<b>&#8225;c</b>Earl of,<b>&#8225;d</b>d. 1683</p>
+<p><b>100 1#&#8225;a</b>Saur, Karl-Otto,<b>&#8225;c</b>Jr.</p>
+<p><b>100 0#&#8225;a</b>Black Foot,<b>&#8225;c</b>Chief,<b>&#8225;d</b>d. 1877<b>&#8225;c</b>(Spirit)</p>
+<p><b>100 1#&#8225;a</b>Brown, John,<b>&#8225;d</b>1800-1859,<b>&#8225;e</b>defendant</p>
+<p><b>100 1#&#8225;a</b>Speroni, Sperone,<b>&#8225;d</b>1500-1588.<b>&#8225;t</b>Selections.<b>&#8225;f</b>1982</p>
+<p><b>100 1#&#8225;a</b>Wagner, Richard,<b>&#8225;d</b>1813-1883.<b>&#8225;t</b>Ouvertüre.<b>&#8225;h</b>Sound recording</p>
+<p><b>100 1#&#8225;a</b>Husák, Gustáv.<b>&#8225;t</b>Speeches.<b>&#8225;k</b>Selections</p>
+<p><b>100 0#&#8225;a</b>Demetrius,<b>&#8225;c</b>of Phaleron,<b>&#8225;d</b>b. 350 B.C.<b>&#8225;t</b>De elocutione.<b>&#8225;l</b>Russian</p>
+<p><b>100 1#&#8225;a</b>Ries, Ferdinand,<b>&#8225;d</b>1784-1838.<b>&#8225;t</b>Octet,<b>&#8225;m</b>piano, winds, strings,<b>&#8225;n</b>op. 128,<b>&#8225;r</b>A major</p>
+<p><b>100 1#&#8225;a</b>Telemann, Georg Philipp,<b>&#8225;d</b>1681-1767.<b>&#8225;t</b>Sonatas,<b>&#8225;m</b>flutes (2),<b>&#8225;n</b>op. 5;<b>&#8225;o</b>arr.</p>
+<p><b>100 1#&#8225;a</b>Kalashnikov, S. D.<b>&#8225;q</b>(Sergei Dmitrievich)</p>
+<p><b>100 0#&#8225;a</b>Claudius<b>&#8225;q</b>(Claudius Ceccon)</p>
+<p><b>100 0#&#8225;a</b>Gautama Buddha<b>&#8225;v</b>Early works to 1800</p>
+<p><b>100 3#&#8225;a</b>Clark family<b>&#8225;v</b>Fiction</p>
+<p><b>100 1#&#8225;a</b>Shakespeare, William,<b>&#8225;d</b>1564-1616<b>&#8225;x</b>Criticism and interpretation<b>&#8225;x</b>History<b>&#8225;y</b>18th century</p>
+<p><b>100 0#&#8225;a</b>Frederick<b>&#8225;b</b>II,<b>&#8225;c</b>Holy Roman Emperor,<b>&#8225;d</b>1194-1250<b>&#8225;x</b>Homes and haunts<b>&#8225;z</b>Italy</p>
+<p><b>100 0#&#8225;a</b>E.S.,<b>&#8225;c</b>Meister,<b>&#8225;d</b>15th cent.,<b>&#8225;j</b>Follower of</p>
+<p><b>100 1#&#8225;a</b>Reynolds, Joshua,<b>&#8225;c</b>Sir,<b>&#8225;d</b>1723-1792,<b>&#8225;j</b>Pupil of</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="110"></a>110 - OTSIKKOMUOTO - YHTEISÖNNIMI (ET)</h3>
+<p>Vahvistettu yhteisönnimi, jota käytetään nimen, tekijä/nimekkeen tai 
+asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen 
+tietueissa tai vahvistamaton yhteisönnimi, 
+jota käytetään viittaustietueissa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Nimikirjauksen muoto<ul>
+		<li><b>0</b> - Nimen osien järjestys käänteinen<br>
+		Yhteisönnimi alkaa henkilönnimellä, joka esitetään käänteisessä 
+		järjestyksessä sukunimi ensin.</li>
+		<li><b>1</b> - Hallintoalueen nimi<br>
+		Julkishallinnollinen tai kirkollinen yhteisö.</li>
+		<li><b>2</b> - Nimen osien järjestys suora</li>
+		</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Yhteisönnimi (ET)<br>
+	Hallintoalueen tai yhteisön nimi, johon liittyy 
+	alayksiköitä/alahierarkioita.</li>
+	<li><b>&#8225;b</b> - Alayksikkö (T)<br>
+	Hallintoalueen tai yhteisön alayksikön/alahierarkian nimi tai kokouksen 
+	nimi.</li>
+	<li><b>&#8225;c</b> - Kokouksen paikka (ET)</li>
+	<li><b>&#8225;d</b> - Kokouksen tai sopimuksen allekirjoittamisen aika (T)<br>
+	Merkitään pelkkä vuosiluku.</li>
+	<li><b>&#8225;e</b> - Funktiotermi (T)<br>
+	Kuvaa yhteisön suhdetta teokseen. Käytetään rajoitetusti, lähinnä silloin 
+	kun sopiva funktiokoodi (&#8225;4) puuttuu tai yhteisön funktio ei 
+	yksiselitteisesti käy ilmi muusta kuvailusta.</li>
+	<li><b>&#8225;f</b> - Teoksen julkaisuaika (ET)<br>
+	Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</li>
+	<li><b>&#8225;g</b> - Muut tiedot (ET)<br>
+	Esim. yhteisön tarkoitusta kuvaava yleismääre, jos tarkoitus ei ilmene 
+	yhteisönnimestä; yhteisön sijaintipaikan nimi tai perustamisvuosi, joka 
+	erottaa toisistaan kaksi samankaltaista yhteisönimeä; sopimuksen <i>toisen osapuolen</i> 
+	nimi; tieto, joka ei paremmin sovellu osakenttiin &#8225;c, &#8225;d tai &#8225;n, kun 
+	kyseessä on yhteisönnimen alle kirjattu kokous; muut tiedot, jotka eivät sovellu muun 
+	tyyppisiin 
+	yhteisönnimien otsikkomuotoihin.</li>
+	<li><b>&#8225;h</b> - Aineiston yleismääre (ET)</li>
+	<li><b>&#8225;k</b> - Muotoa kuvaava kokoava nimeke (T)<br>
+	Esimerkiksi <i>käsikirjoitus</i>, <i>pöytäkirja</i>, <i>valikoima</i>.</li>
+	<li><b>&#8225;l</b> - Teoksen kieli (ET)<br>
+	Kieli tai kielet, joita käytetään 
+	teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;m</b> - Musiikin esityskokoonpano (T)</li>
+	<li><b>&#8225;n</b> - Kokouksen numero tai muu numerointitieto (T)<br>
+	Yhteisön alle kirjatun kokouksen järjestysnumero tai numero teoksen osalle, 
+	jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä. 
+	Käytetään arabialaisia numeroita.</li>
+	<li><b>&#8225;o</b> - Musiikin sovitusmerkintö (ET)<br>
+	Lyhennettä <i>arr.</i> käytettään yhtenäistetyn nimekkeen kanssa 
+	tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;p</b> - Teoksen osan nimeke (T)<br>Teoksen osan nimeke, jota 
+	käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;r</b> - Sävellaji (ET)<br>
+	Yhtenäistetyn nimekkeen kanssa käytetty sävellaji tekijä/nimeke 
+	-otsikkomuodossa.</li>
+	<li><b>&#8225;s</b> - Versio (ET)<br>
+	Versio-, painos - tms. tieto, jota käytetään teoksen nimekkeen kanssa 
+	tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;t</b> - Teoksen nimeke (ET)<br>Yhtenäistetty nimeke, nimiösivun 
+	nimeke tai sarjan nimeke, jota käytetään tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>110 1#&#8225;a</b>Arlington National Cemetery (Va.)</p>
+<p><b>110 2#&#8225;a</b>Nigel Brooks Chorale</p>
+<p><b>110 2#&#8225;a</b>Field &amp; Young (Jersey City, N.J.)</p>
+<p><b>110 1#&#8225;a</b>Pennsylvania.<b>&#8225;b</b>State Board of Examiners of Nursing Home 
+Administrators</p>
+<p><b>110 1#&#8225;a</b>Jalisco (Mexico).<b>&#8225;t</b>Ley que aprueba el plan regional urbano de 
+Guadalajara, 1979-1983</p>
+<p><b>110 2#&#8225;a</b>University of Illinois at Urbana-Champaign.<b>&#8225;b</b>Experimental Music 
+Studios</p>
+<p><b>110 2#&#8225;a</b>Arizona Family Planning Council</p>
+<p><b>110 2#&#8225;a</b>PRONAPADE (Firm)</p>
+<p><b>110 1#&#8225;a</b>Notre-Dame de Laeken (Belgium : Parish)</p>
+<p><b>110 2#&#8225;a</b>Labour Party (Great Britain).<b>&#8225;b</b>Conference<b>&#8225;n</b>(71st :<b>&#8225;c</b>Blackpool)</p>
+<p><b>110 1#&#8225;a</b>New Hampshire.<b>&#8225;b</b>Constitutional Convention<b>&#8225;d</b>(1781)</p>
+<p><b>110 1#&#8225;a</b>Algeria.<b>&#8225;t</b>Treaties, etc.<b>&#8225;g</b>England and Wales,<b>&#8225;d</b>1682 Apr. 20</p>
+<p><b>110 2#&#8225;a</b>Raleigh Publishing Company.<b>&#8225;t</b>Works.<b>&#8225;f</b>1979</p>
+<p><b>110 1#&#8225;a</b>France.<b>&#8225;t</b>Constitution (1946)</p>
+<p><b>110 1#&#8225;a</b>Minnesota.<b>&#8225;b</b>Constitutional Convention<b>&#8225;d</b>(1857 :<b>&#8225;g</b>Republican)</p>
+<p><b>110 1#&#8225;a</b>Great Britain.<b>&#8225;t</b>Treaties, etc.<b>&#8225;g</b>Poland,<b>&#8225;d</b>1948 Mar. 2.<b>&#8225;k</b>Protocols, 
+etc.<b>&#8225;d</b>1951 Mar. 6</p>
+<p><b>110 2#&#8225;a</b>Pearls Before Swine (Musical group).<b>&#8225;t</b>One nation underground.<b>&#8225;h</b>Sound 
+recording</p>
+<p><b>110 2#&#8225;a</b>British Library.<b>&#8225;k</b>Manuscript.<b>&#8225;n</b>Arundel 384</p>
+<p><b>110 2#&#8225;a</b>Library of Congress. <b>&#8225;b</b>Congressional Research Service.<b>&#8225;b</b>Senior 
+Specialist Division.<b>&#8225;t</b>Soviet diplomacy and negotiating 
+behavior.<b>&#8225;l</b>Japanese.<b>&#8225;k</b>Selections</p>
+<p><b>110 1#&#8225;a</b>United States.<b>&#8225;b</b>Congress<b>&#8225;n</b>(97th, 2nd session :<b>&#8225;d</b>1982).<b>&#8225;b</b>House</p>
+<p><b>110 1#&#8225;a</b>Philippines.<b>&#8225;t</b>Labor Code of the Philippines.<b>&#8225;n</b>Book 5,<b>&#8225;p</b>Labor 
+Relations</p>
+<p><b>110 2#&#8225;a</b>United Nations<b>&#8225;x</b>Economic assistance<b>&#8225;v</b>Periodicals</p>
+<p><b>110 2#&#8225;a</b>Catholic Church<b>&#8225;z</b>Germany<b>&#8225;x</b>History<b>&#8225;y</b>1933-1945</p>
+<p><b>110 2#&#8225;a</b>Real Academia de la Historia (Spain).<b>&#8225;k</b>Manuscript.<b>&#8225;n</b>H.</p>
+<p><b>110 2#&#8225;a</b>Society of Friends<b>&#8225;z</b>Pennsylvania<b>&#8225;x</b>History<b>&#8225;v</b>Maps</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="111"></a>111 - OTSIKKOMUOTO - KOKOUKSEN NIMI (ET)</h3>
+<p>Vahvistettu kokouksen nimi, jota käytetään nimen, tekijä/nimekkeen tai 
+asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen 
+tietueissa tai vahvistamaton kokouksen nimi, 
+jota käytetään viittaustietueissa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Nimikirjauksen muoto<ul>
+		<li><b>0</b> - Nimen osien järjestys käänteinen<br>
+		Kokouksen nimi alkaa henkilönnimellä, joka esitetään käänteisessä 
+		järjestyksessä sukunimi ensin.</li>
+		<li><b>1</b> - Hallintoalueen nimi<br>
+		Kirjauksen alkuun tulee hallintoalueen nimi.</li>
+		<li><b>2</b> - Nimen osien järjestys on suora</li>
+		</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Kokouksen tai hallintoalueen nimi (ET)<br>
+	Kun kyseessä on useampia alayksiköitä, tallennetaan ensimmäisen 
+	kokonaisuuden nimi ensin; tai hallintoalueen nimi, jonka alle kokouksen nimi 
+	kirjataan.</li>
+	<li><b>&#8225;c</b> - Kokouksen paikka (ET)</li>
+	<li><b>&#8225;d</b> - Kokouksen aika (ET)<br>
+	Merkitään pelkkä vuosiluku.</li>
+	<li><b>&#8225;e</b> - Alayksikkö (T)</li>
+	<li><b>&#8225;f</b> - Teoksen julkaisuaika (ET)<br>
+	Julkaisuaika, jota käytetään teoksen 
+	nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;g</b> - Muut tiedot (ET)<br>
+	Tiedot, jotka eivät sovellu muihin osakenttiin.</li>
+	<li><b>&#8225;h</b> - Aineiston yleismääre (ET)<br>
+	Yleismääre, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke 
+	-otsikkomuodossa.</li>
+	<li><b>&#8225;j</b> - Funktiotermi (T)</li>
+	<li><b>&#8225;k</b> - Muotoa kuvaava kokoava nimeke (T)<br>
+	Esimerkiksi <i>valikoima</i>.</li>
+	<li><b>&#8225;l</b> - Teoksen kieli (ET)<br>
+	Kieli tai kielet, joita käytetään teoksen nimekkeen kanssa tekijä/nimeke 
+	-otsikkomuodossa.</li>
+	<li><b>&#8225;n</b> - Kokouksen numero tai muu numerointitieto (T)<br>
+	Kokouksen numero merkitään arabialaisin numeroin. Teoksen osan 
+	numero, opus- tai järjestysnumero, jota käytetään 
+	teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;p</b> - Teoksen osan nimeke (T)<br>
+	Teoksen osan nimeke, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke 
+	-otsikkomuodossa.</li>
+	<li><b>&#8225;q</b> - Hallintoalueen nimeä seuraava kokouksen nimi (ET)<br>
+	Osakentässä &#8225;a olevaa hallintoaluetta seuraava kokouksen nimi.</li>
+	<li><b>&#8225;s</b> - Versio (ET)<br>
+	Versio-, painos - tms. tieto, jota käytetään teoksen nimekkeen kanssa 
+	tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;t</b> - Teoksen nimeke (ET)<br>Yhtenäistetty nimeke, nimiösivun 
+	nimeke tai sarjan nimeke, jota käytetään tekijä/nimeke -otsikkomuodossa.</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>111 2#&#8225;a</b>Symposium Internacional &quot;Manuel Pedroso&quot; In Memoriam<b>&#8225;d</b>(1976 
+:<b>&#8225;c</b>Guanajuato, Mexico)</p>
+<p><b>111 2#&#8225;a</b>Wittenberg University Luther Symposium<b>&#8225;d</b>(1983)</p>
+<p><b>111 2#&#8225;a</b>International Symposium on Quality Control (1974- ) <b>&#8225;n</b>(6th : 
+<b>&#8225;d</b>1987 : 
+<b>&#8225;c</b>Osaka, Japan)</p>
+<p><b>111 2#&#8225;a</b>Illinois White House Conference on Children<b>&#8225;d</b>(1980 :<b>&#8225;c</b>Springfield, 
+Ill.).<b>&#8225;e</b>Chicago Regional Committee</p>
+<p><b>111 2#&#8225;a</b>Symposium on Nonsteady Fluid Dynamics,<b>&#8225;c</b>San 
+Francisco,<b>&#8225;d</b>1978<b>&#8225;g</b>(Projected, not held)</p>
+<p><b>111 2#&#8225;a</b>International Conference on Safety of Life at Sea<b>&#8225;d</b>(1960 :<b>&#8225;c</b>London, 
+England).<b>&#8225;t</b>Final act of conference with annexes including the International 
+Convention for the Safety of Life at Sea, signed in London, 17 June, 
+1960.<b>&#8225;l</b>Chinese &amp; English.<b>&#8225;k</b>Selections</p>
+<p><b>111 2#&#8225;a</b>Conference on the Limitation of Armament<b>&#8225;d</b>(1921-1922 :<b>&#8225;c</b>Washington, 
+D.C.).<b>&#8225;t</b>Washington Kaigi keika.<b>&#8225;n</b>1.<b>&#8225;p</b>Gunbi seigen ni kansuru mondai</p>
+<p><b>111 2#&#8225;a</b>Olympics<b>&#8225;x</b>History<b>&#8225;v</b>Juvenile literature</p>
+<p><b>111 2#&#8225;a</b>New York World's Fair<b>&#8225;d</b>(1939-1940)<b>&#8225;x</b>Buildings</p>
+<p><b>111 2#&#8225;a</b>La Crosse Health and Sports Science Symposium</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="130"></a>130 - OTSIKKOMUOTO - YHTENÄISTETTY NIMEKE (ET)</h3>
+<p>Vahvistettu yhtenäistetty nimeke, jota käytetään nimekkeen tai  
+asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen tietueissa tai 
+vahvistamaton yhtenäistetty nimeke, jota 
+käytetään viittaustietueissa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - <a href="../ohitus.htm">Ohitusindikaattori</a><ul>
+		<li><b>0-9</b> - Ohitettavien merkkien määrä</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Yhtenäistetty nimeke (ET)</li>
+	<li><b>&#8225;d</b> - Sopimuksen allekirjoittamisen aika (T)</li>
+	<li><b>&#8225;f</b> - Teoksen julkaisuaika (ET)<br>
+	Julkaisuaika, jota käytetään teoksen 
+	nimekkeen kanssa tekijä/nimeke -kentässä.</li>
+	<li><b>&#8225;g</b> - Muut tiedot (ET)<br>
+	Tiedot, jotka eivät sovellu muihin osakenttiin.</li>
+	<li><b>&#8225;h</b> - Aineiston yleismääre (ET)</li>
+	<li><b>&#8225;k</b> - Muotoa kuvaava kokoava nimeke (T)<br>
+	Esimerkiksi <i>käsikirjoitus</i>, <i>pöytäkirja</i>, <i>valikoima</i>.</li>
+	<li><b>&#8225;l</b> - Teoksen kieli (ET)</li>
+	<li><b>&#8225;m</b> - Musiikin esityskokoonpano (T)</li>
+	<li><b>&#8225;n</b> - Numerointitieto (T)</li>
+	<li><b>&#8225;o</b> - Musiikin sovitusmerkintö (ET)</li>
+	<li><b>&#8225;p</b> - Teoksen osan nimeke (T)</li>
+	<li><b>&#8225;r</b> - Sävellaji (ET)</li>
+	<li><b>&#8225;s</b> - Versio (ET)</li>
+	<li><b>&#8225;t</b> - Teoksen nimeke (ET)<br>Nimiösivun nimeke.</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>130 #0&#8225;a</b>&quot;Hsuan lai hsi kan&quot; hsi lieh</p>
+<p><b>130 #0&#8225;a</b>Songs, unacc.</p>
+<p><b>130 #0&#8225;a</b>Bastard</p>
+<p><b>130 #0&#8225;a</b>Habakkuk commentary</p>
+<p><b>130 #0&#8225;a</b>Beowulf</p>
+<p><b>130 #0&#8225;a</b>Resources information series</p>
+<p><b>130 #0&#8225;a</b>Imago (Series)</p>
+<p><b>130 #0&#8225;a</b>Socialist thought and practice (Belgrade, Serbia)</p>
+<p><b>130 #0&#8225;a</b>Economia (Franco Angeli editore : 1985)</p>
+<p><b>130 #0&#8225;a</b>Inter-American Treaty of Reciprocal Assistance<b>&#8225;d</b>(1947)</p>
+<p><b>130 #0&#8225;a</b>Bible.<b>&#8225;l</b>Latin.<b>&#8225;s</b>Vulgate.<b>&#8225;f</b>1454</p>
+<p><b>130 #0&#8225;a</b>New-York statesman (1823)</p>
+<p><b>130 #0&#8225;a</b>Gone with the wind (Motion picture).<b>&#8225;h</b>Sound recording</p>
+<p><b>130 #0&#8225;a</b>Bible.<b>&#8225;p</b>O.T.<b>&#8225;p</b>Five Scrolls.<b>&#8225;l</b>Hebrew.<b>&#8225;s</b>Biblioteca apostolica 
+Vaticana.<b>&#8225;k</b>Manuscript.<b>&#8225;n</b>Urbaniti Hebraicus 1</p>
+<p><b>130 #0&#8225;a</b>Convention for the Protection of Human Rights and Fundamental 
+Freedoms<b>&#8225;d</b>(1950).<b>&#8225;k</b>Protocols, etc.</p>
+<p><b>130 #0&#8225;a</b>Vedas.<b>&#8225;p</b>Rgveda.<b>&#8225;l</b>Italian &amp; Sanskrit.<b>&#8225;k</b>Selections</p>
+<p><b>130 #0&#8225;a</b>Concerto,<b>&#8225;m</b>violin, string orchestra,<b>&#8225;r</b>D major</p>
+<p><b>130 #0&#8225;a</b>Annale Universiteit van Stellenbosch.<b>&#8225;n</b>Serie A2,<b>&#8225;p</b>Soölogie</p>
+<p><b>130 #0&#8225;a</b>God save the king;<b>&#8225;o</b>arr.</p>
+<p><b>130 #0&#8225;a</b>Questoes internacionais.<b>&#8225;p</b>Série Estudos</p>
+<p><b>130 #0&#8225;a</b>Talmud Yerushalmi.<b>&#8225;p</b>Nezikin.<b>&#8225;l</b>German.<b>&#8225;k</b>Selections</p>
+<p><b>130 #0&#8225;a</b>American Convention on Human Rights<b>&#8225;d</b>(1969).<b>&#8225;n</b>Part 2,<b>&#8225;p</b>Means of Protection.<b>&#8225;l</b>Spanish</p>
+<p><b>130 #0&#8225;a</b>Beowulf<b>&#8225;x</b>Language<b>&#8225;v</b>Glossaries, etc.</p>
+<p><b>130 #0&#8225;a</b>Koran<b>&#8225;x</b>Criticism, interpretation, etc.<b>&#8225;x</b>History<b>&#8225;y</b>19th century</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="148"></a>148 - OTSIKKOMUOTO - AIKAA ILMAISEVA TERMI (ET)</h3>
+<p>Aikaa ilmaiseva termi, jota käytetään otsikkomuotona. Koskee seuraavia 
+tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, 
+viittaus ja lisämääre.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Aikaa ilmaiseva termi (ET)</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>148 ##&#8225;a</b>1710-1714</p>
+<p><b>148 ##&#8225;a</b>1500-1700</p>
+<p><b>148 ##&#8225;a</b>1863</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="150"></a>150 - OTSIKKOMUOTO - AIHETTA ILMAISEVA TERMI (ET)</h3>
+<p>Vahvistettu aihetta ilmaiseva termi, jota käytetään asiasanan tai asiasanaketjun vahvistettujen otsikkomuotojen tietueissa tai vahvistamaton aihetta ilmaiseva termi, jota 
+käytetään seuraavissa tietuelajeissa: lisämääre, viittaus, alanmukaisen ryhmän 
+otsikko.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Aihetta ilmaiseva termi tai maantieteellinen nimi (ET)</li>
+	<li><b>&#8225;b</b> - Maantieteellistä nimeä seuraava aihetta ilmaiseva termi (ET)</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>150 ##&#8225;a</b>Blood</p>
+<p><b>150 ##&#8225;a</b>Catalogs by source</p>
+<p><b>150 ##&#8225;a</b>Characters and characteristics in literature</p>
+<p><b>150 ##&#8225;a</b>Bull Run, 2nd Battle of, Va., 1862</p>
+<p><b>150 ##&#8225;a</b>Scuba diving <b>&#8225;v</b>Periodicals</p>
+<p><b>150 ##&#8225;a</b>Conflict of laws<b>&#8225;x</b>Support (Domestic relations)</p>
+<p><b>150 ##&#8225;a</b>God<b>&#8225;x</b>History of doctrines<b>&#8225;y</b>Middle Ages, 600-1500</p>
+<p><b>150 ##&#8225;a</b>Music<b>&#8225;y</b>500-1400</p>
+<p><b>150 ##&#8225;a</b>Painting, Chinese<b>&#8225;y</b>Sung-Yüan dynasties, 960-1368<b>&#8225;x</b>Societies, etc.</p>
+<p><b>150 ##&#8225;a</b>Chapels<b>&#8225;z</b>Germany (West)</p>
+<p><b>150 ##&#8225;a</b>John, the Baptist, Saint, in the Koran</p>
+<p><b>150 ##&#8225;a</b>Catholic Church in art</p>
+<p><b>150 ##&#8225;a</b>Bible and atheism</p>
+<p><b>150 ##&#8225;a</b>Greece in textbooks</p>
+<p><b>150 ##&#8225;a</b>Hurricane Flora, 1963</p>
+<p><b>150 ##&#8225;a</b>Überhaupt (The German word)</p>
+<p><b>150 ##&#8225;a</b>Afrihili (Artificial language)</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="151"></a>151 - OTSIKKOMUOTO - MAANTIETEELLINEN NIMI (ET)</h3>
+<p>Maantieteellinen nimi, jota käytetään otsikkomuotona. Koskee seuraavia 
+tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, 
+viittaus ja lisämääre.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Maantieteellinen nimi (ET)</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>151 ##&#8225;a</b>Amazon River</p>
+<p><b>151 ##&#8225;a</b>Communist countries</p>
+<p><b>151 ##&#8225;a</b>Halley's comet</p>
+<p><b>151 ##&#8225;a</b>Interstate 70</p>
+<p><b>151 ##&#8225;a</b>Mason and Dixon's Line</p>
+<p><b>151 ##&#8225;a</b>Himalaya Mountains</p>
+<p><b>151 ##&#8225;a</b>Irrawaddy Division (Burma)</p>
+<p><b>151 ##&#8225;a</b>Leesville (S.C.)</p>
+<p><b>151 ##&#8225;a</b>Palenque Site (Mexico)</p>
+<p><b>151 ##&#8225;a</b>Pompeii (Extinct city)</p>
+<p><b>151 ##&#8225;a</b>Altamira Cave (Spain)</p>
+<p><b>151 ##&#8225;a</b>Antietam National Battlefield (Md.)</p>
+<p><b>151 ##&#8225;a</b>Greenwich Village (New York, N.Y.)</p>
+<p><b>151 ##&#8225;a</b>King Ranch (Tex.)</p>
+<p><b>151 ##&#8225;a</b>Warm Springs Indian Reservation (Or.)</p>
+<p><b>151 ##&#8225;a</b>Delaware Memorial Bridge (Del. and N.J.)</p>
+<p><b>151 ##&#8225;a</b>Paris (France)<b>&#8225;v</b>Guidebooks</p>
+<p><b>151 ##&#8225;a</b>Russia<b>&#8225;x</b>Territorial expansion<b>&#8225;v</b>Maps, Pictorial</p>
+<p><b>151 ##&#8225;a</b>United States<b>&#8225;x</b>History<b>&#8225;y</b>Civil War, 1861-1865<b>&#8225;x</b>Conscientious objectors</p>
+<p><b>151 ##&#8225;a</b>Venus (Planet)</p>
+<p><b>151 ##&#8225;a</b>Green River (Ky. : River)</p>
+<p><b>151 ##&#8225;a</b>Casper (Wyo.)<b>&#8225;v</b>Maps</p>
+<p><b>151 ##&#8225;a</b>United States<b>&#8225;x</b>Foreign relations<b>&#8225;y</b>1993-<b>&#8225;v</b>Periodicals</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="155"></a>155 - OTSIKKOMUOTO - LAJITYYPPIÄ/MUOTOA ILMAISEVA TERMI (ET)</h3>
+<p>Lajityyppiä tai muotoa ilmaisevan termi, jota käytetään otsikkomuotona. 
+Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto 
+ja lisämääre, viittaus, viittaus ja lisämääre. Termi voi 
+sisältää useampia sanoja.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Lajityyppiä/muotoa kuvaava termi (ET)</li>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>155 ##&#8225;a</b>Bird's-eye views<b>&#8225;y</b>1874</p>
+<p><b>155 ##&#8225;a</b>Cartoons<b>&#8225;y</b>1952</p>
+<p><b>155 ##&#8225;a</b>Dictionaries<b>&#8225;x</b>French<b>&#8225;y</b>18th century</p>
+<p><b>155 ##&#8225;a</b>Hymnals<b>&#8225;z</b>Massachusetts<b>&#8225;y</b>18th century</p>
+<p><b>155 ##&#8225;a</b>Photographs<b>&#8225;v</b>Periodicals</p>
+<p><b>155 ##&#8225;a</b>Agenda<b>&#8225;x</b>Weekly<b>&#8225;y</b>1980-1985</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="180"></a>180 - OTSIKKOMUOTO - YLEINEN LISÄMÄÄRE (ET)</h3>
+<p>Aihetta, muotoa tai kieltä ilmaiseva termi, jota käytetään otsikkomuotona lisämääretietueessa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>180 ##&#8225;x</b>Russian<b>&#8225;v</b>Dictionaries</p>
+<p><b>180 ##&#8225;x</b>Political aspects</p>
+<p><b>180 ##&#8225;x</b>Rhetoric<b>&#8225;x</b>Ability testing</p>
+<p><b>180 ##&#8225;x</b>Arabic [or, Italian, etc.]</p>
+<p><b>180 ##&#8225;x</b>Civilization<b>&#8225;y</b>16th century</p>
+<p><b>180 ##&#8225;x</b>History<b>&#8225;y</b>18th century<b>&#8225;x</b>Exhibitions</p>
+<p><b>180 ##&#8225;x</b>Nuclear reactor safety<b>&#8225;y</b>1975-1985<b>&#8225;z</b>United States</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="181"></a>181 - OTSIKKOMUOTO - MAANTIETEELLINEN LISÄMÄÄRE (ET)</h3>
+<p>Maantieteellinen nimi tai termi, jota käytetään otsikkomuotona 
+lisämääretietueessa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>181 ##&#8225;z</b>Paris (France)<b>&#8225;v</b>Photographs</p>
+<p><b>181 ##&#8225;z</b>Mississippi<b>&#8225;z</b>Tippah County<b>&#8225;x</b>History</p>
+<p><b>181 ##&#8225;z</b>Washington (D.C.)<b>&#8225;y</b>1890-1910</p>
+<p><b>181 ##&#8225;z</b>Hudson River Valley (N.Y. and N.J.)</p>
+<p><b>181 ##&#8225;z</b>New York (State)<b>&#8225;z</b>Buffalo</p>
+<p><b>181 ##&#8225;z</b>Foreign countries<b>&#8225;x</b>History and criticism</p>
+<p><b>181 ##&#8225;z</b>Antarctica<b>&#8225;z</b>Weddell Sea Region</p>
+<p><b>181 ##&#8225;z</b>Germany<b>&#8225;x</b>History<b>&#8225;y</b>1933-1945</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="182"></a>182 - OTSIKKOMUOTO - AIKAA ILMAISEVA LISÄMÄÄRE (ET)</h3>
+<p>Aikaa ilmaiseva termi, jota käytetään otsikkomuotona 
+lisämääretietueessa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>182 ##&#8225;y</b>1981-<b>&#8225;v</b>Periodicals</p>
+<p><b>182 ##&#8225;y</b>To 1500</p>
+<p><b>182 ##&#8225;y</b>18th century</p>
+<p><b>182 ##&#8225;y</b>Early church, ca. 30-600</p>
+<p><b>182 ##&#8225;y</b>Great War, 1843-1852</p>
+<p><b>182 ##&#8225;y</b>Geometric period, ca. 900-700 B.C.</p>
+<p><b>182 ##&#8225;y</b>Middle Ages, 600-1500</p>
+<p><b>182 ##&#8225;y</b>Sung-Yüan dynasties, 960-1368</p>
+<p><b>182 ##&#8225;y</b>Civil War, 1861-1865<b>&#8225;x</b>Conscientious objectors</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="185"></a>185 - OTSIKKOMUOTO - MUOTOA ILMAISEVA LISÄMÄÄRE (ET)</h3>
+<p>Muotoa tai lajityyppiä ilmaiseva termi, jota käytetään otsikkomuotona 
+lisämääretietueessa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;v</b> - Muotoa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;x</b> - Yleinen lisämääre (T)</li>
+	<li><b>&#8225;y</b> - Aikaa ilmaiseva lisämääre (T)</li>
+	<li><b>&#8225;z</b> - Maantieteellinen lisämääre (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>185 ##&#8225;v</b>Fiction</p>
+<p><b>185 ##&#8225;v</b>Abbreviations</p>
+<p><b>185 ##&#8225;v</b>Indexes<b>&#8225;v</b>Periodicals</p>
+<p><b>185 ##&#8225;v</b>case studies<b>&#8225;v</b>software</p>
+<p><b>185 ##&#8225;v</b>Dictionaries<b>&#8225;x</b>Spanish</p>
+<p><b>185 ##&#8225;v</b>Poetry<b>&#8225;y</b>To 1500</p>
+<p><b>185 ##&#8225;v</b>Catalogs and collections<b>&#8225;z</b>United States</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

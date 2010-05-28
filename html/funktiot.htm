@@ -1,0 +1,130 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21 - funktiokoodit</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21<br>
+		Funktiokoodit (valikoima)</h1>
+		<p align="center"><font size="2">Käännösten pohjana <a href="http://www.loc.gov/marc/">
+		MARC 21 Concise Formats</a><br>
+		(Library of Congress, <a href="http://www.loc.gov/marc/ndmso.html">
+		Network Development MARC Standards Office</a>)</font></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 22.2.2008.<br>
+Ks. <a href="ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<hr>
+<ul>
+	<li><a href="#johdanto">Johdanto</a></li>
+	<li><a href="#ohjeita">Käyttöohjeita</a></li>
+	<li><a href="funktiot_termit.htm">Funktiokoodit suomenkielisen termin mukaisessa aakkosjärjestyksessä</a></li>
+	<li><a href="funktiot_koodit.htm">Funktiokoodit koodin mukaisessa aakkosjärjestyksessä</a><br>
+&nbsp;</li>
+	<li>Ks. myös Library of Congressin lista<br>
+	<i>
+	<a href="http://www.loc.gov/marc/relators/relators.html">MARC Code Lists for Relators, Sources, 
+	Description Conventions: PART I: Relator Codes</a></i></li>
+</ul>
+<hr>
+<h2><a name="johdanto"></a>Johdanto</h2>
+<p>Funktiokoodit ovat kolmikirjaimisia koodeja Library of Congressin 
+ylläpitämällä listalla <i>MARC Code List for Relator Codes</i>. Tähän listaan on 
+koottu Suomessa useimmin käytettävät funktiokoodit suomenkielisten vastineidensa 
+kera.</p>
+<p>Koodit ovat selattavissa sekä <a href="funktiot_koodit.htm">koodin</a> että suomenkielisen 
+<a href="funktiot_termit.htm">termin</a> mukaisessa 
+aakkosjärjestyksessä.</p>
+<p>Funktiokoodeja käytetään pääasiassa bibliografisen formaatin kentissä 
+100/110/11, 600/610/611 ja 700/710/711. Koodi tallennetaan yhteen (tai 
+useampaan, jos halutaan merkitä useita eri funktioita) osakenttään &#8225;4, joka 
+yleensä sijoitetaan kentän viimeiseksi osakentäksi.</p>
+<p>Koodeja voidaan käyttää seuraavissa kentissä/osakentissä:</p>
+<h3><b>Bibliografinen formaatti:</b></h3>
+<ul>
+	<li>100&#8225;4 (Pääkirjaus - Henkilönnimi: Funktiokoodi)</li>
+	<li>110&#8225;4 (Pääkirjaus - Yhteisönnimi: Funktiokoodi)</li>
+	<li>111&#8225;4 (Pääkirjaus - Kokouksen nimi: Funktiokoodi)</li>
+	<li>270&#8225;4 (Osoite: Funktiokoodi)</li>
+	<li>600&#8225;4 (Henkilönnimi asiasanana: Funktiokoodi)</li>
+	<li>610&#8225;4 (Yhteisönnimi asiasanana: Funktiokoodi)</li>
+	<li>611&#8225;4 (Kokouksen nimi asiasanana: Funktiokoodi)</li>
+	<li>630&#8225;4 (Yhtenäistetty nimeke asiasanana: Funktiokoodi)</li>
+	<li>650&#8225;4 (Aihetta ilmaiseva termi asiasanana: Funktiokoodi)</li>
+	<li>651&#8225;4 (Maantieteellinen nimi asiasanana: Funktiokoodi)</li>
+	<li>654&#8225;4 (Fasettianalysoitu asiasana: Funktiokoodi)</li>
+	<li>662&#8225;4 (Hierarkkinen maantieteellinen nimi asiasanana: Funktiokoodi)</li>
+	<li>700&#8225;4 (Lisäkirjaus - Henkilönnimi: Funktiokoodi)</li>
+	<li>710&#8225;4 (Lisäkirjaus - Yhteisönnimi: Funktiokoodi)</li>
+	<li>711&#8225;4 (Lisäkirjaus - Kokouksen nimi: Funktiokoodi)</li>
+	<li>720&#8225;4 (Lisäkirjaus - Kontrolloimaton nimi: Funktiokoodi)</li>
+	<li>800&#8225;4 (Sarjalisäkirjaus - Henkilönnimi: Funktiokoodi)</li>
+	<li>810&#8225;4 (Sarjalisäkirjaus - Yhteisönnimi: Funktiokoodi)</li>
+	<li>811&#8225;4 (Sarjalisäkirjaus - Kokouksen nimi: Funktiokoodi)</li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p><hr>
+<h2><a name="ohjeita"></a>Käyttöohjeita</h2>
+<ol>
+	<li>1XX kentissä funktiokoodia käytetään vain niissä tapauksissa kun tekijä 
+	ei ole sama kuin tekstin kirjoittaja (&quot;aut&quot;). Funktiokoodia käytetään siis 
+	silloin, kun halutaan osoittaa säveltäjä, kuvittaja, kuvataiteilija tms. 
+	päätekijäksi.<br>
+&nbsp;</li>
+	<li>7XX kentissä funktiokoodi on pakollinen kaikissa tapauksissa, paitsi kun 
+	kyse on puhtaasti tekstin kirjoittajasta (&quot;aut&quot;).<br>
+&nbsp;</li>
+	<li>6XX kentissä (myös 270 ja 8XX) funktiokoodia voidaan käyttää kun se 
+	katsotaan soveltuvaksi, mutta se ei ole pakollinen.<br>
+&nbsp;</li>
+	<li>Funktiokoodi valitaan ensisijaisesti tältä listalta. Jos mikään koodi ei 
+	täsmällisesti vastaa haluttua funktiota, valitaan tilalle yleisempi 
+	funktiokoodi. Yksityiskohtaisempia koodeja voi hakea myös Library of Congressin listalta, ks.<br>
+	<i>
+	<a href="http://www.loc.gov/marc/relators/relators.html">MARC Code Lists for Relators, Sources, 
+	Description Conventions: PART I: Relator Codes</a></i>.<br>
+&nbsp;</li>
+	<li>Funktiokoodi sijoitetaan yleensä kentän viimeiseksi osakentäksi. 
+	Tekijä-/nimekelisäkirjauksissa (7XX&#8225;a+&#8225;t) funktiokoodi (&#8225;4) sijoitetaan 
+	ennen nimeketietoja.<br>
+&nbsp;</li>
+	<li>Funktiokoodi on toistettava. Useita funktiokoodeja voidaan siis liittää 
+	samaan henkilöön, yhteisöön tai kokoukseen. Jokainen funktiokoodi 
+	tallennetaan omaan osakenttään &#8225;4.<br>
+&nbsp;</li>
+	<li>Jos sopiva funktiokoodi puuttuu kokonaan, tieto voidaan tallentaa 
+	selväkielisenä kentästä riippuen osakenttään &#8225;e tai ‡j (Funktiotermi). 
+	Selväkielinen funktiotermi tallennetaan yleensä silloin, kun sopiva 
+	funktiokoodi puuttuu eikä funktio käy yksiselitteisesti selville 
+	muusta kuvailusta. Uusia funktiokoodeja voi toivoa ottamalla yhteyttä 
+	osoitteeseen <u>
+	marc-posti(at)helsinki.fi</u>.</li>
+</ol>
+<p><a href="#alku">Sivun alkuun</a></p>
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.htm">MARC 21 -etusivulle</a><br>
+<a href="aukt/index.htm">Auktoriteettitiedot</a> | 
+<a href="bib/index.htm">Bibliografiset tiedot</a> |
+<a href="hold/index.htm">Varastotiedot</a></p>
+<hr>
+<p align="left">&nbsp;</p>
+
+</body>
+
+</html>

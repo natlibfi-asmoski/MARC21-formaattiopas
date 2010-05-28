@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <datafields>
+    <title>Fyysisen kuvailun jne. kentät (3XX)</title>
+    <description>Kentät 300-362 sisältävät tietoja kuvailun kohteen fyysisistä ominaisuuksista, ilmestymistiheydestä ja hinnasta. Näihin kenttiin tallennetaan myös tietoja jakelusta ja turvaluokituksesta.</description>
+    <datafield tag="300" repeatable="Y">
+      <name>Ulkoasutiedot</name>
+      <description paragraph="1">Kuvailun kohteen fyysinen kuvaus mukaan lukien sen laajuus/kesto ja mitat yms. fyysiset yksityiskohdat, kuten liiteaineistojen kuvaus.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Laajuus tai kesto</name>
+          <description>Kuvailun kohteen sivumäärä, volyymit, kasetit, kokonaiskesto jne.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Muut fyysiset yksityiskohdat</name>
+          <description>Esim. kuvitus, väritys, soittonopeus, äänen laatu, äänikanavien määrä, elokuvan esitysmuoto.<br /><strong>&#8225;c</strong> - Mitat (T)<br /> Ilmaistaan senttimetreinä, millimetreinä tai tuumina; voi sisältää tarkentavaa tietoa suluissa.</description>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Liiteaineisto</name>
+          <description>Voi sisältää liiteaineiston fyysistä kuvailua suluissa.</description>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Yksikön tyyppi</name>
+          <description>Termejä kuten <em>sivua</em>, <em>volyymia</em>, <em>laatikkoa</em>.</description>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yksikön koko</name>
+          <description>Osakenttään &#8225;f merkityn yksikön koko. Osakenttä &#8225;g on toistettavissa, kun halutaan antaa kokotietoja useassa muodossa.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 opetustaulu.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 videokas. (86 min)</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 740 s. : <strong>&#8225;b</strong> kuv., kartt., nuott. ; <strong>&#8225;c</strong> 25 cm.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 5 nid. (90, 100, 85, 120, 105 s.)</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 30 diaa : <strong>&#8225;b</strong> vär. ; <strong>&#8225;c</strong> 5 x 5 cm + <strong>&#8225;e</strong> 1 C-kas. (10 min) + tekstivihko (4 s. ; 21 cm)</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 levyke ; <strong>&#8225;c</strong> 3.5" + <strong>&#8225;e</strong> käyttöohje (2 lehteä)</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 tekstivihko (119 s.), 1 nuotisto (67 s.), 2 C-kas., 1 videokas. (79 min 20 sek) : <strong>&#8225;b</strong> kuv., nuott.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 partituuri (30 s.) ; <strong>&#8225;c</strong> 20 cm + <strong>&#8225;a</strong> 16 ääntä ; <strong>&#8225;c</strong> 32 cm.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 äänilevy (20&#8217;00) : <strong>&#8225;b</strong> 33 1/3 kierr./min, stereo.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 optinen levy (CD-ROM) ; <strong>&#8225;c</strong> 12 cm + <strong>&#8225;e</strong> ohjevihko.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 160 slides : <strong>&#8225;b</strong> col. ; <strong>&#8225;c</strong> 2 x 2 in.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> diary <strong>&#8225;a</strong> 1 <strong>&#8225;f</strong> volume <strong>&#8225;a</strong> (463 <strong>&#8225;f</strong> pages) ; <strong>&#8225;c</strong> 17 cm x 34.5 cm.</text>
+        </example>
+        <example>
+          <text><strong>300 ## &#8225;a</strong> 1 globe : <strong>&#8225;b</strong> col., wood, mounted on brass stand ; <strong>&#8225;c</strong> 12 cm. in diam.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="306" repeatable="N">
+      <name>Kesto</name>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Kesto</name>
+          <description>Kuusi numeroa muodossa <em>ttmmss</em> kertovat äänitteen keston tai nuottijulkaisussa ilmoitetun musiikkiteoksen keston. Jos kesto on vähemmän kuin yksi tunti, tunnit (tt) merkitään kahtena nollana. Jos kesto on vähemmän kuin yksi minuutti, myös minuutit (mm) merkitään kahtena nollana.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>306 ## &#8225;a</strong> 002016</text>
+        </example>
+        <example>
+          <text><strong>306 ## &#8225;a</strong> 003100 <strong>&#8225;a</strong> 001839</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="307" repeatable="Y">
+      <name>Käyttöajat jne.</name>
+      <description paragraph="1">Merkitään päivät ja/tai kellonajat, jolloin kuvailun kohde on saatavana tai käytettävissä. Käytetään pääasiassa elektronisen aineiston tietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Käyttöajat</em></description>
+            </value>
+            <value code="8">
+              <description>Ei vakionäyttöä</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Käyttöajat</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Lisätietoja</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>307 ## &#8225;a</strong> M-F, 6:30am-9:00pm (EST); <strong>&#8225;b</strong> with brief interruptions for periodic update/backup of data.</text>
+        </example>
+        <example>
+          <text><strong>307 ## &#8225;a</strong> Daily, 7am-7pm; <strong>&#8225;b</strong> text files only.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="310" repeatable="N">
+      <name>Nykyinen ilmestymistiheys</name>
+      <description paragraph="1">Kohteen tai sen päivityksen nykyinen ilmestymistiheys. Ilmestymistiheyden alkamisaika merkitään, kun se ei ole sama kuin julkaisun alkamisaika.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Nykyinen ilmestymistiheys</name>
+          <description>Tietoja voidaan täydentää Jatkuvien julkaisujen koodeilla merkkipaikoissa <a href="008.xml#CR">008/18-19</a> (Ilmestymistiheys ja Säännöllisyys).</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Nykyisen ilmestymistiheyden alkamisaika</name>
+          <description>Aika on eri kuin julkaisun alkamisaika, jolloin myös aikaisempi ilmestymistiheys merkitään kenttään <a href="#321">321</a>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>310 ## &#8225;a</strong> Epäsäännöllinen <strong>&#8225;b</strong> 2001-</text>
+        </example>
+        <example>
+          <text><strong>310 ## &#8225;a</strong> Päivitetään jatkuvasti <strong>&#8225;b</strong> 2004-</text>
+        </example>
+        <example>
+          <text><strong>310 ## &#8225;a</strong> Osa lehden sisällöstä uusitaan päivittäin, osa viikoittain</text>
+        </example>
+        <example>
+          <text><strong>310 ## &#8225;a</strong> Kolme kertaa vuodessa</text>
+        </example>
+        <example>
+          <text><strong>310 ## &#8225;a</strong> Uutisten päivitys klo 12:30 paikallista aikaa</text>
+        </example>
+        <example>
+          <text><strong>310 ## &#8225;a</strong> Jatkuva eräajopäivitys</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="321" repeatable="Y">
+      <name>Aikaisempi ilmestymistiheys</name>
+      <description paragraph="1">Kohteen tai sen päivityksen aikaisempi ilmestymistiheys, kun nykyinen tiheys on merkitty kenttään <a href="#310">310</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aikaisempi ilmestymistiheys</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Aikaisemman ilmestymistiheyden aikaväli</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>321 ## &#8225;a</strong> Kymmenen numeroa vuodessa, <strong>&#8225;b</strong> 1982-1984</text>
+        </example>
+        <example>
+          <text><strong>321 ## &#8225;a</strong> Kerran kuukaudessa, <strong>&#8225;b</strong> maaliskuu 1972 - joulukuu 1980</text>
+        </example>
+        <example>
+          <text><strong>321 ## &#8225;a</strong> Kaksi kertaa vuodessa, <strong>&#8225;b</strong> 1981-1982</text>
+        </example>
+        <example>
+          <text><strong>321 ## &#8225;a</strong> Epäsäännöllinen, <strong>&#8225;b</strong> 1966-1983</text>
+        </example>
+        <example>
+          <text><strong>321 ## &#8225;a</strong> Päivitys kerran kuukaudessa, <strong>&#8225;b</strong> 1998-2000</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="336" repeatable="Y">
+      <name>Content type</name>
+      <description paragraph="1">The form of communication through which a work is expressed. Used in conjunction with Leader /06 (Type of record), which indicates the general type of content of the resource. Field 336 information enables expression of more specific content types and content types from various lists.</description>
+      <description paragraph="2">Multiple content types from the same source vocabulary or code list may be recorded in the same field in separate occurrences of subfield $a (Content type term) or subfield $b (Content type code). Terms from different source vocabularies are recorded in separate occurrences of the field.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Content type term</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Content type code</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Koodin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>336 ## &#8225;a</strong> performed music <strong>&#8225;2</strong> marccontent</text>
+        </example>
+        <example>
+          <text><strong>336 ## &#8225;b</strong> txt <strong>&#8225;2</strong> marccontent <strong>&#8225;3</strong> liner notes</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="337" repeatable="Y">
+      <name>Media type</name>
+      <description paragraph="1">Media type reflects the general type of intermediation device required to view, play, run, etc., the content of a resource. Used as an alternative to or in addition to the coded expression of Media type in field 007/00 (Category of material). Field 337 information enables indication of more specific media types and media types from various lists.</description>
+      <description paragraph="2">Multiple media types from the same source vocabulary or code list may be recorded in the same field in separate occurrences of subfield $a (Media type term) or subfield $b (Media type code). Terms from different source vocabularies are recorded in separate occurrences of the field.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Media type term</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Media type code</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Koodin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>337 ## &#8225;a</strong> audio <strong>&#8225;2</strong> marcmedia</text>
+        </example>
+        <example>
+          <text><strong>337 ## &#8225;b</strong> u <strong>&#8225;2</strong> marcmedia <strong>&#8225;3</strong> liner notes</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="338" repeatable="Y">
+      <name>Carrier type</name>
+      <description paragraph="1">Carrier type reflects the format of the storage medium and housing of a carrier in combination with the media type (which indicates the intermediation device required to view, play, run, etc., the content of a resource). Used as an alternative to or in addition to the coded expression of carrier type in field 007/01 (Specific material designation). Field 338 information enables indication of more specific carrier types and carrier types from various lists.</description>
+      <description paragraph="2">Multiple media types from the same source vocabulary or code list may be recorded in the same field in separate occurrences of subfield $a (Carrier type term) or subfield $b (Carrier type code). Terms from different source vocabularies are recorded in separate occurrences of the field.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Carrier type term</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Koodin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>338 ## &#8225;a</strong> audio disc <strong>&#8225;2</strong> marccarrier</text>
+        </example>
+        <example>
+          <text><strong>338 ## &#8225;b</strong> ad <strong>&#8225;2</strong> marccarrier</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="340" repeatable="Y">
+      <name>Fyysinen viestin</name>
+      <description paragraph="1">Fyysisiä kuvailutietoja kohteelle, jonka käyttö vaatii teknistä laitteistoa tai kohteelle, joka vaatii erityistä konservointia tai varastointia.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Pohjamateriaali ja kokoonpano</name>
+          <description>Tallenteen fyysinen aines (esim. asetaatti, savi, pergamentti, puu) ja kokoonpano (esim. kasetti, siru, videonauha).</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Mitat</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Pintamateriaali</name>
+          <description>Pohjamateriaalin päällä oleva aines (esim. muste, maali, valkuainen).</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Tallennustekniikka</name>
+          <description>Tallennuksessa käytetty tekniikka (esim. rei'itys, muottiin valaminen, röntgensäde).</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Tukimateriaali</name>
+          <description>Esim. aines, jota on käytetty kehyksissä tai levyjen muoteissa.</description>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Nopeus/suhde</name>
+          <description>Normaali nopeus tai suhdeluku, jonka mukaisesti aineistoa pitää käyttää, jotta sisältö olisi käyttökelpoista (esim. äänitteen kierrosluku).</description>
+        </subfield>
+        <subfield code="h" repeatable="Y">
+          <name>Sijainti viestimessä</name>
+          <description>Kuvatun materiaalin sijainti viestimessä (esim. kehyksen numero).</description>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Viestimen tekniset tiedot</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>340 ## &#8225;a</strong> marble.</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;a</strong> parchment <strong>&#8225;b</strong> 20 cm. folded to 10 x 12 cm.</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;3</strong> self-portrait <strong>&#8225;a</strong> rice paper <strong>&#8225;b</strong> 7" x 9" <strong>&#8225;c</strong> colored inks <strong>&#8225;e</strong> none <strong>&#8225;h</strong> between entry for April 7 and April 19, 1843.</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;d</strong> handwritten <strong>&#8225;d</strong> typed.</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;a</strong> canvas <strong>&#8225;b</strong> 30 x 57 cm <strong>&#8225;c</strong> colored oil-base paints <strong>&#8225;e</strong> wood.</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;3</strong> case files <strong>&#8225;a</strong> aperture cards <strong>&#8225;b</strong> 9 x 19 cm <strong>&#8225;d</strong> microfilm <strong>&#8225;f</strong> 48x.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="342" repeatable="Y">
+      <name>Maantieteellistä tilaa koskeva referenssi</name>
+      <description paragraph="1">Koordinaattien viitekehyksen kuvaus. Käyttäjän täytyy olla selvillä siitä, miten mittakaavassa käytetty referenssimenetelmä on vaikuttanut paikkatietojen täsmällisyyteen, jotta täsmällisyys voidaan tarvittaessa palauttaa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Maantieteellistä tilaa koskeva referenssiulottuvuus</description>
+          <values>
+            <value code="0">
+              <description>Horisontaalinen koordinaattijärjestelmä</description>
+            </value>
+            <value code="1">
+              <description>Vertikaalinen koordinaattijärjestelmä</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Maantieteellistä tilaa koskeva referenssimenetelmä</description>
+          <values>
+            <value code="0">
+              <description>Maantieteellinen</description>
+            </value>
+            <value code="1">
+              <description>Karttaprojektio</description>
+            </value>
+            <value code="2">
+              <description>Grid-koordinaatisto</description>
+            </value>
+            <value code="3">
+              <description>Paikallinen tasokoordinaatisto</description>
+            </value>
+            <value code="4">
+              <description>Paikallinen</description>
+            </value>
+            <value code="5">
+              <description>Geodeettinen malli</description>
+            </value>
+            <value code="6">
+              <description>Korkeus</description>
+            </value>
+            <value code="7">
+              <description>Menetelmä merkitty osakenttään &#8225;2</description>
+            </value>
+            <value code="8">
+              <description>Syvyys</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Nimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Koordinaatti- tai etäisyysyksiköt</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Leveysasteen ratkaisu</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Pituusasteen ratkaisu</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Standardi paralleeli- tai viistoviivan leveysaste</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Viistoviivan pituusaste</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Meridiaanin tai projektiokeskuksen pituusaste</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Origon tai projektiokeskuksen leveysaste</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Itäinen eroavaisuus</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Pohjoinen eroavaisuus</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Mittakaavakerroin</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Perspektiivipisteen korkeus pinnasta</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Atsimuuttikulma</name>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Atsimuutin mittauspisteen pituusaste tai pystysuora pituusaste navasta</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Landsat-numero ja polun numero</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Aikavyöhyketunniste</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Ellipsoidin nimi</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Ellipsin isoakselin puolikas</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Litistyneisyysarvon nimittäjä</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Pystysuora ratkaisu</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>Pystysuora koodausmenetelmä</name>
+        </subfield>
+        <subfield code="v" repeatable="N">
+          <name>Projektion tai ruudukon kuvaus</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Tietoja paikallisesta taso- tai georeferenssijärjestelmästä</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Referenssimenetelmä</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>342 01 &#8225;a</strong> Polyconic <strong>&#8225;g</strong> 0.9996 <strong>&#8225;h</strong> 0 <strong>&#8225;i</strong> 500,000 <strong>&#8225;j</strong>0</text>
+        </example>
+        <example>
+          <text><strong>342 16 &#8225;a</strong> National geodetic vertical datum of 1929 <strong>&#8225;v</strong> 1 <strong>&#8225;b</strong> meters <strong>&#8225;w</strong> Implicit coordinates</text>
+        </example>
+        <example>
+          <text><strong>342 00 &#8225;c</strong> 0.0004 <strong>&#8225;d</strong> 0.0004 <strong>&#8225;b</strong> Decimal degrees</text>
+        </example>
+        <example>
+          <text><strong>342 05 &#8225;s</strong> World geodetic system 72 <strong>&#8225;t</strong> 6378135 <strong>&#8225;u</strong> 298.26</text>
+        </example>
+        <example>
+          <text><strong>342 18 &#8225;a</strong> Lowest astronomical tide</text>
+        </example>
+        <example>
+          <text><strong>342 05 &#8225;a</strong> World Geodetic System 1984 (WGS-84) <strong>&#8225;c</strong> 0.0000001 <strong>&#8225;d</strong> 0.0000001<strong>&#8225;b</strong> Degrees, Minutes, and Decimal seconds <strong>&#8225;q</strong> World Geodetic System 1984 (WGS-84) <strong>&#8225;r</strong> 6378137.0 <strong>&#8225;s</strong> 298.257223563</text>
+        </example>
+        <example>
+          <text><strong>342 02 &#8225;a</strong> Universal Transverse Mercator <strong>&#8225;p</strong> 13 <strong>&#8225;k</strong> 0.9996 <strong>&#8225;g</strong> -105.00 <strong>&#8225;h</strong> 0.00 <strong>&#8225;i</strong> 500,000 <strong>&#8225;j</strong> 0.0</text>
+        </example>
+        <example>
+          <text><strong>342 18 &#8225;a</strong> NGVD 1929 <strong>&#8225;t</strong> 0.01 <strong>&#8225;b</strong> feet <strong>&#8225;u</strong> Explicit depth coordinate included with horizontal coordinates</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="343" repeatable="Y">
+      <name>Tasokoordinaatit</name>
+      <description paragraph="1">Tietoja tasaiselle pinnalle kehitetystä koordinaattijärjestelmästä. Tietoja tarvitaan, jotta maantieteellistä tilaa koskevan tiedon käyttäjä voisi tunnistaa etäisyyksien suureet, etäisyydet ja kulmat. Nämä määrittelevät pisteen sijainnin referenssitasolla, jolle Maan pinta on projisoitu.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tasokoordinaattien koodausmenetelmä</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Tason etäisyysyksiköt</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Abskissaratkaisu</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Ordinaattaratkaisu</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Etäisyysratkaisu</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Suuntaratkaisu</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Suuntayksiköt</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Suunnan referenssisuunta</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Suunnan referenssimeridiaani</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>343 ## &#8225;a</strong> Distance and bearing.</text>
+        </example>
+        <example>
+          <text><strong>343 ## &#8225;a</strong> Coordinate pair; <strong>&#8225;b</strong> meters; <strong>&#8225;c</strong> 22; <strong>&#8225;d</strong> 22.</text>
+        </example>
+        <example>
+          <text><strong>343 ## &#8225;a</strong> Coordinate pair <strong>&#8225;e</strong> 30.0; <strong>&#8225;f</strong> 0.0001; <strong>&#8225;g</strong> Degrees, minutes and decimal seconds; <strong>&#8225;h</strong> North; <strong>&#8225;b</strong> U.S. feet.</text>
+        </example>
+        <example>
+          <text><strong>343 ## &#8225;i</strong> Magnetic</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="351" repeatable="Y">
+      <name>Aineiston järjestysperiaatteet</name>
+      <description paragraph="1">Kuvailee kokoelman organisointia ja järjestystä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Organisointi</name>
+          <description>Tapa, jolla kuvaillut aineistot on jaettu pienempiin yksiköihin, tietoja tiedostojen tiedostorakenteesta tai tietokoneohjelmiston tai -järjestelmän nimi.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Järjestys</name>
+          <description>Kaava, jolla aineistot on järjestetty yksikön sisällä (esim. aakkosiin, maan mukaan).</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Hierarkkinen taso</name>
+          <description>Kuvaillun aineiston hierarkkinen taso suhteessa muihin tietueisiin.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>351 ## &#8225;b</strong> Järjestetty kunnittain aakkosjärjestykseen ja toissijaisesti vuosittain siten, että uusin aineisto on ensin.</text>
+        </example>
+        <example>
+          <text><strong>351 ## &#8225;3</strong> Päiväkirjat ja muistikirjat <strong>&#8225;a</strong> Järjestetty neljään sarjaan: I. Nuoruus, 1846-1852. II. Uran alku, 1853-1865. III. Poliittinen elämä, 1866-1895. IV. Eläköityminen, 1896-1903; <strong>&#8225;b</strong> Kronologinen järjestys.</text>
+        </example>
+        <example>
+          <text><strong>351 ## &#8225;a</strong> Organized into subdivisions: Lot 2962-1 Indoor Classes, Activities and Displays--Lot 2962-2 Outdoor Classes--Lot 2962-3 Buildings.</text>
+        </example>
+        <example>
+          <text><strong>351 ## &#8225;a</strong> Fixed-length, nonhierarchical; <strong>&#8225;b</strong> Month by carrier code and flight number.</text>
+        </example>
+        <example>
+          <text><strong>351 ## &#8225;a</strong> SPSS system file.</text>
+        </example>
+        <example>
+          <text><strong>351 ## &#8225;c</strong> Series; <strong>&#8225;a</strong> Organized into five subseries; <strong>&#8225;b</strong> Arranged by form of material.</text>
+        </example>
+        <example>
+          <text><strong>351 ## &#8225;3</strong> Permits for fishery operations, 1914-24 <strong>&#8225;c</strong> Subseries; <strong>&#8225;b</strong> Alphabetical by state then by year of renewal and within year by permit number.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="352" repeatable="Y">
+      <name>Digitaalinen graafinen esitys</name>
+      <description paragraph="1">Graafisen informaation esittämiseen käytetyn referenssimenetelmän ja mekanismin kuvaus. Tiedot varastointitekniikasta, kohteiden lukumäärästä ja tiedostoformaatista.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Suora referenssimenetelmä</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Objektityyppi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Objektien lukumäärä</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Rivien määrä</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Sarakkeiden määrä</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Pystyviivojen määrä</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>VPF topologiataso</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Epäsuora referenssikuvaus</name>
+        </subfield>
+        <subfield code="q" repeatable="Y">
+          <name>Digitaalisen kuvan formaatti</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>352 ## &#8225;a</strong> Vector.</text>
+        </example>
+        <example>
+          <text><strong>352 ## &#8225;a</strong> Point : <strong>&#8225;b</strong> Entity point.</text>
+        </example>
+        <example>
+          <text><strong>352 ## &#8225;a</strong> Raster : <strong>&#8225;b</strong> pixel <strong>&#8225;d</strong> (5,000 x <strong>&#8225;e</strong> 5,000) ; <strong>&#8225;q</strong> Tiff.</text>
+        </example>
+        <example>
+          <text><strong>352 ## &#8225;a</strong> Vector : <strong>&#8225;b</strong> GT-polygon composed of chains <strong>&#8225;c</strong> (70).</text>
+        </example>
+        <example>
+          <text><strong>352 ## &#8225;a</strong> Vector : <strong>&#8225;i</strong> 100 year floodplain boundary, 500 year floodplain boundary.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="355" repeatable="Y">
+      <name>Salassapitoaste</name>
+      <description paragraph="1">Asiakirjaan, nimekkeeseen, tiivistelmään, sisältöhuomautukseen ja/tai tekijään liittyvän salassapidon yksityiskohdat. Lisäksi voidaan antaa käsittelyyn tai ulkoiseen jakeluun liittyviä ohjeita. Kenttä voi sisältää myös tietoja salassapitoasteen alentamisesta tai kumoamisesta, turvaluokitusjärjestelmän nimen tai luokituksen alkuperämaan koodin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Salassapidettävä elementti</description>
+          <values>
+            <value code="0">
+              <description>Asiakirja</description>
+            </value>
+            <value code="1">
+              <description>Nimeke</description>
+            </value>
+            <value code="2">
+              <description>Tiivistelmä</description>
+            </value>
+            <value code="3">
+              <description>Huomautus sisällöstä</description>
+            </value>
+            <value code="4">
+              <description>Tekijä</description>
+            </value>
+            <value code="5">
+              <description>Tietue</description>
+            </value>
+            <value code="8">
+              <description>Muu elementti</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Salassapitoaste</name>
+          <description>Termi, joka määrittelee asiakirjan, nimekkeen, tiivistelmän, sisältöhuomautuksen tai tekijän salassapidon asteen (esim. <em>julkinen</em>, <em>salainen</em>, <em>luottamuksellinen</em>).</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Käsittelyohjeet</name>
+          <description>Esim. kuka voi käsitellä tai nähdä asiakirjan, nimekkeen, tiivistelmän, sisältöhuomautuksen tai tekijän nimen.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Tietoja ulkoisesta jakelusta</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Tapahtuma, jossa alennettu tai kumottu salassapito</name>
+          <description>Esitetään usein fraasina, esim. OARD (Original Agency Determination Required). Päivämäärät tallennetaan osakenttiin &#8225;g tai &#8225;h.</description>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Luokitusjärjestelmä</name>
+          <description>Turvaluokitusjärjestelmän nimi, ei välttämättä kontrolloidulta listalta.</description>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Maakoodi</name>
+          <description>Luokituksen alkuperämaan koodi. Koodi otetaan listalta, ks. <em> <a href="../maat.htm">MARC21 Maakoodit</a></em>.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Turvaluokituksen alentamisen päivämäärä</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Salassapidon päättymispäivämäärä</name>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Auktoriteetti, joka päättää salassapitoasteen alentamisesta tai kumoamisesta</name>
+          <description>Organisaation koodina käytetään ISIL-tunnusta, <em>ks. <a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>355 0# &#8225;a</strong> Salainen <strong>&#8225;h</strong> 1.10.2011</text>
+        </example>
+        <example>
+          <text><strong>355 0# &#8225;a</strong> Unclassified <strong>&#8225;b</strong> FOUO</text>
+        </example>
+        <example>
+          <text><strong>355 2# &#8225;a</strong> Confidential <strong>&#8225;b</strong> NOFORN</text>
+        </example>
+        <example>
+          <text><strong>355 0# &#8225;a</strong> Secret <strong>&#8225;b</strong> FRD <strong>&#8225;c</strong> AS <strong>&#8225;d</strong> 010101</text>
+        </example>
+        <example>
+          <text><strong>355 0# &#8225;a</strong> Top Secret <strong>&#8225;c</strong> US <strong>&#8225;c</strong> CA <strong>&#8225;f</strong> xxk</text>
+        </example>
+        <example>
+          <text><strong>355 0# &#8225;a</strong> Secret <strong>&#8225;b</strong> NOFORN <strong>&#8225;h</strong> 20230301 <strong>&#8225;j</strong> [agency identifier]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="357" repeatable="N">
+      <name>Tekijän/tuottajan määräykset jakelusta</name>
+      <description paragraph="1">Tekijän tai tuottajan määräykset aineiston jakelusta. Osakentässä &#8225;a annetaan erityinen termi, joka kertoo että tekijä tai tuottaja hallinnoi aineistoa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tekijän tai tuottajan hallinnointia kuvaava termi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Tekijä- tai tuottaja</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Aineiston auktorisoidut vastaanottajat</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Muut rajoitukset</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>357 ## &#8225;a</strong> PROPIN <strong>&#8225;b</strong> Lockport Aviation <strong>&#8225;c</strong> Northfield Avionics Project 11234 <strong>&#8225;c</strong> Air Frames Inc., Project 11234 Support Team</text>
+        </example>
+        <example>
+          <text><strong>357 ## &#8225;a</strong> ORCON <strong>&#8225;b</strong> ITAC <strong>&#8225;c</strong> CIA <strong>&#8225;c</strong> DIA <strong>&#8225;c</strong> UKIA</text>
+        </example>
+        <example>
+          <text><strong>357 ## &#8225;a</strong> ORCON <strong>&#8225;b</strong> ITAC <strong>&#8225;c</strong> 313 th MIB <strong>&#8225;c</strong> Distribution List B-32-91 <strong>&#8225;g</strong> Must be returned to originator after 30 days</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="362" repeatable="Y">
+      <name>Numerointitiedot</name>
+      <description paragraph="1">Jatkuvan julkaisun ensimmäisen ja viimeisen vihkon vuodet/vuosikerrat ja/tai juokseva numerointi. Jos tieto vuosista on hankittu muualta kuin julkaisun ensimmäisestä tai viimeisestä numerosta, sen lähde yleensä kerrotaan huomautuksessa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vuosiluvun muoto</description>
+          <values>
+            <value code="0">
+              <description>Virallisessa muodossa</description>
+            </value>
+            <value code="1">
+              <description>Vapaamuotoinen huomautus</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Vuodet/vuosikerrat ja/tai juokseva numerointi</name>
+          <description>Kun annetaan molemmat, juokseva numerointi merkitään sulkeisiin.</description>
+        </subfield>
+        <subfield code="z" repeatable="N">
+          <name>Tietojen lähde</name>
+          <description>Lähdeviite osakenttään &#8225;a merkityille tiedoille; käytetään kun ensimmäisen indikaattorin arvo on 1.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> 1958, 1-1991, 10<br /><em>Vuosikohtainen numerointi.</em></text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> 15. vsk., 1 (1969)-36. vsk., 8 (1990)<br /><em>Juokseva numerointi.</em></text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> 1988/1989-<br /><em>Katevuosi poikkeaa kalenterivuodesta.</em></text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> 63 (1985/86) (verksamhetsåret 148-)<br /><em>Kaksi eri numerointitapaa.</em></text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> 15. Elok. 1995-</text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> 23. Jahrg., Nr 4 (1972)-</text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> Vol. 10, no. 1 (Jan./Feb. 1991)-</text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> Vol. 6 (13, no 3/4 (1969)-)</text>
+        </example>
+        <example>
+          <text><strong>362 0# &#8225;a</strong> Vol. 1, no. 1 (Jan. 1941)-vol. 4, no. 5 (May 1950 ; n.s., vol.1, no. 1 (June1950)-vol.2, no. 12 (May 1952)</text>
+        </example>
+        <example>
+          <text><strong>362 1# &#8225;a</strong> Began with 1930 issue. <strong>&#8225;z</strong> Cf. Letter from Ak. State Highway Dept., Aug. 6, 1975.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="363" repeatable="Y">
+      <name>Normalisoitu päiväysmerkintö</name>
+      <description paragraph="1">Numeerinen, aakkosellinen ja/tai normalisoitu päiväysmerkintö, jolla tunnistetaan bibliografisen kohteen osat ja joka näyttää kokonaisuuden ja osien suhteen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Alkamis/loppumismerkintö</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Alkamistieto</description>
+            </value>
+            <value code="1">
+              <description>Loppumistieto</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Ilmestymistilanne</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+            <value code="0">
+              <description>Suljettu</description>
+            </value>
+            <value code="1">
+              <description>Avoin</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Ensimmäinen numerointitaso</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Toinen numerointitaso</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kolmas numerointitaso</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Neljäs numerointitaso</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Viides numerointitaso</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Kuudes numerointitaso</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Vaihtoehtoinen numerointitapa, ensimmäinen taso</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Vaihtoehtoinen numerointitapa, toinen taso</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Ensimmäinen kronologian taso</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Toinen kronologian taso</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Kolmas kronologian taso</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Neljäs kronologian taso</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Vaihtoehtoinen numerointitapa, kronologia</name>
+          <description>Vaihtoehtoisen kronologian korkein taso.</description>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>Ensimmäisen tason tekstimuotoinen tieto</name>
+          <description>Tekstimuotoista tietoa numeroinnista ja kronologiasta.</description>
+        </subfield>
+        <subfield code="v" repeatable="N">
+          <name>Ensimmäinen kronologian taso, julkaiseminen</name>
+          <description>Käytetään kun julkaisuaika on eri kuin osakentässä &#8225;i.</description>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Sisäinen huomautus</name>
+        </subfield>
+        <subfield code="z" repeatable="y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>363 01 &#8225;i8</strong> 2004</text>
+        </example>
+        <example>
+          <text><strong>363 01 &#8225;a</strong> 15 <strong>&#8225;b</strong> 2 <strong>&#8225;i</strong> 2005</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="365" repeatable="Y">
+      <name>Kauppahinta</name>
+      <description paragraph="1">Sisältää kohteen nykyisen hinnan tai erityisen vientihinnan missä tahansa valuutassa. Tarkoitettu kirjakaupan antamille tiedoille (kirjakaupan hinta, ONIX-hintakoodi, hinnan voimassaoloaika, maakoodi, valuutta, verojen määrä jne.).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Hintatyypin koodi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Hinta</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Valuuttakoodi</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Hintayksikkö</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Hintahuomautus</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Hinta voimassa alkaen</name>
+          <description>Muodossa <em>vvvvkkpp</em>, samoin osakentässä &#8225;g.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Hinta voimassa saakka</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Veroprosentti 1</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Veroprosentti 2</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>ISO-maakoodi</name>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/">ISO 3166-1, Codes for the Representation of Names of Countries</a></em>.</description>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>MARC-maakoodi</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="../maat.htm">MARC21 Maakoodit</a></em>.</description>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Hinnoittelija</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Hintatyyppikoodin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relators.html">MARC Code Lists for Relators, Sources, Description Conventions</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>365 ## &#8225;a</strong> 01 <strong>&#8225;b</strong> 45.00 <strong>&#8225;c</strong> USD <strong>&#8225;d</strong> 00 <strong>&#8225;2</strong> onix-pt</text>
+        </example>
+        <example>
+          <text><strong>365 ## &#8225;a</strong> 02 <strong>&#8225;b</strong> 0.59 <strong>&#8225;c</strong> GBP <strong>&#8225;d</strong> 01 <strong>&#8225;j</strong> GB <strong>&#8225;h</strong> S 0.50 17.5 0.59.09 <strong>&#8225;2</strong> onix-pt</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="366" repeatable="Y">
+      <name>Kaupallinen saatavuus</name>
+      <description paragraph="1">Yksityiskohtaista tietoa kohteen saatavuudesta julkaisijalta/kustantajalta.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Julkaisijan/kustantajan tiivistetty nimeketieto</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Julkaisuaika</name>
+          <description>Muodossa <em>vvvvkkpp</em>.</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Saatavuuden tila koodina</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Odotettavissa oleva seuraava saatavuuspäivä</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Julkaisijan alennusryhmä</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Päivä, josta lähtien kuvailun kohde on ollut loppuunmyyty</name>
+          <description>Muodossa <em>vvvvkkpp</em>.</description>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>ISO-maakoodi</name>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/">ISO 3166-1, Codes for the Representation of Names of Countries</a></em>.</description>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>MARC-maakoodi</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="../maat.htm">MARC21 Maakoodit</a></em>.</description>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Organisaation tunnistus</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Saatavuuden tilakoodin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relators.html">MARC Code Lists for Relators, Sources, Description Conventions</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>366 ## &#8225;a</strong> Steinberg Adolescence (3rd ed) <strong>&#8225;b</strong> 19921200</text>
+        </example>
+        <example>
+          <text><strong>366 ## &#8225;b</strong> 19960517 <strong>&#8225;c</strong> NP 19951205 <strong>&#8225;2</strong> onix-as</text>
+        </example>
+        <example>
+          <text><strong>366 ## &#8225;c</strong> RP 19951205 <strong>&#8225;d</strong> 19960600</text>
+        </example>
+        <example>
+          <text><strong>366 ## &#8225;c</strong> OP 20011105 <strong>&#8225;g</strong> 20011013 <strong>&#8225;j</strong> UK <strong>&#8225;2</strong> onix-as</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

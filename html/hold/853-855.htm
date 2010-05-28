@@ -1,0 +1,506 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Ilmestymistietojen kentät (853-855)</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<ul>
+	<li><a href="#yleista">ILMESTYMISTIEDOT--YLEISTÄ TIETOA</a></li>
+	<li><a href="#853">853 - ILMESTYMISTIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ</a> (T)</li>
+	<li><a href="#854">854 - ILMESTYMISTIEDOT--OHEISAINEISTO YMS.</a> (T)</li>
+	<li><a href="#855">855 - ILMESTYMISTIEDOT--HAKEMISTO YMS.</a> (T)</li>
+</ul>
+<hr>
+<h3><a name="yleista"></a>ILMESTYMISTIEDOT--YLEISTÄ TIETOA</h3>
+<p>Kentät 853-855 sisältävät selosteita, joiden avulla tunnistetaan 
+kohteen numerointi- ja julkaisuaikatasot, sekä koodeja, jotka määrittelevät kentissä 
+863-865 kuvattujen varastotietojen 
+julkaisukaavan. Kenttien 853-855 ja 863-865 toisiinsa liittyvät esiintymät  
+linkitetään toisiinsa numerolla osakentässä &#8225;8 (Linkki- ja järjestysnumero).</p>
+<p>Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista 
+toisiinsa ja niiden toistettavuudesta löytyy osiosta <i><a href="yleista.htm">
+Varastotiedot--yleistä tietoa</a></i>.</p>
+<h3>Indikaattorit</h3>
+<ul>
+	<li>Ensimmäinen - Tiivistettävyys ja laajennettavuus <i>[853/854]</i><br>
+	Kentissä 853 ja 854 tällä arvolla ilmaistaan voidaanko näihin liittyvien 
+	määrämuotoisten varastotietokenttien osakenttien &#8225;a-&#8225;m tiedot muuntaa 
+	automaattisesti joko kappalekohtaisesta väliksi, joka ilmaisee samat 
+	varastotiedot näyttämällä vain ensimmäisen ja viimeisen osan tiedot tai 
+	tiivistetystä &quot;ensimmäinen-viimeinen&quot; -välistä selkeäksi merkinnöksi, 
+	joka listaa jokaisen osan erikseen.<ul>
+		<li><b>0</b> - Ei voida tiivistää tai laajentaa</li>
+		<li><b>1</b> - Voidaan tiivistää, mutta ei laajentaa</li>
+		<li><b>2</b> - Voidaan tiivistää tai laajentaa</li>
+		<li><b>3</b> - Tuntematon</li>
+		</ul>
+	</li>
+	<li>Ensimmäinen - Määrittelemätön <i>[855]</i><ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Selostetietojen luotettavuus <i>[853/854]</i><br>
+	Kentissä 853 ja 854 tällä arvolla ilmaistaan 
+	selosteissa annettujen tietojen täydellisyys 
+	suhteessa määrämuotoisten varastotietojen eri tasoihin (&#8225;a-&#8225;m), 
+	sekä niiden näkyminen bibliografisessa kohteessa.<ul>
+		<li><b>0</b> - Tasojen selosteet tarkistettu, kaikki tasot 
+		löytyvät kohteesta</li>
+		<li><b>1</b> - Tasojen selosteet tarkistettu, tasoja voi puuttua 
+		kohteesta</li>
+		<li><b>2</b> - Tasojen selosteet tarkistamatta, kaikki tasot 
+		löytyvät kohteesta</li>
+		<li><b>3</b> - Tasojen selosteet tarkistamatta, tasoja voi puuttua 
+		kohteesta</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön <i>[855]</i><ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	</ul>
+<h3>Osakenttäkoodit</h3>
+<p><b>&#8225;a-&#8225;h</b> - Numerointitasojen selosteet</p>
+	<p>Kentissä 863-865 ja 853-855 osakentät &#8225;a-&#8225;h ovat vastaavuussuhteessa 
+	toisiinsa, joskaan käytettyjen osakenttien ei tarvitse olla samat. 
+	Täydellistä vastaavuutta ei tarvita, kun numerointitasojen selosteita ei haluta käyttää näytöissä. 
+	Sen sijaan osakenttien on vastattava toisiaan täydellisesti, kun kentän 863 tai 864 
+	tiedot halutaan tiivistää tai laajentaa automaattisesti. Tällöin mahdolliset 
+	puuttuvat numerointitasojen selosteet voidaan keksiä ja merkitä hakasulkeisiin 
+	([ ]).</p>
+	<p>Kun kohteeseen soveltuu vaihtoehtoisia numerointeja, niiden selosteet 
+	merkitään osakenttiin &#8225;g ja &#8225;h. Jos vaihtoehtoisia numerointitasoja on 
+	enemmän kuin kaksi, käytetään kenttiä 866-868 (Vapaamuotoiset varastotiedot).</p>
+	<p>Kun käytetään vain julkaisuaikatasoja (kohteessa ei ole 
+	numerointia), ne merkitään asianomaisiin osakenttiin &#8225;a-&#8225;h. Jos 
+	julkaisuaikatasoa 
+	kuvaavaa selostetta ei ole tarkoitettu käytettäväksi näytössä, se merkitään 
+	sulkeisiin, esim. <i>(year)</i>.</p>
+<p>Kun oheisaineiston tai hakemiston nimeä käytetään näytössä (jos niiden 
+numerointi liittyy tietyn bibliografisen perusyksikön tiettyyn volyymiin tai osaan, esim. v. 9, suppl.1-3), ne merkitään 
+asianomaisiin osakenttiin &#8225;a-&#8225;f.</p>
+	<p>Kun numerointi koostuu varastossa olevien yksiköiden määrästä, jota 
+	seuraa yksiköitä kuvaava termi, koko fraasi sijoitetaan sopivaan 863-865 
+	kenttään ja 853-855 kenttä sisältää yksikkötermin (sulkeissa, jos sitä ei haluta näyttöön).</p>
+	<ul>
+		<li><b>&#8225;a</b> - Ensimmäinen numerointitaso (ET)</li>
+		<li><b>&#8225;b</b> - Toinen numerointitaso (ET)</li>
+		<li><b>&#8225;c</b> - Kolmas numerointitaso (ET)</li>
+		<li><b>&#8225;d</b> - Neljäs numerointitaso (ET)</li>
+		<li><b>&#8225;e</b> - Viides numerointitaso (ET)</li>
+		<li><b>&#8225;f</b> - Kuudes numerointitaso (ET)</li>
+		<li><b>&#8225;g</b> - Vaihtoehtoinen numerointi, ensimmäinen numerointitaso (ET)</li>
+		<li><b>&#8225;h</b> - Vaihtoehtoinen numerointi, toinen numerointitaso (ET)</li>
+	</ul>
+	<p><b>&#8225;i-&#8225;m</b> - Julkaisuaikatasojen selosteet</p>
+	<p>Kentissä 863-865 ja 853-855 osakentät &#8225;i-&#8225;m ovat vastaavuussuhteessa 
+	toisiinsa, joskaan käytettyjen osakenttien ei tarvitse olla samat. 
+	Täydellistä vastaavuutta ei tarvita, kun julkaisuaikatasojen selosteita ei haluta käyttää 
+	näytöissä. 
+	Sen sijaan osakenttien on vastattava toisiaan täydellisesti, kun kentän 863 tai 864 
+	tiedot halutaan tiivistää tai laajentaa automaattisesti. Tällöin yleensä 
+	puuttuvat julkaisuaikatasojen selosteet voidaan keksiä ja merkitä hakasulkeisiin 
+	([ ]).</p>
+	<p>Kun kohteeseen soveltuu vaihtoehtoinen julkaisuaika, sen seloste 
+	merkitään osakenttään &#8225;m. Jos vaihtoehtoisia julkaisuaikatasoja on useita, 
+	käytetään kenttiä 866-868 (Vapaamuotoiset varastotiedot).</p>
+	<p>Kun käytetään vain julkaisuaikatasoja (kohteessa ei ole numerointia), niitä 
+	ei merkitä osakenttiin &#8225;i-&#8225;m, vaan ne merkitään asianomaisiin osakenttiin &#8225;a-&#8225;h. 
+	Jos julkaisuaikatasoa kuvaavaa selostetta ei ole tarkoitettu käytettäväksi 
+	näytössä, se merkitään sulkeisiin, esim. <i>(year)</i>.</p>
+	<ul>
+		<li><b>&#8225;i</b> - Ensimmäinen julkaisuaikataso (ET)</li>
+		<li><b>&#8225;j</b> - Toinen julkaisuaikataso (ET)</li>
+		<li><b>&#8225;k</b> - Kolmas julkaisuaikataso (ET)</li>
+		<li><b>&#8225;l</b> - Neljäs julkaisuaikataso (ET)</li>
+		<li><b>&#8225;m</b> - Vaihtoehtoinen numerointi, julkaisuaikataso (ET)<br>
+&nbsp;</li>
+		<li><b>&#8225;n</b> - Huomautus julkaisukaavasta (ET)</li>
+		<li><b>&#8225;o</b> - Oheisaineiston tyyppi (ET) <i>[854]</i><br>
+		Seloste, joka kuvaa oheisaineiston tyyppiä, esim. ostajan opas. 
+		Osakenttä &#8225;o seuraa välittömästi sitä selostetta, johon se liittyy. 
+		Jos oheisaineiston nimeke on eri kuin sen tyyppi, nimeke 
+		tallennetaan kentän 864 osakenttään &#8225;o (Oheisaineiston nimeke).</li>
+		<li><b>&#8225;o</b> - Hakemiston tyyppi (ET) <i>[855]</i><br>
+		Seloste, joka kuvaa hakemiston tyyppiä, esim. aihehakemisto. Osakenttä &#8225;o seuraa välittömästi sitä 
+		selostetta, johon se liittyy. Jos hakemiston nimeke on eri kuin sen 
+		tyyppi, nimeke tallennetaan kentän 865 osakenttään &#8225;o (Hakemiston 
+		nimeke).</li>
+		<li><b>&#8225;p</b> - Kappaleiden määrä per painos (ET)</li>
+		<li><b>&#8225;t</b> - Kappaletiedon määre (ET)<br>
+		Seloste kappalenumerolle, joka on linkitetyn määrämuotoisen varastotietokentän osakentässä &#8225;t.</li>
+		<li><b>&#8225;u</b> - Kuvailtavan numerointitason sisältämien bibliografisten yksiköiden määrä (T)<br>
+		Osakenttä &#8225;u seuraa välittömästi sitä numerointitason selostetta, johon se viittaa.
+		Osakenttää &#8225;u ei käytetä osakenttien &#8225;a tai &#8225;g kanssa.<ul>
+			<li><b>[n]</b> - Osien määrä<br>
+			Esim. neljä kertaa vuodessa ilmestyvä julkaisu vaatii 4 numeroa, 
+			jotta siitä muodostuu yksi volyymi. Koska &#8225;u on vaihtuvamittainen 
+			osakenttä, numeroissa ei tarvita etunollia.</li>
+			<li><b>var</b> - Vaihtelee<br>
+			Käytetään, kun tarkka numero olisi merkityksetön.</li>
+			<li><b>und</b> - Määrittelemätön<br>
+			Käytetään, kun osien määrää ei tunneta.</li>
+		</ul>
+		</li>
+		<li><b>&#8225;v</b> - Numeroinnin jatkuvuus (T)<br>
+		Onko kuvaillun tason numerointi jatkuva, vai alkaako se alusta jokaisen 
+		yksikön (volyymi tms.) alussa.<ul>
+		<li><b>c</b> - Numero kasvaa jatkuvasti</li>
+		<li><b>r</b> - Numerointi alkaa alusta jokaisen yksikön alussa</li>
+	</ul>
+		</li>
+		<li><b>&#8225;w</b> - 
+Ilmestymistiheys (ET)<br>Koodi tai numero, joka ilmaisee kohteen ilmestymistiheyden. Osakenttä &#8225;w 
+tallennetaan viimeisen julkaisuaikatason selosteen jälkeen. Tarkemmat 
+		julkaisukaavaa koskevat tiedot tallennetaan osakenttään &#8225;y 
+		(Säännöllisyys) ja myös osakenttää &#8225;p voidaan käyttää, kun moniosaisille 
+		kohteille on tallennettava sekä ilmestymistiheyden koodi että 
+		kappaleiden määrä per painos.<ul>
+		<li>Koodit:<ul>
+		<li><b>a</b> - Kerran vuodessa</li>
+		<li><b>b</b> - Joka toinen kuukausi</li>
+		<li><b>c</b> - Kaksi kertaa viikossa</li>
+		<li><b>d</b> - Päivittäin</li>
+		<li><b>e</b> - Kerran kahdessa viikossa</li>
+		<li><b>f</b> - Puolivuosittain</li>
+		<li><b>g</b> - Kerran kahdessa vuodessa</li>
+		<li><b>h</b> - Kerran kolmessa vuodessa</li>
+		<li><b>i</b> - Kolme kertaa viikossa</li>
+		<li><b>j</b> - Kolme kertaa kuukaudessa</li>
+		<li><b>k</b> - Jatkuva päivitys</li>
+		<li><b>m</b> - Kerran kuukaudessa</li>
+		<li><b>q</b> - Neljäsosavuosittain</li>
+		<li><b>s</b> - Kaksi kertaa kuukaudessa</li>
+		<li><b>t</b> - Kolme kertaa vuodessa</li>
+		<li><b>w</b> - Kerran viikossa</li>
+		<li><b>x</b> - Täysin epäsäännöllinen</li>
+	</ul>
+		</li>
+		<li>Numero<br>
+		Kun mikään yllä mainituista säännöllisen ilmestymistiheyden koodeista ei 
+		sovellu, voidaan vuodessa ilmestyvien numeroiden määrä merkitä numerolla. 
+		Koska &#8225;w on vaihtuvamittainen osakenttä, numerossa ei tarvita etunollia.</li>
+	</ul>
+		</li>
+		<li><b>&#8225;x</b> - Kalenterin vaihtuminen (ET)<br>
+		Yksi tai useampi kaksi- tai nelinumeroinen koodi, joka ilmaisee 
+		ajankohdan jolloin ylin julkaisuaikataso vaihtuu.<ul>
+		<li>Koodit<br>
+		Kaksinumeroinen koodi ilmaisee vaihtumisajankohdan kuukauden tai 
+		vuodenajan. Nelinumeroinen koodi (kuukausi ja päivä) tallennetaan 
+		muodossa <i>kkpp</i>. Numerot tasataan vasemmalle ja käyttämättömissä 
+		merkkipaikoissa on nolla.<ul>
+		<li><u>Kuukausi:</u></li>
+		<li>01-12 - Kuukausi</li>
+		<li><u>Päivä:</u></li>
+		<li>01-31 - Päivä</li>
+		<li><u>Vuodenaika:</u></li>
+		<li>21 - Kevät</li>
+		<li>22 - Kesä</li>
+		<li>23 - Syksy</li>
+		<li>24 - Talvi</li>
+	</ul>
+		</li>
+	</ul>
+		</li>
+		<li><b>&#8225;y</b> - Säännöllisyys (T)<br>
+		Kuvaa osakentässä &#8225;w (Ilmestymistiheys) koodatun julkaisukaavan 
+		säännöllisyyttä. Osakenttä voidaan rakentaa kahdella tavalla käyttämällä 
+		joko julkaisuaika- tai numerointikoodeja. Molemmat aloitetaan 
+		julkaisukoodilla.<ul>
+		<li><i>Julkaisukoodi</i><br>
+		Osakentän ensimmäisen merkkipaikan koodi osoittaa viittaavatko seuraavat 
+		koodit kohteen osien julkaisemiseen tai julkaisemattomuuteen, tai joko 
+		numerointi- tai julkaisuaikaelementtien yhdistämiseen.<ul>
+		<li><b>c</b> - Yhdistetty</li>
+		<li><b>o</b> - Jätetty julkaisematta</li>
+		<li><b>p</b> - Julkaistu</li>
+	</ul>
+		</li>
+		<li><b><i>Julkaisuaikakoodi</i></b><br>
+		Käytettäessä julkaisuaikakoodeja, tiedot kootaan seuraavasti:<br>
+		&lt;Julkaisukoodi&gt;&lt;Julkaisuaikakoodin 
+		määritelmä&gt;&lt;Julkaisuaikakoodi&gt;&lt;Julkaisuaikakoodi&gt;...<br>
+		Osakenttä voi sisältää yhden tai useampia julkaisuaikakoodeja, jotka 
+		liittyvät ensimmäisessä ja toisessa merkkipaikassa annettuihin 
+		julkaisukoodiin ja julkaisuaikakoodin määritelmään. Osakenttää voidaan 
+		toistaa ja tallentaa toisenlainen Julkaisukoodi/Julkaisuaikakoodin 
+		määritelmä/Julkaisuaikakoodi -jakso, kun halutaan merkitä säännöllinen 
+		poikkeus säännöllisessä julkaisukaavassa.</li>
+		<li><i>Julkaisuaikakoodin määritelmä</i><br>
+		Osakentän toisessa merkkipaikassa oleva koodi osoittaa ilmaisevatko 
+		seuraavat julkaisuaikakoodit päivän nimeä, numeerista kuukausi- tai 
+		kuukausi-ja-päivä -koodia, vuodenajan tai vuoden koodia, tai vuoden tai 
+		kuukauden viikon koodia. (Jos osakentässä käytetään numerointikoodeja, 
+		toisen merkkipaikan koodi on e.)<ul>
+		<li><b>d</b> - Päivä</li>
+		<li><b>m</b> - Kuukausi</li>
+		<li><b>s</b> - Vuodenaika</li>
+		<li><b>w</b> - Viikko</li>
+		<li><b>y</b> - Vuosi</li>
+	</ul>
+		</li>
+		<li><i>Julkaisuaikakoodi</i><br>
+		Ilmaisee kohteen osan, jota merkitty säännöllisyystieto koskee. 
+		Useammat koodit erotetaan toisistaan pilkulla ja kaksoisnumerot 
+		merkitään kauttaviivalla (/). Päiville, viikoille, kuukausille ja/tai 
+		vuodenajoille käytetään kaksimerkkistä kirjain- tai numerokoodia. 
+		Vuosille käytetään nelinumeroista koodia. Koodit, joissa on vähemmän 
+		kuin kaksi merkkiä tasataan oikealle ja käyttämättömässä merkkipaikassa 
+		on nolla.<br>
+		Ks. <a href="esimerkit_julkaisuaika.htm">esimerkit julkaisuaikakoodien 
+		käytöstä</a>.</li>
+		<li><b><i>Numerointikoodi</i></b><br>
+		Käytettäessä numerointikoodeja, tiedot kootaan seuraavasti:<br>
+		&lt;Julkaisukoodi&gt;&lt;Numerointikoodin 
+		määritelmä&gt;&lt;Numerointikoodi&gt;&lt;Numerointikoodi&gt;...<br>
+		Numerointikoodia käytetään osakentän &#8225;y toisessa ja kolmannessa 
+		merkkipaikassa kun halutaan merkitä säännöllisyyskaava kohteelle, jossa 
+		järjestys perustuu ainoastaan numerointiin ja/tai kohteille, joissa 
+		järjestys pitää määritellä erikseen kaksoisnumeroiden kohdalla.</li>
+		<li><i>Numerointikoodin määritelmä</i><br>
+		Ilmaisevatko määritelmää seuraavat koodit numerointia vai julkaisuaikaa. 
+		Kun käytetään koodia e, lisätään sen jälkeen myös numero ilmaisemaan 
+		numerointitasoa jota säännöllisyys koskee.<ul>
+		<li><b>e1</b> - Numerointi, ensimmäinen taso</li>
+		<li><b>e2</b> - Numerointi, toinen taso</li>
+	</ul>
+		</li>
+		<li><i>Numerointikoodi</i><br>
+		Ilmaisee kohteen numerot, joita merkitty säännöllisyystieto koskee. 
+		Useammat koodit erotetaan toisistaan pilkulla ja kaksoisnumerot 
+		merkitään kauttaviivalla (/).<br>
+		<br>
+		Numerointikoodin yhteydessä esiintyvä jatkuva numerointi (osakenttä &#8225;v, 
+		koodi c) osoittaa kaksoisnumerot tiettyjen numeroiden järjestyksessä. 
+		Jatkuvan numeroinnin vuoksi todellista numerointia ei voida käyttää 
+		osakentässä &#8225;y. Numerointiarvot on esitettävä odotettujen numeroiden 
+		määränä, jotta kaksoisnumerot voidaan ennakoida. Automaattisissa 
+		järjestelmissä voi olla keinoja ennakoida jatkuvan numeroinnin toinen 
+		numerointitaso tilauksen alussa annetun toisen numerointitason 
+		lähtöarvon perusteella.<br>
+		<br>
+		Säännöllisyyskoodeja ylläpitää Library of Congress, Network Development and MARC Standards Office. 
+		Koodeihin liittyvät kysymykset osoitetaan sinne:
+		<a href="mailto:ndmso@loc.gov">ndmso@loc.gov</a>.<br>
+&nbsp;</li>
+	</ul>
+		</li>
+		<li><b>&#8225;z</b> - Numerointi (T)<br>Kuusimerkkinen koodi, joka kertoo julkaisun numerointisuunnitelman. Koodien 
+avulla voidaan tallentaa erilaisia numerointisuunnitelmia eri 
+numerointitasoille.<ul>
+		<li>Merkinnön tyyppi<br>Ensimmäisessä merkkipaikassa kerrotaan onko numerointi merkitty numeroina, 
+kirjaimina vai niiden yhdistelmänä (numero vai kirjain ensin). Koodia c 
+(Yhdistelmä) tulee käyttää vain silloin, kun toinen merkinnön elementeistä on 
+pysyvä (esim. 1a, 2a, 3a), ei silloin, kun kyseessä on pikemminkin kaksi eri 
+numerointitasoa (esim. 1a, 1b, 1c).<ul>
+		<li><b>a</b> - Numero</li>
+		<li><b>b</b> - Kirjain</li>
+		<li><b>c</b> - Yhdistelmä, numero ensin</li>
+		<li><b>d</b> - Yhdistelmä, kirjain ensin</li>
+		<li><b>e</b> - Symboli tai erityismerkki</li>
+	</ul>
+		</li>
+		<li>Aakkoslaji<br>Toisen merkkipaikan koodi on käytössä, kun numerointisuunnitelma 
+		merkitään kirjaimin (ensimmäisessä merkkipaikassa on koodi b) tai roomalaisin numeroin.<ul>
+		<li><b>a</b> - Ei aakkoslajia</li>
+		<li><b>b</b> - Gemena (pienaakkoset)</li>
+		<li><b>c</b> - Versaali (suuraakkoset)</li>
+		<li><b>d</b> - Sekalajinen (käytetty sekä versaalia että gemenaa)</li>
+	</ul>
+		</li>
+		<li>Merkistö- tai tyyppikoodi<br>Numerointikaavassa käytetty merkistö 
+		merkitään nelimerkkisenä koodina
+		<a href="http://www.unicode.org/iso15924/">ISO 15924</a> (<i>Codes for 
+		the representation of names of scripts</i>) -standardin mukaisesti. 
+		Tyyppikoodi on tarkoitettu numeroille, joita ei ole kirjoitettu 
+		vaihtoehtoisilla merkistöillä ja siten koodattu merkistökoodeilla. 
+		Symboleita varten on käytettävissä koodi sy, jota seuraa käytetty 
+		symboli. Esimerkkejä:<ul>
+		<li><u>Merkistökoodeja:</u></li>
+		<li><b>latn</b> - latina</li>
+		<li><b>arab</b> - arabia</li>
+		<li><b>grek</b> - kreikka</li>
+		<li><u>Tyyppikoodeja:</u></li>
+		<li><b>an##</b> - arabialaiset numerot</li>
+		<li><b>rn##</b> - roomalaiset numerot</li>
+		<li><b>sy&lt;symboli&gt;#</b> - symboli</li>
+	</ul>
+		</li>
+	</ul>
+		</li>
+		<li><b>&#8225;2</b> - Ilmestymistietojen lyhenteiden lähde (T)<br>
+		Koodi otetaan listalta, ks. <i>
+		<a href="http://www.loc.gov/marc/relators/relahome.html">MARC Code Lists 
+		for Relators, Sources, and Description Conventions</a></i>.</li>
+		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)<br>
+		Määrittelee volyymi- tai aikavälin, jota kentän tiedot koskevat.</li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+	</ul>
+<h3>Tiivistämisen ja laajentamisen vaatimukset</h3>
+<p>Varastotietojen pitää täyttää seuraavat ehdot, jotta ne voidaan 
+automaattisesti tiivistää tai laajentaa.</p>
+<ul>
+	<li><i>Nimiö/17 Koodaustaso</i><br>
+	<b>Tiivistäminen</b> voidaan tehdä varastotiedoille, joiden koodaustaso on 4 
+	tai 5.<br>
+	<b>Laajentaminen</b> voidaan tehdä varastotiedoille, joiden koodaustaso on 
+	3, 4 tai 5.<br>
+&nbsp;</li>
+	<li><i>Ilmestymistietojen ja varastotietojen vastaavuussuhde kentissä 
+	853/854 ja 863/864</i><br>
+	<b>Tiivistäminen ja laajentaminen</b> edellyttävät, että selosteosakentät 
+	(&#8225;a-&#8225;m) on tallennettu ilmestymistietojen kenttiin (853/854) ja niitä 
+	vastaavat numerointi- ja julkaisuaikatasot on tallennettu niihin 
+	linkitettyihin varastotietojen kenttiin (863/864).<br>
+&nbsp;</li>
+	<li><i>Julkaisukaavaosakentät &#8225;u-&#8225;y</i><br>
+	Kun kenttiin 863 tai 864 on merkitty vain korkein numerointitaso 
+	(osakentät &#8225;a, &#8225;g, &#8225;i, &#8225;m), tiivistäminen tai laajentaminen ei edellytä 
+	julkaisukaavaan liittyviä osakenttiä kentissä 853 tai 854. Kun seuraavia 
+	tasoja on merkitty, tiivistäminen tai laajentaminen edellyttää 
+	asiaankuuluvat julkaisukaavaan liittyvät tiedot seuraaviin osakenttiin:<ul>
+		<li><b>&#8225;u</b> - Kuvailtavan numerointitason sisältämien bibliografisten 
+		yksiköiden määrä</li>
+		<li><b>&#8225;v</b> - Numeroinnin jatkuvuus</li>
+		<li><b>&#8225;w</b> - Ilmestymistiheys</li>
+		<li><b>&#8225;x</b> - Kalenterin vaihtuminen</li>
+		<li><b>&#8225;y</b> - Säännöllisyys</li>
+	</ul>
+	</li>
+</ul>
+<blockquote>
+	<p>Osakenttien &#8225;a-&#8225;m <b>tiivistäminen</b> kentissä 863-864 edellyttää 
+	tietoja osakentissä &#8225;u ja &#8225;v. Osakentässä &#8225;u ei saa olla koodia var 
+	(Vaihtelee) tai und (Määrittelemätön).<br>
+	Osakenttien &#8225;a-&#8225;m <b>laajentaminen</b> kentissä 863-864 edellyttää tietoja 
+	osakentissä &#8225;u, &#8225;v ja &#8225;w ja mahdollisesti myös osakentissä &#8225;x ja &#8225;y.</p>
+</blockquote>
+<h3>Järjestysluvut</h3>
+<p>Kun halutaan osoittaa että järjestyslukujen pitää näkyä näytössä, selosteen 
+eteen voidaan tallentaa plus-merkki (+). Jos selostetta ei ole tallennettu, 
+plus-merkki voidaan tallentaa yksinään, jolloin vastaava 863 osakenttä näytetään 
+järjestyslukuna.</p>
+<p><b>853 03&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;b</b>+qtr.<br>
+<b>863 40&#8225;8</b>1.1<b>&#8225;a</b>1982<b>&#8225;b</b>1</p>
+<p><b>853 03&#8225;8</b>1<b>&#8225;a</b>+<br>
+<b>863 40&#8225;8</b>1.1<b>&#8225;a</b>1</p>
+<p>Huom, edellä kuvattu tekniikka järjestys- ja päälukujen erottamiselle ei ole 
+pakollista, eikä erottelua tarvitse tehdä. Järjestelmässä tarvitaan sisäiset 
+kielitaulukot, jos järjestysluvut halutaan näyttää oikein. Varastotietojen 
+formaatissa ei ole ohjeita taulukoiden toteutukseen.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="853"></a>853 - ILMESTYMISTIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ (T)</h3>
+<p>Tähän kenttään tallennetaan selosteet, jotka soveltuvat kentän 863 
+(Määrämuotoiset varastotiedot--Bibliografinen perusyksikkö) numerointi- ja 
+julkaisuaikatasojen merkitsemiseen, sekä julkaisukaavaan liittyvät koodit. 
+Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän &#8225;8 avulla 
+linkitettyjen kenttien 853 ja 863 tiedot.</p>
+<p>Tarkempi selostus kentän 853 osakentistä löytyy osiosta <i>
+<a href="#yleista">Ilmestymistiedot--yleistä tietoa</a></i>.</p>
+<h4>Esimerkkejä</h4>
+<p><b>853 02&#8225;a</b>v<b>&#8225;i</b>(year)<b>&#8225;w</b>g<b>&#8225;y</b>pyyyy1/yyy2</p>
+<p><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>2<b>&#8225;v</b>r<b>&#8225;c</b>pt.<b>&#8225;u</b>2<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;k</b>(day)<b>&#8225;w</b>j<b>&#8225;y</b>pd01,10,20</p>
+<p><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>12<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>m<b>&#8225;x</b>11</p>
+<p><b>853 23&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>4<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(season)<b>&#8225;w</b>q<b>&#8225;x</b>21</p>
+<p><b>853 00&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;w</b>4</p>
+<p><b>853 01&#8225;8</b>2<b>&#8225;a</b>new ser.:v.</p>
+<p><b>853 03&#8225;8</b>1<b>&#8225;a</b>(unit)</p>
+<p><b>853 03&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.</p>
+<p><b>853 00&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>sect.<b>&#8225;u</b>12<b>&#8225;v</b>r<b>&#8225;c</b>no.<b>&#8225;u</b>7<b>&#8225;v</b>r<b>&#8225;d</b>pt.<b>&#8225;u</b>var<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;k</b>(day)<b>&#8225;l</b>week<b>&#8225;w</b>d<b>&#8225;x</b>01</p>
+<p><b>853 22&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>12<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;k</b>(day)<b>&#8225;w</b>m<b>&#8225;x</b>01</p>
+<p><b>853 22&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>04<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>q<b>&#8225;x</b>12<b>&#8225;t</b>c</p>
+<p><b>853 10&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>8<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>m<b>&#8225;x</b>01<b>&#8225;y</b>pm 01/02, 03, 04, 05, 06/07, 08/09, 10, 11/12</p>
+<p><b>853 03&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;w</b>w<b>&#8225;y</b>ow01,0699we,0700we,0801we,0802we,0803we,0804we,98we,99we</p>
+<p><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>48<b>&#8225;v</b>r<b>&#8225;w</b>w<b>&#8225;x</b>0101<b>&#8225;y</b>ow05we</p>
+<p><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>issue<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;k</b>(day)<b>&#8225;w</b>w<b>&#8225;z</b>aaarab</p>
+<p><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>48<b>&#8225;v</b>r<b>&#8225;w</b>w<b>&#8225;x</b>0101<b>&#8225;y</b>ow05we<b>&#8225;z</b>aaan##</p>
+<p><b>853 02&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>52<b>&#8225;v</b>c<b>&#8225;w</b>w<b>&#8225;y</b>ce251/52</p>
+<p><b>853 02&#8225;a</b>v. <b>&#8225;i</b>(year)<b>&#8225;w</b>g<b>&#8225;y</b>pyyyy1/yyy2</p>
+<p><b>853 02&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>6<b>&#8225;v</b>r<b>&#8225;w</b>s<b>&#8225;x</b>01,02,03,04,05,06,07,08,09,10,11,12<b>&#8225;y</b>pw02we,04we<b>&#8225;y</b>ce21/3,4/6</p>
+<p><b>853 02&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>365<b>&#8225;v</b>c<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;k</b>(day)<b>&#8225;w</b>d<b>&#8225;x</b>0101<b>&#8225;y</b>cd1224/1225<b>&#8225;y</b>ce2358/359<b>&#8225;n</b>Based 
+on v. 11, no. 2172/2173, December 24/December 25, 2001.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="854"></a>854 - ILMESTYMISTIEDOT--OHEISAINEISTO YMS. (T)</h3>
+<p>Tähän kenttään tallennetaan selosteet, jotka soveltuvat kentän 864 
+(Määrämuotoiset varastotiedot--Oheisaineisto yms.) numerointi- ja 
+julkaisuaikatasojen merkitsemiseen, sekä julkaisukaavaan liittyvät koodit. 
+Kenttää käytetään vain silloin, kun kyseistä oheisaineistoa ei ole luetteloitu 
+erikseen. Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän &#8225;8 avulla 
+linkitettyjen kenttien 854 ja 864 tiedot.</p>
+<p>Tarkempi selostus kentän 854 osakentistä löytyy osiosta <i>
+<a href="#yleista">Ilmestymistiedot--yleistä tietoa</a></i>.</p>
+<h4>Esimerkkejä</h4>
+<p><b>854 00&#8225;8</b>1<b>&#8225;a</b>v.</p>
+<p><b>854 00&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>suppl.</p>
+<p><b>854 00&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;w</b>a</p>
+<p><b>854 03&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;b</b>(month)<b>&#8225;c</b>(day)<b>&#8225;w</b>d<b>&#8225;y</b>odsa</p>
+<p><b>854 02&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>11<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>m<b>&#8225;x</b>01<b>&#8225;y</b>cm07/08</p>
+<p><b>854 03&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>10<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>m<b>&#8225;x</b>09<b>&#8225;y</b>om07,08</p>
+<p><b>854 23&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>3<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(season)<b>&#8225;w</b>3<b>&#8225;x</b>21<b>&#8225;y</b>ps21,22,23</p>
+<p><b>854 00&#8225;8</b>1<b>&#8225;a</b>Supplement to v.<b>&#8225;i</b>(year)<b>&#8225;w</b>a</p>
+<p><b>854 33&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;b</b>(month)</p>
+<p><b>854 00&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;o</b>map supplement</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="855"></a>855 - ILMESTYMISTIEDOT--HAKEMISTO YMS. (T)</h3>
+<p>Tähän kenttään tallennetaan selosteet, jotka soveltuvat kentän 865 
+(Määrämuotoiset varastotiedot--Hakemisto yms.) numerointi- ja 
+julkaisuaikatasojen merkitsemiseen, sekä julkaisukaavaan liittyvät koodit. 
+Kenttää käytetään vain silloin, kun kyseistä hakemistoa ei ole luetteloitu 
+erikseen. Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän &#8225;8 avulla 
+linkitettyjen kenttien 855 ja 865 tiedot.</p>
+<p>Tarkempi selostus kentän 855 osakentistä löytyy osiosta <i>
+<a href="#yleista">Ilmestymistiedot--yleistä tietoa</a></i>.</p>
+<h4>Esimerkkejä</h4>
+<p><b>855 ##&#8225;8</b>1<b>&#8225;a</b>v.</p>
+<p><b>855 ##&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;o</b>alphabetical index</p>
+<p><b>855 ##&#8225;8</b>1<b>&#8225;a</b>(year)<b>&#8225;o</b>ten year cumulation</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

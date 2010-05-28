@@ -1,0 +1,113 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Auktoriteettitiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		AUKTORITEETTITIEDOT</h1>
+		</td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2>Johdanto</h2>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>MARC 21 auktoriteettitietojen eli ohjeellisten tietojen formaatti on suunniteltu MARC-tietueissa 
+hakutietoina käytettävien nimien ja asiasanojen ohjeellisten muotojen, 
+ohjeelliseen muotoon viittaavien nimi-, asiasana- ja lisämääremuotojen, sekä näiden 
+muotojen välisiä suhteita kuvaavien tietojen tallentamiseen.</p>
+<p><b>Nimeä</b> voidaan käyttää pää- tai lisäkirjauksena, asiasana- tai 
+sarjalisäkirjauksena. Nimi viittaa seuraaviin:</p>
+<ul>
+	<li>Henkilönnimet (X00)</li>
+	<li>Yhteisönnimet (X10)</li>
+	<li>Kokousten nimet (X11)</li>
+	<li>Hallintoalueiden nimet (X51)</li>
+	<li>Yhtenäistetyt nimekkeet (X30)</li>
+	<li>Tekijä/nimeke-yhdistelmät</li>
+</ul>
+<p><b>Asiasanaa</b> voidaan käyttää vain asiasanakirjauksessa. Asiasana viittaa 
+seuraaviin:</p>
+<ul>
+	<li>Aikaa ilmaisevat termit (X48)</li>
+	<li>Aihetta ilmaisevat termit (X50)</li>
+	<li>Maantieteelliset nimet (X51)</li>
+	<li>Nimet, joihin liittyy asialisämääreitä</li>
+	<li>Termit ja nimet, joita käytetään asialisämääreinä</li>
+</ul>
+<p>MARC 21 auktoriteettitietojen formaatti mahdollistaa tietojen tallentamisen 
+myös alanmukaisten ryhmien otsikoista, eli termeistä joita käytetään 
+asiasanastojen systemaattisissa osissa otsikkoina ilmaisemassa 
+termikategorioiden jakoperusteita. Alanmukaisen ryhmän otsikkoa ei voi käyttää 
+hakuterminä.</p>
+
+<hr>
+<h3>Auktoriteettitietueiden lajit</h3>
+
+<p>MARC-auktoriteettitietueet erotetaan muun tyyppisistä MARC-tietueista 
+koodilla <b>z</b> (Auktoriteettitietue) nimiön merkkipaikassa 06 (Tietueen tyyppi). 
+Edelleen MARC 21 auktoriteettitietojen formaatissa erotetaan seitsemän 
+auktoriteettitietueiden lajia merkkipaikassa 008/09 (Tietueen laji):</p>
+<blockquote>
+	<p><b>Vahvistettu otsikkomuoto (koodi a)</b><br>Tietueen 100-155 
+	-kentät sisältävät vahvistettuja otsikkomuotoja. Näiden lisäksi tietue 
+	voi sisältää myös viittauskenttiä varianttimuodoista ja toisista 
+	otsikkomuodoista, sekä huomautuksia esim. käytetystä lähteestä tai 
+	sarjojen käsittelystä.</p>
+	<p><b>Viittaus (koodi b tai c)</b><br>Tietueen 100-155 -kentät sisältävät 
+	vahvistamattomia otsikkomuotoja. Tietue sisältää myös joko kentän 260 (Monitahoinen katso-viittaus, asiasana), kentän 664 (Monitahoinen katso-viittaus, nimi) 
+	tai kentän 666 (Yleinen selittävä viittaus, nimi), jotka opastavat 
+	käyttämään vahvistettua otsikkomuotoa. Merkkipaikassa 008/09 
+	määritellään erilliset koodit tietueille, joita käytetään viittauksena ja 
+	joita ei käytetä viittauksena. Erottelu riippuu siitä, onko kentän 1XX 
+	vahvistettua otsikkomuotoa käytetty jonkin toisen tietueen 4XX 
+	viittauskentässä.</p>
+	<p><b>Lisämääre (koodi d)</b><br>Tietueen 18X-kenttä sisältää 
+	vahvistamattoman otsikkomuodon, joka on tarkoitettu 
+käytettäväksi vahvistetun otsikkomuodon asialisämääreenä.</p>
+	<p><b>Vahvistettu otsikkomuoto ja lisämääre (koodi f)</b><br>Tietueen 15X-kenttä sisältää 
+	vahvistetun otsikkomuodon, jota voidaan käyttää 
+myös asialisämääreenä toisen vahvistetun otsikkomuodon kanssa. (Luetteloiva 
+organisaatio voi halutessaan tehdä otsikkomuotojen ja 
+lisämääreiden tietueet myös erikseen.)<br><br><b>Viittaus ja lisämääre (koodi g)</b><br>Tietueen 15X-kenttä sisältää 
+	vahvistamattoman otsikkomuodon, jota voidaan 
+käyttää viittausterminä sekä asialisämääreenä vahvistetun otsikkomuodon 
+	kanssa. (Luetteloiva organisaatio voi halutessaan tehdä viittausten ja 
+lisämääreiden tietueet myös erikseen.)</p>
+	<p><b>Alanmukaisen ryhmän otsikko (koodi e)</b><br>Tietueen 150-kenttä 
+	sisältää vahvistamattoman termin, joka on tarkoitettu käytettäväksi 
+	asiasanaston systemaattisessa osassa otsikkona ilmaisemassa 
+	termikategorioiden jakoperusteita. Alanmukaisen ryhmän otsikkoa ei voi 
+	käyttää hakuterminä.</p>
+</blockquote>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

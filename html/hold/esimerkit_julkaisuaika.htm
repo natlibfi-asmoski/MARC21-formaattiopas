@@ -1,0 +1,210 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Esimerkkejä: 853-855 &#8225;y</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<h3>Esimerkit</h3>
+<table border="1" width="100%"><tbody>
+  <tr> 
+    <td><b>Julkaisuaikakoodin määritelmä</b></td>
+    <td><b>Mahdollisia julkaisuaikakoodeja</b></td>
+    <td><b>Esimerkki</b></td>
+    <td><b>Merkitys</b></td>
+  </tr>
+  <tr> 
+    <td>d</td>
+    <td>dd</td>
+    <td>su</td>
+    <td>sunnuntai</td>
+  </tr>
+  <tr> 
+    <td>d</td>
+    <td>DD</td>
+    <td>08</td>
+    <td>jokaisen kuukauden 8. päivä</td>
+  </tr>
+
+  <tr> 
+    <td>m</td>
+    <td>MM</td>
+    <td>09</td>
+    <td>syyskuu</td>
+  </tr>
+  <tr> 
+    <td>d</td>
+    <td>MMDD</td>
+    <td>0925</td>
+    <td>syyskuun 25. päivä</td>
+  </tr>
+  <tr> 
+    <td>s</td>
+    <td>SS</td>
+    <td>22</td>
+    <td>kesä</td>
+  </tr>
+  <tr> 
+    <td>w</td>
+    <td>WWdd</td>
+    <td>03we</td>
+    <td>kolmas keskiviikko</td>
+  </tr>
+  <tr> 
+    <td>w</td>
+    <td>MMWWdd</td>
+    <td>0599tu</td>
+    <td>toukokuun viimeinen tiistai</td>
+  </tr>
+  <tr> 
+    <td>w</td>
+    <td>MMWWdd</td>
+    <td>0802we</td>
+    <td>elokuun toinen keskiviikko</td>
+  </tr>
+  <tr> 
+    <td>w</td>
+    <td>MMWW</td>
+    <td>1204</td>
+    <td>joulukuun neljäs viikko</td>
+  </tr>
+  <tr> 
+    <td>y</td>
+    <td>YYYY</td>
+    <td>yyy1/yyy2</td>
+    <td>kahden vuoden aikajakso</td>
+  </tr>
+</tbody></table>
+
+<h3 align="left">Kaavan kuvaus</h3>
+<table border="1" width="100%"><tbody>
+  <tr> 
+    <td><b>Kaava</b></td>
+    <td><b>Merkitys</b></td>
+    <td><b>Ominaisuudet</b></td>
+    <td><b>Mahdolliset arvot, tiivistelmä</b></td>
+  </tr>
+  <tr> 
+    <td>DD</td>
+    <td>päivä</td>
+    <td>kirjaimia</td>
+    <td>mo-su</td>
+  </tr>
+  <tr> 
+    <td>DD</td>
+    <td>päivä</td>
+    <td>numeroita</td>
+    <td>01-31</td>
+  </tr>
+  <tr> 
+    <td>ww</td>
+    <td>viikko</td>
+    <td>numeroita</td>
+    <td>01-53</td>
+  </tr>
+  <tr> 
+    <td>WW</td>
+    <td>viikko</td>
+    <td>numeroita</td>
+    <td>99, 98, 97, 00, 01, 02, 03, 04, 05</td>
+  </tr>
+  <tr> 
+    <td>MM</td>
+    <td>kuukausi</td>
+    <td>numeroita</td>
+    <td>01-12</td>
+  </tr>
+  <tr> 
+    <td>SS</td>
+    <td>vuodenaika</td>
+    <td>numeroita</td>
+    <td>21, 22, 23, 24</td>
+  </tr>
+  <tr> 
+    <td>y</td>
+    <td>vuosi</td>
+    <td>numeroita</td>
+    <td>2002</td>
+  </tr>
+</tbody></table>
+
+<h3 align="left">Kaavan arvot</h3>
+<table border="1" width="100%" id="table2">
+	<tr>
+		<td><b>Viikko - WW</b></td>
+		<td><b>Viikonpäivä - DD</b></td>
+		<td><b>Kuukauden viikko - WW</b></td>
+		<td><b>Kuukausi - MM</b></td>
+		<td><b>Kuukaudenpäivä - DD</b></td>
+		<td><b>Vuodenaika - SS</b></td>
+	</tr>
+	<tr>
+		<td valign="top">01-53</td>
+		<td valign="top">
+		mo - maanantai<br>
+		tu - tiistai<br>
+		we - keskiviikko<br>
+		th - torstai<br>
+		fr - perjantai<br>
+		sa - lauantai<br>
+		su - sunnuntai</td>
+		<td valign="top">
+		99 - viimeinen<br>
+		98 - toiseksi viimeinen<br>
+		97 - kolmanneksi viimeinen<br>
+		00 - jokainen<br>
+		01 - ensimmäinen<br>
+		02 - toinen<br>
+		03 - kolmas<br>
+		04 - neljäs<br>
+		05 - viides</td>
+		<td valign="top">01-12</td>
+		<td valign="top">01-31</td>
+		<td valign="top">
+		21 - kevät<br>
+		22 - kesä<br>
+		23 - syksy<br>
+		24 - talvi</td>
+	</tr>
+</table>
+<p><a href="853-855.htm">Takaisin ilmestymistietojen kenttiin</a></p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

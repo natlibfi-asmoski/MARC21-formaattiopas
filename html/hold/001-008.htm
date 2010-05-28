@@ -1,0 +1,320 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 27.11.2009.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Kontrollikentät 001-008</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Kentät 001-008 sisältävät kontrollinumeroita ja kooditietoa, 
+jota käytetään MARC-varastotietueiden käsittelyssä. Jokaisella kentällä on oma 
+kenttäkoodi hakemistossa ja tietoelementtien merkitys määräytyy niiden 
+merkkipaikan perusteella. Kiinteämittaisissa kentissä ei ole indikaattoreita 
+eikä osakenttäkoodeja.</p>
+<ul>
+	<li><a href="#001">001 - TIETUEEN KONTROLLINUMERO</a> (ET)</li>
+	<li><a href="#003">003 - TIETUEEN KONTROLLINUMERON TUNNISTE</a> (ET)</li>
+	<li><a href="#004">004 - LIITTYVÄN BIBLIOGRAFISEN TIETUEEN KONTROLLINUMERO</a> (ET)</li>
+	<li><a href="#005">005 - VIIMEISIMMÄN PÄIVITYKSEN AJANKOHTA</a> (ET)</li>
+	<li><a href="#007">007 - ULKOASUA KOSKEVAT INFORMAATIOKOODIT</a></li>
+	<li><a href="#008">008 - INFORMAATIOKOODIT</a></li>
+</ul>
+<hr>
+<h3><a name="001"></a>001 - TIETUEEN KONTROLLINUMERO (ET)</h3>
+<p>Erilliselle varastotietueelle annettu kontrollinumero. Tietueiden vaihtoa 
+varten kumppaneiden on tarjottava toisilleen dokumentaatio kontrollinumeroiden 
+rakenteesta ja tallennustavoista. Vastaanottava organisaatio voi siirtää varastotietueen 
+kontrollinumeron kentästä 001 kenttään 014 (Linkitysnumero) tai kenttään 035 
+(Järjestelmän tuottama kontrollinumero).</p>
+<h4>Esimerkkejä</h4>
+<p><b>001</b> ###86104385#</p>
+<p><b>001</b> 14919759</p>
+<p><b>001</b> #####9007496</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="003"></a>003 - TIETUEEN KONTROLLINUMERON TUNNISTE (ET)</h3>
+<p>Koodi organisaatiolle, joka on antanut tietueen kontrollinumeron kenttään 001 
+(Tietueen kontrollinumero). Organisaatiokoodina käytetään ISIL-tunnusta, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>. Ulkomaisista 
+tietokannoista kopioidut tietueet sisältävät 
+	yleensä koodin, joka on peräisin listalta 
+<i>MARC code list for organizations</i>.</p>
+<h4>Esimerkkejä</h4>
+<p><b>003</b> DLC</p>
+<p><b>003</b> OCoLC</p>
+<p><b>003</b> DNLM</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="004"></a>004 - LIITTYVÄN BIBLIOGRAFISEN TIETUEEN KONTROLLINUMERO (ET)</h3>
+<p>Sen bibliografisen tietueen kontrollinumero (001), jota varten kyseinen 
+varastotietue on tehty.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="005"></a>005 - VIIMEISIMMÄN PÄIVITYKSEN AJANKOHTA (ET)</h3>
+<p>Järjestelmän tuottamat kuusitoista merkkiä, jotka ilmaisevat päivän ja kellonajan jolloin tietuetta 
+on viimeksi käsitelty, ja auttavat tietueen versioiden erottelussa. Tieto 
+noudattaa ISO 8601 -standardin mallia: <i>vvvvkkppttmmss.s</i> (vuosi, kuukausi, 
+päivä, tunti 00-23, minuutti, sekunti, kymmenesosasekunti).</p>
+<h4>Esimerkki</h4>
+<p><b>005</b> 19890901141236.0</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="007"></a>007 - ULKOASUA KOSKEVAT INFORMAATIOKOODIT</h3>
+<p>Bibliografisen kohteen, johon varastotietue liittyy, kappalekohtaisia 
+ulkoasua koskevia tietoja koodimuodossa. Katso kentän
+<a href="../bib/007.htm">007</a> kuvaus bibliografisten 
+tietojen MARC 21 -formaatista. Aineistoluokka (007/00) voidaan kuvailla 
+tekstimuodossa kentässä <a href="5XX-84X.htm#842">842</a> 
+(Ulkoasu tekstinä).</p>
+<p>Kentän 007 merkkipaikan 00 mahdolliset arvot:</p>
+<ul>
+	<li><b>a</b> - Kartta</li>
+	<li><b>c</b> - Elektroninen aineisto</li>
+	<li><b>d</b> - Karttapallo</li>
+	<li><b>f</b> - Tunnusteluaineisto</li>
+	<li><b>g</b> - Heijastettava kuva</li>
+	<li><b>h</b> - Mikrotallenne</li>
+	<li><b>k</b> - Kuva</li>
+	<li><b>m</b> - Elokuva</li>
+	<li><b>o</b> - Moniviestin</li>
+	<li><b>q</b> - Nuottijulkaisu</li>
+	<li><b>r</b> - Kaukokartoituskuva</li>
+	<li><b>s</b> - Äänite</li>
+	<li><b>t</b> - Teksti</li>
+	<li><b>v</b> - Videotallenne</li>
+	<li><b>z</b> - Määrittelemätön</li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>007</b> aj|canzn</p>
+<p><b>007</b> cj|na#</p>
+<p><b>007</b> db|cen</p>
+<p><b>007</b> go|cjbff#</p>
+<p><b>007</b> he|bmb024baca</p>
+<p><b>007</b> kl|ao#</p>
+<p><b>007</b> mr|caaadmnartauac198606</p>
+<p><b>007</b> sd|bsmennmplud</p>
+<p><b>007</b> ta</p>
+<p><b>007</b> td</p>
+<p><b>007</b> vf|caahos</p>
+<p><b>007</b> qu</p>
+<p><b>007</b> zm</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="008"></a>008 - INFORMAATIOKOODIT</h3>
+<p>32 merkkipaikkaa (00-31) sisältävät koodimuotoista informaatiota 
+varastotietueesta. Kaikissa määritellyissä merkkipaikoissa pitää olla koodi tai 
+täyttömerkki (|). Täyttömerkkiä käytetään, kun merkkipaikkaan ei ole yritetty 
+tallentaa muuta koodia. Kun varastotiedot sisällytetään bibliografiseen MARC-tietueeseen, nämä tiedot voidaan 
+	tallentaa kentän <a href="5XX-84X.htm#841">841</a> osakenttään &#8225;b (Varastotiedot koodeina, Informaatiokoodit).</p>
+<h4>Merkkipaikat</h4>
+<ul>
+	<li><b>00-05</b> - Luontiaika<br>Järjestelmän tuottama kuusimerkkinen 
+	numerojono, joka ilmaisee milloin MARC-tietue on luotu. Päivämäärä on 
+	muodossa <i>vvkkpp</i> (vuosi, kuukausi, päivä), eikä se muutu koskaan.</li>
+	<li><b>06</b> - Hankinnan tila<br>
+	Saadaanko hiljattain julkaistun moniosaisen monografian tai kausijulkaisun 
+	osia.<ul>
+		<li><b>0</b> - Tuntematon</li>
+		<li><b>1</b> - Muu</li>
+		<li><b>2</b> - Saatu ja valmis tai päättynyt<br>
+		Moniosaisen monografian tai kausijulkaisun kaikki osat on julkaistu tai 
+		niitä ei enää julkaista. Tätä koodia käytetään myös yksiosaisten 
+		monografioiden kohdalla.</li>
+		<li><b>3</b> - Tilattu<br>
+		Tilaus on tehty, mutta mitään ei ole vielä saatu. Koodin käyttöä 
+		takautuvissa hankinnoissa ei suositella. Tätä koodia käytetään myös 
+		yksiosaisten monografioiden kohdalla. Koodin käyttöä takautuvien 
+		hankintojen merkitsemiseen ei suositella.</li>
+		<li><b>4</b> - Saadaan<br>
+		Moniosaisen monografian tai kausijulkaisun osia saadaan jatkuvasti.</li>
+		<li><b>5</b> - Ei saada<br>
+		Organisaatiolla on varastossa moniosaisen monografian tai kausijulkaisun 
+		osia, mutta niitä ei enää saada lisää eikä aiota hankkia.</li>
+	</ul>
+	</li>
+	<li><b>07</b> - Hankintatapa<ul>
+		<li><b>c</b> - Yhteisosto tai konsortion tekemä osto</li>
+		<li><b>d</b> - Talletus</li>
+		<li><b>e</b> - Vaihto</li>
+		<li><b>f</b> - Ilmainen</li>
+		<li><b>g</b> - Lahjoitus</li>
+		<li><b>h</b> - Vapaakappale</li>
+		<li><b>m</b> - Jäsenyys</li>
+		<li><b>n</b> - Ulkopuolisen organisaation ostama ja kustantama</li>
+		<li><b>p</b> - Osto</li>
+		<li><b>u</b> - Tuntematon</li>
+		<li><b>z</b> - Muu</li>
+	</ul>
+	</li>
+	<li><b>08-11</b> - Tilauksen päättymisajankohta<br>
+	Osoittaa milloin tilaus aiotaan peruuttaa, milloin peruutus astuu voimaan, 
+	tai moniosaisen monografian tai kausijulkaisun viimeisen osan oletetun 
+	ilmestymisajan. Päiväys tallennetaan muodossa vuosi, kuukausi (<i>vvkk</i>).<ul>
+		<li>[<b>vvkk</b>] - Tilauksen peruutuksen tai viimeisen osan ilmestymisen 
+		ajankohta</li>
+		<li><b>uuuu</b> - Aikomus peruuttaa tilaus; ajankohtaa ei tiedetä</li>
+		<li><b>####</b> - Ei aikomusta peruuttaa tilausta tai soveltumaton</li>
+	</ul>
+	</li>
+	<li><b>12</b> - Säilytysmerkintö<br>
+	Kohteen normaali säilytystapa.<ul>
+		<li><b>0</b> - Tuntematon</li>
+		<li><b>1</b> - Muu</li>
+		<li><b>2</b> - Säilytetään, kunnes korvataan päivityksellä</li>
+		<li><b>3</b> - Näytenumero(t) säilytetään</li>
+		<li><b>4</b> - Säilytetään, kunnes korvataan mikrotallenteella</li>
+		<li><b>5</b> - Säilytetään, kunnes korvataan kumulaatiolla, korjatulla 
+		painoksella tai korvaavalla volyymilla</li>
+		<li><b>6</b> - Säilytetään rajoitetun ajan tai säilytetään vain osia<br>
+		Tarkempi tieto säilytysajasta tai osista voidaan antaa merkkipaikoissa 
+		008/13-15 (Eritelty säilytysmerkintö).</li>
+		<li><b>7</b> - Ei säilytetä</li>
+		<li><b>8</b> - Säilytetään pysyvästi<br>
+		Kaikki osat säilytetään. Käytetään kohteille, jotka eivät ole 
+		kausijulkaisuja ja jotka yleensä säilytetään pysyvästi.</li>
+	</ul>
+	</li>
+	<li><b>13-15</b> - Eritelty säilytysmerkintö<br>
+	Käytetään, kun 008/12 arvo on 6, ja merkitään tarkemmat tiedot 
+	säilytysajasta tai säilytettävistä osista.<ul>
+		<li><b>###</b> - Ei eriteltyä säilytysmerkintöä</li>
+		<li><b>13</b> - Säilytystapa<ul>
+			<li><b>l</b> - Viimeisin/viimeisintä<br>
+			Viimeisin ja myös nykyinen aika- tai osayksikkö säilytetään.</li>
+			<li><b>p</b> - Edellinen/edellistä<br>
+			Edellinen, mutta ei nykyistä, aika- tai osayksikkö säilytetään.</li>
+		</ul>
+		</li>
+		<li><b>14</b> - Yksiköiden määrä<ul>
+			<li><b>1-9</b> - Yksiköiden määrä<br>
+			Yhdellä numerolla merkitään säilytettävien aika- tai osayksiköiden 
+			määrä. Jos määrä on enemmän kuin yhdeksän, tieto voidaan merkitä 
+			kentän 852 (Sijainti) osakenttään &#8225;x (Sisäinen huomautus) tai &#8225;z 
+			(Julkinen huomautus), tai johonkin varastotietojen kentistä 86X. Kun 
+			säilytystapa on Viimeisin/viimeisintä (koodi l), numero sisältää 
+			myös nykyisen aika- tai osayksikön. Kun säilytystapa on 
+			Edellinen/edellistä (koodi p), numero ei sisällä nykyistä aika- tai 
+			osayksikköä.</li>
+		</ul>
+		</li>
+		<li><b>15</b> - Yksikön tyyppi<br>
+		Kertoo joko säilytyksen aikayksikön tai osat, joita säilytetään.<ul>
+			<i>Aika:</i>
+			<li><b>m</b> - Kuukausi/kuukautta</li>
+			<li><b>w</b> - Viikko/viikkoa</li>
+			<li><b>y</b> - Vuosi/vuotta<br>
+			<i>Osa:</i>
+			<li><b>e</b> - Painos/painosta</li>
+			<li><b>i</b> - Numero/numeroa</li>
+			<li><b>s</b> - Suplementti/suplementtia</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><b>16</b> - Täydellisyysmerkintö<br>
+	Arvio siitä, miten täydellisesti moniosaisen monografian tai kausijulkaisun 
+	osat on saatu kokoelmiin. (Suuntaa antavat prosenttiluvut ovat peräisin FINMARC varastotietojen 
+	formaatista.)<ul>
+		<li><b>0</b> - Muu<br>
+		Kohteen osia säilytetään rajoitetun ajan tai arviota ei ole tehty.</li>
+		<li><b>1</b> - Täydellinen (95-100 %)</li>
+		<li><b>2</b> - Epätäydellinen (50-94 %)</li>
+		<li><b>3</b> - Hajanainen (alle 50 %)</li>
+		<li><b>4</b> - Soveltumaton<br>
+		Varastotiedot koskevat yksiosaista monografiaa. Puutetiedot merkitään 
+		86X kentän huomautusosakentässä &#8225;x tai &#8225;z.</li>
+	</ul></li>
+	<li><b>17-19</b> - Kappalemäärä<br>
+	Varastotiedoissa kappaleiden määrä merkitään kolmena numerona. 
+	Numerot on tasattu oikealle ja käyttämättömissä merkkipaikoissa on 
+	nolla.</li>
+	<li><b>20</b> - Lainaus<br>
+	Lainataanko kohdetta. Tarkemmat tiedot kohteen käyttömahdollisuuksista 
+	voidaan tallentaa kenttään <a href="5XX-84X.htm#845">845</a> 
+	(Huomautus käytön ja kopioinnin ehdoista).<ul>
+		<li><b>a</b> - Lainataan</li>
+		<li><b>b</b> - Ei lainata</li>
+		<li><b>c</b> - Lainataan vain kopiona</li>
+		<li><b>l</b> - Rajoitettu lainauspolitiikka</li>
+		<li><b>u</b> - Tuntematon</li>
+	</ul></li>
+	<li><b>21</b> - Kopiointi<br>
+	Kopioidaanko kohdetta. Tarkemmat kopiointia koskevat tiedot voidaan 
+	tallentaa kenttään <a href="5XX-84X.htm#845">845</a> 
+	(Huomautus käytön ja kopioinnin ehdoista).<ul>
+		<li><b>a</b> - Kopioidaan</li>
+		<li><b>b</b> - Ei kopioida</li>
+		<li><b>u</b> - Tuntematon</li>
+	</ul></li>
+	<li><b>22-24</b> - Kieli<br>
+	Kolmimerkkinen MARC-kielikoodi, jolla merkitään määrämuotoisten varastotietojen kentissä 
+	(863-865) käytetty kieli, jotta järjestelmä voi tarvittaessa muodostaa 
+	näyttötekstit oikealla kielellä. Koodi otetaan listalta, ks.
+	<i><a href="../kielet.htm">MARC 21 Kielikoodit</a></i>.<ul>
+		<li><b>###</b> - Tieto puuttuu (tyhjämerkkejä)</li>
+		<li><b>und</b> - Määrittelemätön</li>
+	</ul></li>
+	<li><b>25</b> - Kappale- vai yhdistelmätason merkintö<br>
+	Onko varastotiedot raportoitu kappale- vai yhdistelmätasolla.<ul>
+		<li><b>0</b> - Kappalekohtainen varastotieto<br>
+		Jokaisella eri kappaleella on oma varastotietojen MARC-tietue.</li>
+		<li><b>1</b> - Yhdistelmätason varastotiedot<br>
+		Tiedot kaikista kappaleista annetaan kootusti samassa varastotietojen 
+		MARC-tietueessa. Yhdistelmätasoa voi käyttää vain silloin, kun 
+		raportoitavien kappaleiden sijainti on sama. Volyymitiedot lasketaan 
+		yhdistelmätason raportoinnissa yhteen. Jos esim. kappale 1 sisältää 
+		volyymit 1-4 ja 7-10, ja kappale 2 volyymit 5-10, yhdistelmätasolla 
+		riittää että raportoidaan volyymit 1-10. Kun käytetään koodia 1, 
+		raportoitavien kappaleiden määrä (002-999) merkitään merkkipaikkaan 
+		008/17-19 (Kappalemäärä).</li>
+	</ul></li>
+	<li><b>26-31</b> - Päivitysaika<br>
+	Osoittaa varastotietojen ajantasaisuuden. Päiväys tallennetaan muodossa 
+	vuosi, kuukausi, päivä (<i>vvkkpp</i>). Päiväys tasataan oikealle ja 
+	käyttämättömissä merkkipaikoissa on nolla. Tuntematon päiväys merkitään 
+	kuudella nollalla.</li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

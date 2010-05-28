@@ -1,0 +1,165 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21 -yhtenäisformaatit</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21<br>
+		yhtenäisformaatit</h1>
+		<p align="center"><font size="2">Käännösten pohjana <a href="http://www.loc.gov/marc/">
+		MARC 21 Concise Formats</a><br>
+		(Library of Congress, <a href="http://www.loc.gov/marc/ndmso.html">
+		Network Development MARC Standards Office</a>)</font></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 22.2.2008.<br>
+Ks. <a href="ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Sisällys</h2>
+<ul>
+	<li><a href="#yleis">Yleistä tietoa yhtenäisformaateista</a></li>
+	<li><a href="bib/index.htm">Bibliografiset tiedot</a></li>
+	<li><a href="aukt/index.htm">Auktoriteettitiedot</a></li>
+	<li><a href="hold/index.htm">Varastotiedot</a></li>
+</ul>
+<p align="left">&nbsp;</p>
+<hr>
+<h3 align="left"><a name="yleis"></a>YLEISTÄ TIETOA</h3>
+<p>Library of Congress julkaisee päivitetyt versiot MARC 21 
+-yhtenäisformaateista kerran vuodessa (loka-joulukuussa). Edelliseen versioon 
+tehdyt muutokset on merkitty niissä punaisella värillä. Bibliografisten, 
+auktoriteetti- ja varastotietojen lisäksi MARC 21 -yhtenäisformaatteihin kuuluvat 
+myös <a href="http://www.loc.gov/marc/classification/">MARC 21 Format for Classification Data</a> ja 
+<a href="http://www.loc.gov/marc/community/">MARC 21 Format for Community 
+Information</a>, joita ei ole käännetty suomeksi.</p>
+<h3>TIETUEEN RAKENNE</h3>
+<p>Formaatin avulla tallennetut MARC-tietueet ovat siirrettävissä järjestelmästä 
+toiseen ISO 2709 -standardin mukaisina. Tietueen rakenne koostuu nimiöstä, 
+hakemistosta ja kentistä.</p>
+<p><b>Nimiö</b> on 24 merkin pituinen kiinteä kenttä, joka on ensimmäisenä 
+kaikissa MARC-tietueissa. Nimiö sisältää koodi- ja numeromuotoista tietoa, jota 
+tarvitaan tietueen käsittelyssä.</p>
+<p><b>Hakemisto</b> muodostuu 12 merkin mittaisista jaksoista, jotka kuvaavat 
+kunkin tietueessa esiintyvän kentän tietoja: kenttäkoodi (3 merkkiä), kentän 
+pituus (4 merkkiä) ja kentän aloituskohta (5 merkkiä). Hakemisto päättyy kentän 
+loppumerkkiin (ASCII 1E hex).</p>
+<p><b>Kentät</b> tunnistaa kolminumeroisesta kenttäkoodista. 
+Jokainen kenttä päättyy kentän loppumerkkiin (ASCII 1E hex). MARC-tietue 
+päättyy tietueen loppumerkkiin (ASCII 1D hex). Kenttiä on kahta 
+laatua:</p>
+<blockquote>
+	<p><b>Kiinteämittaiset kentät</b>, joiden kenttäkoodi on muotoa 00X. Näissä 
+	kentissä ei ole indikaattoreita eikä osakenttäkoodeja. Numero- ja 
+	koodimuotoisten tietoelementtien merkitys määräytyy niiden merkkipaikan 
+	perusteella.</p>
+	<p><b>Vaihtuvamittaiset kentät</b>, joiden kenttäkoodit vaihtelevat välillä 
+	01X-8XX. Näissä kentissä käytetään indikaattoreita ja osakenttäkoodeja:</p>
+	<blockquote>
+		<p><b>Indikaattorit</b> merkitään kentän kahteen ensimmäiseen 
+		merkkipaikkaan ja niiden avulla voidaan tulkita tai täydentää kentän 
+		muita tietoja. Tyhjämerkkiä (ASCII 20 hex), jota kuvataan tässä 
+		dokumentissa risuaitamerkillä (#), käytetään määrittelemättömän 
+		indikaattorin paikalla. Joissakin tapauksissa tyhjämerkillä on oma 
+		merkitys.</p>
+		<p><b>Osakenttäkoodit</b> ovat kaksi merkkiä, jotka edeltävät jokaista 
+		kentän erikseen käsiteltävää tietoelementtiä. Osakenttäkoodi koostuu 
+		erotinmerkistä (ASCII 1F hex), jota kuvataan tässä dokumentissa 
+		kaksoisristillä (&#8225;), ja tietoelementin tunnuksesta, jotka ovat 
+		pienaakkosia tai numeroita. Jokaisen kentän osakenttäkoodit on 
+		määritelty toisistaan riippumattomasti, vaikka myös yhtenäisyyttä niiden 
+		kesken esiintyy. Osakenttien järjestys määräytyy luettelointisääntöjen 
+		mukaan.</p>
+	</blockquote>
+</blockquote>
+<p>Joidenkin koodattujen dataelementtien (nimiö, 007 ja 008) sisältö 
+määritellään formaatissa, mutta muiden tietoelementtien sisältö määräytyy 
+yleensä muiden standardien, kuten luettelointisääntöjen, mukaan.</p>
+<h3>USEAT KIRJOITUSJÄRJESTELMÄT</h3>
+<p>MARC 21 -tietue voi sisältää tietoja usealla eri kirjoitusjärjestelmällä. 
+Yhtä kirjoitusjärjestelmää voidaan pitää ensisijaisena, vaikka sisältöjä olisi 
+kuvattu muillakin kirjoitusjärjestelmillä. Huom. tietueen rakenteellisissa 
+elementeissä ja koodimuotoisissa tiedoissa käytetään ASCII-merkkejä.</p>
+<h3>KENTTIEN JA OSAKENTTIEN TOISTETTAVUUS</h3>
+<p>Teoriassa kaikki kentät ja osakentät ovat toistettavia. Tietojen luonne 
+kuitenkin usein estää toistamisen. Tietueessa voi olla esimerkiksi vain yksi 
+1XX-kenttä; bibliografinen kenttä 100 voi sisältää vain yhden osakentän &#8225;a 
+(Henkilönnimi), mutta voi sisältää useamman osakentän &#8225;c (Muut nimeen tehtävät 
+lisäykset). Kenttien ja osakenttien toistettavuus ja ei-toistettavuus on 
+merkitty formaatteihin merkinnöillä (T) ja (ET).</p>
+<h3>KENTTIEN JA OSAKENTTIEN PAKOLLISUUS</h3>
+<p>Kooditietojen, kenttien, indikaattoreiden ja osakenttien pakollisuus 
+määräytyy suomalaisten luettelointisääntöjen mukaan. Niissä määritellään 
+kuvailun vähimmäistason, välitason ja kansallisbibliografiatason elementit. 
+Luettelointisääntöjen mukaiset eri tasojen pakollisuudet pyritään merkitsemään 
+tähän formaattiin tulevaisuudessa tavalla tai toisella.</p>
+<h3>OSAKENTTIEN TALLENNUSJÄRJESTYS</h3>
+<p>Vaihtuvamittaisissa kentissä osakenttien tallennusjärjestys määräytyy 
+suomalaisten luettelointisääntöjen mukaan. Osakentät selityksineen on listattu 
+kunkin kentän kohdalla aakkosjärjestyksessä, mutta esimerkeissä näkyy niiden 
+luettelointisääntöjen mukainen tallennusjärjestys, joka ei aina ole 
+aakkosjärjestys.</p>
+<h3>VÄLIMERKITYS</h3>
+<p>MARC 21 -formaatissa tietoelementtien (osakenttien) väliset välimerkit 
+tallennetaan yleensä tietueeseen. Joissakin tapauksissa välimerkitys voidaan 
+tuottaa automaattisesti myös kirjastojärjestelmän avulla, ks. kohta Vakionäytöt. 
+Välimerkitys määräytyy suomalaisten luettelointisääntöjen mukaan, joiden mukaan 
+suomenkielisen MARC 21 -formaatin esimerkit on pääosin laadittu.</p>
+<h3>TÄYTTÖMERKKI JA MUUT SIIHEN LIITTYVÄT ARVOT</h3>
+<p>Täyttömerkkiä (ASCII 7C hex), jota kuvataan tässä dokumentissa putkimerkillä 
+(|), voidaan käyttää kun formaatti vaatii jotakin koodia käytettäväksi mutta 
+luetteloija haluaa olla tallentamatta mitään koodia. Täyttömerkkiä ei kuitenkaan 
+saa käyttää missään nimiön merkkipaikassa, kenttäkoodeissa, indikaattoreissa tai 
+osakenttäkoodeissa.</p>
+<p>Koodia u (tuntematon tai määrittelemätön) käytetään kun luetteloija haluaa 
+täyttää koodin, mutta ei pysty määrittelemään, mikä on sopiva koodi.</p>
+<p>Koodia n (soveltumaton) käytetään kun kaikki muut ko. merkkipaikan koodit 
+ovat soveltumattomia kyseiseen kohteeseen tai tietueeseen.</p>
+<h3>VAKIONÄYTÖT</h3>
+<p>Vakionäyttö on tietojen ymmärrettävyyttä parantamaan lisätty termi, fraasi 
+ja/tai välimerkitys, joka voidaan tuottaa kirjastojärjestelmän avulla. Vakionäyttöteksti ei sisälly tietueeseen, vaan se tuotetaan kenttäkoodin, indikaattorin, 
+osakenttäkoodin tai koodimuotoisen dataelementin perusteella. Ehdotuksia 
+vakionäyttöteksteistä sisältyy jokaiseen MARC 21 -formaattiin, mutta niiden käytöstä 
+päättää jokainen organisaatio ja järjestelmä erikseen.</p>
+<h3>TYPOGRAFISET KÄYTÄNNÖT</h3>
+<p>MARC 21 -yhtenäisformaatissa noudatetaan seuraavia typografisia käytäntöjä:</p>
+<ul>
+	<li># - Käytetään merkitsemään tyhjämerkkiä (ASCII 20 hex).</li>
+	<li>&#8225; - Käytetään merkitsemään osakentän erotinmerkkiä (ASCII 1F hex).</li>
+	<li>/ - Käytetään kiinteämittaisten kenttien (esim. nimiö, hakemisto, 008) 
+merkkipaikkojen merkitsemiseen, esim. nimiö/06.</li>
+	<li>| - Käytetään merkitsemään täyttömerkkiä (ASCII 7C hex).</li>
+	<li>0 - Käytetään merkitsemään lukua nolla (ASCII 30 hex). Erotettava isosta 
+	O-kirjaimesta (ASCII 4F hex).</li>
+	<li>1 - Käytetään merkitsemään lukua yksi (ASCII 31 hex). Erotettava 
+	pienestä l-kirjaimesta (ASCII 6C hex) ja isosta I-kirjaimesta (ASCII 49 
+	hex).</li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.htm">MARC 21 -etusivulle</a><br>
+<a href="aukt/index.htm">Auktoriteettitiedot</a> | 
+<a href="bib/index.htm">Bibliografiset tiedot</a> |
+<a href="hold/index.htm">Varastotiedot</a></p>
+<hr>
+<p align="left">&nbsp;</p>
+
+</body>
+
+</html>

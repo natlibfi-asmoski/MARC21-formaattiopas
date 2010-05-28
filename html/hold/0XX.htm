@@ -1,0 +1,513 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 29.1.2009.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Numero- ja koodikentät (0XX)</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Kentät 010-066 sisältävät standardinumeroita, joilla tunnistetaan 
+varastotietueeseen liittyvä bibliografinen tietue.</p>
+<ul>
+	<li><a href="#010">010 - LIBRARY OF CONGRESS KONTROLLINUMERO (ET)</a></li>
+	<li><a href="#014">014 - LINKITYSNUMERO (T)</a></li>
+	<li><a href="#016">016 - KANSALLISBIBLIOGRAFIAN KONTROLLINUMERO (T)</a></li>
+	<li><a href="#017">017 - TEKIJÄNOIKEUS- TAI VAPAAKAPPALETUNNUS (T)</a></li>
+	<li><a href="#020">020 - ISBN-TUNNUS, INTERNATIONAL STANDARD BOOK NUMBER (T)</a></li>
+	<li><a href="#022">022 - ISSN-TUNNUS, INTERNATIONAL STANDARD SERIAL NUMBER (T)</a></li>
+	<li><a href="#024">024 - MUUT STANDARDITUNNUKSET (T)</a></li>
+	<li><a href="#027">027 - IRSN-TUNNUS TAI MUU STANDARDOITU RAPORTTINUMERO (T)</a></li>
+	<li><a href="#030">030 - CODEN-TUNNUS (T)</a></li>
+	<li><a href="#035">035 - JÄRJESTELMÄN TUOTTAMA KONTROLLINUMERO (T)</a></li>
+	<li><a href="#040">040 - LUETTELOIVA ORGANISAATIO (ET)</a></li>
+	<li><a href="#066">066 - MERKISTÖT (ET)</a></li>
+</ul>
+<hr>
+<h3><a name="010"></a>010 - LIBRARY OF CONGRESS KONTROLLINUMERO (ET)</h3>
+<p>Library of Congressin varastotietueeseen liittyvälle bibliografiselle MARC-tietueelle antama uniikki numero.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - LC kontrollinumero (ET)</li>
+	<li><b>&#8225;b</b> - NUCMC-kontrollinumero (T)</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen LC kontrollinumero (T)</li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>010 ##&#8225;a</b>###85153773#</p>
+<p><b>010 ##&#8225;b</b>ms#78001237#<b>&#8225;b</b>ms#85000779#</p>
+<p><b>010 ##&#8225;a</b>###76647633#<b>&#8225;z</b>sc#76000587#</p>
+<p><b>010 ##&#8225;a</b>###81691938#<b>&#8225;z</b>###82692384#</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="014"></a>014 - LINKITYSNUMERO (T)</h3>
+<p>Varastotietueen tai siihen liittyvän bibliografisen tietueen kontrollinumero.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Linkitysnumeron tyyppi<br>
+	Onko kentän osakenttiin &#8225;a tai &#8225;z merkitty numero varastotietueen vai siihen 
+	liittyvän bibliografisen tietueen kontrollinumero.<ul>
+		<li><b>0</b> - Varastotietueen kontrollinumero</li>
+		<li><b>1</b> - Bibliografisen tietueen kontrollinumero</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Linkitysnumero (ET)</li>
+	<li><b>&#8225;b</b> - Numeron antajan koodi (ET)<br>
+	Organisaation koodina käytetään ISIL-tunnusta, <i>ks.
+	<a href="../organisaatiot.htm">Organisaatiot</a></i>.</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen linkitysnumero (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>014 1#&#8225;a</b>1605897<b>&#8225;b</b>OCoLC</p>
+<p><b>014 0#&#8225;a</b>0000-49030<b>&#8225;z</b>0000-39730<b>&#8225;b</b>[organization code]</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="016"></a>016 - KANSALLISBIBLIOGRAFIAN KONTROLLINUMERO (T)</h3>
+<p>Jonkin muun kansallisbibliografisen organisaation kuin Library of Congressin varastotietueeseen liittyvälle bibliografiselle MARC-tietueelle antama 
+uniikki numero.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Kansallisbibliografinen organisaatio<ul>
+		<li><b>#</b> - Library and Archives Canada</li>
+		<li><b>7</b> 
+		- Organisaatio merkitään osakenttään &#8225;2</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Tietueen kontrollinumero (ET)</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen tietueen kontrollinumero (T)</li>
+	<li><b>&#8225;2</b> - Organisaation koodi (ET)<br>
+	Koodina käytetään ISIL-tunnusta, ks. <i><a href="../organisaatiot.htm">
+	Organisaatiot</a></i>.</li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>016 7#&#8225;a</b>PTBN000004618<b>&#8225;2</b>PoLiBN</p>
+<p><b>016 7#&#8225;a</b>94.763966.1<b>&#8225;2</b>GyFmDB</p>
+<p><b>016 7#&#8225;a</b>b9117951<b>&#8225;z</b>E000214460<b>&#8225;2</b>Uk</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<div class="indicatorhead">
+&nbsp;<p><b><font size="4"><a name="017">017 - TEKIJÄNOIKEUS- TAI 
+	VAPAAKAPPALETUNNUS (T)</a></font></b></p>
+	<p>Tekijänoikeus- tai vapaakappaletunnus kuvailun kohteelle, joka hankittiin 
+	tekijänoikeus- tai vapaakappaleena.</p>
+	<h4>Indikaattorit</h4>
+	<ul>
+		<li>Ensimmäinen - Määrittelemätön
+            <ul>
+				<li><strong>#</strong> - Määrittelemätön
+               	</li>
+		</ul>
+		</li>
+		<li>Toinen - Vakionäyttöindikaattori
+            <ul>
+				<li><strong>#</strong> - <em>Tekijänoikeus- tai 
+				vapaakappaletunnus</em></li>
+				<li><strong>8</strong> - Vakionäyttöä ei muodosteta
+               	</li>
+		</ul>
+		</li>
+	</ul>
+	<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><strong>‡a</strong> - Tekijänoikeus- tai vapaakappaletunnus (T) 
+		</li>
+		<li><strong>‡b</strong> - Tunnuksen antanut organisaatio (ET) </li>
+		<li><strong>‡d</strong> - Päivämäärä (ET) </li>
+		<li><strong>‡i</strong> - Näyttöteksti (ET) </li>
+		<li><strong>‡z</strong> - Peruttu tai virheellinen tekijänoikeus- tai 
+		vapaakappaletunnus (T) </li>
+		<li><strong>‡2</strong> - Tunnuksen antajan koodi (ET)<br>
+		Koodi otetaan listalta, ks. <em>
+		<a href="http://www.loc.gov/marc/relators/relaothr.html#rela017b">MARC 
+		Code Lists for Relators, Sources, Description Conventions: PART VII: 
+		Other Sources</a></em>. </li>
+		<li><strong>‡6</strong> - Linkitys (ET)<br>
+		Ks. <em>
+		<a href="http://www.lib.helsinki.fi/kirjastoala/formaatti/MARC21/bib/kontrolliosakentat.htm#6">
+		Kontrolliosakentät</a></em>. </li>
+		<li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>
+		Ks. <em>
+		<a href="http://www.lib.helsinki.fi/kirjastoala/formaatti/MARC21/bib/kontrolliosakentat.htm#8">
+		Kontrolliosakentät</a></em>.
+         </li>
+	</ul>
+	<h4>Esimerkkejä</h4>
+	<p><strong>017 ##‡a</strong>EU781596<strong>‡b</strong>U.S. CopyrightOffice
+	</p>
+	<p><strong>017 ##‡a</strong>VA26037<strong>‡a</strong>VA26038<strong>‡a</strong>VA26039<strong>‡a</strong>VA26040<strong>‡a</strong>VA26041<strong>‡a</strong>VA26042<strong>‡a</strong>VA26043<strong>‡b</strong>U.S. 
+	Copyright Office </p>
+	<p><strong>017 #8‡i</strong>Orig. reg.<strong>‡a</strong>JP732<strong>‡b</strong>U.S. 
+	Copyright Office<strong>‡d</strong>19510504 </p>
+	<p><a href="#alku">Sivun alkuun</a></p>
+	<p>&nbsp;</div>
+
+<hr>
+<h3><a name="020"></a>020 - ISBN-TUNNUS, INTERNATIONAL STANDARD BOOK NUMBER (T)</h3>
+<p>Varastotietueeseen liittyvän bibliografisen MARC-tietueen ISBN-tunnus kentästä 
+020.<br>
+Ks.
+<a href="../../../../julkaisuala/isbn/index.htm">Suomen ISBN-keskus</a>.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - ISBN-tunnus, International Standard Book Number (ET)</li>
+	<li><b>&#8225;c</b> - Hinta- ja saatavuustiedot (ET)</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen ISBN-tunnus (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p>
+<b>020 ##&#8225;a</b>951-9422-82-X (Virsikirja, sid.)</p>
+<p><b>020 ##&#8225;a</b>951-776-249-4 (osa 3, Tampereen kaupunginmuseo, sid.) :<b>&#8225;c</b>11 
+eur, vain virkakäyttöön</p>
+<p><b>020 ##&#8225;a</b>951-861-386-9 (sid.)<b>&#8225;z</b>951-861-384-2 (virh.)</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="022"></a>022 - ISSN-TUNNUS, INTERNATIONAL STANDARD SERIAL NUMBER (T)</h3>
+<p>Varastotietueeseen liittyvän bibliografisen MARC-tietueen ISSN-tunnus kentästä 
+022.<br>
+Ks.
+<a href="../../../../julkaisuala/issn/index.htm">Suomen ISSN-keskus</a>.</p><h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Kansainvälisen kiinnostavuuden taso<ul>
+		<li><b>#</b> - Tasoa ei ole määritelty</li>
+		<li><b>0</b> - Jatkuvalla julkaisulla on kansainvälistä merkitystä</li>
+		<li><b>1</b> - Jatkuvalla julkaisulla ei ole kansainvälistä merkitystä</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - ISSN-tunnus, International Standard Serial Number (ET)</li>
+	<li><b>&#8225;y</b> - Virheellinen ISSN-tunnus (T)</li>
+	<li><b>&#8225;z</b> - Peruttu ISSN-tunnus (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>022 ##&#8225;a</b>1455-8904</p>
+<p><b>022 ##&#8225;y</b>0006-291X</p>
+<p><b>022 ##&#8225;a</b>0786-5368<b>&#8225;y</b>0785-8015<b>&#8225;z</b>0785-9015 </p>
+<p><b>022 0#&#8225;a</b>0145-0808<b>&#8225;z</b>0361-7106</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="024"></a>024 - MUUT STANDARDITUNNUKSET (T)</h3>
+<p>Varastotietueeseen liittyvän bibliografisen MARC-tietueen standarditunnus kentästä 
+024. Kyseessä on standarditunnus, jolle ei ole omaa kenttää kuten esim. ISBN-, ISSN- tai ISRN-tunnuksille. Tunnuksen 
+lähde kerrotaan ensimmäisen indikaattorin avulla tai osakentässä &#8225;2 (Tunnuksen 
+antajan koodi).</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Standarditunnuksen tyyppi<ul>
+		<li><b>0</b> - ISRC-tunnus, International Standard Recording Code<br>
+		<i>ISO 3901: International Standard Recording Code</i> 
+		(<a href="http://www.ifpi.org/">ylläpitäjäorganisaatio IFPI</a>).<br>
+		Tunnus tallennetaan väliviivojen kanssa, esim. NL-C01-84-13261.</li>
+		<li><b>1</b> - UPC-tunnus, Universal Product Code</li>
+		<li><b>2</b> - ISMN-tunnus, International Standard Music Number<br>
+		<i>ISO 10957: International Standard Music Number</i> 
+		(<a href="http://www.ismn-international.org/">ylläpitäjäorganisaatio The 
+		International ISMN Agency</a>).<br>
+		<a href="../../../../julkaisuala/ismn/index.htm">Suomalaisia 
+		ISMN-tunnuksia</a> jakaa Suomen ISBN-keskus.<br>
+		Tunnus tallennetaan väliviivojen kanssa, esim. M-55009-375-1.</li>
+		<li><b>3</b> - EAN-tunnus, International Article Number<br>
+		13-numeroinen EAN-tunnus on kansainvälinen tavaroita koskeva 
+		tunnusjärjestelmä. Suomessa järjestelmästä vastaa
+		<a href="http://www.gs1.fi/">GS1 Finland Oy</a>.</li>
+		<li><b>4</b> - SICI-tunnus, Serial Item and Contribution Identifier<br>
+		<i>ANSI/NISO Z39.56: Serial Item and Contribution Identifier</i>.<br>Tunnus tallennetaan väliviivojen kanssa, esim. 8756-2324(198603/04)65:2L.4:QTP:1-P.</li>
+		<li><b>7</b> - Tunnuksen antaja merkitään osakenttään &#8225;2</li>
+		<li><b>8</b> - Standarditunnuksen tyyppi määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Eroavuusindikaattori<br>
+	Onko skannatun numeron ja saman numeron silmin luettavan version välillä eroa.<ul>
+		<li><b>#</b> - Tieto puuttuu</li>
+		<li><b>0</b> - Ei eroavuutta</li>
+		<li><b>1</b> - Eroavuus</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Standarditunnus tai -koodi (ET)</li>
+	<li><b>&#8225;c</b> - Hinta- ja saatavuustiedot (ET)</li>
+	<li><b>&#8225;d</b> - Lisämääreet (ET)</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen standarditunnus tai -koodi (T)</li>
+	<li><b>&#8225;2</b> - Tunnuksen antajan koodi (ET)<br>
+	Koodi otetaan listalta, ks. <i>
+	<a href="http://www.loc.gov/marc/relators/relaothr.html#rela024b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></i>.</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>024 0#&#8225;a</b>FILNM9500119<b>&#8225;d</b>osa 1<br>
+<i>ISRC-tunnus.</i></p>
+<p><b>024 0#&#8225;a</b>NLC018413261<b>&#8225;z</b>NLC018403261<br>
+<i>ISRC-tunnus ja virheellinen ISRC-tunnus.</i></p>
+<p><b>024 10&#8225;a</b>070993005955<b>&#8225;d</b>35740<br>
+<i>UPC-tunnus ja lisämääre.</i></p>
+<p><b>024 2#&#8225;a</b>M-321-76543-1<br>
+<i>ISMN-tunnus.</i></p>
+<p><b>024 30&#8225;a</b>9780449906200<b>&#8225;d</b>51000<br>
+<i>ISBN-tunnukseen pohjautuva EAN-koodi ja lisäkoodi.</i></p>
+<p><b>024 3#&#8225;a</b>6414889981611<br>
+<i>ISSN-tunnukseen pohjautuva kansallinen EAN-koodi.</i></p>
+<p><b>024 3#&#8225;a</b>9771444875007<br>
+<i>ISSN-tunnukseen pohjautuva kansainvälinen EAN-koodi.</i></p>
+<p><b>024 41&#8225;a</b>875623247541986340134QTP1</p>
+<p><b>024 7#&#8225;a</b>10.1228/0103000001002<b>&#8225;2</b>doi<br>
+<i>DOI-tunnus.</i></p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="027"></a>027 - IRSN-TUNNUS TAI MUU STANDARDOITU RAPORTTINUMERO (T)</h3>
+<p>Varastotietueeseen liittyvän bibliografisen MARC-tietueen IRSN-tunnus 
+kentästä 027.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - ISRN-tunnus tai muu standardoitu raporttinumero (ET)</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen tunnus (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkki</h4>
+<p><b>027 ##&#8225;a</b>TKK-IGE-D</p>
+<p><b>027 ##&#8225;a</b>DOE/GET</p>
+<p><b>027 ##&#8225;a</b>IEEE-92CH3109-6 </p>
+<p><b>027 ##&#8225;a</b>FOA&#8213;89-40265/C&#8213;SE</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="030"></a>030 - CODEN-TUNNUS (T)</h3>
+<p>Varastotietueeseen liittyvän bibliografisen MARC-tietueen CODEN-tunnus 
+kentästä 030.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - CODEN-tunnus (ET)</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen CODEN-tunnus (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>030 ##&#8225;a</b>JACSAT</p>
+<p><b>030 ##&#8225;a</b>ASIRAF<b>&#8225;z</b>ASITAF</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="035"></a>035 - JÄRJESTELMÄN TUOTTAMA KONTROLLINUMERO (T)</h3>
+<p>Kenttä sisältää muun järjestelmän tuottaman kontrollinumeron, eli muun kuin 
+sen, jonka antama varastotietueen kontrollinumero on kentässä 001 tai jonka 
+bibliografisen tietueen kontrollinumero on kentässä 004.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Järjestelmän tuottama kontrollinumero (ET)<br>
+	Kontrollinumero koostuu toisesta järjestelmästä tulevan tietueen kentästä 
+	003 (Tietueen kontrollinumeron tunniste, suluissa) ja kentästä 001 (Tietueen 
+	kontrollinumero). Ulkomaisista tietokannoista kopioidut tietueet sisältävät 
+	yleensä koodin, joka on peräisin listalta 
+<i>MARC code list for organizations</i>, ks. <i><a href="../organisaatiot.htm">
+	Organisaatiot</a></i>.</li>
+	<li><b>&#8225;z</b> - Peruttu tai virheellinen kontrollinumero (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="040"></a>040 - LUETTELOIVA ORGANISAATIO (ET)</h3>
+<p>Koodi tai nimi organisaatio(i)lle, joka loi alkuperäisen MARC-muotoisen 
+tietueen tai muokkasi olemassa olevaa tietuetta.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Alkuperäinen luetteloiva organisaatio (ET)<br>
+	Organisaation koodina käytetään ISIL-tunnusta, <i>ks.
+	<a href="../organisaatiot.htm">Organisaatiot</a></i>.</li>
+	<li><b>&#8225;b</b> - 
+Luettelointikieli (ET)<br>Mitä kieltä tietueen tekstillisissä osissa on 
+	käytetty.
+	Koodi otetaan listalta, ks. <i><a href="../kielet.htm">MARC 21 Kielikoodit</a></i>.</li>
+	<li><b>&#8225;c</b> - Transkriboiva organisaatio (ET)</li>
+	<li><b>&#8225;d</b> - 
+	Muokkaava organisaatio (T)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>040 ##&#8225;a</b>Mt<b>&#8225;c</b>Mt</p>
+<p><b>040 ##&#8225;a</b>DLC<b>&#8225;c</b>DLC</p>
+<p><b>040 ##&#8225;a</b>CaOTY<b>&#8225;b</b>eng<b>&#8225;c</b>CaOTY</p>
+<p><b>040 ##&#8225;a</b>CaQQLA<b>&#8225;b</b>fre<b>&#8225;c</b>CaOONL</p>
+<p><b>040 ##&#8225;a</b>DLC<b>&#8225;c</b>DLC<b>&#8225;d</b>CtY</p>
+<p><b>040 ##&#8225;a</b>CaOONL<b>&#8225;b</b>eng<b>&#8225;c</b>CaOONL</p>
+<p><b>040 ##&#8225;a</b>CaNSHD<b>&#8225;b</b>eng<b>&#8225;c</b>CaOONL</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="066"></a>066 - MERKISTÖT (ET)</h3>
+<p>Tietoja tietueessa esiintyvistä merkistöistä kun siinä on käytetty muitakin merkistöjä kuin ISO 10646 tai Unicode. Tarkka 
+kuvaus muiden merkistöjen tallentamisesta MARC-tietueisiin löytyy dokumentista
+<i><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record 
+Structure, Character Sets, and Exchange Media</a></i>.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Vaihto tapahtuu G0-alueen oletusmerkistöön, 
+	jos se ei ole ASCII (ET)</li>
+	<li><b>&#8225;b</b> - Vaihto tapahtuu G1-alueen oletusmerkistöön, 
+	jos se ei ole ANSEL (ET)</li>
+	<li><b>&#8225;c</b> - Vaihto tapahtuu muihin merkistöihin (T)</li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>066 ##&#8225;a</b>(N</p>
+<p><b>066 ##&#8225;b</b>$)1</p>
+<p><b>066 ##&#8225;a</b>$1</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <datafields>
+    <title>Huomautuskentät, osa 2 (53X-59X)</title>
+    <description>Kentät 53X-58X sisältävät luonteeltaan erikoistuneempia bibliografisia huomautuksia. Merkittävä osa näistä huomautuskentistä on tarkoitettu bibliografisen kohteen arkistointia tai jatkuvuutta koskevien tietojen tallentamiseen.</description>
+    <datafield tag="536" repeatable="Y">
+      <name>Huomautus rahoituksesta</name>
+      <description paragraph="1">Sopimuksen, apurahan ja/tai projektin numerot, kun kuvailtava aineisto on syntynyt rahoitetun projektin tuloksena. Voi sisältää myös tietoja sponsorista tai rahoittajatahosta.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautusteksti</name>
+          <description>Tietoja sponsorista tai rahoittajatahosta.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Sopimuksen numero</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Apurahan numero</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Muuttumaton numero</name>
+          <description>Aineistoon liittyvä muuttumaton numero, jonka avulla projektin, tehtävän tai työyksikön numero voidaan tunnistaa.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Ohjelmaelementin numero</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Projektin numero</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Tehtävän numero</name>
+        </subfield>
+        <subfield code="h" repeatable="Y">
+          <name>Työyksikön numero</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>536 ## &#8225;a</strong> Sponsored by the World Health Organization</text>
+        </example>
+        <example>
+          <text><strong>536 ## &#8225;a</strong> Sponsored by the Advanced Research Projects Agency through the Office of Naval Research <strong>&#8225;b</strong> N00014-68-A-0245-0007 <strong>&#8225;c</strong> ARPA Order No. 2616</text>
+        </example>
+        <example>
+          <text><strong>536 ## &#8225;a</strong> Sponsored by the U.S. Dept. of the Army <strong>&#8225;e</strong> 61102A <strong>&#8225;f</strong> 1D161102B710 <strong>&#8225;g</strong> 00<strong>&#8225;h</strong> WU425</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="538" repeatable="Y">
+      <name>Huomautus järjestelmävaatimuksista</name>
+      <description paragraph="1">Kohteeseen liittyvää teknistä tietoa. Esimerkiksi elektronisen aineiston fyysisiä ominaisuuksia, kuten tallennustiheydet, pariteetti, ohjelmointikieli, laitteisto- ja lisävaatimukset, kauppanimi tai tallennusjärjestelmä, resoluution tarkkuus. Äänitteiden ja videotallenteiden osalta voidaan tallentaa esimerkiksi tietoja kauppanimestä tai tallennusjärjestelmästä (esim. VHS), modulaation taajuudesta ja resoluution tarkkuudesta. Kenttään voidaan tallentaa myös digitaalisten aineistojen teknisiin yksityiskohtiin liittyviä linkkejä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus järjestelmävaatimuksista</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Näyttöteksti</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>538 ## &#8225;a</strong> Internet-yhteys, WWW-selain, Adobe Acrobat Reader 3.0, SGML-selain (esim. Panorama Viewer).</text>
+        </example>
+        <example>
+          <text><strong>538 ## &#8225;a</strong> Windows 95; CD-ROM lukuasema.</text>
+        </example>
+        <example>
+          <text><strong>538 ## &#8225;a</strong> IBM PC tai yhteensopiva; 486SX tai nopeampi prosessori; 640x480 resoluution SVGA 256 värillä (tuhannet värit parempaa videoiden toistoa varten); 5 MB vapaata keskusmuistia; Windows-yhteensopiva äänikortti; Windows 3.1 tai uudempi<br /><strong>538 ## &#8225;a</strong> Mac lisäksi: Väri-Macintosh; MacOs 7.1 tai uudempi.</text>
+        </example>
+        <example>
+          <text><strong>538 ## &#8225;a</strong> SECAM-videolaite.</text>
+        </example>
+        <example>
+          <text><strong>538 ## &#8225;a</strong> Project methodology for digital version <strong>&#8225;i</strong> Technical details: <strong>&#8225;u</strong> http://www.columbia.edu/dlc/linglung/methodology.html</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="540" repeatable="Y">
+      <name>Huomautus käytön ja kopioinnin ehdoista</name>
+      <description paragraph="1">Kuvaillun aineiston käyttöä koskevat ehdot (esim. tekijänoikeus, kuvausoikeus, kauppaoikeus) sen jälkeen kun aineisto on saatettu käyttöön.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Käytön ja kopioinnin ehdot</name>
+          <description>Tarvittaessa säännösteksti kokonaisuudessaan.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Käyttöluvan antaja</name>
+          <description>Käyttöehdot asettaneen henkilön, organisaation tai viranomaisen nimi, jolta voi anoa lupaa aineiston käyttöön.</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Käyttöehtojen peruste</name>
+          <description>Identifioidaan asetus tms. teksti tai sopimus, johon käytön ja kopioinnin ehdot perustuvat.<br />Laillinen peruste (esim. tietyt säännöt, sopimus jne.).</description>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Oikeutetut käyttäjät</name>
+          <description>Käyttäjäryhmä tai yksittäiset henkilöt, joita osakentässä &#8225;a annetut rajoitukset eivät koske.</description>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>540 ## &#8225;a</strong> Literary rights of Carrie Chapman Catt have been dedicated to the public.</text>
+        </example>
+        <example>
+          <text><strong>540 ## &#8225;a</strong> Restricted: Copying allowed only for non- profit organizations.</text>
+        </example>
+        <example>
+          <text><strong>540 ## &#8225;3</strong> Recorded radio programs <strong>&#8225;a</strong> There are copyright and contractual restrictions applying to the reproduction of most of these recordings; <strong>&#8225;b</strong> Department of Treasury; <strong>&#8225;c</strong> Treasury contracts 7-A130 through 39- A179.</text>
+        </example>
+        <example>
+          <text><strong>540 ## &#8225;a</strong> Rights status not evaluated. For general information see "Copyright and Other Restrictions" <strong>&#8225;u</strong> http://www.loc.gov/rr/print/res/273_brum.html</text>
+        </example>
+        <example>
+          <text><strong>540 ## &#8225;3</strong> Transcripts <strong>&#8225;a</strong> Confidential, copying limited; <strong>&#8225;d</strong> Student named on document.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="541" repeatable="Y">
+      <name>Huomautus hankintalähteestä</name>
+      <description paragraph="1">Kenttää käytetään pääasiassa alkuperäis- tai historiallisten aineistojen tai muiden arkistokokoelmien kohdalla. Ks. myös kenttä <a href="#561">561</a> (Huomautus omistushistoriasta).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Yksityisyys</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Yksityinen</description>
+            </value>
+            <value code="1">
+              <description>Julkinen</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Hankintalähde</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Osoite</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Hankintatapa</name>
+          <description>Esim. lahja, laina tai osto.</description>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Hankinta-aika</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Hankintanumero</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Omistaja</name>
+          <description>Yksilö tai organisaatio, joka on kuvailtavien aineistojen laillinen hallussapitäjä.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Ostohinta</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Laajuus</name>
+          <description>Hankittujen kohteiden määrä.</description>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Yksikkötyyppi</name>
+          <description>Mittayksikön nimi, esim. koteloita.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>541 ## &#8225;a</strong> Uudenmaan lääninhallitus on luovuttanut vuonna 1896 Uudenmaan ja Hämeen läänintilit, asiakirjat 8544, 8545 ja 8546.</text>
+        </example>
+        <example>
+          <text><strong>541 1# &#8225;a</strong> Lähde tuntematon.</text>
+        </example>
+        <example>
+          <text><strong>541 ## &#8225;a</strong> Ypäjän seurakunnan lahjoitus 1972.</text>
+        </example>
+        <example>
+          <text><strong>541 0# &#8225;c</strong> Gift; <strong>&#8225;a</strong> Leavitt Hunt's daughter, Mrs. William E. Patterson; <strong>&#8225;d</strong> 1947.</text>
+        </example>
+        <example>
+          <text><strong>541 0# &#8225;3</strong> 5 diaries <strong>&#8225;n</strong> 25 <strong>&#8225;o</strong> cubic feet; <strong>&#8225;a</strong> Merriwether, Stuart; <strong>&#8225;b</strong> 458 Yonkers Road, Poughkeepsie, NY 12601; <strong>&#8225;c</strong> Purchase at auction; <strong>&#8225;d</strong> 1981/09/24; <strong>&#8225;e</strong> 81-325; <strong>&#8225;f</strong> Jonathan P. Merriwether Estate; <strong>&#8225;h</strong> $7,850.</text>
+        </example>
+        <example>
+          <text><strong>541 ## &#8225;3</strong> Videocassette <strong>&#8225;c</strong> Copyright deposit; <strong>&#8225;d</strong> Received: 1/16/85 from LC video lab; <strong>&#8225;a</strong> Copyright Collection.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="542" repeatable="Y">
+      <name>Huomautus tekijänoikeudesta</name>
+      <description paragraph="1">Kohteeseen liittyvää tietoa, jota voidaan käyttää tekijänoikeuden määrittelyssä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Yksityisyys</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Yksityinen</description>
+            </value>
+            <value code="1">
+              <description>Julkinen</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Henkilötekijä</name>
+          <description>Voidaan käyttää termiä "määrittämätön", jos asiaa on tutkittu, mutta oikeudenomistajaa ei ole löydetty.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Henkilötekijän kuolinaika</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Yhteisötekijä</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Oikeudenomistaja</name>
+          <description>Voidaan käyttää termiä "määrittämätön", jos asiaa on tutkittu, mutta oikeudenomistajaa ei ole löydetty.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Oikeudenomistajan yhteystiedot</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Tekijänoikeusmerkintö</name>
+          <description>Tekijänoikeusmerkintö siinä muodossa kuin se on julkaisussa.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Tekijänoikeuden päivämäärä</name>
+        </subfield>
+        <subfield code="h" repeatable="y">
+          <name>Tekijänoikeuden uudistamispäivämäärä</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Julkaisuaika</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Julkaisemattoman teoksen valmistumisaika</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Julkaisija</name>
+          <description>Voidaan käyttää termiä "määrittämätön", jos asiaa on tutkittu, mutta julkaisijaa ei ole löydetty.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Tekijänoikeuden tila</name>
+          <description>Määritetty tekijänoikeuden tila. Kerrotaan vain jos asia on aivan varma.  Voidaan käyttää termiä "määrittämätön", jos asiaa on tutkittu, mutta tilaa ei ole voitu määrittää</description>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Julkaistu/ei julkaistu</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Tekijänoikeushuomautuksen tekopäivä</name>
+          <description>Päivä jolloin tekijänoikeus määriteltiin tutkimusten perusteella.</description>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Julkaisu- tai valmistumismaa</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Tekijänoikeustiedon tuottaja</name>
+        <description>Tuottajan koodi tai nimi.</description>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Tekijänoikeuslain säätäjä</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Tiedonlähde</name>
+        <description>Tekijänoikeustiedon lähde, joko luetteloinnin kohde tai muut lähteet.</description>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI (Uniform Resource Identifier)</name>
+          <description>Esim. URL tai URN, jotka ovat standardimuotoisia elektronisen aineiston saavutettavuustietoja.  Tieto voi olla myös yksityiskohtainen huomautus, joka liittyy tekijänoikeuden tilaan.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>542 1# &#8225;a</strong> Martin, Henri Jean <strong>&#8225;d</strong> University of Chicago Press <strong>&#8225;f</strong> Copyright 1994 by the University of Chicago <strong>&#8225;g</strong> 1994 <strong>&#8225;o</strong> 20071103 <strong>&#8225;r</strong> US</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="544" repeatable="Y">
+      <name>Huomautus muun arkistoaineiston sijainnista</name>
+      <description paragraph="1">Kuvailtavien aineistojen kanssa samaan kokoelmaan tai tietueryhmään aiemmin kuuluneiden aineistojen hallussapitäjän nimi ja osoite.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Suhde<br /> Kuvaa muun arkistoidun aineiston suhdetta tietueessa kuvattuihin aineistoihin.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Sama alkuperä<br /> Aineistoilla on sama alkuperä mutta eri varasto.</description>
+            </value>
+            <value code="1">
+              <description>Eri alkuperä<br /> Aineistot liittyvät samaan aiheeseen ja ovat samassa varastossa, mutta niillä on eri alkuperä.</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Hallussapitäjä</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Osoite</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Maa</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alkuperä</name>
+          <description>Kuvailtavien aineistojen hallussapidon historia niiden luomisesta lähtien, sisältäen kaikki muutokset joita toisiaan seuraavat hallussapitäjät ovat niihin tehneet.</description>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+          <description>Muita aineistoja kuvailevan huomautuksen koko teksti. Tätä voidaan käyttää yksittäisten nimeke-, hallussapitäjä- ja alkuperäosakenttien sijaan.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>544 ## &#8225;d</strong> Burt Barnes papers; <strong>&#8225;e</strong> Also located at; <strong>&#8225;a</strong> Archives of American Art, Smithsonian Institution.</text>
+        </example>
+        <example>
+          <text><strong>544 ## &#8225;d</strong> William Fords Provenance; <strong>&#8225;e</strong> Freen College; <strong>&#8225;b</strong> 727 Prologue Blvd., History City, MA, <strong>&#8225;c</strong> USA.</text>
+        </example>
+        <example>
+          <text><strong>544 ## &#8225;d</strong> Series 462 (Register of criminal actions, 1929-1942); <strong>&#8225;e</strong> Not included in the initial transfer, accessioned as a separate series.</text>
+        </example>
+        <example>
+          <text><strong>544 1# &#8225;n</strong> Other records relating to the delivery of health care services can be found in the Health Care Services Division files of the Dept. of Health fonds.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="545" repeatable="Y">
+      <name>Huomautus elämäkerrasta tai historiasta</name>
+      <description paragraph="1">Elämäkerrallisia tietoja henkilöstä tai historiallisia tietoja yhteisöstä tai tapahtumasta, jota on käytetty kuvailtavan aineiston pääkirjauksena. Kun yksityiskohtaisuuden tasoja halutaan erotella, annetaan lyhyt tiivistelmä osakentässä &#8225;a ja täydempi merkintä osakentässä &#8225;b.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Tiedon tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Elämäkerrallinen luonnos</description>
+            </value>
+            <value code="1">
+              <description>Hallinnollista historiaa</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Elämäkerrallinen tai historiallinen huomautus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Huomautuksen laajennus</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>545 ## &#8225;a</strong> Carl Enckell (1876-1959) syntyi Pietarissa ja valmistui diplomi-insinööriksi Dresdenistä v. 1902. Autonomian ajalla Enckell työskenteli mm. Hietalahden laivatelakalla ja Kone Oy:n toimitusjohtajana. Suomen ulkoasiainministeri hän oli vuosina 1918-19, 1922 ja 1924. Enckellin yksityistä karttakokoelmaa pidettiin vielä 1940-luvulla Pohjoismaiden huomattavimpana. Siihen kuului 500-600 karttaa Suomesta ja Pohjolasta. Näiden karttojen perusteella ministeri Enckell julkaisi lukuisia tutkielmia Suomen rajoista.</text>
+        </example>
+        <example>
+          <text><strong>545 ## &#8225;a</strong> Active from March 15, 1905 until April 17, 1989.</text>
+        </example>
+        <example>
+          <text><strong>545 0# &#8225;a</strong> Born Kingston, N.Y., April 4, 1856; worked at J.J. Bufford's Lith. in Boston, 1890-1895.</text>
+        </example>
+        <example>
+          <text><strong>545 ## &#8225;a</strong> Author and reformer. Born Harriet Elizabeth Beecher. Married (1836) Calvin Ellis Stowe (1802-1886).</text>
+        </example>
+        <example>
+          <text><strong>545 ## &#8225;a</strong> The Faribault State School and Hospital provided care, treatment, training, and a variety of other services to mentally retarded individuals and their families. It was operated by the State of Minnesota from 1879 to 1998 under different administrative structures and with different names. A more detailed history of the Hospital may be found at<strong>&#8225;u</strong>http://www.mnhs.org/library/findaids/80881.html</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="546" repeatable="Y">
+      <name>Huomautus kielistä</name>
+      <description paragraph="1">Tekstimuotoinen huomautus kielistä, joita kuvailtavassa aineistossa käytetään. Huomautukseen voi sisältyä kuvaus aakkostosta, kirjoitusjärjestelmästä tai muusta symbolijärjestelmästä (esim. arabialaiset aakkoset, ACII, nuottikirjoitus, viivakoodi, logaritminen graafi). Koodimuotoiset tiedot kielistä tallennetaan kenttiin <a href="008.xml#kaikki">008</a>/35-37 (Kieli) ja/tai <a href="01X-04X.xml#041">041</a> (Kielikoodi).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus kielistä</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Tietoja aakkostosta, kirjoitusjärjestelmästä jne.</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>546 ## &#8225;a</strong> Laulujen sanat: suomi, ruotsi, venäjä.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;a</strong> Suomennettu engl. käännöksestä Ancestral Voices.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;a</strong> Vastuullisuusmerkinnöt myös englannin ja saksan kielellä.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;a</strong> In Hungarian; summaries in French, German, or Russian.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;a</strong> English, French, or German.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;3</strong> John P. Harrington field notebooks <strong>&#8225;a</strong> Apache; <strong>&#8225;b</strong> Phonetic alphabet.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;3</strong> Marriage certificate <strong>&#8225;a</strong> German; <strong>&#8225;b</strong> Fraktur.</text>
+        </example>
+        <example>
+          <text><strong>546 ## &#8225;a</strong> Latin; <strong>&#8225;b</strong> Roman alphabet.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="547" repeatable="Y">
+      <name>Huomautus aikaisemmista nimekkeistä</name>
+      <description paragraph="1">Kuvaus aikaisempien nimekkeiden suhteista, kun ymmärrettävää näyttöä ei voida muodostaa kentän <a href="20X-24X.xml#247">247</a> (Aikaisempi nimeke) perusteella.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus aikaisemmista nimekkeistä</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>547 ## &#8225;a</strong> Title varies: 1716?-1858, Notizie del mundo--1860-71, 1912- Annuario pontificio (1872-1911, Gerarchia cattolica).</text>
+        </example>
+        <example>
+          <text><strong>547 ## &#8225;a</strong> Aikaisemmat nimekkeet: Euroinfo international (tark. 10.5.1998); Telephone directories international (tark. 9.9.1999).</text>
+        </example>
+        <example>
+          <text><strong>547 ## &#8225;a</strong> Nimeke aikaisemmin BMMR, myös aikaisempiin numeroihin vaihdettu nimekkeen uusi muoto.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="550" repeatable="Y">
+      <name>Huomautus julkaisijasta</name>
+      <description paragraph="1">Tietoa jatkuvan julkaisun nykyisestä ja aikaisemmista julkaisijoista. Tiedot täydentävät osakentän 260&#8225;b tietoja. Vertaa myös kenttä <a href="70X-75X.xml#720">720</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus julkaisijasta</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>550 ## &#8225;a</strong> VTT Tietopalvelu.</text>
+        </example>
+        <example>
+          <text><strong>550 ## &#8225;a</strong> Elokuvan julk. Marin Karmitz, 1994.</text>
+        </example>
+        <example>
+          <text><strong>550 ## &#8225;a</strong> Kuntokallio.</text>
+        </example>
+        <example>
+          <text><strong>550 ## &#8225;a</strong> Julkaisija/kustantaja 2006- Ikäinstituutti.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="552" repeatable="Y">
+      <name>Huomautus yksiköistä ja ominaisuuksista</name>
+      <description paragraph="1">Kuvaus tiedoston sisällöstä, mukaan lukien yksiköiden tyypit, niiden ominaisuudet ja alueet, jolta ominaisuuksien arvot voidaan valita.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yksikkötyyppi: nimiö</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Yksikkötyyppi: määritelmä ja lähde</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Ominaisuus: nimiö</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Ominaisuus: määritelmä ja lähde</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Numeroitu aluearvo</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Numeroitu aluearvo: määritelmä ja lähde</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Aluearvot: pienin ja suurin</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Koodisto: nimi ja lähde</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Edustamaton alue</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Mittauksen ominaisuusyksiköt ja ratkaisu</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Ominaisuusarvot: alku- ja loppuaika</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Ominaisuusarvot: tarkkuus</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Ominaisuusarvot: tarkkuuden selitys</name>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Ominaisuuksien mittaamisen tiheys</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Yksikkö ja ominaisuus: yleiskuva</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Yksikkö ja ominaisuus: yksityiskohdat ja viittaukset</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Näyttöteksti</name>
+          <description>Tarpeen mukaan esittelyteksti kentän datalle.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>552 ## &#8225;a</strong> Elevation point <strong>&#8225;b</strong> a point of known elevation <strong>&#8225;c</strong> Elevation <strong>&#8225;d</strong> altitude above or below a reference datum <strong>&#8225;g</strong> 999 to 2641 <strong>&#8225;j</strong> meters</text>
+        </example>
+        <example>
+          <text><strong>552 ## &#8225;a</strong> Scale bar and text, title information text <strong>&#8225;b</strong> Level 1, Green</text>
+        </example>
+        <example>
+          <text><strong>552 ## &#8225;a</strong> soil type <strong>&#8225;b</strong> soil mapping unit polygon (SCS) <strong>&#8225;c</strong> numbered <strong>&#8225;d</strong> soil category, user-defined <strong>&#8225;g</strong> 1-4 <strong>&#8225;j</strong> integer <strong>&#8225;k</strong> 19940809-19940812 <strong>&#8225;l</strong> untested</text>
+        </example>
+        <example>
+          <text><strong>552 ## &#8225;a</strong> floodplain polygon <strong>&#8225;b</strong> 100 and 500 year floodplain zones (FIRM maps (FEMA)) <strong>&#8225;c</strong> user-id <strong>&#8225;d</strong> floodplain zone, USACERL <strong>&#8225;g</strong> 100-500 <strong>&#8225;j</strong> Years (time)</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="555" repeatable="Y">
+      <name>Huomautus kumuloituvasta hakemistosta tai haun apuvälineistä</name>
+      <description paragraph="1">Tietoja jatkuvan julkaisun kumuloituvan hakemiston saatavuudesta tai arkisto-, käsikirjoitus- ja visuaaliselle aineistoille tarkoitetuista haun apuvälineistä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Hakemistoja</em></description>
+            </value>
+            <value code="0">
+              <description><em>Haun apuvälineitä</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus kumuloituvasta hakemistosta </name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Saatavuus</name>
+          <description>Organisaatioyksikkö tai myyjä, jolta haun apuvälineet tai muu dokumentaatio voidaan hankkia.</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Valvonnan aste</name>
+          <description>Kuvailtavaa aineistoa koskevan hallinnollisen, bibliografisen tai fyysisen valvonnan laajuus.</description>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Bibliografinen viite</name>
+          <description>Viite julkaistuun tai julkaisemattomaan hakemistoon tai haun apuvälineeseen, kun sitä ei ole luetteloitu kuvailun kohteen kanssa.</description>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>555 ## &#8225;a</strong> Tekstilehtinen levystön aulassa.</text>
+        </example>
+        <example>
+          <text><strong>555 ## &#8225;a</strong> Vols. 1 (1917)-10 (1944) in v. 11, no. 1.</text>
+        </example>
+        <example>
+          <text><strong>555 0# &#8225;3</strong> Inventory <strong>&#8225;b</strong> available in library; <strong>&#8225;c</strong> folder level control.</text>
+        </example>
+        <example>
+          <text><strong>555 8# &#8225;a</strong> Cards are filed in the Biographical Index in the Reading Room.</text>
+        </example>
+        <example>
+          <text><strong>555 8# &#8225;a</strong> Finding aid available in the Manuscript Reading Room and on Internet. <strong>&#8225;u</strong> http://hdl.loc.gov/locmss/eadmss/ms996001</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="556" repeatable="Y">
+      <name>Huomautus dokumentaatiotiedoista</name>
+      <description paragraph="1">Tietoja tiedoston dokumentaatiosta, esim. manuaalit, joissa selitetään tiedoston sisältöä ja käyttöä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Dokumentaatio</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus dokumentaatiotiedoista</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>556 ## &#8225;a</strong> "Technical Documentation for Computer Tapes, 1974 Census of Agriculture, County Reports and Miscellaneous Tables."</text>
+        </example>
+        <example>
+          <text><strong>556 8# &#8225;a</strong> Documentation also available as FSWEC- 77/0387-1.</text>
+        </example>
+        <example>
+          <text><strong>556 ## &#8225;a</strong> BASIC reference. 3rd ed. Boca Raton, Fl. : IBM, c1984. (Personal computer hardware reference library); 6361132.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="561" repeatable="Y">
+      <name>Huomautus omistushistoriasta</name>
+      <description paragraph="1">Tietoja kuvailtavien aineistojen omistajuudesta ja hallussapidon historiasta niiden luomisesta lähtien hankinta-aikaan päättyen, sisältäen ajan jolloin yksittäiset kohteet tai niistä koostuva ryhmä kerättiin ensi kerran yhteen nykyiseen järjestykseensä. Bibliografisessa tietueessa annetaan normaalisti vain yleisesti kiinnostavat tiedot ja paikallisia tietoja voidaan antaa varastotietojen kentässä <a href="#541">541</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Yksityisyys</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Yksityinen</description>
+            </value>
+            <value code="1">
+              <description>Julkinen</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus omistushistoriasta</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>561 ## &#8225;a</strong> Etukannessa Agricolan nimen alkukirjaimet MI AG ja vuosiluku 1539.</text>
+        </example>
+        <example>
+          <text><strong>561 ## &#8225;a</strong> Monrepos&#8217;n kirjasto, exlibris &#8217;Bibliotheque des deux amis&#8217;.</text>
+        </example>
+        <example>
+          <text><strong>561 ## &#8225;a</strong> Taulu on kuulunut Antellin kokoelmaan.</text>
+        </example>
+        <example>
+          <text><strong>561 1# &#8225;a</strong> Collated: 1845-1847.</text>
+        </example>
+        <example>
+          <text><strong>561 0# &#8225;a</strong> From the collection of L. McGarry, 1948-1957.</text>
+        </example>
+        <example>
+          <text><strong>561 ## &#8225;3</strong> Family correspondence <strong>&#8225;a</strong> Originally collected by Henry Fitzhugh, willed to his wife Sarah Jackson Fitzhugh and given by her to her grandson Jonathan Irving Jackson, who collected some further information about his grandmother and the papers of their relatives and Cellarsville neighbors, the Arnold Fitzhugh's, before donating the materials along with his own papers as mayor of Cellarsville to the Historical Society.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="562" repeatable="Y">
+      <name>Huomautus kopioiden ja versioiden tunnistamisesta</name>
+      <description paragraph="1">Tiedot, joilla voidaan erottaa arkisto- tai käsikirjoitusvarastossa säilytettävän aineiston kopio tai versio, kun yksi tai useampia kopioita tai versioita on olemassa tai voisi olla olemassa. Bibliografisessa tietueessa annetaan normaalisti vain yleisesti kiinnostavat tiedot.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tunnusmerkit</name>
+          <description>Viestimessä näkyvät merkit, joita voidaan käyttää kuvailtavan aineiston kopion tunnistamiseen.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Kopion tunnistaminen</name>
+          <description>Tiedot, jotka erottavat yhden kopion muista kopioista.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Version tunnistaminen</name>
+          <description>Tiedot, joilla voidaan tunnistaa versio, joka eroaa sisällöllisesti, mutta on ajallisesti sidoksissa toiseen versioon, esim. painokseen.</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Esitysmuoto</name>
+          <description>Muoto, jossa aineisto on tarkoitettu käytettäväksi, nähtäväksi tai kuunneltavaksi.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Kopioiden lukumäärä</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>562 ## &#8225;a</strong> Annotation in Wilson's hand: Copy one of two sent to John Phipps, 27 March 1897; <strong>&#8225;b</strong> Copy identified as Declaration of Dissolution, Phipps copy.</text>
+        </example>
+        <example>
+          <text><strong>562 ## &#8225;e</strong> 3 copies kept; <strong>&#8225;b</strong> Labeled as president's desk copy, board of directors' working file copy, and public release copy.</text>
+        </example>
+        <example>
+          <text><strong>562 ## &#8225;c</strong> Version with air-brushed color illustrations; <strong>&#8225;e</strong> 3 copies.</text>
+        </example>
+        <example>
+          <text><strong>562 ## &#8225;3</strong> Deacidified copy <strong>&#8225;a</strong> With Braun's annotations by hand; <strong>&#8225;b</strong> Includes personal library seal embossed.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="563" repeatable="Y">
+      <name>Huomautus sidoksesta</name>
+      <description paragraph="1">Tarkoitettu käytettäväksi pääasiassa antikvariaattiaineistojen, harvinaisten kirjojen ja muiden erikoiskokoelmien kohdalla.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus sidoksesta</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>563 ## &#8225;a</strong> Late 16th century blind-tooled centrepiece binding, dark brown calf. <strong>&#8225;u</strong> [URI] <strong>&#8225;5</strong> Uk</text>
+        </example>
+        <example>
+          <text><strong>563 ## &#8225;a</strong> Gold-tooled morocco binding by Benjamin West, ca. 1840. <strong>&#8225;u</strong> [URI] <strong>&#8225;5</strong> Uk</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="565" repeatable="Y">
+      <name>Huomautus tapaustiedoston ominaisuuksista</name>
+      <description paragraph="1">Tietoja tapaustiedoston tai tietokannan muodostavien tapausten tai muuttujien sisällöstä, piirteistä ja/tai niiden lukumäärä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Tiedoston koko</em></description>
+            </value>
+            <value code="0">
+              <description><em>Tapaustiedoston piirteet</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tapausten/muuttujien lukumäärä</name>
+          <description>Yksittäiseen tapaukseen liittyvien tapausten/muuttujien määrä toistuvassa tapaustiedostosarjassa.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Muuttujan nimi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Analyysin yksikkö</name>
+          <description>Yksikkö, johon tapaustiedoston muuttujat viittaavat, esim. työntekijät henkilöstötietueissa.</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Tiedoston keruun päämäärä ja kattavuus</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Arkistointiperiaatteet</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>565 ## &#8225;3</strong> Military petitioners files <strong>&#8225;a</strong> 11; <strong>&#8225;b</strong> name; <strong>&#8225;b</strong> address; <strong>&#8225;b</strong> date of birth; <strong>&#8225;b</strong> place of birth; <strong>&#8225;b</strong> date of application; <strong>&#8225;b</strong> dates of service; <strong>&#8225;b</strong> branch of service; <strong>&#8225;b</strong> rank; <strong>&#8225;b</strong> date of induction; <strong>&#8225;b</strong> latest occupation; <strong>&#8225;b</strong> dependents; <strong>&#8225;c</strong> pensioners; <strong>&#8225;d</strong> Civil War (1861-65) veterans</text>
+        </example>
+        <example>
+          <text><strong>565 0# &#8225;3</strong> Product use survey <strong>&#8225;a</strong> 3; <strong>&#8225;b</strong> sex; <strong>&#8225;b</strong> age; <strong>&#8225;b</strong> marital status; <strong>&#8225;c</strong> retail customers; <strong>&#8225;d</strong> Northeast coast distribution area</text>
+        </example>
+        <example>
+          <text><strong>565 0# &#8225;3</strong> Conscription files <strong>&#8225;a</strong> 9; <strong>&#8225;b</strong> SSN; <strong>&#8225;b</strong> name; <strong>&#8225;b</strong> address...</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="567" repeatable="Y">
+      <name>Huomautus metodologiasta</name>
+      <description paragraph="1">Tietoa aineiston merkittävistä metodologisista piirteistä, kuten algoritmista, näytteenoton menettelytavoista tai validiteetista.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Metodologia</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus metodologiasta</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>567 8# &#8225;a</strong> Narratiivinen tutkimus.</text>
+        </example>
+        <example>
+          <text><strong>567 ## &#8225;a</strong> Comparison of visible plume outlines with 39 plumes (Chalk Point-14, Paradise-13, Lunen-12); measured source and ambient conditions were input for the validation tests for each of the 39 runs.</text>
+        </example>
+        <example>
+          <text><strong>567 8# &#8225;a</strong> Random sample of system users for first quarter 1982; every fourth name in authorization registers; comparison with system-generated transaction report.</text>
+        </example>
+        <example>
+          <text><strong>567 ## &#8225;a</strong> Continuous, deterministic, predictive.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="580" repeatable="Y">
+      <name>Huomautus linkitysten monitahoisuudesta</name>
+      <description paragraph="1">Kuvaus kuvailun kohteen ja muiden kohteiden monitahoisista suhteista, kun ymmärrettävää huomautusta ei voida muodostaa linkkikenttien 780-787 perusteella.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus linkitysten monitahoisuudesta</name>
+          <description>Kuvailun kohteeseen liittyvän nimekkeen luettelokirjaus ja suhdetta kuvaava merkintö.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>580 ## &#8225;a</strong> Continued in 1982 by: U.S. exports. Schedule E commodity groupings by world area and country.</text>
+        </example>
+        <example>
+          <text><strong>580 ## &#8225;a</strong> Merged with: Index chemicus (Philadelphia, Pa. : 1977), to form: Current abstracts of chemistry and index chemicus (Philadelphia, Pa : 1978)<br /><strong>785 17 &#8225;t</strong> Current abstracts of chemistry and index chemicus (Philadelphia, Pa : 1978) <strong>&#8225;x</strong> 0161-455X <strong>&#8225;w</strong> (DLC)###83642299</text>
+        </example>
+        <example>
+          <text><strong>580 ## &#8225;a</strong> Cumulates: Deutsche Bibliographie. Wöchentliches Verzeichnis.</text>
+        </example>
+        <example>
+          <text><strong>580 ## &#8225;a</strong> Continued by: Ionospheric predictions issued by the laboratory under its later name: Institute for Telecommunication Sciences and Aeronomy.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="581" repeatable="Y">
+      <name>Huomautus julkaisusta, joka koskee kuvailtavaa aineistoa</name>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Julkaisut</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus julkaisusta joka koskee kuvailtavaa aineistoa</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN, International Standard Book Number</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>581 ## &#8225;a</strong> The vanishing race and other illusions : photographs of Indians by Edward S. Curtis / Christopher Lymen. New York : Pantheon Books, 1982.</text>
+        </example>
+        <example>
+          <text><strong>581 8# &#8225;a</strong> The adjusted 1970 numbers are used as a basis for the annual county population estimates published in Current Population Reports Series P-26 and P- 25.</text>
+        </example>
+        <example>
+          <text><strong>581 8# &#8225;a</strong> Reproduction: Antiques, June 1952, p. 76.</text>
+        </example>
+        <example>
+          <text><strong>581 8# &#8225;a</strong> Inventory of American Sculpture: photocopy. 1982.</text>
+        </example>
+        <example>
+          <text><strong>581 ## &#8225;3</strong> Preliminary report <strong>&#8225;a</strong> "A General Crop Growth Model for Simulating Impacts of Gaseous Effluents from Geothermal Technologies," Kercher, J.R. UCRL- 81014, 1978.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="583" repeatable="Y">
+      <name>Huomautus toimenpiteistä</name>
+      <description paragraph="1">Tietoa käsittely-, viittaus- ja säilyttämistoimenpiteistä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Yksityisyys</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Yksityinen</description>
+            </value>
+            <value code="1">
+              <description>Julkinen</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Toimenpide</name>
+          <description>Toimenpiteitä kuvaavaa standarditerminologiaa.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Toimenpiteen tunnistus</name>
+          <description>Koodi tai määre, jolla tunnistetaan tietty toimenpide yhteydessä aikaan, joka kerrotaan osakentässä &#8225;c.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Toimenpiteen aika</name>
+          <description>Tapahtuneen tai tulevan toimenpiteen konkreettinen kellonaika, päiväys tai vuosi.</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Toimenpiteiden ajanjakso</name>
+          <description>Aikajakso, jota ei voida ilmaista konkreettisena aikana.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Toimenpiteen odottamaton ajankohta</name>
+          <description>Ajankohta ennustamattomissa tapauksissa, esim. vastaanottamisen yhteydessä.</description>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Peruste</name>
+          <description>Asetus, määräys, raportti, perustelut tai säännöt (koko teksti tai sitaatti), joihin toimenpiteet perustuvat.</description>
+        </subfield>
+        <subfield code="h" repeatable="Y">
+          <name>Vastuullinen taho</name>
+          <description>Henkilön, organisaation tai viranomaisen nimi, jolla on vastuu toimenpiteistä.</description>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Toimenpiteen menetelmä</name>
+          <description>Keinot tai tekniikka, jolla toimenpide toteutetaan.</description>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Toimenpiteen tapahtumapaikka</name>
+          <description>Sisältää paikan, jossa käyttäjät voivat katsella kuvailtavia aineistoja.</description>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Toimenpiteen tekijä</name>
+          <description>Henkilö tai organisaatio, joka suorittaa toimenpiteen.</description>
+        </subfield>
+        <subfield code="l" repeatable="Y">
+          <name>Tila</name>
+          <description>Aineiston kunto tai tila.</description>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Laajuus</name>
+          <description>Mukana olevien kohteiden lukumäärä.</description>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Yksikkötyyppi</name>
+          <description>Mittayksikön nimi. </description>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Sisäinen huomautus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>MARC-koodi identifioi toimenpidetietojen tallennukseen käytetyn termin lähteen. Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>583 ## &#8225;a</strong> Tietokanta konvertoidaan MARC 21 -formaattiin <strong>&#8225;c</strong> 2008</text>
+        </example>
+        <example>
+          <text><strong>583 0# &#8225;a</strong> transfer <strong>&#8225;e</strong> at conclusion of court case</text>
+        </example>
+        <example>
+          <text><strong>583 ## &#8225;a</strong> queued for preservation <strong>&#8225;c</strong> 19861010 <strong>&#8225;e</strong> priority <strong>&#8225;f</strong> Title IIC project <strong>&#8225;5</strong> DLC</text>
+        </example>
+        <example>
+          <text><strong>583 1# &#8225;a</strong> will transform digitally <strong>&#8225;c</strong> 20031104 <strong>&#8225;i</strong> OCR <strong>&#8225;z</strong> queued for digitization, Nov. 4, 2003 <strong>&#8225;2</strong> pda <strong>&#8225;5</strong> NIC</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="584" repeatable="Y">
+      <name>Huomautus kasvusta ja käytön määrästä</name>
+      <description paragraph="1">Tietoja kuvailtavien aineistojen kasvunopeudesta (kun on kyse jatkuvasti lisääntyvistä aineistoista) ja/tai niiden käytön määrästä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Kasvu</name>
+          <description>Aineiston kasvunopeus ilmaistuna volyymien määränä suhteessa johonkin ajanjaksoon.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Käytön määrä</name>
+          <description>Ilmaistaan yleensä hakujen määränä suhteessa johonkin ajanjaksoon.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>584 ## &#8225;3</strong> General subject files <strong>&#8225;a</strong> 45 cu. ft. average annual accumulation 1970-1979. <strong>&#8225;a</strong> 5.4 cu. ft. average monthly accumulation, 1979-82. <strong>&#8225;a</strong> Current average monthly accumulation is 2 cu. ft.</text>
+        </example>
+        <example>
+          <text><strong>584 ## &#8225;b</strong> An average of 15 reference requests per month, with peak demand during June and December. <strong>&#8225;b</strong> Total reference requests for 1984: 179.</text>
+        </example>
+        <example>
+          <text><strong>584 ## &#8225;3</strong> Employee records <strong>&#8225;a</strong> 10 cu. ft. annual accumulation.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="585" repeatable="Y">
+      <name>Huomautus näyttelystä</name>
+      <description paragraph="1">Sisältää viittauksen näyttelyyn, jossa kuvailun kohde on ollut esillä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus näyttelystä</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>585 ## &#8225;a</strong> Exhibited: "Visions of City &amp; Country: Prints and Photographs of Nineteenth-Century France," organized by Worchester Art Museum and the American Federation of Arts, 1982.</text>
+        </example>
+        <example>
+          <text><strong>585 ## &#8225;3</strong> Color lithographs <strong>&#8225;a</strong> Exhibited: "Le Brun à Versailles," sponsored by the Cabinet des dessins, Musée du Louvre, 1985- 1986.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="586" repeatable="Y">
+      <name>Huomautus palkinnosta</name>
+      <description paragraph="1">Tietoa palkinnoista, jotka liittyvät kuvailun kohteeseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Palkinnot</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus palkinnosta</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>586 ## &#8225;a</strong> Finlandia-palkinto, 2002</text>
+        </example>
+        <example>
+          <text><strong>586 ## &#8225;a</strong> Syksyn sävel 1978, 1. sija</text>
+        </example>
+        <example>
+          <text><strong>586 ## &#8225;a</strong> Academy Award for Best Picture, 1987</text>
+        </example>
+        <example>
+          <text><strong>586 8# &#8225;a</strong> "Emmy Award for Best Classical Program in the Performing Arts, 1980/81"</text>
+        </example>
+        <example>
+          <text><strong>586 ## &#8225;a</strong> Pulitzer Prize for Nonfiction, 1981</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="588" repeatable="Y">
+      <name>Source of description note</name>
+      <description paragraph="1">Information used for tracking and controlling the metadata contained in the record. It includes general and specific source of description notes that are especially of interest to other catalogers.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Source of description note</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>588 ## &#8225;a</strong> Cannot determine the relationship to Bowling illustrated, also published in New York, 1952-58. <strong>&#8225;5</strong>DLC</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="59X" type="59X" repeatable="">
+      <name>paikalliset huomautukset</name>
+      <description paragraph="1">Kentät 590-599 on varattu paikalliseen käyttöön ja niiden sisältö on paikallisesti määriteltävissä.</description>
+    </datafield>
+  </datafields>
+</fields>

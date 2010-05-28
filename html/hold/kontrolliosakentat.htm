@@ -1,0 +1,336 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Kontrolliosakentät</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Tässä osiossa kuvataan kolme kontrolliosakenttää, joiden avulla kenttien tiedot 
+linkitetään tiettyihin organisaatioihin tai muihin kenttiin. Kontrolliosakenttiä esiintyy 
+useissa (&#8225;5) tai lähes kaikissa (&#8225;6 ja &#8225;8) varastotietojen formaatin kentissä.</p>
+<ul>
+	<li><a href="#5">&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</a></li>
+	<li><a href="#6">&#8225;6 - LINKITYS</a></li>
+	<li><a href="#8">&#8225;8 - LINKKI- JA JÄRJESTYSNUMERO</a></li>
+</ul>
+<hr>
+<h3><a name="5"></a>&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</h3>
+<p>Osakenttä &#8225;5 sisältää koodin organisaatiolle, joka 
+omistaa kappaleen, johon kentässä esitetyt tiedot soveltuvat. Kentän tiedot 
+voivat soveltua tai voivat olla soveltumatta yleisesti kuvailun kohteeseen, 
+mutta niillä on merkitystä ko. organisaatiolle.<br>
+Organisaation koodina käytetään ISIL-tunnusta, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>.</p>
+<p>583 ##&#8225;aQueued for preservation;&#8225;c19861010;&#8225;ePriority;&#8225;fTitle IIC 
+project<b>&#8225;5DLC</b></p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="6"></a>&#8225;6 - LINKITYS</h3>
+<p>Osakenttä &#8225;6 sisältää tietoja, joilla linkitetään eri kirjaimistoilla 
+tallennetut kentät toisiinsa. Osakentän sisältönä voi olla linkitettävän kentän 
+kolminumeroinen kenttäkoodi, esiintymänumero, koodi joka kertoo mitä 
+kirjaimistoa tiedoissa on käytetty vasemmalta oikealle ja/tai koodi 
+joka kertoo että kentän tiedot näytetään oikealta vasemmalle. Tavallinen 
+(ei-880) kenttä voi olla linkitettynä yhteen tai useampaan 880-kenttään, jotka 
+kaikki sisältävät samat tiedot mutta eri kirjaimistoilla tallennettuna. 
+Osakenttä &#8225;6 on aina kentän ensimmäinen osakenttä. Sen rakenne on seuraava:</p>
+<p>&#8225;6&lt;linkitettävä kenttäkoodi&gt;- &lt;esiintymänumero&gt; / &lt;kirjaimistokoodi&gt; / &lt;kentän 
+suuntakoodi&gt;</p>
+<ul>
+	<li>Malleja eri kirjaimistoja sisältävistä tietueista
+	löytyy Library of Congressin 
+	sivuilta, ks.
+	<span style="font-style: italic; ">
+	<a href="http://www.loc.gov/marc/holdings/echdmulti.html">Multiscript 
+	Records</a></span>.</li>
+	<li><a href="88X.htm">880-kenttää koskevat ohjeet</a> löytyvät 
+	ko. kentän kohdalta.</li>
+	<li>Eri kirjaimistoja/merkistöjä koskevaa tietoa löytyy 
+
+<span lang="EN-GB">
+	Library of Congressin</span>
+
+	sivuilta, ks. <i><a href="http://www.loc.gov/marc/specifications/">
+	MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></i>. </li>
+</ul>
+<h4>Linkitettävä kenttäkoodi ja esiintymänumero</h4>
+<p><i>Linkitettävä kenttäkoodi</i> sisältää sen kentän kenttäkoodin, johon ko. kenttä 
+halutaan linkittää. Sitä seuraa välittömästi tavuviiva ja <i>esiintymänumero</i>, joka 
+merkitään kahdella numerolla. Jokaiselle samassa tietueessa esiintyvälle 
+linkitettävien kenttien ryhmälle annetaan eri <i>esiintymänumerot</i>, ja ne voidaan 
+antaa sattumanvaraisesti. <i>Esiintymänumerot</i> mahdollistavat toisiinsa liittyvien 
+kenttien täsmäyttämisen; niillä ei ole tarkoitus järjestää tietueen kenttiä. <i>
+Esiintymänumeron</i> kaksi numeroa tasataan oikealle ja käyttämättömässä merkkipaikassa on nolla.</p>
+<p>Kun 
+880-kenttää ei ole linkitetty tavalliseen kenttään, <i>esiintymänumeroksi</i> sen 
+osakentässä &#8225;6 annetaan 00. Sitä käytetään, jos luetteloiva organisaatio haluaa erottaa 
+tietueessa olevat eri kirjaimistot. Tässä tapauksessa <i>linkitettävän 
+kenttäkoodin</i> paikalle merkitään se tavallinen kenttä, joka tietueessa olisi 
+voinut olla kyseisen 880-kentän parina.</p>
+<p>852 4#<b>&#8225;6 880-01</b>&#8225;a[Sijainti latinalaisella kirjaimistolla]<br>
+880 2#<b>&#8225;6852-01/(2/r</b>&#8225;a[Sijainti heprealaisella kirjaimistolla linkitettynä 
+vastaavaan tavalliseen kenttää]</p>
+<h4>Kirjaimistokoodi</h4>
+<p>Esiintymänumeroa seuraa välittömästi kauttaviiva (/) ja <i>kirjaimistokoodi</i>. 
+Tämä koodi kertoo mitä kirjaimistoa kentän tiedoissa on käytetty. Seuraavat 
+kirjaimistokoodit ovat käytettävissä:</p>
+
+<blockquote>
+<table border="1" id="table2">
+	<tr><td><b>Koodi</b></td>
+		<td><b>Kirjaimisto</b></td>
+	</tr>
+	<tr>
+		<td>(3</td>
+		<td>arabialainen</td>
+	</tr>
+	<tr>
+		<td>(B</td>
+		<td>latinalainen</td>
+	</tr>
+	<tr>
+		<td>$1</td>
+		<td>kiinalainen, japanilainen, korealainen</td>
+	</tr>
+	<tr>
+		<td>(N</td>
+		<td>kyrillinen</td>
+	</tr>
+	<tr>
+		<td>(2</td>
+		<td>heprealainen</td>
+	</tr>
+	<tr>
+		<td>(S</td>
+		<td>kreikkalainen</td>
+	</tr>
+</table>
+</blockquote>
+
+<p>880 1#&#8225;6852-01/<b>(N</b>&#8225;a[Sijainti kyrillisellä kirjaimistolla]</p>
+<p>Koko kentän ei tarvitse olla tallennettu sillä kirjaimistolla jonka koodi 
+annetaan osakentässä &#8225;6. Jos kenttä sisältää useampia kirjaimistoja, osakentässä 
+&#8225;6 annetaan sen kirjaimiston koodi, joka tulee <i>ensimmäisenä</i> vastaan 
+luettaessa kenttää vasemmalta oikealle.<br>
+Huomioi, että <i>kirjaimistokoodia</i> käytetään 880-kenttien osakentässä &#8225;6, 
+mutta ei yleensä niihin liittyvien tavallisten kenttien osakentässä &#8225;6. 
+Tavallisissa kentissä tietojen oletetaan olevan tallennettu tietueen 
+pääasiallisella kirjaimistolla.</p>
+<h4>Kentän suuntakoodi</h4>
+<p>MARC-tietueessa 880-kentän sisältö tallennetaan aina loogisessa 
+järjestyksessä ensimmäisestä merkistä viimeiseen, huolimatta siitä miten päin 
+tekstiä luetaan. Näyttöä varten kentän oletussuunta on vasemmalta oikealle. Kun 
+kenttä sisältää tekstiä, joka luetaan oikealta vasemmalle, kirjaimistokoodin 
+jälkeen tallennetaan kauttaviiva (/) ja <i>kentän suuntakoodi</i>. Oikealta 
+vasemmalle luettaville teksteille <i>suuntakoodi</i> on <b>r</b>. Suuntakoodi 
+tallennetaan vain oikealta vasemmalle luettaviin kenttiin, koska vasemmalta 
+oikealle on 880-kenttien oletussuunta. (Lisätietoja kentän suunnasta, ks. <i>
+<a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for 
+Record Structure, Character Sets, and Exchange Media</a></i>.)</p>
+<p>880 1#&#8225;6852-01/(2<b>/r</b>&#8225;h[Paikkamerkki heprealaisella kirjaimistolla]</p>
+<p>Huomioi, että <i>suuntakoodia</i> käytetään 880-kenttien osakentässä &#8225;6, 
+mutta ei yleensä niihin liittyvien tavallisten kenttien osakentässä &#8225;6. 
+Tavallisissa kentissä tietojen oletetaan olevan tallennettu tietueen 
+pääasiallisen kirjaimiston suuntaisesti.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="8"></a>&#8225;8 - LINKKI- JA JÄRJESTYSNUMERO</h3>
+<p>Osakenttä &#8225;8 sisältää tietoja, joilla tunnistetaan linkitetyt kentät ja joiden 
+avulla voidaan myös järjestää linkitettyjä kenttiä. Osakenttää &#8225;8 voidaan 
+toistaa, kun halutaan linkittää kenttä useampaan kuin yhteen kenttäryhmään. 
+Osakenttä &#8225;6 on aina kentän ensimmäinen osakenttä. Osakentän 
+rakenne on seuraava:</p>
+<p>&#8225;8&lt;linkkinumero&gt;.&lt;järjestysnumero&gt; \ &lt;linkin tyyppi&gt;</p>
+<h4>Linkkinumero</h4>
+<p>Linkkinumero on osakentän ensimmäinen tietoelementti ja se merkitään aina kun 
+osakenttää käytetään. Se on vaihtuvamittainen numero, joka esiintyy kaikkien 
+linkitettävien kenttien osakentässä &#8225;8. Kentät, joilla on sama linkkinumero, ovat 
+toisiinsa linkitettyjä.</p>
+<h4>Järjestysnumero</h4>
+<p>Tämä numero erotetaan linkkinumerosta pisteellä '.' ja sen merkitseminen on 
+vapaaehtoista. Se on vaihtuvamittainen numero, jota voidaan käyttää ilmaisemaan 
+linkitettyjen kenttien suhteellista järjestystä näytössä. Alemmalla 
+järjestysnumerolla merkityt kentät näytetään ennen korkeampia. Jos 
+järjestysnumeroa käytetään, sitä pitää käyttää kaikissa osakentissä &#8225;8, jotka 
+sisältävät saman linkkinumeron.</p>
+<h4>Linkin tyyppi</h4>
+<p>Tämä koodi erotetaan edeltävistä tiedoista kenoviivalla (\). Koodi osoittaa 
+linkin syyn ja se seuraa linkkinumeroa tai järjestysnumeroa silloin, kun sitä on 
+käytetty. Kun linkin tyyppiä ei ole merkitty, oletetaan että osakenttää &#8225;8 on 
+käytetty varastotietokenttien 85X, 86X tai 87X linkittämiseen ja järjestämiseen. 
+Osakenttä &#8225;8 on oleellinen näiden kenttien linkittämisessä ja järjestämisessä.</p>
+<p>Osakentässä &#8225;8 voidaan käyttää seuraavia linkin tyyppiä kuvaavia 
+yksimerkkisiä koodeja:</p>
+<ul>
+	<li><b>a</b> - Toiminta (Action)<span style="background-color: #FFFF00"><br>
+	</span>Koodia käytetään tietueessa linkittämään yksi tai useampi 583 kenttä 
+	kenttiin 541 tai 561, johon käsittely- tai viittaustoiminnot liittyvät. Tyypillisesti koodia 
+käytetään vain kun tietueessa on useampia 541 tai 561 kenttiä ja useampia 583 
+	kenttiä, jotka liittyvät tiettyyn 541 tai 561 kenttään.</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>541 ##<b>&#8225;81.1\a</b>&#8225;3Public School and College Authority and Trade School and 
+Junior College Authority project files&#8225;aFinance Dept.&#8225;cTransferred</p>
+		<p>583 ##<b>&#8225;81.2\a</b>&#8225;aAppriased&#8225;c198712-&#8225;ltjb/prr</p>
+		<p>583 ##<b>&#8225;81.3\a</b>&#8225;aScheduled&#8225;c19880127&#8225;ksrc/prr</p>
+		<p>583 ##<b>&#8225;81.4\a</b>&#8225;aArranged&#8225;c19900619&#8225;kmc/dmj</p>
+		<p>583 ##<b>&#8225;81.5\a</b>&#8225;aProcessed level 2&#8225;b90.160&#8225;c19901218&#8225;kmc/dmj</p>
+	</blockquote>
+</blockquote>
+<ul>
+	<li><b>x</b> - 
+Yleinen järjestäminen (General sequencing)<br>
+	Koodia käytetään tietueessa linkittämään kenttiä ja osoittamaan niiden 
+järjestystä. Järjestää voidaan esim. palasiin hajotetun pitkän kentän palasia, 
+kenttiä tärkeysjärjestykseen tms. Tämän koodin yhteydessä järjestysnumeron 
+käyttö osakentässä &#8225;8 on pakollista.</li>
+</ul>
+<p>Huomioi, että osakenttää &#8225;8 käytetään eri tavalla kentässä 852, jossa sitä 
+käytetään varastotietojen järjestämiseen Katso kenttä <a href="852-856.htm#852">
+852</a>, osakenttä &#8225;8.</p>
+<p>583 ##<b>&#8225;81.2</b>&#8225;aExhibit&#8225;c1982/12/01 through 1982/03/01&#8225;jMuseum of Fine Arts<br>
+876 ##<b>&#8225;81.2</b>&#8225;aXAX1222-1&#8225;pA1234567</p>
+<p>853 03<b>&#8225;81</b>&#8225;aBd.&#8225;i(year)<br>
+853 03<b>&#8225;82</b>&#8225;an.F:Bd&#8225;i(year)<br>
+863 30<b>&#8225;81.1</b>&#8225;a1-21&#8225;i1911-1923/1924<br>
+863 30<b>&#8225;82.1</b>&#8225;a1-25&#8225;i1925/1926-1942/1943</p>
+<p>853 00<b>&#8225;81</b>&#8225;ano.&#8225;i(year)&#8225;j(month)<br>
+863 40<b>&#8225;81.1</b>&#8225;a180-226&#8225;i1976-1981<br>
+863 44<b>&#8225;81.2</b>&#8225;a228<br>
+863 40<b>&#8225;81.3</b>&#8225;a230&#8225;i1982&#8225;jApr.<br>
+863 40<b>&#8225;81.4</b>&#8225;a235&#8225;i1982&#8225;jDec.<br>
+863 40<b>&#8225;81.5</b>&#8225;a237&#8225;i1983&#8225;jMar.<br>
+863 40<b>&#8225;81.6</b>&#8225;a239-242&#8225;i1983&#8225;jJune-Oct.</p>
+<p>853 20<b>&#8225;81</b>&#8225;av.&#8225;bno.&#8225;u12&#8225;vr&#8225;i(year)&#8225;j(month)<br>
+863 40<b>&#8225;81.1</b>&#8225;a108&#8225;b1-6&#8225;i1989&#8225;j1-6<br>
+863 40<b>&#8225;81.2</b>&#8225;a108&#8225;b7-12&#8225;i1989&#8225;j7-12<br>
+863 40<b>&#8225;81.3</b>&#8225;a109&#8225;b1-6&#8225;i1990&#8225;j1-6<br>
+863 40<b>&#8225;81.4</b>&#8225;a109&#8225;b7-12&#8225;i1990&#8225;j7-12</p>
+<p>876 ##<b>&#8225;81.1</b>&#8225;aAAA1000-1-1&#8225;pA1481283827<br>
+876 ##<b>&#8225;81.2</b>&#8225;aAAA1000-1-3&#8225;pA1481283831<br>
+876 ##<b>&#8225;81.3</b>&#8225;aAAA1000-1-2&#8225;jLost&#8225;pA1481283845<br>
+876 ##<b>&#8225;81.4</b>&#8225;aAAA1000-1-5&#8225;pA1481283863</p><hr>
+<h3>OSAKENTÄN &#8225;8 KÄYTTÖ KENTISSÄ 866-868 (VAPAAMUOTOISET VARASTOTIEDOT)</h3>
+<p>Osakenttä &#8225;8 sisältää tietoa, joka linkittää toisiinsa liittyvät 
+varastotietojen kentät 853-868. Vapaamuotoisten varastotietojen kentissä 
+käytetään vain linkkinumeroa ilmaisemaan onko kenttä</p>
+<ul>
+	<li>ainoa varastotietojen kenttä koko varastotietojen merkinnössä tai ainoa 
+	näytön muodostamisessa käytettävä varastotietojen kenttä,</li>
+	<li>vaihtoehtoinen näyttö yhdelle tai useammalle osuudelle kenttien 863-865 
+	varastotiedoista vai</li>
+	<li>kenttien 863-865 lisäksi tallennettu varastotieto.</li>
+</ul>
+<p>Osakentässä &#8225;8 käytettävä linkkinumero määritellään seuraavin ehdoin:</p>
+<h3>Linkkinumero on 0</h3>
+<p>Varastotieodot on tallennettu ainoastaan vapaamuotoiseen varastotietojen 
+kenttiin 866-868. Merkinnössä ei ole käytetty ilmestymistietojen (853-855) tai 
+määrämuotoisten varastotietojen (863-865) kenttiä.</p>
+<blockquote>
+	<p><b>867 31&#8225;8</b>0<b> &#8225;a</b>&quot;Teacher's guide&quot; pt. A-B</p>
+</blockquote>
+<p>Varastotiedot on tallennettu linkitettyihin ilmestymistietojen (853-855) 
+/määrämuotoisten varastotietojen (863-865) kenttiin, mutta näytön 
+muodostamisessa käytettävä muoto on tallennettu vapaamuotoiseen 
+varastotietokenttään.</p>
+<blockquote>
+	<p><b>853 20&#8225;8</b>1<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>853 20&#8225;8</b>2<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>853 20&#8225;8</b>3<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>863 43&#8225;8</b>1.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>863 43&#8225;8</b>2.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>863 43&#8225;8</b>2.2<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>863 43&#8225;8</b>3.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>866 40&#8225;8</b>0<b>&#8225;a</b>[vapaamuotoiset varastotiedot näyttöä varten]<br>
+	<i>[Näyttöä ei muodosteta mistään 853/863 kentästä. Kenttä 866 korvaa kaikki 
+	853/863 kentät näytön muodostamisessa.]</i></p>
+</blockquote>
+<h3>Linkkinumero on sama kuin linkatuissa kentissä 853-855 ja 863-865</h3>
+<p>Yksi tai useampi osuus 853-855 ja 863-865 kenttiin tallennetuista 
+varastotiedoista on tallennettu myös vapaamuotoisten varastotietojen kenttiin 
+866-868, jotta niiden perusteella voidaan muodostaa vaihtoehtoinen näyttö.</p>
+<p>Kentissä 866-868 osakentässä &#8225;8 olevan linkkinumeron on oltava sama kuin 
+niissä 853-855 ja 863-865 kentissä, jotka nämä korvaavat. Vapaamuotoisen 
+varastotietojen kentän sisällön on korvattava kaikki määrämuotoiset 
+varastotiedot, jotka on linkitetty ilmestymistietojen kenttiin.</p>
+<p>Jos useita 853-855/863-865 kenttiä, joissa on peräkkäiset linkkinumerot, 
+korvataan näytön muodostamista varten yhdellä vapaamuotoisten varastotietojen 
+kentällä, osakenttää &#8225;8 voidaan siellä toistaa tallentamalla niihin jokaisen 
+korvattavan 853-855/863-865 kentän linkkinumero.</p>
+<blockquote>
+	<p><b>855 20&#8225;8</b>1<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>855 20&#8225;8</b>2<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>855 20&#8225;8</b>3<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>855 20&#8225;8</b>4<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>865 43&#8225;8</b>1.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>865 43&#8225;8</b>2.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>865 43&#8225;8</b>3.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>865 40&#8225;8</b>4.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>868 40&#8225;8</b>2<b>&#8225;8</b>3<b>&#8225;a</b>[vapaamuotoiset varastotiedot näyttöä 
+	varten]<br>
+	<i>[Kenttä 868 korvaa 855/865 kentät, joissa on linkkinumerot 2 ja 3. Näistä 
+	855/865 kentistä ei muodosteta näyttöä.]</i></p>
+</blockquote>
+<p>Yhden 866-868 kentän, jossa osakenttää &#8225;8 on toistettu, sijaan voidaan 
+voidaan vaihtoehtoisesti käyttää myös erillisiä 866-868 kenttiä, joissa on 
+jokaisessa yksi osakenttä &#8225;8.</p>
+<h3>Linkkinumero on uniikki ja järjestää tiedot määrämuotoisten varastotietojen 
+(863-865) kanssa</h3>
+<p>Kun osa varastotiedoista on tallennettu 853-855/863-865 kenttiin ja osa 
+866-868 kenttiin, näyttöjä voidaan muodostaa molemmista kenttäryhmistä. 
+Tällainen tilanne voi syntyä, kun varastotiedot ovat erityisen monimutkaisia tai 
+kun julkaisukaava vaihtelee suuresti vain tietyn ajanjakson aikana.</p>
+<p>866-868 kentässä käytetään linkkinumerona uniikkia numeroa, joka järjestää 
+sen 853-855/863-865 kentissä olevien linkkinumeroiden kanssa siten, että 
+numerointi- ja julkaisuaikatiedot ovat järjestyksessä. </p>
+<blockquote>
+	<p><b>855 20&#8225;8</b>1<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>855 20&#8225;8</b>3<b>&#8225;a</b>[selosteet ja kaava]<br>
+	<b>865 40&#8225;8</b>1.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>865 40&#8225;8</b>3.1<b>&#8225;a</b>[numerointi ja julkaisuajat]<br>
+	<b>868 41&#8225;8</b>2<b>&#8225;a</b>[vapaamuotoiset varastotiedot]</p>
+</blockquote>
+<p><i>[Numerointi- ja julkaisuaikatiedot, jotka on tallennettu kenttään 868, 
+järjestetään linkkinumeroiden 1 ja 3 väliin. Näyttö voidaan muodostaa kaikkien 
+näiden kenttien perusteella.]</i></p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

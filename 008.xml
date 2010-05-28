@@ -1,0 +1,2631 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <controlfields>
+    <title>Kontrollikenttä 008</title>
+    <controlfield tag="008" type="yleista" repeatable="N">
+      <name>Informaatiokoodit--yleistä tietoa</name>
+      <description paragraph="1">Kenttä sisältää 40 merkkipaikkaa (00-39), joihin tallennetaan koodimuotoista informaatiota tietueesta ja kuvailun kohteen bibliografisista piirteistä. Koodeja voidaan hyödyntää tiedonhaussa ja tietojen käsittelyssä.</description>
+      <description paragraph="2">Tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Määrittelemättömät merkkipaikat sisältävät tyhjämerkin (#). Kaikissa määritellyissä merkkipaikoissa pitää olla koodi; joissakin kentän 008 merkkipaikoissa se voi olla täyttömerkki (|). Täyttömerkkiä voidaan käyttää tietyissä merkkipaikoissa, kun luetteloiva organisaatio ei niitä koodaa. Täyttömerkkiä ei saa käyttää kentän 008 merkkipaikoissa 00-05 (Luontipäivä). Sen käyttöä ei suositella myöskään merkkipaikoissa 07-10 (Julkaisuvuosi 1), 15-17 (Julkaisu-, tuotanto- tai toteuttamismaa) eikä myöskään kentän 008  ilmiasulle tarkoitetussa merkkipaikassa (joko merkkipaikka 23 tai 29, riippuen aineistolajista).</description>
+      <description paragraph="3">Merkkipaikat 00-17 ja 35-39 on määritelty samalla tavalla kaikille aineistotyypeille. Merkkipaikkojen 18-34 määrittelyt on tehty toisistaan riippumatta, vaikka toisiaan vastaavien merkkipaikkojen määrittelyt ovatkin samat usealle aineistotyypille.</description>
+      <description paragraph="4">Seuraavassa kuvataan ensin <strong>kaikille aineistoille</strong> yhteiset merkkipaikat 00-17 ja 35-39, ja sen jälkeen seitsemän eri aineistotyypin (<strong>kirjat (BK), elektroniset aineistot (CF), jatkuvat julkaisut (CR), kartat (MP), musiikki (MU), sekalaiset (MX) ja visuaaliset aineistot (VM)</strong>) merkkipaikat 18-34.</description>
+    </controlfield>
+    <controlfield tag="008" type="kaikki" repeatable="">
+      <name>Kaikki aineistot</name>
+      <positions>
+        <position pos="00-05">
+          <name>Luontipäivä</name>
+          <description>Järjestelmän tuottama kuusimerkkinen numerojono, joka ilmaisee milloin MARC-tietue on alunperin tehty. Päivämäärä on muodossa <em>vvkkpp</em> (vuosi, kuukausi, päivä), eikä se muutu koskaan. Viimeisimmän päivityksen ajankohta löytyy kentästä <a href="001-006.xml#005"> 005</a>.</description>
+        </position>
+        <position pos="06">
+          <name>Julkaisuajan tyyppi/Julkaisun tila</name>
+          <description>Ks. <a href="esimerkit_julkaisuaika.htm"> <em> esimerkit</em></a>. Luokittelee merkkipaikkoihin 008/07-10 (Julkaisuvuosi 1) ja 008/11-14 (Julkaisuvuosi 2) merkittävien julkaisuaikojen tyypin. Jatkuville julkaisuille 008/06 ilmaisee myös julkaisun tilan. 008/06 koodi valitaan samalla kun määritellään sopivat vuodet merkkipaikkoihin 008/07-14. Yleensä vuosiluku on sama kuin kentässä <a href="250-270.xml#260">260</a> (Julkaisutiedot), kentässä <a href="3XX.xml#362">362</a> (Numerointitiedot) tai huomautuskentissä.</description>
+          <values>
+            <value code="b">
+              <name>Julkaisuvuotta ei annettu, vuosiluku eKr.</name>
+              <description> Merkkipaikkoihin 008/07-14 tallennetaan tyhjämerkkejä (########). Ks. kenttä <a href="01X-04X.xml#046">046</a> (Erikoiskoodattu julkaisuaika).</description>
+            </value>
+            <value code="c">
+              <name>Jatkuva julkaisu, ilmestyy edelleen</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan julkaisun alkamisvuosi; merkkipaikkoihin 008/11-14 tallennetaan vuosiluku 9999.</description>
+            </value>
+            <value code="d">
+              <name>Jatkuva julkaisu, lakannut ilmestymästä</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan julkaisun alkamisvuosi; merkkipaikkoihin 008/11-14 tallennetaan julkaisun päättymisvuosi.</description>
+            </value>
+            <value code="e">
+              <name>Tarkka päivämäärä</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan vuosi ja merkkipaikkoihin 008/11-14 tallennetaan kuukausi ja päivä muodossa <em>kkpp</em>.</description>
+            </value>
+            <value code="i">
+              <name>Kokoelman kattama ajanjakso</name>
+              <description><a href="000.xml#nimio">Nimiö/07</a> koodi on <strong>c</strong> tai <strong>d</strong>.</description>
+            </value>
+            <value code="k">
+              <name>Kokoelman merkittävimmän osan kattama ajanjakso</name>
+              <description><a href="000.xml#nimio">Nimiö/07</a> koodi on <strong>c</strong> tai <strong>d</strong>.</description>
+            </value>
+            <value code="m">
+              <name>Jakautuu usealle vuodelle</name>
+              <description> Yleensä merkkipaikkoihin 008/07-10 tallennetaan alkamisvuosi ja merkkipaikkoihin 008/11-14 päättymisvuosi.</description>
+            </value>
+            <value code="n">
+              <name>Tuntematon</name>
+              <description> Sopivia julkaisuvuosia merkkipaikkoihin 008/07-14 ei tunneta (esim. kentässä <a href="250-270.xml#260">260</a> ei ole annettu vuosilukua).</description>
+            </value>
+            <value code="p">
+              <name>Julkaisuvuosi poikkeaa tuotanto- tai äänitysajankohdasta</name>
+            </value>
+            <value code="q">
+              <name>Epävarma julkaisuaika</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan aikaisin mahdollinen vuosi ja merkkipaikkoihin 008/11-14 myöhäisin mahdollinen vuosi.</description>
+            </value>
+            <value code="r">
+              <name>Näköispainos ja alkuperäinen julkaisuvuosi</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan näköispainoksen julkaisuvuosi ja merkkipaikkoihin 008/11-14 tallennetaan alkuperäisen julkaisun julkaisuvuosi, jos se on tiedossa; jos alkuperäistä julkaisuvuotta ei tiedetä, käytetään koodia <strong>u</strong> (uuuu).</description>
+            </value>
+            <value code="s">
+              <name>Yksi julkaisuvuosi</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan vuosi; merkkipaikkoihin 008/11-14 tallennetaan tyhjämerkkejä (####).</description>
+            </value>
+            <value code="t">
+              <name>Julkaisuvuosi ja tekijänoikeusvuosi</name>
+            </value>
+            <value code="u">
+              <name>Jatkuva julkaisu, tila tuntematon</name>
+              <description> Merkkipaikkoihin 008/07-10 tallennetaan julkaisun alkamisvuosi; merkkipaikkoihin 008/11-14 tallennetaan koodi <strong>u</strong> (uuuu).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07-10">
+          <name>Julkaisuvuosi 1</name>
+          <description>Ks. <em><a href="esimerkit_julkaisuaika.htm"> esimerkit</a></em>. Ensimmäinen tai ainoa julkaisuvuosi. Vuosiluku on gregoriaanisen ajanlaskun mukainen ja jälkeen Kristuksen syntymän. Vuosiluvun määrittely merkkipaikkoihin 008/07-10 tehdään samalla kun valitaan koodi merkkipaikkaan 008/06 (Julkaisuajan tyyppi/Julkaisun tila). Vaikka täyttömerkkien (|) käyttö on mahdollista, sitä ei suositella ensimmäisen julkaisuvuoden kohdalla, koska monissa järjestelmissä sitä käytetään tiedonhakuun ja tuplakontrolliin. Jos täyttömerkkiä kuitenkin käytetään, se pitää tallentaa jokaiseen neljään merkkipaikkaan.</description>
+          <values>
+            <value code="1-9">
+              <name>Vuosiluku</name>
+            </value>
+            <value code="#">
+              <name>Vuosiluku on soveltumaton</name>
+              <description> Käytetään, kun 008/06 on <strong>b</strong>.</description>
+            </value>
+            <value code="u">
+              <name>Vuosiluku on kokonaan tai osittain epävarma tai tuntematon</name>
+            </value>
+            <value code="||||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="11-14">
+          <name>Julkaisuvuosi 2</name>
+          <description>Ks. <em><a href="esimerkit_julkaisuaika.htm"> esimerkit</a></em>. Toinen/täydentävä julkaisuvuosi tai julkaisupäivämäärä. Vuosiluku on gregoriaanisen ajanlaskun mukainen ja jälkeen Kristuksen syntymän. Vuosiluvun määrittely merkkipaikkoihin 008/11-14 tehdään samalla kun valitaan koodi merkkipaikkaan 008/06 (Julkaisuajan tyyppi/Julkaisun tila). Jos käytetään täyttömerkkiä, se pitää tallentaa jokaiseen neljään merkkipaikkaan.</description>
+          <values>
+            <value code="1-9">
+              <name>Vuosiluku</name>
+            </value>
+            <value code="#">
+              <name>Vuosiluku on soveltumaton</name>
+              <description> Käytetään, kun 008/06 on <strong>b</strong>, <strong>e</strong> tai <strong>s</strong>.</description>
+            </value>
+            <value code="u">
+              <name>Vuosiluku on kokonaan tai osittain epävarma tai tuntematon</name>
+            </value>
+            <value code="||||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="15-17">
+          <name>Julkaisu-, tuotanto- tai toteuttamismaa</name>
+          <description>Julkaisu-, tuotanto- tai toteuttamismaan ilmaiseva kaksi- tai kolmikirjaiminen maakoodi. Koodi otetaan listalta, ks. <em> <a href="../maat.htm"> MARC 21 Maakoodit</a></em>. Kun kyseessä on kaksimerkkinen koodi, merkkipaikka 008/17 jätetään tyhjäksi (#). Maakoodin valinta on yleensä sidoksissa kentän <a href="250-270.xml#260">260</a> (Julkaisutiedot) tietoihin. Kun useampi maakoodi on tarpeen kuvailun kohteen kannalta, 008/15-17 maakoodia käytetään yhdessä kentän <a href="01X-04X.xml#044">044</a> (Julkaisijan/tuottajan maakoodi) kanssa; tällöin osakentän 044&#8225;a ensimmäinen maakoodi tallennetaan merkkipaikkoihin 008/15-17. Täyttömerkkien (|||) käyttöä ei suositella, koska monissa järjestelmissä maakoodia käytetään tiedonhakuun ja tuplakontrolliin.</description>
+        </position>
+        <position pos="35-37">
+          <name>Kieli</name>
+          <description>Kuvailun kohteessa käytetty pääasiallinen kieli ilmaistaan kolmikirjaimisella kielikoodilla. Koodi otetaan listalta, ks. <em><a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.  Täyttömerkkejä (|||) voidaan käyttää, jos koodausta ei tehdä tai kun ei haluta käyttää MARC-kielikoodeja (ja käytetään kenttää <a href="01X-04X.xml#041">041</a> (Kielikoodi)).</description>
+        </position>
+        <position pos="38">
+          <name>Muunneltu tietue</name>
+          <description>Onko tietueessa muunneltua tietoa verrattuna kuvailun kohteeseen. Koodia ei käytetä jatkuvassa luetteloinnissa, vaan lähinnä takautuvissa konversioissa. Seuraavassa listassa koodit listataan tärkeysjärjestyksessä, jota noudatetaan kun useampi koodi olisi sopiva.</description>
+          <values>
+            <value code="#">
+              <name>Ei muunneltu</name>
+            </value>
+            <value code="s">
+              <name>Lyhennetty</name>
+              <description> Joitakin tietoja on jätetty pois, koska tietue olisi ylittänyt tietyn järjestelmän salliman enimmäispituuden.</description>
+            </value>
+            <value code="d">
+              <name>Välimerkit jätetty pois</name>
+            </value>
+            <value code="x">
+              <name>Merkkejä puuttuu</name>
+              <description> Merkistöjärjestelmän rajoituksista johtuen osa merkeistä on jätetty pois.</description>
+            </value>
+            <value code="r">
+              <name>Voi sisältää ei-latinalaisia merkkejä</name>
+            </value>
+            <value code="o">
+              <name>Kokonaan translitteroitu, vaikka kuvailun kohteessa voi olla ei-latinalaisia merkkejä</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="39">
+          <name>Luetteloiva organisaatio</name>
+          <description>Mikä organisaatio on tehnyt alkuperäisen tietueen. Jos luetteloiva organisaatio tunnetaan, se kerrotaan kentän <a href="01X-04X.xml#040">040</a> (Luetteloiva organisaatio) osakentässä &#8225;a.</description>
+          <values>
+            <value code="#">
+              <name>Kansallisbibliografia</name>
+            </value>
+            <value code="c">
+              <name>Luettelointiyhteistyö</name>
+              <description> Bibliografisen tietueen tekijä (muu kuin kansallisbibliografia) osallistuu luettelointiyhteistyöhön.</description>
+            </value>
+            <value code="d">
+              <name>Muu</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="BK" repeatable="">
+      <name>(BK) Kirjat</name>
+      <description paragraph="1">Käytetään tietueissa, joissa<br /> I) <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on joko <strong>a</strong> tai <strong>t</strong> JA<br /> II) <strong>nimiö/07</strong> (Tietueen bibliografinen taso) koodi EI OLE mikään seuraavista: <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>a</strong> tai <strong>t</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18-21">
+          <name>Kuvitus</name>
+          <equals tag="006" positions="01-04"/>
+          <description>Aakkosjärjestyksessä voidaan tallentaa neljä eri koodia, jotka ilmaisevat minkä tyyppistä kuvitusta kuvailun kohteeseen sisältyy. Jos tallennetaan vähemmän kuin neljä koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#). Koodien täytyy olla yhtäpitäviä osakentässä <a href="3XX.xml#300">300</a>&#8225;b annettujen tietojen kanssa.</description>
+          <values>
+            <value code="#">
+              <name>Ei kuvitusta</name>
+            </value>
+            <value code="a">
+              <name>Kuvitusta, tyyppiä ei määritelty</name>
+            </value>
+            <value code="b">
+              <name>Kuvituksena vähintään yksi kartta</name>
+            </value>
+            <value code="c">
+              <name>Kuvituksena vähintään yksi muotokuva</name>
+            </value>
+            <value code="d">
+              <name>Kuvituksena vähintään yksi kaavio tms. graafinen esitys</name>
+            </value>
+            <value code="e">
+              <name>Kuvituksena vähintään yksi asemakaava tai pohjapiirros</name>
+            </value>
+            <value code="f">
+              <name>Kuvituksena vähintään yksi kuvasivu (planssi)</name>
+            </value>
+            <value code="g">
+              <name>Kuvituksena vähintään yksi nuotteja esittävä kuva</name>
+            </value>
+            <value code="h">
+              <name>Kuvituksena vähintään yksi jäljennös</name>
+            </value>
+            <value code="i">
+              <name>Kuvituksena vähintään yksi vaakuna</name>
+            </value>
+            <value code="j">
+              <name>Kuvituksena vähintään yksi sukutaulukko</name>
+              <description> Muut taulukkomuotoiset esitykset merkitään koodilla <strong>a</strong>.</description>
+            </value>
+            <value code="k">
+              <name>Kuvituksena vähintään yksi lomake tai kaavake</name>
+            </value>
+            <value code="l">
+              <name>Kuvituksena vähintään yksi mallikappale tai näyte</name>
+            </value>
+            <value code="m">
+              <name>Kuvituksena vähintään yksi äänitys</name>
+              <description>Koskee äänitteitä, jotka on liitetty esim. kansitaskuun. Käytetään, kun kentässä 300 esiintyy seuraavia termejä: äänilevy, äänisilmukkakasetti, ääninauhakela, äänikasetti, rulla, äänilieriö. Aiemmin käytettiin aina kun kentässä 300 esiintyi mikä tahansa fono-alkuinen termi.</description>
+            </value>
+            <value code="o">
+              <name>Kuvituksena vähintään yksi valokuva</name>
+            </value>
+            <value code="p">
+              <name>Kuvituksena vähintään yksi piirroskuva</name>
+            </value>
+            <value code="||||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="22">
+          <name>Kohderyhmä</name>
+          <equals tag="006" positions="05"/>
+          <description>Millaiselle kohderyhmälle kuvailun kohde on suunnattu. Koodeja <strong>a-d</strong> käytetään oppikirjoille.</description>
+          <values>
+            <value code="#">
+              <name>Tuntematon tai ei eritelty</name>
+            </value>
+            <value code="a">
+              <name>Esikouluikäiset</name>
+            </value>
+            <value code="b">
+              <name>Ala-asteikäiset</name>
+            </value>
+            <value code="c">
+              <name>Yläasteikäiset</name>
+            </value>
+            <value code="d">
+              <name>Lukioikäiset ja vastaavat</name>
+            </value>
+            <value code="e">
+              <name>Aikuiset</name>
+            </value>
+            <value code="f">
+              <name>Erityisryhmä</name>
+              <description> Esim. selkokirjat, tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.</description>
+            </value>
+            <value code="g">
+              <name>Yleinen</name>
+              <description> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.</description>
+            </value>
+            <value code="j">
+              <name>Lapset ja nuoret</name>
+              <description> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="23">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="06"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Tavanomainen painojäljenne</name>
+              <description> Silmin luettavaa painettua tekstiä, esim. valokopio.</description>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="24-27">
+          <name>Sisältö</name>
+          <equals tag="006" positions="07-10"/>
+          <description>Aakkosjärjestyksessä voidaan tallentaa neljä eri koodia, jotka ilmaisevat aineiston sisältöä. Jos tallennetaan vähemmän kuin neljä koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Sisältöä ei ole määritelty</name>
+            </value>
+            <value code="a">
+              <name>Tiivistelmät, lyhennelmät</name>
+              <description>Sisältää tiivistelmiä tai lyhennelmiä <em>muista</em> julkaisuista kuin kuvailun kohteesta.</description>
+            </value>
+            <value code="b">
+              <name>Bibliografiat</name>
+              <description>Kuvailun kohde tai sen osa on bibliografia. Käytetään vain, kun bibliografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kuvailussa. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.</description>
+            </value>
+            <value code="c">
+              <name>Luettelot, kuvastot</name>
+              <description>Sisältää myös keräilyesineiden, kuten postimerkkien tai kolikoiden, listat. Kirjaluetteloille tallennetaan sekä koodit <strong>b</strong> että <strong>c</strong>, ääniteluetteloille sekä koodit <strong>k</strong> että <strong>c</strong> ja elokuvaluetteloille sekä koodit <strong>q</strong> että <strong>c</strong>.</description>
+            </value>
+            <value code="d">
+              <name>Sanakirjat, sanastot</name>
+              <description>Sanahakemistoille annetaan koodi <strong>i</strong> (Hakemistot, indeksit). Monografisille elämäkerrallisille sanakirjoille annetaan koodi <strong>c</strong> merkkipaikassa 008/34 (Elämäkerta).</description>
+            </value>
+            <value code="e">
+              <name>Tietosanakirjat, hakuteokset</name>
+            </value>
+            <value code="f">
+              <name>Käsikirjat</name>
+            </value>
+            <value code="g">
+              <name>Artiklat, pykälät</name>
+            </value>
+            <value code="i">
+              <name>Hakemistot, indeksit</name>
+              <description>Ei koske kuvailun kohteen omaa hakemistoa.</description>
+            </value>
+            <value code="j">
+              <name>Patentit</name>
+            </value>
+            <value code="k">
+              <name>Diskografiat</name>
+              <description>Kuvailun kohde tai merkittävä osa siitä on diskografia tai muu äänitebibliografia. Käytetään vain, kun diskografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Diskografioille, jotka ovat myös luetteloita, annetaan sekä koodit <strong>k</strong> että <strong>c</strong>.</description>
+            </value>
+            <value code="l">
+              <name>Lait, säädökset</name>
+            </value>
+            <value code="m">
+              <name>Väitöskirjat tai muut opinnäytteet</name>
+              <description>Väitöskirjat, lisensiaatintyöt, pro gradut tai muut eritasoisia tutkintoja varten tehdyt julkaisut.</description>
+            </value>
+            <value code="n">
+              <name>Kirjallisuuskatsaukset</name>
+              <description>Kuvailun kohde koostuu kokonaisuudessaan kirjallisuuskatsauksesta tiettyyn aihealueeseen. Yleensä sisältää lähdeluettelon tai bibliografian. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.</description>
+            </value>
+            <value code="o">
+              <name>Arvostelut</name>
+              <description>Sisältää arvosteluita julkaistuista tai esitetyistä teoksista. Arvostelua kuvailevassa osakohdetietueessa (<a href="000.xml#nimio">nimiö</a>/07 on <strong>a</strong> tai <strong>b</strong>) täytyy olla linkkikentät sekä emokohteeseen (<a href="76X-78X.xml#773">773</a>) että arvostelun kohteeseen (<a href="76X-78X.xml#787">787</a>).</description>
+            </value>
+            <value code="p">
+              <name>Ohjelmoidut tekstit</name>
+            </value>
+            <value code="q">
+              <name>Filmografiat</name>
+              <description>Kuvailun kohde tai merkittävä osa siitä on filmografia tai muu elokuvabibliografia. Käytetään vain, kun filmografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Filmografioille, jotka ovat myös luetteloita, annetaan sekä koodit <strong>q</strong> että <strong>c</strong>.</description>
+            </value>
+            <value code="r">
+              <name>Henkilö- tai yhteisöhakemistot, matrikkelit, jäsenluettelot</name>
+            </value>
+            <value code="s">
+              <name>Tilastot</name>
+            </value>
+            <value code="t">
+              <name>Tekniset raportit</name>
+            </value>
+            <value code="u">
+              <name>Standardit, tekniset spesifikaatiot</name>
+            </value>
+            <value code="v">
+              <name>Oikeustapauskeskustelut</name>
+            </value>
+            <value code="w">
+              <name>Tuomioistuinpäätökset</name>
+            </value>
+            <value code="y">
+              <name>Vuosikirjat</name>
+            </value>
+            <value code="z">
+              <name>Sopimukset</name>
+              <description>Sopimus, joka on neuvoteltu kahden tai useamman osapuolen välillä esim. erimielisyydestä sopimisen, suhteiden luomisen tai etujen takaamisen vuoksi.</description>
+            </value>
+            <value code="2">
+              <name>Eripainokset</name>
+              <description>Julkaistu alunperin artikkelina monografiassa tai sarjajulkaisussa ja myös erillisenä.</description>
+            </value>
+            <value code="5">
+              <name>Kalenterit</name>
+            </value>
+            <value code="6">
+              <name>Sarjakuva-albumit, sarjakuvaromaanit</name>
+            </value>
+            <value code="||||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="28">
+          <name>Virallisjulkaisu</name>
+          <equals tag="006" positions="11"/>
+          <description>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.</description>
+          <values>
+            <value code="#">
+              <name>Ei virallisjulkaisu</name>
+            </value>
+            <value code="a">
+              <name>Itsehallinnollinen tai puoli-itsehallinnollinen</name>
+            </value>
+            <value code="c">
+              <name>Monta paikallista yksikköä</name>
+              <description> Esim. kuntayhtymän julkaisu.</description>
+            </value>
+            <value code="f">
+              <name>Kansallinen</name>
+            </value>
+            <value code="i">
+              <name>Kansainvälinen, hallitusten välinen</name>
+              <description> Esim. Yhdistyneiden kansakuntien julkaisu.</description>
+            </value>
+            <value code="l">
+              <name>Paikallishallinto</name>
+              <description> Esim. kunnan julkaisu.</description>
+            </value>
+            <value code="m">
+              <name>Monta aluetta</name>
+            </value>
+            <value code="o">
+              <name>Virallisjulkaisu--toimivalta määrittelemätön</name>
+            </value>
+            <value code="s">
+              <name>Alueellinen</name>
+            </value>
+            <value code="u">
+              <name>Ei tiedetä onko kohde virallisjulkaisu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="29">
+          <name>Kokousjulkaisu</name>
+          <equals tag="006" positions="12"/>
+          <description>Sisältääkö kuvailun kohde kokouksen tai konferenssin pöytäkirjat, selonteot tai yhteenvedot.</description>
+          <values>
+            <value code="0">
+              <name>Ei kokousjulkaisu</name>
+            </value>
+            <value code="1">
+              <name>Kokousjulkaisu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="30">
+          <name>Juhlajulkaisu</name>
+          <equals tag="006" positions="13"/>
+          <description>Onko kuvailun kohde juhlajulkaisu.</description>
+          <values>
+            <value code="0">
+              <name>Ei juhlajulkaisu</name>
+            </value>
+            <value code="1">
+              <name>Juhlajulkaisu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="31">
+          <name>Hakemisto</name>
+          <equals tag="006" positions="14"/>
+          <description>Sisältääkö kuvailun kohde itseään koskevan hakemiston.</description>
+          <values>
+            <value code="0">
+              <name>Ei hakemistoa</name>
+            </value>
+            <value code="1">
+              <name>Hakemisto</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="32">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="15"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="33">
+          <name>Kirjallisuuslaji</name>
+          <equals tag="006" positions="16"/>
+          <description>Numerokoodeilla 0 ja 1 voidaan määritellä onko kuvailun kohde kauno- vai tietokirjallisuutta. Kirjainkoodeja voidaan käyttää tarkempien kirjallisuuslajien määrittelyyn.</description>
+          <values>
+            <value code="0">
+              <name>Tietokirjallisuus (ei tarkkaa määritelmää)</name>
+            </value>
+            <value code="1">
+              <name>Kaunokirjallisuus (ei tarkkaa määritelmää)</name>
+              <description> Esim. aforismit.</description>
+            </value>
+            <value code="d">
+              <name>Draama</name>
+              <description> Esim. näytelmät, elokuvakäsikirjoitukset, kuunnelmat.</description>
+            </value>
+            <value code="e">
+              <name>Esseet</name>
+            </value>
+            <value code="f">
+              <name>Romaanit</name>
+            </value>
+            <value code="h">
+              <name>Huumori, satiiri jne.</name>
+            </value>
+            <value code="i">
+              <name>Kirjeet</name>
+              <description> Kuvailun kohde on yksittäinen kirje tai kirjeenvaihtokokoelma.</description>
+            </value>
+            <value code="j">
+              <name>Novellit, kertomukset tai niiden kokoelmat</name>
+            </value>
+            <value code="m">
+              <name>Yhdistelmä</name>
+              <description> Kuvailun kohde sisältää monia kirjallisuuden lajeja (esim. runoja ja novelleja).</description>
+            </value>
+            <value code="p">
+              <name>Runot</name>
+            </value>
+            <value code="s">
+              <name>Puheet, esitelmät</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="34">
+          <name>Elämäkerta</name>
+          <equals tag="006" positions="17"/>
+          <description>Sisältääkö kuvailun kohde elämäkerrallista aineistoa ja minkä tyyppistä se on.</description>
+          <values>
+            <value code="#">
+              <name>Ei elämäkerrallista aineistoa</name>
+            </value>
+            <value code="a">
+              <name>Omaelämäkerta, muistelmat</name>
+            </value>
+            <value code="b">
+              <name>Yhden henkilön elämäkerta</name>
+            </value>
+            <value code="c">
+              <name>Useampien henkilöiden elämäkertoja</name>
+            </value>
+            <value code="d">
+              <name>Sisältää elämäkerrallisia tietoja</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="CF" repeatable="">
+      <name>(CF) Elektroniset aineistot</name>
+      <description paragraph="1">Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>m</strong>.<br /> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös 006/00 koodi <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>m</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18-21">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="01-04"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="22">
+          <name>Kohderyhmä</name>
+          <equals tag="006" positions="05"/>
+          <description>Millaiselle kohderyhmälle kuvailun kohde on suunnattu.</description>
+          <values>
+            <value code="#">
+              <name>Tuntematon tai ei eritelty</name>
+            </value>
+            <value code="a">
+              <name>Esikouluikäiset</name>
+            </value>
+            <value code="b">
+              <name>Ala-asteikäiset</name>
+            </value>
+            <value code="c">
+              <name>Yläasteikäiset</name>
+            </value>
+            <value code="d">
+              <name>Lukioikäiset ja vastaavat</name>
+            </value>
+            <value code="e">
+              <name>Aikuiset</name>
+            </value>
+            <value code="f">
+              <name>Erityisryhmä</name>
+              <description> Esim. tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.</description>
+            </value>
+            <value code="g">
+              <name>Yleinen</name>
+              <description> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.</description>
+            </value>
+            <value code="j">
+              <name>Lapset ja nuoret</name>
+              <description> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="23-25">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="06-08"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="26">
+          <name>Elektronisen aineiston tyyppi</name>
+          <equals tag="006" positions="09"/>
+          <description>Koodi voi vastata tietueen vaihtuvamittaisissa kentissä annettuja tietoja, esim. <a href="50X-53X.xml#516">516</a>.</description>
+          <values>
+            <value code="a">
+              <name>Numeerinen</name>
+            </value>
+            <value code="b">
+              <name>Tietokoneohjelma</name>
+            </value>
+            <value code="c">
+              <name>Esittävä</name>
+              <description> Kuvat tai grafiikka, joita voidaan manipuloida muiden tiedostojen yhteydessä kuvaamaan niitä siten, että tietoja on helpompi tulkita.</description>
+            </value>
+            <value code="d">
+              <name>Asiakirja</name>
+            </value>
+            <value code="e">
+              <name>Bibliografia</name>
+            </value>
+            <value code="f">
+              <name>Kirjasinlaji</name>
+            </value>
+            <value code="g">
+              <name>Peli</name>
+            </value>
+            <value code="h">
+              <name>Ääni</name>
+            </value>
+            <value code="i">
+              <name>Interaktiivinen multimedia</name>
+            </value>
+            <value code="j">
+              <name>Verkossa oleva järjestelmä tai palvelu</name>
+            </value>
+            <value code="m">
+              <name>Yhdistelmä</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="27">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="10"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="28">
+          <name>Virallisjulkaisu</name>
+          <equals tag="006" positions="11"/>
+          <description>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.</description>
+          <values>
+            <value code="#">
+              <name>Ei virallisjulkaisu</name>
+            </value>
+            <value code="a">
+              <name>Itsehallinnollinen tai puoli-itsehallinnollinen</name>
+            </value>
+            <value code="c">
+              <name>Monta paikallista yksikköä</name>
+              <description> Esim. kuntayhtymän julkaisu.</description>
+            </value>
+            <value code="f">
+              <name>Kansallinen</name>
+            </value>
+            <value code="i">
+              <name>Kansainvälinen, hallitusten välinen</name>
+              <description> Esim. Yhdistyneiden kansakuntien julkaisu.</description>
+            </value>
+            <value code="l">
+              <name>Paikallishallinto</name>
+              <description> Esim. kunnan julkaisu.</description>
+            </value>
+            <value code="m">
+              <name>Monta aluetta</name>
+            </value>
+            <value code="o">
+              <name>Virallisjulkaisu--toimivalta määrittelemätön</name>
+            </value>
+            <value code="s">
+              <name>Alueellinen</name>
+            </value>
+            <value code="u">
+              <name>Ei tiedetä onko kohde virallisjulkaisu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="29-34">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="12-17"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="CR" repeatable="">
+      <name>(CR) Jatkuvat julkaisut</name>
+      <description paragraph="1">Käytetään tietueissa, joissa<br /> I) <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on joko <strong>a</strong> tai <strong>t</strong> JA<br /> II) <strong>nimiö/07</strong> (Tietueen bibliografinen taso) koodi ON jokin seuraavista: <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>s</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18">
+          <name>Ilmestymistiheys</name>
+          <equals tag="006" positions="01"/>
+          <description>Miten usein julkaisu ilmestyy; käytetään yhdessä merkkipaikan 008/19 (Säännöllisyys) kanssa. Koodin pitäisi olla yhtäpitävä myös osakentän <a href="3XX.xml#310">310</a>&#8225;a tietojen kanssa.</description>
+          <values>
+            <value code="#">
+              <name>Ei määriteltävää ilmestymistiheyttä</name>
+              <description> Ilmestymistiheys on tarkoituksellisen epäsäännöllinen.</description>
+            </value>
+            <value code="a">
+              <name>Kerran vuodessa</name>
+            </value>
+            <value code="b">
+              <name>Joka toinen kuukausi</name>
+              <description> Sisältää 6, 7 tai 8 numeroa vuodessa.</description>
+            </value>
+            <value code="c">
+              <name>Kaksi kertaa viikossa</name>
+            </value>
+            <value code="d">
+              <name>Päivittäin</name>
+            </value>
+            <value code="e">
+              <name>Kerran kahdessa viikossa</name>
+              <description> Vrt. koodi <strong>s</strong>, jolla on melkein sama sisältö. Julkaisun omat merkinnät ratkaisevat.</description>
+            </value>
+            <value code="f">
+              <name>Puolivuosittain</name>
+              <description> Sisältää kaksi numeroa vuodessa.</description>
+            </value>
+            <value code="g">
+              <name>Kerran kahdessa vuodessa</name>
+            </value>
+            <value code="h">
+              <name>Kerran kolmessa vuodessa</name>
+            </value>
+            <value code="i">
+              <name>Kolme kertaa viikossa</name>
+            </value>
+            <value code="j">
+              <name>Kolme kertaa kuukaudessa</name>
+            </value>
+            <value code="k">
+              <name>Jatkuva päivitys</name>
+            </value>
+            <value code="m">
+              <name>Kerran kuukaudessa</name>
+              <description> Sisältää 9, 10, 11 tai 12 numeroa vuodessa.</description>
+            </value>
+            <value code="q">
+              <name>Neljäsosavuosittain</name>
+              <description> Sisältää 4 numeroa vuodessa.</description>
+            </value>
+            <value code="s">
+              <name>Kaksi kertaa kuukaudessa</name>
+              <description> Vrt. koodi <strong>e</strong>, jolla on melkein sama sisältö. Julkaisun omat merkinnät ratkaisevat.</description>
+            </value>
+            <value code="t">
+              <name>Kolme kertaa vuodessa</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+              <description> Jos käytetään tätä koodia, myös merkkipaikassa 008/19 (Säännöllisyys) annetaan <strong>u</strong>.</description>
+            </value>
+            <value code="w">
+              <name>Kerran viikossa</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="19">
+          <name>Säännöllisyys</name>
+          <equals tag="006" positions="02"/>
+          <description>Miten säännöllisesti julkaisu ilmestyy; käytetään yhdessä merkkipaikan 008/18 (Ilmestymistiheys) kanssa. Koodin pitäisi olla yhtäpitävä myös osakentän <a href="3XX.xml#310">310</a>&#8225;a tietojen kanssa.</description>
+          <values>
+            <value code="n">
+              <name>Normaalin epäsäännöllinen</name>
+              <description> Ennustettava epäsäännöllisyys. Esim. joka kuukausi lukuun ottamatta heinä- ja elokuuta (008/18-19, koodit <strong>mn</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Säännöllinen</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+              <description> Kenttä <a href="3XX.xml#310">310</a> puuttuu ja myös merkkipaikassa 008/18 on <strong>u</strong>.</description>
+            </value>
+            <value code="x">
+              <name>Täysin epäsäännöllinen</name>
+              <description> Ilmestymistiheyden tiedetään olevan tarkoituksellisen epäsäännöllinen (008/18, koodi <strong>#</strong>) tai ilmestymistiheys kerrotaan julkaisussa <em>numeroina per vuosi</em>.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="20">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="03"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="21">
+          <name>Jatkuvan julkaisun tyyppi</name>
+          <equals tag="006" positions="04"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+              <description> Tätä koodia käytetään myös vuosikirjoille ja vuosiraporteille.</description>
+            </value>
+            <value code="d">
+              <name>Päivittyvä tietokanta</name>
+            </value>
+            <value code="l">
+              <name>Päivittyvä irtolehtijulkaisu</name>
+            </value>
+            <value code="m">
+              <name>Monografiasarja</name>
+            </value>
+            <value code="n">
+              <name>Sanomalehti</name>
+            </value>
+            <value code="p">
+              <name>Aikakauslehti</name>
+            </value>
+            <value code="w">
+              <name>Päivittyvä verkkosivu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="22">
+          <name>Alkuperäisen julkaisun ilmiasu</name>
+          <equals tag="006" positions="05"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="e">
+              <name>Sanomalehti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="23">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="06"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Tavanomainen painojäljenne</name>
+              <description> Silmin luettavaa painettua tekstiä, esim. valokopio.</description>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="24">
+          <name>Koko sisältö</name>
+          <equals tag="006" positions="07"/>
+          <description>Koodia käytetään, kun kuvailun kohteen koko sisältö koostuu samantyyppisestä aineistosta. Jos useampi kuin yksi koodi olisi sopiva, merkkipaikkaan 008/24 tallennetaan tyhjä (#) ja merkkipaikkoihin 008/25-27 (Sisältö) voidaan merkitä kolme eri sisältökoodia.</description>
+          <values>
+            <value code="#">
+              <name>Koko sisältöä ei voida määritellä yhdellä koodilla</name>
+            </value>
+            <value code="a">
+              <name>Tiivistelmät, lyhennelmät</name>
+              <description>Sisältää tiivistelmiä tai lyhennelmiä <em>muista</em> julkaisuista.</description>
+            </value>
+            <value code="b">
+              <name>Bibliografiat</name>
+            </value>
+            <value code="c">
+              <name>Luettelot, kuvastot</name>
+              <description>Listat kokoelmaan kuuluvista kohteista, esim. lista kirja- tai taidekokoelman sisällöstä.</description>
+            </value>
+            <value code="d">
+              <name>Sanakirjat, sanastot</name>
+              <description>Sanahakemistoille annetaan koodi <strong>i</strong> (Hakemistot, indeksit). Jatkuville elämäkerrallisille sanakirjoille annetaan koodi <strong>h</strong> (Elämäkerrat).</description>
+            </value>
+            <value code="e">
+              <name>Tietosanakirjat, hakuteokset</name>
+            </value>
+            <value code="f">
+              <name>Käsikirjat</name>
+            </value>
+            <value code="g">
+              <name>Artiklat, pykälät</name>
+            </value>
+            <value code="h">
+              <name>Elämäkerrat</name>
+              <description>Elämäkerrallista aineistoa (omaelämäkerta, yksilön tai yhteisön elämäkerta). Sukuselvitystä ei koodata elämäkerraksi.</description>
+            </value>
+            <value code="i">
+              <name>Hakemistot, indeksit</name>
+              <description>Ei koske kohteen omaa hakemistoa.</description>
+            </value>
+            <value code="k">
+              <name>Diskografiat</name>
+              <description>Sisältää diskografian tai muun äänitebibliografian.</description>
+            </value>
+            <value code="l">
+              <name>Lait, säädökset</name>
+            </value>
+            <value code="m">
+              <name>Väitöskirjat tai muut opinnäytteet</name>
+              <description> Väitöskirjat, lisensiaatintyö, pro gradut tai muut eritasoisia tutkintoja varten tehdyt julkaisut.</description>
+            </value>
+            <value code="n">
+              <name>Kirjallisuuskatsaukset</name>
+              <description>Kuvailun kohde koostuu kokonaisuudessaan kirjallisuuskatsauksesta tiettyyn aihealueeseen. Yleensä sisältää lähdeluettelon tai bibliografian.</description>
+            </value>
+            <value code="o">
+              <name>Arvostelut</name>
+              <description>Sisältää arvosteluita julkaistuista tai esitetyistä teoksista. Arvostelua kuvailevassa osakohdetietueessa (<a href="000.xml#nimio">nimiö</a>/07 on <strong>a</strong> tai <strong>b</strong>) täytyy olla linkkikentät sekä emokohteeseen (<a href="76X-78X.xml#773">773</a>) että arvostelun kohteeseen (<a href="76X-78X.xml#787">787</a>).</description>
+            </value>
+            <value code="p">
+              <name>Ohjelmoidut tekstit</name>
+            </value>
+            <value code="q">
+              <name>Filmografiat</name>
+              <description>Sisältää filmografian tai muun elokuvabibliografian.</description>
+            </value>
+            <value code="r">
+              <name>Henkilö- tai yhteisöhakemistot, matrikkelit, jäsenluettelot</name>
+            </value>
+            <value code="s">
+              <name>Tilastot</name>
+            </value>
+            <value code="t">
+              <name>Tekniset raportit</name>
+            </value>
+            <value code="u">
+              <name>Standardit, tekniset spesifikaatiot</name>
+            </value>
+            <value code="v">
+              <name>Oikeustapauskeskustelut</name>
+            </value>
+            <value code="w">
+              <name>Tuomioistuinpäätökset</name>
+            </value>
+            <value code="y">
+              <name>Vuosikirjat</name>
+            </value>
+            <value code="z">
+              <name>Sopimukset</name>
+              <description>Sopimus, joka on neuvoteltu kahden tai useamman osapuolen välillä esim. erimielisyydestä sopimisen, suhteiden luomisen tai etujen takaamisen vuoksi.</description>
+            </value>
+            <value code="5">
+              <name>Kalenterit</name>
+            </value>
+            <value code="6">
+              <name>Sarjakuva-albumit, sarjakuvaromaanit</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="25-27">
+          <name>Sisältö</name>
+          <equals tag="006" positions="08-10"/>
+          <description>Aakkosjärjestyksessä voidaan tallentaa kolme eri koodia, jotka ilmaisevat aineiston sisältöä. Jos tallennetaan vähemmän kuin kolme koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Sisältöä ei ole määritelty</name>
+            </value>
+            <value code="a">
+              <name>Tiivistelmät, lyhennelmät</name>
+              <description>Sisältää tiivistelmiä tai lyhennelmiä <em>muista</em> julkaisuista.</description>
+            </value>
+            <value code="b">
+              <name>Bibliografiat</name>
+              <description>Kuvailun kohde tai sen osa on bibliografia. Käytetään vain, kun bibliografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kuvailussa. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.</description>
+            </value>
+            <value code="c">
+              <name>Luettelot, kuvastot</name>
+              <description>Listat kokoelmaan kuuluvista kohteista. Sisältää myös keräilyesineiden, kuten postimerkkien tai kolikoiden, listat. Kirjaluetteloille tallennetaan sekä koodit <strong>b</strong> että <strong>c</strong>, ääniteluetteloille sekä koodit <strong>k</strong> että <strong>c</strong> ja elokuvaluetteloille sekä koodit <strong>q</strong> että <strong>c</strong>.</description>
+            </value>
+            <value code="d">
+              <name>Sanakirjat, sanastot</name>
+              <description>Sanahakemistoille annetaan koodi <strong>i</strong> (Hakemistot, indeksit). Jatkuville elämäkerrallisille sanakirjoille annetaan koodi <strong>h</strong> (Elämäkerrat).</description>
+            </value>
+            <value code="e">
+              <name>Tietosanakirjat, hakuteokset</name>
+            </value>
+            <value code="f">
+              <name>Käsikirjat</name>
+            </value>
+            <value code="g">
+              <name>Artiklat, pykälät</name>
+            </value>
+            <value code="h">
+              <name>Elämäkerrat</name>
+              <description>Elämäkerrallista aineistoa (omaelämäkerta, yksilön tai yhteisön elämäkerta). Sukuselvitystä ei koodata elämäkerraksi.</description>
+            </value>
+            <value code="i">
+              <name>Hakemistot, indeksit</name>
+              <description>Ei koske kohteen omaa hakemistoa.</description>
+            </value>
+            <value code="k">
+              <name>Diskografiat</name>
+              <description>Kuvailun kohde tai merkittävä osa siitä on diskografia tai muu äänitebibliografia. Käytetään vain, kun diskografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Diskografioille, jotka ovat myös luetteloita, annetaan sekä koodit <strong>k</strong> että <strong>c</strong>.</description>
+            </value>
+            <value code="l">
+              <name>Lait, säädökset</name>
+            </value>
+            <value code="m">
+              <name>Väitöskirjat tai muut opinnäytteet</name>
+              <description> Väitöskirjat, lisensiaatintyöt, pro gradut tai muut eritasoisia tutkintoja varten tehdyt julkaisut.</description>
+            </value>
+            <value code="n">
+              <name>Kirjallisuuskatsaukset</name>
+              <description>Kuvailun kohde koostuu kokonaisuudessaan kirjallisuuskatsauksesta tiettyyn aihealueeseen. Yleensä sisältää lähdeluettelon tai bibliografian. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.</description>
+            </value>
+            <value code="o">
+              <name>Arvostelut</name>
+              <description>Sisältää arvosteluita julkaistuista tai esitetyistä teoksista. Arvostelua kuvailevassa osakohdetietueessa (<a href="000.xml#nimio">nimiö</a>/07 on <strong>a</strong> tai <strong>b</strong>) täytyy olla linkkikentät sekä emokohteeseen (<a href="76X-78X.xml#773">773</a>) että arvostelun kohteeseen (<a href="76X-78X.xml#787">787</a>).</description>
+            </value>
+            <value code="p">
+              <name>Ohjelmoidut tekstit</name>
+            </value>
+            <value code="q">
+              <name>Filmografiat</name>
+              <description>Kuvailun kohde tai merkittävä osa siitä on filmografia tai muu elokuvabibliografia. Käytetään vain, kun filmografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Filmografioille, jotka ovat myös luetteloita, annetaan sekä koodit <strong>q</strong> että <strong>c</strong>.</description>
+            </value>
+            <value code="r">
+              <name>Henkilö- tai yhteisöhakemistot, matrikkelit, jäsenluettelot</name>
+            </value>
+            <value code="s">
+              <name>Tilastot</name>
+            </value>
+            <value code="t">
+              <name>Tekniset raportit</name>
+            </value>
+            <value code="u">
+              <name>Standardit, tekniset spesifikaatiot</name>
+            </value>
+            <value code="v">
+              <name>Oikeustapauskeskustelut</name>
+            </value>
+            <value code="w">
+              <name>Tuomioistuinpäätökset</name>
+            </value>
+            <value code="y">
+              <name>Vuosikirjat</name>
+            </value>
+            <value code="z">
+              <name>Sopimukset</name>
+              <description>Sopimus, joka on neuvoteltu kahden tai useamman osapuolen välillä esim. erimielisyydestä sopimisen, suhteiden luomisen tai etujen takaamisen vuoksi.</description>
+            </value>
+            <value code="5">
+              <name>Kalenterit</name>
+            </value>
+            <value code="6">
+              <name>Sarjakuva-albumit, sarjakuvaromaanit</name>
+            </value>
+            <value code="|||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="28">
+          <name>Virallisjulkaisu</name>
+          <equals tag="006" positions="11"/>
+          <description>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.</description>
+          <values>
+            <value code="#">
+              <name>Ei virallisjulkaisu</name>
+            </value>
+            <value code="a">
+              <name>Itsehallinnollinen tai puoli-itsehallinnollinen</name>
+            </value>
+            <value code="c">
+              <name>Monta paikallista yksikköä</name>
+              <description> Esim. kuntayhtymän julkaisu.</description>
+            </value>
+            <value code="f">
+              <name>Kansallinen</name>
+            </value>
+            <value code="i">
+              <name>Kansainvälinen, hallitusten välinen</name>
+              <description> Esim. Yhdistyneiden kansakuntien julkaisu.</description>
+            </value>
+            <value code="l">
+              <name>Paikallishallinto</name>
+              <description> Esim. kunnan julkaisu.</description>
+            </value>
+            <value code="m">
+              <name>Monta aluetta</name>
+            </value>
+            <value code="o">
+              <name>Virallisjulkaisu--toimivalta määrittelemätön</name>
+            </value>
+            <value code="s">
+              <name>Alueellinen</name>
+            </value>
+            <value code="u">
+              <name>Ei tiedetä onko kohde virallisjulkaisu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="29">
+          <name>Kokousjulkaisu</name>
+          <equals tag="006" positions="12"/>
+          <description>Sisältääkö kuvailun kohde kokouksen tai konferenssin pöytäkirjat, selonteot tai yhteenvedot.</description>
+          <values>
+            <value code="0">
+              <name>Ei kokousjulkaisu</name>
+            </value>
+            <value code="1">
+              <name>Kokousjulkaisu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="30-32">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="13-15"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="33">
+          <name>Nimekkeen alkuperäinen aakkosto tai kirjaimisto</name>
+          <equals tag="006" positions="16"/>
+          <description>Ilmaisee alkuperäisen aakkoston tai kirjaimiston nimekkeelle, johon avainnimeke (kenttä <a href="20X-24X.xml#222">222</a>) perustuu.</description>
+          <values>
+            <value code="#">
+              <name>Aakkostoa tai kirjaimistoa ei ole annettu / ei avainnimekettä</name>
+              <description>Koodi voi olla yhteydessä myös nimeke- ja vastuullisuustietoihin kentässä <a href="20X-24X.xml#245">245</a>, kun avainnimekettä ei ole.</description>
+            </value>
+            <value code="a">
+              <name>Latinalainen</name>
+              <description>Ei sisällä diakriittejä tai erikoismerkkejä.</description>
+            </value>
+            <value code="b">
+              <name>Laajennettu latinalainen</name>
+              <description>Sisältää diakriitit ja erikoismerkit.</description>
+            </value>
+            <value code="c">
+              <name>Kyrillinen</name>
+            </value>
+            <value code="d">
+              <name>Japanilainen</name>
+            </value>
+            <value code="e">
+              <name>Kiinalainen</name>
+            </value>
+            <value code="f">
+              <name>Arabialainen</name>
+            </value>
+            <value code="g">
+              <name>Kreikkalainen</name>
+            </value>
+            <value code="h">
+              <name>Heprealainen</name>
+            </value>
+            <value code="i">
+              <name>Thaimaalainen</name>
+            </value>
+            <value code="j">
+              <name>Devanagari</name>
+            </value>
+            <value code="k">
+              <name>Korealainen</name>
+            </value>
+            <value code="l">
+              <name>Tamili</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description>Sisältää nimekkeet, joihin kuuluu useammilla aakkostoilla tai kirjaimistoilla kirjoitettuja sanoja.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="34">
+          <name>Kirjauskäytäntö</name>
+          <equals tag="006" positions="17"/>
+          <description>Onko kohde luetteloitu peräkkäisten, viimeisimpien vai yhdistettyjen kirjausten luettelointisääntöjen mukaan.</description>
+          <values>
+            <value code="0">
+              <name>Peräkkäinen kirjaus</name>
+              <description>Uusi bibliografinen tietue tehdään aina kun nimeke, pääkirjauksena käytetty yhteisö tai yhtenäistetyn nimekkeen määre muuttuu.</description>
+            </value>
+            <value code="1">
+              <name>Viimeisin kirjaus</name>
+              <description>Kohde luetteloidaan viimeisimmän nimekkeen tai yhteisön alle. Kaikki aikaisemmat nimekkeet ja/tai yhteisöt annetaan huomautuskentissä (<a href="20X-24X.xml#247">247</a>, <a href="53X-58X.xml#547">547</a> ja <a href="53X-58X.xml#550">550</a>).</description>
+            </value>
+            <value code="2">
+              <name>Yhdistetty kirjaus</name>
+              <description>Kohde luetteloidaan viimeisimmän nimekkeen ja/tai yhteisön tai henkilötekijän alle. Käytetään päivittyville julkaisuille ja elektronisille sarjoille, joiden aikaisempia nimekkeitä ei säilytetä.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="MP" repeatable="">
+      <name>(MP) Kartat</name>
+      <description paragraph="1">Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>e</strong> tai <strong>f</strong>.<br /> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>e</strong> tai <strong>f</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18-21">
+          <name>Korkeustietojen esitystapa</name>
+          <equals tag="006" positions="01-04"/>
+          <description>Nelimerkkinen koodi ilmaisee miten korkeuserot on esitetty. Koodit luetteloidaan tärkeysjärjestyksessä. Jos tallennetaan vähemmän kuin neljä koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Korkeuseroja ei määritelty</name>
+            </value>
+            <value code="a">
+              <name>Korkeuskäyrät</name>
+            </value>
+            <value code="b">
+              <name>Varjostus</name>
+            </value>
+            <value code="c">
+              <name>Korkeuserot värisävyin</name>
+            </value>
+            <value code="d">
+              <name>Rinteen suuntaa osoittavat viivat</name>
+            </value>
+            <value code="e">
+              <name>Luotauspisteet</name>
+            </value>
+            <value code="f">
+              <name>Muotoa kuvaavat viivat</name>
+            </value>
+            <value code="g">
+              <name>Korkeuspisteet</name>
+            </value>
+            <value code="i">
+              <name>Korkeuserot kuvin</name>
+            </value>
+            <value code="j">
+              <name>Viivakuvat</name>
+            </value>
+            <value code="k">
+              <name>Syvyyskäyrät</name>
+            </value>
+            <value code="m">
+              <name>Maisemapiirrokset</name>
+            </value>
+            <value code="z">
+              <name>Muu korkeuserotyyppi</name>
+            </value>
+            <value code="||||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="22-23">
+          <name>Projektio</name>
+          <equals tag="006" positions="05-06"/>
+          <values>
+            <value code="##">
+              <name>Projektiota ei määritelty</name>
+              <description><em>Tasoprojektiot</em></description>
+            </value>
+            <value code="aa">
+              <name>Aitoff</name>
+            </value>
+            <value code="ab">
+              <name>Gnomoninen</name>
+            </value>
+            <value code="ac">
+              <name>Lambertin oikeapintainen</name>
+            </value>
+            <value code="ad">
+              <name>Ortografinen</name>
+            </value>
+            <value code="ae">
+              <name>Oikeapituinen</name>
+            </value>
+            <value code="af">
+              <name>Stereografinen</name>
+            </value>
+            <value code="ag">
+              <name>Oikeapintainen, muu</name>
+            </value>
+            <value code="am">
+              <name>Modifioitu stereografinen Alaskalle</name>
+            </value>
+            <value code="an">
+              <name>Chamberlinin trimetrinen</name>
+            </value>
+            <value code="ap">
+              <name>Polaarinen stereografinen</name>
+            </value>
+            <value code="au">
+              <name>Tasoprojektio, erikoistyyppi tuntematon</name>
+            </value>
+            <value code="az">
+              <name>Tasoprojektio, muu</name>
+              <description><em>Lieriöprojektiot</em></description>
+            </value>
+            <value code="ba">
+              <name>Gall</name>
+            </value>
+            <value code="bb">
+              <name>Gooden oikeapintainen</name>
+            </value>
+            <value code="bc">
+              <name>Lambertin oikeapintainen</name>
+            </value>
+            <value code="bd">
+              <name>Mercator</name>
+            </value>
+            <value code="be">
+              <name>Miller</name>
+            </value>
+            <value code="bf">
+              <name>Mollweide</name>
+            </value>
+            <value code="bg">
+              <name>Sinusoidi</name>
+            </value>
+            <value code="bh">
+              <name>Poikittainen "Transverse Mercator"</name>
+            </value>
+            <value code="bi">
+              <name>Gauss-Krügerin poikittaisasentoinen</name>
+            </value>
+            <value code="bj">
+              <name>Pallopanoraama</name>
+            </value>
+            <value code="bk">
+              <name>Krovak</name>
+            </value>
+            <value code="bl">
+              <name>Cassini-Soldner</name>
+            </value>
+            <value code="bo">
+              <name>"Oblique Mercator"</name>
+            </value>
+            <value code="br">
+              <name>Robinson</name>
+            </value>
+            <value code="bs">
+              <name>"Space Oblique Mercator"</name>
+            </value>
+            <value code="bu">
+              <name>Lieriöprojektio, erikoistyyppi tuntematon</name>
+            </value>
+            <value code="bz">
+              <name>Lieriöprojektio, muu</name>
+              <description><em>Kartioprojektiot</em></description>
+            </value>
+            <value code="ca">
+              <name>Albersin oikeapintainen</name>
+            </value>
+            <value code="cb">
+              <name>Bonne</name>
+            </value>
+            <value code="cc">
+              <name>Lambertin oikeakulmainen</name>
+            </value>
+            <value code="ce">
+              <name>Oikeapituinen</name>
+            </value>
+            <value code="cp">
+              <name>Monikartioinen</name>
+            </value>
+            <value code="cu">
+              <name>Kartioprojektio, erikoistyyppi tuntematon</name>
+            </value>
+            <value code="cz">
+              <name>Kartioprojektio, muu</name>
+              <description><em>Muut projektiot</em></description>
+            </value>
+            <value code="da">
+              <name>Armadillo</name>
+            </value>
+            <value code="db">
+              <name>Monilohkoinen</name>
+            </value>
+            <value code="dc">
+              <name>Eckert</name>
+            </value>
+            <value code="dd">
+              <name>Gooden lohkottu</name>
+            </value>
+            <value code="de">
+              <name>Millerin kaksinapainen vinoasentoinen oikeakulmainen kartioprojektio</name>
+            </value>
+            <value code="df">
+              <name>Van der Grinten</name>
+            </value>
+            <value code="dg">
+              <name>Robinsonin oikeapintainen "Dimaxion"</name>
+            </value>
+            <value code="dh">
+              <name>Kaksoissydänprojektio</name>
+            </value>
+            <value code="dl">
+              <name>Trapetsoidi "Lambert conformal"</name>
+            </value>
+            <value code="zz">
+              <name>Muu projektio</name>
+            </value>
+            <value code="||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="24">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="07"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="25">
+          <name>Kartta-aineiston tyyppi</name>
+          <equals tag="006" positions="08"/>
+          <values>
+            <value code="a">
+              <name>Yksittäinen kartta</name>
+              <description> Ei käytetä kartastoille tai atlaksille, ks. koodi <strong>e</strong>.</description>
+            </value>
+            <value code="b">
+              <name>Karttasarja</name>
+              <description> Joukko toisiinsa liittyviä mutta fyysisesti ja bibliografisesti erillisiä yksiköitä, jotka tuottaja on tarkoittanut yhdeksi ryhmäksi. Ei käytetä kartastoille tai atlaksille, ks. koodi <strong>e</strong>.</description>
+            </value>
+            <value code="c">
+              <name>Jatkuva karttajulkaisu</name>
+              <description> Kartografinen julkaisu ilmestyy toisiaan seuraavissa numeroiduissa osissa, joiden on tarkoitus jatkua määräämättömästi. Tietueessa täytyy olla kenttä <a href="001-006.xml#CR">006 jatkuville julkaisuille</a>.</description>
+            </value>
+            <value code="d">
+              <name>Karttapallo</name>
+            </value>
+            <value code="e">
+              <name>Kartasto, atlas</name>
+              <description> Myös kartasto/atlas-tyyppiset jatkuvat karttajulkaisut, tällöin tietueessa täytyy olla kenttä <a href="001-006.xml#CR">006 jatkuville julkaisuille</a>.</description>
+            </value>
+            <value code="f">
+              <name>Toisen teoksen erillinen karttaliite</name>
+            </value>
+            <value code="g">
+              <name>Toiseen teokseen sidottu karttaosa</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="26-27">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="09-10"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="28">
+          <name>Virallisjulkaisu</name>
+          <equals tag="006" positions="11"/>
+          <description>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.</description>
+          <values>
+            <value code="#">
+              <name>Ei virallisjulkaisu</name>
+            </value>
+            <value code="a">
+              <name>Itsehallinnollinen tai puoli-itsehallinnollinen</name>
+            </value>
+            <value code="c">
+              <name>Monta paikallista yksikköä</name>
+              <description> Esim. kuntayhtymän julkaisu.</description>
+            </value>
+            <value code="f">
+              <name>Kansallinen</name>
+            </value>
+            <value code="i">
+              <name>Kansainvälinen, hallitusten välinen</name>
+              <description> Esim. Yhdistyneiden kansakuntien julkaisu.</description>
+            </value>
+            <value code="l">
+              <name>Paikallishallinto</name>
+              <description> Esim. kunnan julkaisu.</description>
+            </value>
+            <value code="m">
+              <name>Monta aluetta</name>
+            </value>
+            <value code="o">
+              <name>Virallisjulkaisu--toimivalta määrittelemätön</name>
+            </value>
+            <value code="s">
+              <name>Alueellinen</name>
+            </value>
+            <value code="u">
+              <name>Ei tiedetä onko kohde virallisjulkaisu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="29">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="12"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Tavanomainen painojäljenne</name>
+              <description> Silmin luettavaa painettua tekstiä, esim. valokopio.</description>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="30">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="13"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="31">
+          <name>Hakemisto</name>
+          <equals tag="006" positions="14"/>
+          <description>Sisältyykö kuvailun kohteeseen tai sen liitteisiin paikkahakemisto.</description>
+          <values>
+            <value code="0">
+              <name>Ei hakemistoa</name>
+            </value>
+            <value code="1">
+              <name>Hakemisto</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="32">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="15"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="33-34">
+          <name>Ilmiasun erityispiirteet</name>
+          <equals tag="006" positions="16-17"/>
+          <description>Kahdella koodilla voidaan ilmaista kartan ilmiasun erityispiirteitä. Koodit luetteloidaan tärkeysjärjestyksessä. Jos tallennetaan vain yksi koodi, se tasataan vasemmalle ja käyttämättömässä merkkipaikassa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Ilmiasun erityispiirteitä ei ole määritelty</name>
+            </value>
+            <value code="e">
+              <name>Käsin piirretty</name>
+            </value>
+            <value code="j">
+              <name>Kuvakortti, postikortti</name>
+            </value>
+            <value code="k">
+              <name>Kalenteri</name>
+            </value>
+            <value code="l">
+              <name>Palapeli</name>
+            </value>
+            <value code="n">
+              <name>Peli</name>
+            </value>
+            <value code="o">
+              <name>Seinäkartta</name>
+            </value>
+            <value code="p">
+              <name>Pelikortit</name>
+            </value>
+            <value code="r">
+              <name>Irtolehtikartta</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="MU" repeatable="">
+      <name>(MU) Musiikki</name>
+      <description paragraph="1">Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>c</strong>, <strong>d</strong>, <strong>i</strong> tai <strong>j</strong>.<br /> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>c</strong>, <strong>d</strong>, <strong>i</strong> tai <strong>j</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18-19">
+          <name>Musiikinlaji</name>
+          <equals tag="006" positions="01-02"/>
+          <description>Musiikinlajit perustuvat Library of Congressin asiasanoihin. Jos useampi kuin yksi koodi olisi sopiva, merkkipaikoissa 008/18-19 käytetään koodia <em>mu</em> (Useita lajeja) ja kaikki sopivat koodit annetaan kentässä <a href="01X-04X.xml#047">047</a> (Musiikinlajikoodi). Koodi <em>mu</em> voi myös osoittaa että kenttä 047 sisältää muita kuin MARC-musiikinlajikoodeja.</description>
+          <values>
+            <value code="an">
+              <name>Kansallislaulut</name>
+            </value>
+            <value code="bd">
+              <name>Balladit</name>
+            </value>
+            <value code="bg">
+              <name>Bluegrass-musiikki</name>
+            </value>
+            <value code="bl">
+              <name>Blues</name>
+            </value>
+            <value code="bt">
+              <name>Baletti</name>
+            </value>
+            <value code="ca">
+              <name>Chaconnet</name>
+            </value>
+            <value code="cb">
+              <name>Psalmilaulut, muut uskonnot</name>
+            </value>
+            <value code="cc">
+              <name>Psalmilaulut, kristilliset</name>
+            </value>
+            <value code="cg">
+              <name>Concerto grossot</name>
+            </value>
+            <value code="ch">
+              <name>Koraalit</name>
+            </value>
+            <value code="cl">
+              <name>Koraalialkusoitot</name>
+            </value>
+            <value code="cn">
+              <name>Kaanonit</name>
+            </value>
+            <value code="co">
+              <name>Konsertot</name>
+            </value>
+            <value code="cp">
+              <name>Moniääniset chansonit</name>
+            </value>
+            <value code="cr">
+              <name>Carolit</name>
+            </value>
+            <value code="cs">
+              <name>"Sattumamusiikki"</name>
+            </value>
+            <value code="ct">
+              <name>Kantaatit</name>
+            </value>
+            <value code="cy">
+              <name>Kantrimusiikki</name>
+            </value>
+            <value code="cz">
+              <name>Canzonat</name>
+            </value>
+            <value code="df">
+              <name>Tanssimusiikki</name>
+              <description> Huom, monille tansseille on omat koodit.</description>
+            </value>
+            <value code="dv">
+              <name>Divertimentot, serenadit, kassaatiot, notturnot</name>
+            </value>
+            <value code="fg">
+              <name>Fuugat</name>
+            </value>
+            <value code="fl">
+              <name>Flamenco</name>
+            </value>
+            <value code="fm">
+              <name>Kansanmusiikki</name>
+            </value>
+            <value code="ft">
+              <name>Fantasiat</name>
+            </value>
+            <value code="gm">
+              <name>Hengellinen musiikki</name>
+            </value>
+            <value code="hy">
+              <name>Virret</name>
+            </value>
+            <value code="jz">
+              <name>Jazz</name>
+            </value>
+            <value code="mc">
+              <name>Musiikkirevyyt</name>
+            </value>
+            <value code="md">
+              <name>Madrigaalit</name>
+            </value>
+            <value code="mi">
+              <name>Menuetit</name>
+            </value>
+            <value code="mo">
+              <name>Motetit</name>
+            </value>
+            <value code="mp">
+              <name>Elokuvamusiikki</name>
+            </value>
+            <value code="mr">
+              <name>Marssit</name>
+            </value>
+            <value code="ms">
+              <name>Messut</name>
+            </value>
+            <value code="mu">
+              <name>Useita lajeja</name>
+            </value>
+            <value code="mz">
+              <name>Masurkat</name>
+            </value>
+            <value code="nc">
+              <name>Nocturnet</name>
+            </value>
+            <value code="nn">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="op">
+              <name>Oopperat</name>
+            </value>
+            <value code="or">
+              <name>Oratoriot</name>
+            </value>
+            <value code="ov">
+              <name>Alkusoitot</name>
+            </value>
+            <value code="pg">
+              <name>Ohjelmamusiikki</name>
+            </value>
+            <value code="pm">
+              <name>Passiomusiikki</name>
+            </value>
+            <value code="po">
+              <name>Poloneesit</name>
+            </value>
+            <value code="pp">
+              <name>Viihdemusiikki</name>
+            </value>
+            <value code="pr">
+              <name>Preludit</name>
+            </value>
+            <value code="ps">
+              <name>Passacagliat</name>
+            </value>
+            <value code="pt">
+              <name>Moniääniset laulut</name>
+            </value>
+            <value code="pv">
+              <name>Pavanat</name>
+            </value>
+            <value code="rc">
+              <name>Rock</name>
+            </value>
+            <value code="rd">
+              <name>Rondot</name>
+            </value>
+            <value code="rg">
+              <name>Ragtime</name>
+            </value>
+            <value code="ri">
+              <name>Ricercaret</name>
+            </value>
+            <value code="rp">
+              <name>Rapsodiat</name>
+            </value>
+            <value code="rq">
+              <name>Requiemit</name>
+            </value>
+            <value code="sd">
+              <name>Kontratanssit</name>
+            </value>
+            <value code="sg">
+              <name>Laulut</name>
+            </value>
+            <value code="sn">
+              <name>Sonaatit</name>
+            </value>
+            <value code="sp">
+              <name>Sinfoniset runoelmat</name>
+            </value>
+            <value code="st">
+              <name>Etydit ja harjoitukset</name>
+            </value>
+            <value code="su">
+              <name>Sarjat</name>
+            </value>
+            <value code="sy">
+              <name>Sinfoniat</name>
+            </value>
+            <value code="tc">
+              <name>Toccatat</name>
+            </value>
+            <value code="tl">
+              <name>Teatro lirico</name>
+            </value>
+            <value code="ts">
+              <name>Triosonaatit</name>
+            </value>
+            <value code="uu">
+              <name>Tuntematon</name>
+            </value>
+            <value code="vi">
+              <name>"Villancicos"</name>
+            </value>
+            <value code="vr">
+              <name>Muunnelmat</name>
+            </value>
+            <value code="wz">
+              <name>Valssit</name>
+            </value>
+            <value code="za">
+              <name>Zarzuelas</name>
+            </value>
+            <value code="zz">
+              <name>Muut</name>
+            </value>
+            <value code="||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="20">
+          <name>Nuottijulkaisun tyyppi</name>
+          <equals tag="006" positions="03"/>
+          <values>
+            <value code="a">
+              <name>Partituuri</name>
+            </value>
+            <value code="b">
+              <name>Pienoispartituuri</name>
+            </value>
+            <value code="c">
+              <name>Pianopartituuri</name>
+            </value>
+            <value code="d">
+              <name>Kuoropartituuri</name>
+            </value>
+            <value code="e">
+              <name>Partituurin tiivistelmä tai johtoääni</name>
+            </value>
+            <value code="g">
+              <name>Partiselli</name>
+            </value>
+            <value code="h">
+              <name>"Chorus score"</name>
+            </value>
+            <value code="i">
+              <name>"Condensed score"</name>
+            </value>
+            <value code="j">
+              <name>"Performer-conductor part"</name>
+            </value>
+            <value code="m">
+              <name>Useita tyyppejä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="21">
+          <name>Äänet</name>
+          <equals tag="006" positions="04"/>
+          <values>
+            <value code="#">
+              <name>Ei ääniä tai ei määritelty</name>
+            </value>
+            <value code="d">
+              <name>Soitin- ja lauluäänet</name>
+            </value>
+            <value code="e">
+              <name>Soitinäänet</name>
+            </value>
+            <value code="f">
+              <name>Lauluäänet</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="22">
+          <name>Kohderyhmä</name>
+          <equals tag="006" positions="05"/>
+          <description>Millaiselle kohderyhmälle kuvailun kohde on suunnattu.</description>
+          <values>
+            <value code="#">
+              <name>Tuntematon tai ei eritelty</name>
+            </value>
+            <value code="a">
+              <name>Esikouluikäiset</name>
+            </value>
+            <value code="b">
+              <name>Ala-asteikäiset</name>
+            </value>
+            <value code="c">
+              <name>Yläasteikäiset</name>
+            </value>
+            <value code="d">
+              <name>Lukioikäiset ja vastaavat</name>
+            </value>
+            <value code="e">
+              <name>Aikuiset</name>
+            </value>
+            <value code="f">
+              <name>Erityisryhmä</name>
+              <description> Esim. tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.</description>
+            </value>
+            <value code="g">
+              <name>Yleinen</name>
+              <description> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.</description>
+            </value>
+            <value code="j">
+              <name>Lapset ja nuoret</name>
+              <description> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="23">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="06"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+              <description>Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+              <description>Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+              <description>Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+              <description>Tarvittaessa tehdään kenttä <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Tavanomainen painojäljenne</name>
+              <description>Silmin luettavaa painettua tekstiä, esim. valokopio.</description>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+              <description>Tarvittaessa tehdään kenttä <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="24-29">
+          <name>Liiteaineisto</name>
+          <equals tag="006" positions="07-12"/>
+          <description>Aakkosjärjestyksessä voidaan tallentaa kuusi eri koodia, jotka ilmaisevat äänitteen, nuottikäsikirjoituksen tai nuottijulkaisun liiteaineiston sisältöä. Jos tallennetaan vähemmän kuin kuusi koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Ei liiteaineistoa</name>
+            </value>
+            <value code="a">
+              <name>Diskografia</name>
+            </value>
+            <value code="b">
+              <name>Bibliografia</name>
+            </value>
+            <value code="c">
+              <name>Teemahakemisto</name>
+            </value>
+            <value code="d">
+              <name>Libretto tai teksti</name>
+            </value>
+            <value code="e">
+              <name>Säveltäjän tai tekijän elämäkerta</name>
+            </value>
+            <value code="f">
+              <name>Esittäjän tai yhtyeen elämäkerta</name>
+            </value>
+            <value code="g">
+              <name>Teknistä ja/tai historiallista tietoa soittimista</name>
+            </value>
+            <value code="h">
+              <name>Teknistä tietoa musiikista</name>
+            </value>
+            <value code="i">
+              <name>Historiallista tietoa</name>
+            </value>
+            <value code="k">
+              <name>Etnologista tietoa</name>
+            </value>
+            <value code="r">
+              <name>Opetusaineistoa</name>
+            </value>
+            <value code="s">
+              <name>Nuottijulkaisu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="||||||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="30-31">
+          <name>Kirjallisuuslaji</name>
+          <equals tag="006" positions="13-14"/>
+          <description>Koodit luetteloidaan seuraavan listan mukaisessa järjestyksessä. Jos tallennetaan vain yksi koodi, se tasataan vasemmalle ja käyttämättömässä merkkipaikassa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Kohde on musiikkiäänite</name>
+            </value>
+            <value code="a">
+              <name>Omaelämäkerta</name>
+            </value>
+            <value code="b">
+              <name>Elämäkerta</name>
+            </value>
+            <value code="c">
+              <name>Tallenne kokouksesta</name>
+            </value>
+            <value code="d">
+              <name>Tallenne draamallisesta teatterinäytelmästä</name>
+            </value>
+            <value code="e">
+              <name>Essee, yksi tai useampi</name>
+            </value>
+            <value code="f">
+              <name>Kaunokirjallisuus</name>
+              <description>Esim. romaani, novelli, pakina.</description>
+            </value>
+            <value code="g">
+              <name>Esittely, reportaasi</name>
+            </value>
+            <value code="h">
+              <name>Kertomukset</name>
+              <description>Historiallista sisältöä.</description>
+            </value>
+            <value code="i">
+              <name>Ohjeet</name>
+            </value>
+            <value code="j">
+              <name>Kielten opetus</name>
+            </value>
+            <value code="k">
+              <name>Hupailut</name>
+            </value>
+            <value code="l">
+              <name>Luennot, puheet</name>
+            </value>
+            <value code="m">
+              <name>Muistelmat</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="o">
+              <name>Kansantarinat</name>
+            </value>
+            <value code="p">
+              <name>Runo, yksi tai useampi</name>
+            </value>
+            <value code="r">
+              <name>Harjoitukset ilman musiikkia</name>
+            </value>
+            <value code="s">
+              <name>Äänet</name>
+            </value>
+            <value code="t">
+              <name>Haastattelut</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="32">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="15"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="33">
+          <name>Transponointi ja sovitus</name>
+          <equals tag="006" positions="16"/>
+          <values>
+            <value code="#">
+              <name>Ei transponointia tai sovitusta tai ei määritelty</name>
+            </value>
+            <value code="a">
+              <name>Transponointi</name>
+            </value>
+            <value code="b">
+              <name>Sovitus</name>
+            </value>
+            <value code="c">
+              <name>Sekä transponoitu että sovitettu</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="34">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="17"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="MX" repeatable="">
+      <name>(MX) Sekalaiset aineistot</name>
+      <description paragraph="1">Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>p</strong>.<br /> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>p</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18-22">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="01-05"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="23">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="06"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Tavanomainen painojäljenne</name>
+              <description> Silmin luettavaa painettua tekstiä, esim. valokopio.</description>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="24-34">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="07-17"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="008" type="VM" repeatable="">
+      <name>(VM) Visuaaliset aineistot</name>
+      <description paragraph="1">Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>g</strong>, <strong>k</strong>, <strong>o</strong> tai <strong>r</strong>.<br /> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.</description>
+      <description paragraph="2">Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>g</strong>, <strong>k</strong>, <strong>o</strong> tai <strong>r</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.</description>
+      <positions>
+        <position pos="18-20">
+          <name>Kesto</name>
+          <equals tag="006" positions="01-03"/>
+          <description>Elokuvan tai videotallenteen kokonaiskesto. Numero tasataan oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+          <values>
+            <value code="000">
+              <name>Kesto ylittää 999 minuuttia</name>
+            </value>
+            <value code="001-999">
+              <name>Kesto</name>
+            </value>
+            <value code="---">
+              <name>Kesto tuntematon</name>
+            </value>
+            <value code="nnn">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="|||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="21">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="04"/>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="22">
+          <name>Kohderyhmä</name>
+          <equals tag="006" positions="05"/>
+          <description>Millaiselle kohderyhmälle kuvailun kohde on suunnattu.</description>
+          <values>
+            <value code="#">
+              <name>Tuntematon tai ei eritelty</name>
+            </value>
+            <value code="a">
+              <name>Esikouluikäiset</name>
+            </value>
+            <value code="b">
+              <name>Ala-asteikäiset</name>
+            </value>
+            <value code="c">
+              <name>Yläasteikäiset</name>
+            </value>
+            <value code="d">
+              <name>Lukioikäiset ja vastaavat</name>
+            </value>
+            <value code="e">
+              <name>Aikuiset</name>
+            </value>
+            <value code="f">
+              <name>Erityisryhmä</name>
+              <description> Esim. tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.</description>
+            </value>
+            <value code="g">
+              <name>Yleinen</name>
+              <description> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.</description>
+            </value>
+            <value code="j">
+              <name>Lapset ja nuoret</name>
+              <description> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="23-27">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="06-10"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="28">
+          <name>Virallisjulkaisu</name>
+          <equals tag="006" positions="11"/>
+          <description>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.</description>
+          <values>
+            <value code="#">
+              <name>Ei virallisjulkaisu</name>
+            </value>
+            <value code="a">
+              <name>Itsehallinnollinen tai puoli-itsehallinnollinen</name>
+            </value>
+            <value code="c">
+              <name>Monta paikallista yksikköä</name>
+              <description> Esim. kuntayhtymän julkaisu.</description>
+            </value>
+            <value code="f">
+              <name>Kansallinen</name>
+            </value>
+            <value code="i">
+              <name>Kansainvälinen, hallitusten välinen</name>
+              <description> Esim. Yhdistyneiden kansakuntien julkaisu.</description>
+            </value>
+            <value code="l">
+              <name>Paikallishallinto</name>
+              <description> Esim. kunnan julkaisu.</description>
+            </value>
+            <value code="m">
+              <name>Monta aluetta</name>
+            </value>
+            <value code="o">
+              <name>Virallisjulkaisu--toimivalta määrittelemätön</name>
+            </value>
+            <value code="s">
+              <name>Alueellinen</name>
+            </value>
+            <value code="u">
+              <name>Ei tiedetä onko kohde virallisjulkaisu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="29">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="12"/>
+          <values>
+            <value code="#">
+              <name>Ei mikään seuraavista</name>
+            </value>
+            <value code="a">
+              <name>Mikrofilmi</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="b">
+              <name>Mikrokuultokortti</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="c">
+              <name>Mikrokortti (läpinäkymätön)</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).</description>
+            </value>
+            <value code="d">
+              <name>Isoteksti</name>
+            </value>
+            <value code="f">
+              <name>Pistekirjoitus</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
+            </value>
+            <value code="r">
+              <name>Tavanomainen painojäljenne</name>
+              <description> Silmin luettavaa painettua tekstiä, esim. valokopio.</description>
+            </value>
+            <value code="s">
+              <name>Elektroninen</name>
+              <description> Tarvittaessa tehdään kenttä <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="30-32">
+          <name>Määrittelemätön</name>
+          <equals tag="006" positions="13-15"/>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="33">
+          <name>Visuaalisen aineiston tyyppi</name>
+          <equals tag="006" positions="16"/>
+          <values>
+            <value code="a">
+              <name>Taideteos, alkuperäinen</name>
+            </value>
+            <value code="b">
+              <name>Moniviestin</name>
+              <description> Sisältää kahta tai useampaa aineistotyyppiä, joista mikään ei ole kokonaisuuden hallitseva osa, esim. opetuspaketti.</description>
+            </value>
+            <value code="c">
+              <name>Taidejäljennös</name>
+            </value>
+            <value code="d">
+              <name>Dioraama</name>
+            </value>
+            <value code="f">
+              <name>Raina</name>
+              <description> Stillkuvia äänen kanssa tai ilman.</description>
+            </value>
+            <value code="g">
+              <name>Peli</name>
+            </value>
+            <value code="i">
+              <name>Kuva</name>
+              <description> Kaksiulotteiset kuvat läpinäkymättömällä pohjalla.</description>
+            </value>
+            <value code="k">
+              <name>Grafiikka</name>
+            </value>
+            <value code="l">
+              <name>Tekninen piirustus</name>
+            </value>
+            <value code="m">
+              <name>Elokuva</name>
+              <description> Filminauhalla oleva sarja yksittäisiä kuvia (äänen kanssa tai ilman), joista muodostuu liikkeen vaikutelma heijastettaessa nopeasti peräkkäin.</description>
+            </value>
+            <value code="n">
+              <name>Kaavio</name>
+            </value>
+            <value code="o">
+              <name>Sana- tai kuvakortti</name>
+            </value>
+            <value code="p">
+              <name>Mikroskoopin preparaatti</name>
+            </value>
+            <value code="q">
+              <name>Malli</name>
+            </value>
+            <value code="r">
+              <name>Esine</name>
+            </value>
+            <value code="s">
+              <name>Dia</name>
+            </value>
+            <value code="t">
+              <name>Kalvo</name>
+            </value>
+            <value code="v">
+              <name>Videotallenne</name>
+            </value>
+            <value code="w">
+              <name>Lelu</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="34">
+          <name>Menetelmä</name>
+          <equals tag="006" positions="17"/>
+          <description>Menetelmä, jota on käytetty liikkeen vaikutelman muodostamiseen elokuvassa tai videotallenteessa.</description>
+          <values>
+            <value code="a">
+              <name>Animaatio</name>
+            </value>
+            <value code="c">
+              <name>Animaatio ja elävät näyttelijät</name>
+            </value>
+            <value code="l">
+              <name>Elävät näyttelijät</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Kuvailun kohde ei ole elokuva tai videotallenne.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu menetelmä</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+  </controlfields>
+</fields>

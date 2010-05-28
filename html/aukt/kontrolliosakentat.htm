@@ -1,0 +1,211 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Auktoriteettitiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		AUKTORITEETTITIEDOT</h1>
+		</td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Kontrolliosakentät</h2>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Tässä osiossa kuvataan neljä kontrolliosakenttää, joiden avulla kenttien tiedot 
+linkitetään tiettyihin organisaatioihin, muihin tietueisiin tai muihin kenttiin. Kontrolliosakenttiä esiintyy 
+useissa (&#8225;0 ja &#8225;5) tai lähes kaikissa (&#8225;6 ja &#8225;8) auktoriteettitietojen formaatin kentissä.</p>
+<ul>
+	<li><a href="#0">&#8225;0 - TIETUEEN KONTROLLINUMERO</a></li>
+	<li><a href="#5">&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</a></li>
+	<li><a href="#6">&#8225;6 - LINKITYS</a></li>
+	<li><a href="#8">&#8225;8 - LINKKI- JA JÄRJESTYSNUMERO</a></li>
+</ul>
+
+<hr>
+
+<h3><a name="0"></a>&#8225;0 - TIETUEEN KONTROLLINUMERO</h3>
+<p>Osakenttä &#8225;0 sisältää liittyvän auktoriteettitietueen kentästä 035 kontrollinumeron, jota 
+edeltää alkuperäjärjestelmän koodi sulkuihin merkittynä, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>.</p>
+<p>710 20&#8225;aRoyal Society of Medicine Services (Great Britain)<b>&#8225;0</b>(DLC)n##86108151#
+</p>
+<p>511 21&#8225;aCongrès européen de droit rural<b>&#8225;0</b>(DLC)n##82111965#</p>
+<p>730 #0&#8225;aDead Sea scrolls<b>&#8225;0</b>(DLC)n##79071139#</p>
+<p>751 #0&#8225;aZimbabwe<b>&#8225;0</b>(DLC)n##80089993#</p>
+
+<hr>
+<h3><a name="5"></a>&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</h3>
+<p>Osakenttä &#8225;5 sisältää koodin organisaatiolle, joka 
+on lisännyt viittaus- tai linkityskirjauskentän auktoriteettitietueeseen. Tietoa 
+käytetään organisaation sisäisiin tarkoituksiin, eikä se ehkä sovellu 
+auktoriteettitietueen yleisiin käyttötarkoituksiin.<br>
+Organisaation koodina käytetään ISIL-tunnusta, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>.</p>
+<p>400 1b&#8225;aKing, Kennedy<b>&#8225;5</b>NNUM</p>
+<p>485 ##&#8225;vArt songs<b>&#8225;5</b>NjP</p>
+<p>585 ##&#8225;vAcronyms<b>&#8225;5</b>DLC</p>
+<p>700 05&#8225;wa&#8225;aFrancis, of Assisi,&#8225;cSaint,&#8225;dd1182-1226<b>&#8225;5</b>CaOONL</p>
+
+<hr>
+<h3><a name="6"></a>&#8225;6 - LINKITYS</h3>
+<p>Osakenttä &#8225;6 sisältää tietoja, joilla linkitetään eri kirjaimistoilla 
+tallennetut kentät toisiinsa. Osakentän sisältönä voi olla linkitettävän kentän 
+kolminumeroinen kenttäkoodi, esiintymänumero, koodi joka kertoo mitä 
+kirjaimistoa tiedoissa on käytetty vasemmalta oikealle ja/tai koodi 
+joka kertoo että kentän tiedot näytetään oikealta vasemmalle. Tavallinen 
+(ei-880) kenttä voi olla linkitettynä yhteen tai useampaan 880-kenttään, jotka 
+kaikki sisältävät samat tiedot mutta eri kirjaimistoilla tallennettuna. 
+Osakenttä &#8225;6 on aina kentän ensimmäinen osakenttä. Sen rakenne on seuraava:</p>
+<p>&#8225;6&lt;linkitettävä kenttäkoodi&gt;- &lt;esiintymänumero&gt; / &lt;kirjaimistokoodi&gt; / &lt;kentän 
+suuntakoodi&gt;</p>
+<ul>
+	<li>Malleja eri kirjaimistoja sisältävistä tietueista
+	löytyy Library of Congressin 
+	sivuilta, ks.
+	<span style="font-style: italic; ">
+	<a href="http://www.loc.gov/marc/authority/ecadmulti.html">Multiscript 
+	Records</a></span>.</li>
+	<li><a href="8XX.htm#880">880-kenttää koskevat ohjeet</a> löytyvät 
+	ko. kentän kohdalta.</li>
+	<li>Eri kirjaimistoja/merkistöjä koskevaa tietoa löytyy Library of 
+Congressin 
+	sivuilta, ks. <i><a href="http://www.loc.gov/marc/specifications/">
+	MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></i>.</li>
+</ul>
+<h4>Linkitettävä kenttäkoodi ja esiintymänumero</h4>
+<p><i>Linkitettävä kenttäkoodi</i> sisältää sen kentän kenttäkoodin, johon ko. kenttä 
+halutaan linkittää. Sitä seuraa välittömästi tavuviiva ja <i>esiintymänumero</i>, joka 
+merkitään kahdella numerolla. Jokaiselle samassa tietueessa esiintyvälle 
+linkitettävien kenttien ryhmälle annetaan eri <i>esiintymänumerot</i>, ja ne voidaan 
+antaa sattumanvaraisesti. <i>Esiintymänumerot</i> mahdollistavat toisiinsa liittyvien 
+kenttien täsmäyttämisen; niillä ei ole tarkoitus järjestää tietueen kenttiä. <i>
+Esiintymänumeron</i> kaksi numeroa tasataan oikealle ja käyttämättömässä merkkipaikassa on nolla. Kun 
+880-kenttää ei ole linkitetty tavalliseen kenttään, <i>esiintymänumeroksi</i> sen 
+osakentässä &#8225;6 annetaan 00. Sitä käytetään, jos luetteloiva organisaatio haluaa erottaa 
+tietueessa olevat eri kirjaimistot. Tässä tapauksessa <i>linkitettävän 
+kenttäkoodin</i> paikalle merkitään se tavallinen kenttä, joka tietueessa olisi 
+voinut olla kyseisen 880-kentän parina.</p>
+<p>100 1#<b>&#8225;6880-01</b>&#8225;a[Otsikkomuoto henkilönnimestä latinalaisella 
+kirjaimistolla]<br>
+880 1#<b>&#8225;6100-01/(2/r</b>&#8225;a[Otsikkomuoto henkilönnimestä heprealaisella 
+kirjaimistolla]</p>
+<p>880##<b>&#8225;6675-00/(2/r</b>&#8225;a[Lähdetieto herpealaisella kirjaimistolla]</p>
+<h4>Kirjaimistokoodi</h4>
+<p>Esiintymänumeroa seuraa välittömästi kauttaviiva (/) ja <i>kirjaimistokoodi</i>. 
+Tämä koodi kertoo mitä kirjaimistoa kentän tiedoissa on käytetty. Seuraavat 
+kirjaimistokoodit ovat käytettävissä:</p>
+
+<blockquote>
+<table border="1" id="table2">
+	<tr><td><b>Koodi</b></td>
+		<td><b>Kirjaimisto</b></td>
+	</tr>
+	<tr>
+		<td>(3</td>
+		<td>arabialainen</td>
+	</tr>
+	<tr>
+		<td>(B</td>
+		<td>latinalainen</td>
+	</tr>
+	<tr>
+		<td>$1</td>
+		<td>kiinalainen, japanilainen, korealainen</td>
+	</tr>
+	<tr>
+		<td>(N</td>
+		<td>kyrillinen</td>
+	</tr>
+	<tr>
+		<td>(2</td>
+		<td>heprealainen</td>
+	</tr>
+	<tr>
+		<td>(S</td>
+		<td>kreikkalainen</td>
+	</tr>
+</table>
+</blockquote>
+
+<p>880 1#&#8225;6100-01/<b>(N</b>&#8225;a[Otsikkomuoto henkilönnimestä kyrillisellä kirjaimistolla]</p>
+<p>Koko kentän ei tarvitse olla tallennettu sillä kirjaimistolla jonka koodi 
+annetaan osakentässä &#8225;6. Jos kenttä sisältää useampia kirjaimistoja, osakentässä 
+&#8225;6 annetaan sen kirjaimiston koodi, joka tulee <i>ensimmäisenä</i> vastaan 
+luettaessa kenttää vasemmalta oikealle.<br>
+Huomioi, että <i>kirjaimistokoodia</i> käytetään 880-kenttien osakentässä &#8225;6, 
+mutta ei yleensä niihin liittyvien tavallisten kenttien osakentässä &#8225;6. 
+Tavallisissa kentissä tietojen oletetaan olevan tallennettu tietueen 
+pääasiallisella kirjaimistolla.</p>
+<h4>Kentän suuntakoodi</h4>
+<p>MARC-tietueessa 880-kentän sisältö tallennetaan aina loogisessa 
+järjestyksessä ensimmäisestä merkistä viimeiseen, huolimatta siitä miten päin 
+tekstiä luetaan. Näyttöä varten kentän oletussuunta on vasemmalta oikealle. Kun 
+kenttä sisältää tekstiä, joka luetaan oikealta vasemmalle, kirjaimistokoodin 
+jälkeen tallennetaan kauttaviiva (/) ja <i>kentän suuntakoodi</i>. Oikealta 
+vasemmalle luettaville teksteille <i>suuntakoodi</i> on <b>r</b>. Suuntakoodi 
+tallennetaan vain oikealta vasemmalle luettaviin kenttiin, koska vasemmalta 
+oikealle on 880-kenttien oletussuunta. (Lisätietoja kentän suunnasta, ks. <i>
+<a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for 
+Record Structure, Character Sets, and Exchange Media</a></i>.)</p>
+<p>880##&#8225;6675-00/(2/<b>r</b>&#8225;a[Lähdetieto herpealaisella kirjaimistolla]</p>
+<p>Huomioi, että <i>suuntakoodia</i> käytetään 880-kenttien osakentässä &#8225;6, 
+mutta ei yleensä niihin liittyvien tavallisten kenttien osakentässä &#8225;6. 
+Tavallisissa kentissä tietojen oletetaan olevan tallennettu tietueen 
+pääasiallisen kirjaimiston suuntaisesti.</p>
+
+<hr>
+<h3><a name="8"></a>&#8225;8 - LINKKI- JA JÄRJESTYSNUMERO</h3>
+<p>Osakenttä &#8225;8 sisältää tietoja, joilla tunnistetaan linkitetyt kentät ja joiden 
+avulla voidaan myös järjestää linkitettyjä kenttiä. Osakenttää &#8225;8 voidaan 
+toistaa, kun halutaan linkittää kenttä useampaan kuin yhteen kenttäryhmään. Osakentän 
+rakenne on seuraava:</p>
+<p>&#8225;8&lt;linkkinumero&gt;.&lt;järjestysnumero&gt; \ &lt;linkin tyyppi&gt;</p>
+<h4>Linkkinumero</h4>
+<p>Linkkinumero on osakentän ensimmäinen tietoelementti ja se merkitään aina kun 
+osakenttää käytetään. Se on vaihtuvamittainen numero, joka esiintyy kaikkien 
+linkitettävien kenttien osakentässä &#8225;8. Kentät, joilla on sama linkkinumero, ovat 
+toisiinsa linkitettyjä.</p>
+<h4>Järjestysnumero</h4>
+<p>Tämä numero erotetaan linkkinumerosta pisteellä '.' ja sen merkitseminen on 
+vapaaehtoista. Se on vaihtuvamittainen numero, jota voidaan käyttää ilmaisemaan 
+linkitettyjen kenttien suhteellista järjestystä näytössä. Alemmalla 
+järjestysnumerolla merkityt kentät näytetään ennen korkeampia. Jos 
+järjestysnumeroa käytetään, sitä pitää käyttää kaikissa osakentissä &#8225;8, jotka 
+sisältävät saman linkkinumeron.</p>
+<h4>Linkin tyyppi</h4>
+<p>Tämä koodi erotetaan edeltävistä tiedoista kenoviivalla (\). Koodi osoittaa 
+linkin syyn ja se seuraa linkkinumeroa tai järjestysnumeroa silloin, kun sitä on 
+käytetty. Linkin tyyppejä ei ole määritelty MARC 21 auktoriteettitietojen 
+formaatissa.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

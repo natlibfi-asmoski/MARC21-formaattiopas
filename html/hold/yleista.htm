@@ -1,0 +1,178 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Varastotiedot--Yleistä tietoa</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Varastotietojen formaatissa tietoelementit on jaettu seuraaviin neljään 
+ryhmään:</p>
+<ul>
+	<li><a href="853-855.htm">Ilmestymistiedot (853-855)</a></li>
+	<li><a href="863-865.htm">Määrämuotoiset varastotiedot (863-865)</a></li>
+	<li><a href="866-868.htm">Vapaamuotoiset varastotiedot (866-868)</a></li>
+	<li><a href="876-878.htm">Kappaletiedot (876-878)</a></li>
+</ul>
+<p>Varastotietojen kenttiin voidaan merkitä tietoja bibliografisten kohteiden kolmesta 
+perustyypistä: <b>yksiosaisista monografioista</b> (nimiö/06 = x), <b>
+moniosaisista monografioista</b> (nimiö/06 = v) ja <b>kausijulkaisuista</b> 
+(nimiö/06 = y).</p>
+<p>Jokaisessa kenttäryhmässä on oma kenttä kolmelle eri aineistoluokalle:</p>
+<ul>
+	<li>Bibliografinen perusyksikkö</li>
+	<li>Oheisaineisto yms.</li>
+	<li>Hakemisto yms.</li>
+</ul>
+<p><b>Bibliografinen perusyksikkö</b> on kokonaisuus, jolle on olemassa bibliografinen 
+kuvailu; esim. sarjajulkaisu, yksiosainen kirja, moniosainen tietosanakirja. 
+Myös oheisaineistot tai hakemistot, joille on oma bibliografinen tietue, 
+lasketaan perusyksiköiksi. <b>Oheisaineistoilla</b> ja <b>hakemistoilla</b> 
+luokilla tarkoitetaan varastotiedoissa sellaisia, joilla ei ole omaa bibliografista 
+tietuetta, vaan niihin liittyvät tiedot sisältyvät perusyksikön 
+bibliografiseen tietueeseen.</p>
+<p>Osakenttä &#8225;8 (Linkki- ja järjestysnumero) on tarkoitettu linkittämään 
+varastotietojen kenttiä 
+853-878 toisiinsa. Osakentän rakenne on seuraava:</p>
+<p>&lt;linkkinumero&gt;.&lt;järjestysnumero&gt;</p>
+<p>Ilmestymistietojen (853-855) sekä vapaamuotoisten 
+varastotietojen (866-868) kentissä käytetään vain linkkinumero-osuutta. 
+Määrämuotoisten varastotietojen (863-865) sekä kappaletietojen (876-878) kentissä 
+käytetään molempia; linkkinumeroa ja järjestysnumeroa. Osakentän &#8225;8 tarkempi 
+kuvaus löytyy osiosta <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a>.</p>
+<p><b>Ilmestymistietojen kentät (853-855)</b><br>
+Kentissä määritellään selosteet, jotka soveltuvat numerointi- ja 
+julkaisuaikatasojen (863-865) merkitsemiseen. Toisiinsa liittyvät kentät on linkitetty 
+osakentän &#8225;8 avulla. Selosteet ovat sanoja, fraaseja tai lyhenteitä, jotka kuvaavat minkä 
+tyyppisiin osiin moniosainen monografia tai kausijulkaisu on jaettu; esimerkiksi 
+volyymi, numero, osa, sivu. Kentät voivat sisältää myös koodeja, jotka 
+määrittelevät kohteen julkaisukaavan; esimerkiksi ilmestymistiheyden ja 
+säännöllisyyden. Nämä koodit mahdollistavat sen, että määrämuotoisten 
+varastotietokenttien (863-865) tiedot on mahdollista tiivistää tai laajentaa 
+automaattisesti. Kun selosteita ja/tai tiivistämis- 
+tai laajentamistoimintoja ei haluta käyttää, myöskään ilmestymistietojen kenttiä ei varastotiedoissa tarvita.</p>
+<p><b>Määrämuotoisten varastotietojen kentät (863-865)</b><br>
+Sisältävät bibliografisen kohteen numeeriset, aakkoselliset ja/tai 
+päiväystiedot, joiden avulla voidaan tunnistaa sen osat ja osoittaa osien suhde 
+kokonaisuuteen. Toisiinsa osakentän &#8225;8 avulla linkitettyjä ilmestymistietojen kenttiä (853-855) sekä määrämuotoisten varastotietojen 
+kenttiä (863-865) käytetään yleensä moniosaisille monografioille ja 
+kausijulkaisuille, kun tietojen esittämistä varten tarvitaan ymmärrettävät 
+selosteet tai kun julkaisukaavaa tarvitaan kenttien 863-865 automaattista 
+tiivistämistä tai laajentamista varten.</p>
+<p><b>Vapaamuotoisten varastotietojen kentät (866-868)</b><br>
+Sisältävät varastotietoja vapaamuotoisena tekstinä. Kenttiä ei 
+yleensä käytetä yksiosaisten monografioiden varastotietojen tallentamiseen. 
+Niitä voidaan käyttää moniosaisten monografioiden ja kausijulkaisujen kohdalla 
+edellä mainittujen kenttien 853-855 ja 863-865 sijaan, kun niiden koodimuotoiset 
+tiedot eivät ole riittäviä varastotietojen kuvailemiseen. Kenttiä 866-868 
+voidaan käyttää myös määrämuotoisten varastotietojen sekä niihin liittyvien 
+ilmestymistietokenttien <i>lisäksi</i>, jotta voidaan 
+tallentaa ja muodostaa vaihtoehtoinen näyttö kyseisissä kentissä olevista tiedoista. 
+Osakentän &#8225;8 avulla vapaamuotoisten varastotietojen kentät voidaan linkittää 
+niihin kenttiin (853-855, 863-865) joita ne korvaavat tai täydentävät.</p>
+<p><b>Kappaletietojen kentät (876-878)</b><br>
+Sisältävät kappaletason tietoja kappaleesta, jota kuvaillaan kentässä 852. Näitä 
+kappalekohtaisia tietoja tarvitaan mm. lainauksessa ja hankinnassa. Joko osakenttää 
+&#8225;3 tai osakenttää &#8225;8 käytetään linkittämään kappaletietojen kentät muihin 
+varastotietojen kenttiin, riippuen siitä mitä muita kenttiä varastotietojen 
+tallennukseen on käytetty. Osakenttää &#8225;3 käytetään linkittämään kenttää 852 tai 
+kenttiä 866-868; osakenttää &#8225;8 käytetään linkittämään kenttiä 863-866, jolloin 
+määrämuotoisten varastotietojen kenttiä ei pidä tiivistää yli yksittäisen 
+fyysisen kappaleen.</p><hr>
+<h3><a name="tiivistys"></a>Tiivistettävyys ja laajennettavuus</h3>
+<p>Kenttiin 863 (Määrämuotoiset varastotiedot--Bibliografinen perusyksikkö) ja 864 
+(Määrämuotoiset varastotiedot--Oheisaineisto yms.) sisältyvät tiedot voidaan 
+tiivistää tai laajentaa tietokonealgoritmin avulla automaattisesti. Tiivistys- 
+tai laajennusmahdollisuus ilmaistaan ensimmäisen indikaattorin arvolla kentissä 
+853 tai 854. Kentät 853/863 ja 854/864 linkitetään toisiinsa jokaisessa kentässä 
+olevan osakentän &#8225;8 avulla.</p>
+<p>Hakemistoa yms. koskevia määrämuotoisia varastotietoja (865) ei voida 
+automaattisesti tiivistää tai laajentaa, koska lopputuloksena voi olla 
+monimerkityksinen varastotietojen merkintö. Kentän 855 (Ilmestymistiedot--Hakemisto yms.) toinen indikaattori on määrittelemätön.</p>
+<p><b>Tiivistäminen</b> tarkoittaa, että määrämuotoisten varastotietojen 
+osakenttien (&#8225;a-&#8225;m) 
+sisältö yhdessä tai useammassa kenttien 863 tai 864 esiintymässä voidaan muuntaa 
+kappalekohtaisesta väliksi, joka ilmaisee samat varastotiedot näyttämällä vain 
+ensimmäisen ja viimeisen osan tiedot.</p>
+<blockquote>
+	<p><i>Laajennetut varastotiedot:<br>
+	</i><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>6<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>m<b>&#8225;x</b>01,07<br>
+	<b>863 40&#8225;8</b>1.1<b>&#8225;a</b>113<b>&#8225;i</b>1923<b>&#8225;j</b>01-06<br>
+	<b>863 40&#8225;8</b>1.2<b>&#8225;a</b>114<b>&#8225;i</b>1923<b>&#8225;j</b>07-12<br>
+	<b>863 40&#8225;8</b>1.3<b>&#8225;a</b>115<b>&#8225;b</b>1-2<b>&#8225;i</b>1924<b>&#8225;j</b>01-02<br>
+	<b>863 40&#8225;8</b>1.4<b>&#8225;a</b>115<b>&#8225;b</b>5-6<b>&#8225;i</b>1924<b>&#8225;j</b>05-06</p>
+	<blockquote>
+		<p><i>[Esimerkki näytöstä: v.113 (1923:Jan.-Jun.); v. 114 (1923:Jul.-Dec.); v. 115, pt. 
+1-2 (1924:Jan.-1924:Feb.); v.115, pt.5-6 (1924:May-1924:Jun.)]</i></p>
+	</blockquote>
+	<p><i>Tiivistetyt varastotiedot:<br>
+	</i><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>6<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(month)<b>&#8225;w</b>m<b>&#8225;x</b>01,07<br>
+	<b>863 30&#8225;8</b>1.1<b>&#8225;a</b>113-115<b>&#8225;i</b>1923-1924<b>&#8225;j</b>01-06</p>
+	<blockquote>
+		<p><i>[Esimerkki näytöstä: v.113-115 (1923:Jan.-1924:Jun.)]</i></p>
+		<p>Tasolla 3 varastotiedoissa olevia aukkoja ei osoiteta.</p>
+	</blockquote>
+</blockquote>
+<p><b>Laajentaminen</b> tarkoittaa, että määrämuotoisten varastotietojen osakenttien (&#8225;a-&#8225;m) 
+sisältö yhdessä tai useammassa kenttien 863 tai 864 esiintymässä voidaan muuntaa 
+tiivistetystä &quot;ensimmäinen-viimeinen&quot; -välistä selkeäksi merkinnöksi, joka 
+listaa jokaisen osan erikseen.</p>
+<blockquote>
+	<p><i>Tiivistetyt varastotiedot:<br>
+	</i><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>4<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(season)<b>&#8225;w</b>q<b>&#8225;x</b>21<br>
+	<b>863 30&#8225;8</b>1.1<b>&#8225;a</b>6-7<b>&#8225;i</b>1976-1977<b>&#8225;j</b>21-24<br>
+	<b>863 40&#8225;8</b>1.2<b>&#8225;a</b>8<b>&#8225;b</b>1-3<b>&#8225;i</b>1978<b>&#8225;j</b>21-23</p>
+	<blockquote>
+		<p><i>[Esimerkki näytöstä: v.6-8, no.3 (1976-1978:Autumn)]</i></p>
+	</blockquote>
+	<p><i>Laajennetut varastotiedot:<br>
+	</i><b>853 20&#8225;8</b>1<b>&#8225;a</b>v.<b>&#8225;b</b>no.<b>&#8225;u</b>4<b>&#8225;v</b>r<b>&#8225;i</b>(year)<b>&#8225;j</b>(season)<b>&#8225;w</b>q<b>&#8225;x</b>21<br>
+	<b>863 40&#8225;8</b>1.1<b>&#8225;a</b>6<b>&#8225;b</b>1-4<b>&#8225;i</b>1976<b>&#8225;j</b>21-24<br>
+	<b>863 40&#8225;8</b>1.2<b>&#8225;a</b>7<b>&#8225;b</b>1-4<b>&#8225;i</b>1977<b>&#8225;j</b>21-24<br>
+	<b>863 40&#8225;8</b>1.3<b>&#8225;a</b>8<b>&#8225;b</b>1-3<b>&#8225;i</b>1978<b>&#8225;j</b>21-23</p>
+	<blockquote>
+		<p><i>[Esimerkki näytöstä: v.6, no.1-4 (1976:Spring-Winter); v.7, no.1-4 
+(1977:Spring-Winter); v.8, no.1-3 (1978:Spring-Autumn)]</i></p>
+	</blockquote>
+</blockquote>
+<p>Automatiikassa tarvittavat tietoelementit on kuvattu osiossa <i><a href="853-855.htm#yleista">Ilmestymistiedot--yleistä tietoa</a></i> 
+(853-855).</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

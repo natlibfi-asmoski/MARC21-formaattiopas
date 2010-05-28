@@ -1,0 +1,153 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 8.6.2007.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Johdanto</h2><hr>
+<p>Varastotietojen formaatti on suunniteltu varastotietojen merkitsemiseen 
+kolmelle erilaiselle bibliografiselle kohdetyypille, jotka erotetaan 
+toisistaan nimiön merkkipaikan 06 (Tietueen tyyppi) perusteella:</p>
+<blockquote>
+	<p><b>Yksiosainen monografia</b><br>
+	Kohde koostuu vain yhdestä fyysisestä osasta, esim. yksi kartta, nuottijulkaisu, 
+	kirja tai tiedosto (Nimiö/06 = x).</p>
+	<p><b>Moniosainen monografia</b><br>
+	Kohde koostuu tai se on tarkoitettu koostuvaksi määrätystä määrästä 
+	erillisiä fyysisiä osia, esim. karttasarja, sävellys eri osineen, 10-osainen 
+	tietosanakirja tai käsikirjoituskokoelma (Nimiö/06 = v).</p>
+	<p><b>Kausijulkaisu</b><br>
+	Kohde ilmestyy toisiaan seuraavissa osissa säännöllisin tai 
+	epäsäännöllisin väliajoin ja sen on tarkoitettu jatkuvan toistaiseksi, esim. 
+	aikakauslehti tai säännöllisesti ilmestyvä päivitys irtolehtijulkaisuun 
+	(Nimiö/06 = y).</p>
+</blockquote>
+<p>Varastotiedot voivat sisältää seuraavia tietoelementtejä:</p>
+<ul>
+	<li>kappalekohtaisia tietoja luetteloinnin kohteesta</li>
+	<li>omistavaan organisaatioon liittyviä ominaistietoja</li>
+	<li>kohteen paikalliseen käsittelyyn, ylläpitoon tai säilytykseen liittyviä 
+	tietoja</li>
+	<li>versiotietoja</li>
+</ul>
+<h3>Varastotietojen kentät</h3>
+<p>Varastotietojen merkitsemistä varten on määritelty neljä kenttäryhmää:</p>
+<ul>
+	<li>Ilmestymistiedot (kentät 853-855)</li>
+	<li>Määrämuotoiset varastotiedot (863-865)</li>
+	<li>Vapaamuotoiset varastotiedot (866-868)</li>
+	<li>Nidetiedot (876-878)</li>
+</ul>
+<p>Jokaisessa kenttäryhmässä on oma kenttä kolmelle eri aineistoluokalle:</p>
+<ul>
+	<li>Bibliografinen perusyksikkö (kentät 853, 863, 866, 876)</li>
+	<li>Oheisaineisto yms. (854, 864, 867, 877)</li>
+	<li>Hakemisto yms. (855, 865, 868, 878)</li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="periaatteet"></a>Erilliset ja bibliografiseen tietueeseen sisällytetyt varastotiedot</h3>
+<p>Kenttä 852 (Sijainti) voi sisältää kaikki kohteen paikantamiseen 
+tarvittavat tiedot. Se voi sisältää uniikin hyllyluokan, kappalenumeron ja 
+fyysisen sijaintipaikan osoitteen.</p>
+<blockquote>
+	<p><b>Yksi sijaintikenttä</b><br>
+	Kun varastotiedot merkitään kohteen <i>yhdestä</i> sijainnista, tiedot 
+	voidaan <b>sisällyttää</b> kohdetta kuvailevaan bibliografiseen tietueeseen 
+	tai tallentaa <b>yhteen erilliseen varastotietueeseen</b>. Käytössä on yksi 852-kenttä 
+	ja muut siihen liittyvät varastotietojen kentät.</p>
+	<p><b>Useita sijaintikenttiä</b><br>
+	Kun varastotiedot merkitään kohteen <i>useista</i> eri kappaleista ja 
+	sijainti- tai luokitustiedot vaihtelevat, käytetään useita 852-kenttiä. MARC 
+	21 varastotietojen formaatti ei tarjoa keinoa linkittää kenttää 852 siihen 
+	liittyviin muihin varastotietojen kenttiin, siksi varastotietojen 
+	tallentamisessa on noudatettava seuraavia periaatteita:</p>
+	<blockquote>
+		<p><i>Useita 852-kenttiä, joihin ei liity muita kenttiä:</i><br>
+		Kun useisiin 852-kenttiin ei liity muita kenttiä, ne voidaan kaikki <b>
+		sisällyttää</b> kohdetta kuvailevaan bibliografiseen tietueeseen tai 
+		tallentaa <b>
+		yhteen erilliseen varastotietueeseen</b> tai <b>useisiin erillisiin 
+		varastotietueisiin</b>.</p>
+		<p><i>Useita 852-kenttiä, joihin liittyy muita kenttiä:</i><br>
+		Kun yhden tai useamman 852-kentän yhteydessä on käytetty muita kenttiä 
+		kuten 007, 841, 842, 844, 853-855, 86X tai 87X, jokainen 852 ja siihen 
+		liittyvät kentät on merkittävä yhteen, selkeästi erottuvaan 
+		varastotietojen rykelmään. Yksi 852-rykelmä voidaan <b>sisällyttää</b> 
+		kohdetta kuvailevaan bibliografiseen tietueeseen tai tallentaa <b>yhteen 
+		erilliseen varastotietueeseen</b>. Jos rykelmä sisällytetään 
+		bibliografiseen tietueeseen, muita siihen liittymättömiä 852-kenttiä tai 
+		rykelmiä ei saa tallentaa bibliografiseen tietueeseen, vaan ne on 
+		merkittävä erilliseen varastotietueeseen.</p>
+		<p><i>Useita 852-kenttiä, joihin liittyy muita, tasavertaisesti 
+		soveltuvia kenttiä:</i><br>
+		Erityisissä tapauksissa, kun muut varastotietojen kentät voivat olla 
+		tasavertaisesti soveltuvia useisiin 852-kenttiin, kaikki 852-kentät ja 
+		niihin liittyvät kentät voidaan laskea yhdeksi varastotietojen 
+		rykelmäksi. Rykelmä voidaan joko <b>sisällyttää</b> kohdetta 
+		kuvailevaan bibliografiseen tietueeseen tai tallentaa <b>yhteen erilliseen 
+		varastotietueeseen</b>.</p>
+	</blockquote>
+	<p><b>Kappaletiedot</b> - Varastotietue voi sisältää tietoja tietyistä 
+	fyysisistä kappaleista yhdessä tai useammassa sijainnissa; kappaletietojen 
+	suhdetta muihin varastotietojen kenttiin kuvataan tarkemmin osiossa <i>
+	<a href="876-878.htm#yleista">Kappaletiedot--yleistä tietoa</a></i>.</p>
+</blockquote>
+<p><b>Erillinen varastotietue<br>
+</b>Erillinen varastotietue linkitetään siihen liittyvään bibliografiseen 
+tietueeseen kentän <a href="001-008.htm#004">004</a> avulla (Liittyvän 
+bibliografisen tietueen kontrollinumero). Varastotietojen formaatissa 
+käytettävissä olevista kentistä nimiö, hakemisto, 001, 004 ja 852 ovat 
+pakollisia.</p>
+<p><b>Bibliografiseen tietueeseen sisällytetyt varastotiedot</b><br>
+Varastotietojen kentistä vain kenttä 852 on pakollinen silloin, kun 
+varastotiedot sisällytetään bibliografiseen tietueeseen.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3>Tiivistäminen ja laajentaminen</h3>
+<p>Yksityiskohtaiset ja aukottomat varastotiedot voidaan tiivistää tai laajentaa 
+järjestelmän avulla automaattisesti, tästä on tarkempaa tietoa osiossa <i>
+<a href="yleista.htm#tiivistys">Varastotiedot--yleistä 
+tietoa</a></i>. Automatiikassa tarvittavat tietoelementit on kuvattu 
+osiossa <i><a href="853-855.htm#yleista">Ilmestymistiedot--yleistä tietoa</a></i> 
+(853-855). Hakemistoa koskevia määrämuotoisia varastotietoja ei voida 
+automaattisesti tiivistää tai laajentaa, koska lopputuloksena voi olla 
+monimerkityksinen varastotietojen merkintö.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<p>&nbsp;</p>
+
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

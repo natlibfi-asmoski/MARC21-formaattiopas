@@ -1,0 +1,320 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Bibliografiset tiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+	<tr>
+		<td><p>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		BIBLIOGRAFISET TIEDOT</h1>
+		</p></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 12.11.2009.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Kontrolliosakentät</h2>
+<p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Tässä osiossa kuvataan viisi kontrolliosakenttää, joiden avulla kenttien tiedot 
+linkitetään tiettyihin organisaatioihin tai muihin kenttiin. Kontrolliosakenttiä esiintyy 
+useissa (‡w, ‡0, ‡5) tai lähes kaikissa (‡6 ja ‡8) bibliografisten tietojen 
+formaatin kentissä, joten ne kaikki kuvataan tässä liitteessä. Osakentät 
+määritellään myös vastaavissa kenttien osakenttälistoissa, ja niistä on linkki 
+tähän liitteeseen.</p>
+<ul>
+	<li><a href="#w">‡w - BIBLIOGRAFISEN TIETUEEN KONTROLLINUMERO</a></li>
+	<li><a href="#0">‡0 - AUKTORITEETTITIETUEEN KONTROLLINUMERO</a></li>
+	<li><a href="#5">&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</a></li>
+	<li><a href="#6">&#8225;6 - LINKITYS</a></li>
+	<li><a href="#8">&#8225;8 - LINKKI- JA JÄRJESTYSNUMERO</a></li>
+</ul>
+<hr>
+<h3><a name="w">&#8225;w - BIBLIOGRAFISEN TIETUEEN KONTROLLINUMERO</a></h3>
+<p>Vastaavan bibliografisen tietueen kontrollinumero.&nbsp; Sitä edeltää 
+sulkeissa kontrollinumeron antaneen organisaation MARC-koodi, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>.</p>
+<p>800&nbsp; 1#‡aNegt, Oskar‡tSchriften‡vBD. 2<b>‡w(DE-101b)967682460&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></p>
+<hr>
+<h3><a name="0">&#8225;0 - AUKTORITEETTITIETUEEN KONTROLLINUMERO</a></h3>
+<p>Vastaavan auktoriteettitietueen kontrollinumero.&nbsp; Sitä edeltää sulkeissa 
+kontrollinumeron antaneen organisaation MARC-koodi, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>.</p>
+<p>100 1#‡aBach, Johann Sebastian.‡4aut<b>‡0(DE-101c)310008891</b></p>
+<hr>
+<h3><a name="5"></a>&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</h3>
+<p>Osakenttä &#8225;5 sisältää koodin organisaatiolle, joka 
+omistaa kappaleen, johon kentässä esitetyt tiedot soveltuvat. Kentän tiedot 
+voivat soveltua tai voivat olla soveltumatta yleisesti kuvailun kohteeseen, 
+mutta niillä on merkitystä ko. organisaatiolle.<br>
+Organisaation koodina käytetään ISIL-tunnusta, <i>ks.
+<a href="../organisaatiot.htm">Organisaatiot</a></i>.</p>
+<p>500 ##&#8225;aFrom the papers of the Chase family.<b>&#8225;5DL</b></p>
+<p>500 ##&#8225;aThe Library of Congress copy has bookplate of the Benedictine 
+Monastery in Grafschaft; inscribed by Thomas Jefferson.<b>&#8225;5DLC</b></p>
+<p>500 ##&#8225;aPlates 4, 5, and 9 are wanting.<b>&#8225;5DLC</b></p>
+<p>500 ##&#8225;aUniversity Library's copy has ms. notes by author on endpapers.<b>&#8225;5WU</b></p>
+<p>583 ##&#8225;aQueued for preservation&#8225;c19861010-&#8225;ePriority&#8225;fTitle IIC project<b>&#8225;5DLC</b></p>
+<p>655 ##&#8225;aAnnotations (Provenance)&#8225;zSweden&#8225;y18th century.&#8225;2rbprov<b>&#8225;5MH-H</b></p>
+<p>710 2#&#8225;aBridgewater Library,&#8225;dformer owner.<b>&#8225;5NjP</b></p>
+<p>700 1#&#8225;aKissinger, Henry,&#8225;d1923-<b>&#8225;5DLC</b></p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="6"></a>&#8225;6 - LINKITYS</h3>
+<p>Osakenttä &#8225;6 sisältää tietoja, joilla linkitetään eri kirjaimistoilla 
+tallennetut kentät toisiinsa. Osakentän sisältönä voi olla linkitettävän kentän 
+kolminumeroinen kenttäkoodi, esiintymänumero, koodi joka kertoo mitä 
+kirjaimistoa tiedoissa on käytetty vasemmalta oikealle ja/tai koodi 
+joka kertoo että kentän tiedot näytetään oikealta vasemmalle. Tavallinen 
+(ei-880) kenttä voi olla linkitettynä yhteen tai useampaan 880-kenttään, jotka 
+kaikki sisältävät samat tiedot mutta eri kirjaimistoilla tallennettuna. 
+Osakenttä &#8225;6 on aina kentän ensimmäinen osakenttä. Sen rakenne on seuraava:</p>
+<p>&#8225;6&lt;linkitettävä kenttäkoodi&gt;- &lt;esiintymänumero&gt; / &lt;kirjaimistokoodi&gt; / &lt;kentän 
+suuntakoodi&gt;</p>
+<ul>
+	<li>Malleja eri kirjaimistoja sisältävistä tietueista
+	löytyy Library of Congressin 
+	sivuilta, ks.
+	<a href="http://www.loc.gov/marc/bibliographic/ecbdmulti.html">
+	<span style="font-style: italic; ">Multiscript 
+	Records</span></a>.</li>
+	<li><a href="841-88X.htm#880">880-kenttää koskevat ohjeet</a> löytyvät 
+	Varasto- ja sijainti- ym. tietojen kentistä.</li>
+	<li>Eri kirjaimistoja/merkistöjä koskevaa tietoa löytyy Library of Congressin 
+	sivuilta, ks. <i><a href="http://www.loc.gov/marc/specifications/">
+	MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></i>. </li>
+</ul>
+<h4>Linkitettävä kenttäkoodi ja esiintymänumero</h4>
+<p><i>Linkitettävä kenttäkoodi</i> sisältää sen kentän kenttäkoodin, johon ko. kenttä 
+halutaan linkittää. Sitä seuraa välittömästi tavuviiva ja <i>esiintymänumero</i>, joka 
+merkitään kahdella numerolla. Jokaiselle samassa tietueessa esiintyvälle 
+linkitettävien kenttien ryhmälle annetaan eri <i>esiintymänumerot</i>, ja ne voidaan 
+antaa sattumanvaraisesti. <i>Esiintymänumerot</i> mahdollistavat toisiinsa liittyvien 
+kenttien täsmäyttämisen; niillä ei ole tarkoitus järjestää tietueen kenttiä. <i>
+Esiintymänumeron</i> kaksi numeroa tasataan oikealle ja käyttämättömässä merkkipaikassa on nolla. Kun 
+880-kenttää ei ole linkitetty tavalliseen kenttään, <i>esiintymänumeroksi</i> sen 
+osakentässä &#8225;6 annetaan 00. Sitä käytetään, jos luetteloiva organisaatio haluaa erottaa 
+tietueessa olevat eri kirjaimistot. Tässä tapauksessa <i>linkitettävän 
+kenttäkoodin</i> paikalle merkitään se tavallinen kenttä, joka tietueessa olisi 
+voinut olla kyseisen 880-kentän parina.</p>
+<p>100 1#<b>&#8225;6880-01</b>&#8225;a[Pääkirjaus henkilönnimestä latinalaisella 
+kirjaimistolla]<br>
+880 1#<b>&#8225;6100-01/(N</b>&#8225;a[Pääkirjaus henkilönnimestä kyrillisellä 
+kirjaimistolla]</p>
+<p>245 10<b>&#8225;6880-03</b>&#8225;aSosei to kak&amp;omacr;&#8225;bNihon Sosei Kak&amp;omacr;Gakkai shi.<br>
+880 10<b>&#8225;6245-03/$1</b>&#8225;a[Päänimeke japanilaisilla kirjoitusmerkeillä]: &#8225;b[Muut 
+nimeketiedot japanilaisilla kirjoitusmerkeillä].</p>
+<p>100 1#<b>&#8225;6880-01</b>&#8225;a[Pääkirjaus henkilönnimestä kiinalaisilla 
+kirjoitusmerkeillä].<br>
+880 1#<b>&#8225;6100-01/(B</b>&#8225;aShen, Wei-pin.</p>
+<h4>Kirjaimistokoodi</h4>
+<p>Esiintymänumeroa seuraa välittömästi kauttaviiva (/) ja <i>kirjaimistokoodi</i>. 
+Tämä koodi kertoo mitä kirjaimistoa kentän tiedoissa on käytetty. Seuraavat 
+kirjaimistokoodit ovat käytettävissä:</p>
+
+<blockquote>
+<table border="1">
+	<tr><td><p><b>Koodi</b></p></td>
+		<td><p><b>Kirjaimisto</b></p></td>
+	</tr>
+	<tr>
+		<td><p>(3</p></td>
+		<td><p>arabialainen</p></td>
+	</tr>
+	<tr>
+		<td><p>(B</p></td>
+		<td><p>latinalainen</p></td>
+	</tr>
+	<tr>
+		<td><p>$1</p></td>
+		<td><p>kiinalainen, japanilainen, korealainen</p></td>
+	</tr>
+	<tr>
+		<td><p>(N</p></td>
+		<td><p>kyrillinen</p></td>
+	</tr>
+	<tr>
+		<td><p>(2</p></td>
+		<td><p>heprealainen</p></td>
+	</tr>
+	<tr>
+		<td><p>(S</p></td>
+		<td><p>kreikkalainen</p></td>
+	</tr>
+</table>
+</blockquote>
+
+<p>880 1#&#8225;6100-01/<b>(N</b>&#8225;a[Pääkirjaus henkilönnimestä kyrillisellä kirjaimistolla]</p>
+<p>Koko kentän ei tarvitse olla tallennettu sillä kirjaimistolla jonka koodi 
+annetaan osakentässä &#8225;6. Jos kenttä sisältää useampia kirjaimistoja, osakentässä 
+&#8225;6 annetaan sen kirjaimiston koodi, joka tulee <i>ensimmäisenä</i> vastaan 
+luettaessa kenttää vasemmalta oikealle.<br>
+Huomioi, että <i>kirjaimistokoodia</i> käytetään 880-kenttien osakentässä &#8225;6, 
+mutta ei yleensä niihin liittyvien tavallisten kenttien osakentässä &#8225;6. 
+Tavallisissa kentissä tietojen oletetaan olevan tallennettu tietueen 
+pääasiallisella kirjaimistolla.</p>
+<h4>Kentän suuntakoodi</h4>
+<p>MARC-tietueessa 880-kentän sisältö tallennetaan aina loogisessa 
+järjestyksessä ensimmäisestä merkistä viimeiseen, huolimatta siitä miten päin 
+tekstiä luetaan. Näyttöä varten kentän oletussuunta on vasemmalta oikealle. Kun 
+kenttä sisältää tekstiä, joka luetaan oikealta vasemmalle, kirjaimistokoodin 
+jälkeen tallennetaan kauttaviiva (/) ja <i>kentän suuntakoodi</i>. Oikealta 
+vasemmalle luettaville teksteille <i>suuntakoodi</i> on <b>r</b>. Suuntakoodi 
+tallennetaan vain oikealta vasemmalle luettaviin kenttiin, koska vasemmalta 
+oikealle on 880-kenttien oletussuunta. (Lisätietoja kentän suunnasta, ks. <i>
+<a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for 
+Record Structure, Character Sets, and Exchange Media</a></i>.)</p>
+<p>110 2#&#8225;6880-01&#8225;a[Pääkirjaus yhteisönnimestä latinalaisella kirjaimistolla]<br>
+880 2#&#8225;6110-01/(2<b>/r</b>&#8225;a[Pääkirjaus yhteisönnimestä arabialaisella 
+kirjaimistolla, linkitettynä siihen liittyvään tavalliseen kenttään]</p>
+<p>Huomioi, että <i>suuntakoodia</i> käytetään 880-kenttien osakentässä &#8225;6, 
+mutta ei yleensä niihin liittyvien tavallisten kenttien osakentässä &#8225;6. 
+Tavallisissa kentissä tietojen oletetaan olevan tallennettu tietueen 
+pääasiallisen kirjaimiston suuntaisesti.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="8"></a>&#8225;8 - LINKKI- JA JÄRJESTYSNUMERO</h3>
+<p>Osakenttä &#8225;8 sisältää tietoja, joilla tunnistetaan linkitetyt kentät ja joiden 
+avulla voidaan myös järjestää linkitettyjä kenttiä. Osakenttää &#8225;8 voidaan 
+toistaa, kun halutaan linkittää kenttä useampaan kuin yhteen kenttäryhmään. Osakentän 
+rakenne on seuraava:</p>
+<p>&#8225;8&lt;linkkinumero&gt;.&lt;järjestysnumero&gt; \ &lt;linkin tyyppi&gt;</p>
+<p>Huomioi, että osakenttää &#8225;8 käytetään eri tavalla kentässä 852, jossa sitä 
+käytetään varastotietojen järjestämiseen.
+Katso lisätietoja <a href="../hold/index.htm">Varastotietojen 
+formaatista</a>.</p>
+<h4>Linkkinumero</h4>
+<p>Linkkinumero on osakentän ensimmäinen tietoelementti ja se merkitään aina kun 
+osakenttää käytetään. Se on vaihtuvamittainen numero, joka esiintyy kaikkien 
+linkitettävien kenttien osakentässä &#8225;8. Kentät, joilla on sama linkkinumero, ovat 
+toisiinsa linkitettyjä.</p>
+<h4>Järjestysnumero</h4>
+<p>Tämä numero erotetaan linkkinumerosta pisteellä '.' ja sen merkitseminen on 
+vapaaehtoista. Se on vaihtuvamittainen numero, jota voidaan käyttää ilmaisemaan 
+linkitettyjen kenttien suhteellista järjestystä näytössä. Alemmalla 
+järjestysnumerolla merkityt kentät näytetään ennen korkeampia. Jos 
+järjestysnumeroa käytetään, sitä pitää käyttää kaikissa osakentissä &#8225;8, jotka 
+sisältävät saman linkkinumeron.</p>
+<h4>Linkin tyyppi</h4>
+<p>Tämä koodi erotetaan edeltävistä tiedoista kenoviivalla (\). Koodi osoittaa 
+linkin syyn ja se seuraa linkkinumeroa tai järjestysnumeroa silloin, kun sitä on 
+käytetty. Linkin tyyppi merkitään aina, lukuun ottamatta sitä, kun osakenttää &#8225;8 
+käytetään varastotietokenttien (85X-87X) linkittämiseen ja järjestämiseen.</p>
+<p>Osakentässä &#8225;8 voidaan käyttää seuraavia linkin tyyppiä kuvaavia 
+yksimerkkisiä koodeja:</p>
+<ul>
+	<li><b>a</b> - Toiminta (Action)<span style="background-color: #FFFF00"><br>
+	</span>Koodia käytetään tietueessa linkittämään yksi tai useampi kenttä toiseen 
+kenttään, johon käsittely- tai viittaustoiminnot liittyvät. Tyypillisesti koodia 
+käytetään vain kun tietueessa on useampia 5XX-kenttiä, jotka liittyvät toiseen 
+5XX-kenttään.</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>541 ##<b>&#8225;81.1\a</b>&#8225;3Public School and College Authority and Trade School and 
+Junior College Authority project files&#8225;aFinance Dept.&#8225;cTransferred</p>
+		<p>583 ##<b>&#8225;81.2\a</b>&#8225;aAppraised&#8225;c198712-&#8225;ktjb/prr</p>
+		<p>583 ##<b>&#8225;81.3\a</b>&#8225;aScheduled&#8225;c19880127&#8225;ksrc/prr</p>
+		<p>583 ##<b>&#8225;81.4\a</b>&#8225;aArranged&#8225;c19900619&#8225;kmc/dmj</p>
+		<p>583 ##<b>&#8225;81.5\a</b>&#8225;aProcessed level 2&#8225;b90.160&#8225;c19901218&#8225;kmc/dmj</p>
+	</blockquote>
+</blockquote>
+<ul>
+	<li><b>c</b> - Osakohde (Constituent 
+item)<br>Koodia käytetään kokoelmaa tai useammista osakohteista koostuvaa kohdetta 
+kuvailevassa tietueessa linkittämään kenttiä, jotka liittyvät osakohteisiin. 
+Tietueen muut, linkittämättömät, tietoelementit koskevat kokoelmaa tai koko 
+kohdetta.</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>245 10&#8225;aBrevard Music Center&#8225;nProgram #24&#8225;h[sound recording].</p>
+		<p>505 0#&#8225;aFrom my window / Siegmeister (world premiere) - Don Giovanni. Il mio 
+tesorof [i.e. tesoro] / Mozart - Martha. M'appari / Flotow - Turandot. Nessun 
+dorma / Puccini - Pines of Rome / Respighi.</p>
+		<p>650 #0<b>&#8225;81\c</b>&#8225;aSuites (Orchestra), Arranged.</p>
+		<p>650 #0<b>&#8225;82\c</b>&#8225;83\c&#8225;84\c&#8225;aOperas&#8225;xExcerpts.</p>
+		<p>650 #0<b>&#8225;85\c</b>&#8225;aSymphonic poems.</p>
+		<p>700 1#<b>&#8225;82\c</b>&#8225;84\c&#8225;aDi Giuseppe, Enrico,&#8225;d1938-&#8225;4prf</p>
+		<p>700 12<b>&#8225;81\c</b>&#8225;aSiegmeister, Elie&#8225;d1909-&#8225;tFrom my window;&#8225;oarr.</p>
+		<p>700 12<b>&#8225;82\c</b>&#8225;aMozart, Wolfgang Amadeus,&#8225;d1756-1791.&#8225;tDon Giovanni&#8225;pMio tesoro.
+		</p>
+		<p>700 12<b>&#8225;83\c</b>&#8225;aFlotow, Friedrich von,&#8225;d1812-1883.&#8225;tMartha.&#8225;pAch! So fromm, ach! 
+so traut.&#8225;lItalian</p>
+		<p>700 12<b>&#8225;84\c</b>&#8225;aPuccini, Giacomo,&#8225;d1858-1924.&#8225;tTurandot.&#8225;pNessun dorma.</p>
+		<p>700 12<b>&#8225;85\c</b>&#8225;aRespighi, Ottorino&#8225;d1879-1936.&#8225;tPini di Roma.</p>
+	</blockquote>
+</blockquote>
+<ul>
+	<li><b>r</b> - Jäljenne (Reproduction)<br>Koodia käytetään jäljennettä kuvailevassa tietueessa linkittämään kenttiä, joiden 
+tiedot koskevat ainoastaan jäljennettä. Tietueen muu kuvailu koskee alkuperäistä 
+kohdetta (lukuun ottamatta kenttiä 007 (Ulkoasua koskevat informaatiokoodit), 
+008 (Informaatiokoodit: kirjat, musiikki, jatkuvat julkaisut tai sekalaiset 
+aineistot) merkkipaikkaa 23 (Ilmiasu), 245&#8225;h (Nimeke- ja vastuullisuusmerkintö: 
+Aineiston yleismääre) ja 533 (Huomautus jäljenteestä)).</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>007 [mikrotallenne]</p>
+		<p>008/23 a [mikrotallenne]</p>
+		<p>245 04&#8225;aThe New-York mirror, and ladies' literary gazette&#8225;h[mikrotallenne]</p>
+		<p>533 ##&#8225;aMicrofilmbAnn Arbor, Mich. :&#8225;cUniversity Microfilms,d1950.&#8225;e3 
+microfilm reels ; 35 mm.&#8225;f(American periodical series, 1800-1850 : 164-165, 785)
+		</p>
+		<p>830 #0<b>&#8225;84\r</b>&#8225;aAmerican periodical series, 1800-1850;&#8225;v164-165, 785.</p>
+	</blockquote>
+</blockquote>
+<ul>
+	<li><b>x</b> - 
+Yleinen järjestäminen (General sequencing)<br>
+	Koodia käytetään tietueessa linkittämään kenttiä ja osoittamaan niiden 
+järjestystä. Järjestää voidaan esim. palasiin hajotetun pitkän kentän palasia, 
+kenttiä tärkeysjärjestykseen tms. Tämän koodin yhteydessä järjestysnumeron 
+käyttö osakentässä &#8225;8 on pakollista.</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>505 00<b>&#8225;81.1\x</b>&#8225;tThree articles reviewing Hoeffding's work.&#8225;tWassily 
+Hoeffding's Work in the Sixties /&#8225;rKobus Oosterhoff and Willem van Zwet.&#8225;tThe 
+Impact of Wassily Hoeffding's Work on Sequential Analysis /&#8225;rGordon Simons.&#8225;tThe 
+Impact of Wassily Hoeffding's Research on Nonparametrics /&#8225;rPranab Kumar Sen...
+		</p>
+		<p>505 80<b>&#8225;81.2\x</b>&#8225;tThe role of assumptions in statistical 
+decisions.&#8225;tDistinguishability of sets of distributions. (The case of 
+independent and identically distributed random variables) /&#8225;rWassily Hoeffding 
+and J. Wolfowitz...</p>
+		<p>505 80<b>&#8225;81.3\x</b>&#8225;tUnbiased range-preserving estimators.&#8225;tRange preserving 
+unbiased estimators in the multinomial case.&#8225;tAsymptotic normality.&#8225;tHajek's 
+projection lemma.</p>
+	</blockquote>
+</blockquote>
+<p><a href="#alku">Sivun alkuun</a></p>
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

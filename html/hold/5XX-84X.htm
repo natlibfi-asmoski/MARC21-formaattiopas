@@ -1,0 +1,694 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Varastotiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+	<tr>
+		<td>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		VARASTOTIEDOT</h1>
+		<p align="center"><font size="2">Käännöksen pohjana
+		<a href="http://www.loc.gov/marc/holdings/">
+		MARC 21 Format for Holdings Data</a><br>
+		(<a href="http://www.loc.gov/marc/ndmso.html">
+		Network Development MARC Standards Office</a>, Library of Congress)</font></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 27.11.2009.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Huomautuskentät (3XX &amp; 5XX &amp; 84X)</h2>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Kentät 337-338, 506-583 ja 841-845 sisältävät huomautuksia varastotiedoissa 
+tarkoitetun bibliografisen kohteen säilytyksestä, käytöstä, ulkoasusta jne.</p>
+<ul>
+	<li><a href="#337">337 - MEDIA TYPE</a> (T)</li>	
+	<li><a href="#338">338 - CARRIER TYPE</a> (T)</li>	
+	<li><a href="#506">506 - HUOMAUTUS KÄYTTÖRAJOITUKSISTA</a> (T)</li>	
+	<li><a href="#538">538 - HUOMAUTUS JÄRJESTELMÄVAATIMUKSISTA</a> (T)</li>
+	<li><a href="#541">541 - HUOMAUTUS HANKINTALÄHTEESTÄ</a> (T)</li>
+	<li><a href="#561">561 - HUOMAUTUS OMISTUSHISTORIASTA</a> (T)</li>
+	<li><a href="#562">562 - HUOMAUTUS KOPIOIDEN JA VERSIOIDEN TUNNISTAMISESTA</a> (T)</li>
+	<li><a href="#563">563 - HUOMAUTUS SIDOKSESTA</a> (T)</li>
+	<li><a href="#583">583 - HUOMAUTUS TOIMENPITEISTÄ</a> (T)</li>
+	<li><a href="#841">841 - VARASTOTIEDOT KOODEINA</a> (ET)</li>
+	<li><a href="#842">842 - ULKOASU TEKSTINÄ</a> (ET)</li>
+	<li><a href="#843">843 - HUOMAUTUS JÄLJENTEESTÄ</a> (T)</li>
+	<li><a href="#844">844 - YKSIKÖN NIMI</a> (ET)</li>
+	<li><a href="#845">845 - HUOMAUTUS KÄYTÖN JA KOPIOINNIN EHDOISTA</a> (T)</li>
+</ul>
+
+<hr>
+<h3><a name="337"></a>337 - MEDIA TYPE (T)</h3>
+<p>Kenttä on lisätty MARC 21 -formaattiin marraskuussa 2009. 
+Ks. <a href="http://www.loc.gov/marc/holdings/concise/hd337.html">
+tarkemmat tiedot</a> toistaiseksi englanninkielisestä formaatista.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="338"></a>338 - CARRIER TYPE (T)</h3>
+<p>Kenttä on lisätty MARC 21 -formaattiin marraskuussa 2009. 
+Ks. <a href="http://www.loc.gov/marc/holdings/concise/hd338.html">
+tarkemmat tiedot</a> toistaiseksi englanninkielisestä formaatista.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="506"></a>506 - HUOMAUTUS KÄYTTÖRAJOITUKSISTA (T)</h3>
+<p>Tietoa kuvailun kohteen käyttörajoituksista tai rajoitetusta jakelusta.</p>
+<h4>Indikaattorit</h4>
+<ul>
+         <li>Ensimmäinen - Rajoitukset
+            <ul>
+               <li><b>#</b> - Tieto puuttuu</li>
+               <li><b>0</b> - Ei rajoituksia</li>
+               <li><b>1</b> - On rajoituksia</li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><b>#</b> - Määrittelemätön</li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><b>&#8225;a</b> - Käyttörajoituksen ehdot (ET)<br>
+         Tarvittaessa säännösteksti kokonaisuudessaan.</li>
+         <li><b>&#8225;b</b> - Käyttöluvan antaja (T)<br>
+         Käyttörajoitukset asettaneen henkilön, organisaation tai viranomaisen nimi, jolta voi anoa lupaa aineiston käyttöön.</li>
+         <li><b>&#8225;c</b> - Fyysisen pääsyn vaatimat järjestelyt (T)</li>
+         <li><b>&#8225;d</b> - Oikeutetut käyttäjät (ET)<br>
+         Käyttäjäryhmä tai yksittäiset henkilöt, joita osakentässä &#8225;a annetut rajoitukset eivät koske.</li>
+         <li><b>&#8225;e</b> - Käyttöehtojen peruste (T)<br>
+         Identifioidaan asetus tms. teksti tai sopimus, johon käyttörajoitukset perustuvat.</li>
+         <li><b>&#8225;f</b> - Käyttörajoitus standarditerminologialla (T)</li>
+         <li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)<br>
+         Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</li>
+         <li><b>&#8225;2</b> - Standarditerminologian lähde (ET)<br>
+         Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</li>
+         <li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+         <li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET)<br>
+         Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</li>
+         <li><b>&#8225;6</b> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</li>
+         <li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>506 ##&#8225;a</strong>Lukuoikeus paperiversion tilaajalla</p>
+      <p><strong>506 ##&#8225;a</strong>Ilmainen vuonna 1998</p>
+      <p><strong>506 ##&#8225;a</strong>Verkkojulkaisu käytettävissä vain Jyväskylän yliopiston koneilta</p>
+      <p><strong>506 ##&#8225;a</strong>Kansallinen lisenssi</p>
+      <p><strong>506 ##&#8225;a</strong>Maksullinen tietokanta, sopimus ja käyttäjätunnus pakollinen</p>
+      <p><strong>506 ##&#8225;a</strong>Kuva-arkiston käyttö mahdollista vain erikoisluvalla;<strong>&#8225;b</strong>Arkiston johtaja;<strong>&#8225;e</strong>Arkiston järjestely ja luettelointi käynnissä</p>
+      <p><strong>506 ##&#8225;a</strong>Kartta vain virkakäyttöön ja nimettyjen henkilöiden tietoon 18.6.1995 asti;<strong>&#8225;e</strong>Sotilaiden suunnistuksen MM-kipailut Huovinrinteellä 12.-18.6.1995</p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="538"></a>538 - HUOMAUTUS JÄRJESTELMÄVAATIMUKSISTA (T)</h3>
+<p>Kohteeseen liittyvää teknistä tietoa. Esimerkiksi elektronisen aineiston 
+fyysisiä ominaisuuksia, kuten tallennustiheydet, pariteetti, ohjelmointikieli, 
+laitteisto- ja lisävaatimukset, kauppanimi tai tallennusjärjestelmä, resoluution 
+tarkkuus. Äänitteiden ja videotallenteiden osalta voidaan tallentaa esimerkiksi 
+tietoja kauppanimestä tai tallennusjärjestelmästä (esim. VHS), modulaation 
+taajuudesta ja resoluution tarkkuudesta. Kenttään voidaan tallentaa myös digitaalisten aineistojen teknisiin 
+yksityiskohtiin liittyviä linkkejä.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><b>&#8225;a</b> - Huomautus järjestelmävaatimuksista (ET)</li>
+		<li><b>&#8225;i</b> - Näyttöteksti (ET)</li>
+		<li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)</li>
+		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+		<li><b>‡5</b> - Organisaatio, johon kentän tiedot pätevät (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+	</ul>
+<h4>Esimerkkejä</h4>
+<p><b>538 ##&#8225;a</b>Internet-yhteys, WWW-selain, Adobe Acrobat Reader 3.0, 
+SGML-selain (esim. Panorama Viewer)</p>
+<p><b>538 ##&#8225;a</b>Windows 95; CD-ROM lukuasema</p>
+<p><b>538 ##&#8225;a</b>IBM PC tai yhteensopiva; 486SX tai nopeampi prosessori; 
+640x480 resoluution SVGA 256 värillä (tuhannet värit parempaa videoiden toistoa 
+varten); 5 MB vapaata keskusmuistia; Windows-yhteensopiva äänikortti; Windows 
+3.1 tai uudempi 538 |a Mac lisäksi: Väri-Macintosh; MacOs 7.1 tai uudempi</p>
+<p><b>538 ##&#8225;a</b>SECAM-videolaite</p>
+<p><b>538 ##&#8225;a</b>Project methodology for digital version<b>&#8225;i</b>Technical details: 
+<b>&#8225;u</b>http://www.columbia.edu/dlc/linglung/methodology.html</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="541"></a>541 - HUOMAUTUS HANKINTALÄHTEESTÄ (T)</h3>
+<p>Kenttää käytetään pääasiassa alkuperäis- tai historiallisten aineistojen tai 
+muiden arkistokokoelmien kohdalla.</p>
+<h4>Indikaattorit</h4>
+	<ul>
+		<li>Ensimmäinen - Yksityisyys<ul>
+			<li><b>#</b> - Tieto puuttuu</li>
+			<li><b>0</b> - Yksityinen</li>
+			<li><b>1</b> - Julkinen</li>
+		</ul>
+		</li>
+		<li>Toinen - Määrittelemätön<ul>
+			<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+		</li>
+	</ul>
+<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><b>&#8225;a</b> - Hankintalähde (ET)<br>
+		Henkilön tai organisaation nimi.</li>
+		<li><b>&#8225;b</b> - Osoite (ET)</li>
+		<li><b>&#8225;c</b> - Hankintatapa (ET)<br>
+		Esim. lahja, laina tai osto.</li>
+		<li><b>&#8225;d</b> - Hankinta-aika (ET)</li>
+		<li><b>&#8225;e</b> - Hankintanumero (ET)</li>
+		<li><b>&#8225;f</b> - Omistaja (ET)<br>
+		Yksilö tai organisaatio, joka on kuvailtujen aineistojen laillinen hallussapitäjä.</li>
+		<li><b>&#8225;h</b> - Ostohinta (ET)</li>
+		<li><b>&#8225;n</b> - Laajuus (T)<br>
+		Hankittujen kohteiden määrä.</li>
+		<li><b>&#8225;o</b> - Yksikkötyyppi (T)<br>
+		Mittayksikön nimi, esim. koteloita.</li>
+		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+		<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
+		<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+	</ul>
+<h4>Esimerkkejä</h4>
+<p><b>541 ##&#8225;a</b>Uudenmaan lääninhallitus on luovuttanut vuonna 1896 Uudenmaan 
+ja Hämeen läänintilit, asiakirjat 8544, 8545 ja 8546</p>
+<p><b>541 1#&#8225;a</b>Lähde tuntematon</p>
+<p><b>541 0#&#8225;c</b>Gift;<b>&#8225;a</b>Leavitt Hunt's daughter, Mrs. William E. Patterson;<b>&#8225;d</b>1947</p>
+<p><b>541 0#&#8225;3</b>5 diaries<b>&#8225;n</b>25<b>&#8225;o</b>cubic feet;<b>&#8225;a</b>Merriwether, Stuart;<b>&#8225;b</b>458 Yonkers Road, 
+Poughkeepsie, NY 12601;<b>&#8225;c</b>Purchase at auction;<b>&#8225;d</b>1981/09/24;<b>&#8225;e</b>81-325;<b>&#8225;f</b>Jonathan P. Merriwether Estate;<b>&#8225;h</b>$7,850</p>
+<p><b>541 ##&#8225;3</b>Videocassette<b>&#8225;c</b>Copyright deposit;<b>&#8225;d</b>Received: 1/16/85 from LC video 
+lab;<b>&#8225;a</b>Copyright Collection</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="561"></a>561 - HUOMAUTUS OMISTUSHISTORIASTA (T)</h3>
+<p>Tietoja kuvailtujen aineistojen omistajuudesta ja hallussapidon historiasta 
+niiden luomisesta lähtien hankinta-aikaan päättyen, sisältäen ajan jolloin 
+yksittäiset kohteet tai niistä koostuva ryhmä kerättiin ensi kerran yhteen 
+nykyiseen järjestykseensä.</p>
+<h4>Indikaattorit</h4>
+	<ul>
+		<li>Ensimmäinen - Yksityisyys<ul>
+			<li><b>#</b> - Tieto puuttuu</li>
+			<li><b>0</b> - Yksityinen</li>
+			<li><b>1</b> - Julkinen</li>
+		</ul>
+		</li>
+		<li>Toinen - Määrittelemätön<ul>
+			<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+		</li>
+	</ul>
+<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><b>&#8225;a</b> - Huomautus omistushistoriasta (ET)</li>
+		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+		<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
+		<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+	</ul>
+<h4>Esimerkkejä</h4>
+<p><b>561 ##&#8225;a</b>Ypäjän seurakunnan lahjoitus 1972</p>
+<p><b>561 ##&#8225;a</b>Etukannessa Agricolan nimen alkukirjaimet MI AG ja vuosiluku 1539</p>
+<p><b>561 ##&#8225;a</b>Monrepos’n kirjasto, exlibris ’Bibliotheque des deux amis’</p>
+<p><b>561 ##&#8225;a</b>Taulu on kuulunut Antellin kokoelmaan</p>
+<p><b>561 1#&#8225;a</b>Koottu: 1845-1847</p>
+<p><b>561 0#&#8225;a</b>L. McGarryn kokoelmasta, 1948-1957</p>
+<p><b>561 ##&#8225;a</b>Originally collected by Paul Jones and maintained by his nephew, John 
+Smith after Jones' death. Purchased in 1878 by Henry Green, who added prints and 
+drawings purchased at auctions in New York and Paris, 1878-1893</p>
+<p><b>561 ##&#8225;3</b>Family correspondence<b>&#8225;a</b>Originally collected by Henry Fitzhugh, willed 
+to his wife Sarah Jackson Fitzhugh and given by her to her grandson Jonathan 
+Irving Jackson, who collected some further information about his grandmother and 
+the papers of their relatives and Cellarsville neighbors, the Arnold Fitzhugh's, 
+before donating the materials along with his own papers as mayor of Cellarsville 
+to the Historical Society</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="562"></a>562 - HUOMAUTUS KOPIOIDEN JA VERSIOIDEN TUNNISTAMISESTA (T)</h3>
+<p>Tiedot, joilla voidaan erottaa arkisto- tai käsikirjoitusvarastossa 
+säilytettävän aineiston kopio tai versio, kun yksi tai useampia kopioita tai 
+versioita on olemassa tai voisi olla olemassa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><b>&#8225;a</b> - Tunnusmerkit (T)<br>Viestimessä näkyvät merkit, joita 
+		voidaan käyttää kuvaillun aineiston kopion tunnistamiseen.</li>
+		<li><b>&#8225;b</b> - Kopion tunnistaminen (T)<br>
+		Tiedot, jotka erottavat yhden kopion muista kopioista.</li>
+		<li><b>&#8225;c</b> - Version tunnistaminen (T)<br>
+		Tiedot, joilla voidaan tunnistaa versio, joka eroaa sisällöllisesti, 
+		mutta on ajallisesti sidoksissa toiseen versioon, esim. painokseen.</li>
+		<li><b>&#8225;d</b> - Esitysmuoto (T)<br>Muoto, jossa aineisto on tarkoitettu 
+		käytettäväksi, nähtäväksi tai kuunneltavaksi.</li>
+		<li><b>&#8225;e</b> - Kopioiden lukumäärä (T)</li>
+		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+		<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
+		<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+	</ul>
+<h4>Esimerkkejä</h4>
+<p><b>562 ##&#8225;a</b>Annotation in Wilson's hand: Copy one of two sent to John Phipps, 27 
+March 1897;<b>&#8225;b</b>Copy identified as Declaration of Dissolution, Phipps copy</p>
+<p><b>562 ##&#8225;e3</b>copies kept;<b>&#8225;b</b>Labeled as president's desk copy, board of directors' 
+working file copy, and public release copy</p>
+<p><b>562 ##&#8225;c</b>Version with air-brushed color illustrations;<b>&#8225;e</b>3 copies</p>
+<p><b>562 ##&#8225;3</b>Deacidified copy<b>&#8225;a</b>With Braun's annotations by hand;<b>&#8225;b</b>Includes 
+personal library seal embossed</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="563"></a>563 - HUOMAUTUS SIDOKSESTA (T)</h3>
+<p>Tarkoitettu käytettäväksi pääasiassa antikvariaattiaineistojen, harvinaisten 
+kirjojen ja muiden erikoiskokoelmien kohdalla.</p><h4>Indikaattorit</h4>
+	<ul>
+		<li>Ensimmäinen - Määrittelemätön<ul>
+			<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+		</li>
+		<li>Toinen - Määrittelemätön<ul>
+			<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+		</li>
+	</ul>
+<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><b>&#8225;a</b> - Huomautus sidoksesta (ET)</li>
+		<li><b>&#8225;u</b> - URI, Uniform Resource 
+Identifier (T)<br>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</li>
+		<li><b>&#8225;3</b> - 
+Aineiston osa, jota tiedot koskevat (ET)</li>
+		<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
+		<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+	</ul>
+<h4>Esimerkkejä</h4>
+<p><b>563 ##&#8225;a</b>Late 16th century blind-tooled centrepiece binding, dark brown calf. 
+<b>&#8225;u</b>[URI]<b>&#8225;5</b>Uk</p>
+<p><b>563 ##&#8225;a</b>Gold-tooled morocco binding by Benjamin West, ca. 1840. <b>&#8225;u</b>[URI]<b>&#8225;5</b>Uk</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="583"></a>583 - HUOMAUTUS TOIMENPITEISTÄ (T)</h3>
+<p>Tietoa varastotietueessa kuvatun kappaleen käsittely-, viittaus- ja säilyttämistoimenpiteistä. 
+Esim. sanomalehtien konservointitoimenpiteet tai elektronisen aineiston 
+säilyttämistoimenpiteet.</p>
+<h4>Indikaattorit</h4>
+	<ul>
+		<li>Ensimmäinen - Yksityisyys<ul>
+			<li><b>#</b> - Tieto puuttuu</li>
+			<li><b>0</b> - Yksityinen</li>
+			<li><b>1</b> - Julkinen</li>
+		</ul>
+		</li>
+		<li>Toinen - Määrittelemätön<ul>
+			<li><b>#</b> - Määrittelemätön</li>
+		</ul>
+		</li>
+	</ul>
+<h4>Osakenttäkoodit</h4>
+	<ul>
+		<li><b>&#8225;a</b> - Toimenpide (ET)<br>Toimenpiteitä kuvaavaa 
+		standarditerminologiaa.</li>
+		<li><b>&#8225;b</b> - Toimenpiteen tunnistus (T)<br>
+		Koodi tai merkintä, jolla tunnistetaan tietty toimenpide yhteydessä 
+		aikaan, joka kerrotaan osakentässä &#8225;c.</li>
+		<li><b>&#8225;c</b> - Toimenpiteen aika (T)<br>Tapahtuneen tai tulevan 
+		toimenpiteen konkreettinen kellonaika tai päiväys.</li>
+		<li><b>&#8225;d</b> - Toimenpiteiden väliaika (T)<br>Aikajakso, jota ei voida 
+		ilmaista konkreettisena aikana.</li>
+		<li><b>&#8225;e</b> - Toimenpiteen laukaiseva tapahtuma (T)<br>
+		Aika tai aikajakso ennustamattomissa tapauksissa, esim. vastaanottamisen 
+		yhteydessä.</li>
+		<li><b>&#8225;f</b> - Peruste (T)<br>
+		Asetus, määräys, raportti, perustelut tai säännöt (koko teksti tai 
+		sitaatti), joihin toimenpiteet perustuvat.</li>
+		<li><b>&#8225;h</b> - Vastuullinen taho (T)<br>
+		Henkilön, organisaation tai viranomaisen nimi, jolla on vastuu 
+		toimenpiteistä.</li>
+		<li><b>&#8225;i</b> - Toimenpiteen menetelmä (T)<br>Keinot tai tekniikka, 
+		jolla toimenpide toteutetaan.</li>
+		<li><b>&#8225;j</b> - Toimenpiteen tapahtumapaikka (T)<br>Sisältää paikan, 
+		jossa käyttäjät voivat katsella kuvailtuja aineistoja.</li>
+		<li><b>&#8225;k</b> - Toimenpiteen tekijä (T)<br>Henkilö tai organisaatio, 
+		joka suorittaa toimenpiteen.</li>
+		<li><b>&#8225;l</b> - Tila (T)<br>Aineiston kunto tai tila.</li>
+		<li><b>&#8225;n</b> - Laajuus (T)<br>Mukana olevien kohteiden lukumäärä.</li>
+		<li><b>&#8225;o</b> - Yksikkötyyppi (T)<br>Mittayksikön nimi.
+		</li>
+		<li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)<br>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</li>
+		<li><b>&#8225;x</b> - Sisäinen huomautus (T)</li>
+		<li><b>&#8225;z</b> - Julkinen huomautus (T)</li>
+		<li><b>&#8225;2</b> - Termin lähde (ET)<br>MARC-koodi identifioi 
+		toimenpidetietojen tallennukseen käytetyn termin lähteen. Koodi otetaan 
+		listalta, ks. <i><a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: 
+		PART VII: Other Sources</a></i>.</li>
+		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+		<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
+		<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+		<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+		</ul>
+<h4>Esimerkkejä</h4>
+<p><b>583 ##&#8225;a</b>Tietokanta konvertoidaan uuteen FINMARC-formaattiin 
+joulukuussa 1998</p>
+<p><b>583 1#&#8225;a</b>preserve<b>&#8225;b</b>PA-061<b>&#8225;c</b>19831204</p>
+<p><b>583 ##&#8225;3</b>8 record center cartons<b>&#8225;n</b>8<b>&#8225;o</b>cu. ft.<b>&#8225;a</b>accession<b>&#8225;b</b>82-14<b>&#8225;c</b>198206060</p>
+<p><b>583 ##&#8225;a</b>Solicit;<b>&#8225;l</b>Previously offered;<b>&#8225;c</b>19841015</p>
+<p><b>583 ##&#8225;a</b>appraise<b>&#8225;b</b>OPR 80/144<b>&#8225;d</b>quinquennial</p>
+<p><b>583 0#&#8225;a</b>transfer<b>&#8225;e</b>at conclusion of court case</p>
+<p><b>583 ##&#8225;a</b>queued for preservation<b>&#8225;c</b>19861010<b>&#8225;e</b>priority<b>&#8225;f</b>Title IIC project<b>&#8225;5</b>DLC</p>
+<p><b>583 ##&#8225;3</b>Patent case files<b>&#8225;n</b>12<b>&#8225;o</b>reels of microfilm;<b>&#8225;l</b>Filmed;<b>&#8225;c</b>19811017;<b>&#8225;j</b>Central Services</p>
+<p><b>583 ##&#8225;a</b>Fumigate;<b>&#8225;n</b>37<b>&#8225;o</b>archives boxes;<b>&#8225;n</b>14<b>&#8225;o</b>bound vol.;<b>&#8225;b</b>79-54;<b>&#8225;c</b>197906;<b>&#8225;k</b>JJI</p>
+<p><b>583 1#&#8225;a</b>deacidify<b>&#8225;c</b>19860501<b>&#8225;u</b>http://128.227.54.151/cgi-bin/conserve/rara.pl</p>
+<p><b>583 
+0#&#8225;a</b>house<b>&#8225;c</b>19841221<b>&#8225;u</b>http://karamelik.eastlib.ufl.edu/cgi-bin/conserve/rara.pl</p>
+<p><b>583 ##&#8225;3</b>reformatted<b>&#8225;c</b>19871211<b>&#8225;i</b>microfilm<b>&#8225;2</b>stmanf</p>
+<p><b>583 ##&#8225;a</b>filmed<b>&#8225;f</b>NEH project (SCH)<b>&#8225;c</b>2001</p>
+<p><b>583 0#&#8225;a</b>appraised<b>&#8225;c</b>197508<b>&#8225;l</b>$25,000 <b>&#8225;k</b>Karl Schach</p>
+<p><b>583 1#&#8225;a</b>will transform digitally<b>&#8225;c</b>20031104<b>&#8225;i</b>OCR<b>&#8225;z</b>queued for digitization, 
+Nov. 4, 2003<b>&#8225;2</b>pda<b>&#8225;5</b>NIC</p>
+<p><b>583 0#&#8225;a</b>declassified<b>&#8225;c</b>19890428<b>&#8225;f</b>special re-review<b>&#8225;h</b>Joe Smith<b>&#8225;o</b>document<b>&#8225;x</b>from 
+confidential NSI to unclassified official use only, exemption 2: circumvention 
+of statute</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="841"></a>841 - VARASTOTIEDOT KOODEINA (ET)</h3>
+<p>Kun varastotiedot sisällytetään bibliografiseen tietueeseen, tämä kenttä 
+sisältää kooditietoja, jotka sopisivat varastotietoihin, jos niistä tehtäisiin 
+erillinen varastotietue.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Tietueen tyyppi
+	(ET)<br>
+	Koodit, jotka merkittäisiin erillisen varastotietueen neljään merkkipaikkaan 
+	<a href="000.htm#nimio">Nimiö</a>/06-09.<ul>
+		<li><b>/0</b> - Tietueen tyyppi</li>
+		<li><b>/1-2</b> - Määrittelemätön</li>
+		<li><b>/3</b> - Tietueen merkistö</li>
+	</ul>
+	</li>
+	<li><b>&#8225;b</b> - Informaatiokoodit (ET)<br>
+	Koodit, jotka merkittäisiin erillisen varastotietueen kenttään 
+	<a href="001-008.htm#008">008</a>.<ul>
+		<li><b>/0-31</b> - Varastotietojen 008 arvot</li>
+	</ul>
+	</li>
+	<li><b>&#8225;e</b> - Koodaustaso (ET)<br>
+	Koodi, joka merkittäisiin erillisen varastotietueen merkkipaikkaan 
+	<a href="000.htm#nimio">Nimiö</a>/17.<ul>
+		<li><b>/0</b> - Koodaustaso</li>
+	</ul>
+	</li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>841 ##&#8225;a</b>y###<b>&#8225;b</b>8312124p####8###1001uabul0831017<b>&#8225;e</b>4</p>
+<p><b>841 ##&#8225;a</b>x###</p>
+<p><b>841 ##&#8225;a</b>y###<b>&#8225;b</b>8605294e####8###1001aaeng0860205<b>&#8225;e</b>3</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="842"></a>842 - ULKOASU TEKSTINÄ (ET)</h3>
+<p>Tekstimuotoinen kuvaus fyysisen aineiston ulkoasusta. Yleinen fyysistä 
+ulkoasua kuvaava koodi tallennetaan kenttään <a href="001-008.htm#007">007</a> 
+(Ulkoasua koskevat informaatiokoodit).</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Ulkoasu tekstinä (ET)<br>
+	Tietojen ympärille ei tallenneta sulkeita, vaan ne voidaan muodostaa näyttöön.</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>842 ##&#8225;a</b>tiedosto</p>
+<p><b>842 ##&#8225;a</b>kansio</p>
+<p><b>842 ##&#8225;a</b>pienoismalli</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="843"></a>843 - HUOMAUTUS JÄLJENTEESTÄ (T)</h3>
+<p>Kuvaus jäljenteestä silloin, kun kaikki tai osa kokoelmassa olevista 
+kappaleista ovat alkuperäisen jäljenteitä. Kenttää käytetään, kun 
+varastotietueeseen liittyvässä bibliografisessa tietueessa annettu 
+alkuperäiskappaletta koskeva kuvailu eroaa jäljenteestä.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Jäljenteen tyyppi (ET)</li>
+	<li><b>&#8225;b</b> - Jäljenteen julkaisu-/kustannuspaikka (T)</li>
+	<li><b>&#8225;c</b> - Julkaisija/kustantaja (T)</li>
+	<li><b>&#8225;d</b> - Julkaisuaika (ET)</li>
+	<li><b>&#8225;e</b> - Jäljenteen ulkoasu (ET)</li>
+	<li><b>&#8225;f</b> - Jäljenteen sarjamerkintö (T)</li>
+	<li><b>&#8225;m</b> - Jäljennettyjen numeroiden julkaisuaika ja/tai järjestys (T)</li>
+	<li><b>&#8225;n</b> - Huomautus jäljenteestä (T)</li>
+	<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;7</b> - Jäljennettä koskevat kiinteämittaiset tiedot (ET)<br>
+	Viisitoista merkkipaikkaa, joihin voidaan tallentaa koodimuotoisia tietoja 
+	jäljenteestä. Merkkipaikat vastaavat bibliografisen formaatin 
+	kentän <a href="../bib/008.htm">008</a> merkkipaikkoja 06-17 (Kaikki aineistot), 18-19 (Jatkuvat 
+	julkaisut) ja 23 (Kirjat). Osakenttä &#8225;7 tallennetaan kentän viimeiseksi. 
+	Jokainen merkkipaikka sisältää joko koodin tai täyttömerkin (|).<ul>
+		<li><b>/0</b> - Julkaisuajan tyyppi/Julkaisun tila<br>
+		Luokittelee merkkipaikkoihin &#8225;7/1-4 ja &#8225;7/5-8 merkittävien 
+		julkaisuaikojen tyypin. <i>Katso koodien kuvaus bibliografisen formaatin 
+		kohdasta <a href="../bib/008.htm#kaikki">008--KAIKKI AINEISTOT</a>, 
+		merkkipaikasta 06</i>. Kaikkia koodeja, lukuun ottamatta koodia <b>r</b> 
+		(Näköispainos ja alkuperäinen julkaisuvuosi), voidaan käyttää.</li>
+		<li><b>/1-4</b> - Julkaisuvuosi 1<br>
+		Vuosiluvun määrittely merkkipaikkoihin &#8225;7/1-4 tehdään samalla kun 
+		valitaan koodi merkkipaikkaan &#8225;7/0.</li>
+		<li><b>/5-8</b> - Julkaisuvuosi 2<br>
+		Vuosiluvun määrittely merkkipaikkoihin &#8225;7/5-8 tehdään samalla kun 
+		valitaan koodi merkkipaikkaan &#8225;7/0.</li>
+		<li><b>/9-11</b> - Julkaisu-, tuotanto- tai toteuttamismaa<br>
+		Koodi otetaan listalta, ks. <i><a href="../maat.htm">MARC 21 Maakoodit</a></i>. Kun kyseessä on kaksimerkkinen koodi, 
+		merkkipaikka &#8225;7/11 jätetään tyhjäksi (#).</li>
+		<li><b>/12</b> - Ilmestymistiheys<br>
+		Miten usein julkaisujäljenne ilmestyy; käytetään yhdessä merkkipaikan 
+		&#8225;7/13 (Säännöllisyys) kanssa.<ul>
+		<li><b>n</b> - Soveltumaton<br>
+		<i>Katso muiden koodien kuvaus bibliografisen formaatin kohdasta 
+		<a href="../bib/008.htm#jatkuvat">008--JATKUVAT 
+		JULKAISUT</a>, merkkipaikasta 18</i>.</li>
+	</ul></li>
+		<li><b>/13</b> - Säännöllisyys<br>
+		Miten säännöllisesti julkaisujäljenne ilmestyy; käytetään yhdessä 
+		merkkipaikan &#8225;7/12 (Ilmestymistiheys) kanssa.<ul>
+		<li><b>#</b> - Soveltumaton<br>
+		<i>Katso muiden koodien kuvaus bibliografisen formaatin kohdasta
+		<a href="../bib/008.htm#jatkuvat">008--JATKUVAT 
+		JULKAISUT</a>, 
+		merkkipaikasta 19</i>.</li>
+	</ul></li>
+		<li><b>/14</b> - Ilmiasu<br>
+		<i>Katso koodien kuvaus bibliografisen formaatin kohdasta
+		<a href="../bib/008.htm#kirjat">008--KIRJAT</a>, 
+		merkkipaikasta 23</i>.</li>
+	</ul>
+	</li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) 
+	<i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>843 ##&#8225;3</b>Kirjeenvaihto<b>&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>Wesleyan University 
+Archives,<b>&#8225;d</b>1973.<b>&#8225;e</b>35 mm negatiivi</p>
+<p><b>843 ##&#8225;3</b>Saksan ulkoministeriön arkistot, 1867-1920<b>&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>Whaddon 
+Hall, Buckinghamshire, England :<b>&#8225;c</b>American Historical Association.<b>&#8225;e</b>434 
+kelaa<b>&#8225;f</b>(Seized enemy records series).<b>&#8225;7</b>n########enkn#a</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>New Orleans :<b>&#8225;c</b>Recordak,<b>&#8225;d</b>[1969- 
+]<b>&#8225;e</b>1 kela ; 35 mm<b>&#8225;f</b>Japanese camp papers</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>Washington, D.C. :<b>&#8225;c</b>Library of 
+Congress, Photoduplication service,<b>&#8225;d</b>[1954- ].<b>&#8225;e</b>5 kelaa ; 35 mm</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>Ann Arbor, MN :<b>&#8225;c</b>University 
+Microfilms International,<b>&#8225;d</b>1980</p>
+<p><b>843 ##&#8225;a</b>Mikrokortti.<b>&#8225;b</b>Glen Rock, NJ :<b>&#8225;c</b>Microfilming 
+Corp. of America,<b>&#8225;d</b>1975.<b>&#8225;e</b>66 mikrokorttia ; 11 x 15 cm</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>Millwood, NY :<b>&#8225;c</b>KTO Microfilm,<b>&#8225;d</b>1966.<b>&#8225;e</b>5 
+kelaa : negatiivi , 35 mm</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;b</b>Ann Arbor, MH :<b>&#8225;c</b>University 
+Microfilms International,<b>&#8225;d</b>1966?-1980.<b>&#8225;e</b>15 kelaa ; 35 mm<b>&#8225;f</b>Current 
+periodical series : publication no. 2313</p>
+<p><b>843 ##&#8225;a</b>Mikrokortti.<b>&#8225;b</b>New York :<b>&#8225;c</b>New York Public 
+Library,<b>&#8225;d</b>1977?-.<b>&#8225;e</b>4 mikrokorttia : negatiivi ; 11 x 15 cm<b>&#8225;f</b>NYSPL 
+FSN 14,023</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;m</b>1950-1963.<b>&#8225;b</b>Webster, NY :<b>&#8225;c</b>Photographic 
+Science Corp.,<b>&#8225;d</b>1974-.<b>&#8225;e</b>2 kelaa ; 35 mm</p>
+<p><b>843 ##&#8225;a</b>Mikrofilmi.<b>&#8225;m</b>Vol. 1, no. 1 (Jan. 1837) - v. 20, no. 12 
+(Dec. 1856).<b>&#8225;b</b>Washington, DC :<b>&#8225;c</b>Library of Congress 
+Photoduplication Service,<b>&#8225;d</b>1971.<b>&#8225;e</b>3 kelaa ; 35 mm</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="844"></a>844 - YKSIKÖN NIMI (ET)</h3>
+<p>Bibliografinen nimeke tai keksitty kuvaus bibliografisesta perusyksiköstä, oheisaineistosta 
+tai hakemistosta. Kuvaus, jota käytetään selosteena, tallennetaan soveltuviin ilmestymistietojen 
+kenttiin 853-855, numerointitasoa kuvaaviin osakenttiin (&#8225;a-&#8225;h).</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Yksikön nimi (ET)<br>
+	Lainausmerkkejä ei tallenneta MARC-tietueeseen, ne voidaan muodostaa näyttöön.</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>844 ##&#8225;a</b>Oikeustapaukset</p>
+<p><b>844 ##&#8225;a</b>Päätökset</p>
+<p><b>844 ##&#8225;a</b>Päivitykset</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="845"></a>845 - HUOMAUTUS KÄYTÖN JA KOPIOINNIN EHDOISTA (T)</h3>
+<p>Käyttöä ja kopiointia koskevia tietoja, joita ei voida tallentaa 
+koodimuotoisina merkkipaikkoihin 008/20 (Lainaus) ja 008/21 (Kopiointi).</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Käytön ja kopioinnin ehdot (ET)<br>Tarvittaessa 
+	säännösteksti kokonaisuudessaan.</li>
+	<li><b>&#8225;b</b> - Käyttöluvan antaja (ET)<br>
+	Käyttöehdot asettaneen henkilön, organisaation tai viranomaisen nimi, jolta 
+	voi anoa lupaa aineiston käyttöön.</li>
+	<li><b>&#8225;c</b> - Käyttöehtojen peruste (ET)<br>
+	Identifioidaan asetus tms. teksti tai sopimus, johon käytön ja kopioinnin 
+	ehdot perustuvat.</li>
+	<li><b>&#8225;d</b> - Oikeutetut käyttäjät (ET)<br>Käyttäjäryhmä tai yksittäiset henkilöt, joita osakentässä &#8225;a annetut rajoitukset eivät koske.</li>
+	<li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)</li>
+	<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+	<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
+	<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) <i>ks. 
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>845 ##&#8225;a</b>Kopiointioikeus rajoitettu, lisätietoja lainaustoimistosta</p>
+<p><b>845 ##&#8225;3</b>Päiväkirjoja<b>&#8225;a</b>Kopiointi kielletty;<b>&#8225;b</b>tekijän 
+perikunta</p>
+<p><b>845 ##&#8225;3</b>Nauhoitettuja radio-ohjelmia<b>&#8225;a</b>Tekijänoikeuslainsäädäntö 
+kieltää kopioinnin;<b>&#8225;c</b>TekijänoikeusA 1-7;<b>&#8225;d</b>YLEN henkilökunta</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p><a href="index.htm">Varastotiedot-etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>
