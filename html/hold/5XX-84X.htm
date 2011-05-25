@@ -28,7 +28,7 @@
 
 <p align="center">
 <i><span style="background-color: #FFFF00">
-Päivitetty viimeksi 27.11.2009.<br>
+Päivitetty viimeksi 14.10.2010.<br>
 Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
 
 <h2 align="left">Huomautuskentät (3XX &amp; 5XX &amp; 84X)</h2>
@@ -39,8 +39,8 @@ Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
 <p>Kentät 337-338, 506-583 ja 841-845 sisältävät huomautuksia varastotiedoissa 
 tarkoitetun bibliografisen kohteen säilytyksestä, käytöstä, ulkoasusta jne.</p>
 <ul>
-	<li><a href="#337">337 - MEDIA TYPE</a> (T)</li>	
-	<li><a href="#338">338 - CARRIER TYPE</a> (T)</li>	
+	<li><a href="#337">337 - MEDIATYYPPI</a> (T)</li>	
+	<li><a href="#338">338 - TALLENNETYYPPI</a> (T)</li>	
 	<li><a href="#506">506 - HUOMAUTUS KÄYTTÖRAJOITUKSISTA</a> (T)</li>	
 	<li><a href="#538">538 - HUOMAUTUS JÄRJESTELMÄVAATIMUKSISTA</a> (T)</li>
 	<li><a href="#541">541 - HUOMAUTUS HANKINTALÄHTEESTÄ</a> (T)</li>
@@ -56,17 +56,63 @@ tarkoitetun bibliografisen kohteen säilytyksestä, käytöstä, ulkoasusta jne.</p>
 </ul>
 
 <hr>
-<h3><a name="337"></a>337 - MEDIA TYPE (T)</h3>
-<p>Kenttä on lisätty MARC 21 -formaattiin marraskuussa 2009. 
-Ks. <a href="http://www.loc.gov/marc/holdings/concise/hd337.html">
-tarkemmat tiedot</a> toistaiseksi englanninkielisestä formaatista.</p>
+<h3><a name="337"></a>337 - MEDIATYYPPI (T)</h3>
+<p>Mediatyyppi ilmaisee yleistermin (tyypin) välineelle, jota tarvitaan julkaisun sisällön katsomiseen, soittamiseen tms.  Käytetään vaihtoehtoisesti tai yhdessä mediatyyppikoodin 007/00 (Aineistoluokka) kanssa. Kentässä 337 on mahdollista ilmoittaa tarkka mediatyyppi tai mediatyyppi joltakin koodilistalta.<br>
+<p>Useat mediatyypit samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän &#8225;a tai &#8225;b toistumiin.  Eri sanastoista otetut termit merkitään koko kentän toistumiin.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Mediatyyppi (T)</li>
+	<li><b>&#8225;b</b> - Mediatyypin koodi (T)</li>
+	<li><b>&#8225;2</b> - Termin lähde (ET)<br>
+        Koodi otetaan listasta: <i><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term  Source Codes</a></i></li>
+        <li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i>
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>337 ## &#8225;a</b> audio <b>&#8225;2</b> marcmedia</p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
-<h3><a name="338"></a>338 - CARRIER TYPE (T)</h3>
-<p>Kenttä on lisätty MARC 21 -formaattiin marraskuussa 2009. 
-Ks. <a href="http://www.loc.gov/marc/holdings/concise/hd338.html">
-tarkemmat tiedot</a> toistaiseksi englanninkielisestä formaatista.</p>
+<h3><a name="338"></a>338 - TALLENNETYYPPI (T)</h3>
+<p>Tallennetyyppi ilmaisee julkaisun fyysisen varastointi- ja tallennusmuodon yhdessä mediatyypin kanssa. Käytetään vaihtoehtoisesti tai yhdessä tallennetyyppikoodin 007/01 (Aineiston erityismääre) kanssa. Kentässä 338 on mahdollista ilmoittaa tarkka tallennetyyppi tai tallennetyyppi joltakin koodilistalta.<br>
+<p>Useat tallennetyypit samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän &#8225;a tai &#8225;b toistumiin.  Eri sanastoista otetut termit merkitään koko kentän toistumiin.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Tallennetyyppi (T)</li>
+	<li><b>&#8225;b</b> - Tallennetyypin koodi (T)</li>
+	<li><b>&#8225;2</b> - Termin lähde (ET)<br>
+        Koodi otetaan listasta: <i><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term  Source Codes</a></i></li>
+        <li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i>
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>338 ## &#8225;a</b> audio disc <b>&#8225;2</b> marccarrier</p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
@@ -237,6 +283,7 @@ nykyiseen järjestykseensä.</p>
 <h4>Osakenttäkoodit</h4>
 	<ul>
 		<li><b>&#8225;a</b> - Huomautus omistushistoriasta (ET)</li>
+                <li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)</li>
 		<li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
 		<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (ET) <i>ks. 
 		<a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>

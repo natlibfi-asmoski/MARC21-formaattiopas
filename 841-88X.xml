@@ -229,7 +229,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Hyllyluokituksen lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaclas.html#rela852">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -294,10 +294,10 @@
               <description>Vastaa kuvailun kohdetta<br /> Tässä tapauksessa bibliografinen tietue kuvailee samaa elektronista aineistoa, jonka sijainti merkitään kenttään 856. Jos kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston osakohteeseen, osakenttään &#8225;3 merkitään aineiston osa, jota tiedot koskevat.</description>
             </value>
             <value code="1">
-              <description>Kuvailun kohteen toinen versio<br /> Tässä tapauksessa bibliografisessa tietueessa kuvailtu kohde ei ole elektroninen, mutta elektroninen versio on saatavana ja sen sijainti merkitään kenttään 856. Jos kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston osakohteeseen, osakenttään &#8225;3 merkitään aineiston osa, jota tiedot koskevat.</description>
+              <description>Kuvailun kohteen toinen versio<br /> Tässä tapauksessa bibliografisessa tietueessa kuvailtu kohde ei ole elektroninen, mutta elektroninen versio on saatavana ja sen sijainti merkitään kenttään 856. Jos kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston johonkin osaan (esim. sisällysluetteloon), osakenttään &#8225;3 merkitään aineiston osa, jota tiedot koskevat.</description>
             </value>
             <value code="2">
-              <description>Kuvailun kohteeseen liittyvä aineisto<br /> Tässä tapauksessa elektroninen aineisto ei ole sama kuin bibliografisessa tietueessa kuvailtu kohde (vaan esim. sen tiivistelmä tai sisällysluettelo). Osakentässä &#8225;3 voidaan tarkemmin kuvata elektronisen aineiston ja kuvailun kohteen suhdetta.</description>
+              <description>Kuvailun kohteeseen liittyvä aineisto<br /> Tässä tapauksessa elektroninen aineisto ei ole sama kuin bibliografisessa tietueessa kuvailtu kohde (vaan esim. erillinen hakemisto tai käyttöohje). Osakentässä &#8225;3 voidaan tarkemmin kuvata elektronisen aineiston ja kuvailun kohteen suhdetta.</description>
             </value>
             <value code="8">
               <description>Vakionäyttöä ei muodosteta</description>
@@ -370,7 +370,7 @@
         </subfield>
         <subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
-          <description>Kenttä 856 on rakennettu siten, että URL voidaan muodostaa myös yhdistämällä eri osakenttien tietoja. Osakenttää &#8225;u voidaan käyttää niiden sijasta tai lisäksi. Osakenttää &#8225;u voidaan toistaa vain jos tallennetaan sekä URN että URL, tai useita URN:eja. <a href="../../../../julkaisuala/urn.htm"> Suomalainen URN, ks. ISBN- ja ISSN-keskus</a>.</description>
+          <description>Kenttä 856 on rakennettu siten, että URL voidaan muodostaa myös yhdistämällä eri osakenttien tietoja. Osakenttää &#8225;u voidaan käyttää niiden sijasta tai lisäksi. Osakenttää &#8225;u voidaan toistaa vain jos tallennetaan sekä URN että URL, tai useita URN:eja. <a href="http://www.kansalliskirjasto.fi/julkaisuala/urn.html"> Suomalainen URN, ks. ISBN- ja ISSN-keskus</a>.</description>
         </subfield>
         <subfield code="v" repeatable="Y">
           <name>Aineisto tavoitettavissa, aukioloaika</name>
@@ -390,7 +390,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Yhteys- tai käyttötapa</name>
-          <description>Kun ensimmäisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela856b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Kun ensimmäisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/valuelist/electronaccess.html">Electronic Access Methods Code List</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -540,7 +540,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Vieraan MARC-formaatin koodi</name>
-          <description>Kentän ensimmäinen osakenttä. Koodi otetaan listalta, ks.<em> <a href="http://www.loc.gov/marc/relators/relaform.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART V: Format Sources</a></em>.</description>
+          <description>Kentän ensimmäinen osakenttä. Koodi otetaan listalta, ks.<em> <a href="http://www.loc.gov/standards/sourcelist/format.html"> Format Source Codes</a></em>.</description>
         </subfield>
         <subfield code="a-z" repeatable="Y">
           <name>Vieraan MARC-formaatin osakenttä</name>
@@ -591,7 +591,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Vieraan formaatin koodi</name>
-          <description>Joko skeema tai DTD-referenssi. Koodi otetaan listalta, ks.<em> <a href="http://www.loc.gov/marc/relators/relaform.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART V: Format Sources</a></em>.</description>
+          <description>Joko skeema tai DTD-referenssi. Koodi otetaan listalta, ks.<em> <a href="http://www.loc.gov/standards/sourcelist/format.html"> Format Source Codes</a></em>.</description>
         </subfield>
       </subfields>
       <examples>

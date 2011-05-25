@@ -394,7 +394,7 @@
         <description>Tuottajan koodi tai nimi.</description>
         </subfield>
         <subfield code="r" repeatable="N">
-          <name>Tekij‰noikeuslain s‰‰t‰j‰</name>
+          <name>Tekij‰noikeuslain toimivalta-alue</name>
         </subfield>
         <subfield code="s" repeatable="N">
           <name>Tiedonl‰hde</name>
@@ -985,6 +985,9 @@
         <subfield code="a" repeatable="N">
           <name>Huomautus omistushistoriasta</name>
         </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
@@ -1471,7 +1474,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin l‰hde</name>
-          <description>MARC-koodi identifioi toimenpidetietojen tallennukseen k‰ytetyn termin l‰hteen. Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>MARC-koodi identifioi toimenpidetietojen tallennukseen k‰ytetyn termin l‰hteen. Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/resource-action.html">Resource Action Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1671,8 +1674,8 @@
       </examples>
     </datafield>
     <datafield tag="588" repeatable="Y">
-      <name>Source of description note</name>
-      <description paragraph="1">Information used for tracking and controlling the metadata contained in the record. It includes general and specific source of description notes that are especially of interest to other catalogers.</description>
+      <name>Huomautus kuvailun perustasta</name>
+      <description paragraph="1">Tietoa k‰ytet‰‰n tietueen metadatan j‰ljitt‰miseen ja kontrollointiin.</description>
       <indicators>
         <indicator num="1">
           <description>M‰‰rittelem‰tˆn</description>
@@ -1693,7 +1696,7 @@
       </indicators>
       <subfields>
         <subfield code="a" repeatable="N">
-          <name>Source of description note</name>
+          <name>Huomautus kuvailun perustasta</name>
         </subfield>
         <subfield code="5" repeatable="N">
           <name>Organisaatio, johon kent‰n tiedot p‰tev‰t</name>
@@ -1710,7 +1713,10 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>588 ## &#8225;a</strong> Cannot determine the relationship to Bowling illustrated, also published in New York, 1952-58. <strong>&#8225;5</strong>DLC</text>
+          <text><strong>588 ## &#8225;a</strong> Kuvailun perusta: 1977, nro 2.</text>
+        </example>
+        <example>
+          <text><strong>588 ## &#8225;a</strong> Nimeke WWW-sivulta, kuvailu perustuu 6.7.2006 arkistoituun versioon.</text>
         </example>
       </examples>
     </datafield>

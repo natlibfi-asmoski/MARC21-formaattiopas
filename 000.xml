@@ -216,14 +216,18 @@
           <values>
             <value code="#">
               <name>Ei-ISBD</name>
-              <description> Luettelointi ei noudata International Standard Bibliographic Description (ISBD) -sääntöjä.</description>
+              <description> Luettelointi ei noudata International Standard Bibliographic Description (ISBD) -sääntöjä ja välimerkitystä.</description>
             </value>
             <value code="a">
-              <name>AACR 2 / <a href="../../../luettelointi/index.htm">Suomalaiset luettelointisäännöt</a></name>
+              <name>AACR 2 / <a href="http://www.kansalliskirjasto.fi/kirjastoala/luettelointisaannot.html">Suomalaiset luettelointisäännöt</a></name>
+            </value>
+            <value code="c">
+              <name>Ei ISBD-välimerkitystä</name>
+              <description> Välimerkitys noudattaa ISBD-sääntöjä muilta osin, mutta osakentän lopussa ei ole ISBD-välimerkkiä.</description>
             </value>
             <value code="i">
-              <name>ISBD</name>
-              <description> Välimerkitys noudattaa ISBD-sääntöjä, mutta muita luettelointisääntöjä ei noudateta.</description>
+              <name>ISBD-välimerkitys</name>
+              <description> Välimerkitys noudattaa ISBD-sääntöjä.</description>
             </value>
             <value code="u">
               <name>Tuntematon</name>

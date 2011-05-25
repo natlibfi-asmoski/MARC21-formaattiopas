@@ -1,0 +1,1231 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 3.3.2011.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Asiasanakentät (6XX)</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kentät 600-662 sisältävät kuvailun kohteen sisältöä ja aihetta kuvaavia kontrolloituja asiasanoja tai hakutermejä, joiden
+         avulla voidaan hakea bibliografisia tietueita. Käytetty asiasanasto merkitään toisen indikaattorin avulla. Jos toisen indikaattorin
+         arvo on 7, osakenttään ‡2 merkitään käytetyn asiasanaston MARC-koodi. Joissakin näytöissä esiintyy numerointia ennen asiasanoja, mutta sitä ei tallenneta MARC-tietueeseen, vaan se muodostetaan
+         näyttöihin kenttäkoodien perusteella. Myöskään kaksoisväliviivoja (--), jotka edeltävät asiasanan lisämääreitä, ei tallenneta
+         MARC-tietueeseen, vaan ne voidaan muodostaa näyttöihin osakenttäkoodien (‡v, ‡x, ‡y, ‡z) perusteella.
+      </p>
+      <ul>
+         <li><a href="#600">600 - HENKILÖNNIMI ASIASANANA</a> (T)
+         </li>
+         <li><a href="#610">610 - YHTEISÖNNIMI ASIASANANA</a> (T)
+         </li>
+         <li><a href="#611">611 - KOKOUKSEN NIMI ASIASANANA</a> (T)
+         </li>
+         <li><a href="#630">630 - YHTENÄISTETTY NIMEKE ASIASANANA</a> (T)
+         </li>
+         <li><a href="#648">648 - AIKAA ILMAISEVA TERMI ASIASANANA</a> (T)
+         </li>
+         <li><a href="#650">650 - KONTROLLOIDUN ASIASANASTON ASIASANA</a> (T)
+         </li>
+         <li><a href="#651">651 - MAANTIETEELLINEN NIMI ASIASANANA</a> (T)
+         </li>
+         <li><a href="#653">653 - KONTROLLOIMATON HAKUTERMI</a> (T)
+         </li>
+         <li><a href="#654">654 - FASETTIANALYSOITU ASIASANA</a> (T)
+         </li>
+         <li><a href="#655">655 - AINEISTON LAJITYYPPI/MUOTO HAKUTERMINÄ</a> (T)
+         </li>
+         <li><a href="#656">656 - AMMATTI HAKUTERMINÄ</a> (T)
+         </li>
+         <li><a href="#657">657 - TAPAHTUMA TAI TOIMINTO HAKUTERMINÄ</a> (T)
+         </li>
+         <li><a href="#658">658 - OPINTO-OHJELMAN TAI KURSSIN TAVOITTEET HAKUTERMINÄ</a> (T)
+         </li>
+         <li><a href="#662">662 - HIERARKKINEN MAANTIETEELLINEN NIMI ASIASANANA</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="600"></a>600 - HENKILÖNNIMI ASIASANANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto<br><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.htm#100">100</a>.</em><ul>
+               <li><strong>0</strong> - Nimen osien järjestys suora
+               </li>
+               <li><strong>1</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>3</strong> - Suvun nimi
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Henkilönnimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Numerointi (ET)
+         </li>
+         <li><strong>‡c</strong> - Arvonimet ja muut nimeen liittyvät sanat (T)
+         </li>
+         <li><strong>‡d</strong> - Nimeen liittyvät aikamääreet (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡j</strong> - Nimen määrite (T)<br>Tietoa nimestä, kun vastuullisuus on tuntematon, epävarma, kuvitteellinen tai salanimellä toteutettu.
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡q</strong> - Henkilönnimen täydellisempi muoto (ET)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - Organisatorinen kytkös (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>600 14 ‡a</strong> Sibelius, Jean.
+      </p>
+      <p><strong>600 14 ‡a</strong> Mozart, Wolfgang Amadeus, <strong>‡e</strong> säv. <strong>‡t</strong> Don Giovanni, <strong>‡n</strong> KV527.
+      </p>
+      <p><strong>600 04 ‡a</strong> Aapeli.
+      </p>
+      <p><strong>600 04 ‡a</strong> Aleksanteri I, <strong>‡c</strong> Venäjän keisari.<br><em>Suomalaisen suosituksen mukaan numerointiosakenttää ‡b ei käytetä.</em></p>
+      <p><strong>600 34 ‡a</strong> Limnell, <strong>‡c</strong> suku.
+      </p>
+      <p><strong>600 04 ‡a</strong> Herman, <strong>‡c</strong> Alaskalainen.
+      </p>
+      <p><strong>600 04 ‡a</strong> Jesaja, <strong>‡c</strong> profeetta.
+      </p>
+      <p><strong>600 04 ‡a</strong> Isis, <strong>‡c</strong> jumalatar.
+      </p>
+      <p><strong>600 04 ‡a</strong> Laika, <strong>‡c</strong> koira.
+      </p>
+      <p><strong>600 04 ‡a</strong> Norodom Sihanouk, <strong>‡c</strong> Kambodžan kuningas.
+      </p>
+      <p><strong>600 14 ‡a</strong> Kivi, Aleksis, <strong>‡d</strong> 1834-1872. <strong>‡t</strong> Nummisuutarit.
+      </p>
+      <p><strong>600 10 ‡a</strong> Shakespeare, William, <strong>‡d</strong> 1564-1616. <strong>‡t</strong> Hamlet.
+      </p>
+      <p><strong>600 14 ‡a</strong> Rokka, Antti, <strong>‡c</strong> fikt.
+      </p>
+      <p><strong>600 04 ‡a</strong> Leonardo, <strong>‡c</strong> da Vinci. <strong>‡t</strong> Mona Lisa.
+      </p>
+      <p><strong>600 10 ‡a</strong> Reagan, Ronald <strong>‡x</strong> Assassination attempt, 1981.
+      </p>
+      <p><strong>600 10 ‡a</strong> Smith, <strong>‡d</strong> fl. 1813.
+      </p>
+      <p><strong>600 30 ‡a</strong> Pˆemyslid dynasty.
+      </p>
+      <p><strong>600 10 ‡a</strong> Drake, Francis, <strong>‡c</strong> Sir, <strong>‡d</strong> 1540?-1596.
+      </p>
+      <p><strong>600 00 ‡a</strong> Gautama Buddha <strong>‡v</strong> Early works to 1800.
+      </p>
+      <p><strong>600 10 ‡a</strong> Shakespeare, William, <strong>‡d</strong> 1564-1616 <strong>‡x</strong> Criticism and interpretation <strong>‡x</strong> History <strong>‡y</strong> 18th century.
+      </p>
+      <p><strong>600 10 ‡a</strong> Ford, Gerald R., <strong>‡d</strong> 1913- <strong>‡x</strong> Museums <strong>‡z</strong> Michigan.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="610"></a>610 - YHTEISÖNNIMI ASIASANANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto<br><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.htm#110">110</a>.</em><ul>
+               <li><strong>0</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>1</strong> - Hallintoalueen nimi
+               </li>
+               <li><strong>2</strong> - Nimen osien järjestys suora
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Yhteisönnimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Alayksikkö (T)
+         </li>
+         <li><strong>‡c</strong> - Kokouksen paikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Kokouksen tai sopimuksen allekirjoittamisen aika (T)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Kokouksen numero tai muu numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - Organisatorinen kytkös (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>610 24 ‡a</strong> Kuninkaallinen Turun Akatemia.<br><strong>610 24 ‡a</strong> Helsingin yliopisto <strong>‡x</strong> historia.
+      </p>
+      <p><strong>610 24 ‡a</strong> Beatles (yhtye)
+      </p>
+      <p><strong>610 24 ‡a</strong> Helsingin yliopisto. <strong>‡b</strong> Biokemian laitos.
+      </p>
+      <p><strong>610 24 ‡a</strong> Kuninkaallinen Preussin jääkäripataljoona 27.
+      </p>
+      <p><strong>610 24 ‡a</strong> Lohja (yhtiö). <strong>‡b</strong> Sähkölaitos <strong>‡x</strong> kartat.
+      </p>
+      <p><strong>610 24 ‡a</strong> Euroopan unioni.
+      </p>
+      <p><strong>610 14 ‡a</strong> Valtion filmitarkastamo.
+      </p>
+      <p><strong>610 14 ‡a</strong> Ulkoasiainministeriö. <strong>‡b</strong> Protokollaosasto.
+      </p>
+      <p><strong>610 10 ‡a</strong> France. <strong>‡t</strong> Constitution (1946)
+      </p>
+      <p><strong>610 10 ‡a</strong> Great Britain. <strong>‡t</strong> Treaties, etc. <strong>‡g</strong> Ireland, <strong>‡d</strong> 1985 Nov. 15.
+      </p>
+      <p><strong>610 20 ‡a</strong> British Library. <strong>‡k</strong> Manuscript. <strong>‡n</strong> Arundel 384.
+      </p>
+      <p><strong>610 10 ‡a</strong> Uruguay. <strong>‡t</strong> Treaties, etc. <strong>‡g</strong> Argentina, <strong>‡d</strong> 1974 Aug. 20. <strong>‡k</strong> Protocols, etc. <strong>‡d</strong> 1982 Dec. 20.
+      </p>
+      <p><strong>610 20 ‡a</strong> Daughters of the American Revolution. <strong>‡b</strong> Mary Tyler Chapter (Tyler, Tex.) <strong>‡k</strong> Charters and regulations.
+      </p>
+      <p><strong>610 20 ‡a</strong> United States Strategic Bombing Survey. <strong>‡t</strong> Reports. <strong>‡p</strong> Pacific war <strong>‡v</strong> Indexes.
+      </p>
+      <p><strong>610 10 ‡a</strong> United States. <strong>‡b</strong> Army. <strong>‡b</strong> Cavalry <strong>‡x</strong> History <strong>‡y</strong> Civil War, 1861-1865 <strong>‡v</strong> Maps.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="611"></a>611 - KOKOUKSEN NIMI ASIASANANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto<br><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.htm#111">111</a>.</em><ul>
+               <li><strong>0</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>1</strong> - Hallintoalueen nimi
+               </li>
+               <li><strong>2</strong> - Nimen osien järjestys suora
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Kokouksen tai hallintoalueen nimi (ET)
+         </li>
+         <li><strong>‡c</strong> - Kokouksen paikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Kokouksen aika (ET)
+         </li>
+         <li><strong>‡e</strong> - Alayksikkö (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡j</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡n</strong> - Kokouksen numero tai muu numerointitieto (T)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡q</strong> - Hallintoalueen nimeä seuraava kokouksen nimi (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - Organisatorinen kytkös (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>611 24 ‡a</strong> Euroopan turvallisuus- ja yhteistyökonferenssi.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="630"></a>630 - YHTENÄISTETTY NIMEKE ASIASANANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - <a href="../ohitus.htm">Ohitusindikaattori</a><ul>
+               <li><strong>0-9</strong> - Ohitettavien merkkien määrä
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br>Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡d</strong> - Sopimuksen allekirjoittamisen aika (T)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)<br>Nimekesivun nimeke.
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>630 04 ‡a</strong> Raamattu. <strong>‡p</strong> VT. <strong>‡p</strong> Psalmit <strong>‡x</strong> kommentaarit.
+      </p>
+      <p><strong>630 04 ‡a</strong> Kalevala<strong>‡x</strong> kuvitus.
+      </p>
+      <p><strong>630 04 ‡a</strong> Karjalan kunnailla; <strong>‡o</strong> sov., puhallinork.
+      </p>
+      <p><strong>630 04 ‡a</strong> Tuntematon sotilas (elokuva) <strong>‡f</strong> (1955)
+      </p>
+      <p><strong>630 04 ‡a</strong> Verkko-Karjalainen (verkkolehti)
+      </p>
+      <p><strong>630 04 ‡a</strong> Alivaltiosihteeri (radio-ohjelma)
+      </p>
+      <p><strong>630 04 ‡a</strong> Diabetes (aikakauslehti)
+      </p>
+      <p><strong>630 04 ‡a</strong> Schlaraffenland : Geschichte einer popularen Phantasie.
+      </p>
+      <p><strong>630 00 ‡a</strong> Four seasons (Motion picture : 1981)
+      </p>
+      <p><strong>630 00 ‡a</strong> Inter-American Treaty of Reciprocal Assistance <strong>‡d</strong> (1947)
+      </p>
+      <p><strong>630 00 ‡a</strong> New York times <strong>‡v</strong> Indexes.
+      </p>
+      <p><strong>630 00 ‡a</strong> Koran <strong>‡x</strong> Criticism, interpretation, etc. <strong>‡x</strong> History <strong>‡y</strong> 19th century.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="648"></a>648 - AIKAA ILMAISEVA TERMI ASIASANANA (T)
+      </h3>
+      <p>Aikaa ilmaiseva, numeerinen termi.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Aikaa ilmaiseva termi (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>648 #7 ‡a</strong> 1900-luku <strong>‡2</strong> ysa
+      </p>
+      <p><strong>648 #7 ‡a</strong> 1860-luku <strong>‡2</strong> ysa
+      </p>
+      <p><strong>648 #7 ‡a</strong> 1920-1970 <strong>‡2</strong> ysa
+      </p>
+      <p><strong>648 #7 ‡a</strong> 1900-1999 <strong>‡2</strong> fast
+      </p>
+      <p><strong>648 #7 ‡a</strong> 1862 <strong>‡2</strong> fast
+      </p>
+      <p><strong>648 #7 ‡a</strong> 1800-1899 <strong>‡2</strong> fast
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="650"></a>650 - KONTROLLOIDUN ASIASANASTON ASIASANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Aiheen taso
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Tasoa ei ole määritelty
+               </li>
+               <li><strong>1</strong> - Ensisijainen<br> Termi kuvaa aineiston pääasiallista aihetta.
+               </li>
+               <li><strong>2</strong> - Toissijainen<br> Termi kuvaa aineiston vähemmän tärkeää aihetta.
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Aihetta ilmaiseva termi tai maantieteellinen nimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Maantieteellistä nimeä seuraava aihetta ilmaiseva termi (ET)
+         </li>
+         <li><strong>‡c</strong> - Tapahtumapaikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Tapahtuman aika (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)<br>Termi, joka kuvaa aineiston ja aihetta ilmaisevan termin suhdetta, esim. esitti.
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>650 #7 ‡a</strong> kirjastot <strong>‡x</strong> atk-järjestelmät <strong>‡2</strong> ysa
+      </p>
+      <p><strong>650 #7 ‡a</strong> taloushistoria <strong>‡z</strong> Pohjoismaat <strong>‡y</strong> 1700-luku <strong>‡y</strong> 1800-luku <strong>‡2</strong> ysa
+      </p>
+      <p><strong>650 #7 ‡a</strong> katt <strong>‡x</strong> beteende <strong>‡2</strong> allars
+      </p>
+      <p><strong>650 #7 ‡a</strong> metsäekosysteemit <strong>‡2</strong> agrofors
+      </p>
+      <p><strong>650 #7 ‡a</strong> viihdemusiikki <strong>‡z</strong> Suomi <strong>‡y</strong> 2000-2009 <strong>‡2</strong> musa
+      </p>
+      <p><strong>650 #7 ‡a</strong> Titanic (laiva) <strong>‡2</strong> ysa
+      </p>
+      <p><strong>650 #7 ‡a</strong> Finlandia-talo <strong>‡2</strong> ysa
+      </p>
+      <p><strong>650 #7 ‡a</strong> olympialaiset <strong>‡z</strong> Yhdysvallat <strong>‡z</strong> Los Angeles <strong>‡y</strong> 1984 <strong>‡2</strong> ysa
+      </p>
+      <p><strong>650 #2 ‡a</strong> Skin Diseases <strong>‡x</strong> diagnosis.
+      </p>
+      <p><strong>650 #2 ‡a</strong> Heart Defects, Congenital <strong>‡x</strong> etiology.
+      </p>
+      <p><strong>650 #0 ‡a</strong> Architecture, Modern <strong>‡y</strong> 19th century.
+      </p>
+      <p><strong>650 00 ‡a</strong> Flour industry <strong>‡v</strong> Periodicals.
+      </p>
+      <p><strong>650 17 ‡a</strong> Career Exploration. <strong>‡2</strong> ericd
+      </p>
+      <p><strong>650 #0 ‡a</strong> Concertos (String orchestra)
+      </p>
+      <p><strong>650 #0 ‡a</strong> Vocal music <strong>‡z</strong> France <strong>‡y</strong> 18th century.
+      </p>
+      <p><strong>650 #0 ‡a</strong> Dentistry <strong>‡v</strong> Juvenile films.
+      </p>
+      <p><strong>650 #0 ‡a</strong> Real property <strong>‡z</strong> Mississippi <strong>‡z</strong> Tippah County <strong>‡v</strong> Maps.
+      </p>
+      <p><strong>650 #7 ‡a</strong> Educational buildings <strong>‡z</strong> Washington (D.C.) <strong>‡y</strong> 1890-1910. <strong>‡2</strong> lctgm
+      </p>
+      <p><strong>650 #0 ‡a</strong> Unicorns, <strong>‡e</strong> (depicted)
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="651"></a>651 - MAANTIETEELLINEN NIMI ASIASANANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Maantieteellinen nimi (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>651 #7 ‡a</strong> Ranska <strong>‡2</strong> ysa
+      </p>
+      <p><strong>651 #7 ‡a</strong> Frankrike <strong>‡2</strong> allars
+      </p>
+      <p><strong>651 #4 ‡a</strong> Egypti <strong>‡x</strong> historia <strong>‡x</strong> vanha aika
+      </p>
+      <p><strong>651 #7 ‡a</strong> Ilomantsi <strong>‡x</strong> Möhkö <strong>‡2</strong> ysa
+      </p>
+      <p><strong>651 #0 ‡a</strong> Amazon River.
+      </p>
+      <p><strong>651 #0 ‡a</strong> Altamira Cave (Spain)
+      </p>
+      <p><strong>651 #0 ‡a</strong> Pompeii (Extinct city)
+      </p>
+      <p><strong>651 #0 ‡a</strong> Antietam National Battlefield (Md.)
+      </p>
+      <p><strong>651 #0 ‡a</strong> King Ranch (Tex.)
+      </p>
+      <p><strong>651 #0 ‡a</strong> Ming Tombs (China)
+      </p>
+      <p><strong>651 #0 ‡a</strong> Chelsea (London, England)
+      </p>
+      <p><strong>651 #0 ‡a</strong> Russia <strong>‡x</strong> History <strong>‡v</strong> Maps.
+      </p>
+      <p><strong>651 #0 ‡a</strong> Texas <strong>‡x</strong> Officials and employees.
+      </p>
+      <p><strong>651 #0 ‡a</strong> United States <strong>‡x</strong> Boundaries <strong>‡z</strong> Canada.
+      </p>
+      <p><strong>651 #0 ‡3</strong> Psychiatric admission records <strong>‡a</strong> Pennsylvania <strong>‡x</strong> Nuclear reactor safety <strong>‡y</strong> 1975-1985 <strong>‡z</strong> United States.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="653"></a>653 - KONTROLLOIMATON HAKUTERMI (T)
+      </h3>
+      <p>Hakutermi ei ole peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Hakutermin taso
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Tasoa ei ole määritelty
+               </li>
+               <li><strong>1</strong> - Ensisijainen<br> Termi kuvaa aineiston pääasiallista aihetta.
+               </li>
+               <li><strong>2</strong> - Toissijainen<br> Termi kuvaa aineiston vähemmän tärkeää aihetta.
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Termin tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Asiasana
+               </li>
+               <li><strong>1</strong> - Henkilönnimi
+               </li>
+               <li><strong>2</strong> - Yhteisönnimi
+               </li>
+               <li><strong>3</strong> - Kokouksen nimi
+               </li>
+               <li><strong>4</strong> - Ajanmääre
+               </li>
+               <li><strong>5</strong> - Maantieteellinen nimi
+               </li>
+               <li><strong>6</strong> - Lajityyppi/muototermi
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Kontrolloimaton termi (T)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>653 #0 ‡a</strong> pissikset
+      </p>
+      <p><strong>653 #0 ‡a</strong> sinkkukirjallisuus
+      </p>
+      <p><strong>653 1# ‡a</strong> fuel cells <strong>‡a</strong> molten carbonate <strong>‡a</strong> power generation
+      </p>
+      <p><strong>653 ## ‡a</strong> Man <strong>‡a</strong> Eyes <strong>‡a</strong> Diseases
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="654"></a>654 - FASETTIANALYSOITU ASIASANA (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Aiheen taso
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Tasoa ei ole määritelty
+               </li>
+               <li><strong>1</strong> - Ensisijainen<br> Termi kuvaa aineiston pääasiallista aihetta.
+               </li>
+               <li><strong>2</strong> - Toissijainen<br> Termi kuvaa aineiston vähemmän tärkeää aihetta.
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Fokustermi (T)
+         </li>
+         <li><strong>‡b</strong> - Ei-fokustermi (T)
+         </li>
+         <li><strong>‡c</strong> - Fasettien/hierarkian muodostus (T)<br>Osakentässä ‡2 määritellyn asiasanaston käyttämä tapa muodostaa fasetit/hierarkia termeille osakentissä ‡a ja ‡b.
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>654 0# ‡c</strong> f <strong>‡b</strong> Rococo <strong>‡c</strong> k <strong>‡b</strong> carved <strong>‡c</strong> k <strong>‡b</strong> gilded <strong>‡c</strong> m <strong>‡b</strong> wood <strong>‡c</strong> t <strong>‡a</strong> chairs <strong>‡2</strong> aat 
+      </p>
+      <p><strong>654 0# ‡c</strong> r <strong>‡a</strong> landscape gardens <strong>‡c</strong> y <strong>‡b</strong> 18th century <strong>‡c</strong> z <strong>‡b</strong> England <strong>‡2</strong> aat 
+      </p>
+      <p><strong>654 1# ‡c</strong> k <strong>‡a</strong> interior design <strong>‡2</strong> aat
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="655"></a>655 - AINEISTON LAJITYYPPI/MUOTO HAKUTERMINÄ (T)
+      </h3>
+      <p>Termit kuvaavat aineiston lajityyppiä (genre), muotoa ja/tai fyysisiä ominaisuuksia. <em>Lajityyppiä kuvaavat termit</em> määrittävät tekstiaineiston älyllisen sisällön tyylin tai tekniikan, tai graafisen materiaalin perspektiivin, tavoitellun
+         päämäärän, esityksen metodiikan jne. <em>Muotoa ja fyysisiä ominaisuuksia kuvaavat termit</em> määrittävät historiallisesti ja toiminnallisesti erityislaatuisia aineistoja niitä erottavien fyysisten ominaisuuksien, älyllisen
+         sisällön aiheen tai tietojen järjestyksen perusteella.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Hakuelementin tyyppi
+            <ul>
+               <li><strong>#</strong> - Vakio
+               </li>
+               <li><strong>0</strong> - Fasetti
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - <a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - <a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)
+               </li>
+               <li><strong>3</strong> - <a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty<br> Asiasana on peräisin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mikään muista indikaattoriarvoista
+                  tai osakentän ‡2 koodeista ei ole sille soveltuva.
+               </li>
+               <li><strong>5</strong> - <a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></li>
+               <li><strong>6</strong> - <a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Lajityyppiä/muotoa kuvaava termi tai fokustermi (ET)
+         </li>
+         <li><strong>‡b</strong> - Ei-fokustermi (T)
+         </li>
+         <li><strong>‡c</strong> - Fasettien/hierarkian muodostus (T)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html"> Genre/Form Code and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (ET)<br><em> <a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>655 #7 ‡a</strong> kausijulkaisut <strong>‡2</strong> ysa
+      </p>
+      <p><strong>655 #7 ‡a</strong> oppikirjat <strong>‡2</strong> ysa
+      </p>
+      <p><strong>655 #7 ‡a</strong> rikoskirjallisuus <strong>‡2</strong> ysa
+      </p>
+      <p><strong>655 #7 ‡a</strong> sarjakuvat <strong>‡2</strong> ysa
+      </p>
+      <p><strong>655 #7 ‡a</strong> sanaristikot <strong>‡2</strong> ysa
+      </p>
+      <p><strong>655 #7 ‡a</strong> tilastot <strong>‡2</strong> ysa
+      </p>
+      <p><strong>655 #7 ‡a</strong> Bird's-eye views <strong>‡y</strong> 1874. <strong>‡2</strong> gmgpc
+      </p>
+      <p><strong>655 07 ‡c</strong> k <strong>‡b</strong> Laminated <strong>‡c</strong> m <strong>‡b</strong> marblewood <strong>‡c</strong> v <strong>‡a</strong> bust. <strong>‡2</strong> aat 
+      </p>
+      <p><strong>655 #7 ‡a</strong> Dictionaries <strong>‡x</strong> French <strong>‡y</strong> 18th century. <strong>‡2</strong> rbgenr
+      </p>
+      <p><strong>655 #7 ‡a</strong> Signing patterns (Printing) <strong>‡z</strong> Germany <strong>‡y</strong> 18th century. <strong>‡2</strong> rbpri
+      </p>
+      <p><strong>655 #7 ‡3</strong> Municipal Fire Station records <strong>‡a</strong> Fire reports <strong>‡z</strong> Atlanta, Georgia <strong>‡y</strong> 1978. <strong>‡2</strong> [thesaurus code]
+      </p>
+      <p><strong>655 #2 ‡a</strong> Festschrift.
+      </p>
+      <p><strong>655 #2 ‡a</strong> Diaries.
+      </p>
+      <p><strong>655 #7 ‡a</strong> Annotations (Provenance) <strong>‡z</strong> Sweden <strong>‡y</strong> 18th century. <strong>‡2</strong> rbprov <strong>‡5</strong> MH-H
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="656"></a>656 - AMMATTI HAKUTERMINÄ (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Termin lähde
+            <ul>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Ammatti (ET)
+         </li>
+         <li><strong>‡k</strong> - Muoto (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/occupation.html"> Occupation Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>656 #7 ‡a</strong> kuvaamataidonopettajat <strong>‡2</strong> ysa
+      </p>
+      <p><strong>656 #7 ‡a</strong> informaatikot <strong>‡2</strong> ysa
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="657"></a>657 - TAPAHTUMA TAI TOIMINTO HAKUTERMINÄ (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Termin lähde
+            <ul>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Tehtävä (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/function.html"> Function Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>657 #7 ‡a</strong> Personnel benefits management <strong>‡x</strong> Industrial accidents <strong>‡x</strong> Morbidity <strong>‡x</strong> Vital statistics <strong>‡z</strong> Love Canal, New York. <strong>‡2</strong> New York State Management Functions Index
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="658"></a>658 - OPINTO-OHJELMAN TAI KURSSIN TAVOITTEET HAKUTERMINÄ (T)
+      </h3>
+      <p>Termejä, jotka ilmaisevat kuvailtavan aineiston liittymistä johonkin opinto-ohjelmaan tai kurssiin. Myös opinto-ohjelmissa
+         julkaistut kurssien koodit tallennetaan tähän kenttään.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Opinto-ohjelman tai kurssin ensisijaiset tavoitteet (ET)
+         </li>
+         <li><strong>‡b</strong> - Opinto-ohjelman tai kurssin toissijaiset tavoitteet (T)
+         </li>
+         <li><strong>‡c</strong> - Opinto-ohjelman tai kurssin koodi (ET)<br>Osakentässä ‡a esitetyn opinto-ohjelman tai kurssin koodimuoto.
+         </li>
+         <li><strong>‡d</strong> - Vastaavuuskerroin (ET)<br>Missä suhteessa aineisto vastaa mainittuihin opinto-ohjelman tai kurssin tavoitteisiin?
+         </li>
+         <li><strong>‡2</strong> - Termin tai koodin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/curriculum-objective.html"> Curriculum Objective Term and Code Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>658 ## ‡a</strong> Reading objective 1 (fictional) <strong>‡b</strong> understanding language, elements of plots, themes, motives, characters, setting by responding to the multiple-meaning word
+         <strong>‡c</strong> NRPO2-1991 <strong>‡d</strong> highly correlated. <strong>‡2</strong> ohco
+      </p>
+      <p><strong>658 ## ‡a</strong> Math manipulatives <strong>‡d</strong> highly correlated. <strong>‡2</strong> [source code]
+      </p>
+      <p><strong>658 ## ‡a</strong> Drug abuse awareness <strong>‡b</strong> peer pressure <strong>‡b</strong> understanding the law. <strong>‡2</strong> local
+      </p>
+      <p><strong>658 ## ‡a</strong> Health objective 1 <strong>‡b</strong> handicapped awareness <strong>‡c</strong> NHP01-1991 <strong>‡d</strong> highly correlated. <strong>‡2</strong> ohco
+      </p>
+      <p><strong>658 ## ‡a</strong> Reading objective 1 <strong>‡b</strong> identify, locate, and use information <strong>‡c</strong> NRP01-1991. <strong>‡2</strong> accssd
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="662"></a>662 - HIERARKKINEN MAANTIETEELLINEN NIMI ASIASANANA (T)
+      </h3>
+      <p>Sisältää hierarkkisen muodon maantieteellisestä nimestä, jota käytetään asiasanana.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Maa tai laajempi kokonaisuus (T)
+         </li>
+         <li><strong>‡b</strong> - Ensisijainen poliittinen hallinnonala (ET)
+         </li>
+         <li><strong>‡c</strong> - Keskitason poliittinen hallinnonala (T)
+         </li>
+         <li><strong>‡d</strong> - Kaupunki, kunta (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Kaupunginosa, kylä (T)
+         </li>
+         <li><strong>‡g</strong> - Muu epähallinnollinen maantieteellinen alue (T)
+         </li>
+         <li><strong>‡h</strong> - Maapallon ulkopuolinen alue (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>662 ## ‡a</strong> Antarctica. <strong>‡2</strong> lcsh/naf
+      </p>
+      <p><strong>662 ## ‡a</strong> Japan <strong>‡c</strong> Hokkaido <strong>‡g</strong> Asahi-dake. <strong>‡2</strong> pemracs
+      </p>
+      <p><strong>662 ## ‡b</strong> Maryland <strong>‡c</strong> Montgomery <strong>‡d</strong> Silver Spring. <strong>‡2</strong> gnis
+      </p>
+      <p><strong>662 ## ‡b</strong> Ontario <strong>‡c</strong> Essex <strong>‡d</strong> Windsor. <strong>‡2</strong> cgnbd
+      </p>
+      <p><strong>662 ## ‡a</strong> Japan (nation) <strong>‡g</strong> Kanto (region) <strong>‡c</strong> Tokyo (metropolis) <strong>‡d</strong> Tokyo (inhabited place) <strong>‡f</strong> Shibuya. <strong>‡2</strong> tgn
+      </p>
+      <p><strong>662 ## ‡a</strong> United States <strong>‡b</strong> California <strong>‡c</strong> Los Angeles (County) <strong>‡d</strong> Los Angeles <strong>‡f</strong> Little Tokyo. <strong>‡2</strong> tgn
+      </p>
+      <p><strong>662 ## ‡a</strong> Africa <strong>‡g</strong> Nile River <strong>‡g</strong> Sixth Cataract. <strong>‡2</strong> tgn
+      </p>
+      <p><strong>662 ## ‡h</strong> Mars <strong>‡h</strong> Valles Marineris. <strong>‡2</strong> MARC code for Gazetteer of Planetary Nomenclature
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

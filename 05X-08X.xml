@@ -158,7 +158,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Luokituksen l‰hde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaclas.html#rela052">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -250,7 +250,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Luokituksen tai signumin l‰hde</name>
-          <description>Kun toisen indikaattorin arvo on 6, 7, 8 tai 9, t‰h‰n merkit‰‰n luokituksen tai signumin l‰hde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaclas.html#rela055">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.</description>
+          <description>Kun toisen indikaattorin arvo on 6, 7, 8 tai 9, t‰h‰n merkit‰‰n luokituksen tai signumin l‰hde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -539,7 +539,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin l‰hde</name>
-          <description>MARC-koodi asiasanastolle, jota on k‰ytetty aihealuekoodin antamisessa, kun toisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relacats.html#rela072a">MARC Code Lists for Relators, Sources, Description Conventions: PART II: Category Code Sources</a></em>.</description>
+          <description>MARC-koodi asiasanastolle, jota on k‰ytetty aihealuekoodin antamisessa, kun toisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/subject-category.html">Subject Category Code Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -811,6 +811,9 @@
             <value code="#">
               <description>M‰‰rittelem‰tˆn</description>
             </value>
+            <value code="9" local="Finnish">
+              <description>YKL-luokituksen fiktiivisen aineiston lis‰luokka -- suomalainen indikaattori</description>
+            </value>
           </values>
         </indicator>
         <indicator num="2">
@@ -831,7 +834,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Luokituksen l‰hde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaclas.html#rela065">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -860,6 +863,9 @@
         </example>
         <example>
           <text><strong>084 ## &#8225;a</strong> CA2 PQ C07 81P52 <strong>&#8225;2</strong> cacodoc</text>
+        </example>
+        <example>
+          <text><strong>084 9# &#8225;a</strong> Historia <strong>&#8225;2</strong> ykl</text>
         </example>
       </examples>
     </datafield>
@@ -975,7 +981,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Luokituksen l‰hde</name>
-          <description>MARC-koodi k‰ytetylle virallisjulkaisujen luokituskaaviolle, kun ensimm‰isen indikaattorin arvo on #. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaclas.html#rela086">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.</description>
+          <description>MARC-koodi k‰ytetylle virallisjulkaisujen luokituskaaviolle, kun ensimm‰isen indikaattorin arvo on #. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>

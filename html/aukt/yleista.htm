@@ -23,7 +23,7 @@
 </center>
 
 <p align="center">
-<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 27.11.2009.<br>
+<span style="background-color: #FFFF00"><i>Päivitetty viimeksi 18.6.2010.<br>
 Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
 
 <h2 align="left">Viittaukset--yleistä tietoa</h2>
@@ -73,10 +73,7 @@ ristiviittauksiksi</i>. Yksinkertaisen ristiviittauksen näytössä 4XX- tai 5XX-ke
 sisältö on se <i>otsikkomuoto, josta viitataan</i> ja 1XX-kentän sisältö on se <i>
 otsikkomuoto, johon viitataan</i>. 1XX-kentän sisältöä edeltää viittauksen ohjefraasi. 
 Viittauskenttien ohjefraasit voivat muodostua kenttäkoodin perusteella tai 
-osakenttä &#8225;w/0 (Erityissuhde) koodin perusteella. In some cases, the reference 
-instruction phrase may be carried explicitly in subfield &#8225;i (Relationship 
-information) or associated with a relationship designation expressed in subfield 
-&#8225;i or, in coded form in subfield &#8225;4.</p>
+osakenttä &#8225;w/0 (Erityissuhde) koodin perusteella. Toisinaan viittauksen ohjefraasi on selväkielisenä osakentässä &#8225;i (Suhdetta kuvaava ilmaus) tai liittyy osakentän &#8225;i //suhteen nimitykseen// tai osakentän &#8225;4 suhdekoodiin.</p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
@@ -119,33 +116,13 @@ osakentästä &#8225;w. Osakentän &#8225;w merkkipaikat kuvaillaan myös alla.</p>
 ristiviittauksen näyttöön automaattisesti 4XX-kentän kenttäkoodin perusteella. 
 Ohjefraasi kuten <i>katso myös:</i> tai <i>käytä myös:</i> voidaan muodostaa 
 ristiviittauksen näyttöön automaattisesti 5XX-kentän kenttäkoodin perusteella.</p>
-<h3>Osakenttä <b>&#8225;i</b> - Relationship information (T)</h3>
-<p>Subfield may contain either a <i>designation of a relationship</i> of the 
-entity in a 4XX or 5XX field to the 1XX entity in the record or it may contain 
-a textual <i>reference instruction phrase</i> that is to be used for a user 
-display indicating the relationship of the 1XX entity in the record to the 
-entity in a 4XX or 5XX field. If the subfield contains a Relationship 
-designation, the appropriate reference instruction phrase may be derived from 
-it. The relationship may be name to name (if only names of persons, families, 
-or corporate bodies are involved) or resource to resource (if name/titles or 
-titles are involved).</p>
-<p><i>Relationship designation:</i> When a tracing field contains a relationship 
-designation in subfield &#8225;i, control subfield &#8225;w/0 contains code r (Relationship 
-designation in subfield &#8225;i or &#8225;4). Code r indicates that the generation of a 
-tag related reference instruction phrase in a cross reference display should 
-be suppressed. The content of subfield &#8225;i or &#8225;4 should be used to generate the 
-reference instruction phrase that is used in a cross reference display.</p>
-<p><i>Reference instruction phrase:</i> When a tracing field contains a reference 
-instruction phrase in subfield &#8225;i, control subfield &#8225;w/0 contains code i 
-(Reference instruction phrase in subfield &#8225;i). Code i indicates that the 
-generation of a tag-related reference instruction phrase in a cross reference 
-display should be suppressed. The content of subfield &#8225;i is the reference 
-instruction phrase that is used in a cross reference display.</p>
+<h3>Osakenttä <b>&#8225;i</b> - Suhdetta kuvaava ilmaus (T)</h3>
+<p>Osakenttä voi sisältää joko 4XX/5XX-kenttien ja 1XX-kentän välisen <i>suhteen nimityksen</i> tai se voi sisältää selväkielisen <i>viittauksen ohjefraasin</i>, jota käytetään sellaisenaan asiakasnäytöissä ilmaisemaan 1xx-kentän suhde 4XX/5XX-kenttiin. Jos osakentässä on Suhteen nimitys, siitä johdetaan sopiva viittauksen ohjefraasi.  Suhde voi olla kahden nimen välinen (jos kyseessä ovat vain henkilön, suvun tai yhteisön nimet) tai kahden resurssin välinen (jos tekijä-nimekkeet ja nimekkeet ovat mukana).</p>
+<p><i>Suhteen nimitys:</i> Kun viittauskentässä on suhteen nimitys osakentässä &#8225;i, kontrolliosakentässä &#8225;w/0 on koodi r (Suhteen nimitys osakentässä &#8225;i tai &#8225;4). Koodi r ilmaisee, että viittauksen ohjefraasia ei tehdä näyttöön kenttäkoodin perusteella. Tällöin käytetään osakentän &#8225;i tai &#8225;4 sisältöä luomaan viittauksen ohjefraasi.</p>
+<p><i>Viittauksen ohjefraasi:</i> Kun viittauskentässä on viittauksen ohjefraasi osakentässä &#8225;i, kontrolliosakentässä &#8225;w/0 on koodi i (Viittauksen ohjefraasi osakentässä &#8225;i). Koodi i ilmaisee, että viittauksen ohjefraasia ei tehdä näyttöön kenttäkoodin perusteella. Osakentän &#8225;i sisältö on sellaisenaan käytettävä viittauksen ohjefraasi.</p>
 
-<h3>Osakenttä <b>&#8225;4</b> - Relationship code (T)</h3>
-<p>Contains in coded form the designation of a relationship of the entity in a 4XX or 
-5XX field to the 1XX entity in the record. See subfield &#8225;i for further information 
-on relationship designators.</p>
+<h3>Osakenttä <b>&#8225;4</b> - Suhdekoodi (T)</h3>
+<p>Sisältää koodimuotoisena 4xx/5xx-kenttien ja 1xx-kentän suhteen nimityksen.  Ks. lisätietoja suhteen nimityksestä osakentän &#8225;i kohdalta.</p>
 
 <h3>Osakenttä <b>&#8225;w</b> - Kontrollitiedot (ET)</h3>
 <p>Neljä kiinteätä merkkipaikkaa (merkitään &#8225;w/0, &#8225;w/1 jne.), jotka kertovat 
@@ -192,18 +169,12 @@ erityinen viittauksen ohjefraasi.</p>
 	Katso 
 	myös laajempaa termiä:</i>.</li>
 	<li><b>i</b> - Viittauksen ohjefraasi osakentässä &#8225;i<br>
-	Käytetään osakentän &#8225;i (Viittauksen ohjefraasi) yhteydessä. Katso osakentän 
+	Käytetään osakentän &#8225;i (Suhdetta kuvaava ilmaus) yhteydessä. Katso osakentän 
 	&#8225;i käyttöohjeet yltä.</li>
 	<li><b>n</b> - Soveltumaton<br>
-	4XX- tai 5XX-kentän otsikkomuodon suhde 1XX-kentän otsikkomuotoon on sellainen, että 
-	mikään muu &#8225;w/0 koodeista ei sovellu sen kuvaamiseen. Näytön muodostamiseen 
-	voidaan käyttää kenttäkoodiin perustuvaa fraasia, esim. <i>Katso:</i> tai <i>
-	Katso myös:</i>. Jos koodi <b>n</b> on sopiva, sitä ei tarvitse tallentaa, ellei 
-	jotakin seuraavista merkkipaikoista aiota käyttää.</li>
-	<li><b>r</b> - Relationship designation in subfield &#8225;i or &#8225;4<br>
-      Used in conjunction with subfield &#8225;i (Relationship information) or subfield 
-      &#8225;4 (Relationship code). Guidelines for applying code i are given under the 
-      description of subfield &#8225;i. </li>
+	4XX- tai 5XX-kentän otsikkomuodon suhde 1XX-kentän otsikkomuotoon on sellainen,         että mikään muu &#8225;w/0 koodeista ei sovellu sen kuvaamiseen. Näytön                 muodostamiseen voidaan käyttää kenttäkoodiin perustuvaa fraasia, esim.                 <i>Katso:</i> tai <i> Katso myös:</i>. Jos koodi <b>n</b> on sopiva, sitä ei         tarvitse tallentaa, ellei jotakin seuraavista merkkipaikoista aiota käyttää.</li>
+	<li><b>r</b> - Suhteen nimitys osakentässä &#8225;i tai &#8225;4<br>
+        Käytetään yhdessä osakentän &#8225;i (Suhdetta kuvaava ilmaus) tai osakentän                &#8225;4 (Suhdekoodi) kanssa. Ohjeet koodin i käyttöön ovat osakentän &#8225;i              yhteydessä. </li>
 	<li><b>t</b> - Isäntäyhteisö<br>
 	5XX-kentässä oleva otsikkomuoto on 1XX-kentässä olevan yhteisön isäntäyhteisö. 
 	Koodi <b>t</b> soveltuu käytettäväksi vain yhteisönnimien yhteydessä.</li>

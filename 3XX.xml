@@ -82,7 +82,7 @@
           <text><strong>300 ## &#8225;a</strong> 1 tekstivihko (119 s.), 1 nuotisto (67 s.), 2 C-kas., 1 videokas. (79 min 20 sek) : <strong>&#8225;b</strong> kuv., nuott.</text>
         </example>
         <example>
-          <text><strong>300 ## &#8225;a</strong> 1 partituuri (30 s.) ; <strong>&#8225;c</strong> 20 cm + <strong>&#8225;a</strong> 16 ääntä ; <strong>&#8225;c</strong> 32 cm.</text>
+          <text><strong>300 ## &#8225;a</strong> 1 partituuri (30 s.) ; <strong>&#8225;c</strong> 20 cm + <strong>&#8225;e</strong> 16 ääntä ; <strong>&#8225;c</strong> 32 cm.</text>
         </example>
         <example>
           <text><strong>300 ## &#8225;a</strong> 1 äänilevy (20&#8217;00) : <strong>&#8225;b</strong> 33 1/3 kierr./min, stereo.</text>
@@ -234,10 +234,10 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>310 ## &#8225;a</strong> Epäsäännöllinen <strong>&#8225;b</strong> 2001-</text>
+          <text><strong>310 ## &#8225;a</strong> Epäsäännöllinen, <strong>&#8225;b</strong> 2001-</text>
         </example>
         <example>
-          <text><strong>310 ## &#8225;a</strong> Päivitetään jatkuvasti <strong>&#8225;b</strong> 2004-</text>
+          <text><strong>310 ## &#8225;a</strong> Päivitetään jatkuvasti, <strong>&#8225;b</strong> 2004-</text>
         </example>
         <example>
           <text><strong>310 ## &#8225;a</strong> Osa lehden sisällöstä uusitaan päivittäin, osa viikoittain</text>
@@ -309,9 +309,9 @@
       </examples>
     </datafield>
     <datafield tag="336" repeatable="Y">
-      <name>Content type</name>
-      <description paragraph="1">The form of communication through which a work is expressed. Used in conjunction with Leader /06 (Type of record), which indicates the general type of content of the resource. Field 336 information enables expression of more specific content types and content types from various lists.</description>
-      <description paragraph="2">Multiple content types from the same source vocabulary or code list may be recorded in the same field in separate occurrences of subfield $a (Content type term) or subfield $b (Content type code). Terms from different source vocabularies are recorded in separate occurrences of the field.</description>
+      <name>Sisältötyyppi</name>
+      <description paragraph="1">Teoksen sisällön muoto.  Käytetään yhdessä nimiön koodin /06 (Tietueen tyyppi) kanssa, joka ilmaisee julkaisun yleisen sisältötyypin. Kentässä 336 on mahdollista ilmoittaa tarkka sisältötyyppi tai sisältötyyppi joltakin koodilistalta.</description>
+      <description paragraph="2">Useat sisältötyypit samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän <strong>&#8225;a</strong> tai <strong>&#8225;b</strong> toistumiin. Eri sanastoista olevat termit merkitään koko kentän toistumiin.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -332,14 +332,14 @@
       </indicators>
       <subfields>
         <subfield code="a" repeatable="Y">
-          <name>Content type term</name>
+          <name>Sisältötyyppi</name>
         </subfield>
         <subfield code="b" repeatable="Y">
-          <name>Content type code</name>
+          <name>Sisältötyypin koodi</name>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -363,9 +363,9 @@
       </examples>
     </datafield>
     <datafield tag="337" repeatable="Y">
-      <name>Media type</name>
-      <description paragraph="1">Media type reflects the general type of intermediation device required to view, play, run, etc., the content of a resource. Used as an alternative to or in addition to the coded expression of Media type in field 007/00 (Category of material). Field 337 information enables indication of more specific media types and media types from various lists.</description>
-      <description paragraph="2">Multiple media types from the same source vocabulary or code list may be recorded in the same field in separate occurrences of subfield $a (Media type term) or subfield $b (Media type code). Terms from different source vocabularies are recorded in separate occurrences of the field.</description>
+      <name>Mediatyyppi</name>
+      <description paragraph="1">Mediatyyppi ilmaisee yleistermin (tyypin) välineelle, jota tarvitaan julkaisun sisällön katsomiseen, soittamiseen tms.  Käytetään vaihtoehtoisesti tai yhdessä mediatyyppikoodin 007/00 (Aineistoluokka) kanssa. Kentässä 337 on mahdollista ilmoittaa tarkka mediatyyppi tai mediatyyppi joltakin koodilistalta.</description>
+      <description paragraph="2">Useat mediatyypit samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän <strong>&#8225;a</strong> tai <strong>&#8225;b</strong> toistumiin. Eri sanastoista olevat termit merkitään koko kentän toistumiin.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -386,14 +386,14 @@
       </indicators>
       <subfields>
         <subfield code="a" repeatable="Y">
-          <name>Media type term</name>
+          <name>Mediatyyppi</name>
         </subfield>
         <subfield code="b" repeatable="Y">
-          <name>Media type code</name>
+          <name>Mediatyypin koodi</name>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -417,9 +417,9 @@
       </examples>
     </datafield>
     <datafield tag="338" repeatable="Y">
-      <name>Carrier type</name>
-      <description paragraph="1">Carrier type reflects the format of the storage medium and housing of a carrier in combination with the media type (which indicates the intermediation device required to view, play, run, etc., the content of a resource). Used as an alternative to or in addition to the coded expression of carrier type in field 007/01 (Specific material designation). Field 338 information enables indication of more specific carrier types and carrier types from various lists.</description>
-      <description paragraph="2">Multiple media types from the same source vocabulary or code list may be recorded in the same field in separate occurrences of subfield $a (Carrier type term) or subfield $b (Carrier type code). Terms from different source vocabularies are recorded in separate occurrences of the field.</description>
+      <name>Tallennetyyppi</name>
+      <description paragraph="1">Tallennetyyppi ilmaisee julkaisun fyysisen varastointi- ja tallennusmuodon yhdessä mediatyypin kanssa. Käytetään vaihtoehtoisesti tai yhdessä tallennetyyppikoodin 007/01 (Aineiston erityismääre) kanssa. Kentässä 338 on mahdollista ilmoittaa tarkka tallennetyyppi tai tallennetyyppi joltakin koodilistalta.</description>
+      <description paragraph="2">Useat tallennetyypit samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän <strong>&#8225;a</strong> tai <strong>&#8225;b</strong> toistumiin. Eri sanastoista olevat termit merkitään koko kentän toistumiin.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -440,11 +440,14 @@
       </indicators>
       <subfields>
         <subfield code="a" repeatable="Y">
-          <name>Carrier type term</name>
+          <name>Tallennetyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Tallennetyypin koodi</name>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -463,12 +466,12 @@
           <text><strong>338 ## &#8225;a</strong> audio disc <strong>&#8225;2</strong> marccarrier</text>
         </example>
         <example>
-          <text><strong>338 ## &#8225;b</strong> ad <strong>&#8225;2</strong> marccarrier</text>
+          <text><strong>338 ## &#8225;b</strong> sd <strong>&#8225;2</strong> marccarrier</text>
         </example>
       </examples>
     </datafield>
     <datafield tag="340" repeatable="Y">
-      <name>Fyysinen viestin</name>
+      <name>Fyysinen väline</name>
       <description paragraph="1">Fyysisiä kuvailutietoja kohteelle, jonka käyttö vaatii teknistä laitteistoa tai kohteelle, joka vaatii erityistä konservointia tai varastointia.</description>
       <indicators>
         <indicator num="1">
@@ -513,11 +516,11 @@
           <description>Normaali nopeus tai suhdeluku, jonka mukaisesti aineistoa pitää käyttää, jotta sisältö olisi käyttökelpoista (esim. äänitteen kierrosluku).</description>
         </subfield>
         <subfield code="h" repeatable="Y">
-          <name>Sijainti viestimessä</name>
-          <description>Kuvatun materiaalin sijainti viestimessä (esim. kehyksen numero).</description>
+          <name>Sijainti välineessä</name>
+          <description>Kuvatun materiaalin sijainti välineessä (esim. kehyksen numero).</description>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Viestimen tekniset tiedot</name>
+          <name>Välineen tekniset tiedot</name>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1319,7 +1322,7 @@
         </subfield>
         <subfield code="j" repeatable="N">
           <name>ISO-maakoodi</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/">ISO 3166-1, Codes for the Representation of Names of Countries</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm">ISO 3166-1, Codes for the Representation of Names of Countries</a></em>.</description>
         </subfield>
         <subfield code="k" repeatable="N">
           <name>MARC-maakoodi</name>
@@ -1330,7 +1333,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Hintatyyppikoodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relators.html">MARC Code Lists for Relators, Sources, Description Conventions</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/price-type.html">Price Type Code Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1397,7 +1400,7 @@
         </subfield>
         <subfield code="j" repeatable="N">
           <name>ISO-maakoodi</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/">ISO 3166-1, Codes for the Representation of Names of Countries</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm/">ISO 3166-1, Codes for the Representation of Names of Countries</a></em>.</description>
         </subfield>
         <subfield code="k" repeatable="N">
           <name>MARC-maakoodi</name>
@@ -1408,7 +1411,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Saatavuuden tilakoodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relators.html">MARC Code Lists for Relators, Sources, Description Conventions</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/availability-status.html">Availability Status Code Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1433,6 +1436,266 @@
           <text><strong>366 ## &#8225;c</strong> OP 20011105 <strong>&#8225;g</strong> 20011013 <strong>&#8225;j</strong> UK <strong>&#8225;2</strong> onix-as</text>
         </example>
       </examples>
+    </datafield>
+<datafield tag="380" repeatable="Y">
+      <name>Teoksen muoto</name>
+      <description paragraph="1">Luokka tai lajityyppi, johon teos kuuluu. Voidaan käyttää erottamaan samannimisiä teoksia.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Teoksen muoto</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a           href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a            href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+      <examples>
+        <example>
+          <text><strong>380 ## &#8225;a</strong> Näytelmä</text>
+        </example>
+        <example>
+          <text><strong>380 ## &#8225;a</strong> Koreografia</text>
+        </example>
+        <example>
+          <text><strong>380 ## &#8225;a</strong> Televisio-ohjelma</text>
+        </example>
+      </examples>
+    </datafield>
+<datafield tag="381" repeatable="Y">
+      <name>Teoksen tai ekspression muut erityispiirteet</name>
+      <description paragraph="1">Mikä tahansa teoksen tai ekspression erityispiirre, jota ei ilmoiteta omassa kentässään. Esimerkkejä ovat julkaiseva yhteisö, musiikin sovitusmerkintö, versio tai maantieteellinen termi. Voidaan käyttää erottamaan samannimisiä teoksia.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Muu erityispiirre</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a           href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a            href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+      <examples>
+        <example>
+          <text><strong>381 ## &#8225;a</strong> Douglas</text>
+        </example>
+        <example>
+          <text><strong>381 ## &#8225;a</strong> Sovitus</text>
+        </example>
+        <example>
+          <text><strong>381 ## &#8225;a</strong> Valikoima</text>
+        </example>
+      </examples>
+    </datafield>
+<datafield tag="382" repeatable="Y">
+      <name>Esityskokoonpano</name>
+      <description paragraph="1">Instrumentaali-, laulu-, tai muu esityskokoonpano, jolle musiikkiteos alkujaan on tarkoitettu tai jolle musiikkiekspressio on sävelletty tai jolla se esitetään. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia tai -ekspressioita toisistaan.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Esityskokoonpano</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a           href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a            href="http://www.loc.gov/standards/sourcelist/musical-instrumentation.html">Musical Instrumentation and Voice Code Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+      <examples>
+        <example>
+          <text><strong>382 ## &#8225;a</strong> Sekakuoro <strong>&#8225;a</strong> urut</text>
+        </example>
+        <example>
+          <text><strong>382 ## &#8225;a</strong> Piano</text>
+        </example>
+       </examples>
+    </datafield>
+<datafield tag="383" repeatable="Y">
+      <name>Musiikkiteoksen numerointimerkintö</name>
+      <description paragraph="1">Säveltäjän, julkaisijan tai musiikintutkijan musiikkiteokselle antama järjestys-, opus- tai teosluettelonumero. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia toisistaan.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Järjestysnumero</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Opusnumero</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Teosluettelonumero</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+      <examples>
+        <example>
+          <text><strong>383 ## &#8225;a</strong> Nro 14, <strong>&#8225;b</strong> op. 27, nro 2</text>
+        </example>
+        <example>
+          <text><strong>383 ## &#8225;c</strong> BWV211</text>
+        </example>
+       </examples>
+    </datafield>
+<datafield tag="384" repeatable="N">
+      <name>Sävellaji</name>
+      <description paragraph="1">Sävelten suhdejärjestelmä.  Voidaan käyttää erottamaan samannimisiä musiikkiteoksia tai -ekspressioita toisistaan.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Sävellajin tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Suhdetta alkuperäiseen sävellajiin ei tiedetä</description>
+            </value>
+            <value code="0">
+              <description>Alkuperäinen sävellaji</description>
+            </value>
+            <value code="1">
+              <description>Transponoitu sävellaji</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+      <examples>
+        <example>
+          <text><strong>384 1# &#8225;a</strong> C-duuri</text>
+        </example>
+       </examples>
     </datafield>
   </datafields>
 </fields>

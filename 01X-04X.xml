@@ -145,7 +145,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tunnuksen antajan koodi</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela015b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/national-bibliography.html">National Bibliography Number Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -259,7 +259,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tunnuksen antajan koodi</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela017b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/copyright-legal-deposit.html">Copyright and Legal Deposit Number Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -521,14 +521,14 @@
           <name>Hinta- ja saatavuustiedot</name>
         </subfield>
         <subfield code="d" repeatable="N">
-          <name>Lisämääreet</name>
+          <name>Standarditunnuksen lisäkoodi</name>
         </subfield>
         <subfield code="z" repeatable="Y">
           <name>Peruttu tai virheellinen standarditunnus tai -koodi</name>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tunnuksen antajan koodi</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela024b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html">Standard Identifier Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -541,16 +541,16 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>024 0# &#8225;a</strong> FILNM9500119 <strong>&#8225;d</strong> osa 1<br /><em>ISRC-tunnus.</em></text>
+          <text><strong>024 0# &#8225;a</strong> FILNM9500119<br /><em>ISRC-tunnus.</em></text>
         </example>
         <example>
           <text><strong>024 0# &#8225;a</strong> NLC018413261 <strong>&#8225;z</strong> NLC018403261<br /><em>ISRC-tunnus ja virheellinen ISRC-tunnus.</em></text>
         </example>
         <example>
-          <text><strong>024 10 &#8225;a</strong> 070993005955 <strong>&#8225;d</strong> 35740<br /><em>UPC-tunnus ja lisämääre.</em></text>
+          <text><strong>024 10 &#8225;a</strong> 070993005955 <strong>&#8225;d</strong> 35740<br /><em>UPC-tunnus ja lisäkoodi.</em></text>
         </example>
         <example>
-          <text><strong>024 2# &#8225;a</strong> M-321-76543-1<br /><em>ISMN-tunnus.</em></text>
+          <text><strong>024 2# &#8225;a</strong> M-321-76543-1 (sid.)<br /><em>ISMN-tunnus.</em></text>
         </example>
         <example>
           <text><strong>024 30 &#8225;a</strong> 9780449906200 <strong>&#8225;d</strong> 51000<br /><em>ISBN-tunnukseen pohjautuva EAN-koodi ja lisäkoodi.</em></text>
@@ -650,7 +650,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tunnisteen antajan koodi</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html#rela026b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/fingerprint.html">Fingerprint Scheme Source Codes</a></em>.</description>
         </subfield>
         <subfield code="5" repeatable="Y">
           <name>Organisaatio, johon kentän tiedot pätevät</name>
@@ -1033,7 +1033,7 @@
               <description>Monta yksittäistä ajankohtaa<br /> Tätä arvoa käytetään myös kahdelle toisiaan seuraavalle päivämäärälle.</description>
             </value>
             <value code="2">
-              <description>Aikaväli<br /> Äänityksen, kuvauksen tai löytämisen aika jakaantuu useammille kuin kahdelle toisiaan seuraaville päiville ja yksittäisiä päivämääriä ei tiedetä tai niitä on liikaa eriteltäväksi.</description>
+              <description>Aikaväli<br /> Äänitys-, kuvaus- tai löytöaika jakaantuu useammille kuin kahdelle toisiaan seuraaville päiville eikä yksittäisiä päivämääriä ei tiedetä tai niitä on liikaa eriteltäväksi.</description>
             </value>
           </values>
         </indicator>
@@ -1067,6 +1067,17 @@
         <subfield code="c" repeatable="Y">
           <name>Maantieteellisen osa-alueen luokkakoodi</name>
           <description>Osakentässä &#8225;b annetun alueen osa-alue merkitään aakkosnumeerisella Cutter-numerolla. Cutter-numerot löytyvät Library of Congressin listalta  <em>Geographic Cutters. Class G, Geographic Cutters</em> sekä laajennetuilta Cutter-listoilta.</description>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Tapahtuman paikka</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a           href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>MARC-koodi, joka kertoo p-osakentässä käytetyn kontrolloidun termin lähteen.  Koodi otetaan listalta, ks. <em><a            href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1110,6 +1121,9 @@
         </example>
         <example>
           <text><strong>033 10 &#8225;a</strong> 19770115 <strong>&#8225;a</strong> 19770210 <strong>&#8225;b</strong> 3824 <strong>&#8225;c</strong> P5 <strong>&#8225;b</strong> 3804 <strong>&#8225;c</strong> N4</text>
+        </example>
+        <example>
+          <text><strong>033 00 &#8225;a</strong> 200008--- <strong>&#8225;b</strong> 5754 <strong>&#8225;c</strong> L7 <strong>&#8225;p</strong> Abbey Road Studio 1, London </text>
         </example>
         <example>
           <text><strong>033 00 &#8225;3</strong> Suomea, ole hyvä! : kuullun ymmärtämisen äänite <strong>&#8225;a</strong> 2000----</text>
@@ -1239,7 +1253,10 @@
         </subfield>
         <subfield code="2" repeatable="Y">
           <name>Nimen lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html">Cartographic Data Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1586,9 +1603,9 @@
         <subfield code="d" repeatable="Y">
           <name>Tietuetta muokkaava organisaatio</name>
         </subfield>
-        <subfield code="e" repeatable="N">
+        <subfield code="e" repeatable="Y">
           <name>Kuvailukäytäntö</name>
-          <description>MARC-koodi tai nimi kuvailusäännöille, joita tietueen tekemisessä on käytetty. Tietoja annetaan tässä, mikäli merkkipaikassa nimiö/18 (Luettelointisäännöt) annettu tieto ei riitä. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/reladesc.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VI: Description Conventions</a></em>.</description>
+          <description>MARC-koodi tai nimi kuvailusäännöille, joita tietueen tekemisessä on käytetty. Tietoja annetaan tässä, mikäli merkkipaikassa nimiö/18 (Luettelointisäännöt) annettu tieto ei riitä. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/descriptive-conventions.html">Description Convention Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1653,8 +1670,8 @@
           <description>Ensimmäisen &#8225;a-osakentän kielikoodi on myös merkkipaikoissa <a href="008.xml#kaikki">008</a>/35-37 (Kieli), ellei merkkipaikoissa 35-37 ole tyhjämerkkejä (###) tai koodi <em> zxx</em> (Ei kielellistä sisältöä).</description>
         </subfield>
         <subfield code="b" repeatable="Y">
-          <name>Tiivistelmän, abstraktin tai kuvatekstien kieli</name>
-          <description>Silloin kun näiden kieli on muu kuin tekstin tai ääniraidan kieli (osakentässä &#8225;a).</description>
+          <name>Tiivistelmän tai abstraktin kieli</name>
+          <description>Voi olla sama tai eri kuin osakentässä &#8225;a oleva kieli.</description>
         </subfield>
         <subfield code="d" repeatable="Y">
           <name>Lauletun tai puhutun aineiston kieli</name>
@@ -1682,7 +1699,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1759,7 +1776,7 @@
       <subfields>
         <subfield code="a" repeatable="Y">
           <name>Autentikointikoodi</name>
-          <description>Koodi todistaa, että tietue on tarkistettu tietyllä tavalla. Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi todistaa, että tietue on tarkistettu tietyllä tavalla. Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/valuelist/marcauthen.html">MARC Authentication Action Code List</a></em>.</description>
         </subfield>
       </subfields>
       <examples>
@@ -1807,7 +1824,7 @@
         </subfield>
         <subfield code="2" repeatable="Y">
           <name>Paikallisen koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/geographic-area.html">Geographic Area Code and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1875,7 +1892,7 @@
         </subfield>
         <subfield code="2" repeatable="Y">
           <name>Paikallisen osakokonaisuuskoodin lähde</name>
-          <description>Osakentässä &#8225;b annetun koodin lähde. Koodi otetaan listalta, ks. <a href="http://www.loc.gov/marc/relators/relaothr.html"> <em>MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</em></a>.</description>
+          <description>Osakentässä &#8225;b annetun koodin lähde. Koodi otetaan listalta, ks. <a href="http://www.loc.gov/standards/sourcelist/country.html"> <em>Country Code and Term Source Codes</em></a>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -2086,7 +2103,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tietojen lähde</name>
-          <description>Koodi otetaan listalta, ks. <a href="http://www.loc.gov/marc/relators/relaothr.html"> <em>MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</em></a>.</description>
+          <description>Koodi otetaan listalta, ks. <a href="http://www.loc.gov/standards/sourcelist/date-time.html"> <em>Date and Time Scheme Source Codes</em></a>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -2152,7 +2169,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>        
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/musical-composition.html">Musical Composition Form Code Source Codes</a></em>.</description>        
         </subfield>
         <subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
@@ -2201,7 +2218,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/musical-instrumentation.html">Musical Instrumentation and Voice Code Source Codes</a></em>.</description>
         </subfield>
         <subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>

@@ -1,0 +1,721 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 3.3.2011.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Lisäkirjauskentät (70X-75X)</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kentät 700-75X sisältävät nimiä ja/tai nimekkeitä ja/tai termejä, joilla bibliografinen tietue halutaan tarjota haettavaksi
+         ja joita ei ole tallennettu pääkirjauksena (1XX), asiasanana (6XX), sarjamerkintönä (4XX), sarjalisäkirjauksena (8XX) tai
+         nimekkeenä (20X-24X).Joissakin näytöissä esiintyy numerointia tai vakiotekstejä ennen lisäkirjauksia, mutta niitä ei tallenneta MARC-tietueeseen
+         vaan ne muodostetaan näyttöihin kenttäkoodien perusteella.
+      </p>
+      <ul>
+         <li><a href="#700">700 - LISÄKIRJAUS - HENKILÖNNIMI</a> (T)
+         </li>
+         <li><a href="#710">710 - LISÄKIRJAUS - YHTEISÖNNIMI</a> (T)
+         </li>
+         <li><a href="#711">711 - LISÄKIRJAUS - KOKOUKSEN NIMI</a> (T)
+         </li>
+         <li><a href="#720">720 - LISÄKIRJAUS - KONTROLLOIMATON NIMI</a> (T)
+         </li>
+         <li><a href="#730">730 - LISÄKIRJAUS - YHTENÄISTETTY NIMEKE</a> (T)
+         </li>
+         <li><a href="#740">740 - LISÄKIRJAUS - KONTROLLOIMATON LIITTYVÄ/ANALYYTTINEN NIMEKE</a> (T)
+         </li>
+         <li><a href="#751">751 - LISÄKIRJAUS - MAANTIETEELLINEN NIMI</a> (T)
+         </li>
+         <li><a href="#752">752 - LISÄKIRJAUS - HIERARKKINEN PAIKAN NIMI</a> (T)
+         </li>
+         <li><a href="#753">753 - JÄRJESTELMÄKOHTAISET YKSITYISKOHDAT</a> (T)
+         </li>
+         <li><a href="#754">754 - LISÄKIRJAUS - TAKSONOMINEN TUNNISTUS</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="700"></a>700 - LISÄKIRJAUS - HENKILÖNNIMI (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto<br><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.htm#100">100</a>.</em><ul>
+               <li><strong>0</strong> - Nimen osien järjestys suora
+               </li>
+               <li><strong>1</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>3</strong> - Suvun nimi
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Lisäkirjauksen tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>2</strong> - Analyyttinen kirjaus<br> Lisäkirjauksen kohde sisältyy bibliografisessa tietueessa kuvailtuun kohteeseen.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Henkilönnimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Numerointi (ET)
+         </li>
+         <li><strong>‡c</strong> - Arvonimet ja muut nimeen liittyvät sanat (T)
+         </li>
+         <li><strong>‡d</strong> - Nimeen liittyvät aikamääreet (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai
+            kontrolloitu.
+         </li>
+         <li><strong>‡j</strong> - Nimen määrite (T)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡q</strong> - Henkilönnimen täydellisempi muoto (ET)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - Organisatorinen kytkös (ET)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)<br>Etutekstiä <em>ISSN</em> ei tallenneta MARC-tietueeseen; se voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>100 1# ‡a</strong> Gallen-Kallela, Kirsti.<br><strong>245 10 ‡a</strong> Isäni Akseli Gallen-Kallela / <strong>‡c</strong> Kirsti Gallen-Kallela ; toimittanut Kaari Raivio.<br><strong>700 1# ‡a</strong> Raivio, Kaari.
+      </p>
+      <p><strong>245 00 ‡a</strong> Tavallinen luokka <strong>‡h</strong> [Videotallenne] / <strong>‡c</strong> ohjaus: Raili Rusto ; käsikirjoitus: Pirkko Jaakkola ja Tiina Harpf ; musiikki: Esa Helasvuo ; kuvaus: Veikko Mård.<br><strong>700 1# ‡a</strong> Jaakkola, Pirkko, <strong>‡e</strong> käsik.<br><strong>700 1# ‡a</strong> Harpf, Tiina, <strong>‡e</strong> käsik. <br><strong>700 1# ‡a</strong> Helasvuo, Esa, <strong>‡e</strong> säv. <br><strong>700 1# ‡a</strong> Mård, Veikko, <strong>‡e</strong> kuv.
+      </p>
+      <p><strong>100 1# ‡a</strong> Lindgrén, Maija.<br><strong>245 10 ‡a</strong> Varo vaaraa koulutiellä / <strong>‡c</strong> Maija Lindgrén, Annami Poivaara ; kuvitus: Teutori.<br><strong>700 1# ‡a</strong> Poivaara, Annami.<br><strong>700 0# ‡a</strong> Teutori.
+      </p>
+      <p><strong>100 1# ‡a</strong> Bergholm, Axel.<br><strong>245 10 ‡a</strong> Historiallinen lukukirja : <strong>‡b</strong> vanha- ja keskiaika / <strong>‡c</strong> suom. Aatto Suppanen.<br><strong>700 1# ‡a</strong> Suppanen, Aatto, <strong>‡d</strong> 1855-1898.
+      </p>
+      <p><strong>100 1# ‡a</strong> Jokipii, Mauno.<br><strong>245 10 ‡a</strong> Vammaskosken kihlakunnansilta 1600-luvulta 1800-luvulle / <strong>‡c</strong> Mauno Jokipii. Vammaskosken kivisilta 1915-1990 / Pekka Koskinen.<br><strong>700 1# ‡a</strong> Koskinen, Pekka. <strong>‡t</strong> Vammaskosken kivisilta 1915-1990.
+      </p>
+      <p><strong>100 1# ‡a</strong> Beethoven, Ludwig van, <strong>‡e</strong> säv. <br><strong>245 10 ‡a</strong> Symphonies 1-9 <strong>‡h</strong> [Äänite]<br><strong>700 12 ‡a</strong>Beethoven, Ludwig van, <strong>‡e</strong> säv. <strong>‡t</strong> Sinfoniat, <strong>‡n</strong> nro 9, op125, <strong>‡r</strong> d-molli.
+      </p>
+      <p><strong>100 1# ‡a</strong> Chopin, Frédéric, <strong>‡e</strong> säv. <br><strong>245 10 ‡a</strong> Klavierwerke <strong>‡h</strong> [Nuottijulkaisu] : <strong>‡b</strong> Auswahl.<br><strong>700 12 ‡a</strong> Chopin, Frédéric, <strong>‡e</strong> säv. <strong>‡t</strong> Masurkat, <strong>‡m</strong> piano. <strong>‡k</strong> Valikoima.
+      </p>
+      <p><strong>245 00 ‡a</strong> Piae cantiones ecclesiasticae et scholasticae veterum episcoporum, 1582 / <strong>‡c</strong> Theodoricus Petri (Rutha) Nylandensis ; [facsimile] editionem curavit Einari Marvia.<br><strong>700 1# ‡a</strong> Ruuth, Didrik Persson, <strong>‡d</strong> s. n. 1560, k. ennen 1617, <strong>‡c</strong> Länsipohjan käskynhaltija.<br><strong>700 1# ‡a</strong> Marvia, Einari.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="710"></a>710 - LISÄKIRJAUS - YHTEISÖNNIMI (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto<br><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.htm#110">110</a>.</em><ul>
+               <li><strong>0</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>1</strong> - Hallintoalueen nimi
+               </li>
+               <li><strong>2</strong> - Nimen osien järjestys suora
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Lisäkirjauksen tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>2</strong> - Analyyttinen kirjaus<br> Lisäkirjauksen kohde sisältyy bibliografisessa tietueessa kuvailtuun kohteeseen.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Yhteisönnimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Alayksikkö (T)
+         </li>
+         <li><strong>‡c</strong> - Kokouksen paikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Kokouksen tai sopimuksen allekirjoittamisen aika (T)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai
+            kontrolloitu.
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Kokouksen numero tai muu numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - Organisatorinen kytkös (ET)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)<br>Etutekstiä <em>ISSN</em> ei tallenneta MARC-tietueeseen; se voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Kainuun puutarhatuotantotutkimus / <strong>‡c</strong> [julk.] Pohjois-Suomen tutkimuslaitos. Kainuun yksikkö.<br><strong>710 2# ‡a</strong> Oulun yliopisto. <strong>‡b</strong> Pohjois-Suomen tutkimuslaitos. <strong>‡b</strong> Kainuun yksikkö.
+      </p>
+      <p><strong>245 00 ‡a</strong> Syitä ja seurauksia - 30 parasta <strong>‡h</strong> [Äänite]<br><strong>710 2# ‡a</strong> Apulanta, <strong>‡e</strong> esitt.
+      </p>
+      <p><strong>245 00 ‡a</strong> Kompleksi 1947-1997 / <strong>‡c</strong> [toimittajat: Terhi Pylkkänen, Jari Salo ja Risto Selin]<br><strong>260 ## ‡a</strong> Helsinki : <strong>‡b</strong> Helsingin yliopiston psykologian opiskelijoiden ainejärjestö Kompleksi, <strong>‡c</strong> 1997 <strong>‡e</strong> (Vantaa : <strong>‡f</strong> Tummavuori) <strong><br>710 2# ‡a</strong> Kompleksi (Helsingin yliopisto)
+      </p>
+      <p><strong>245 00 ‡a</strong> Kinopalatsi <strong>‡h</strong> [Elektroninen aineisto] : <strong>‡b</strong> suomalaisen elokuvan kultainen cd-rom / <strong>‡c</strong> tekstit ja haastattelut: Peter von Bagh ; käsikirjoitus ja toteutus: Mediayhtiö Sansibar oy.<br><strong>710 2#‡a</strong> Sansibar (mediayhtiö)
+      </p>
+      <p><strong>245 00 ‡a</strong> Kuinka lukea Raamattua.<br><strong>505 0# ‡a</strong> S. 9-103: Raamatun tulkinta kirkossa / Paavillinen raamattukomissio ; suomennos: Talvikki Mattila. - Alkuteos: The interpretation
+         of the Bible in the Church. S. 105-117: Paavi Johannes Paavali II:n puhe Raamatun tulkinnasta kirkossa. S. 119-135: Jumalallisesta
+         ilmoituksesta : Vatikaanin II kirkolliskokouksen marraskuun 18. päivänä 1965 hyväksymä dogmaattinen konstituutio. - Alkuteos:
+         De divina revelatione.<br><strong>710 1# ‡a</strong> Katolinen kirkko. <strong>‡b</strong> Paavillinen raamattukomissio.<br><strong>710 1# ‡a</strong> Vatikaanin kirkolliskokous <strong>‡n</strong> (2 :<strong>‡d</strong> 1962-1965)
+      </p>
+      <p><strong>245 00 ‡a</strong> Nokian kaupungin kulttuurilautakunnan julkaisuja.<br><strong>710 1# ‡a</strong> Nokia. <strong>‡b</strong> Kulttuurilautakunta.
+      </p>
+      <p><strong>245 00 ‡a</strong> MITA : <strong>‡b</strong> Mobile Internet technical architecture / <strong>‡c</strong> Nokia.<br><strong>710 2# ‡a</strong> Nokia (yhtiö)
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="711"></a>711 - LISÄKIRJAUS - KOKOUKSEN NIMI (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto<br><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.htm#111">111</a>.</em><ul>
+               <li><strong>0</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>1</strong> - Hallintoalueen nimi
+               </li>
+               <li><strong>2</strong> - Nimen osien järjestys suora
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Lisäkirjauksen tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>2</strong> - Analyyttinen kirjaus<br> Lisäkirjauksen kohde sisältyy bibliografisessa tietueessa kuvailtuun kohteeseen.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Kokouksen tai hallintoalueen nimi (ET)
+         </li>
+         <li><strong>‡c</strong> - Kokouksen paikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Kokouksen aika (ET)
+         </li>
+         <li><strong>‡e</strong> - Alayksikkö (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai
+            kontrolloitu.
+         </li>
+         <li><strong>‡j</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡n</strong> - Kokouksen numero tai muu numerointitieto (T)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡q</strong> - Hallintoalueen nimeä seuraava kokouksen nimi (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - Organisatorinen kytkös (ET)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)<br>Etutekstiä <em>ISSN</em> ei tallenneta MARC-tietueeseen; se voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (ET)<br><em> <a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Technology and the environment : <strong>‡b</strong> facing the future : developed from a Symposium on Non-waste Technology, Espoo, Finland, June 20-23, 1988 arranged by the
+         Technical Research Centre of Finland / <strong>‡c</strong> Allan Johansson, editor.<br><strong>711 2# ‡a</strong> Symposium on Non-waste Technology <strong>‡d</strong> (1988 : <strong>‡c</strong> Espoo)
+      </p>
+      <p><strong>245 14 ‡a</strong> The economic impact of the 1976 Olympic Games : <strong>‡b</strong> a study undertaken for the Organizing Committee of the 1976 Olympic Games sponsored by Bank of Montreal / <strong>‡c</strong> [John Iton].<br><strong>711 2# ‡a</strong> Olympic Games <strong>‡n</strong> (21st : <strong>‡d</strong> 1976 : <strong>‡c</strong> Montreal, Quebec). <strong>‡e</strong> Organizing Committee. <strong>‡e</strong> Arts and Culture Program. <strong>‡e</strong> Visual Arts Section
+      </p>
+      <p><strong>245 00 ‡a</strong> Minerals, materials and industry : <strong>‡b</strong> papers presented at the fourteenth Congress of the Council of Mining and Metallurgical Institutions, organized by the Institution
+         of Mining and Metallurgy and held in Edinburgh, Scotland, from 2 to 6 July, 1990.<br><strong>710 21 ‡a</strong> Council of Mining and Metallurgical Institutions. <strong>‡b</strong> Congress <strong>‡n</strong> (14 : <strong>‡d</strong> 1990 : <strong>‡c</strong> Edinburgh)
+      </p>
+      <p><strong>245 00 ‡a</strong> Perspectives on Arabic linguistics XVII-XVIII : <strong>‡b</strong> papers from the seventeenth and eighteenth annual Symposia on Arabic Linguistics / <strong>‡c</strong> edited by Mohammad T. Alhawary, Elabbas Benmamoun.<br><strong>711 2 #‡a</strong> Symposium on Arabic Linguistics <strong>‡n</strong> (18th : <strong>‡d</strong> 2004 :<strong>‡c</strong> University of Oklahoma)
+      </p>
+      <p><strong>245 00 ‡a</strong> Proceedings of the second United States - Finland Workshop on magnestospheric and ionospheric phenomena in auroral regions
+         : <strong>‡b</strong> October 10-13, 1983 University of Maryland / <strong>‡c</strong> editors T.J. Rosenberg and J. Oksman.<br><strong>711 2# ‡a</strong> United States-Finland Workshop on Magnestopheric and Ionospheric Phenomena in Auroral Regions <strong>‡n</strong> (2 :<strong>‡d</strong> 1983 : <strong>‡c</strong> College Park)
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="720"></a>720 - LISÄKIRJAUS - KONTROLLOIMATON NIMI (T)
+      </h3>
+      <p>Lisäkirjaus nimestä, jota ei ole auktorisoitu. Käytetään myös nimille, joita ei ole muotoiltu luettelointisääntöjen mukaan.
+         Nimet voivat olla minkä tyyppisiä tahansa (henkilön-, yhteisön- tai kokouksen nimiä). Vertaa myös kenttä <a href="53X-58X.htm#550">550</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimen tyyppi
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+               <li><strong>1</strong> - Henkilönnimi
+               </li>
+               <li><strong>2</strong> - Muu
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Nimi (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)<br>Kuvaa nimen suhdetta teokseen.
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>720 1# ‡a</strong> Blacklock, Joseph
+      </p>
+      <p><strong>720 ## ‡a</strong> Vonderrohe, Robert, 1934- <strong>‡e</strong> editor
+      </p>
+      <p><strong>720 2# ‡a</strong> CAPCON Library Network <strong>‡e</strong> author
+      </p>
+      <p><strong>720 ## ‡a</strong> U.S. Energy Information Administration, Coal Statistics Division
+      </p>
+      <p><strong>720 1# ‡a</strong> Theodore K. Hepburn <strong>‡e</strong> inventor
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="730"></a>730 - LISÄKIRJAUS - YHTENÄISTETTY NIMEKE (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - <a href="../ohitus.htm">Ohitusindikaattori</a><ul>
+               <li><strong>0-9</strong> - Ohitettavien merkkien määrä
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Lisäkirjauksen tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>2</strong> - Analyyttinen kirjaus<br> Lisäkirjauksen kohde sisältyy bibliografisessa tietueessa kuvailtuun kohteeseen.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡d</strong> - Sopimuksen allekirjoittamisen aika (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai
+            kontrolloitu.
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)<br>Etutekstiä <em>ISSN</em> ei tallenneta MARC-tietueeseen; se voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>130 0# ‡a</strong> Raamattu. <strong>‡p</strong> VT. <strong>‡p</strong> Jeremian kirja.<br><strong>245 10 ‡a</strong> Jeremian kirja ; <strong>‡b</strong> Hesekielin kirja : käännösehdotus.<br><strong>730 0# ‡a</strong> Raamattu. <strong>‡p</strong> VT. <strong>‡p</strong> Hesekielin kirja.
+      </p>
+      <p><strong>130 0# ‡a</strong> Raamattu. <strong>‡p</strong> Uusi testamentti. <br><strong>245 10 ‡a</strong> Tässä on tie : <strong>‡b</strong> motoristiraamattu /<strong>‡c</strong> [toimikunta: Bo Jansson ... et al.]<br><strong>246 30‡a</strong> Motoristiraamattu.<br><strong> 730 0# ‡a</strong> Raamattu. <strong>‡p</strong> Psalmit.
+      </p>
+      <p><strong>245 04 ‡a</strong> The standard Babylonian Epic of Gilgamesh : <strong>‡b</strong> cuneiform text, transliteration, glossary, indices and sign list / <strong>‡c</strong> by Simo Parpola ; with the assistance of Mikko Luukko and Kalle Fabritius.<br><strong>730 0# ‡a</strong> Epic of Gilgamesh.
+      </p>
+      <p><strong>245 00 ‡a</strong> Soome antoloogia. <strong>‡n</strong> 1, <strong>‡p</strong> Kanteletar : 1. osa / <strong>‡c</strong> toimetand August Anni.<br><strong>730 0# ‡a</strong> Kanteletar.
+      </p>
+      <p><strong>245 10 ‡a</strong> Sociological writings / <strong>‡c</strong> Max Weber ; edited by Wolf Heydebrand.<br><strong>730 0# ‡a</strong> Selections <strong>‡g</strong> (1993). <strong>‡l</strong> English.
+      </p>
+      <p><strong>245 10 ‡a</strong> Kanteleen kanssa <strong>‡h</strong> [Nuottijulkaisu] : <strong>‡b</strong> sävellysten ja sovitusten maailmassa.<br><strong>730 0# ‡a</strong> Amazing grace; <strong>‡o</strong> sov., kantele.<br><strong>730 0# ‡a</strong> Yksi ruusu on kasvanut laaksossa; <strong>‡o</strong> sov., kantele.
+      </p>
+      <p><strong>245 10 ‡a</strong> Piae cantiones <strong>‡h</strong> [Äänite] : <strong>‡b</strong> bearly Finnish vocal music.<br><strong>730 0# ‡a</strong> Aetas carmen.<br><strong>730 0# ‡a</strong> Jucundare jugiter.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="740"></a>740 - LISÄKIRJAUS - KONTROLLOIMATON LIITTYVÄ/ANALYYTTINEN NIMEKE (T)
+      </h3>
+      <p>Lisäkirjaus kuvailun kohteeseen liittyvästä tai analyyttisestä nimekkeestä, jota ei ole auktorisoitu. Jos kuvailun kohteeseen
+         liittyvä tai analyyttinen nimeke on auktorisoitu, käytä kenttää <a href="#730">730</a> (Lisäkirjaus - yhtenäistetty nimeke).
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - <a href="../ohitus.htm">Ohitusindikaattori</a><ul>
+               <li><strong>0-9</strong> - Ohitettavien merkkien määrä
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Lisäkirjauksen tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>2</strong> - Analyyttinen kirjaus<br> Lisäkirjauksen mukainen kohde sisältyy bibliografisessa tietueessa kuvailtuun kohteeseen.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Nimeke, kontrolloimaton ja kohteeseen liittyvä tai analyyttinen (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)<br>Teoksen osan numero, opus- tai järjestysnumero, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)<br>Teoksen osan nimeke, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.
+         </li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 10 ‡a</strong> Valitut teokset / <strong>‡c</strong> Minna Canth. <br><strong>505 0# ‡a</strong> Työmiehen vaimo ; Hanna ; Köyhää kansaa ; Salakari ; Lehtori Hellmanin vaimo ; Agnes.<br><strong>740 02 ‡a</strong> Työmiehen vaimo.<br><strong>740 02 ‡a</strong> Hanna.<br><strong>740 02 ‡a</strong> Köyhää kansaa.<br><strong>740 02 ‡a</strong> Salakari.<br><strong>740 02 ‡a</strong> Lehtori Hellmanin vaimo.<br><strong>740 02 ‡a</strong> Agnes.
+      </p>
+      <p><strong>245 10 ‡a</strong> Nummisuutarit ; <strong>‡b</strong> Kihlaus /<strong>‡c</strong> Aleksis Kivi.<br><strong>740 02 ‡a</strong> Kihlaus.
+      </p>
+      <p><strong>500 ## ‡a</strong> Organizers: The Finnish Institute of International Affairs, The Institute for Middle Eastern and Islamic Studies, The Gulf
+         Studies Center. - A thousand and one steps : the Arab world and development 2004 = Tuhat ja yksi askelta : arabimaailma ja
+         kehitys -kampanja.<br><strong>740 2# ‡a</strong> A thousand and one steps : the Arab world and development 2004.<br><strong>740 0# ‡a</strong> Tuhat ja yksi askelta : arabimaailma ja kehitys.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="751"></a>751 - LISÄKIRJAUS - MAANTIETEELLINEN NIMI (T)
+      </h3>
+      <p>Lisäkirjaus maantieteellisestä nimestä, joka liittyy kuvailtavaan kohteeseen, esim. harvinaiskirjan julkaisupaikka, jakelupaikka,
+         yliopisto jossa väitöskirja on tehty, konferenssin pitopaikka jne.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Maantieteellinen nimi (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Funktiokoodi (T)<br>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>751 ## ‡a</strong> Suistamo
+      </p>
+      <p><strong>751 ## ‡a</strong> Roma <strong>‡0</strong> (DE-101b)1030696-1 <strong>‡2</strong> gkd <strong>‡4</strong> evp
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="752"></a>752 - LISÄKIRJAUS - HIERARKKINEN PAIKAN NIMI (T)
+      </h3>
+      <p>Hierarkkinen muoto paikan nimestä, joka liittyy jotenkin kuvailun kohteeseen, esim. harvinaisen kirjan julkaisupaikka. Näyttöä
+         varten voidaan muodostaa kaksoisväliviivat (--) osa-alueiden väliin, esim. Kanada -- Brittiläinen Kolumbia -- Vancouver.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Maa/valtio tai laajempi kokonaisuus (T)
+         </li>
+         <li><strong>‡b</strong> - Ensisijainen poliittinen hallintoalue (ET)
+         </li>
+         <li><strong>‡c</strong> - Keskitason poliittinen hallintoalue (T)
+         </li>
+         <li><strong>‡d</strong> - Kaupunki, kunta (ET)
+         </li>
+         <li><strong>‡f</strong> - Kaupunginosa, kylä (T)
+         </li>
+         <li><strong>‡g</strong> - Muu epähallinnollinen maantieteellinen alue (T)
+         </li>
+         <li><strong>‡h</strong> - Maapallon ulkopuolinen alue (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>752 ## ‡a</strong> Suomi <strong>‡d</strong> Helsinki <strong>‡f</strong> Käpylä.
+      </p>
+      <p><strong>752 ## ‡a</strong> Spain <strong>‡d</strong> Madrid.
+      </p>
+      <p><strong>752 ## ‡a</strong> France <strong>‡b</strong> Doubs.
+      </p>
+      <p><strong>752 ## ‡a</strong> England <strong>‡c</strong> Greater Manchester <strong>‡d</strong> Manchester.
+      </p>
+      <p><strong>752 ## ‡a</strong> United States <strong>‡b</strong> Maryland <strong>‡c</strong> Montgomery County.
+      </p>
+      <p><strong>752 ## ‡a</strong> United States <strong>‡b</strong> California <strong>‡c</strong> Los Angeles (County) <strong>‡d</strong> Los Angeles <strong>‡f</strong> Little Tokyo. <strong>‡2</strong> tgn
+      </p>
+      <p><strong>752 ## ‡h</strong> Mars <strong>‡h</strong> Valles Marineris. <strong>‡2</strong><em> MARC code for Gazetteer of Planetary Nomenclature</em></p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="753"></a>753 - JÄRJESTELMÄKOHTAISET YKSITYISKOHDAT (T)
+      </h3>
+      <p>Elektroniseen aineistoon tai sen liiteaineistoon liittyviä teknisiä tietoja, joita voidaan käyttää tietueiden järjestämiseen
+         painetussa hakemistossa.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Tietokoneen merkki ja malli (ET)
+         </li>
+         <li><strong>‡b</strong> - Ohjelmointikieli (ET)
+         </li>
+         <li><strong>‡c</strong> - Käyttöjärjestelmä (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>753 ## ‡a</strong> IBM PC <strong>‡b</strong> Pascal<strong>‡c</strong> DOS 1.1
+      </p>
+      <p><strong>753 ## ‡a</strong> Compaq <strong>‡b</strong> Basic <strong>‡c</strong> DOS 3.2
+      </p>
+      <p><strong>753 ## ‡a</strong> Apple II <strong>‡c</strong> DOS 3.3
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="754"></a>754 - LISÄKIRJAUS - TAKSONOMINEN TUNNISTUS (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Taksonominen nimi (T)
+         </li>
+         <li><strong>‡c</strong> - Taksonominen kategoria (T)
+         </li>
+         <li><strong>‡d</strong> - Yleisnimi tai vaihtoehtoinen nimi (T)
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Lähde (ET)<br>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/taxonomic.html">Taxonomic Classification Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>754 ## ‡c</strong> kingdom <strong>‡a</strong> Plantae <strong>‡c</strong> phylum <strong>‡a</strong> Spermatophyta <strong>‡c</strong> class <strong>‡a</strong> Angiospermae <strong>‡c</strong> subclass <strong>‡a</strong> Dicotyledoneae <strong>‡c</strong> order <strong>‡a</strong> Rosales <strong>‡c</strong> family <strong>‡a</strong> Rosaceae <strong>‡c</strong> genus <strong>‡a</strong> Rosa <strong>‡c</strong> species <strong>‡a</strong> setigera <strong>‡c</strong> variety <strong>‡a</strong> tomentosa <strong>‡2</strong><em> [code for Lyman David Benson's Plant Classification]</em></p>
+      <p><strong>754 ## ‡c</strong> family <strong>‡a</strong> Viperidae <strong>‡c</strong> genus <strong>‡a</strong> Sistrurus <strong>‡c</strong> species <strong>‡a</strong> miliarius. <strong>‡d</strong> Dusky pigmy rattlesnake <strong>‡d</strong> Ground rattler <strong>‡d</strong> Pigmy rattler <strong>‡d</strong> Pigmy rattlesnake <strong>‡d</strong> Rattler <strong>‡d</strong> Rattlesnake <strong>‡2</strong><em> [source of taxonomic identification]</em></p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

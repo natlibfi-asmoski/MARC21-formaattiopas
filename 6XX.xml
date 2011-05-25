@@ -133,7 +133,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -337,7 +337,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -517,7 +517,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -647,7 +647,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -768,7 +768,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -888,7 +888,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1032,7 +1032,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1235,7 +1235,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1338,7 +1338,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html"> Genre/Form Code and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1446,7 +1446,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/occupation.html"> Occupation Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1511,7 +1511,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/function.html"> Function Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1569,7 +1569,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin tai koodin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/curriculum-objective.html"> Curriculum Objective Term and Code Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1650,7 +1650,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="4" repeatable="Y">
           <name>Funktiokoodi</name>

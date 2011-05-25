@@ -113,6 +113,10 @@
           <name>Funktiokoodi</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -236,6 +240,10 @@
           <name>Funktiokoodi</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -247,7 +255,7 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>490 1# &#8225;a</strong> Julkaisu / Teknillinen korkeakoulu, arkkitehtiosasto, rakennetun ympäristön tutkimuslaitos. <strong>&#8225;n</strong> B, <strong>&#8225;x</strong> 0783-3253; <strong>&#8225;v</strong> 22<br /><strong>810 2# &#8225;a</strong> Teknillinen korkeakoulu. <strong>&#8225;b</strong> Arkkitehtiosasto. <strong>&#8225;b</strong> Rakennetun ympäristön tutkimuslaitos. <strong>&#8225;t</strong> Julkaisu. <strong>&#8225;n</strong> B ; <strong>&#8225;v</strong> 22.</text>
+          <text><strong>490 1# &#8225;a</strong> Julkaisu / Teknillinen korkeakoulu, arkkitehtiosasto, rakennetun ympäristön tutkimuslaitos. <strong>&#8225;n</strong> B, <strong>&#8225;x</strong> 0783-3253 ; <strong>&#8225;v</strong> 22<br /><strong>810 2# &#8225;a</strong> Teknillinen korkeakoulu. <strong>&#8225;b</strong> Arkkitehtiosasto. <strong>&#8225;b</strong> Rakennetun ympäristön tutkimuslaitos. <strong>&#8225;t</strong> Julkaisu. <strong>&#8225;n</strong> B ; <strong>&#8225;v</strong> 22.</text>
         </example>
         <example>
           <text><strong>490 1# &#8225;a</strong> World travel series ; <strong>&#8225;v</strong> 7<br /><strong> 810 2# &#8225;a</strong> John Bartholomew and Son. <strong>&#8225;t</strong> Bartholomew world travel series ; <strong>&#8225;v</strong> 7.</text>
@@ -353,6 +361,10 @@
           <name>Funktiokoodi</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -455,6 +467,10 @@
         <subfield code="3" repeatable="Y">
           <name>Aineisto, jota tiedot koskevat</name>
         </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>        
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -472,16 +488,16 @@
           <text><strong>830 #0 &#8225;a</strong> Tutkielmia / Jyväskylän yliopisto, opettajankoulutuslaitos.<strong>&#8225;n</strong> B ; <strong>&#8225;v</strong> 2.</text>
         </example>
         <example>
-          <text><strong>490 0# &#8225;a</strong> Research report / Department of Teacher Education, University of Helsinki, <strong>&#8225;x</strong> 0359-4203 ;<strong>&#8225;v</strong> 89 <br /><strong>830 #0 &#8225;a</strong> Tutkimuksia / Helsingin yliopiston opettajankoulutuslaitos ; <strong>&#8225;v</strong> 89.</text>
+          <text><strong>490 0# &#8225;a</strong> Research report / Department of Teacher Education, University of Helsinki, <strong>&#8225;x</strong> 0359-4203 ; <strong>&#8225;v</strong> 89 <br /><strong>830 #0 &#8225;a</strong> Tutkimuksia / Helsingin yliopiston opettajankoulutuslaitos ; <strong>&#8225;v</strong> 89.</text>
         </example>
         <example>
           <text><strong>490 1# &#8225;a</strong> Musica da camera ; <strong>&#8225;v</strong> 72<br /><strong>830 #0 &#8225;a</strong> Musica da camera (Oxford University Press) ; <strong>&#8225;v</strong> 72.</text>
         </example>
         <example>
-          <text><strong>490 1# &#8225;a</strong> Turun yliopiston julkaisuja. Sarja D, Medica-Odontologica, <strong>&#8225;x</strong> 0355-9483; <strong>&#8225;v</strong> osa 852<br /><strong>830 0# &#8225;a</strong> Turun yliopiston julkaisuja. <strong>&#8225;n</strong> Sarja D, <strong>&#8225;p</strong> Medica-Odontologica, <strong>&#8225;x</strong> 0355-9483; <strong>&#8225;v</strong> osa 852.</text>
+          <text><strong>490 1# &#8225;a</strong> Turun yliopiston julkaisuja. Sarja D, Medica-Odontologica, <strong>&#8225;x</strong> 0355-9483 ; <strong>&#8225;v</strong> osa 852<br /><strong>830 #0 &#8225;a</strong> Turun yliopiston julkaisuja. <strong>&#8225;n</strong> Sarja D, <strong>&#8225;p</strong> Medica-Odontologica, <strong>&#8225;x</strong> 0355-9483 ; <strong>&#8225;v</strong> osa 852.</text>
         </example>
         <example>
-          <text><strong>490 1# &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. Sarja A, <strong>&#8225;x</strong> 1459-4870; <strong>&#8225;v</strong> 2:2009<br /><strong>830 0# &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. <strong>&#8225;n</strong> Sarja A, <strong>&#8225;x</strong> 1459-4870; <strong>&#8225;v</strong>2:2009.</text>
+          <text><strong>490 1# &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. Sarja A, <strong>&#8225;x</strong> 1459-4870 ; <strong>&#8225;v</strong> 2:2009<br /><strong>830 #0 &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. <strong>&#8225;n</strong> Sarja A, <strong>&#8225;x</strong> 1459-4870 ; <strong>&#8225;v</strong>2:2009.</text>
         </example>
       </examples>
     </datafield>

@@ -131,9 +131,13 @@
           <name>Kohderyhmä</name>
           <description>Ks. kuvaus merkkipaikasta 22 (Kohderyhmä) kohdasta <a href="008.xml#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>.</description>
         </position>
-        <position pos="06-08">
+        <position pos="06">
+          <name>Ilmiasu</name>
+          <description>Ks. kuvaus merkkipaikasta 23 (Ilmiasu) kohdasta <a href="008.xml#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>.</description>
+        </position>
+        <position pos="07-08">
           <name>Määrittelemätön</name>
-          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+          <description>Kumpikin sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
         </position>
         <position pos="09">
           <name>Elektronisen aineiston tyyppi</name>
@@ -252,7 +256,7 @@
         </position>
         <position pos="09-10">
           <name>Määrittelemätön</name>
-          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+          <description>Kumpikin sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
         </position>
         <position pos="11">
           <name>Virallisjulkaisu</name>

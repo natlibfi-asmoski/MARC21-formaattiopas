@@ -307,7 +307,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Lähde</name>
-          <description>Osakentän &#8225;a tiedon lähde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/">MARC Code Lists for Relators, Sources, Description Conventions</a></em>.</description>
+          <description>Osakentän &#8225;a tiedon lähde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>

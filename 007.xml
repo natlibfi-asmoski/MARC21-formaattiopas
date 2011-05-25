@@ -107,18 +107,18 @@
               <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
             </value>
             <value code="f">
-              <name>"Skin"</name>
+              <name>Vuota ("Skin")</name>
               <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
             </value>
             <value code="g">
               <name>Tekstiili</name>
               <description>Sisältää kaikki luonnonmateriaaleista valmistetut ja keinokuitukankaat, maalauskangasta lukuun ottamatta.</description>
             </value>
-            <value code="j">
-              <name>Lasi</name>
-            </value>
             <value code="i">
               <name>Muovi</name>
+            </value>
+            <value code="j">
+              <name>Lasi</name>
             </value>
             <value code="l">
               <name>Vinyyli</name>
@@ -150,7 +150,7 @@
               <name>Tuntematon</name>
             </value>
             <value code="v">
-              <name>Nahka</name>
+              <name>Nahka ("Leather")</name>
             </value>
             <value code="w">
               <name>Pergamentti</name>
@@ -260,16 +260,16 @@
               <name>Nauhakasetti</name>
             </value>
             <value code="b">
-              <name>Sirukasetti "chip cartridge"</name>
+              <name>Sirukasetti ("Chip cartridge")</name>
             </value>
             <value code="c">
-              <name>Optinen levykasetti "optical disc cartridge"</name>
+              <name>Optinen levykasetti ("Computer optical disc cartridge")</name>
             </value>
 		<value code="d">
-              <name>"Computer disk", tyyppi määrittelemätön</name>
+              <name>Levyke ("Computer disc"), tyyppi määrittelemätön</name>
             </value>
             <value code="e">
-              <name>"Computer disk cartridge", tyyppi määrittelemätön</name>
+              <name>Levykekasetti ("Computer disc cartridge"), tyyppi määrittelemätön</name>
             </value>
             <value code="f">
               <name>DAT-kasetti</name>
@@ -281,10 +281,10 @@
               <name>Levyke</name>
             </value>
             <value code="k">
-              <name>"Computer card"</name>
+              <name>Reikäkortti, magneettikortti ("Computer card")</name>
             </value>
             <value code="m">
-              <name>Magneetti-optinen levy "magneto-optical disc"</name>
+              <name>Magneetti-optinen levy ("Magneto-optical disc")</name>
             </value>
             <value code="o">
               <name>Optinen levy</name>
@@ -623,7 +623,7 @@
               <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
             </value>
             <value code="f">
-              <name>"Skin"</name>
+              <name>Vuota ("Skin")</name>
               <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
             </value>
             <value code="g">
@@ -1479,7 +1479,7 @@
           <name>Aineiston erityismääre</name>
           <values>
             <value code="a">
-              <name>"Activity card"</name>
+              <name>Toimintakortti, tarinakortti</name>
             </value>
             <value code="c">
               <name>Kollaasi</name>
@@ -1531,8 +1531,8 @@
               <name>Ikoni</name>
             </value>
             <value code="r">
-              <name>"Radiograph"</name>
-              <description>Esim. röntgenkuvat.</description>
+              <name>Röntgenkuva</name>
+              <description>Myös muut säteilyä käyttävällä menetelmällä otetut lääketieteelliset kuvat, kuten CT- ja gammakuvat.</description>
             </value>
             <value code="s">
               <name>"Study print"</name>
@@ -1545,7 +1545,7 @@
             </value>
             <value code="z">
               <name>Muu</name>
-              <description> Sisältää yhdistelmät, joissa on käytetty sekä piirros- että painotekniikoita, joista mikään niistä ei ole hallitseva.</description>
+              <description> Sisältää yhdistelmät, joissa on käytetty sekä piirros- että painotekniikoita, joista mikään ei ole hallitseva.</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
@@ -1610,7 +1610,7 @@
               <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
             </value>
             <value code="f">
-              <name>"Skin"</name>
+              <name>Vuota ("Skin")</name>
               <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
             </value>
             <value code="g">
@@ -1659,7 +1659,7 @@
               <name>Tuntematon</name>
             </value>
             <value code="v">
-              <name>Nahka, "Leather"</name>
+              <name>Nahka</name>
             </value>
             <value code="w">
               <name>Pergamentti</name>
@@ -1695,7 +1695,7 @@
               <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
             </value>
             <value code="f">
-              <name>"Skin"</name>
+              <name>Vuota ("Skin")</name>
               <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
             </value>
             <value code="g">
@@ -1705,9 +1705,18 @@
             <value code="h">
               <name>Metalli</name>
             </value>
+            <value code="i">
+              <name>Muovi</name>
+            </value>
+            <value code="l">
+              <name>Vinyyli</name>
+            </value>
             <value code="m">
               <name>Sekalainen kokoelma</name>
               <description> Pohjan toissijainen materiaali vaihtelee kokoelman eri kohteissa.</description>
+            </value>
+            <value code="n">
+              <name>Veliini</name>
             </value>
             <value code="o">
               <name>Paperi</name>
@@ -1733,6 +1742,12 @@
             </value>
             <value code="u">
               <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Nahka</name>
+            </value>
+            <value code="w">
+              <name>Pergamentti</name>
             </value>
             <value code="z">
               <name>Muu</name>
@@ -1769,7 +1784,8 @@
               <description> Filmi on kahdella kelalla kasetissa ja pitää kelata takaisin toistojen välillä.</description>
             </value>
             <value code="o">
-              <name>"Filmroll"</name>
+              <name>Filmirulla</name>
+              <description> Filmi ei ole kelalla, kasetilla tms.</description>
             </value>
             <value code="r">
               <name>Filmikela</name>
@@ -2290,13 +2306,13 @@
           </values>
         </position>
         <position pos="16">
-          <name>Elokuvan valmiusaste</name>
+          <name>Elokuvan täydellisyysaste</name>
           <values>
             <value code="c">
-              <name>Valmis</name>
+              <name>Täydellinen</name>
             </value>
             <value code="i">
-              <name>Kesken</name>
+              <name>Epätäydellinen</name>
             </value>
             <value code="n">
               <name>Soveltumaton</name>

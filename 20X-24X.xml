@@ -42,7 +42,7 @@
         </subfield>
         <subfield code="2" repeatable="Y">
           <name>Muun lyhennetyn nimekkeen tyyppi</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/abbreviated-title.html">Abbreviated Title Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -511,7 +511,7 @@
           <text><strong>245 00 &#8225;a</strong> Lappi &#8211; napapiiriltä Jäämerelle = <strong>&#8225;b</strong> Lappland &#8211; från polcirceln till Ishavet = Lapland &#8211; from the Polar Circle to the Arctic Ocean = Lappland &#8211; vom Polarkreis bis zum Eismeer / <strong>&#8225;c</strong> [kuvaus ja kuvallinen suunnittelu:] Matti A. Pitkänen ; teksti: Altti Rankka ; [svensk översättning: Monica Parland] ; [English translation: Richard Hayhurst] ; [deutsche Übersetzung: Michael Knaup] ; [piirrokset: Jukka Lemmetty].<br/><strong>246 31 &#8225;a</strong> Lappland &#8211; från polcirceln till Ishavet.<br/><strong>246 31 &#8225;a</strong> Lapland &#8211; from the Polar Circle to the Arctic Ocean.<br/><strong>246 31 &#8225;a</strong> Lappland &#8211; vom Polarkreis bis zum Eismeer.</text>
         </example>
         <example>
-          <text><strong>245 00 &#8225;a</strong> Sininen lamppu : <strong>&#8225;b</strong> näkökulmia lasten- ja nuortenkirjallisuuteen ja sen tutkimiseen = The blue light: aspects of children&#8217;s literature and its study / <strong>&#8225;c</strong> [toimittaja Tuula Korolainen].<br/><strong>246 31 &#8225;a</strong>The blue light: aspects of children&#8217;s literature and its study.</text>
+          <text><strong>245 00 &#8225;a</strong> Sininen lamppu : <strong>&#8225;b</strong> näkökulmia lasten- ja nuortenkirjallisuuteen ja sen tutkimiseen = The blue light: aspects of children&#8217;s literature and its study / <strong>&#8225;c</strong> [toimittaja Tuula Korolainen].<br/><strong>246 31 &#8225;a</strong>Blue light: aspects of children&#8217;s literature and its study.</text>
         </example>
         <example>
           <text><strong>245 10 &#8225;a</strong> Kuinka soikaan sininen <strong>&#8225;h</strong> [Moniviestin] : <strong>&#8225;b</strong> taiteen monet kasvot alkuopetuksessa / <strong>&#8225;c</strong> Eve Alho, Hilkka Hautsalo, Irene Kangasniemi ; kuvitus ja valokuvat: Irene Kangasniemi ... [et al.].</text>
@@ -559,13 +559,13 @@
           <text><strong>245 00 &#8225;a</strong> Suuri toivelaulukirja. <strong>&#8225;n</strong> 8 <strong>&#8225;h</strong> [Nuottijulkaisu] / <strong>&#8225;c</strong> toimittanut Aapeli Vuoristo ; [taitto ja kuvitus Pirkko Huttunen].</text>
         </example>
         <example>
-          <text><strong>245 00 &#8225;a</strong> Miten muut uskovat : <strong>&#8225;b</strong> [lukion 1. uskontokurssi] /<strong>&#8225;c</strong> tekijät: Tapio Ahokallio...[et al.]. Raamattu eilen ja tänään : lukion uskontokurssi U2 "Ihminen ja Jumala Raamatussa" : [lukion 2. uskontokurssi] / Anneli ja Lars Aejmelaeus.</text>
+          <text><strong>245 00 &#8225;a</strong> Miten muut uskovat : <strong>&#8225;b</strong> [lukion 1. uskontokurssi] /<strong>&#8225;c</strong> tekijät: Tapio Ahokallio ... [et al.]. Raamattu eilen ja tänään : lukion uskontokurssi U2 "Ihminen ja Jumala Raamatussa" : [lukion 2. uskontokurssi] / Anneli ja Lars Aejmelaeus.</text>
         </example>
         <example>
           <text><strong>245 00 &#8225;a</strong> Oppiva ihminen. <strong>&#8225;n</strong> Osa 1, <strong>&#8225;p</strong> Ilmaisun iloa <strong>&#8225;h</strong> [Videotallenne] /<strong>&#8225;c</strong> toimittaja: Eila Lassus.</text>
         </example>
         <example>
-          <text><strong>245 00 &#8225;a</strong> Mahdollinen maailma <strong>&#8225;h</strong> [Videotallenne] : <strong>&#8225;b</strong> 8 elokuvaa tulevaisuudesta. <strong>&#8225;n</strong> Osa 4, <strong>&#8225;p</strong> Viimeinen vaihde. /<strong>&#8225;c</strong> käsikirjoitus Atro Lahtela ja Jouko Salokorpi.</text>
+          <text><strong>245 00 &#8225;a</strong> Mahdollinen maailma <strong>&#8225;h</strong> [Videotallenne] : <strong>&#8225;b</strong> 8 elokuvaa tulevaisuudesta. <strong>&#8225;n</strong> Osa 4, <strong>&#8225;p</strong> Viimeinen vaihde /<strong>&#8225;c</strong> käsikirjoitus Atro Lahtela ja Jouko Salokorpi.</text>
         </example>
         <example>
           <text><strong>245 10 &#8225;a</strong> Complete works. <strong>&#8225;n</strong> Series VIII, <strong>&#8225;p</strong> Works for solo voice. Volume 4, Solo songs with piano without opus number, duets and arrangements for voice and piano. <strong>&#8225;h</strong> [Nuottijulkaisu] = <strong>&#8225;b</strong> Sämtliche Werke. <strong>&#8225;n</strong> Serie VIII, <strong>&#8225;p</strong> Werke fu?r Singstimme. Band 4, Solo-Lieder mit Klavier ohne Opuszahl, Duette und Bearbeitungen fu?r Singstimme und Klavier / <strong>&#8225;c</strong> Jean Sibelius ; published by Helsinki University Library and The Sibelius Society of Finland = herausgegeben von der Universitätsbibliothek Helsinki und der Sibelius-Gesellschaft Finnland ; edited by = herausgegeben von Jukka Tiilikainen.</text>
@@ -731,6 +731,9 @@
         </example>
         <example>
           <text><strong>245 10 &#8225;a</strong> Huhtikuun tytöt / <strong>&#8225;c</strong> Reijo Mäki.<br /><strong>246 08 &#8225;a</strong> Hutikuun tytöt<br /><em>Virheellinen selkänimeke.</em></text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Koneiden turvallisuus. <strong>&#8225;n</strong> Osa 1, <strong>&#8225;p</strong> Suunnittelun perusteet = <strong>&#8225;b</strong> Safety of machinery. <strong>&#8225;n</strong> Part 1,  <strong>&#8225;p</strong> General principles for design.<br /><strong>246 31 &#8225;a</strong> Safety of machinery. <strong>&#8225;n</strong> Part 1, <strong>&#8225;p</strong> General principles for design<br /></text>
         </example>
         <example>
           <text><strong>245 10 &#8225;a</strong> Julkaisu / <strong>&#8225;c</strong> Oikeusministeriö.<br /><strong>246 31 &#8225;a</strong> Publikation / Justitieministeriet<br /><strong>246 13 &#8225;a</strong> Oikeusministeriön julkaisuja<br /><strong>246 15 &#8225;a</strong> Vuoigatvuohtaministeriija prentosat</text>

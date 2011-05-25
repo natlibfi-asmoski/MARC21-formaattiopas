@@ -1,0 +1,725 @@
+<html>
+
+<a name="alku"></a>
+
+<head>
+<meta http-equiv="Content-Language" content="fi">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MARC 21: Bibliografiset tiedot</title>
+</head>
+
+<body>
+
+<center>
+<table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+	<tr>
+		<td><p>
+		<p align="center">Kansalliskirjasto</p>
+		<h1 align="center">MARC 21 -formaatti:<br>
+		BIBLIOGRAFISET TIEDOT</h1>
+		</p></td>
+	</tr>
+</table>
+</center>
+
+<p align="center">
+<i><span style="background-color: #FFFF00">
+Päivitetty viimeksi 3.3.2011.<br>
+Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+
+<h2 align="left">Tietokanta- tai järjestelmäkohtaisia omia kenttiä</h2>
+<p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+<hr>
+
+<p>Tässä osiossa kuvataan kenttiä, joita on otettu käyttöön Voyager-järjestelmässä sekä yleisten kirjastojen tietokannoissa.  Kentät tai osakentät sisältävät numeron 9 eli ovat MARC 21:ssa vapaasti käytettävissä. Kentät eivät ole varsinaisessa suomenkielisessä MARC 21 -formaatissa.  
+</p>
+<ul>
+	<li><a href="#019">019 - FINUC-TUNNUS</a> (ET)</li> 
+	<li><a href="#035">035 &#8225;9 - JÄRJESTELMÄN TUOTTAMA KONTROLLINUMERO - VOYAGER-OSAKENTTÄ</a></li>
+      	<li><a href="#090">090-099 - KIRJASTOKOHTAISET LUOKITUSKENTÄT</a> (T)</li>
+        <li><a href="#130">130 2. INDIKAATTORI 9 - YHTENÄISTETTY NIMEKE - VOYAGER-INDIKAATTORI</a></li>
+        <li><a href="#579">579 - TILASTOINTIMERKINTÄ - VOYAGER-KENTTÄ</a> (ET)</li>
+	<li><a href="#590">590 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#591">591 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#592">592 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#593">593 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#594">594 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#595">595 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#596">596 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#597">597 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#598">598 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#599">599 - KIRJASTOKOHTAINEN HUOMAUTUS</a></li>
+        <li><a href="#600">600/610/611 &#8225;9 - ASIASANAKENTTÄ - VOYAGER-OSAKENTTÄ</a></li>
+        <li><a href="#653">653 &#8225;9 - KONTROLLOIMATON HAKUTERMI - VOYAGER-OSAKENTTÄ</a></li>
+        <li><a href="#700">700/710/711 &#8225;9 - LISÄKIRJAUSKENTTÄ - VOYAGER-OSAKENTTÄ</a></li>
+        <li><a href="#790">790 - LINKKIKENTTÄ - VOYAGER-KENTTÄ</a> (ET)</li>
+        <li><a href="#800">800/810/811 &#8225;9 - SARJAKENTTÄ - VOYAGER-OSAKENTTÄ</a></li>
+        <li><a href="#901">901 - KIRJASTOKOHTAINEN KOODI</a></li>
+        <li><a href="#902">902 - PAINOSKOODI</a> (T)</li>
+        <li><a href="#903">903 - KIRJASTOKOHTAINEN KOODI</a></li>
+        <li><a href="#904">904 - PIENPAINATEKOODI</a> (T)</li>
+        <li><a href="#905">905 - JATKUVAN JULKAISUN TYYPPIKOODI - VOYAGER-KENTTÄ</a> (T)</li>
+        <li><a href="#906">906 - JATKUVAN JULKAISUN ALUEELLINEN JA KIELELLINEN KATTAVUUSKOODI - VOYAGER-KENTTÄ</a> (T)</li>
+        <li><a href="#907">907 - YLE-KOODI</a> (T)</li>
+        <li><a href="#908">908 - KANSALLISUUSKOODI</a> (T)</li>
+        <li><a href="#930">930 - KOMITEAN ASETTAMISPÄIVÄ - VOYAGER-KENTTÄ</a> (T)</li>
+        <li><a href="#931">931 - KOMITEAN MIETINNÖN LUOVUTTAMISPÄIVÄ - VOYAGER-KENTTÄ</a> (T)</li>  
+        <li><a href="#932">932 - KOMITEAN PUHEENJOHTAJA - VOYAGER-KENTTÄ</a> (T)</li>
+        <li><a href="#933">933 - KOMITEAN SIHTEERI - VOYAGER-KENTTÄ</a> (T)</li>
+        <li><a href="#935">935 - KIRJASTOKOHTAINEN KOODI</a></li>
+        <li><a href="#971">971 - KAUPALLISET TIEDOT</a> (T)</li>
+        <li><a href="#972">972 - BTJ-KOODI</a> (T)</li>
+</ul>
+<hr>
+<h3><a name="019">019 - FINUC-TUNNUS (ET)</a></h3>
+<p>Suomen kirjastoihin hankittujen ulkomaisten kausijulkaisujen yhteisluetteloa Finuc-S:ää varten aikanaan luotu julkaisun tunnusnumero. Tunnus alkaa pienillä fs-kirjaimilla, joita seuraa kuusi numeroa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Finuc-tunnus (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="035">035 &#8225;9 - JÄRJESTELMÄN TUOTTAMA KONTROLLINUMERO - VOYAGER-OSAKENTTÄ</a></h3>
+<p>Syntynyt Voyager-tietokantojen tietueisiin konversioissa edellisistä kirjastojärjestelmistä.</p>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;9</strong> - Voyager-osakenttä (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="090"></a>090-099 - KIRJASTOKOHTAISET LUOKITUSKENTÄT (T)</h3>
+<p>Käytettävissä tarvittaessa kirjasto- tai tietokantakohtaisesti.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Luokituskoodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="130"></a>130 2. INDIKAATTORI 9 - YHTENÄISTETTY NIMEKE - VOYAGER-INDIKAATTORI</h3>
+<p>Käytössä Fennica-tietokannassa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Toinen - Kokoelma
+      <ul>
+         <li><strong>9</strong> - Kokoelma
+         </li>
+      </ul>
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="579"></a>579 - TILASTOINTIMERKINTÄ - VOYAGER-KENTTÄ (ET)</h3>
+<p>Käytössä LINDA-yhteisluetteloinnissa.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Tilastointimerkintä (ET)
+   </li>
+   <li><strong>&#8225;b</strong> - Tietokannan tunnus (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="590">590 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="591">591 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<h3>Voyager-tietokannoissa: JULKAISULUETTELO (ET)</h3>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Vastuualuekoodi/laitostunnus (T)
+   </li>
+   <li><strong>&#8225;b</strong> - Julkaisun tekijä(t) (T)
+   </li>
+   <li><strong>&#8225;c</strong> - Projektitunnus/-tunnukset (T)
+   </li>
+   <li><strong>&#8225;d</strong> - AMKOTA- tai KOTA-luokitus (T)
+   </li>
+   <li><strong>&#8225;e</strong> - Impact-arvo (T)
+   </li>
+   <li><strong>&#8225;f</strong> - Koulutusala (T)
+   </li>
+   <li><strong>&#8225;g</strong> - Henkilökuntakoodi (T)
+   </li>
+   <li><strong>&#8225;h</strong> - Yleinen huomautus (T)
+   </li>
+   <li><strong>&#8225;i</strong> - Tieteenalaluokitus (T)
+   </li>
+   <li><strong>&#8225;j</strong> - Julkaisuluetteloviite (T)
+   </li>
+   <li><strong>&#8225;k</strong> - Reference of publication list (T)
+   </li>
+   <li><strong>&#8225;m</strong> - Open access -koodi (T)
+   </li>
+</ul>
+<hr>
+<h3><a name="592">592 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="593">593 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="594">594 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="595">595 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<h3>Voyager-tietokannoissa: LISÄPAINOSTIEDOT (ET)</h3>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Lisäpainostiedot (T)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="596">596 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="597">597 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="598">598 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="599">599 - KIRJASTOKOHTAINEN HUOMAUTUS</h3>
+<p>Käytetään eri tietokannoissa eri tarkoituksiin.</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="600">600/610/611 &#8225;9 - ASIASANAKENTTÄ - VOYAGER-OSAKENTTÄ</a></h3>
+<p>Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</p>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;9</strong> - Artikkeli (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="653">653 &#8225;9 - KONTROLLOIMATON HAKUTERMI - VOYAGER-OSAKENTTÄ</a></h3>
+<p>Kirjaston omien asiasanojen koodi eräissä Voyager-tietokannoissa.</p>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;9</strong> - Sanastokoodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="700">700/710/711 &#8225;9 - LISÄKIRJAUSKENTTÄ - VOYAGER-OSAKENTTÄ</a></h3>
+<p>Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</p>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;9</strong> - Artikkeli (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="790"></a>790 - LINKKIKENTTÄ - VOYAGER-KENTTÄ (ET)</h3>
+<p>Käytössä eräiden Voyager-tietokantojen osakohdelinkityksessä.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Linkkitieto (ET)
+   </li>
+   <li><strong>&#8225;x</strong> - Järjestys (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="800">800/810/811 &#8225;9 - SARJAKENTTÄ - VOYAGER-OSAKENTTÄ</a></h3>
+<p>Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</p>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;9</strong> - Artikkeli (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="901"></a>901 - KIRJASTOKOHTAINEN KOODI</h3>
+<p>Käytössä ainakin Fennica- ja Selma-tietokannoissa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="902"></a>902 - PAINOSKOODI (T)</h3>
+<p>Käytössä ainakin Fennica-tietokannassa MARC 21 -formaatista puuttuvan painoskoodin ilmaisemiseen.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="903"></a>903 - KIRJASTOKOHTAINEN KOODI</h3>
+<p>Käytössä ainakin Fennica- ja Selma-tietokannoissa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="904"></a>904 - PIENPAINATEKOODI (T)</h3>
+<p>Käytössä ainakin Fennica-tietokannassa ja Abilita-kirjastojärjestelmässä MARC 21 -formaatista puuttuvien pienpainatekoodien ilmaisemiseen.</p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="905"></a>905 - JATKUVAN JULKAISUN TYYPPIKOODI - VOYAGER-KENTTÄ (T)</h3>
+<p>Käytetty Fennica-tietokannassa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="906"></a>906 - JATKUVAN JULKAISUN ALUEELLINEN JA KIELELLINEN KATTAVUUSKOODI - VOYAGER-KENTTÄ (T)</h3>
+<p>Käytetty Fennica-tietokannassa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="907"></a>907 - YLE-KOODI (T)</h3>
+<p>Käytössä eräissä yleisten kirjastojen tietokannoissa Yleisradiosta hankitun aineiston ilmaisemiseen. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="908"></a>908 - KANSALLISUUSKOODI (T)</h3>
+<p>Käytössä eräissä yleisten kirjastojen tietokannoissa ilmoittamaan julkaisun tekijän kansallisuutta. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="930"></a>930 - KOMITEAN ASETTAMISPÄIVÄ - VOYAGER-KENTTÄ (T)</h3>
+<p>Käytössä Selma-tietokannassa. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Komitean asettamispäivä (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="931"></a>931 - KOMITEANMIETINNÖN LUOVUTTAMISPÄIVÄ - VOYAGER-KENTTÄ (T)</h3>
+<p>Käytössä Selma-tietokannassa. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Komiteanmietinnön luovuttamispäivä (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="932"></a>932 - KOMITEAN PUHEENJOHTAJA - VOYAGER-KENTTÄ (T)</h3>
+<p>Käytössä Selma-tietokannassa. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Komitean puheenjohtaja: sukunimi, etunimi (ET)
+   </li>
+   <li><strong>&#8225;c</strong> - Muut lisäykset (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="933"></a>933 - KOMITEAN SIHTEERI - VOYAGER-KENTTÄ (T)</h3>
+<p>Käytössä Selma-tietokannassa. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Komitean sihteeri: sukunimi, etunimi (ET)
+   </li>
+   <li><strong>&#8225;c</strong> - Muut lisäykset (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="935"></a>935 - KIRJASTOKOHTAINEN KOODI</h3>
+<p>Eri tietokannoissa käytetään eri tarkoituksiin. </p>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="971"></a>971 - KAUPALLISET TIEDOT (T)</h3>
+<p>Kaupallisten välittäjien, kuten Kirjavälityksen ja BTJ:n, tietoja julkaisusta. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Tiedoston tuottaja (ET)
+   </li>
+   <li><strong>&#8225;b</strong> - Tiedoston tunnus (ET)
+   </li>
+   <li><strong>&#8225;c</strong> - Viimeinen tilauspäivä (ET)
+   </li>
+   <li><strong>&#8225;d</strong> - Tiedoston (listan) nimi ja numero (ET)
+   </li>
+   <li><strong>&#8225;e</strong> - Hinta ilman ALVia (ET)
+   </li>
+   <li><strong>&#8225;f</strong> - ALV-prosentti (ET)
+   </li>
+   <li><strong>&#8225;g</strong> - Myyntialennus (ET)
+   </li>
+   <li><strong>&#8225;h</strong> - Erikoishinta (ET)
+   </li> 
+   <li><strong>&#8225;i</strong> - Sidontakoodi (ET)
+   </li>
+   <li><strong>&#8225;k</strong> - Käyttöoikeus (videot) (ET)
+   </li>
+   <li><strong>&#8225;l</strong> - Tekstitys (videot) (ET)
+   </li>
+   <li><strong>&#8225;m</strong> - Koodi (ET)
+   </li>
+   <li><strong>&#8225;p</strong> - Sidonnan hinta (ET)
+   </li>
+   <li><strong>&#8225;s</strong> - Järjestyskoodi listalla (ET)
+   </li>
+   <li><strong>&#8225;t</strong> - Tuoteryhmä (ET)
+   </li>
+   <li><strong>&#8225;u</strong> - Lisätiedot, URL (ET)
+   </li>
+   <li><strong>&#8225;x</strong> - Lisätiedot, tyyppi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+<hr>
+<h3><a name="972"></a>972 - BTJ-KOODI (T)</h3>
+<p>Käytössä joissain yleisten kirjastojen tietokannoissa. </p>
+<h4>Indikaattorit</h4>
+<ul>
+   <li>Ensimmäinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+   <li>Toinen - Määrittelemätön
+      <ul>
+         <li><strong>#</strong> - Määrittelemätön
+         </li>
+      </ul>
+   </li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+   <li><strong>&#8225;a</strong> - Koodi (ET)
+   </li>
+</ul>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+
+
+
+<hr>
+<p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | 
+<a href="../index.htm">MARC 21 -etusivulle</a></p>
+
+<hr>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

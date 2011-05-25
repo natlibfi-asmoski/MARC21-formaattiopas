@@ -61,7 +61,8 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>"Relationship information"</name>
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="j" repeatable="Y">
           <name>Nimen määrite</name>
@@ -135,7 +136,7 @@
           <text><strong>245 00 &#8225;a</strong> Tavallinen luokka <strong>&#8225;h</strong> [Videotallenne] / <strong>&#8225;c</strong> ohjaus: Raili Rusto ; käsikirjoitus: Pirkko Jaakkola ja Tiina Harpf ; musiikki: Esa Helasvuo ; kuvaus: Veikko Mård.<br /><strong>700 1# &#8225;a</strong> Jaakkola, Pirkko, <strong>&#8225;e</strong> käsik.<br /><strong>700 1# &#8225;a</strong> Harpf, Tiina, <strong>&#8225;e</strong> käsik. <br /><strong>700 1# &#8225;a</strong> Helasvuo, Esa, <strong>&#8225;e</strong> säv. <br /><strong>700 1# &#8225;a</strong> Mård, Veikko, <strong>&#8225;e</strong> kuv.</text>
         </example>
         <example>
-          <text><strong>100 1# &#8225;a</strong> Lindgrén, Maija.<br /><strong>245 10 &#8225;a</strong> Varo vaaraa koulutiellä / <strong>&#8225;d</strong> Maija Lindgrén, Annami Poivaara ; kuvitus: Teutori.<br /><strong>700 0# &#8225;a</strong> Poivaara, Annami.<br /><strong>700 0# &#8225;a</strong> Teutori.</text>
+          <text><strong>100 1# &#8225;a</strong> Lindgrén, Maija.<br /><strong>245 10 &#8225;a</strong> Varo vaaraa koulutiellä / <strong>&#8225;c</strong> Maija Lindgrén, Annami Poivaara ; kuvitus: Teutori.<br /><strong>700 1# &#8225;a</strong> Poivaara, Annami.<br /><strong>700 0# &#8225;a</strong> Teutori.</text>
         </example>
         <example>
           <text><strong>100 1# &#8225;a</strong> Bergholm, Axel.<br /><strong>245 10 &#8225;a</strong> Historiallinen lukukirja : <strong>&#8225;b</strong> vanha- ja keskiaika / <strong>&#8225;c</strong> suom. Aatto Suppanen.<br /><strong>700 1# &#8225;a</strong> Suppanen, Aatto, <strong>&#8225;d</strong> 1855-1898.</text>
@@ -209,7 +210,8 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>"Relationship information"</name>
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Muotoa kuvaava kokoava nimeke</name>
@@ -345,7 +347,8 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>"Relationship information"</name>
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="j" repeatable="Y">
           <name>Funktiotermi</name>
@@ -526,7 +529,8 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>"Relationship information"</name>
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Muotoa kuvaava kokoava nimeke</name>
@@ -701,7 +705,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -777,7 +781,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relasour.html"> MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -906,7 +910,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Lähde</name>
-          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/taxonomic.html">Taxonomic Classification Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>

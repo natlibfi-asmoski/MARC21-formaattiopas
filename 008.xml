@@ -311,13 +311,21 @@
               <name>Pistekirjoitus</name>
               <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
             </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
             <value code="r">
               <name>Tavanomainen painoj‰ljenne</name>
               <description> Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
             </value>
             <value code="s">
               <name>Elektroninen</name>
-              <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+              <description> Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
@@ -656,10 +664,28 @@
             </value>
           </values>
         </position>
-        <position pos="23-25">
+<position pos="23">
+          <name>Ilmiasu</name>
+          <equals tag="006" positions="06"/>
+          <values>
+            <value code="#">
+              <name>Tuntematon tai ei eritelty</name>
+            </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen tallenne</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="24-25">
           <name>M‰‰rittelem‰tˆn</name>
           <equals tag="006" positions="06-08"/>
-          <description>Jokainen sis‰lt‰‰ tyhj‰merkin (#) tai t‰yttˆmerkin (|)</description>
+          <description>Kumpikin sis‰lt‰‰ tyhj‰merkin (#) tai t‰yttˆmerkin (|)</description>
         </position>
         <position pos="26">
           <name>Elektronisen aineiston tyyppi</name>
@@ -935,6 +961,12 @@
             <value code="f">
               <name>Pistekirjoitus</name>
             </value>
+	    <value code="o">
+              <name>Verkkoaineisto</name>
+            </value> 
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+            </value>
             <value code="s">
               <name>Elektroninen</name>
             </value>
@@ -969,13 +1001,21 @@
               <name>Pistekirjoitus</name>
               <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
             </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
             <value code="r">
               <name>Tavanomainen painoj‰ljenne</name>
               <description> Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
             </value>
             <value code="s">
               <name>Elektroninen</name>
-              <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+              <description>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
@@ -1667,13 +1707,21 @@
               <name>Pistekirjoitus</name>
               <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
             </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
             <value code="r">
               <name>Tavanomainen painoj‰ljenne</name>
               <description> Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
             </value>
             <value code="s">
               <name>Elektroninen</name>
-              <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+              <description>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
@@ -1759,7 +1807,7 @@
           <description>Musiikinlajit perustuvat Library of Congressin asiasanoihin. Jos useampi kuin yksi koodi olisi sopiva, merkkipaikoissa 008/18-19 k‰ytet‰‰n koodia <em>mu</em> (Useita lajeja) ja kaikki sopivat koodit annetaan kent‰ss‰ <a href="01X-04X.xml#047">047</a> (Musiikinlajikoodi). Koodi <em>mu</em> voi myˆs osoittaa ett‰ kentt‰ 047 sis‰lt‰‰ muita kuin MARC-musiikinlajikoodeja.</description>
           <values>
             <value code="an">
-              <name>Kansallislaulut</name>
+              <name>Anthemit</name>
             </value>
             <value code="bd">
               <name>Balladit</name>
@@ -1777,10 +1825,10 @@
               <name>Chaconnet</name>
             </value>
             <value code="cb">
-              <name>Psalmilaulut, muut uskonnot</name>
+              <name>Muiden uskontojen rituaalilaulu</name>
             </value>
             <value code="cc">
-              <name>Psalmilaulut, kristilliset</name>
+              <name>Kristillinen kirkkolaulu</name>
             </value>
             <value code="cg">
               <name>Concerto grossot</name>
@@ -1804,7 +1852,7 @@
               <name>Carolit</name>
             </value>
             <value code="cs">
-              <name>"Sattumamusiikki"</name>
+              <name>Sattumamusiikki</name>
             </value>
             <value code="ct">
               <name>Kantaatit</name>
@@ -1817,7 +1865,7 @@
             </value>
             <value code="df">
               <name>Tanssimusiikki</name>
-              <description> Huom, monille tansseille on omat koodit.</description>
+              <description> Huom! Monille tansseille on omat koodit.</description>
             </value>
             <value code="dv">
               <name>Divertimentot, serenadit, kassaatiot, notturnot</name>
@@ -1928,7 +1976,7 @@
               <name>Requiemit</name>
             </value>
             <value code="sd">
-              <name>Kontratanssit</name>
+              <name>Kontratanssit ja country-dancet</name>
             </value>
             <value code="sg">
               <name>Laulut</name>
@@ -1961,7 +2009,7 @@
               <name>Tuntematon</name>
             </value>
             <value code="vi">
-              <name>"Villancicos"</name>
+              <name>Villancicot</name>
             </value>
             <value code="vr">
               <name>Muunnelmat</name>
@@ -1970,7 +2018,7 @@
               <name>Valssit</name>
             </value>
             <value code="za">
-              <name>Zarzuelas</name>
+              <name>Zarzuelat</name>
             </value>
             <value code="zz">
               <name>Muut</name>
@@ -1994,22 +2042,23 @@
               <name>Pianopartituuri</name>
             </value>
             <value code="d">
-              <name>Kuoropartituuri</name>
+              <name>Partituuri, jossa vain soololaulu‰‰net "Voice score"</name>
             </value>
             <value code="e">
               <name>Partituurin tiivistelm‰ tai johto‰‰ni</name>
+              <description>K‰yt‰ koodeja <strong>i</strong> ja <strong>j</strong>, jos erottelun voi tehd‰.</description>
             </value>
             <value code="g">
               <name>Partiselli</name>
             </value>
             <value code="h">
-              <name>"Chorus score"</name>
+              <name>Kuoropartituuri</name>
             </value>
             <value code="i">
-              <name>"Condensed score"</name>
+              <name>Partituurin tiivistelm‰</name>
             </value>
             <value code="j">
-              <name>"Performer-conductor part"</name>
+              <name>Johto‰‰ni</name>
             </value>
             <value code="m">
               <name>Useita tyyppej‰</name>
@@ -2121,13 +2170,21 @@
               <name>Pistekirjoitus</name>
               <description>Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
             </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
             <value code="r">
               <name>Tavanomainen painoj‰ljenne</name>
-              <description>Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
+              <description> Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
             </value>
             <value code="s">
               <name>Elektroninen</name>
-              <description>Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+              <description>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
@@ -2336,13 +2393,21 @@
               <name>Pistekirjoitus</name>
               <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
             </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
             <value code="r">
               <name>Tavanomainen painoj‰ljenne</name>
               <description> Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
             </value>
             <value code="s">
               <name>Elektroninen</name>
-              <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+              <description>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
@@ -2505,13 +2570,21 @@
               <name>Pistekirjoitus</name>
               <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).</description>
             </value>
+            <value code="o">
+              <name>Verkkoaineisto</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
+            <value code="q">
+              <name>Paikallisk‰yttˆinen elektroninen tallenne</name>
+              <description> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan k‰ytt‰‰ koodia <strong>s</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+            </value>
             <value code="r">
               <name>Tavanomainen painoj‰ljenne</name>
               <description> Silmin luettavaa painettua teksti‰, esim. valokopio.</description>
             </value>
             <value code="s">
               <name>Elektroninen</name>
-              <description> Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
+              <description>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehd‰‰n kentt‰ <a href="007.xml#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).</description>
             </value>
             <value code="|">
               <name>Ei koodattu</name>
