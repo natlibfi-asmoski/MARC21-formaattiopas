@@ -841,6 +841,10 @@
         <subfield code="b" repeatable="N">
           <name>Kappalenumero</name>
         </subfield>
+<subfield code="q" repeatable="N">
+<name>Luokittava organisaatio</name>
+<description>Koodi otetaan listalta: <em> <a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em>.</description>
+</subfield>
         <subfield code="2" repeatable="N">
           <name>Luokituksen lähde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
@@ -867,6 +871,12 @@
         <example>
           <text><strong>084 ## &#8225;a</strong> KB112.554 <strong>&#8225;b</strong> U62 1980 <strong>&#8225;2</strong> laclaw</text>
         </example>
+<example>
+<text><strong>084 ## &#8225;a</strong> 330 <strong>&#8225;a</strong> 380 <strong>&#8225;a</strong> 650 <strong>&#8225;a</strong> 670 <strong>&#8225;q</strong> DE-101 <strong>&#8225;2</strong> sdnb</text>
+</example>
+<example>
+<text><strong>084 ## &#8225;a</strong> 125 <strong>&#8225;a</strong> 631 <strong>&#8225;q</strong> DE-600 <strong>&#8225;2</strong> zdbs</text>
+</example>
         <example>
           <text><strong>084 ## &#8225;a</strong> 8501(043) <strong>&#8225;2</strong> rueskl</text>
         </example>
