@@ -679,6 +679,9 @@
             <value code="1">
               <description>Lyhennetty laitos</description>
             </value>
+<value code="7">
+<description>Muu painos m‰‰ritelty osakent‰ss‰ &#8225;2</description>
+</value>
           </values>
         </indicator>
         <indicator num="2">
@@ -733,6 +736,9 @@
         <example>
           <text><strong>082 00 &#8225;a</strong> 343.7306/8 <strong>&#8225;a</strong> 347.30368 <strong>&#8225;2</strong> 20</text>
         </example>
+<example>
+<text><strong>082 74 &#8225;a</strong> 839.82 <strong>&#8225;2</strong> 5/nor <strong>&#8225;q</strong> NO-OsNB</text>
+</example>
       </examples>
     </datafield>
     <datafield tag="083" repeatable="Y">
@@ -748,6 +754,9 @@
             <value code="1">
               <description>Lyhennetty laitos</description>
             </value>
+<value code="7">
+<description>Muu painos m‰‰ritelty osakent‰ss‰ &#8225;2</description>
+</value>
           </values>
         </indicator>
         <indicator num="2">
