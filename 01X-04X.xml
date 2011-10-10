@@ -1690,13 +1690,23 @@
           <description>Muiden liiteaineistojen kuin tiivistelmien (osakenttä &#8225;b) tai librettojen (osakenttä &#8225;e) kieli.</description>
         </subfield>
         <subfield code="h" repeatable="Y">
-          <name>Alkuperäinen ja/tai välikäännösten kieli</name>
-          <description>Välikäännöksen tai -käännösten koodi(t) edeltävät alkuperäisen kohteen kieltä.</description>
+          <name>Alkuperäinen kieli</name>
         </subfield>
         <subfield code="j" repeatable="Y">
           <name>Tekstityksen kieli</name>
           <description>Filmin tekstityksen tai kuulovammaisille tarkoitetun selosteen kieli.</description>
         </subfield>
+<subfield code="k" repeatable="Y">
+<name>Välikäännösten kieli</name>
+</subfield>
+<subfield code="m" repeatable="Y">
+<name>Liiteaineiston alkuperäinen kieli</name>
+<description>Muiden liiteaineistojen kuin librettojen (osakenttä &#8225;n) alkuperäinen kieli. Osakenttä seuraa siihen liittyvää osakenttää &#8225;b tai &#8225;g</description>
+</subfield>
+<subfield code="n" repeatable="Y">
+<name>Libreton alkuperäinen kieli</name>
+<description>Teoksen painetun version alkuperäinen kieli.</description>
+</subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin lähde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></em>.</description>
@@ -1721,7 +1731,7 @@
           <text><strong>041 0# &#8225;a</strong> eng <strong>&#8225;a</strong> fre <strong>&#8225;a</strong> ger <strong>&#8225;a</strong> hun <strong>&#8225;a</strong> por <strong>&#8225;a</strong> rus</text>
         </example>
         <example>
-          <text><strong>041 1# &#8225;a</strong> eng <strong>&#8225;h</strong> ger <strong>&#8225;h</strong> swe<br /><em>Englanninkielinen käännös pohjautuu saksankieliseen käännökseen; alkuperäinen kohde on ruotsinkielinen.</em></text>
+          <text><strong>041 1# &#8225;a</strong> eng <strong>&#8225;k</strong> ger <strong>&#8225;h</strong> swe<br /><em>Englanninkielinen käännös pohjautuu saksankieliseen käännökseen; alkuperäinen kohde on ruotsinkielinen.</em></text>
         </example>
         <example>
           <text><strong>041 1# &#8225;a</strong> eng <strong>&#8225;h</strong> und</text>
@@ -1747,6 +1757,15 @@
         <example>
           <text><strong>041 1# &#8225;a</strong> fre <strong>&#8225;e</strong> fre <strong>&#8225;e</strong> ger <strong>&#8225;h</strong> fre</text>
         </example>
+<example>
+<text><strong>041 1# &#8225;a</strong> eng <strong>&#8225;k</strong> chi <strong>&#8225;h</strong> san</text>
+</example>
+<example>
+<text><strong>041 1# &#8225;d</strong> fre <strong>&#8225;h</strong> ita <strong>&#8225;e</strong> eng <strong>&#8225;e</strong> fre <strong>&#8225;e</strong> ger <strong>&#8225;e</strong> ita <strong>&#8225;g</strong> eng <strong>&#8225;g</strong> fre <strong>&#8225;g</strong> ger <strong>&#8225;g</strong> ita <strong>&#8225;m</strong> ger</text>
+</example>
+<example>
+<text><strong>041 1# &#8225;d</strong> eng <strong>&#8225;h</strong> rus <strong>&#8225;e</strong> eng <strong>&#8225;n</strong> rus <strong>&#8225;g</strong> eng <strong>&#8225;g</strong> fre <strong>&#8225;g</strong> ger</text>
+</example>
         <example>
           <text><strong>041 07 &#8225;a</strong> en <strong>&#8225;a</strong> fr <strong>&#8225;a</strong> it <strong>&#8225;2</strong> [Code for ISO 639-1]</text>
         </example>
