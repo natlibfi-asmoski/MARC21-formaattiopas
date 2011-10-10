@@ -522,6 +522,13 @@
         <subfield code="i" repeatable="Y">
           <name>Välineen tekniset tiedot</name>
         </subfield>
+<subfield code="0" repeatable="Y">
+<name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+<description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+</subfield>
+<subfield code="2" repeatable="N">
+<name>Koodin lähde</name>
+</subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
@@ -550,6 +557,27 @@
         <example>
           <text><strong>340 ## &#8225;a</strong> canvas <strong>&#8225;b</strong> 30 x 57 cm <strong>&#8225;c</strong> colored oil-base paints <strong>&#8225;e</strong> wood.</text>
         </example>
+<example>
+<text><strong>340 ## &#8225;j</strong> original <strong>&#8225;2</strong> rda</text>
+</example>
+<example>
+<text><strong>340 ## &#8225;j</strong> printing master <strong>&#8225;2</strong> rda</text>
+</example>
+<example>
+<text><strong>340 ## &#8225;k</strong> double sided <strong>&#8225;2</strong> rda</text>
+</example>
+<example>
+<text><strong>340 ## &#8225;m</strong> folio <strong>&#8225;2</strong> rda</text>
+</example>
+<example>
+<text><strong>340 ## &#8225;m</strong> 4to <strong>&#8225;2</strong> rda</text>
+</example>
+<example>
+<text><strong>340 ## &#8225;n</strong> giant print (36 point) <strong>&#8225;2</strong> rda</text>
+</example>
+<example>
+<text><strong>340 ## &#8225;o</strong> positive <strong>&#8225;2</strong> rda</text>
+</example>
         <example>
           <text><strong>340 ## &#8225;3</strong> case files <strong>&#8225;a</strong> aperture cards <strong>&#8225;b</strong> 9 x 19 cm <strong>&#8225;d</strong> microfilm <strong>&#8225;f</strong> 48x.</text>
         </example>
