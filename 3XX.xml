@@ -1661,6 +1661,10 @@
         <subfield code="c" repeatable="Y">
           <name>Teosluettelonumero</name>
         </subfield>
+<subfield code="2" repeatable="N">
+<name>Koodin lähde</name>
+<description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/thematic-index.html">Thematic Index Code Source Codes</a></em>.</description>
+</subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
