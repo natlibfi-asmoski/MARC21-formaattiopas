@@ -1251,6 +1251,10 @@
         <subfield code="z" repeatable="Y">
           <name>Maapallon ulkopuolisen kappaleen nimi</name>
         </subfield>
+<subfield code="0" repeatable="Y">
+<name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+<description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+</subfield>
         <subfield code="2" repeatable="Y">
           <name>Nimen lähde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html">Cartographic Data Source Codes</a></em>.</description>
@@ -1841,6 +1845,10 @@
           <name>ISO-koodi</name>
           <description>Lähde on <em>ISO 3166, Codes for the representation of names of countries and their subdivisions - Part 1 : Country codes or Part 2 : Country subdivision codes</em>.</description>
         </subfield>
+<subfield code="0" repeatable="Y">
+<name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+<description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+</subfield>
         <subfield code="2" repeatable="Y">
           <name>Paikallisen koodin lähde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/geographic-area.html">Geographic Area Code and Term Source Codes</a></em>.</description>
