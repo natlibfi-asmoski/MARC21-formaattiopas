@@ -522,13 +522,30 @@
         <subfield code="i" repeatable="Y">
           <name>Välineen tekniset tiedot</name>
         </subfield>
-<subfield code="0" repeatable="Y">
-<name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
-<description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
-</subfield>
-<subfield code="2" repeatable="N">
-<name>Koodin lähde</name>
-</subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Versio</name>
+          <description>Alkuperäisen ja jäljenteiden suhde.</description>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Layout</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Kirjan koko</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kirjasinkoko</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Polariteetti</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).</description>
+          </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
@@ -1661,10 +1678,16 @@
         <subfield code="c" repeatable="Y">
           <name>Teosluettelonumero</name>
         </subfield>
-<subfield code="2" repeatable="N">
-<name>Koodin lähde</name>
-<description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/thematic-index.html">Thematic Index Code Source Codes</a></em>.</description>
-</subfield>
+        <subfield code="d" repeatable="N">
+          <name>Teosluettelon tunnus</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Järjestys- tai opusnumeroon liittyvä kustantaja</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tunnuksen lähde</name>
+          <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/thematic-index.html">Thematic Index Code Source Codes</a></em>.</description>
+        </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -1680,6 +1703,12 @@
         </example>
         <example>
           <text><strong>383 ## &#8225;c</strong> BWV211</text>
+        </example>
+        <example>
+          <text><strong>383 ## &#8225;c</strong> RV269, <strong>&#8225;c</strong> RV315, <strong>&#8225;c</strong> RV293, <strong>&#8225;c</strong> RV297 <strong>&#8225;d</strong> Ryom <strong>&#8225;2</strong> mlati</text>
+        </example>
+        <example>
+          <text><strong>383 ## &#8225;b</strong> Op. 5 <strong>&#8225;e</strong> Hummel</text>
         </example>
        </examples>
     </datafield>
