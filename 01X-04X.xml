@@ -1251,10 +1251,10 @@
         <subfield code="z" repeatable="Y">
           <name>Maapallon ulkopuolisen kappaleen nimi</name>
         </subfield>
-<subfield code="0" repeatable="Y">
-<name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
-<description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
-</subfield>
+	<subfield code="0" repeatable="Y">
+	  <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
+	</subfield>
         <subfield code="2" repeatable="Y">
           <name>Nimen l‰hde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html">Cartographic Data Source Codes</a></em>.</description>
@@ -1640,7 +1640,7 @@
     </datafield>
     <datafield tag="041" repeatable="Y">
       <name>Kielikoodi</name>
-      <description>Kuvailun kohteeseen liittyvien kielten koodit, kun merkkipaikoissa 008/35-37 annettu kielikoodi ei ole riitt‰v‰. Esimerkkein‰ t‰llaisista kohteista ovat monikieliset teokset, k‰‰nnetyt teokset tai viittomakieliset tallenteet. Kielikoodit otetaan listalta, ks. <em> <a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.</description>
+      <description>Kuvailun kohteeseen liittyvien kielten koodit, kun merkkipaikoissa 008/35-37 annettu kielikoodi ei ole riitt‰v‰. Esimerkkein‰ t‰llaisista kohteista ovat monikieliset teokset, k‰‰nnetyt teokset tai viittomakieliset tallenteet. Kielikoodit otetaan listalta, ks. <em> <a href="../kielet.htm">MARC 21 Kielikoodit</a></em>, tai muulta koodilistalta, kuten ISO 639-1 <em> (Kielten nimien tunnukset. Osa 1: Kaksikirjaimiset tunnukset)</em>.</description>
       <indicators>
         <indicator num="1">
           <description>K‰‰nnˆsindikaattori</description>
@@ -1700,17 +1700,17 @@
           <name>Tekstityksen kieli</name>
           <description>Filmin tekstityksen tai kuulovammaisille tarkoitetun selosteen kieli.</description>
         </subfield>
-<subfield code="k" repeatable="Y">
-<name>V‰lik‰‰nnˆsten kieli</name>
-</subfield>
-<subfield code="m" repeatable="Y">
-<name>Liiteaineiston alkuper‰inen kieli</name>
-<description>Muiden liiteaineistojen kuin librettojen (osakentt‰ &#8225;n) alkuper‰inen kieli. Osakentt‰ seuraa siihen liittyv‰‰ osakentt‰‰ &#8225;b tai &#8225;g</description>
-</subfield>
-<subfield code="n" repeatable="Y">
-<name>Libreton alkuper‰inen kieli</name>
-<description>Teoksen painetun version alkuper‰inen kieli.</description>
-</subfield>
+	<subfield code="k" repeatable="Y">
+	  <name>V‰lik‰‰nnˆsten kieli</name>
+	</subfield>
+	<subfield code="m" repeatable="Y">
+	  <name>Liiteaineiston alkuper‰inen kieli</name>
+	  <description>Muiden liiteaineistojen kuin librettojen (osakentt‰ &#8225;n) alkuper‰inen kieli. Osakentt‰ seuraa siihen liittyv‰‰ osakentt‰‰ &#8225;b tai &#8225;g.</description>
+	</subfield>
+	<subfield code="n" repeatable="Y">
+	  <name>Libreton alkuper‰inen kieli</name>
+	<description>Teoksen painetun version alkuper‰inen kieli. Osakentt‰ seuraa siihen liittyv‰‰ osakentt‰‰ &#8225;e.</description>
+	</subfield>
         <subfield code="2" repeatable="N">
           <name>Koodin l‰hde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></em>.</description>
@@ -1761,15 +1761,15 @@
         <example>
           <text><strong>041 1# &#8225;a</strong> fre <strong>&#8225;e</strong> fre <strong>&#8225;e</strong> ger <strong>&#8225;h</strong> fre</text>
         </example>
-<example>
-<text><strong>041 1# &#8225;a</strong> eng <strong>&#8225;k</strong> chi <strong>&#8225;h</strong> san</text>
-</example>
-<example>
-<text><strong>041 1# &#8225;d</strong> fre <strong>&#8225;h</strong> ita <strong>&#8225;e</strong> eng <strong>&#8225;e</strong> fre <strong>&#8225;e</strong> ger <strong>&#8225;e</strong> ita <strong>&#8225;g</strong> eng <strong>&#8225;g</strong> fre <strong>&#8225;g</strong> ger <strong>&#8225;g</strong> ita <strong>&#8225;m</strong> ger</text>
-</example>
-<example>
-<text><strong>041 1# &#8225;d</strong> eng <strong>&#8225;h</strong> rus <strong>&#8225;e</strong> eng <strong>&#8225;n</strong> rus <strong>&#8225;g</strong> eng <strong>&#8225;g</strong> fre <strong>&#8225;g</strong> ger</text>
-</example>
+	<example>
+	  <text><strong>041 1# &#8225;a</strong> eng <strong>&#8225;k</strong> chi <strong>&#8225;h</strong> san</text>
+	</example>
+	<example>
+	  <text><strong>041 1# &#8225;d</strong> fre <strong>&#8225;h</strong> ita <strong>&#8225;e</strong> eng <strong>&#8225;e</strong> fre <strong>&#8225;e</strong> ger <strong>&#8225;e</strong> ita <strong>&#8225;g</strong> eng <strong>&#8225;g</strong> fre <strong>&#8225;g</strong> ger <strong>&#8225;g</strong> ita <strong>&#8225;m</strong> ger<br /><em>ƒ‰nite ranskaksi esitetyst‰ oopperasta, jonka alkuper‰inen kieli on italia; libretto englanniksi, ranskaksi, saksaksi ja italiaksi; kansitekstit englanniksi, ranskaksi, saksaksi ja italiaksi, mutta kansitekstien tiedet‰‰n olevan alkuper‰iselt‰ kielelt‰‰n saksaa.</em></text>
+	</example>
+	<example>
+	  <text><strong>041 1# &#8225;d</strong> eng <strong>&#8225;h</strong> rus <strong>&#8225;e</strong> eng <strong>&#8225;n</strong> rus <strong>&#8225;g</strong> eng <strong>&#8225;g</strong> fre <strong>&#8225;g</strong> ger</text>
+	</example>
         <example>
           <text><strong>041 07 &#8225;a</strong> en <strong>&#8225;a</strong> fr <strong>&#8225;a</strong> it <strong>&#8225;2</strong> [Code for ISO 639-1]</text>
         </example>
@@ -1845,10 +1845,10 @@
           <name>ISO-koodi</name>
           <description>L‰hde on <em>ISO 3166, Codes for the representation of names of countries and their subdivisions - Part 1 : Country codes or Part 2 : Country subdivision codes</em>.</description>
         </subfield>
-<subfield code="0" repeatable="Y">
-<name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
-<description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakent‰t</a></em>.</description>
-</subfield>
+	<subfield code="0" repeatable="Y">
+	  <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakent‰t</a></em>.</description>
+	</subfield>
         <subfield code="2" repeatable="Y">
           <name>Paikallisen koodin l‰hde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/geographic-area.html">Geographic Area Code and Term Source Codes</a></em>.</description>
