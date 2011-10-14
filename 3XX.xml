@@ -830,6 +830,100 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="344" repeatable="Y">
+      <name>Ääniaineiston ominaisuudet</name>
+      <description paragraph="1">Tekniset vaatimukset äänen koodaamiseen aineistossa.</description>
+      <indicators>
+	  <indicator num="1">
+	    <description>Määrittelemätön</description>
+            <values>
+	      <value code="#">
+		<description>Määrittelemätön</description>
+	      </value>
+	    </values>
+	 </indicator>
+	 <indicator num="2">
+	    <description>Määrittelemätön</description>
+	    <values>   
+	      <value code="#">
+		<description>Määrittelemätön</description>
+	    </value>
+	  </values>
+	</indicator>
+      </indicators>
+      <subfields>
+	<subfield code="a" repeatable="Y">
+	  <name>Äänitetyyppi</name>
+	</subfield>
+	<subfield code="b" repeatable="Y">
+	  <name>Tallennusväline</name>
+	</subfield>
+	<subfield code="c" repeatable="Y">
+	  <name>Kierrosnopeus</name>
+	</subfield>
+	<subfield code="d" repeatable="Y">
+	  <name>Uran ominaisuudet</name>
+	</subfield>
+	<subfield code="e" repeatable="Y">
+	  <name>Ääniraitojen asemointi</name>
+	</subfield>
+	<subfield code="f" repeatable="Y">
+	  <name>Ääninauhan asemointi</name>
+	</subfield>
+	<subfield code="g" repeatable="Y">
+	  <name>Äänentoistokanavien konfigurointi</name>
+	  <description>Äänitteeseen käytettyjen äänikanavien määrä</description>
+	</subfield>
+	<subfield code="h" repeatable="Y">
+	  <name>Erityiset äänentoisto-ominaisuudet</name>
+	  <description>Taajuuskorjaus- ja kohinanvaimennusjärjestelmät</description>
+	</subfield>
+	<subfield code="0" repeatable="Y">
+	  <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+	<subfield code="2" repeatable="N">
+	  <name>Termin lähde</name>
+	</subfield>
+	<subfield code="3" repeatable="N">
+	  <name>Aineiston osa, jota tiedot koskevat</name>
+	</subfield>
+	<subfield code="6" repeatable="N">
+	  <name>Linkitys</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+	<subfield code="8" repeatable="Y">
+	  <name>Linkki- ja järjestysnumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+      </subfields>
+      <examples>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;c</strong> 33 1/3 rpm <strong>&#8225;g</strong> stereo</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> digital <strong>&#8225;b</strong> optical <strong>&#8225;g</strong> surround <strong>&#8225;h</strong> Dolby digital 5.1 <strong>&#8225;2</strong> rda</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;c</strong> 78 rpm</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;d</strong> coarse groove <strong>&#8225;2</strong> rda</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;e</strong> edge track <strong>&#8225;2</strong> rda</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;f</strong> 12 track</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> digital <strong>&#8225;g</strong> stereo <strong>&#8225;2</strong> rda</text>
+	</example>
+	<example>
+	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;h</strong> Dolby-B encoded <strong>&#8225;2</strong> rda</text>
+	</example>
+      </examples>
+    </datafield>
     <datafield tag="351" repeatable="Y">
       <name>Aineiston järjestysperiaatteet</name>
       <description paragraph="1">Kuvailee kokoelman organisointia ja järjestystä.</description>
