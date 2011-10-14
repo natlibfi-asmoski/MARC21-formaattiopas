@@ -832,7 +832,7 @@
     </datafield>
     <datafield tag="344" repeatable="Y">
       <name>Ääniaineiston ominaisuudet</name>
-      <description paragraph="1">Tekniset vaatimukset äänen koodaamiseen aineistossa.</description>
+      <description paragraph="1">Tekniset tiedot äänen koodaamiseen aineistossa.</description>
       <indicators>
 	  <indicator num="1">
 	    <description>Määrittelemätön</description>
@@ -884,6 +884,7 @@
 	</subfield>
 	<subfield code="2" repeatable="N">
 	  <name>Termin lähde</name>
+	  <description>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).</description>
 	</subfield>
 	<subfield code="3" repeatable="N">
 	  <name>Aineiston osa, jota tiedot koskevat</name>
@@ -921,6 +922,65 @@
 	</example>
 	<example>
 	  <text><strong>344 ## &#8225;a</strong> analog <strong>&#8225;h</strong> Dolby-B encoded <strong>&#8225;2</strong> rda</text>
+	</example>
+      </examples>
+    </datafield>
+    <datafield tag="345" repeatable="Y">
+      <name>Liikkuvan kuvan heijastamisominaisuudet</name>
+      <description paragraph="1">Liikkuvan kuvan heijastamiseen liittyvät tekniset tiedot.</description>
+      <indicators>
+	<indicator num="1">
+	  <description>Määrittelemätön</description>
+	  <values>
+	    <value code="#">
+	      <description>Määrittelemätön</description>
+	    </value>
+	  </values>
+	</indicator>
+        <indicator num="2">
+	  <description>Määrittelemätön</description>
+	  <values>
+	    <value code="#">
+		<description>Määrittelemätön</description>
+	    </value>
+	  </values>
+	</indicator>
+      </indicators>
+      <subfields>
+	<subfield code="a" repeatable="Y">
+	<name>Esitysmuoto</name>
+	  <description>Heijastettavan kuvan tuottamiseen käytetty muoto.</description>
+	</subfield>
+	<subfield code="b" repeatable="Y">
+	  <name>Heijastamisnopeus</name>
+	  <description>Nopeus, jolla heijastuslaitteen tulee toimia, jotta se voi toistaa liikkuvan kuvan.</description>
+	</subfield>
+	<subfield code="0" repeatable="Y">
+	  <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+	<subfield code="2" repeatable="N">
+	  <name>Termin lähde</name>
+	  <description>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).</description>
+	</subfield>
+	<subfield code="3" repeatable="N">
+	  <name>Aineiston osa, jota tiedot koskevat</name>
+	</subfield>
+	<subfield code="6" repeatable="N">
+	  <name>Linkitys</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+	<subfield code="8" repeatable="Y">
+	  <name>Linkki- ja järjestysnumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+      </subfields>
+      <examples>
+	<example>
+	  <text><strong>345 ## &#8225;a</strong> 3D <strong>&#8225;b</strong> 48 fps <strong>&#8225;2</strong> rda</text>
+	</example>
+	<example>
+	  <text><strong>345 ## &#8225;a</strong> Cinerama <strong>&#8225;b</strong> 24 fps <strong>&#8225;2</strong> rda</text>
 	</example>
       </examples>
     </datafield>
