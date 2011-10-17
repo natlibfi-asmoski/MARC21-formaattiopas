@@ -1588,10 +1588,10 @@
           <name>Jäljenteen julkaisu-/kustannuspaikka</name>
         </subfield>
         <subfield code="c" repeatable="Y">
-          <name>Julkaisija/kustantaja</name>
+          <name>Jäljenteen julkaisija/kustantaja</name>
         </subfield>
         <subfield code="d" repeatable="N">
-          <name>Julkaisuaika</name>
+          <name>Jäljenteen julkaisuaika</name>
         </subfield>
         <subfield code="e" repeatable="N">
           <name>Jäljenteen ulkoasu</name>
