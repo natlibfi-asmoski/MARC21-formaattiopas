@@ -548,6 +548,91 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="264" repeatable="Y">
+      <name>Huomautus tuotanto-, kustannus-, jakelu-, valmistus- ja tekijänoikeustiedoista</name>
+      <description paragraph="1">Merkintö liittyen kustannus-, paino-, jakelu-, julkistamis- tai tuotantotietoihin.</description>
+      <indicators>
+	<indicator num="1">
+	  <description>Merkintöjen järjestys</description>
+	  <values>
+	    <value code="#">
+		<description>Soveltumaton/Tietoa ei ole annettu/Aikaisin</description>
+	    </value>
+	    <value code="2">
+	    <description>Väli(julkaisija)</description>
+	    </value>
+	    <value code="3">
+	    <description>Nykyinen/viimeisin</description>
+	    </value>
+	  </values>
+	</indicator>
+	<indicator num="2">
+	  <description>Function of entity</description>
+	  <values>
+	  <value code="0">
+	    <description>Tuotanto</description>
+	  </value>
+	  <value code="1">
+	    <description>Kustannus</description>
+	  </value>
+	  <value code="2">
+	    <description>Jakelu</description>
+	  </value>
+	  <value code="3">
+	    <description>Valmistus</description>
+	  </value>
+	  <value code="4">
+	    <description>Tekijänoikeusvuosi</description>
+	  </value>
+	</values>
+      </indicator>
+    </indicators>
+    <subfields>
+	<subfield code="a" repeatable="Y">
+	  <name>Tuotanto-, julkaisu-/kustannus-, jakelu- tai valmistuspaikka</name>
+	</subfield>
+	<subfield code="b" repeatable="Y">
+	  <name>Tuottajan, julkaisijan/kustantajan, jakajan tai valmistajan nimi</name>
+	</subfield>
+	<subfield code="c" repeatable="Y">
+	  <name>Tuotanto-, julkaisu-/kustannus-, jakelu- tai valmistusaika tai tekijänoikeusvuosi</name>
+	</subfield>
+	<subfield code="3" repeatable="N">
+	  <name>Aineiston osa, jota tiedot koskevat</name>
+	</subfield>
+	<subfield code="6" repeatable="N">
+	  <name>Linkitys</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+	<subfield code="8" repeatable="Y">
+	  <name>Linkki- ja järjestysnumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+    </subfields>
+    <examples>
+        <example>
+	  <text><strong>264 #1 &#8225;a</strong> Boston : <strong>&#8225;b</strong> [publisher not identified], <strong>&#8225;c</strong> 2010.</text>
+	</example>
+        <example>
+	  <text><strong>264 #3 &#8225;a</strong> Cambridge : <strong>&#8225;b</strong> Kinsey Printing Company</text>
+        </example>
+        <example>
+	  <text><strong>264 #1 &#8225;a</strong> [Place of publication not identified] : <strong>&#8225;b</strong> ABC Publishers, <strong>&#8225;c</strong> 2009.</text>
+        </example>
+        <example>
+	  <text><strong>264 #2 &#8225;a</strong> Seattle : <strong>&#8225;b</strong> Iverson Company</text>
+        </example>
+        <example>
+	  <text><strong>264 #4 &#8225;c</strong> C 2002</text>
+        </example>
+        <example>
+	  <text><strong>264 #4 &#8225;c</strong> 1983</text>
+        </example>
+        <example>
+	  <text><strong>264 #4 &#8225;c</strong> copyright 2005</text>
+        </example>
+      </examples>
+    </datafield>	
     <datafield tag="270" repeatable="Y">
       <name>Osoite</name>
       <description paragraph="1">Bibliografiseen kohteeseen liittyvä osoite, myös elektroniseen saavutettavuuteen liittyviä tietoja kuten puhelin-, faksi- jne. numerot. Useammat osoitteet, kuten postiositteet tai kohteen fyysiseen sijaintiin viittaavat osoitteet tallennetaan kentän 270 toistoihin.</description>
