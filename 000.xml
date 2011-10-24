@@ -257,25 +257,39 @@
             </value>
           </values>
         </position>
-        <position pos="20-23">
-          <name>Kirjauskartta "Entry map"</name>
-          <description>Nelj‰ j‰rjestelm‰n tuottamaa numeroa, jotka merkitsev‰t hakemiston tietojen rakennetta.</description>
+        <position pos="20">
+          <name>Kirjauskartta "Entry map" - 'Kent‰n pituus' -tiedon pituus</name>
+          <description>20-23 ovat nelj‰ j‰rjestelm‰n tuottamaa numeroa, jotka merkitsev‰t hakemiston tietojen rakennetta.</description>
           <values>
-            <value code="20">
-              <name>'Kent‰n pituus' -tiedon pituus</name>
-              <description>Sis‰lt‰‰ numeron 4.</description>
+            <value code="4">
+              <name>Sis‰lt‰‰ aina t‰m‰n arvon.</name>
             </value>
-            <value code="21">
-              <name>'Kent‰n osoite' -tiedon pituus</name>
-              <description>Sis‰lt‰‰ numeron 5.</description>
+          </values>
+        </position>
+        <position pos="21">
+          <name>Kirjauskartta "Entry map" - 'Kent‰n osoite' -tiedon pituus</name>
+          <description>20-23 ovat nelj‰ j‰rjestelm‰n tuottamaa numeroa, jotka merkitsev‰t hakemiston tietojen rakennetta.</description>
+          <values>
+            <value code="5">
+              <name>Sis‰lt‰‰ aina t‰m‰n arvon.</name>
             </value>
-            <value code="22">
-              <name>J‰rjestelm‰n m‰‰rittelem‰n tiedon pituus</name>
-              <description>Sis‰lt‰‰ numeron 0.</description>
+          </values>
+        </position>
+        <position pos="22">
+          <name>Kirjauskartta "Entry map" - J‰rjestelm‰n m‰‰rittelem‰n tiedon pituus</name>
+          <description>20-23 ovat nelj‰ j‰rjestelm‰n tuottamaa numeroa, jotka merkitsev‰t hakemiston tietojen rakennetta.</description>
+          <values>
+            <value code="0">
+              <name>Sis‰lt‰‰ aina t‰m‰n arvon.</name>
             </value>
-            <value code="23">
-              <name>M‰‰rittelem‰tˆn</name>
-              <description>Sis‰lt‰‰ numeron 0.</description>
+          </values>
+        </position>        
+        <position pos="23">
+          <name>Kirjauskartta "Entry map" - M‰‰rittelem‰tˆn</name>
+          <description>20-23 ovat nelj‰ j‰rjestelm‰n tuottamaa numeroa, jotka merkitsev‰t hakemiston tietojen rakennetta.</description>
+          <values>
+            <value code="0">
+              <name>Sis‰lt‰‰ aina t‰m‰n arvon.</name>
             </value>
           </values>
         </position>
