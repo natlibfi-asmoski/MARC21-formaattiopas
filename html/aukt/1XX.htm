@@ -57,14 +57,16 @@ osakenttärakenteet ovat yhtenäiset.</p>
 <ul>
 	<li><a href="#046">046 - ERIKOISKOODATUT AJANKOHDAT</a> (T)</li>
 	<li><a href="#336">336 - SISÄLTÖTYYPPI</a> (T)</li>
+        <li><a href="#368">368 - YHTEISÖN OMINAISUUKSIA</a> (T)</li>
 	<li><a href="#370">370 - PAIKANNIMI</a> (T)</li>
 	<li><a href="#371">371 - OSOITE</a> (T)</li>
 	<li><a href="#372">372 - TOIMINTA-ALA</a> (T)</li>
-	<li><a href="#373">373 - JÄSENYYS TMS.</a> (T)</li>
+	<li><a href="#373">373 - YHTEYS RYHMÄÄN</a> (T)</li>
 	<li><a href="#374">374 - AMMATTI</a> (T)</li>
 	<li><a href="#375">375 - SUKUPUOLI</a>(T)</li>
 	<li><a href="#376">376 - TIETOA SUVUSTA</a> (T)</li>
 	<li><a href="#377">377 - KIELI</a> (T)</li>
+        <li><a href="#378">378 - HENKILÖNNIMEN TÄYDELLISEMPI MUOTO</a> (T)</li>
         <li><a href="#380">380 - TEOKSEN MUOTO</a> (T)</li>
         <li><a href="#381">381 - TEOKSEN TAI EKSPRESSION MUUT ERITYISPIIRTEET</a> (T)</li>
         <li><a href="#382">382 - ESITYSKOKOONPANO</a> (T)</li> 
@@ -935,6 +937,38 @@ lisämääretietueessa.</p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
+<h3><a name="368"></a>368 - YHTEISÖN OMINAISUUKSIA (T)</h3>
+<p>Yhteisön rekisteröintiä tai oikeudellista asemaa kuvaava termi, ilmaus tai lyhenne, tai mikä tahansa termi, jolla erotetaan yhteisö muista yhteisöistä tai henkilöistä.<br>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;a</b> - Yhteisön tyyppi (T)</li>
+	<li><b>&#8225;b</b> - Hallintoalueen tyyppi (T)</li>
+        <li><b>&#8225;c</b> - Muu tarkenne (T)</li>
+        <li><b>&#8225;0</b> - Auktoriteettitietueen kontrollinumero (T) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;2</b> - Lähde (ET)<br>
+        <li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i>
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>368 ## &#8225;a</b> Radioasema </p>
+<p><b>368 ## &#8225;a</b> Yritys </p>
+<p><b>368 ## &#8225;b</b> Maakunta </p>
+<p><b>368 ## &#8225;c</b> Katolinen seurakunta</p>   
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
 <h3><a name="370"></a>370 - PAIKANNIMI (T)</h3>
 <p>Kylä, kaupunki, maakunta, osavaltio tai maa, joka liittyy henkilöihin, yhteisöihin, sukuihin, teoksiin ja ekspressioihin.</p>
 <p><a><i>Henkilön nimi:</i> henkilön syntymä-, kuolin- tai asuinpaikka tai muu identifioiva paikkakunta.</p>
@@ -1056,9 +1090,9 @@ lisämääretietueessa.</p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
-<h3><a name="373"></a>373 - JÄSENYYS TMS. (T)</h3>
-<p>Tietoa ryhmästä tai yhteisöstä, johon henkilö kuuluu tai on kuulunut, sekä jäsenyyden aika. </p>
-<p>Kenttää toistetaan, jos henkilöllä on ollut useita jäsenyyksiä eri aikoina.</p>
+<h3><a name="373"></a>373 - YHTEYS RYHMÄÄN (T)</h3>
+<p>Tietoa ryhmästä, yhteisöstä, seurasta tms, johon 1xx-kentässä kuvailtu entiteetti jollain tavalla liittyy.  Tässä voi olla myös ryhmä, johon henkilö kuuluu tai on kuulunut (affiliation), sekä ajankohdat. </p>
+<p>Kenttää toistetaan, jos henkilöllä on ollut useita yhteyksiä eri aikoina.</p>
 <h4>Indikaattorit</h4>
 <ul>
 	<li>Ensimmäinen - Määrittelemätön<ul>
@@ -1072,7 +1106,7 @@ lisämääretietueessa.</p>
 </ul>
 <h4>Osakenttäkoodit</h4>
 <ul>
-	<li><b>&#8225;a</b> - Jäsenyys (T)</li>
+	<li><b>&#8225;a</b> - Ryhmän tai yhteisön nimi (T)</li>
         <li><b>&#8225;s</b> - Alkamisaika (ET)</li>
 	<li><b>&#8225;t</b> - Loppumisaika (ET)</li>
         <li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)</li>
@@ -1193,8 +1227,7 @@ lisämääretietueessa.</p>
 
 <hr>
 <h3><a name="377"></a>377 - KIELI (T)</h3>
-<p><i>Henkilön kieli:</i> kieli, jolla henkilö kirjoittaa julkaisunsa tai jota hän puhuu radio- tai TV-lähetyksissä tms.</p>
-<p><i>Yhteisön kieli:</i> yhteisön viestintäkieli.</p>
+<p>Kielikoodeja, jotka liittyvät tietueessa kuvailtuun entiteettiin. Esimerkiksi henkilön kirjoissaan tai äänitteillä käyttämä kieli, yhteisön tiedotuksessaan käyttämä kieli, suvun kieli tai ekspression kieli.</p>
 <h4>Indikaattorit</h4>
 <ul>
 	<li>Ensimmäinen - Määrittelemätön<ul>
@@ -1212,6 +1245,7 @@ lisämääretietueessa.</p>
 <h4>Osakenttäkoodit</h4>
 <ul>
 	<li><b>&#8225;a</b> - Kielikoodi (T)</li>
+        <li><b>&#8225;l</b> - Kielen nimi (T)</li>
         <li><b>&#8225;2</b> - Termin lähde (ET)<br>
         Koodi otetaan listasta: <i><a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></i></li>
 	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
@@ -1220,7 +1254,38 @@ lisämääretietueessa.</p>
 </ul>
 <h4>Esimerkkejä</h4>
 <p><b>377 ## &#8225;a</b> rus <b>&#8225;a</b> eng</p>
+<p><b>377 ## &#8225;a</b> bnt <b>&#8225;l</b> lenje</p>
+<p><b>377 ## &#8225;a</b> eng</p>
+<p><b>377 ## &#8225;a</b> nya <b>&#8225;l</b> tsewa</p>
 <p><b>377 ## &#8225;a</b> en <b>&#8225;a</b> fr <b>&#8225;2</b> iso639-1</p>
+<p><a href="#alku">Sivun alkuun</a></p>
+
+<hr>
+<h3><a name="378"></a>378 - HENKILÖNNIMEN TÄYDELLISEMPI MUOTO (T)</h3>
+<p>Nimen elementti, jota käytetään erottamaan henkilö toisesta samannimisestä henkilöstä. Sitä voidaan tarvita, kun käytettävässä nimenmuodossa on vain nimikirjaimet tai nimen lyhenne tai jokin nimen osa ei ole käytössä.  Tämä kenttä liittyy vain 1XX-kentässä olevaan nimeen. </p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+	<li>Toinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul>
+	</li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;q</b> - Henkilönnimen täydellisempi muoto (ET)</li>
+        <li><b>&#8225;u</b> - URI, Uniform Resource Identifier (T)</li>
+	<li><b>&#8225;v</b> - Tiedonlähde (T)</li>
+        <li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i>
+	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>378 ## &#8225;q</b> Hilda Doolittle</p>
+<p><b>378 ## &#8225;q</b> Mauri Antero</p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
