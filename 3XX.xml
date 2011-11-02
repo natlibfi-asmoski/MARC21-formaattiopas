@@ -1071,6 +1071,15 @@
         <subfield code="c" repeatable="Y">
           <name>Tiedoston koko</name>
         </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Resoluutio</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alueellinen koodaus</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Siirtonopeus</name>
+        </subfield>
         <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
           <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -1092,10 +1101,25 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>346 ## &#8225;a</strong> Beta <strong>&#8225;b</strong> PAL <strong>&#8225;2</strong> rda </text>
+          <text><strong>347 ## &#8225;a</strong> audio file <strong>&#8225;b</strong> CD audio <strong>&#8225;2</strong> rda </text>
         </example>
         <example>
-          <text><strong>346 ## &#8225;a</strong> VHS <strong>&#8225;b</strong> NTSC <strong>&#8225;2</strong> rda</text>
+          <text><strong>347 ## &#8225;a</strong> text file <strong>&#8225;b</strong> PDF <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>347 ## &#8225;a</strong> video file <strong>&#8225;b</strong> Blu-Ray <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>347 ## &#8225;a</strong> data file <strong>&#8225;b</strong> XML <strong>&#8225;c</strong> 182 KB <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>347 ## &#8225;a</strong> image file <strong>&#8225;b</strong> JPEG <strong>&#8225;d</strong> 3.1 megapixels <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>347 ## &#8225;a</strong> video file <strong>&#8225;b</strong> DVD video <strong>&#8225;e</strong> region <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>347 ## &#8225;a</strong> audio file <strong>&#8225;b</strong> MP3 <strong>&#8225;f</strong> 32 kbps <strong>&#8225;2</strong> rda</text>
         </example>
       </examples>
     </datafield>
