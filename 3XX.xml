@@ -4,7 +4,7 @@
 <fields>
   <datafields>
     <title>Fyysisen kuvailun jne. kentät (3XX)</title>
-    <description>Kentät 300-362 sisältävät tietoja kuvailun kohteen fyysisistä ominaisuuksista, ilmestymistiheydestä ja hinnasta. Näihin kenttiin tallennetaan myös tietoja jakelusta ja turvaluokituksesta.</description>
+    <description>Kentät sisältävät tietoja kuvailun kohteen fyysisistä ominaisuuksista, graafisesta ilmiasusta, fyysisistä järjestysperiaatteista, ilmestymistiheydestä ja turvaluokituksesta. Digitaalisen aineiston referenssi- ja järjestämistiedoille on tässä myös omat kenttänsä.</description>
     <datafield tag="300" repeatable="Y">
       <name>Ulkoasutiedot</name>
       <description paragraph="1">Kuvailun kohteen fyysinen kuvaus mukaan lukien sen laajuus/kesto ja mitat yms. fyysiset yksityiskohdat, kuten liiteaineistojen kuvaus.</description>
