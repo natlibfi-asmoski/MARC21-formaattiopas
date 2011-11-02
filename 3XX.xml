@@ -545,7 +545,7 @@
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
           <description>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).</description>
-          </subfield>
+        </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
@@ -574,27 +574,27 @@
         <example>
           <text><strong>340 ## &#8225;a</strong> canvas <strong>&#8225;b</strong> 30 x 57 cm <strong>&#8225;c</strong> colored oil-base paints <strong>&#8225;e</strong> wood.</text>
         </example>
-<example>
-<text><strong>340 ## &#8225;j</strong> original <strong>&#8225;2</strong> rda</text>
-</example>
-<example>
-<text><strong>340 ## &#8225;j</strong> printing master <strong>&#8225;2</strong> rda</text>
-</example>
-<example>
-<text><strong>340 ## &#8225;k</strong> double sided <strong>&#8225;2</strong> rda</text>
-</example>
-<example>
-<text><strong>340 ## &#8225;m</strong> folio <strong>&#8225;2</strong> rda</text>
-</example>
-<example>
-<text><strong>340 ## &#8225;m</strong> 4to <strong>&#8225;2</strong> rda</text>
-</example>
-<example>
-<text><strong>340 ## &#8225;n</strong> giant print (36 point) <strong>&#8225;2</strong> rda</text>
-</example>
-<example>
-<text><strong>340 ## &#8225;o</strong> positive <strong>&#8225;2</strong> rda</text>
-</example>
+        <example>
+          <text><strong>340 ## &#8225;j</strong> original <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;j</strong> printing master <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;k</strong> double sided <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;m</strong> folio <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;m</strong> 4to <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;n</strong> giant print (36 point) <strong>&#8225;2</strong> rda</text>
+        </example>
+        <example>
+          <text><strong>340 ## &#8225;o</strong> positive <strong>&#8225;2</strong> rda</text>
+        </example>
         <example>
           <text><strong>340 ## &#8225;3</strong> case files <strong>&#8225;a</strong> aperture cards <strong>&#8225;b</strong> 9 x 19 cm <strong>&#8225;d</strong> microfilm <strong>&#8225;f</strong> 48x.</text>
         </example>
@@ -982,6 +982,121 @@
 	<example>
 	  <text><strong>345 ## &#8225;a</strong> Cinerama <strong>&#8225;b</strong> 24 fps <strong>&#8225;2</strong> rda</text>
 	</example>
+      </examples>
+    </datafield>
+    <datafield tag="346" repeatable="Y">
+      <name>Videotallenteen erityispiirteet</name>
+      <description paragraph="1">Analogisten videoiden tekninen kuvaus.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Videojärjestelmä</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Lähetysstandardi</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tiedon lähde</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>346 ## &#8225;a</strong> Beta <strong>&#8225;b</strong> PAL <strong>&#8225;2</strong> rda </text>
+        </example>
+        <example>
+          <text><strong>346 ## &#8225;a</strong> VHS <strong>&#8225;b</strong> NTSC <strong>&#8225;2</strong> rda</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="347" repeatable="Y">
+      <name>Digitaalisen tiedoston erityispiirteet</name>
+      <description paragraph="1">Tekstin, kuvan, audion, videon tai muuntyyppisen datan digitaalisen koodauksen tekninen kuvaus. Nämä tiedot voidaan ilmoittaa myös kentän 300 (ulkoasutiedot) osakentässä &#8225;b (muut fyysiset yksityiskohdat).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tiedoston tyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Koodausformaatti</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Tiedoston koko</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tiedon lähde</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>346 ## &#8225;a</strong> Beta <strong>&#8225;b</strong> PAL <strong>&#8225;2</strong> rda </text>
+        </example>
+        <example>
+          <text><strong>346 ## &#8225;a</strong> VHS <strong>&#8225;b</strong> NTSC <strong>&#8225;2</strong> rda</text>
+        </example>
       </examples>
     </datafield>
     <datafield tag="351" repeatable="Y">
@@ -1636,6 +1751,51 @@
         </example>
       </examples>
     </datafield>
+<datafield tag="377" repeatable="Y">
+      <name>Kielimerkintö</name>
+      <description paragraph="1">Kielikoodeja, jotka liittyvät tietueessa kuvailtuun entiteettiin. Esimerkiksi henkilön kirjoissaan tai äänitteillä käyttämä kieli, yhteisön tiedotuksessaan käyttämä kieli, suvun kieli tai ekspression kieli.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Koodin lähde</description>
+          <values>
+            <value code="#">
+              <description>MARC-kielikoodi<br /> Koodi listalta: <a href="http://www.kansalliskirjasto.fi/extra/marc21/kielet.htm"> MARC 21 Kielikoodit</a></description>
+            </value>
+            <value code="7">
+              <description>Lähde ilmoitettu osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Kielikoodi</name>
+        </subfield>
+        <subfield code="l" repeatable="Y">
+          <name> Kielen nimi</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tiedon lähde</name>
+          <description>Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/language.html"> Language Code and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+</datafield>
 <datafield tag="380" repeatable="Y">
       <name>Teoksen muoto</name>
       <description paragraph="1">Luokka tai lajityyppi, johon teos kuuluu. Voidaan käyttää erottamaan samannimisiä teoksia.</description>
