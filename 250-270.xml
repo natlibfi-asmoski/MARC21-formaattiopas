@@ -379,6 +379,7 @@
     <datafield tag="260" repeatable="Y">
       <name>Julkaisutiedot</name>
       <description paragraph="1">Teoksen julkaisutiedot: kustannus-, paino-, jakelu-, julkistamis-, tai tuotantotiedot.</description>
+      <description paragraph="2">Tiedot kentässä 260 ovat samankaltaisia kuin kentässä 264 (Huomautus tuotanto-, kustannus-, jakelu-, valmistus- ja tekijänoikeustiedoista). Kenttää 260 käytetään tapauksissa, joissa kuvailustandardi tai paikalliset luettelointikäytännöt eivät eroa funktioiden välillä.</description>
       <indicators>
         <indicator num="1">
           <description>Julkaisumerkintöjen järjestys</description>
@@ -550,7 +551,8 @@
     </datafield>
     <datafield tag="264" repeatable="Y">
       <name>Huomautus tuotanto-, kustannus-, jakelu-, valmistus- ja tekijänoikeustiedoista</name>
-      <description paragraph="1">Merkintö liittyen kustannus-, paino-, jakelu-, julkistamis- tai tuotantotietoihin.</description>
+      <description paragraph="1">Merkintö, joka liittyy kustannus-, paino-, jakelu-, julkistamis- tai tuotantotietoihin.</description>
+      <description paragraph="2">Tiedot kentässä 264 ovat samankaltaisia kuin kentässä 260 (Julkaisutiedot). Kenttää 264 käytetään tapauksissa, joissa kuvailustandardi tai paikalliset luettelointikäytännöt eroavat funktioiden välillä.</description>
       <indicators>
 	<indicator num="1">
 	  <description>Merkintöjen järjestys</description>
@@ -559,7 +561,7 @@
 		<description>Soveltumaton/Tietoa ei ole annettu/Aikaisin</description>
 	    </value>
 	    <value code="2">
-	    <description>Väli(julkaisija)</description>
+	    <description>Välituottaja, -julkaisija, -jakelija tai -valmistaja<br /> Käytetään, kun tuottajan, julkaisijan/kustantajan, jakelijan tai valmistajan paikka tai nimi muuttuu. Myös täydentävät julkaisutiedot aikaisimman ja viimeisimmän välillä voidaan tallentaa tällä indikaattorin arvolla.</description>
 	    </value>
 	    <value code="3">
 	    <description>Nykyinen/viimeisin</description>
@@ -567,19 +569,19 @@
 	  </values>
 	</indicator>
 	<indicator num="2">
-	  <description>Function of entity</description>
+	  <description>Entiteetin funktio</description>
 	  <values>
 	  <value code="0">
-	    <description>Tuotanto</description>
+	    <description>Tuottaminen</description>
 	  </value>
 	  <value code="1">
-	    <description>Kustannus</description>
+	    <description>Kustantaminen</description>
 	  </value>
 	  <value code="2">
 	    <description>Jakelu</description>
 	  </value>
 	  <value code="3">
-	    <description>Valmistus</description>
+	    <description>Valmistaminen</description>
 	  </value>
 	  <value code="4">
 	    <description>Tekijänoikeusvuosi</description>
@@ -623,10 +625,10 @@
 	  <text><strong>264 #2 &#8225;a</strong> Seattle : <strong>&#8225;b</strong> Iverson Company</text>
         </example>
         <example>
-	  <text><strong>264 #4 &#8225;c</strong> C 2002</text>
+	  <text><strong>264 #4 &#8225;c</strong> &#169;2002</text>
         </example>
         <example>
-	  <text><strong>264 #4 &#8225;c</strong> 1983</text>
+	  <text><strong>264 #4 &#8225;c</strong> (P) 1983</text>
         </example>
         <example>
 	  <text><strong>264 #4 &#8225;c</strong> copyright 2005</text>
