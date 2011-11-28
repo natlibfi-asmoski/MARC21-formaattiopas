@@ -374,7 +374,7 @@
             </value>
             <value code="k">
               <name>Diskografiat</name>
-              <description>Kuvailun kohde tai merkittävä osa siitä on diskografia tai muu äänitebibliografia. Käytetään vain, kun diskografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Diskografioille, jotka ovat myös luetteloita, annetaan sekä koodit <strong>k</strong> että <strong>c</strong>.</description>
+              <description>Kuvailun kohde tai merkittävä osa siitä on diskografia tai muu äänitebibliografia. Käytetään vain, kun diskografia on tarpeeksi olennainen tullakseen mainituksi bibliografisessa kuvailussa. Diskografioille, jotka ovat myös luetteloita, annetaan sekä koodit <strong>k</strong> että <strong>c</strong>.</description>
             </value>
             <value code="l">
               <name>Lait, säädökset</name>
