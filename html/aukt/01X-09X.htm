@@ -319,7 +319,7 @@ Allegro <b>&#8225;g</b>G-2 <b>&#8225;n</b>bBEA <b>&#8225;o</b>c <b>&#8225;p</b>6
 
 <hr>
 <h3><a name="034"></a>034 - KARTTA-AINEISTON MATEMAATTISET TIEDOT KOODEINA (T)</h3>
-<p>Auktoriteettitietueessa kuvailtuun entiteettiin liittyvän kartta-aineiston matemaattiset tiedot koodeina. 
+<p>Auktoriteettitietueen kentässä 1XX kuvailtuun entiteettiin liittyvän kartta-aineiston matemaattiset tiedot koodeina. 
 Tallennettavat tiedot saadaan yleensä auktoritatiivisista lähteistä.</p>
 <h4>Indikaattorit</h4>
       <ul>
@@ -339,15 +339,18 @@ Tallennettavat tiedot saadaan yleensä auktoritatiivisista lähteistä.</p>
          <li><b>&#8225;d</b> - Koordinaatti--läntisin pituusaste (ET)</li>
          <li><b>&#8225;e</b> - Koordinaatti--itäisin pituusaste (ET)</li>
          <li><b>&#8225;f</b> - Koordinaatti--pohjoisin leveysaste (ET)</li>
-         <li><b>&#8225;g</b> - Koordinaatti--eteläisin leveysaste (ET)<li><b>&#8225;j</b> - Deklinaatio--pohjoinen rajaus (ET)</li>
-         <li><b>&#8225;k</b> - Deklinaatio--eteläinen rajaus (ET)<li><b>&#8225;m</b> - Rektaskensio--itäinen rajaus (ET)</li>
-         <li><b>&#8225;n</b> - Rektaskensio--läntinen rajaus (ET)<li><b>&#8225;p</b> - Ekvinokti (ET)<br>Tähtikartan vuosi, tai vuosi ja kuukausi tallennettuna muodossa <em>vvvv.kk</em>.</li>
-         <li><b>&#8225;r</b> - Etäisyys Maapallolta (ET)</li>
+         <li><b>&#8225;g</b> - Koordinaatti--eteläisin leveysaste (ET)<br>Osakentät &#8225;d, &#8225;e, &#8225;f ja  &#8225;g esiintyvät aina yhdessä. Jokainen koordinaatti (osakenttä) voidaan tallentaa muodossa <em>paaammss</em> -- pallonpuolisko (p), asteet (a), minuutit (m) ja sekunnit (s) -- myös muut muodot kuten desimaaliluvut ovat sallittuja. Luvut tasataan oikealle ja käyttämättömissä merkkipaikoissa on nolla.</li>
+         <li><b>&#8225;j</b> - Deklinaatio--pohjoinen rajaus (ET)</li>
+         <li><b>&#8225;k</b> - Deklinaatio--eteläinen rajaus (ET)<br>Osakentät &#8225;j ja &#8225;k ovat molemmat kahdeksan merkin pituisia ja tallennetaan muodossa <em>paaammss</em>: pallonpuolisko (p), asteet (a), minuutit (m) ja sekunnit (s), vrt. &#8225;d-&#8225;g.. Luvut tasataan oikealle ja käyttämättömissä merkkipaikoissa on nolla.</li>
+         <li><b>&#8225;m</b> - Rektaskensio--itäinen rajaus (ET)</li>
+         <li><b>&#8225;n</b> - Rektaskensio--läntinen rajaus (ET)<br>Osakentät &#8225;m ja &#8225;n ovat molemmat kuuden merkin pituisia ja tallennetaan muodossa <em>ttmmss</em>. Luvut tasataan oikealle ja käyttämättömissä merkkipaikoissa on nolla.</li>
+         <li><b>&#8225;p</b> - Ekvinokti (ET)<br>Tähtikartan vuosi, tai vuosi ja kuukausi tallennettuna muodossa <em>vvvv.kk</em>.</li>
+         <li><b>&#8225;r</b> - Etäisyys maapallolta (ET)<br>Taivaankappaleiden (kuten planeettojen ja tähtien) etäisyys Maasta valovuosina.</li>
          <li><b>&#8225;s</b> - G-kehän leveysaste (T)</li>
          <li><b>&#8225;t</b> - G-kehän pituusaste (T)</li>
-         <li><b>&#8225;x</b> - Aloituspäivämäärä (T)</li>
-         <li><b>&#8225;y</b> - Lopetuspäivämäärä (T)</li>
-         <li><b>&#8225;z</b> - Maapallon ulkopuolisen kappaleen nimi (T)</li>
+         <li><b>&#8225;x</b> - Aloituspäivämäärä (T)<br>Koordinaatteihin liittyvän aikavälin alku. Päiväys on muodossa <em>vvvvkkpp</em>. Kun päivämäärää ei ole ilmoitettu, oletetaan, että koordinaattitieto on ajantasaista.</li>
+         <li><b>&#8225;y</b> - Lopetuspäivämäärä (T)<br>Koordinaatteihin liittyvän aikavälin loppu. Päiväys on muodossa <em>vvvvkkpp</em>. Kun päivämäärää ei ole ilmoitettu, oletetaan, että koordinaattitieto on ajantasaista.</li>
+         <li><b>&#8225;z</b> - Maapallon ulkopuolisen kappaleen nimi (T)<br>Planeetan tai muun maapallon ulkopuolisen kappaleen nimi, kun osakentissä &#8225;d, &#8225;e, &#8225;f ja &#8225;g ei kuvailla Maan entiteettiä.</li>
 	 <li><b>&#8225;0</b> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</li>
          <li><b>&#8225;2</b> - Nimen lähde (T)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html"> Cartographic Data Source Codes</a></em>.</li>
          <li><b>&#8225;3</b> - Aineiston osa, jota tiedot koskevat (ET)</li>
@@ -355,8 +358,8 @@ Tallennettavat tiedot saadaan yleensä auktoritatiivisista lähteistä.</p>
          <li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</li>
       </ul>
 <h4>Esimerkkejä</h4>
-      <p><b>034 ##&#8225;d</b>W097.5000<b>&#8225;e</b>W089.0000<b>&#8225;f</b>N049.5000<b>&#8225;g</b>N043.0000<b>&#8225;2</b><i>[code 
-		for Minnesota Geographic Data Clearinghouse]</i></p>
+      <p><b>034 ##&#8225;d</b> W097.5000<b> &#8225;e</b> W089.0000 <b>&#8225;f</b> N049.5000 <b>&#8225;g</b> N043.0000 <b>&#8225;2</b> [Minnesota Geographic Data Clearinghousen koodi]</p>
+      <p><b>034 ##&#8225;j</b> N0545600 <b>&#8225;k</b> N0545600 <b>&#8225;m</b> 134518 <b>&#8225;n</b> 134518 <b>&#8225;p</b> 2000.00 <b>&#8225;r</b> 78 <b>&#8225;2</b> [Cambridge star atlaksen koodi] </p>
 <p><a href="#alku">Sivun alkuun</a></p>
 
 <hr>
