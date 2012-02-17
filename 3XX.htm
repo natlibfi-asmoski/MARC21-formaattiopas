@@ -24,8 +24,9 @@
       <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
          <a href="../index.htm">MARC 21 -etusivulle</a></p>
       <hr>
-      <p>Kentät 300-362 sisältävät tietoja kuvailun kohteen fyysisistä ominaisuuksista, ilmestymistiheydestä ja hinnasta. Näihin kenttiin
-         tallennetaan myös tietoja jakelusta ja turvaluokituksesta.
+      <p>Kentät sisältävät tietoja kuvailun kohteen fyysisistä ominaisuuksista, graafisesta ilmiasusta, fyysisistä järjestysperiaatteista,
+         ilmestymistiheydestä ja turvaluokituksesta. Digitaalisen aineiston referenssi- ja järjestämistiedoille on tässä myös omat
+         kenttänsä.
       </p>
       <ul>
          <li><a href="#300">300 - ULKOASUTIEDOT</a> (T)
@@ -50,6 +51,14 @@
          </li>
          <li><a href="#343">343 - TASOKOORDINAATIT</a> (T)
          </li>
+         <li><a href="#344">344 - ÄÄNEN OMINAISUUDET</a> (T)
+         </li>
+         <li><a href="#345">345 - LIIKKUVAN KUVAN HEIJASTAMISOMINAISUUDET</a> (T)
+         </li>
+         <li><a href="#346">346 - VIDEOTALLENTEEN OMINAISUUDET</a> (T)
+         </li>
+         <li><a href="#347">347 - DIGITAALISEN TIEDOSTON OMINAISUUDET</a> (T)
+         </li>
          <li><a href="#351">351 - AINEISTON JÄRJESTYSPERIAATTEET</a> (T)
          </li>
          <li><a href="#352">352 - DIGITAALINEN GRAAFINEN ESITYS</a> (T)
@@ -65,6 +74,8 @@
          <li><a href="#365">365 - KAUPPAHINTA</a> (T)
          </li>
          <li><a href="#366">366 - KAUPALLINEN SAATAVUUS</a> (T)
+         </li>
+         <li><a href="#377">377 - KIELIMERKINTÖ</a> (T)
          </li>
          <li><a href="#380">380 - TEOKSEN MUOTO</a> (T)
          </li>
@@ -481,6 +492,20 @@
          </li>
          <li><strong>‡i</strong> - Välineen tekniset tiedot (T)
          </li>
+         <li><strong>‡j</strong> - Versio (T)<br>Alkuperäisen ja jäljenteiden suhde.
+         </li>
+         <li><strong>‡k</strong> - Layout (T)
+         </li>
+         <li><strong>‡m</strong> - Kirjan koko (T)
+         </li>
+         <li><strong>‡n</strong> - Kirjasinkoko (T)
+         </li>
+         <li><strong>‡o</strong> - Polariteetti (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).
+         </li>
          <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
          </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
@@ -498,6 +523,20 @@
       <p><strong>340 ## ‡d</strong> handwritten <strong>‡d</strong> typed.
       </p>
       <p><strong>340 ## ‡a</strong> canvas <strong>‡b</strong> 30 x 57 cm <strong>‡c</strong> colored oil-base paints <strong>‡e</strong> wood.
+      </p>
+      <p><strong>340 ## ‡j</strong> original <strong>‡2</strong> rda
+      </p>
+      <p><strong>340 ## ‡j</strong> printing master <strong>‡2</strong> rda
+      </p>
+      <p><strong>340 ## ‡k</strong> double sided <strong>‡2</strong> rda
+      </p>
+      <p><strong>340 ## ‡m</strong> folio <strong>‡2</strong> rda
+      </p>
+      <p><strong>340 ## ‡m</strong> 4to <strong>‡2</strong> rda
+      </p>
+      <p><strong>340 ## ‡n</strong> giant print (36 point) <strong>‡2</strong> rda
+      </p>
+      <p><strong>340 ## ‡o</strong> positive <strong>‡2</strong> rda
       </p>
       <p><strong>340 ## ‡3</strong> case files <strong>‡a</strong> aperture cards <strong>‡b</strong> 9 x 19 cm <strong>‡d</strong> microfilm <strong>‡f</strong> 48x.
       </p>
@@ -669,6 +708,218 @@
       <p><strong>343 ## ‡a</strong> Coordinate pair <strong>‡e</strong> 30.0; <strong>‡f</strong> 0.0001; <strong>‡g</strong> Degrees, minutes and decimal seconds; <strong>‡h</strong> North; <strong>‡b</strong> U.S. feet.
       </p>
       <p><strong>343 ## ‡i</strong> Magnetic
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="344"></a>344 - ÄÄNEN OMINAISUUDET (T)
+      </h3>
+      <p>Tekniset tiedot äänen koodaamiseen aineistossa.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Äänen tallentamisen tapa (T)
+         </li>
+         <li><strong>‡b</strong> - Äänen tallennusmedian tyyppi (T)
+         </li>
+         <li><strong>‡c</strong> - Soittonopeus (T)
+         </li>
+         <li><strong>‡d</strong> - Uran ominaisuudet (T)
+         </li>
+         <li><strong>‡e</strong> - Ääniraidan asemointi (T)
+         </li>
+         <li><strong>‡f</strong> - Ääninauhan raitojen asemointi (T)
+         </li>
+         <li><strong>‡g</strong> - Toistokanavien asemointi (T)<br>Äänitteeseen käytettyjen äänikanavien määrä
+         </li>
+         <li><strong>‡h</strong> - Äänentoiston erityisominaisuudet (T)<br>Taajuuskorjaus- ja kohinanvaimennusjärjestelmät
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>344 ## ‡a</strong> analog <strong>‡c</strong> 33 1/3 rpm <strong>‡g</strong> stereo
+      </p>
+      <p><strong>344 ## ‡a</strong> digital <strong>‡b</strong> optical <strong>‡g</strong> surround <strong>‡h</strong> Dolby digital 5.1 <strong>‡2</strong> rda
+      </p>
+      <p><strong>344 ## ‡a</strong> analog <strong>‡c</strong> 78 rpm
+      </p>
+      <p><strong>344 ## ‡a</strong> analog <strong>‡d</strong> coarse groove <strong>‡2</strong> rda
+      </p>
+      <p><strong>344 ## ‡a</strong> analog <strong>‡e</strong> edge track <strong>‡2</strong> rda
+      </p>
+      <p><strong>344 ## ‡a</strong> analog <strong>‡f</strong> 12 track
+      </p>
+      <p><strong>344 ## ‡a</strong> digital <strong>‡g</strong> stereo <strong>‡2</strong> rda
+      </p>
+      <p><strong>344 ## ‡a</strong> analog <strong>‡h</strong> Dolby-B encoded <strong>‡2</strong> rda
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="345"></a>345 - LIIKKUVAN KUVAN HEIJASTAMISOMINAISUUDET (T)
+      </h3>
+      <p>Liikkuvan kuvan heijastamiseen liittyvät tekniset tiedot.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Esitysmuoto (T)<br>Heijastettavan kuvan tuottamiseen käytetty muoto.
+         </li>
+         <li><strong>‡b</strong> - Heijastamisnopeus (T)<br>Nopeus, jolla heijastuslaitteen tulee toimia, jotta se voi toistaa liikkuvan kuvan.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>345 ## ‡a</strong> 3D <strong>‡b</strong> 48 fps <strong>‡2</strong> rda
+      </p>
+      <p><strong>345 ## ‡a</strong> Cinerama <strong>‡b</strong> 24 fps <strong>‡2</strong> rda
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="346"></a>346 - VIDEOTALLENTEEN OMINAISUUDET (T)
+      </h3>
+      <p>Analogisten videoiden tekninen kuvaus.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Videojärjestelmä (T)
+         </li>
+         <li><strong>‡b</strong> - Lähetysstandardi (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Tiedon lähde (ET)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>346 ## ‡a</strong> Beta <strong>‡b</strong> PAL <strong>‡2</strong> rda 
+      </p>
+      <p><strong>346 ## ‡a</strong> VHS <strong>‡b</strong> NTSC <strong>‡2</strong> rda
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="347"></a>347 - DIGITAALISEN TIEDOSTON OMINAISUUDET (T)
+      </h3>
+      <p>Tekstin, kuvan, audion, videon tai muuntyyppisen datan digitaalisen koodauksen tekninen kuvaus. Nämä tiedot voidaan ilmoittaa
+         myös kentän 300 (ulkoasutiedot) osakentässä ‡b (muut fyysiset yksityiskohdat).
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Tiedoston tyyppi (T)
+         </li>
+         <li><strong>‡b</strong> - Koodausformaatti (T)
+         </li>
+         <li><strong>‡c</strong> - Tiedoston koko (T)
+         </li>
+         <li><strong>‡d</strong> - Resoluutio (T)
+         </li>
+         <li><strong>‡e</strong> - Alueellinen koodaus (T)
+         </li>
+         <li><strong>‡f</strong> - Siirtonopeus (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Tiedon lähde (ET)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>347 ## ‡a</strong> audio file <strong>‡b</strong> CD audio <strong>‡2</strong> rda 
+      </p>
+      <p><strong>347 ## ‡a</strong> text file <strong>‡b</strong> PDF <strong>‡2</strong> rda
+      </p>
+      <p><strong>347 ## ‡a</strong> video file <strong>‡b</strong> Blu-Ray <strong>‡2</strong> rda
+      </p>
+      <p><strong>347 ## ‡a</strong> data file <strong>‡b</strong> XML <strong>‡c</strong> 182 KB <strong>‡2</strong> rda
+      </p>
+      <p><strong>347 ## ‡a</strong> image file <strong>‡b</strong> JPEG <strong>‡d</strong> 3.1 megapixels <strong>‡2</strong> rda
+      </p>
+      <p><strong>347 ## ‡a</strong> video file <strong>‡b</strong> DVD video <strong>‡e</strong> region <strong>‡2</strong> rda
+      </p>
+      <p><strong>347 ## ‡a</strong> audio file <strong>‡b</strong> MP3 <strong>‡f</strong> 32 kbps <strong>‡2</strong> rda
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
@@ -1146,6 +1397,42 @@
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
+      <h3><a name="377"></a>377 - KIELIMERKINTÖ (T)
+      </h3>
+      <p>Kielikoodeja, jotka liittyvät tietueessa kuvailtuun entiteettiin. Esimerkiksi henkilön kirjoissaan tai äänitteillä käyttämä
+         kieli, yhteisön tiedotuksessaan käyttämä kieli, suvun kieli tai ekspression kieli.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Koodin lähde
+            <ul>
+               <li><strong>#</strong> - MARC-kielikoodi<br> Koodi listalta: <a href="http://www.kansalliskirjasto.fi/extra/marc21/kielet.htm"> MARC 21 Kielikoodit</a></li>
+               <li><strong>7</strong> - Lähde ilmoitettu osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Kielikoodi (T)
+         </li>
+         <li><strong>‡l</strong> -  Kielen nimi (T)
+         </li>
+         <li><strong>‡2</strong> - Tiedon lähde (ET)<br>Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/language.html"> Language Code and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
       <h3><a name="380"></a>380 - TEOKSEN MUOTO (T)
       </h3>
       <p>Luokka tai lajityyppi, johon teos kuuluu. Voidaan käyttää erottamaan samannimisiä teoksia.</p>
@@ -1300,6 +1587,12 @@
          </li>
          <li><strong>‡c</strong> - Teosluettelonumero (T)
          </li>
+         <li><strong>‡d</strong> - Teosluettelon tunnus (ET)
+         </li>
+         <li><strong>‡e</strong> - Järjestys- tai opusnumeroon liittyvä kustantaja (ET)
+         </li>
+         <li><strong>‡2</strong> - Tunnuksen lähde (ET)<br>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/thematic-index.html">Thematic Index Code Source Codes</a></em>.
+         </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
@@ -1309,6 +1602,10 @@
       <p><strong>383 ## ‡a</strong> Nro 14, <strong>‡b</strong> op. 27, nro 2
       </p>
       <p><strong>383 ## ‡c</strong> BWV211
+      </p>
+      <p><strong>383 ## ‡c</strong> RV269, <strong>‡c</strong> RV315, <strong>‡c</strong> RV293, <strong>‡c</strong> RV297 <strong>‡d</strong> Ryom <strong>‡2</strong> mlati
+      </p>
+      <p><strong>383 ## ‡b</strong> Op. 5 <strong>‡e</strong> Hummel
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
