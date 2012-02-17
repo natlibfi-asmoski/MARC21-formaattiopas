@@ -1234,7 +1234,7 @@
           <description>Tähtikartan vuosi, tai vuosi ja kuukausi tallennettuna muodossa <em>vvvv.kk</em>.</description>
         </subfield>
         <subfield code="r" repeatable="N">
-          <name>Etäisyys Maapallolta</name>
+          <name>Etäisyys maapallolta</name>
         </subfield>
         <subfield code="s" repeatable="Y">
           <name>G-kehän leveysaste</name>
