@@ -1003,7 +1003,7 @@
          </li>
          <li><strong>‡p</strong> - Ekvinokti (ET)<br>Tähtikartan vuosi, tai vuosi ja kuukausi tallennettuna muodossa <em>vvvv.kk</em>.
          </li>
-         <li><strong>‡r</strong> - Etäisyys Maapallolta (ET)
+         <li><strong>‡r</strong> - Etäisyys maapallolta (ET)
          </li>
          <li><strong>‡s</strong> - G-kehän leveysaste (T)
          </li>
@@ -1014,6 +1014,8 @@
          <li><strong>‡y</strong> - Lopetuspäivämäärä (T)
          </li>
          <li><strong>‡z</strong> - Maapallon ulkopuolisen kappaleen nimi (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Nimen lähde (T)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/cartographic-data.html">Cartographic Data Source Codes</a></em>.
          </li>
@@ -1306,7 +1308,7 @@
       </h3>
       <p>Kuvailun kohteeseen liittyvien kielten koodit, kun merkkipaikoissa 008/35-37 annettu kielikoodi ei ole riittävä. Esimerkkeinä
          tällaisista kohteista ovat monikieliset teokset, käännetyt teokset tai viittomakieliset tallenteet. Kielikoodit otetaan listalta,
-         ks. <em> <a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.
+         ks. <em> <a href="../kielet.htm">MARC 21 Kielikoodit</a></em>, tai muulta koodilistalta, kuten ISO 639-1 <em> (Kielten nimien tunnukset. Osa 1: Kaksikirjaimiset tunnukset)</em>.
       </p>
       <h4>Indikaattorit</h4>
       <ul>
@@ -1344,9 +1346,16 @@
          </li>
          <li><strong>‡g</strong> - Liiteaineiston kieli (T)<br>Muiden liiteaineistojen kuin tiivistelmien (osakenttä ‡b) tai librettojen (osakenttä ‡e) kieli.
          </li>
-         <li><strong>‡h</strong> - Alkuperäinen ja/tai välikäännösten kieli (T)<br>Välikäännöksen tai -käännösten koodi(t) edeltävät alkuperäisen kohteen kieltä.
+         <li><strong>‡h</strong> - Alkuperäinen kieli (T)
          </li>
          <li><strong>‡j</strong> - Tekstityksen kieli (T)<br>Filmin tekstityksen tai kuulovammaisille tarkoitetun selosteen kieli.
+         </li>
+         <li><strong>‡k</strong> - Välikäännösten kieli (T)
+         </li>
+         <li><strong>‡m</strong> - Liiteaineiston alkuperäinen kieli (T)<br>Muiden liiteaineistojen kuin librettojen (osakenttä ‡n) alkuperäinen kieli. Osakenttä seuraa siihen liittyvää osakenttää ‡b
+            tai ‡g.
+         </li>
+         <li><strong>‡n</strong> - Libreton alkuperäinen kieli (T)<br>Teoksen painetun version alkuperäinen kieli. Osakenttä seuraa siihen liittyvää osakenttää ‡e.
          </li>
          <li><strong>‡2</strong> - Koodin lähde (ET)<br>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></em>.
          </li>
@@ -1362,7 +1371,7 @@
       </p>
       <p><strong>041 0# ‡a</strong> eng <strong>‡a</strong> fre <strong>‡a</strong> ger <strong>‡a</strong> hun <strong>‡a</strong> por <strong>‡a</strong> rus
       </p>
-      <p><strong>041 1# ‡a</strong> eng <strong>‡h</strong> ger <strong>‡h</strong> swe<br><em>Englanninkielinen käännös pohjautuu saksankieliseen käännökseen; alkuperäinen kohde on ruotsinkielinen.</em></p>
+      <p><strong>041 1# ‡a</strong> eng <strong>‡k</strong> ger <strong>‡h</strong> swe<br><em>Englanninkielinen käännös pohjautuu saksankieliseen käännökseen; alkuperäinen kohde on ruotsinkielinen.</em></p>
       <p><strong>041 1# ‡a</strong> eng <strong>‡h</strong> und
       </p>
       <p><strong>041 1# ‡a</strong> eng <strong>‡h</strong> mul
@@ -1378,6 +1387,12 @@
       <p><strong>041 1# ‡d</strong> eng <strong>‡h</strong> fre <strong>‡h</strong> ger <strong>‡h</strong> ita
       </p>
       <p><strong>041 1# ‡a</strong> fre <strong>‡e</strong> fre <strong>‡e</strong> ger <strong>‡h</strong> fre
+      </p>
+      <p><strong>041 1# ‡a</strong> eng <strong>‡k</strong> chi <strong>‡h</strong> san
+      </p>
+      <p><strong>041 1# ‡d</strong> fre <strong>‡h</strong> ita <strong>‡e</strong> eng <strong>‡e</strong> fre <strong>‡e</strong> ger <strong>‡e</strong> ita <strong>‡g</strong> eng <strong>‡g</strong> fre <strong>‡g</strong> ger <strong>‡g</strong> ita <strong>‡m</strong> ger<br><em>Äänite ranskaksi esitetystä oopperasta, jonka alkukieli on italia; libretto englanniksi, ranskaksi, saksaksi ja italiaksi;
+            tekstiliite englanniksi, ranskaksi, saksaksi ja italiaksi, mutta liitteen tiedetään olevan alkukieleltään saksaa.</em></p>
+      <p><strong>041 1# ‡d</strong> eng <strong>‡h</strong> rus <strong>‡e</strong> eng <strong>‡n</strong> rus <strong>‡g</strong> eng <strong>‡g</strong> fre <strong>‡g</strong> ger
       </p>
       <p><strong>041 07 ‡a</strong> en <strong>‡a</strong> fr <strong>‡a</strong> it <strong>‡2</strong> [Code for ISO 639-1]
       </p>
@@ -1441,6 +1456,8 @@
          </li>
          <li><strong>‡c</strong> - ISO-koodi (T)<br>Lähde on <em>ISO 3166, Codes for the representation of names of countries and their subdivisions - Part 1 : Country codes or Part 2 : Country
                subdivision codes</em>.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Paikallisen koodin lähde (T)<br>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/geographic-area.html">Geographic Area Code and Term Source Codes</a></em>.
          </li>
