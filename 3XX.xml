@@ -831,7 +831,7 @@
       </examples>
     </datafield>
     <datafield tag="344" repeatable="Y">
-      <name>Ääniaineiston ominaisuudet</name>
+      <name>Äänen ominaisuudet</name>
       <description paragraph="1">Tekniset tiedot äänen koodaamiseen aineistossa.</description>
       <indicators>
 	  <indicator num="1">
@@ -853,29 +853,29 @@
       </indicators>
       <subfields>
 	<subfield code="a" repeatable="Y">
-	  <name>Äänitetyyppi</name>
+	  <name>Äänen tallentamisen tapa</name>
 	</subfield>
 	<subfield code="b" repeatable="Y">
-	  <name>Tallennusväline</name>
+	  <name>Äänen tallennusmedian tyyppi</name>
 	</subfield>
 	<subfield code="c" repeatable="Y">
-	  <name>Kierrosnopeus</name>
+	  <name>Soittonopeus</name>
 	</subfield>
 	<subfield code="d" repeatable="Y">
 	  <name>Uran ominaisuudet</name>
 	</subfield>
 	<subfield code="e" repeatable="Y">
-	  <name>Ääniraitojen asemointi</name>
+	  <name>Ääniraidan asemointi</name>
 	</subfield>
 	<subfield code="f" repeatable="Y">
-	  <name>Ääninauhan asemointi</name>
+	  <name>Ääninauhan raitojen asemointi</name>
 	</subfield>
 	<subfield code="g" repeatable="Y">
-	  <name>Äänentoistokanavien konfigurointi</name>
+	  <name>Toistokanavien asemointi</name>
 	  <description>Äänitteeseen käytettyjen äänikanavien määrä</description>
 	</subfield>
 	<subfield code="h" repeatable="Y">
-	  <name>Erityiset äänentoisto-ominaisuudet</name>
+	  <name>Äänentoiston erityisominaisuudet</name>
 	  <description>Taajuuskorjaus- ja kohinanvaimennusjärjestelmät</description>
 	</subfield>
 	<subfield code="0" repeatable="Y">
@@ -985,7 +985,7 @@
       </examples>
     </datafield>
     <datafield tag="346" repeatable="Y">
-      <name>Videotallenteen erityispiirteet</name>
+      <name>Videotallenteen ominaisuudet</name>
       <description paragraph="1">Analogisten videoiden tekninen kuvaus.</description>
       <indicators>
         <indicator num="1">
@@ -1041,7 +1041,7 @@
       </examples>
     </datafield>
     <datafield tag="347" repeatable="Y">
-      <name>Digitaalisen tiedoston erityispiirteet</name>
+      <name>Digitaalisen tiedoston ominaisuudet</name>
       <description paragraph="1">Tekstin, kuvan, audion, videon tai muuntyyppisen datan digitaalisen koodauksen tekninen kuvaus. Nämä tiedot voidaan ilmoittaa myös kentän 300 (ulkoasutiedot) osakentässä &#8225;b (muut fyysiset yksityiskohdat).</description>
       <indicators>
         <indicator num="1">
