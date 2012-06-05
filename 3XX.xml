@@ -1936,21 +1936,34 @@
     </datafield>
 <datafield tag="382" repeatable="Y">
       <name>Esityskokoonpano</name>
-      <description paragraph="1">Instrumentaali-, laulu-, tai muu esityskokoonpano, jolle musiikkiteos alkujaan on tarkoitettu tai jolle musiikkiekspressio on s‰velletty tai jolla se esitet‰‰n. Voidaan k‰ytt‰‰ erottamaan samannimisi‰ musiikkiteoksia tai -ekspressioita toisistaan.</description>
+      <description paragraph="1"><em>Manifestaatiot:</em> Instrumentaali-, laulu- tai muu esityskokoonpano, jota manifestaatio edustaa.</description>
+      <description paragraph="2"><em>Teokset ja ekspressiot:</em> Instrumentaali-, laulu-, tai muu esityskokoonpano, jolle musiikkiteos alkujaan on tarkoitettu tai jolle musiikkiekspressio on s‰velletty tai jolla se esitet‰‰n. Voidaan k‰ytt‰‰ erottamaan samannimisi‰ musiikkiteoksia tai -ekspressioita toisistaan.</description>
       <indicators>
         <indicator num="1">
-          <description>M‰‰rittelem‰tˆn</description>
+          <description>Vakion‰yttˆindikaattori</description>
           <values>
             <value code="#">
-              <description>M‰‰rittelem‰tˆn</description>
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Esityskokoonpano</description>
+            </value>
+            <value code="1">
+              <description>Osittainen esityskokoonpano</description>
             </value>
           </values>
         </indicator>
         <indicator num="2">
-          <description>M‰‰rittelem‰tˆn</description>
+          <description>Saatavuus</description>
           <values>
             <value code="#">
-              <description>M‰‰rittelem‰tˆn</description>
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Tieto ei saatavissa<br />Kentt‰‰ ei indeksoida hakuun.</description>
+            </value>
+            <value code="1">
+              <description>Tieto saatavissa<br />Kentt‰ indeksoidaan hakuun.</description>
             </value>
           </values>
         </indicator>
@@ -1958,6 +1971,24 @@
       <subfields>
         <subfield code="a" repeatable="Y">
           <name>Esityskokoonpano</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Solisti</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Kaksintava soitin/laulu‰‰ni</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Yksitt‰isten soitinten/laulu‰‰nten lukum‰‰r‰</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Vaihtoehtoinen esityskokoonpano</name>
+        </subfield>
+        <subfield code="s" repeatable="Y">
+          <name>Soitinten/laulu‰‰nten kokonaism‰‰r‰</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Huomautus</name>
         </subfield>
         <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero</name>
@@ -1982,6 +2013,18 @@
         </example>
         <example>
           <text><strong>382 ## &#8225;a</strong> Piano</text>
+        </example>
+        <example>
+          <text><strong>382 11 &#8225;a</strong> Didgerido <strong>&#8225;n</strong> 1 </text>
+        </example>
+        <example>
+          <text><strong>382 01 &#8225;b</strong> Huilu <strong>&#8225;a</strong> orkesteri </text>
+        </example>
+        <example>
+          <text><strong>382 01 &#8225;a</strong> Huilu <strong>&#8225;n</strong> 1 <strong>&#8225;d</strong> piccolo <strong>&#8225;n</strong> 1 </text>
+        </example>
+        <example>
+          <text><strong>382 ## &#8225;a</strong> Didgerido <strong>&#8225;v</strong> Didgerido on hallitseva, muita soittimia ei tunnistettu </text>
         </example>
        </examples>
     </datafield>

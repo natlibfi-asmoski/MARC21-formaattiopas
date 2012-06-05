@@ -125,7 +125,7 @@
           <description>Tiedot ilmaisevat liittyvän aineiston osan tai osat, jotka ovat yhteydessä kuvailun kohteeseen, esim. vuosiluvut ja volyymit. Osakenttään kirjataan myös osakohteen sijainti kuvailun kohteessa.</description>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -375,7 +375,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -491,7 +491,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -626,7 +626,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -754,7 +754,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -885,7 +885,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1007,7 +1007,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1152,7 +1152,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1282,7 +1282,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1407,7 +1407,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1535,7 +1535,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1666,7 +1666,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1818,7 +1818,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -1958,7 +1958,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
@@ -2091,7 +2091,7 @@
           <name>Yhteys, sijainti</name>
         </subfield>
         <subfield code="h" repeatable="N">
-          <name>Aineiston yleismääre</name>
+          <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>

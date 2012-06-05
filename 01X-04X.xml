@@ -865,7 +865,7 @@
     </datafield>
     <datafield tag="031" repeatable="Y">
       <name>Musiikkiaineiston incipit-tiedot</name>
-      <description paragraph="1">ASCII-merkeillä tehtyjen nuottikirjoitusten incipit-tiedot koodimuodossa. Käytetään yleensä nuottikäsikirjoituksille, mutta voidaan käyttää myös kaikelle muulle musiikkiaineistolle.</description>
+      <description paragraph="1">ASCII-merkeillä koodattujen nuottikirjoitusten incipit-tiedot koodimuodossa. Käytetään yleensä nuottikäsikirjoituksille, mutta voidaan käyttää myös kaikelle muulle musiikkiaineistolle.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -1033,7 +1033,7 @@
               <description>Monta yksittäistä ajankohtaa<br /> Tätä arvoa käytetään myös kahdelle toisiaan seuraavalle päivämäärälle.</description>
             </value>
             <value code="2">
-              <description>Aikaväli<br /> Äänitys-, kuvaus- tai löytöaika jakaantuu useammille kuin kahdelle toisiaan seuraaville päiville eikä yksittäisiä päivämääriä ei tiedetä tai niitä on liikaa eriteltäväksi.</description>
+              <description>Aikaväli<br /> Äänitys-, kuvaus- tai löytöaika jakaantuu useammille kuin kahdelle toisiaan seuraaville päivämäärille eikä yksittäisiä päivämääriä ei tiedetä tai niitä on liikaa eriteltäväksi.</description>
             </value>
           </values>
         </indicator>

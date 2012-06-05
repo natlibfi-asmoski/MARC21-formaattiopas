@@ -28,7 +28,7 @@
 </center>
 <p align="center">
 <i><span style="background-color: #FFFF00">
-Päivitetty viimeksi 17.2.2012.<br />
+Päivitetty viimeksi 5.6.2012.<br />
 Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       <xsl:apply-templates/>
 <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>

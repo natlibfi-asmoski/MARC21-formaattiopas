@@ -17,7 +17,7 @@
          </table>
       </center>
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 17.2.2012.<br>
+               Päivitetty viimeksi 5.6.2012.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Fyysisen kuvailun jne. kentät (3XX)</h2>
@@ -1521,20 +1521,30 @@
       <hr>
       <h3><a name="382"></a>382 - ESITYSKOKOONPANO (T)
       </h3>
-      <p>Instrumentaali-, laulu-, tai muu esityskokoonpano, jolle musiikkiteos alkujaan on tarkoitettu tai jolle musiikkiekspressio
+      <p><em>Manifestaatiot:</em> Instrumentaali-, laulu- tai muu esityskokoonpano, jota manifestaatio edustaa.
+      </p>
+      <p><em>Teokset ja ekspressiot:</em> Instrumentaali-, laulu-, tai muu esityskokoonpano, jolle musiikkiteos alkujaan on tarkoitettu tai jolle musiikkiekspressio
          on sävelletty tai jolla se esitetään. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia tai -ekspressioita toisistaan.
       </p>
       <h4>Indikaattorit</h4>
       <ul>
-         <li>Ensimmäinen - Määrittelemätön
+         <li>Ensimmäinen - Vakionäyttöindikaattori
             <ul>
-               <li><strong>#</strong> - Määrittelemätön
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Esityskokoonpano
+               </li>
+               <li><strong>1</strong> - Osittainen esityskokoonpano
                </li>
             </ul>
          </li>
-         <li>Toinen - Määrittelemätön
+         <li>Toinen - Saatavuus
             <ul>
-               <li><strong>#</strong> - Määrittelemätön
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Tieto ei saatavissa<br>Kenttää ei indeksoida hakuun.
+               </li>
+               <li><strong>1</strong> - Tieto saatavissa<br>Kenttä indeksoidaan hakuun.
                </li>
             </ul>
          </li>
@@ -1542,6 +1552,18 @@
       <h4>Osakenttäkoodit</h4>
       <ul>
          <li><strong>‡a</strong> - Esityskokoonpano (T)
+         </li>
+         <li><strong>‡b</strong> - Solisti (T)
+         </li>
+         <li><strong>‡d</strong> - Kaksintava soitin/lauluääni (T)
+         </li>
+         <li><strong>‡n</strong> - Yksittäisten soitinten/lauluäänten lukumäärä (T)
+         </li>
+         <li><strong>‡p</strong> - Vaihtoehtoinen esityskokoonpano (T)
+         </li>
+         <li><strong>‡s</strong> - Soitinten/lauluäänten kokonaismäärä (T)
+         </li>
+         <li><strong>‡v</strong> - Huomautus (T)
          </li>
          <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
@@ -1556,6 +1578,14 @@
       <p><strong>382 ## ‡a</strong> Sekakuoro <strong>‡a</strong> urut
       </p>
       <p><strong>382 ## ‡a</strong> Piano
+      </p>
+      <p><strong>382 11 ‡a</strong> Didgerido <strong>‡n</strong> 1 
+      </p>
+      <p><strong>382 01 ‡b</strong> Huilu <strong>‡a</strong> orkesteri 
+      </p>
+      <p><strong>382 01 ‡a</strong> Huilu <strong>‡n</strong> 1 <strong>‡d</strong> piccolo <strong>‡n</strong> 1 
+      </p>
+      <p><strong>382 ## ‡a</strong> Didgerido <strong>‡v</strong> Didgerido on hallitseva, muita soittimia ei tunnistettu 
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
