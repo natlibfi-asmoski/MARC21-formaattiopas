@@ -778,6 +778,10 @@
         <subfield code="b" repeatable="N">
           <name>Julkaisija</name>
         </subfield>
+	<subfield code="q" repeatable="Y">
+	  <name>Tarkentava tieto</name>
+	  <description>Tarkenteet, jotka liittyvät tunnukseen, esim. osa jota tunnus koskee.</description>
+	</subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -815,6 +819,9 @@
         <example>
           <text><strong>028 41 &#8225;b</strong> Vidmark Entertainment <strong>&#8225;a</strong> VM5108</text>
         </example>
+	<example>
+	  <text><strong>028 02 &#8225;b</strong> EMI Music Canada <strong>&#8225;a</strong> K2 31158 <strong>&#8225;q</strong> (on label)</text>
+	</example> 
       </examples>
     </datafield>
     <datafield tag="030" repeatable="Y">
