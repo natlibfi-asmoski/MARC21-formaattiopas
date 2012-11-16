@@ -503,6 +503,88 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="883" repeatable="Y">
+      <name>Koneellisesti luotu metatiedon alkuperä</name>
+      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa, ts. jonkin muun nimetyn prosessin kuin intellektuaalisen mukaan luotu.</description>
+      <indicators>
+	<indicator num="1">
+	  <description>Luontitapa</description>
+	  <values>
+	    <value code="#">
+	      <description>Tieto puuttuu/ ei ole sovellettavissa</description>
+	    </value>
+	    <value code="0">
+	      <description>Kokonaan koneellisesti luotu</description>
+	    </value>
+	    <value code="1">
+	      <description>Osittain koneellisesti luotu</description>
+	    </value>
+	  </values>
+	</indicator>
+	<indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+	<subfield code="a" repeatable="N">
+	  <name>Luontitapa</name>
+	</subfield>
+	<subfield code="b" repeatable="N">
+          <name>Luotettavuusarvo</name>
+        </subfield>
+	<subfield code="d" repeatable="N">
+          <name>Luontipäivä</name>
+	  <description>Tallennetaan muodossa vvvvkkpp, ISO 8601.</description>
+        </subfield>
+	<subfield code="q" repeatable="N">
+          <name>Luonut organisaatio</name>
+	  <description>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+	<subfield code="x" repeatable="N">
+          <name>Voimassaolon päättymispäivä</name>
+	  <description>Tallennetaan muodossa vvvvkkpp, ISO 8601.</description>
+        </subfield>
+	<subfield code="u" repeatable="N">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+	<subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+        </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+	<subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;a</strong> classify <strong>&#8225;d</strong> 20120407 <strong>&#8225;q</strong> OCoLC-D <strong>&#8225;c</strong> 0.5</text>
+	</example>
+	<example>
+          <text><strong>883 1# &#8225;8</strong> 1\p <strong>&#8225;a</strong> autodewey <strong>&#8225;d</strong> 20120407 <strong>&#8225;q</strong> DLC <strong>&#8225;c</strong> 1</text>
+	</example>
+	<example>
+	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;a</strong> deweyclassifierv0.1 <strong>&#8225;d</strong> 20120101 <strong>&#8225;x</strong> 20141231 <strong>&#8225;q</strong> NO-OsNB <strong>&#8225;c</strong> 0,75 <strong>&#8225;0</strong> (DE-101)040268942</text>
+	</example>
+	<example>
+ 	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;a</strong> parallelrecordcopy <strong>&#8225;d</strong> 20120101 <strong>&#8225;x</strong> 20141231 <strong>&#8225;q</strong> NO-OsNB</text>
+	</example>
+	<example>
+	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;8</strong> 2\p <strong>&#8225;u</strong> http://publishers.oclc.org/en/metadata/ <strong>&#8225;d</strong> 20120206 <strong>&#8225;q</strong> OCoLC <strong>&#8225;c</strong> 0.85 <strong>&#8225;0</strong> (OCoLC)ANT006000</text>
+ 	</example>
+	<example>
+	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;a</strong> aviafgerman <strong>&#8225;d</strong> 20110106 <strong>&#8225;q</strong> OCoLC <strong>&#8225;c</strong> 1 <strong>&#8225;0</strong> (OCoLC)viaf27070050</text>
+ 	</example>
+      </examples>
+    </datafield>
     <datafield tag="886" repeatable="Y">
       <name>Tiedot vieraiden marc-formaattien kentistä</name>
       <description paragraph="1">Käytetään muunnettaessa vieraiden MARC-formaattien tietoja MARC 21 -formaattiin, kun vieraan MARC-formaatin tiedoille ei löydy vastaavaa kenttää MARC 21 -formaatista.</description>
