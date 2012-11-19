@@ -581,6 +581,9 @@
 	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;8</strong> 2\p <strong>&#8225;u</strong> http://publishers.oclc.org/en/metadata/ <strong>&#8225;d</strong> 20120206 <strong>&#8225;q</strong> OCoLC <strong>&#8225;c</strong> 0.85 <strong>&#8225;0</strong> (OCoLC)ANT006000</text>
  	</example>
 	<example>
+	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;u</strong> http://classify.oclc.org/classify2/Classify?isbn=0679442723&amp;summary=true <strong>&#8225;d</strong> 20120817 <strong>&#8225;q</strong> OCoLC-D <strong>&#8225;c</strong> 0.9</text>
+	</example>
+	<example>
 	  <text><strong>883 0# &#8225;8</strong> 1\p <strong>&#8225;a</strong> aviafgerman <strong>&#8225;d</strong> 20110106 <strong>&#8225;q</strong> OCoLC <strong>&#8225;c</strong> 1 <strong>&#8225;0</strong> (OCoLC)viaf27070050</text>
  	</example>
       </examples>
