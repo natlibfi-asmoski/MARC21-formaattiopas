@@ -505,7 +505,7 @@
     </datafield>
     <datafield tag="883" repeatable="Y">
       <name>Koneellisesti luotu metatiedon alkuperä</name>
-      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa, ts. jonkin muun nimetyn prosessin kuin intellektuaalisen mukaan luotu.</description>
+      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa, ts. jonkin muun kuin intellektuaalisen prosessin mukaan luodut kentät.</description>
       <indicators>
 	<indicator num="1">
 	  <description>Luontitapa</description>
@@ -532,7 +532,7 @@
       </indicators>
       <subfields>
 	<subfield code="a" repeatable="N">
-	  <name>Luontitapa</name>
+	  <name>Luontimenetelmä</name>
 	</subfield>
 	<subfield code="b" repeatable="N">
           <name>Luotettavuusarvo</name>
