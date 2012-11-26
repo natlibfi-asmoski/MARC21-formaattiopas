@@ -554,10 +554,11 @@
         </subfield>
 	<subfield code="w" repeatable="Y">
           <name>Bibliografisen tietueen kontrollinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#w">Kontrolliosakentät</a></em>.</description>
         </subfield>
 	<subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
-	  <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
         </subfield>
 	<subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
