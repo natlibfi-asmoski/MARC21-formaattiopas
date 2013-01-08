@@ -177,18 +177,18 @@
               <description> Yksimerkkinen koodi, joka kuvaa osakentässä &#8225;a olevan nimen tyyppiä. Koodi vastaa liittyvän kohteen tietueen 1XX kenttää.</description>
               <values>
                 <value code="p">
-                  <name>Nimen osien järjestys suora</name>
+                  <name>Henkilönnimi</name>
                 </value>
-				<value code="c">
+		<value code="c">
                   <name>Yhteisönnimi</name>
                 </value>
-				<value code="m">
+		<value code="m">
                   <name>Kokouksen nimi</name>
                 </value>
-				<value code="u">
+		<value code="u">
                   <name>Yhtenäistetty nimeke</name>
                 </value>
-				<value code="n">
+		<value code="n">
                   <name>Soveltumaton</name>
                 </value>
               </values>
@@ -200,16 +200,13 @@
                 <alternative num="1">
                   <name>Jos $7/0 = p (Henkilönnimi)</name>
                   <values>
-					<value code="0">
+		  	<value code="0">
 	                  <name>Etunimi</name>
 	                </value>
-					<value code="1">
-	                  <name>Nimen osien järjestys käänteinen, sukunimi yksiosainen</name>
+			<value code="1">
+	                  <name>Sukunimi</name>
 	                </value>
-					<value code="2">
-	                  <name>Nimen osien järjestys käänteinen, sukunimi moniosainen</name>
-	                </value>
-					<value code="3">
+			<value code="3">
 	                  <name>Suvun nimi</name>
 	                </value>
 	              </values>
@@ -217,21 +214,21 @@
                 <alternative num="2">
                   <name>Jos $7/0 = c (Yhteisönnimi) tai m (Kokouksen nimi)</name>
                   <values>
-					<value code="0">
+			<value code="0">
 	                  <name>Nimen osien järjestys käänteinen</name>
 	                </value>
-					<value code="1">
+			<value code="1">
 	                  <name>Hallintoalueen nimi</name>
 	                </value>
-					<value code="2">
+			<value code="2">
 	                  <name>Nimen osien järjestys suora</name>
 	                </value>
                   </values>
                 </alternative>
-				<alternative num="3">
-				  <name>Jos $7/0 = u (Yhtenäistetty nimeke) tai n (Soveltumaton)</name>
+			<alternative num="3">
+			  <name>Jos $7/0 = u (Yhtenäistetty nimeke) tai n (Soveltumaton)</name>
                   <values>
-					<value code="n">
+			<value code="n">
 	                  <name>Soveltumaton</name>
 	                </value>
                   </values>
