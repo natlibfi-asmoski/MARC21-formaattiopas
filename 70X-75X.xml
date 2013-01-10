@@ -413,13 +413,13 @@
           <text><strong>245 14 &#8225;a</strong> The economic impact of the 1976 Olympic Games : <strong>&#8225;b</strong> a study undertaken for the Organizing Committee of the 1976 Olympic Games sponsored by Bank of Montreal / <strong>&#8225;c</strong> [John Iton].<br /><strong>711 2# &#8225;a</strong> Olympic Games <strong>&#8225;n</strong> (21st : <strong>&#8225;d</strong> 1976 : <strong>&#8225;c</strong> Montreal, Quebec). <strong>&#8225;e</strong> Organizing Committee. <strong>&#8225;e</strong> Arts and Culture Program. <strong>&#8225;e</strong> Visual Arts Section</text>
         </example>
         <example>
-          <text><strong>245 00 &#8225;a</strong> Minerals, materials and industry : <strong>&#8225;b</strong> papers presented at the fourteenth Congress of the Council of Mining and Metallurgical Institutions, organized by the Institution of Mining and Metallurgy and held in Edinburgh, Scotland, from 2 to 6 July, 1990.<br /><strong>710 21 &#8225;a</strong> Council of Mining and Metallurgical Institutions. <strong>&#8225;b</strong> Congress <strong>&#8225;n</strong> (14 : <strong>&#8225;d</strong> 1990 : <strong>&#8225;c</strong> Edinburgh)</text>
-        </example>
-        <example>
           <text><strong>245 00 &#8225;a</strong> Perspectives on Arabic linguistics XVII-XVIII : <strong>&#8225;b</strong> papers from the seventeenth and eighteenth annual Symposia on Arabic Linguistics / <strong>&#8225;c</strong> edited by Mohammad T. Alhawary, Elabbas Benmamoun.<br /><strong>711 2 #&#8225;a</strong> Symposium on Arabic Linguistics <strong>&#8225;n</strong> (18th : <strong>&#8225;d</strong> 2004 :<strong>&#8225;c</strong> University of Oklahoma)</text>
         </example>
         <example>
           <text><strong>245 00 &#8225;a</strong> Proceedings of the second United States - Finland Workshop on magnestospheric and ionospheric phenomena in auroral regions : <strong>&#8225;b</strong> October 10-13, 1983 University of Maryland / <strong>&#8225;c</strong> editors T.J. Rosenberg and J. Oksman.<br /><strong>711 2# &#8225;a</strong> United States-Finland Workshop on Magnestopheric and Ionospheric Phenomena in Auroral Regions <strong>&#8225;n</strong> (2 :<strong>&#8225;d</strong> 1983 : <strong>&#8225;c</strong> College Park)</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Minerals, materials and industry : <strong>&#8225;b</strong> papers presented at the fourteenth Congress of the Council of Mining and Metallurgical Institutions, organized by the Institution of Mining and Metallurgy and held in Edinburgh, Scotland, from 2 to 6 July, 1990.<br /><strong>710 21 &#8225;a</strong> Council of Mining and Metallurgical Institutions. <strong>&#8225;b</strong> Congress <strong>&#8225;n</strong> (14 : <strong>&#8225;d</strong> 1990 : <strong>&#8225;c</strong> Edinburgh).<br /><strong>Huom!</strong> Tässä kirjaus alkaa yhteisönnimellä, käytetään kenttää 710.</text>
         </example>
       </examples>
     </datafield>
