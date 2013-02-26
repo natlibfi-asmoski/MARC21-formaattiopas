@@ -1085,7 +1085,7 @@
           <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
         <subfield code="2" repeatable="N">
-          <name>Tiedon lähde</name>
+          <name>Termin lähde</name>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -1116,7 +1116,7 @@
           <text><strong>347 ## &#8225;a</strong> image file <strong>&#8225;b</strong> JPEG <strong>&#8225;d</strong> 3.1 megapixels <strong>&#8225;2</strong> rda</text>
         </example>
         <example>
-          <text><strong>347 ## &#8225;a</strong> video file <strong>&#8225;b</strong> DVD video <strong>&#8225;e</strong> region <strong>&#8225;2</strong> rda</text>
+          <text><strong>347 ## &#8225;a</strong> video file <strong>&#8225;b</strong> DVD video <strong>&#8225;e</strong> region 4<strong>&#8225;2</strong> rda</text>
         </example>
         <example>
           <text><strong>347 ## &#8225;a</strong> audio file <strong>&#8225;b</strong> MP3 <strong>&#8225;f</strong> 32 kbps <strong>&#8225;2</strong> rda</text>
