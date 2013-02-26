@@ -564,7 +564,7 @@
     </datafield>
     <datafield tag="546" repeatable="Y">
       <name>Huomautus kielist‰</name>
-      <description paragraph="1">Tekstimuotoinen huomautus kielist‰, joita kuvailtavassa aineistossa k‰ytet‰‰n. Huomautukseen voi sis‰lty‰ kuvaus aakkostosta, kirjoitusj‰rjestelm‰st‰ tai muusta symbolij‰rjestelm‰st‰ (esim. arabialaiset aakkoset, ACII, nuottikirjoitus, viivakoodi, logaritminen graafi). Koodimuotoiset tiedot kielist‰ tallennetaan kenttiin <a href="008.xml#kaikki">008</a>/35-37 (Kieli) ja/tai <a href="01X-04X.xml#041">041</a> (Kielikoodi).</description>
+      <description paragraph="1">Tekstimuotoinen huomautus kielist‰ tai notaatioj‰rjestelm‰st‰, joita kuvailtavassa aineistossa k‰ytet‰‰n. Huomautukseen voi sis‰lty‰ kuvaus aakkostosta, kirjoitusj‰rjestelm‰st‰ tai muusta symbolij‰rjestelm‰st‰ (esim. arabialaiset aakkoset, ACII, nuottikirjoitus, viivakoodi, logaritminen graafi). Koodimuotoiset tiedot kielist‰ tallennetaan kenttiin <a href="008.xml#kaikki">008</a>/35-37 (Kieli) ja/tai <a href="01X-04X.xml#041">041</a> (Kielikoodi).</description>
       <indicators>
         <indicator num="1">
           <description>M‰‰rittelem‰tˆn</description>

@@ -2042,7 +2042,7 @@
               <name>Pianopartituuri</name>
             </value>
             <value code="d">
-              <name>Partituuri, jossa vain soololaulu‰‰net "Voice score"</name>
+              <name>Partituuri, jossa vain laulu‰‰net ilman s‰estyst‰ "Voice score"</name>
             </value>
             <value code="e">
               <name>Partituurin tiivistelm‰ tai johto‰‰ni</name>
@@ -2061,7 +2061,7 @@
               <name>Johto‰‰ni</name>
             </value>
 	    <value code="k">
-              <name> </name>
+              <name>laulupartituuri "vocal score"</name>
             </value>
             <value code="m">
               <name>Useita tyyppej‰</name>

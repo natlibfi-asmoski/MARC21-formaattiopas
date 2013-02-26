@@ -793,22 +793,13 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>028 01 &#8225;a</strong> KIDS0197</text>
+          <text><strong>028 01 &#8225;b</strong> Fazer Records <strong>&#8225;a</strong> 3984-22086-2 <strong>&#8225;q</strong> (CD)</text>
         </example>
         <example>
-          <text><strong>028 00 &#8225;a</strong> 89023-L</text>
-        </example>
-        <example>
-          <text><strong>028 01 &#8225;b</strong> Fazer Records <strong>&#8225;a</strong> 3984-22086-2</text>
-        </example>
-        <example>
-          <text><strong>028 11 &#8225;a</strong> LVM72381</text>
+          <text><strong>028 01 &#8225;b</strong> Fazer Records <strong>&#8225;a</strong> 3984-22086-4 <strong>&#8225;q</strong> (C-kas.)</text>
         </example>
         <example>
           <text><strong>028 11 &#8225;b</strong> Deutsche Grammophon Gesellschaft <strong>&#8225;a</strong> 256A090</text>
-        </example>
-        <example>
-          <text><strong>028 21 &#8225;a</strong> S9432</text>
         </example>
         <example>
           <text><strong>028 21 &#8225;b</strong> Breitkopf &amp; Härtel <strong>&#8225;a</strong> B&amp;H8797</text>
@@ -819,10 +810,7 @@
         <example>
           <text><strong>028 41 &#8225;b</strong> Vidmark Entertainment <strong>&#8225;a</strong> VM5108</text>
         </example>
-	<example>
-	  <text><strong>028 02 &#8225;b</strong> EMI Music Canada <strong>&#8225;a</strong> K2 31158 <strong>&#8225;q</strong> (on label)</text>
-	</example> 
-      </examples>
+	</examples>
     </datafield>
     <datafield tag="030" repeatable="Y">
       <name>Coden-tunnus</name>

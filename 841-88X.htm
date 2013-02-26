@@ -84,6 +84,8 @@
          </li>
          <li><a href="#882">882 - TIEDOT KORVAAVASTA TIETUEESTA</a> (ET)
          </li>
+         <li><a href="#883">883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI)</a> (T)
+         </li>
          <li><a href="#886">886 - TIEDOT VIERAIDEN MARC-FORMAATTIEN KENTISTÄ</a> (T)
          </li>
          <li><a href="#887">887 - TIEDOT MUISTA FORMAATEISTA, EI MARC</a> (T)
@@ -469,6 +471,68 @@
       </ul>
       <h4>Esimerkki</h4>
       <p><strong>882 ## ‡a</strong> United states: Statistical abstract of the United States <strong>‡i</strong> bibliographic record deleted, to be replaced by: <strong>‡w</strong> (DE-600)39-5
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="883"></a>883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI) (T)
+      </h3>
+      <p>Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin
+         kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Luontitapa
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu/ei ole sovellettavissa
+               </li>
+               <li><strong>0</strong> - Kokonaan koneellisesti luotu
+               </li>
+               <li><strong>1</strong> - Osittain koneellisesti luotu
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luontimenetelmä (ET)
+         </li>
+         <li><strong>‡b</strong> - Luotettavuusarvo (ET)
+         </li>
+         <li><strong>‡d</strong> - Luontipäivä (ET)<br>Tallennetaan muodossa vvvvkkpp, ISO 8601.
+         </li>
+         <li><strong>‡q</strong> - Metatiedon luonut organisaatio (ET)<br>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.
+         </li>
+         <li><strong>‡x</strong> - Voimassaolon päättymispäivä (ET)<br>Tallennetaan muodossa vvvvkkpp, ISO 8601.
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (ET)
+         </li>
+         <li><strong>‡w</strong> - Bibliografisen tietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#w">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>883 0# ‡8</strong> 1\p <strong>‡a</strong> classify <strong>‡d</strong> 20120407 <strong>‡q</strong> OCoLC-D <strong>‡c</strong> 0.5
+      </p>
+      <p><strong>883 1# ‡8</strong> 1\p <strong>‡a</strong> autodewey <strong>‡d</strong> 20120407 <strong>‡q</strong> DLC <strong>‡c</strong> 1
+      </p>
+      <p><strong>883 0# ‡8</strong> 1\p <strong>‡a</strong> deweyclassifierv0.1 <strong>‡d</strong> 20120101 <strong>‡x</strong> 20141231 <strong>‡q</strong> NO-OsNB <strong>‡c</strong> 0,75 <strong>‡0</strong> (DE-101)040268942
+      </p>
+      <p><strong>883 0# ‡8</strong> 1\p <strong>‡a</strong> parallelrecordcopy <strong>‡d</strong> 20120101 <strong>‡x</strong> 20141231 <strong>‡q</strong> NO-OsNB
+      </p>
+      <p><strong>883 0# ‡8</strong> 1\p <strong>‡8</strong> 2\p <strong>‡u</strong> http://publishers.oclc.org/en/metadata/ <strong>‡d</strong> 20120206 <strong>‡q</strong> OCoLC <strong>‡c</strong> 0.85 <strong>‡0</strong> (OCoLC)ANT006000
+      </p>
+      <p><strong>883 0# ‡8</strong> 1\p <strong>‡u</strong> http://classify.oclc.org/classify2/Classify?isbn=0679442723&amp;summary=true <strong>‡d</strong> 20120817 <strong>‡q</strong> OCoLC-D <strong>‡c</strong> 0.9
+      </p>
+      <p><strong>883 0# ‡8</strong> 1\p <strong>‡a</strong> aviafgerman <strong>‡d</strong> 20110106 <strong>‡q</strong> OCoLC <strong>‡c</strong> 1 <strong>‡0</strong> (OCoLC)viaf27070050
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>

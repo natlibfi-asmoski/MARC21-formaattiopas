@@ -504,14 +504,14 @@
       </examples>
     </datafield>
     <datafield tag="883" repeatable="Y">
-      <name>Koneellisesti luotu metatiedon alkuperä</name>
-      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa, ts. jonkin muun kuin intellektuaalisen prosessin mukaan luodut kentät.</description>
+      <name>Koneellisesti luodun metatiedon alkuperä (provenanssi)</name>
+      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa.</description>
       <indicators>
 	<indicator num="1">
 	  <description>Luontitapa</description>
 	  <values>
 	    <value code="#">
-	      <description>Tieto puuttuu/ ei ole sovellettavissa</description>
+	      <description>Tieto puuttuu/ei ole sovellettavissa</description>
 	    </value>
 	    <value code="0">
 	      <description>Kokonaan koneellisesti luotu</description>
@@ -542,7 +542,7 @@
 	  <description>Tallennetaan muodossa vvvvkkpp, ISO 8601.</description>
         </subfield>
 	<subfield code="q" repeatable="N">
-          <name>Luonut organisaatio</name>
+          <name>Metatiedon luonut organisaatio</name>
 	  <description>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
         </subfield>
 	<subfield code="x" repeatable="N">
