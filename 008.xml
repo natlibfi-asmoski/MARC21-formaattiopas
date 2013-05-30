@@ -2063,6 +2063,9 @@
 	    <value code="k">
               <name>laulupartituuri "vocal score"</name>
             </value>
+	    <value code="l">
+              <name>"score"</name>
+            </value>
             <value code="m">
               <name>Useita tyyppejä</name>
             </value>
