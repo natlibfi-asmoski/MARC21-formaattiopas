@@ -2123,6 +2123,12 @@
         <subfield code="n" repeatable="N">
           <name>Voimassaolon viimeinen p‰iv‰m‰‰r‰</name>
         </subfield>
+	<subfield code="o" repeatable="N">
+          <name>Yksi julkaisuvuosi tai aloitus... </name>
+        </subfield>
+	<subfield code="p" repeatable="N">
+          <name>P‰‰ttymisaika...</name>
+        </subfield>
         <subfield code="2" repeatable="N">
           <name>Tietojen l‰hde</name>
           <description>Koodi otetaan listalta, ks. <a href="http://www.loc.gov/standards/sourcelist/date-time.html"> <em>Date and Time Scheme Source Codes</em></a>.</description>
