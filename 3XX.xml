@@ -2181,10 +2181,86 @@
         </subfield>
 	<subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
         </subfield>
 	<subfield code="2" repeatable="N">
           <name>Termin l‰hde</name>
 	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>tai<em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.</description>
+        </subfield>
+	<subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+	<subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja j‰rjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+      </subfields>
+     <examples>
+        <example>
+          <text><strong>385 ## &#8225;a</strong> Children <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;a</strong> HIV Long-Term Survivors <strong>&#8225;a</strong> Caregivers <strong>&#8225;2</strong> mesh</text>
+	</example>
+	<example>  
+	  <text><strong>385 ## &#8225;m</strong> Occupational/field of activity group <strong>&#8225;a</strong> Painters <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>  
+	  <text><strong>385 ## &#8225;n</strong> age <strong>&#8225;a</strong> adolescent <strong>&#8225;b</strong> d <strong>&#8225;2</strong> marctarget</text>
+        </example>
+       </examples>
+    </datafield>
+<datafield tag="386" repeatable="Y">
+      <name>Tekij‰n erityispiirteet</name>
+      <description paragraph="1">Ryhm‰kategoria, johon teoksen tai kokoomateoksen tekij‰/tekij‰t, tai ekspressioon tai kokoomateokseen osallistuja(t) kuuluvat.</description>
+      <description paragraph="2">Jos demografista ryhm‰‰ ei ole m‰‰ritelty, erilaiset tekij‰-/osallistujaryhm‰kategoiat samasta l‰hdesanastosta tai koodilistasta voidaan tallentaa samaan kentt‰‰n erillisin‰ a- ja b-osakenttin‰. 
+         Jos demografinen ryhm‰ on m‰‰ritelty, kaikkien kentt‰‰n tallennettavien kategorioiden on oltava samasta ryhm‰st‰. Eri l‰hdesanastoista tulevat termit tallennetaan eri toistumina kentt‰‰n.</description> 
+      <indicators>
+        <indicator num="1">
+          <description>M‰‰rittelem‰tˆn</description>
+        <values>
+            <value code="#">
+              <description>M‰‰rittelem‰tˆn</description>
+            </value>
+        </values>
+        </indicator>
+        <indicator num="2">
+          <description>M‰‰rittelem‰tˆn</description>
+          <values>
+            <value code="#">
+              <description>M‰‰rittelem‰tˆn</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tekij‰/osallistuja</name>
+	  <description>Ryhm‰kategoria kuvailtavan teoksen tekij‰lle. Toistettavissa, mik‰li tekij‰ kuuluu useisiin demografisiin ryhmiin.</description>
+        </subfield>
+	<subfield code="b" repeatable="Y">
+          <name>Koodi tekij‰lle</name>
+	  <description>Koodi, joka kuvaa kuvailtavan teoksen tekij‰n ryhm‰kategoriaa.</description>
+        </subfield>
+	<subfield code="m" repeatable="N">
+          <name>Demografisen ryhm‰n termi</name>
+	  <description>M‰‰re demografiselle ryhm‰lle (esim. ik‰ryhm‰, uskonnollinen ryhm‰), jolle osakenttien &#8225;a ja &#8225;b termit ja koodit kuuluvat.</description>
+        </subfield>
+	<subfield code="n" repeatable="N">
+          <name>Demografisen ryhm‰n koodi</name>
+	  <description>Koodi demografiselle ryhm‰lle (esim. ik‰ryhm‰, uskonnollinen ryhm‰), jolle osakenttien &#8225;a ja &#8225;b termit ja koodit kuuluvat.</description>
+        </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
+          <name>Termin l‰hde</name>
+	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
 	<subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
