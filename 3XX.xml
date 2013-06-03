@@ -2185,7 +2185,7 @@
         </subfield>
 	<subfield code="2" repeatable="N">
           <name>Termin lähde</name>
-	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>tai<em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.</description>
+	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em> tai <em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.</description>
         </subfield>
 	<subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -2204,14 +2204,41 @@
           <text><strong>385 ## &#8225;a</strong> Children <strong>&#8225;2</strong> lcsh</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;a</strong> HIV Long-Term Survivors <strong>&#8225;a</strong> Caregivers <strong>&#8225;2</strong> mesh</text>
+          <text><strong>385 ## &#8225;a</strong> Painters <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;a</strong> HIV Long-Term Survivors <strong>&#8225;a</strong> Caregivers<strong>&#8225;2</strong> mesh</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;a</strong> HIV-positive persons <strong>&#8225;a</strong> Caregivers <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;m</strong> Educational level group<strong>&#8225;a</strong> College Freshmen<strong>&#8225;2</strong> ericd</text>
 	</example>
 	<example>  
 	  <text><strong>385 ## &#8225;m</strong> Occupational/field of activity group <strong>&#8225;a</strong> Painters <strong>&#8225;2</strong> lcsh</text>
 	</example>
+	<example>
+	  <text><strong>385 ## &#8225;m</strong> Age group<strong>&#8225;a</strong> Children<strong>&#8225;2</strong> ericd</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;m</strong> Language group<strong>&#8225;a</strong> Spanish Speaking<strong>&#8225;2</strong> ericd</text>
+	</example>
 	<example>  
-	  <text><strong>385 ## &#8225;n</strong> age <strong>&#8225;a</strong> adolescent <strong>&#8225;b</strong> d <strong>&#8225;2</strong> marctarget</text>
+	  <text><strong>385 ## &#8225;n</strong> age<strong>&#8225;a</strong> adolescent <strong>&#8225;b</strong> d <strong>&#8225;2</strong> marctarget</text>
         </example>
+	<example>
+	  <text><strong>385 ## &#8225;n</strong> occ<strong>&#8225;a</strong> Police<strong>&#8225;a</strong> Lawyers <strong>&#8225;a</strong> Judges<strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;a</strong> Actors<strong>&#8225;2</strong> lcsh<strong>&#8225;0</strong> (DLC)sh 85000744</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;m</strong> Religious group<strong>&#8225;a</strong> Buddhists<strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+	  <text><strong>385 ## &#8225;m</strong> Age group<strong>&#8225;a</strong> Youth<strong>&#8225;2</strong> lcsh</text>
+	</example>
        </examples>
     </datafield>
 <datafield tag="386" repeatable="Y">
@@ -2274,6 +2301,38 @@
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
         </subfield>
       </subfields>
+     <examples>
+        <example>
+          <text><strong>386 ## &#8225;a</strong> Americans <strong>&#8225;a</strong> Women <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;a</strong> North Americans <strong>&#8225;a</strong> Women <strong>&#8225;2</strong> ericd</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;a</strong> Child composers <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;m</strong> Nationality/regional group <strong>&#8225;a</strong> Americans <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;m</strong> Gender group <strong>&#8225;a</strong> Women <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;m</strong> Nationality/regional group <strong>&#8225;a</strong> North Americans <strong>&#8225;2</strong> ericd</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;m</strong> Gender group <strong>&#8225;a</strong> Females <strong>&#8225;2</strong> ericd</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;m</strong> Religious group <strong>&#8225;a</strong> Christians <strong>&#8225;a</strong> Buddhists <strong>&#8225;2</strong> lcsh</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;n</strong> occ <strong>&#8225;a</strong> Artists <strong>&#8225;a</strong> Authors <strong>&#8225;2</strong> ericd</text>
+	</example>
+	<example>
+          <text><strong>386 ## &#8225;a</strong> Chinese Canadians <strong>&#8225;2</strong> cash</text>
+	</example>
+     </examples>
     </datafield>
 </datafields>
 </fields>
