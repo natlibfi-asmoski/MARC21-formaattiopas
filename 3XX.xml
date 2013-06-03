@@ -2139,5 +2139,65 @@
         </example>
        </examples>
     </datafield>
-  </datafields>
+<datafield tag="385" repeatable="Y">
+      <name>Yleisön erityispiirteet</name>
+      <description paragraph="1">Kategoria henkilöille, joille aineisto on tarkoitettu tai kategoria henkilöille, jotka edustavat tasoa, jolle aineiston sisältöä pidetään sopivana.</description>
+      <description paragraph="2">Jos demografista ryhmää ei ole määritelty, erilaiset yleisön erityispiirteet samasta lähdesanastosta tai koodilistasta voidaan tallentaa samaan kenttään erillisinä a- ja b-osakenttinä. 
+	Jos demografinen ryhmä on määritelty, kaikkien kenttään tallennettavien erityispiirteiden on oltava samasta ryhmästä. Eri lähdesanastoista tulevat termit tallennetaan eri toistumina kenttään.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+        <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+        </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Yleisö</name>
+	  <description>Kuvailtavan teoksen kohdeyleisö. Toistettavissa, mikäli yleisö jakaantuu useisiin demografisiin ryhmiin.</description>
+        </subfield>
+	<subfield code="b" repeatable="Y">
+          <name>Koodi yleisölle</name>
+	  <description>Koodi, joka kuvaa kuvailtavan teoksen kohdeyleisöä.</description>
+        </subfield>
+	<subfield code="m" repeatable="N">
+          <name>Demografisen ryhmän termi</name>
+	  <description>Määre demografiselle ryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien &#8225;a ja &#8225;b termit ja koodit kuuluvat.</description>
+        </subfield>
+	<subfield code="n" repeatable="N">
+          <name>Demografisen ryhmän termi</name>
+	  <description>Koodi demografiselle ryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien &#8225;a ja &#8225;b termit ja koodit kuuluvat.</description>
+        </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+        </subfield>
+	<subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>tai<em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.</description>
+        </subfield>
+	<subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+	<subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+    </datafield>
+</datafields>
 </fields>
