@@ -2124,10 +2124,10 @@
           <name>Voimassaolon viimeinen päivämäärä</name>
         </subfield>
 	<subfield code="o" repeatable="N">
-          <name>Yksi julkaisuvuosi tai aloitus... </name>
+          <name>Yksi julkaisuvuosi tai aloitusaika --sisällölle </name>
         </subfield>
 	<subfield code="p" repeatable="N">
-          <name>Päättymisaika...</name>
+          <name>Lopetuspäivämäärä --sisällölle</name>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tietojen lähde</name>
@@ -2160,6 +2160,12 @@
         </example>
         <example>
           <text><strong>046 ## &#8225;m</strong> 20011008 <strong>&#8225;n</strong> 20011027</text>
+        </example>
+	<example>
+          <text><strong>046 ## &#8225;o</strong> 1800 <strong>&#8225;p</strong> 1899</text>
+        </example>
+	<example>
+          <text><strong>046 ## &#8225;o</strong> 1932 <strong>&#8225;p</strong> 1940</text>
         </example>
         <example>
           <text><strong>046 ## &#8225;j</strong> 2001-07-12 <strong>&#8225;2</strong> [Code for W3CDTF]</text>
