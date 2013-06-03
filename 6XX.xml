@@ -715,7 +715,7 @@
               <description>Tieto puuttuu</description>
             </value>
 	    <value code="0">
-	      <description>Aika tai ajanjakso, jota teos kuvaa</description>
+	      <description>Aika tai ajanjakso, jonka teos kattaa tai jota teos kuvaa</description>
 	    </value>
 	    <value code="1">
 	      <description>Aika tai ajanjakso, jolloin teos on luotu tai jolta teos on peräisin</description>
