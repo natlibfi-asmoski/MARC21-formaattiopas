@@ -46,6 +46,7 @@ auktoriteettitietueina.</p>
 	<li><a href="#750">750 - LINKKIKENTTÄ - AIHETTA ILMAISEVA TERMI</a> (T)</li>
 	<li><a href="#751">751 - LINKKIKENTTÄ - MAANTIETEELLINEN NIMI</a> (T)</li>
 	<li><a href="#755">755 - LINKKIKENTTÄ - LAJITYYPPIÄ/MUOTOA ILMAISEVA TERMI</a> (T)</li>
+	<li><a href="#762">762 - LINKKIKENTTÄ - ESITYSKOKOONPANOA ILMAISEVA TERMI</a> (T)</li>
 	<li><a href="#780">780 - LINKKIKENTTÄ - YLEINEN LISÄMÄÄRE (T)</a></li>
 	<li><a href="#781">781 - LINKKIKENTTÄ - MAANTIETEELLINEN LISÄMÄÄRE (T)</a></li>
 	<li><a href="#782">782 - LINKKIKENTTÄ - AIKAA ILMAISEVA LISÄMÄÄRE (T)</a></li>
@@ -635,6 +636,7 @@ selitykset kentästä <a href="1XX.htm#151">151</a>.</p>
 <p><b>751 #0&#8225;a</b>New York (N.Y.)</p>
 <p><b>751 #0&#8225;a</b>Charlevoix (Mich.)<b>&#8225;0</b>(DLC)n##82062705#<b>&#8225;w</b>nb</p>
 <p><a href="#alku">Sivun alkuun</a></p><hr>
+
 <h3><a name="755"></a>755 - LINKKIKENTTÄ - LAJITYYPPIÄ/MUOTOA ILMAISEVA TERMI (T)</h3>
 <p>Lajityyppiä tai muotoa ilmaiseva termi, joka vastaa saman tietueen 155-kentän 
 termiä tai 185-kentän muotoa ilmaisevaa lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai 
@@ -690,6 +692,57 @@ selitykset kentästä <a href="1XX.htm#155">155</a>.</p>
 <p><b>755 #0&#8225;a</b>Periodicals<b>&#8225;v</b>Indexes</p>
 <p><b>755 #7&#8225;a</b>atlases<b>&#8225;0</b>[record control number]<b>&#8225;2</b>aat</p>
 <p><a href="#alku">Sivun alkuun</a></p><hr>
+
+<h3><a name="762"></a>762 - LINKKIKENTTÄ - ESITYSKOKOONPANOA ILMAISEVA TERMI (T)</h3>
+<p>Esityskokoonpanoa kuvaava termi, joka vastaa saman tietueen 162-kentän termiä. Se linkittää otsikkomuotoja järjestelmän 
+sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso 
+indikaattoreiden ja useimpien osakenttien selitykset kentästä
+<a href="1XX.htm#162">162</a>.</p>
+<h4>Indikaattorit</h4>
+<ul>
+	<li>Ensimmäinen - Määrittelemätön<ul>
+		<li><b>#</b> - Määrittelemätön</li>
+	</ul></li>
+	<li>Toinen - Asiasanasto<br>Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.<ul>
+		<li><b>0</b> - Library of Congress Subject Headings (LCSH) / LC name authority file</li>
+		<li><b>1</b> - LC subject headings for children's literature</li>
+		<li><b>2</b> - Medical Subject Headings (MeSH) / NLM name authority file</li>
+		<li><b>3</b> - National Agricultural Library subject authority file (NAL)</li>
+		<li><b>4</b> - Asiasanastoa ei ole määritelty</li>
+		<li><b>5</b> - Canadian Subject Headings / LAC name authority file</li>
+		<li><b>6</b> - Répertoire de vedettes-matière</li>
+		<li><b>7</b> - Asiasanasto määritelty osakentässä &#8225;2</li>
+	</ul></li>
+</ul>
+<h4>Osakenttäkoodit</h4>
+<ul>
+	<li><b>&#8225;v</b> - Esityskokoonpanoa kuvaava termi (T)</li>
+	<li><b>&#8225;w</b> - Kontrollitiedot (ET) ks. <i><a href="#yleista">Linkkikentät--yleistä tietoa</a></i><ul>
+		<li>/<b>0</b> - Linkkinäyttö<ul>
+			<li><b>a</b> - Linkkiä ei näytetä</li>
+			<li><b>b</b> - Linkkiä ei näytetä, käytetään kenttää 788</li>
+			<li><b>c</b> - Linkkiä ei näytetä, ei käytetä 7XX-kenttiä</li>
+			<li><b>n</b> - Soveltumaton</li>
+		</ul>
+		</li>
+		<li>/<b>1</b> - Korvaamisen monitahoisuus<ul>
+			<li><b>a</b> - Otsikkomuodon korvaaminen ei vaadi uudelleenharkintaa</li>
+			<li><b>b</b> - Otsikkomuodon korvaaminen vaatii uudelleenharkintaa</li>
+			<li><b>n</b> - Soveltumaton</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><b>&#8225;0</b> - Tietueen kontrollinumero (T) ks. <i><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;2</b> - Asiasanan tai termin lähde (ET) ks. <i><a href="#yleista">Linkkikentät--yleistä tietoa</a></i></li>
+	<li><b>&#8225;5</b> - Organisaatio, johon kentän tiedot pätevät (T) ks. <i><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;6</b> - Linkitys (ET) ks. <i><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></i></li>
+	<li><b>&#8225;8</b> - Linkki- ja järjestysnumero (T) ks. <i><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></i></li>
+</ul>
+<h4>Esimerkkejä</h4>
+<p><b>762 #7&#8225;a</b>Violine<b>&#8225;2</b>gnd</p>
+<p><a href="#alku">Sivun alkuun</a></p><hr>
+
 <h3><a name="780"></a>780 - LINKKIKENTTÄ - YLEINEN LISÄMÄÄRE (T)</h3>
 <p>Yleinen lisämääretermi, joka vastaa saman tietueen 150-kentän termiä tai 
 180-kentän yleistä lisämäärettä. Se linkittää otsikkomuotoja järjestelmän 
