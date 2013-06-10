@@ -709,16 +709,16 @@
       <description paragraph="1">Aikaa ilmaiseva, numeerinen termi.</description>
       <indicators>
         <indicator num="1">
-          <description>Ajan tai ajanjakson tyyppi</description>
+          <description>Aika tai ajanjakso</description>
           <values>
             <value code="#">
               <description>Tieto puuttuu</description>
             </value>
 	    <value code="0">
-	      <description>Aika tai ajanjakso, jonka teos kattaa tai jota teos kuvaa</description>
+	      <description>Teoksen kattama tai kuvaama aika tai ajanjakso</description>
 	    </value>
 	    <value code="1">
-	      <description>Aika tai ajanjakso, jolloin teos on luotu tai jolta teos on peräisin</description>
+	      <description>Teoksen luonti- tai syntyaika</description>
 	    </value>
           </values>
         </indicator>

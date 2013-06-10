@@ -2124,10 +2124,10 @@
           <name>Voimassaolon viimeinen päivämäärä</name>
         </subfield>
 	<subfield code="o" repeatable="N">
-          <name>Yksi julkaisuvuosi tai aloitusaika --sisällölle </name>
+          <name>Kokoomateoksen sisällön yksi julkaisuvuosi tai alkupäivämäärä</name>
         </subfield>
 	<subfield code="p" repeatable="N">
-          <name>Lopetuspäivämäärä --sisällölle</name>
+          <name>Kokoomateoksen sisällön loppupäivämäärä</name>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Tietojen lähde</name>

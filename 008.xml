@@ -2061,9 +2061,10 @@
               <name>Johto‰‰ni</name>
             </value>
 	    <value code="k">
-              <name>laulupartituuri "vocal score"</name>
+              <name>Laulupartituuri "vocal score"</name>
             </value>
 	    <value code="l">
+             <name>Partituuri (esim. soolopartituuri)</name>
               <name>"score"</name>
             </value>
             <value code="m">
