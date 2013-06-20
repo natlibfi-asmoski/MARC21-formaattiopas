@@ -2033,7 +2033,7 @@
           <equals tag="006" positions="03"/>
           <values>
             <value code="a">
-              <name>Partituuri</name>
+              <name>Partituuri "Full score"</name>
             </value>
             <value code="b">
               <name>Pienoispartituuri</name>
@@ -2061,11 +2061,10 @@
               <name>Johto‰‰ni</name>
             </value>
 	    <value code="k">
-              <name>Laulupartituuri "vocal score"</name>
+              <name>Laulupartituuri "Vocal score"</name>
             </value>
 	    <value code="l">
-             <name>Partituuri (esim. soolopartituuri)</name>
-              <name>"score"</name>
+             <name>Partituuri (esim. soolopartituuri) "Score"</name>
             </value>
             <value code="m">
               <name>Useita tyyppej‰</name>
