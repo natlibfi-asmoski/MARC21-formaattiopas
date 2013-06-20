@@ -2141,9 +2141,7 @@
     </datafield>
 <datafield tag="385" repeatable="Y">
       <name>Kohderyhm‰n ominaisuudet</name>
-      <description paragraph="1">Kategoria henkilˆille, joille aineisto on tarkoitettu tai kategoria henkilˆille, jotka edustavat tasoa, jolle aineiston sis‰ltˆ‰ pidet‰‰n sopivana.</description>
-      <description paragraph="2">Jos demografista ryhm‰‰ ei ole m‰‰ritelty, erilaiset yleisˆn erityispiirteet samasta l‰hdesanastosta tai koodilistasta voidaan tallentaa samaan kentt‰‰n erillisin‰ a- ja b-osakenttin‰. 
-	Jos demografinen ryhm‰ on m‰‰ritelty, kaikkien kentt‰‰n tallennettavien erityispiirteiden on oltava samasta ryhm‰st‰. Eri l‰hdesanastoista tulevat termit tallennetaan eri toistumina kentt‰‰n.</description>
+      <description paragraph="1">Ryhmittely henkilˆille, joille aineisto on tarkoitettu tai jotka edustavat aineiston sis‰llˆn edellytt‰m‰‰ tasoa.</description>
       <indicators>
         <indicator num="1">
           <description>M‰‰rittelem‰tˆn</description>
@@ -2207,45 +2205,43 @@
           <text><strong>385 ## &#8225;a</strong> Painters <strong>&#8225;2</strong> lcsh</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;a</strong> HIV Long-Term Survivors <strong>&#8225;a</strong> Caregivers<strong>&#8225;2</strong> mesh</text>
+	  <text><strong>385 ## &#8225;a</strong> HIV Long-Term Survivors <strong>&#8225;a</strong> Caregivers <strong>&#8225;2</strong> mesh</text>
 	</example>
 	<example>
 	  <text><strong>385 ## &#8225;a</strong> HIV-positive persons <strong>&#8225;a</strong> Caregivers <strong>&#8225;2</strong> lcsh</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;m</strong> Educational level group<strong>&#8225;a</strong> College Freshmen<strong>&#8225;2</strong> ericd</text>
+	  <text><strong>385 ## &#8225;m</strong> Educational level group <strong>&#8225;a</strong> College Freshmen <strong>&#8225;2</strong> ericd</text>
 	</example>
 	<example>  
 	  <text><strong>385 ## &#8225;m</strong> Occupational/field of activity group <strong>&#8225;a</strong> Painters <strong>&#8225;2</strong> lcsh</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;m</strong> Age group<strong>&#8225;a</strong> Children<strong>&#8225;2</strong> ericd</text>
+	  <text><strong>385 ## &#8225;m</strong> Age group <strong>&#8225;a</strong> Children <strong>&#8225;2</strong> ericd</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;m</strong> Language group<strong>&#8225;a</strong> Spanish Speaking<strong>&#8225;2</strong> ericd</text>
+	  <text><strong>385 ## &#8225;m</strong> Language group <strong>&#8225;a</strong> Spanish Speaking <strong>&#8225;2</strong> ericd</text>
 	</example>
 	<example>  
-	  <text><strong>385 ## &#8225;n</strong> age<strong>&#8225;a</strong> adolescent <strong>&#8225;b</strong> d <strong>&#8225;2</strong> marctarget</text>
+	  <text><strong>385 ## &#8225;n</strong> age <strong>&#8225;a</strong> adolescent <strong>&#8225;b</strong> d <strong>&#8225;2</strong> marctarget</text>
         </example>
 	<example>
-	  <text><strong>385 ## &#8225;n</strong> occ<strong>&#8225;a</strong> Police<strong>&#8225;a</strong> Lawyers <strong>&#8225;a</strong> Judges<strong>&#8225;2</strong> lcsh</text>
+	  <text><strong>385 ## &#8225;n</strong> occ <strong>&#8225;a</strong> Police <strong>&#8225;a</strong> Lawyers <strong>&#8225;a</strong> Judges <strong>&#8225;2</strong> lcsh</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;a</strong> Actors<strong>&#8225;2</strong> lcsh<strong>&#8225;0</strong> (DLC)sh 85000744</text>
+	  <text><strong>385 ## &#8225;a</strong> Actors <strong>&#8225;2</strong> lcsh <strong>&#8225;0</strong> (DLC)sh 85000744</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;m</strong> Religious group<strong>&#8225;a</strong> Buddhists<strong>&#8225;2</strong> lcsh</text>
+	  <text><strong>385 ## &#8225;m</strong> Religious group <strong>&#8225;a</strong> Buddhists <strong>&#8225;2</strong> lcsh</text>
 	</example>
 	<example>
-	  <text><strong>385 ## &#8225;m</strong> Age group<strong>&#8225;a</strong> Youth<strong>&#8225;2</strong> lcsh</text>
+	  <text><strong>385 ## &#8225;m</strong> Age group <strong>&#8225;a</strong> Youth <strong>&#8225;2</strong> lcsh</text>
 	</example>
        </examples>
     </datafield>
 <datafield tag="386" repeatable="Y">
       <name>Tekij‰n ominaisuudet</name>
       <description paragraph="1">Ryhm‰kategoria, johon teoksen tai kokoomateoksen tekij‰/tekij‰t, tai ekspression tai kokoomateoksen muu(t) tekij‰(t) kuuluvat.</description>
-      <description paragraph="2">Jos demografista ryhm‰‰ ei ole m‰‰ritelty, erilaiset tekij‰ryhm‰kategoriat samasta l‰hdesanastosta tai koodilistasta voidaan tallentaa samaan kentt‰‰n erillisin‰ a- ja b-osakenttin‰. 
-         Jos demografinen ryhm‰ on m‰‰ritelty, kaikkien kentt‰‰n tallennettavien kategorioiden on oltava samasta ryhm‰st‰. Eri l‰hdesanastoista tulevat termit tallennetaan eri toistumina kentt‰‰n.</description> 
       <indicators>
         <indicator num="1">
           <description>M‰‰rittelem‰tˆn</description>
