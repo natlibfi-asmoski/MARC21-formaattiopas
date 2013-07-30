@@ -33,7 +33,11 @@
         </subfield>
         <subfield code="b" repeatable="N">
           <name>Muut fyysiset yksityiskohdat</name>
-          <description>Esim. kuvitus, v‰ritys, soittonopeus, ‰‰nen laatu, ‰‰nikanavien m‰‰r‰, elokuvan esitysmuoto.<br /><strong>&#8225;c</strong> - Mitat (T)<br /> Ilmaistaan senttimetrein‰, millimetrein‰ tai tuumina; voi sis‰lt‰‰ tarkentavaa tietoa suluissa.</description>
+          <description>Esim. kuvitus, v‰ritys, soittonopeus, ‰‰nen laatu, ‰‰nikanavien m‰‰r‰, elokuvan esitysmuoto.</description>
+        </subfield>        
+        <subfield code="c" repeatable="Y">        
+          <name>Mitat</name>
+          <description>Ilmaistaan senttimetrein‰, millimetrein‰ tai tuumina; voi sis‰lt‰‰ tarkentavaa tietoa suluissa.</description>
         </subfield>
         <subfield code="e" repeatable="N">
           <name>Liiteaineisto</name>
