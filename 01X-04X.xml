@@ -140,6 +140,9 @@
         <subfield code="a" repeatable="Y">
           <name>NBN-tunnus, National bibliography number</name>
         </subfield>
+	<subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
+        </subfield>
         <subfield code="z" repeatable="Y">
           <name>Peruttu tai virheellinen NBN-tunnus</name>
         </subfield>
@@ -161,7 +164,16 @@
           <text><strong>015 ## &#8225;a</strong> f20054664 nid.<br /><em>[Fennica]</em></text>
         </example>
         <example>
-          <text><strong>015 ## &#8225;a</strong> B67-20987 <strong>&#8225;a</strong> B67-20988(pbk)</text>
+          <text><strong>015 ## &#8225;a</strong> B67-20987</text>
+        </example>
+	<example>
+          <text><strong>015 ## &#8225;a</strong> B67-20988 <strong>&#8225;q</strong> pbk</text>
+        </example>
+	<example>
+          <text><strong>015 ## &#8225;a</strong> F67-835 <strong>&#8225;q</strong> v. 1</text>
+        </example>
+	<example>
+          <text><strong>015 ## &#8225;a</strong> F67-835 <strong>&#8225;q</strong> v. 2</text>
         </example>
         <example>
           <text><strong>015 ## &#8225;a</strong> 84-3117 <strong>&#8225;2</strong> bnf</text>
@@ -355,7 +367,11 @@
           <name>Hinta- ja saatavuustiedot</name>
           <description>Selittävät tiedot merkitään kaarisulkeisiin hinnan ja/tai saatavuustietojen jälkeen.</description>
         </subfield>
-        <subfield code="z" repeatable="Y">
+         <subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
+	  <description>Selittävät tiedot kappaleesta, joka liittyy osakenttään &#8225;a tallennettuun tunnukseen.</description>
+        </subfield>
+	<subfield code="z" repeatable="Y">
           <name>Peruttu tai virheellinen ISBN-tunnus</name>
           <description>Selittävät tiedot merkitään kaarisulkeisiin perutun tai virheellisen tunnuksen jälkeen. Etuteksti <em>Virh. ISBN</em> tms. ja väliviivat voidaan luoda näyttöön.</description>
         </subfield>
@@ -383,6 +399,12 @@
         </example>
         <example>
           <text><strong>020 ## &#8225;a</strong> 951-45-8742-1 (verkkojulkaisu, pdf)<br /><strong>020 ## </strong><strong>&#8225;a</strong> 951-45-8967-X (verkkojulkaisu, html)</text>
+        </example>
+	<example>
+          <text><strong>020 ## &#8225;a</strong> 0394170660 <strong>&#8225;q</strong> Random House <strong>&#8225;q</strong> paperback <strong>&#8225;q</strong> &#36;4.95</text>
+        </example>
+	<example>
+          <text><strong>020 ## &#8225;a</strong> 9780060723804 <strong>&#8225;q</strong> acid-free paper</text>
         </example>
       </examples>
     </datafield>
@@ -523,6 +545,9 @@
         <subfield code="d" repeatable="N">
           <name>Standarditunnuksen lisäkoodi</name>
         </subfield>
+	<subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
+        </subfield>
         <subfield code="z" repeatable="Y">
           <name>Peruttu tai virheellinen standarditunnus tai -koodi</name>
         </subfield>
@@ -563,6 +588,12 @@
         </example>
         <example>
           <text><strong>024 41 &#8225;a</strong> 875623247541986340134QTP1</text>
+        </example>
+	<example>
+          <text><strong>024 41 &#8225;a</strong> M570406203 <strong>&#8225;q</strong> score <strong>&#8225;q</strong> sewn <strong>&#8225;c</strong> 28 eur</text>
+        </example>
+	<example>
+          <text><strong>024 41 &#8225;a</strong> M570406210 <strong>&#8225;q</strong> parts <strong>&#8225;q</strong> sewn</text>
         </example>
         <example>
           <text><strong>024 7# &#8225;a</strong> 10.1228/0103000001002 <strong>&#8225;2</strong> doi<br /><em>DOI-tunnus.</em></text>
@@ -698,6 +729,9 @@
       <subfields>
         <subfield code="a" repeatable="N">
           <name>ISRN-tunnus tai muu standardoitu raporttinumero</name>
+        </subfield>
+	<subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
         </subfield>
         <subfield code="z" repeatable="Y">
           <name>Peruttu tai virheellinen tunnus</name>
