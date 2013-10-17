@@ -121,7 +121,18 @@
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
-        <subfield code="8" repeatable="Y">
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -248,7 +259,18 @@
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
-        <subfield code="8" repeatable="Y">
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -263,6 +285,9 @@
         <example>
           <text><strong>490 1# &#8225;a</strong> CIIL linguistic atlas series ; <strong>&#8225;v</strong> 1<br /><strong>810 2# &#8225;a</strong> Central Institute of Indian Languages. <strong>&#8225;t</strong> CIIL linguistic atlas series ; <strong>&#8225;v</strong> 1.</text>
         </example>
+	<example>
+          <text><strong>810 2# &#8225;a</strong> Deutsches Institut für Normung <strong>&#8225;4</strong> aut <strong>&#8225;t</strong> DIN-Taschenbuch <strong>&#8225;v</strong> 193 <strong>&#8225;w</strong> (DE-101)016034287 <strong>&#8225;w</strong> (DE-600)1072284-1 <strong>&#8225;7</strong> as</text>
+	</example>
       </examples>
     </datafield>
     <datafield tag="811" repeatable="Y">
@@ -369,7 +394,18 @@
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
-        <subfield code="8" repeatable="Y">
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -475,7 +511,18 @@
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
-        <subfield code="8" repeatable="Y">
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -499,6 +546,9 @@
         <example>
           <text><strong>490 1# &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. Sarja A, <strong>&#8225;x</strong> 1459-4870 ; <strong>&#8225;v</strong> 2:2009<br /><strong>830 #0 &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. <strong>&#8225;n</strong> Sarja A, <strong>&#8225;x</strong> 1459-4870 ; <strong>&#8225;v</strong>2:2009.</text>
         </example>
+	<example>
+	  <text><strong>830 #0 &#8225;a</strong> Fasteners <strong>&#8225;v</strong> 5 <strong>&#8225;w</strong> (DE-101)550955267 <strong>&#8225;7</strong> am</text>
+	</example>
       </examples>
     </datafield>
   </datafields>
