@@ -161,7 +161,7 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>015 ## &#8225;a</strong> f20054664 nid.<br /><em>[Fennica]</em></text>
+          <text><strong>015 ## &#8225;a</strong> f20054664 <strong>&#8225;q</strong> nid. <br /><em>[Fennica]</em></text>
         </example>
         <example>
           <text><strong>015 ## &#8225;a</strong> B67-20987</text>
@@ -386,22 +386,25 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>020 ## &#8225;a</strong> 951-861-386-9 (sid.) <strong>&#8225;z</strong> 951-861-384-2 (virh.)</text>
+          <text><strong>020 ## &#8225;a</strong> 951-861-386-9 <strong>&#8225;q</strong> sid. <strong>&#8225;z</strong> 951-861-384-2 (virh.)</text>
         </example>
         <example>
-          <text><strong>020 ## &#8225;a</strong> 951-772-249-4 (osa 2, Helsingin kaupungin tietokeskus, nid.)<br /><strong>020 ## &#8225;a</strong> 951-8915-60-1 (osa 2, Suomen historiallinen Seura, nid.)<br /><em>Teoksella on kaksi kustantajaa.</em></text>
+          <text><strong>020 ## &#8225;a</strong> 951-772-249-4 <strong>&#8225;q</strong> osa 2 <strong>&#8225;q</strong> Helsingin kaupungin tietokeskus <strong>&#8225;q</strong> nid. <br />
+		<strong>020 ## &#8225;a</strong> 951-8915-60-1 <strong>&#8225;q</strong> osa 2 <strong>&#8225;q</strong> Suomen historiallinen Seura <strong>&#8225;q</strong> nid. <br /><em>Teoksella on kaksi kustantajaa.</em></text>
         </example>
         <example>
-          <text><strong>020 ## &#8225;a</strong> 951-9422-81-1 (Siionin laulut, sid.)<br /><strong>020 ## &#8225;a</strong> 951-9422-82-X (Virsikirja, sid.)</text>
+          <text><strong>020 ## &#8225;a</strong> 951-9422-81-1 <strong>&#8225;q</strong> Siionin laulut <strong>&#8225;q</strong> sid. <br />
+		<strong>020 ## &#8225;a</strong> 951-9422-82-X <strong>&#8225;q</strong> Virsikirja <strong>&#8225;q</strong> sid.</text>
         </example>
         <example>
-          <text><strong>020 ## &#8225;a</strong> 951-776-249-4 (osa 3, Tampereen kaupunginmuseo, sid.) :<strong>&#8225;c</strong> 11 eur, vain virkakäyttöön</text>
+          <text><strong>020 ## &#8225;a</strong> 951-776-249-4 <strong>&#8225;q</strong> osa 3 <strong>&#8225;q</strong> Tampereen kaupunginmuseo <strong>&#8225;q</strong> sid. <strong>&#8225;c</strong> 11 eur, vain virkakäyttöön</text>
         </example>
         <example>
-          <text><strong>020 ## &#8225;a</strong> 951-45-8742-1 (verkkojulkaisu, pdf)<br /><strong>020 ## </strong><strong>&#8225;a</strong> 951-45-8967-X (verkkojulkaisu, html)</text>
+          <text><strong>020 ## &#8225;a</strong> 951-45-8742-1 <strong>&#8225;q</strong> verkkojulkaisu <strong>&#8225;q</strong> pdf<br />
+		<strong>020 ## &#8225;a</strong> 951-45-8967-X <strong>&#8225;q</strong> verkkojulkaisu <strong>&#8225;q</strong> html</text>
         </example>
 	<example>
-          <text><strong>020 ## &#8225;a</strong> 0394170660 <strong>&#8225;q</strong> Random House <strong>&#8225;q</strong> paperback <strong>&#8225;q</strong> &#36;4.95</text>
+          <text><strong>020 ## &#8225;a</strong> 0394170660 <strong>&#8225;q</strong> Random House <strong>&#8225;q</strong> paperback <strong>&#8225;c</strong> &#36;4.95</text>
         </example>
 	<example>
           <text><strong>020 ## &#8225;a</strong> 9780060723804 <strong>&#8225;q</strong> acid-free paper</text>
