@@ -578,7 +578,7 @@
           <text><strong>024 10 &#8225;a</strong> 070993005955 <strong>&#8225;d</strong> 35740<br /><em>UPC-tunnus ja lisäkoodi.</em></text>
         </example>
         <example>
-          <text><strong>024 2# &#8225;a</strong> M-321-76543-1 (sid.)<br /><em>ISMN-tunnus.</em></text>
+          <text><strong>024 2# &#8225;a</strong> M-321-76543-1 <strong>&#8225;q</strong> sid.<br /><em>ISMN-tunnus.</em></text>
         </example>
         <example>
           <text><strong>024 30 &#8225;a</strong> 9780449906200 <strong>&#8225;d</strong> 51000<br /><em>ISBN-tunnukseen pohjautuva EAN-koodi ja lisäkoodi.</em></text>
