@@ -133,7 +133,7 @@
           <text><strong>100 1# &#8225;a</strong> Gallen-Kallela, Kirsti.<br /><strong>245 10 &#8225;a</strong> Isäni Akseli Gallen-Kallela / <strong>&#8225;c</strong> Kirsti Gallen-Kallela ; toimittanut Kaari Raivio.<br /><strong>700 1# &#8225;a</strong> Raivio, Kaari.</text>
         </example>
         <example>
-          <text><strong>245 00 &#8225;a</strong> Tavallinen luokka <strong>&#8225;h</strong> [Videotallenne] / <strong>&#8225;c</strong> ohjaus: Raili Rusto ; käsikirjoitus: Pirkko Jaakkola ja Tiina Harpf ; musiikki: Esa Helasvuo ; kuvaus: Veikko Mård.<br /><strong>700 1# &#8225;a</strong> Jaakkola, Pirkko, <strong>&#8225;e</strong> käsik.<br /><strong>700 1# &#8225;a</strong> Harpf, Tiina, <strong>&#8225;e</strong> käsik. <br /><strong>700 1# &#8225;a</strong> Helasvuo, Esa, <strong>&#8225;e</strong> säv. <br /><strong>700 1# &#8225;a</strong> Mård, Veikko, <strong>&#8225;e</strong> kuv.</text>
+          <text><strong>245 00 &#8225;a</strong> Tavallinen luokka <strong>&#8225;h</strong> [Videotallenne] / <strong>&#8225;c</strong> ohjaus: Raili Rusto ; käsikirjoitus: Pirkko Jaakkola ja Tiina Harpf ; musiikki: Esa Helasvuo ; kuvaus: Veikko Mård.<br /><strong>700 1# &#8225;a</strong> Jaakkola, Pirkko, <strong>&#8225;e</strong> käsikirjoittaja<br /><strong>700 1# &#8225;a</strong> Harpf, Tiina, <strong>&#8225;e</strong> käsikirjoittaja<br /><strong>700 1# &#8225;a</strong> Helasvuo, Esa, <strong>&#8225;e</strong> säveltäjä <br /><strong>700 1# &#8225;a</strong> Mård, Veikko, <strong>&#8225;e</strong> kuvittaja</text>
         </example>
         <example>
           <text><strong>100 1# &#8225;a</strong> Lindgrén, Maija.<br /><strong>245 10 &#8225;a</strong> Varo vaaraa koulutiellä / <strong>&#8225;c</strong> Maija Lindgrén, Annami Poivaara ; kuvitus: Teutori.<br /><strong>700 1# &#8225;a</strong> Poivaara, Annami.<br /><strong>700 0# &#8225;a</strong> Teutori.</text>
@@ -145,10 +145,10 @@
           <text><strong>100 1# &#8225;a</strong> Jokipii, Mauno.<br /><strong>245 10 &#8225;a</strong> Vammaskosken kihlakunnansilta 1600-luvulta 1800-luvulle / <strong>&#8225;c</strong> Mauno Jokipii. Vammaskosken kivisilta 1915-1990 / Pekka Koskinen.<br /><strong>700 1# &#8225;a</strong> Koskinen, Pekka. <strong>&#8225;t</strong> Vammaskosken kivisilta 1915-1990.</text>
         </example>
         <example>
-          <text><strong>100 1# &#8225;a</strong> Beethoven, Ludwig van, <strong>&#8225;e</strong> säv. <br /><strong>245 10 &#8225;a</strong> Symphonies 1-9 <strong>&#8225;h</strong> [Äänite]<br /><strong>700 12 &#8225;a</strong>Beethoven, Ludwig van, <strong>&#8225;e</strong> säv. <strong>&#8225;t</strong> Sinfoniat, <strong>&#8225;n</strong> nro 9, op125, <strong>&#8225;r</strong> d-molli.</text>
+          <text><strong>100 1# &#8225;a</strong> Beethoven, Ludwig van, <strong>&#8225;e</strong> säveltäjä <br /><strong>245 10 &#8225;a</strong> Symphonies 1-9 <strong>&#8225;h</strong> [Äänite]<br /><strong>700 12 &#8225;a</strong>Beethoven, Ludwig van, <strong>&#8225;e</strong> säveltäjä <strong>&#8225;t</strong> Sinfoniat, <strong>&#8225;n</strong> nro 9, op125, <strong>&#8225;r</strong> d-molli.</text>
         </example>
         <example>
-          <text><strong>100 1# &#8225;a</strong> Chopin, Frédéric, <strong>&#8225;e</strong> säv. <br /><strong>245 10 &#8225;a</strong> Klavierwerke <strong>&#8225;h</strong> [Nuottijulkaisu] : <strong>&#8225;b</strong> Auswahl.<br /><strong>700 12 &#8225;a</strong> Chopin, Frédéric, <strong>&#8225;e</strong> säv. <strong>&#8225;t</strong> Masurkat, <strong>&#8225;m</strong> piano. <strong>&#8225;k</strong> Valikoima.</text>
+          <text><strong>100 1# &#8225;a</strong> Chopin, Frédéric, <strong>&#8225;e</strong> säveltäjä <br /><strong>245 10 &#8225;a</strong> Klavierwerke <strong>&#8225;h</strong> [Nuottijulkaisu] : <strong>&#8225;b</strong> Auswahl.<br /><strong>700 12 &#8225;a</strong> Chopin, Frédéric, <strong>&#8225;e</strong> säveltäjä <strong>&#8225;t</strong> Masurkat, <strong>&#8225;m</strong> piano. <strong>&#8225;k</strong> Valikoima.</text>
         </example>
         <example>
           <text><strong>245 00 &#8225;a</strong> Piae cantiones ecclesiasticae et scholasticae veterum episcoporum, 1582 / <strong>&#8225;c</strong> Theodoricus Petri (Rutha) Nylandensis ; [facsimile] editionem curavit Einari Marvia.<br /><strong>700 1# &#8225;a</strong> Ruuth, Didrik Persson, <strong>&#8225;d</strong> s. n. 1560, k. ennen 1617, <strong>&#8225;c</strong> Länsipohjan käskynhaltija.<br /><strong>700 1# &#8225;a</strong> Marvia, Einari.</text>
@@ -276,7 +276,7 @@
           <text><strong>245 00 &#8225;a</strong> Kainuun puutarhatuotantotutkimus / <strong>&#8225;c</strong> [julk.] Pohjois-Suomen tutkimuslaitos. Kainuun yksikkö.<br /><strong>710 2# &#8225;a</strong> Oulun yliopisto. <strong>&#8225;b</strong> Pohjois-Suomen tutkimuslaitos. <strong>&#8225;b</strong> Kainuun yksikkö.</text>
         </example>
         <example>
-          <text><strong>245 00 &#8225;a</strong> Syitä ja seurauksia - 30 parasta <strong>&#8225;h</strong> [Äänite]<br /><strong>710 2# &#8225;a</strong> Apulanta, <strong>&#8225;e</strong> esitt.</text>
+          <text><strong>245 00 &#8225;a</strong> Syitä ja seurauksia - 30 parasta <strong>&#8225;h</strong> [Äänite]<br /><strong>710 2# &#8225;a</strong> Apulanta, <strong>&#8225;e</strong> esittäjä</text>
         </example>
         <example>
           <text><strong>245 00 &#8225;a</strong> Kompleksi 1947-1997 / <strong>&#8225;c</strong> [toimittajat: Terhi Pylkkänen, Jari Salo ja Risto Selin]<br /><strong>260 ## &#8225;a</strong> Helsinki : <strong>&#8225;b</strong> Helsingin yliopiston psykologian opiskelijoiden ainejärjestö Kompleksi, <strong>&#8225;c</strong> 1997 <strong>&#8225;e</strong> (Vantaa : <strong>&#8225;f</strong> Tummavuori) <strong><br />710 2# &#8225;a</strong> Kompleksi (Helsingin yliopisto)</text>
