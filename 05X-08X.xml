@@ -563,7 +563,7 @@
       </examples>
     </datafield>
     <datafield tag="074" repeatable="Y">
-      <name>U.s. government printing office kappalenumero</name>
+      <name>U.S. Government Printing Office -kappalenumero</name>
       <description paragraph="1">GPO:n julkaisuilleen antama numero vapaakappaleiden hallintaa varten.</description>
       <indicators>
         <indicator num="1">
@@ -586,7 +586,7 @@
       <subfields>
         <subfield code="a" repeatable="N">
           <name>GPO kappalenumero</name>
-          <description><strong>&#8225;z</strong> - Peruttu tai virheellinen GPO kappalenumero (T)</description>
+          <description><strong>&#8225;z</strong> - Peruttu tai virheellinen GPO-kappalenumero (T)</description>
         </subfield>
         <subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
