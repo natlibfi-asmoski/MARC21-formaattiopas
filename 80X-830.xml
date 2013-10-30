@@ -123,12 +123,82 @@
         </subfield>
         <subfield code="7" repeatable="N">
           <name>Kontrolliosakenttä</name>
-          <positions>
+          <description>Kaksi merkkipaikkaa (merkitään 0 ja 1), joiden koodimuotoisilla tiedoilla kuvataan linkkikirjauksen erityispiirteitä. Koska koodien merkitys määräytyy niiden merkkipaikan perusteella, kaikki edeltävät merkkipaikat on täytettävä tarvittaessa täyttömerkillä (|); jälkimmäisiä merkkipaikkoja ei tarvitse täyttää.</description>
+	  <positions>
             <position pos="/0">
               <name>Tietueen tyyppi</name>
-	     </position>
+	      <description>Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tyyppiä. Koodi vastaa liittyvän kohteen tietueen Nimiö/06 (Tietueen tyyppi) arvoa.</description> 
+	      <values>
+				<value code="a">
+                  <name>Tekstiaineisto</name>
+                </value>
+				<value code="c">
+                  <name>Nuottijulkaisu</name>
+                </value>
+				<value code="d">
+                  <name>Nuottikäsikirjoitus</name>
+                </value>
+				<value code="e">
+                  <name>Kartta-aineisto</name>
+                </value>
+				<value code="f">
+                  <name>Karttakäsikirjoitus</name>
+                </value>
+				<value code="g">
+                  <name>Heijastettava kuva tai viestin</name>
+                </value>
+				<value code="i">
+                  <name>Puheäänite</name>
+                </value>
+				<value code="j">
+                  <name>Musiikkiäänite</name>
+                </value>
+				<value code="k">
+                  <name>Kuva</name>
+                </value>
+				<value code="m">
+                  <name>Elektroninen aineisto</name>
+                </value>
+				<value code="o">
+                  <name>Moniviestin</name>
+                </value>
+				<value code="p">
+                  <name>Sekalainen aineisto</name>
+                </value>
+				<value code="r">
+                  <name>Esine</name>
+                </value>
+				<value code="t">
+                  <name>Tekstikäsikirjoitus</name>
+                </value>
+              </values>
+	    </position>
 	    <position pos="/1">
-              <name>Bibliografinen taso</name>
+              <name>Tietueen bibliografinen taso</name>
+	      <description>Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tasoa. Koodi vastaa liittyvän kohteen tietueen Nimiö/07 (Tietueen bibliografinen taso) arvoa.</description>
+	      <values>
+				<value code="a">
+                  <name>Osakohde monografiassa</name>
+                </value>
+				<value code="b">
+                  <name>Osakohde kausijulkaisussa</name>
+                </value>
+				<value code="c">
+                  <name>Kokoelma</name>
+                </value>
+				<value code="d">
+                  <name>Osakohde kokoelmassa</name>
+                </value>
+				<value code="i">
+                  <name>Päivittyvä julkaisu</name>
+                </value>
+				<value code="m">
+                  <name>Monografia</name>
+                </value>
+				<value code="s">
+                  <name>Kausijulkaisu</name>
+                </value>
+              </values>
 	     </position>
 	  </positions>
         </subfield>
@@ -261,12 +331,13 @@
         </subfield>
         <subfield code="7" repeatable="N">
           <name>Kontrolliosakenttä</name>
+	  <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#800">800</a>.</em></description>
           <positions>
             <position pos="/0">
               <name>Tietueen tyyppi</name>
 	     </position>
 	    <position pos="/1">
-              <name>Bibliografinen taso</name>
+              <name>Tietueen bibliografinen taso</name>
 	     </position>
 	  </positions>
         </subfield>
@@ -396,12 +467,13 @@
         </subfield>
         <subfield code="7" repeatable="N">
           <name>Kontrolliosakenttä</name>
+	  <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#800">800</a>.</em></description>
           <positions>
             <position pos="/0">
               <name>Tietueen tyyppi</name>
 	     </position>
 	    <position pos="/1">
-              <name>Bibliografinen taso</name>
+              <name>Tietueen bibliografinen taso</name>
 	     </position>
 	  </positions>
         </subfield>
@@ -513,12 +585,13 @@
         </subfield>
         <subfield code="7" repeatable="N">
           <name>Kontrolliosakenttä</name>
+	  <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#800">800</a>.</em></description>
           <positions>
             <position pos="/0">
               <name>Tietueen tyyppi</name>
 	     </position>
 	    <position pos="/1">
-              <name>Bibliografinen taso</name>
+              <name>Tietueen bibliografinen taso</name>
 	     </position>
 	  </positions>
         </subfield>
