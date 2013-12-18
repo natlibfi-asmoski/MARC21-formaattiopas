@@ -402,7 +402,7 @@
         </subfield>
         <subfield code="u" repeatable="Y">
           <name>URI (Uniform Resource Identifier)</name>
-          <description>Esim. URL tai URN, jotka ovat standardimuotoisia elektronisen aineiston saavutettavuustietoja.  Tieto voi olla myös yksityiskohtainen huomautus, joka liittyy tekijänoikeuden tilaan.</description>
+          <description>Esim. URL tai URN, jotka ovat standardimuotoisia elektronisen aineiston saavutettavuustietoja. Tieto voi olla myös yksityiskohtainen huomautus, joka liittyy tekijänoikeuden tilaan.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
