@@ -175,7 +175,7 @@
         </subfield>
         <subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
-          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+          <description>Linkki (URN tai URL) tiedostoon, jossa käyttöoikeustiedot esitetään standardimuodossa. Kohdetiedoston sisältämä lisäinformaatio mahdollistaa kuvaillun aineiston verkkokäytön jonkin Internet-protokollan avulla.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
@@ -402,7 +402,7 @@
         </subfield>
         <subfield code="u" repeatable="Y">
           <name>URI (Uniform Resource Identifier)</name>
-          <description>Esim. URL tai URN, jotka ovat standardimuotoisia elektronisen aineiston saavutettavuustietoja. Tieto voi olla myös yksityiskohtainen huomautus, joka liittyy tekijänoikeuden tilaan.</description>
+          <description>Linkki (URN tai URL) tiedostoon, jossa käyttöoikeustiedot esitetään standardimuodossa. Kohdetiedosto voi sisältää luettelointia yksityiskohtaisemman kuvauksen kuvaillun aineiston tekijänoikeudellisesta tilasta.</description>
         </subfield>
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
