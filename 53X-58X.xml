@@ -1722,7 +1722,7 @@
     </datafield>
     <datafield tag="59X" type="59X" repeatable="">
       <name>Paikalliset huomautukset</name>
-      <description paragraph="1">Kentät 590-599 on varattu paikalliseen käyttöön ja niiden sisältö on paikallisesti määriteltävissä. Katso myös <a href="../bib/1XX.htm">Tietokanta- tai järjestelmäkohtaisia omia kenttiä</a></description>
+      <description paragraph="1">Kentät 590-599 on varattu paikalliseen käyttöön ja niiden sisältö on paikallisesti määriteltävissä. Katso myös <a href="../bib/omat.htm">Tietokanta- tai järjestelmäkohtaisia omia kenttiä</a></description>
     </datafield>
   </datafields>
 </fields>
