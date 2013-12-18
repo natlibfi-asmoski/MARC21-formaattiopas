@@ -4,7 +4,7 @@
 <fields>
   <datafields>
     <title>Suomalaiset kentät (9XX)</title>
-    <description>Kentät 900, 910, 911 ja 940 ovat vain suomalaisiin käyttötarkoituksiin. Bibliografisiin tietueisiin voidaan tallentaa viittauksia sellaisissa järjestelmissä, joissa ei ole erikseen auktoriteettitietueita. Katso myös <a href="../bib/1XX.htm">Tietokanta- tai järjestelmäkohtaisia omia kenttiä</a></description>
+    <description>Kentät 900, 910, 911 ja 940 ovat vain suomalaisiin käyttötarkoituksiin. Bibliografisiin tietueisiin voidaan tallentaa viittauksia sellaisissa järjestelmissä, joissa ei ole erikseen auktoriteettitietueita. Katso myös <a href="../bib/omat.htm">Tietokanta- tai järjestelmäkohtaisia omia kenttiä</a></description>
     <datafield tag="900" repeatable="Y" local="Finnish">
       <name>Viittaus - henkilönnimi -- suomalainen kenttä</name>
       <indicators>
