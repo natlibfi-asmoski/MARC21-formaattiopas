@@ -17,7 +17,7 @@
          </table>
       </center>
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 28.10.2013.<br>
+               Päivitetty viimeksi 18.12.2013.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Sarjalisäkirjauskentät (80X-830)</h2>
@@ -117,11 +117,61 @@
          </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
-         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br>Kaksi merkkipaikkaa (merkitään 0 ja 1), joiden koodimuotoisilla tiedoilla kuvataan linkkikirjauksen erityispiirteitä. Koska
+            koodien merkitys määräytyy niiden merkkipaikan perusteella, kaikki edeltävät merkkipaikat on täytettävä tarvittaessa täyttömerkillä
+            (|); jälkimmäisiä merkkipaikkoja ei tarvitse täyttää.
             <ul>
-               <li><strong>/0</strong> - Tietueen tyyppi
+               <li><strong>/0</strong> - Tietueen tyyppi<br>Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tyyppiä. Koodi vastaa liittyvän kohteen tietueen Nimiö/06 (Tietueen
+                  tyyppi) arvoa.
+                  <ul>
+                     <li><strong>a</strong> - Tekstiaineisto
+                     </li>
+                     <li><strong>c</strong> - Nuottijulkaisu
+                     </li>
+                     <li><strong>d</strong> - Nuottikäsikirjoitus
+                     </li>
+                     <li><strong>e</strong> - Kartta-aineisto
+                     </li>
+                     <li><strong>f</strong> - Karttakäsikirjoitus
+                     </li>
+                     <li><strong>g</strong> - Heijastettava kuva tai viestin
+                     </li>
+                     <li><strong>i</strong> - Puheäänite
+                     </li>
+                     <li><strong>j</strong> - Musiikkiäänite
+                     </li>
+                     <li><strong>k</strong> - Kuva
+                     </li>
+                     <li><strong>m</strong> - Elektroninen aineisto
+                     </li>
+                     <li><strong>o</strong> - Moniviestin
+                     </li>
+                     <li><strong>p</strong> - Sekalainen aineisto
+                     </li>
+                     <li><strong>r</strong> - Esine
+                     </li>
+                     <li><strong>t</strong> - Tekstikäsikirjoitus
+                     </li>
+                  </ul>
                </li>
-               <li><strong>/1</strong> - Bibliografinen taso
+               <li><strong>/1</strong> - Tietueen bibliografinen taso<br>Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tasoa. Koodi vastaa liittyvän kohteen tietueen Nimiö/07 (Tietueen
+                  bibliografinen taso) arvoa.
+                  <ul>
+                     <li><strong>a</strong> - Osakohde monografiassa
+                     </li>
+                     <li><strong>b</strong> - Osakohde kausijulkaisussa
+                     </li>
+                     <li><strong>c</strong> - Kokoelma
+                     </li>
+                     <li><strong>d</strong> - Osakohde kokoelmassa
+                     </li>
+                     <li><strong>i</strong> - Päivittyvä julkaisu
+                     </li>
+                     <li><strong>m</strong> - Monografia
+                     </li>
+                     <li><strong>s</strong> - Kausijulkaisu
+                     </li>
+                  </ul>
                </li>
             </ul>
          </li>
@@ -211,11 +261,10 @@
          </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
-         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)
-            <ul>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#800">800</a>.</em><ul>
                <li><strong>/0</strong> - Tietueen tyyppi
                </li>
-               <li><strong>/1</strong> - Bibliografinen taso
+               <li><strong>/1</strong> - Tietueen bibliografinen taso
                </li>
             </ul>
          </li>
@@ -303,11 +352,10 @@
          </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
-         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)
-            <ul>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#800">800</a>.</em><ul>
                <li><strong>/0</strong> - Tietueen tyyppi
                </li>
-               <li><strong>/1</strong> - Bibliografinen taso
+               <li><strong>/1</strong> - Tietueen bibliografinen taso
                </li>
             </ul>
          </li>
@@ -383,11 +431,10 @@
          </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
-         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)
-            <ul>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#800">800</a>.</em><ul>
                <li><strong>/0</strong> - Tietueen tyyppi
                </li>
-               <li><strong>/1</strong> - Bibliografinen taso
+               <li><strong>/1</strong> - Tietueen bibliografinen taso
                </li>
             </ul>
          </li>
