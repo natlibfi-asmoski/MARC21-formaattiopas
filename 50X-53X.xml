@@ -420,7 +420,7 @@
         </subfield>
         <subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
-          <description>Esimerkiksi URL tai URN, jotka tarjoavat pääsyn elektroniseen aineistoon.</description>
+          <description>Linkki (URL tai URN) tiedostoon, jossa käyttöoikeustiedot esitetään standardimuodossa. Kohdetiedosto sisältää lisäinformaatiota käytön rajoituksista.</description>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Standarditerminologian lähde</name>
