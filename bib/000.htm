@@ -1,0 +1,258 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 17.2.2012.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Nimiö ja hakemisto</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <ul>
+         <li><a href="#nimio">NIMIÖ</a></li>
+         <li><a href="#hakemisto">HAKEMISTO</a></li>
+      </ul>
+      <hr>
+      <h3><a name="nimio"></a>NIMIÖ
+      </h3>
+      <p>Kiinteä kenttä, joka käsittää jokaisen tietueen 24 ensimmäistä (00-23) merkkipaikkaa.</p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-04</strong> - Tietueen pituus<br>Järjestelmän tuottama viisimerkkinen numerojono, joka ilmaisee koko tietueen pituuden. Numero on tasattu oikealle ja käyttämättömissä
+            merkkipaikoissa on nolla.
+         </li>
+         <li><strong>05</strong> - Tietueen tila
+            <ul>
+               <li><strong>a</strong> - Koodaustason korotus<br> Tietueen koodaustasoa (nimiö/17) on korotettu.
+               </li>
+               <li><strong>c</strong> - Korjattu<br> Tietueeseen on tehty jokin muu muutos kuin koodaustason korotus.
+               </li>
+               <li><strong>d</strong> - Poistettu
+               </li>
+               <li><strong>n</strong> - Uusi
+               </li>
+               <li><strong>p</strong> - Päivitetty ennakkotieto<br> Tietueella on aluksi ollut koodaustasona 8 (nimiö/17), mutta ennakkotietue on täydennetty.
+               </li>
+            </ul>
+         </li>
+         <li><strong>06</strong> - Tietueen tyyppi
+            <ul>
+               <li><strong>a</strong> - Tekstiaineisto<br> Sisältää painetut, mikromuotoiset ja elektroniset tekstiaineistot.
+               </li>
+               <li><strong>c</strong> - Nuottijulkaisu<br> Sisältää painetut, mikromuotoiset ja elektroniset nuottijulkaisut.
+               </li>
+               <li><strong>d</strong> - Nuottikäsikirjoitus<br> Sisältää myös nuottikäsikirjoituksista tehdyt elektroniset aineistot ja mikrotallenteet.
+               </li>
+               <li><strong>e</strong> - Kartta-aineisto<br> Sisältää painetut kartat, kartastot, karttapallot, digitaaliset kartat ja muut kartografiset kohteet.
+               </li>
+               <li><strong>f</strong> - Karttakäsikirjoitus<br> Sisältää myös karttakäsikirjoituksista tehdyt elektroniset aineistot ja mikrotallenteet.
+               </li>
+               <li><strong>g</strong> - Heijastettava kuva tai viestin<br> Sisältää esimerkiksi elokuvat, videotallenteet (myös digitaaliset videot), rainat, diat, kalvot tai erityisesti heijastamista
+                  varten suunnitellut aineistot.
+               </li>
+               <li><strong>i</strong> - Puheäänite<br> Puheäänitteessä voi olla taustamusiikkia. Sisältää myös puheettomat/musiikittomat äänitteet, esimerkiksi tallennetut luonnonäänet.
+               </li>
+               <li><strong>j</strong> - Musiikkiäänite<br> Äänitteet, joissa soiva musiikki on pääasiallinen sisältö.
+               </li>
+               <li><strong>k</strong> - Kuva<br> Sisältää esimerkiksi kaaviot, kollaasit, tietokonegrafiikat, piirrokset, kopioiden alkuperäiskappaleet, sana- tai kuvakortit,
+                  maalaukset, valokuvanegatiivit, valokuvat, kuvat, valokuva-CD:t, postikortit, julisteet, tulosteet, opintomonisteet, tekniset
+                  piirustukset, valokuvajäljitelmät, ja kopiot tai jäljitelmät kaikista edellä mainituista.
+               </li>
+               <li><strong>m</strong> - Elektroninen aineisto<br> Sisältää seuraavat elektronisten aineistojen lajit: tietokoneohjelmistot (sis. ohjelmat, pelit, kirjasinlajit), numeerinen
+                  data, tietokonekäyttöinen multimedia, verkossa olevat järjestelmät ja palvelut. Näitä aineistolajeja voidaan koodata myös
+                  muuksi aineistotyypiksi, jos sisällön merkittävä osuus niin määrää (esimerkiksi kartografinen vektoridata koodataan kartaksi
+                  eikä elektroniseksi aineistoksi). Muut elektronisen aineiston lajit koodataan merkittävimmän sisällön mukaisesti (esim. tekstiaineisto,
+                  äänite, nuottijulkaisu, kartta-aineisto, kuva, heijastettava kuva tai viestin). Epävarmoissa tapauksissa kohde voidaan koodata
+                  elektroniseksi aineistoksi.
+               </li>
+               <li><strong>o</strong> - Moniviestin<br> Sisältää kahta tai useampaa aineistotyyppiä, joista mikään ei ole kokonaisuuden hallitseva osa. Esimerkiksi opetuspaketit,
+                  joissa mukana oppikirja ja äänitemateriaalia.
+               </li>
+               <li><strong>p</strong> - Sekalainen aineisto<br> Kahdessa tai useammassa muodossa olevia merkittäviä aineistoja, jotka liittyvät yleensä johonkin henkilöön tai yhteisöön.
+                  Tällaisia ovat mm. arkistot ja käsikirjoituskokoelmat, joihin sisältyy eri muotoisia aineistoja kuten tekstiä, valokuvia ja
+                  äänitteitä.
+               </li>
+               <li><strong>r</strong> - Esine<br> Sisältää keinotekoiset esineet kuten mallit, dioraamat, pelit ja palapelit, simulaatiot, veistokset ja muut kolmiulotteiset
+                  taideteokset ja niiden jäljennökset, näyttelyesineet, koneet, vaatteet, lelut ja käsityöt, sekä luonnolliset kappaleet kuten
+                  mikroskooppipreparaatit.
+               </li>
+               <li><strong>t</strong> - Tekstikäsikirjoitus<br> Sisältää myös tekstikäsikirjoituksista tehdyt elektroniset aineistot ja mikrotallenteet.
+               </li>
+            </ul>
+         </li>
+         <li><strong>07</strong> - Tietueen bibliografinen taso
+            <ul>
+               <li><strong>a</strong> - Osakohde monografiassa<br> Bibliografinen yksikkö (osakohde), joka on fyysisesti osa toista yksikköä (emokohdetta) siten, että osakohteen esille hakeminen
+                  riippuu emokohteen tunnistamisesta ja sijainnista, esim. kokoomateoksen artikkeli, äänilevyn raita. Monografian osakohteen
+                  tietue sisältää emojulkaisunsa tunnistetiedot kentässä <a href="76X-78X.htm#773">773</a> (Linkityskirjaus - emokohde).
+               </li>
+               <li><strong>b</strong> - Osakohde kausijulkaisussa<br> Bibliografinen yksikkö (osakohde), joka on fyysisesti osa kausijulkaisuyksikköä (emokohdetta) siten, että osakohteen esille
+                  hakeminen riippuu emokohteen tunnistamisesta ja sijainnista, esim. aikakauslehtiartikkeli. Kausijulkaisun osakohteen tietue
+                  sisältää emojulkaisunsa tunnistetiedot kentässä <a href="76X-78X.htm#773">773</a> (Linkityskirjaus - emokohde).
+               </li>
+               <li><strong>c</strong> - Kokoelma<br> Yhteen koottu ryhmä teoksia, joita ei alunperin julkaistu, jaettu tai tuotettu yhdessä, mutta niitä kohdellaan kokonaisuutena
+                  alkuperän tai sisällön perusteella. Näin koodataan emokokoelma, jonka osat on erillisluetteloitu.
+               </li>
+               <li><strong>d</strong> - Osakohde kokoelmassa<br> Erillisluetteloitu osa kokoelmaa, joka on kokonaisuudessaan kuvattu kokoelman tietueessa (nimiö/07 : c). Osakohdetietue sisältää
+                  emokokoelman tunnistetiedot kentässä <a href="76X-78X.htm#773">773</a> (Linkityskirjaus - emokohde).
+               </li>
+               <li><strong>i</strong> - Päivittyvä julkaisu<br> Julkaisu, johon lisätään tietoja tai päivitetään tavalla, joka ei jätä lisäyksiä irrallisiksi. Esimerkiksi irtolehtijulkaisujen
+                  tai verkkosivujen päivittäminen. Päivittyvän julkaisun tyyppi merkitään merkkipaikkaan <a href="008.htm#CR">008/21</a> (Jatkuvan julkaisun tyyppi).
+               </li>
+               <li><strong>m</strong> - Monografia<br> Yksi- tai moniosainen kohde, johon kuuluu tai on tulossa määrätty määrä erillisiä osia.
+               </li>
+               <li><strong>s</strong> - Kausijulkaisu<br> Kohde ilmestyy toisiaan seuraavissa numeroiduissa osissa, joiden on tarkoitus jatkua määräämättömästi (esim. aikakauslehdet,
+                  sarjat, sanomalehdet). Kausijulkaisun tyyppi merkitään merkkipaikkaan <a href="008.htm#CR">008/21</a> (Jatkuvan julkaisun tyyppi).
+               </li>
+            </ul>
+         </li>
+         <li><strong>08</strong> - Arkistoaineiston kontrolli
+            <ul>
+               <li><strong>#</strong> - Ei kontrolloida
+               </li>
+               <li><strong>a</strong> - Arkistointi<br> Aineisto kuvaillaan arkistoinnin periaatteiden mukaan, jolloin looginen yhteys on tärkeämpi kuin bibliografinen tarkkuus.
+               </li>
+            </ul>
+         </li>
+         <li><strong>09</strong> - Tietueen merkistö<br>Vrt. <em><a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em> (Library of Congress).
+            <ul>
+               <li><strong>#</strong> - MARC-8
+               </li>
+               <li><strong>a</strong> - UCS/Unicode<br> UTF-8, "UCS Transformation Format 8" määritellään ISO/IEC 10646:2003 -standardin liitteessä D, vastaa teknisesti <a href="http://www.unicode.org">Unicode</a>-standardia.
+               </li>
+            </ul>
+         </li>
+         <li><strong>10</strong> - Indikaattorien määrä<br>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa indikaattoreille on varattu vaihtuvamittaisissa kentissä.
+         </li>
+         <li><strong>11</strong> - Osakenttäkoodin pituus<br>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa jokaiselle osakenttäkoodille on varattu vaihtuvamittaisissa
+            kentissä.
+         </li>
+         <li><strong>12-16</strong> - Tietojen kantaosoite<br>Järjestelmän tuottama viisimerkkinen numerojono ilmaisee tietueen ensimmäisen vaihtuvamittaisen kentän ensimmäisen merkkipaikan
+            (= nimiön ja hakemiston merkkien määrä sekä nimiön loppumerkki). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa
+            on nolla.
+         </li>
+         <li><strong>17</strong> - Koodaustaso<br>Bibliografisten tietojen täydellisyyden taso. Suomalaisten tietueiden kansallisbibliografiatason, välitason ja vähimmäistason
+            määritelmät löytyvät <em><a href="http://www.kansalliskirjasto.fi/kirjastoala/luettelointisaannot.html">Suomalaisista luettelointisäännöistä</a></em>.
+            <ul>
+               <li><strong>#</strong> - Täydellinen taso<br> Kansallisbibliografian taso. Täydellinen MARC-tietue, kuvailun kohde on ollut käsillä.
+               </li>
+               <li><strong>1</strong> - Täydellinen taso, kuvailun kohde ei ole ollut käsillä<br> Kuvailuun käytetyt tiedot on saatu muusta lähteestä kuin kuvailun kohteesta. Koodia käytetään pääasiassa takautuvassa konvertoinnissa,
+                  kun kaikki olemassa oleva luettelointitieto muunnetaan.
+               </li>
+               <li><strong>2</strong> - Täydellistä tasoa niukempi, kuvailun kohde ei ole ollut käsillä<br> Kuvailuun käytetyt tiedot on saatu muusta lähteestä kuin kuvailun kohteesta. Koodia käytetään pääasiassa takautuvassa konvertoinnissa,
+                  kun kaikkea olemassa olevaa luettelointitietoa ei muunneta. Auktoriteettitiedot eivät ehkä ole ajan tasalla.
+               </li>
+               <li><strong>3</strong> - Vähimmäistasoa niukempi<br> Lyhyt tietue, joka ei täytä luetteloinnin vähimmäistason vaatimuksia.
+               </li>
+               <li><strong>4</strong> - Välitaso
+               </li>
+               <li><strong>5</strong> - Osittainen (alustava) taso<br> Tietue, jota luetteloiva organisaatio ei pidä lopullisena (esim. auktoriteettitiedot eivät ole vahvistettuja muotoja tai
+                  tietue ei täytä kansallisen tason luettelointivaatimuksia).
+               </li>
+               <li><strong>7</strong> - Vähimmäistaso<br> Tietue, joka täyttää vähimmäistason vaatimukset ja jota luetteloiva organisaatio pitää lopullisena. Auktoriteetit ovat vahvistettuja.
+               </li>
+               <li><strong>8</strong> - Ennakkotieto
+               </li>
+               <li><strong>u</strong> - Tuntematon<br> Käytetään lähetettävissä tai vastaanotettavissa tietueissa korvaamaan paikallista koodaustasoa silloin kun sopivaa koodaustasoa
+                  ei pystytä määrittelemään. Koodia u ei käytetä uusissa tai päivitetyissä tietueissa.
+               </li>
+               <li><strong>z</strong> - Soveltumaton<br> Koodaustason käsite ei sovellu tietueelle.
+               </li>
+            </ul>
+         </li>
+         <li><strong>18</strong> - Luettelointisäännöt<br>Kentän <a href="01X-04X.htm#040">040</a> (Luetteloiva organisaatio) osakentässä ‡e (Kuvailukäytännöt) voidaan antaa lisätietoa käytetyistä luettelointi- ja kuvailusäännöistä.
+            <ul>
+               <li><strong>#</strong> - Ei-ISBD<br> Luettelointi ei noudata International Standard Bibliographic Description (ISBD) -sääntöjä ja välimerkitystä.
+               </li>
+               <li><strong>a</strong> - AACR 2 / <a href="http://www.kansalliskirjasto.fi/kirjastoala/luettelointisaannot.html">Suomalaiset luettelointisäännöt</a></li>
+               <li><strong>c</strong> - Ei ISBD-välimerkitystä<br> Välimerkitys noudattaa ISBD-sääntöjä muilta osin, mutta osakentän lopussa ei ole ISBD-välimerkkiä.
+               </li>
+               <li><strong>i</strong> - ISBD-välimerkitys<br> Välimerkitys noudattaa ISBD-sääntöjä.
+               </li>
+               <li><strong>u</strong> - Tuntematon<br> Käytetään lähetettävissä tai vastaanotettavissa tietueissa kun sopivaa koodia käytetyille luettelointisäännöille ei pystytä
+                  määrittelemään. Koodia u voidaan käyttää tietueissa, jotka on konvertoitu muista metadataformaateista kuin MARCista.
+               </li>
+            </ul>
+         </li>
+         <li><strong>19</strong> - Moniosaisen julkaisun tietueen taso<br>Julkaisua koskeva tietueen taso ja tietueen riippuvuudet. Tämä tieto mahdollistaa tietueen käsittelyn eri tilanteissa. Tietue
+            voi kuvata esim. moniosaista kohdetta tai moniosaisen kohteen yhtä osaa. Osan nimeke voi olla epäitsenäinen, jolloin sen identifiointi
+            edellyttää lisätietoja.
+            <ul>
+               <li><strong>#</strong> - Ei eritelty tai soveltumaton<br>Tietueen tasomäärittelyä ei ole tehty tai se on soveltumaton kohteelle.
+               </li>
+               <li><strong>a</strong> - Moniosainen julkaisu<br>Tietue kuvaa kohdetta, joka koostuu monesta osasta.
+               </li>
+               <li><strong>b</strong> - Osa, jolla on itsenäinen nimeke<br>Tietue kuvaa kohdetta, joka on moniosaisen julkaisun osa ja sillä on julkaisusta riippumaton nimeke.
+               </li>
+               <li><strong>c</strong> - Osa, jolla on epäitsenäinen nimeke<br>Tietue kuvaa kohdetta, joka on moniosaisen julkaisun osa eikä sen nimeke ole ymmärrettävä ilman koko julkaisun nimekettä.
+               </li>
+            </ul>
+         </li>
+         <li><strong>20</strong> - Kirjauskartta "Entry map" - 'Kentän pituus' -tiedon pituus<br>20-23 ovat neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.
+            <ul>
+               <li><strong>4</strong> - Sisältää aina tämän arvon.
+               </li>
+            </ul>
+         </li>
+         <li><strong>21</strong> - Kirjauskartta "Entry map" - 'Kentän osoite' -tiedon pituus<br>20-23 ovat neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.
+            <ul>
+               <li><strong>5</strong> - Sisältää aina tämän arvon.
+               </li>
+            </ul>
+         </li>
+         <li><strong>22</strong> - Kirjauskartta "Entry map" - Järjestelmän määrittelemän tiedon pituus<br>20-23 ovat neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.
+            <ul>
+               <li><strong>0</strong> - Sisältää aina tämän arvon.
+               </li>
+            </ul>
+         </li>
+         <li><strong>23</strong> - Kirjauskartta "Entry map" - Määrittelemätön<br>20-23 ovat neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.
+            <ul>
+               <li><strong>0</strong> - Sisältää aina tämän arvon.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="hakemisto"></a>HAKEMISTO
+      </h3>
+      <p>Järjestelmän tuottama hakemisto vaihtuvamittaisten kenttien sijainnista. Hakemisto alkaa heti nimiön jälkeen merkkipaikasta
+         24 lähtien ja koostuu 12 merkin mittaisista jaksoista, joissa kuvataan kenttäkoodi, kentän pituus ja kentän aloituskohta.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-02</strong> - Kenttäkoodi<br>Kolme numeroa, jotka kertovat mistä kentästä on kyse.
+         </li>
+         <li><strong>03-06</strong> - Kentän pituus<br>Neljä numeroa, jotka kertovat kentän pituuden mukaan lukien indikaattorit, osakenttäkoodit, tietosisällön ja kentän loppumerkin.
+            Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+         </li>
+         <li><strong>07-11</strong> - Kentän aloituskohta<br>Viisi numeroa, jotka kertovat mistä merkkipaikasta kenttä alkaa suhteessa tietojen kantaosoitteeseen (nimiö/12-16). Numero
+            on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

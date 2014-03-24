@@ -1,0 +1,359 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 18.6.2010.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Kontrollikentät 001-006</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kentät 001-006 sisältävät kontrollinumeroita ja kooditietoa, jota käytetään MARC-tietueiden käsittelyssä. Jokaisella kentällä
+         on oma kenttäkoodi hakemistossa ja tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Kiinteämittaisissa
+         kentissä ei ole indikaattoreita eikä osakenttäkoodeja.
+      </p>
+      <ul>
+         <li><a href="#001">001 - TIETUEEN KONTROLLINUMERO</a> (ET)
+         </li>
+         <li><a href="#003">003 - TIETUEEN KONTROLLINUMERON TUNNISTE</a> (ET)
+         </li>
+         <li><a href="#005">005 - VIIMEISIMMÄN PÄIVITYKSEN AJANKOHTA</a> (ET)
+         </li>
+         <li><a href="#006">006 - LISÄINFORMAATIOKOODIT--YLEISTÄ TIETOA</a> (T)
+         </li>
+         <li><a href="#BK">006 - (BK) KIRJAT</a></li>
+         <li><a href="#CF">006 - (CF) ELEKTRONISET AINEISTOT</a></li>
+         <li><a href="#CR">006 - (CR) JATKUVAT JULKAISUT</a></li>
+         <li><a href="#MP">006 - (MP) KARTAT</a></li>
+         <li><a href="#MU">006 - (MU) MUSIIKKI</a></li>
+         <li><a href="#MX">006 - (MX) SEKALAISET AINEISTOT</a></li>
+         <li><a href="#VM">006 - (VM) VISUAALISET AINEISTOT</a></li>
+      </ul>
+      <hr>
+      <h3><a name="001"></a>001 - TIETUEEN KONTROLLINUMERO (ET)
+      </h3>
+      <p>Tietueen kontrollinumeron antaa organisaatio, joka tuottaa, käyttää tai jakaa tietueita. Kyseisen organisaation koodi tallennetaan
+         kenttään 003 (Tietueen kontrollinumeron tunniste).
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>001</strong> ###86104385#
+      </p>
+      <p><strong>001</strong> ocm14919759
+      </p>
+      <p><strong>001</strong> #####9007496
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="003"></a>003 - TIETUEEN KONTROLLINUMERON TUNNISTE (ET)
+      </h3>
+      <p>Koodi organisaatiolle, joka on antanut tietueen kontrollinumeron kenttään 001 (Tietueen kontrollinumero). Organisaatiokoodina
+         käytetään ISIL-tunnusta, <em>ks. <a href="../organisaatiot.htm">Organisaatiot</a></em>. Ulkomaisista tietokannoista kopioidut tietueet sisältävät yleensä koodin, joka on peräisin listalta <em>MARC code list for organizations</em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>003</strong> DLC
+      </p>
+      <p><strong>003</strong> OCoLC
+      </p>
+      <p><strong>003</strong> DNLM
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="005"></a>005 - VIIMEISIMMÄN PÄIVITYKSEN AJANKOHTA (ET)
+      </h3>
+      <p>Kuusitoista merkkiä, jotka ilmaisevat päivän ja kellonajan jolloin tietuetta on viimeksi käsitelty, ja auttavat tietueen versioiden
+         erottelussa. Tieto noudattaa ISO 8601 -standardin mallia: <em>vvvvkkppttmmss.s</em> (vuosi, kuukausi, päivä, tunti 00-23, minuutti, sekunti, kymmenesosasekunti).
+      </p>
+      <h4>Esimerkki</h4>
+      <p><strong>005</strong> 19940223151047.0
+      </p>
+      <blockquote>
+         <p><i>[23. helmikuuta 1994, klo 15:10:47]</i></p>
+      </blockquote>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="006"></a>006 - LISÄINFORMAATIOKOODIT--YLEISTÄ TIETOA (T)
+      </h3>
+      <p>Kenttä sisältää 18 merkkipaikkaa (00-17), joihin voidaan tallentaa koodimuotoista lisäinformaatiota kuvailun kohteen erityispiirteistä,
+         joita koskevaa tietoa ei voida koodata kentässä 008 (Informaatiokoodit). Kenttää käytetään, kun kohteella on monia ominaisuuksia.
+         Sitä käytetään myös kuvaamaan tekstittömien jatkuvien julkaisujen kausijulkaisupiirteitä.
+      </p>
+      <p>Kentällä on puumainen rakenne, joten merkkipaikassa 006/00 (Aineiston muoto) annettu koodi määrää seuraavissa merkkipaikoissa
+         käytettävät koodit. Merkkipaikan 006/00 vaihtoehtoiset koodit vastaavat nimiön/06 koodeja; poikkeuksena on koodi <strong>s</strong> (Kausijulkaisu/Päivittyvä julkaisu). 006 kenttien merkkipaikkojen 01-17 koodit ovat samoja kuin vastaavien 008 kenttien koodit
+         merkkipaikoissa 18-34.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="BK"></a>006 - (BK) KIRJAT
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#BK">008 - (BK) KIRJAT</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>a</strong> - Tekstiaineisto
+               </li>
+               <li><strong>t</strong> - Tekstikäsikirjoitus
+               </li>
+            </ul>
+         </li>
+         <li><strong>01-04</strong> - Kuvitus<br>Ks. kuvaus merkkipaikoista 18-21 (Kuvitus) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>05</strong> - Kohderyhmä<br>Ks. kuvaus merkkipaikasta 22 (Kohderyhmä) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>06</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 23 (Ilmiasu) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>07-10</strong> - Sisältö<br>Ks. kuvaus merkkipaikoista 24-27 (Sisältö) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>11</strong> - Virallisjulkaisu<br>Ks. kuvaus merkkipaikasta 28 (Virallisjulkaisu) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>12</strong> - Kokousjulkaisu<br>Ks. kuvaus merkkipaikasta 29 (Kokousjulkaisu) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>13</strong> - Juhlajulkaisu<br>Ks. kuvaus merkkipaikasta 30 (Juhlajulkaisu) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>14</strong> - Hakemisto<br>Ks. kuvaus merkkipaikasta 31 (Hakemisto) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>15</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>16</strong> - Kirjallisuuslaji<br>Ks. kuvaus merkkipaikasta 33 (Kirjallisuuslaji) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+         <li><strong>17</strong> - Elämäkerta<br>Ks. kuvaus merkkipaikasta 34 (Elämäkerta) kohdasta <a href="008.htm#BK">008 - (BK) KIRJAT</a>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="CF"></a>006 - (CF) ELEKTRONISET AINEISTOT
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>m</strong> - Elektroninen aineisto
+               </li>
+            </ul>
+         </li>
+         <li><strong>01-04</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>05</strong> - Kohderyhmä<br>Ks. kuvaus merkkipaikasta 22 (Kohderyhmä) kohdasta <a href="008.htm#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>.
+         </li>
+         <li><strong>06</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 23 (Ilmiasu) kohdasta <a href="008.htm#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>.
+         </li>
+         <li><strong>07-08</strong> - Määrittelemätön<br>Kumpikin sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>09</strong> - Elektronisen aineiston tyyppi<br>Ks. kuvaus merkkipaikasta 26 (Elektronisen aineiston tyyppi) kohdasta <a href="008.htm#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>.
+         </li>
+         <li><strong>10</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>11</strong> - Virallisjulkaisu<br>Ks. kuvaus merkkipaikasta 28 (Virallisjulkaisu) kohdasta <a href="008.htm#CF">008 - (CF) ELEKTRONISET AINEISTOT</a>.
+         </li>
+         <li><strong>12-17</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="CR"></a>006 - (CR) JATKUVAT JULKAISUT
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>s</strong> - Kausijulkaisu/Päivittyvä julkaisu
+               </li>
+            </ul>
+         </li>
+         <li><strong>01</strong> - Ilmestymistiheys<br>Ks. kuvaus merkkipaikasta 18 (Ilmestymistiheys) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>02</strong> - Säännöllisyys<br>Ks. kuvaus merkkipaikasta 19 (Säännöllisyys) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>03</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>04</strong> - Jatkuvan julkaisun tyyppi<br>Ks. kuvaus merkkipaikasta 21 (Jatkuvan julkaisun tyyppi) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>05</strong> - Alkuperäisen julkaisun ilmiasu<br>Ks. kuvaus merkkipaikasta 22 (Alkuperäisen julkaisun ilmiasu) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>06</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 23 (Ilmiasu) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>07</strong> - Koko sisältö<br>Ks. kuvaus merkkipaikasta 24 (Koko sisältö) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>08-10</strong> - Sisältö<br>Ks. kuvaus merkkipaikoista 25-27 (Sisältö) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>11</strong> - Virallisjulkaisu<br>Ks. kuvaus merkkipaikasta 28 (Virallisjulkaisu) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>12</strong> - Kokousjulkaisu<br>Ks. kuvaus merkkipaikasta 29 (Kokousjulkaisu) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>13-15</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>16</strong> - Nimekkeen alkuperäinen kirjoitusjärjestelmä<br>Ks. kuvaus merkkipaikasta 33 (Nimekkeen alkuperäinen kirjoitusjärjestelmä) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+         <li><strong>17</strong> - Kirjauskäytäntö<br>Ks. kuvaus merkkipaikasta 34 (Kirjauskäytäntö) kohdasta <a href="008.htm#CR">008 - (CR) JATKUVAT JULKAISUT</a>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="MP"></a>006 - (MP) KARTAT
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#MP">008 - (MP) KARTAT</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>e</strong> - Kartta-aineisto
+               </li>
+               <li><strong>f</strong> - Karttakäsikirjoitus
+               </li>
+            </ul>
+         </li>
+         <li><strong>01-04</strong> - Korkeustietojen esitystapa<br>Ks. kuvaus merkkipaikoista 18-21 (Korkeustietojen esitystapa) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+         <li><strong>05-06</strong> - Projektio<br>Ks. kuvaus merkkipaikoista 22-23 (Projektio) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+         <li><strong>07</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>08</strong> - Kartta-aineiston tyyppi<br>Ks. kuvaus merkkipaikasta 25 (Kartta-aineiston tyyppi) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+         <li><strong>09-10</strong> - Määrittelemätön<br>Kumpikin sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>11</strong> - Virallisjulkaisu<br>Ks. kuvaus merkkipaikasta 28 (Virallisjulkaisu) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+         <li><strong>12</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 29 (Ilmiasu) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+         <li><strong>13</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>14</strong> - Hakemisto<br>Ks. kuvaus merkkipaikasta 31 (Hakemisto) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+         <li><strong>15</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>16-17</strong> - Ilmiasun erityispiirteet<br>Ks. kuvaus merkkipaikoista 33-34 (Ilmiasun erityispiirteet) kohdasta <a href="008.htm#MP">008 - (MP) KARTAT</a>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="MU"></a>006 - (MU) MUSIIKKI
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>c</strong> - Nuottijulkaisu
+               </li>
+               <li><strong>d</strong> - Nuottikäsikirjoitus
+               </li>
+               <li><strong>i</strong> - Puheäänite
+               </li>
+               <li><strong>j</strong> - Musiikkiäänite
+               </li>
+            </ul>
+         </li>
+         <li><strong>01-02</strong> - Musiikin laji<br>Ks. kuvaus merkkipaikoista 18-19 (Musiikin laji) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>03</strong> - Nuottijulkaisun tyyppi<br>Ks. kuvaus merkkipaikasta 20 (Nuottijulkaisun tyyppi) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>04</strong> - Äänet<br>Ks. kuvaus merkkipaikasta 21 (Äänet) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>05</strong> - Kohderyhmä<br>Ks. kuvaus merkkipaikasta 22 (Kohderyhmä) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>06</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 23 (Ilmiasu) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>07-12</strong> - Liiteaineisto<br>Ks. kuvaus merkkipaikoista 24-29 (Liiteaineisto) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>13-14</strong> - Äänitteen kirjallisuuslaji<br>Ks. kuvaus merkkipaikoista 30-31 (Äänitteen kirjallisuuslaji) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>15</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>16</strong> - Transponointi ja sovitus<br>Ks. kuvaus merkkipaikasta 33 (Transponointi ja sovitus) kohdasta <a href="008.htm#MU">008 - (MU) MUSIIKKI</a>.
+         </li>
+         <li><strong>17</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="MX"></a>006 - (MX) SEKALAISET AINEISTOT
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#MX">008 - (MX) SEKALAISET AINEISTOT</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>p</strong> - Sekalainen aineisto
+               </li>
+            </ul>
+         </li>
+         <li><strong>01-05</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>06</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 23 (Ilmiasu) kohdasta <a href="008.htm#MX">008 - (MX) SEKALAISET AINEISTOT</a>.
+         </li>
+         <li><strong>07-17</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="VM"></a>006 - (VM) VISUAALISET AINEISTOT
+      </h3>
+      <p>Merkkipaikkojen 01-17 tarkemmat kuvaukset löytyvät kentän 008 jaksosta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>, merkkipaikoista 18-34.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00</strong> - Aineiston muoto
+            <ul>
+               <li><strong>g</strong> - Heijastettava kuva tai viestin
+               </li>
+               <li><strong>k</strong> - Kuva
+               </li>
+               <li><strong>o</strong> - Moniviestin
+               </li>
+               <li><strong>r</strong> - Esine
+               </li>
+            </ul>
+         </li>
+         <li><strong>01-03</strong> - Kesto<br>Ks. kuvaus merkkipaikoista 18-20 (Kesto) kohdasta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>.
+         </li>
+         <li><strong>04</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>05</strong> - Kohderyhmä<br>Ks. kuvaus merkkipaikasta 22 (Kohderyhmä) kohdasta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>.
+         </li>
+         <li><strong>06-10</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>11</strong> - Virallisjulkaisu<br>Ks. kuvaus merkkipaikasta 28 (Virallisjulkaisu) kohdasta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>.
+         </li>
+         <li><strong>12</strong> - Ilmiasu<br>Ks. kuvaus merkkipaikasta 29 (Ilmiasu) kohdasta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>.
+         </li>
+         <li><strong>13-15</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>16</strong> - Visuaalisen aineiston tyyppi<br>Ks. kuvaus merkkipaikasta 33 (Visuaalisen aineiston tyyppi) kohdasta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>.
+         </li>
+         <li><strong>17</strong> - Menetelmä<br>Ks. kuvaus merkkipaikasta 34 (Menetelmä) kohdasta <a href="008.htm#VM">008 - (VM) VISUAALISET AINEISTOT</a>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

@@ -1,0 +1,2689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>20.6.2013</modified>
+  <datafields>
+    <title>Otsikkomuotojen kentät (1XX ja 3XX)</title>
+    <description>Kentät 100-185 sisältävät nimiä, yhtenäistettyjä nimekkeitä ja termejä, joita käytetään otsikkomuotoina tai otsikkomuotojen lisämääreinä. Tavallisesti ne on muodostettu yleisesti hyväksyttyjen luettelointisääntöjen ja asiasanastojen käytäntöjen mukaisesti. MARC 21 -auktoriteettitietueissa <strong>otsikkomuoto</strong> sisältyy kenttiin 1XX, 4XX tai 5XX, joihin on tallennettu tiedon tallennuksessa ja tiedonhaussa tai auktoriteettitiedoston järjestämisessä käytetty nimen, nimekkeen tai termin muoto. Otsikkomuotojen 1XX-kenttien sekä 4XX/5XX-viittauskenttien osakenttärakenteet ovat yhtenäiset.</description>
+    <datafield tag="100" repeatable="N">
+      <name>Otsikkomuoto - henkilönnimi</name>
+      <description paragraph="1">Vahvistettu henkilönnimi, jota käytetään nimen, tekijä/nimekkeen tai asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen tietueissa tai vahvistamaton henkilönnimi, jota käytetään viittaustietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys suora<br /> Etunimi ennen sukunimeä tai nimi, joka koostuu sanoista, alkukirjaimista, kirjaimista jne. suorassa järjestyksessä. Tähän myös yksittäinen sana tai nimi, joka voi olla joko etu- tai sukunimi.</description>
+            </value>
+            <value code="1">
+              <description>Nimen osien järjestys käänteinen<br /> Sukunimi ennen etunimeä. Tähän myös yksittäinen nimi, joka varmasti tiedetään sukunimeksi.</description>
+            </value>
+            <value code="3">
+              <description>Suvun nimi<br /> Nimi edustaa perhettä, heimoa, hallitsijasukua, taloa tms. ryhmää ja voidaan tallentaa joko suorassa tai käänteisessä järjestyksessä.</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Henkilönnimi</name>
+          <description>Sukunimi ja/tai etunimi; nimen tilalla käytetyt kirjaimet, alkukirjaimet, lyhenteet, fraasit tai numerot; suvun nimi.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Numerointi</name>
+          <description>Roomalainen numero, tai roomalainen numero ja sitä seuraava etunimen osa, kun ensimmäisen indikaattorin arvo on 0.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Arvonimet ja muut nimeen liittyvät sanat</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Nimeen liittyvät aikamääreet</name>
+          <description>Syntymä- ja/tai kuolinvuodet, kukoistuskaudet tai muut nimeen liittyvät aikamääreet. Tietosuojavaltuutetun lausunnon mukaan suomalaisten henkilöiden syntymä- ja kuolinvuosia ei saa tallentaa, ellei kuolinvuosi ole 1899 tai varhaisempi.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+          <description>Kuvaa henkilön suhdetta teokseen. Käytetään rajoitetusti, lähinnä silloin kun sopiva funktiokoodi (&#8225;4) puuttuu tai tekijän funktio ei yksiselitteisesti käy ilmi muusta kuvailusta.</description>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+          <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+          <description>Nimeen liittyvät tiedot, jotka eivät sovellu muihin osakenttiin.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+          <description>Yleismääre, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Nimen määrite</name>
+          <description>Tietoa nimestä, kun vastuullisuus on tuntematon, epävarma, kuvitteellinen tai salanimellä toteutettu.</description>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+          <description>Esimerkiksi <em>käsikirjoitus</em>, <em>pöytäkirja</em>, <em>valikoima</em>.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+          <description>Kieli tai kielet, joita käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+          <description>Teoksen osan numero, opus- tai järjestysnumero, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+          <description>Lyhennettä <em>arr.</em> käytettään yhtenäistetyn nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+          <description>Teoksen osan nimeke, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Henkilönnimen täydellisempi muoto</name>
+          <description>Täydellisempi kuin osakentässä &#8225;a.</description>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+          <description>Yhtenäistetyn nimekkeen kanssa käytetty sävellaji tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+          <description>Versio-, painos - tms. tieto, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+          <description>Yhtenäistetty nimeke, nimiösivun nimeke tai sarjan nimeke, jota käytetään tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Olearius, Adam,<strong>&#8225;d</strong>1603-1671</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>De Angelini, Anna</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>McCoy, Hal</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>O'Brien, Gerard</text>
+        </example>
+        <example>
+          <text><strong>100 3#&#8225;a</strong>Arey family</text>
+        </example>
+        <example>
+          <text><strong>100 3#&#8225;a</strong>Guelf, House of</text>
+        </example>
+        <example>
+          <text><strong>100 3#&#8225;a</strong>Attalid dynasty,<strong>&#8225;d</strong>282-133 B.C.</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Thomas<strong>&#8225;c</strong>(Anglo-Norman poet)</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>W. P.,<strong>&#8225;c</strong>Esq.</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Gustaf<strong>&#8225;b</strong>V,<strong>&#8225;c</strong>King of Sweden,<strong>&#8225;d</strong>1858-1950</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Appleton, Victor,<strong>&#8225;c</strong>II</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Salisbury, James Cecil,<strong>&#8225;c</strong>Earl of,<strong>&#8225;d</strong>d. 1683</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Saur, Karl-Otto,<strong>&#8225;c</strong>Jr.</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Black Foot,<strong>&#8225;c</strong>Chief,<strong>&#8225;d</strong>d. 1877<strong>&#8225;c</strong>(Spirit)</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Brown, John,<strong>&#8225;d</strong>1800-1859,<strong>&#8225;e</strong>defendant</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Speroni, Sperone,<strong>&#8225;d</strong>1500-1588.<strong>&#8225;t</strong>Selections.<strong>&#8225;f</strong>1982</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Wagner, Richard,<strong>&#8225;d</strong>1813-1883.<strong>&#8225;t</strong>Ouvertüre.<strong>&#8225;h</strong>Sound recording</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Husák, Gustáv.<strong>&#8225;t</strong>Speeches.<strong>&#8225;k</strong>Selections</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Demetrius,<strong>&#8225;c</strong>of Phaleron,<strong>&#8225;d</strong>b. 350 B.C.<strong>&#8225;t</strong>De elocutione.<strong>&#8225;l</strong>Russian</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Ries, Ferdinand,<strong>&#8225;d</strong>1784-1838.<strong>&#8225;t</strong>Octet,<strong>&#8225;m</strong>piano, winds, strings,<strong>&#8225;n</strong>op. 128,<strong>&#8225;r</strong>A major</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Telemann, Georg Philipp,<strong>&#8225;d</strong>1681-1767.<strong>&#8225;t</strong>Sonatas,<strong>&#8225;m</strong>flutes (2),<strong>&#8225;n</strong>op. 5;<strong>&#8225;o</strong>arr.</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Kalashnikov, S. D.<strong>&#8225;q</strong>(Sergei Dmitrievich)</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Claudius<strong>&#8225;q</strong>(Claudius Ceccon)</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Gautama Buddha<strong>&#8225;v</strong>Early works to 1800</text>
+        </example>
+        <example>
+          <text><strong>100 3#&#8225;a</strong>Clark family<strong>&#8225;v</strong>Fiction</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Shakespeare, William,<strong>&#8225;d</strong>1564-1616<strong>&#8225;x</strong>Criticism and interpretation<strong>&#8225;x</strong>History<strong>&#8225;y</strong>18th century</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>Frederick<strong>&#8225;b</strong>II,<strong>&#8225;c</strong>Holy Roman Emperor,<strong>&#8225;d</strong>1194-1250<strong>&#8225;x</strong>Homes and haunts<strong>&#8225;z</strong>Italy</text>
+        </example>
+        <example>
+          <text><strong>100 0#&#8225;a</strong>E.S.,<strong>&#8225;c</strong>Meister,<strong>&#8225;d</strong>15th cent.,<strong>&#8225;j</strong>Follower of</text>
+        </example>
+        <example>
+          <text><strong>100 1#&#8225;a</strong>Reynolds, Joshua,<strong>&#8225;c</strong>Sir,<strong>&#8225;d</strong>1723-1792,<strong>&#8225;j</strong>Pupil of</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="110" repeatable="N">
+      <name>Otsikkomuoto - yhteisönnimi</name>
+      <description paragraph="1">Vahvistettu yhteisönnimi, jota käytetään nimen, tekijä/nimekkeen tai asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen tietueissa tai vahvistamaton yhteisönnimi, jota käytetään viittaustietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen<br /> Yhteisönnimi alkaa henkilönnimellä, joka esitetään käänteisessä järjestyksessä sukunimi ensin.</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi<br /> Julkishallinnollinen tai kirkollinen yhteisö.</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhteisönnimi</name>
+          <description>Hallintoalueen tai yhteisön nimi, johon liittyy alayksiköitä/alahierarkioita.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Alayksikkö</name>
+          <description>Hallintoalueen tai yhteisön alayksikön/alahierarkian nimi tai kokouksen nimi.</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Kokouksen tai sopimuksen allekirjoittamisen aika</name>
+          <description>Merkitään pelkkä vuosiluku.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+          <description>Kuvaa yhteisön suhdetta teokseen. Käytetään rajoitetusti, lähinnä silloin kun sopiva funktiokoodi (&#8225;4) puuttuu tai yhteisön funktio ei yksiselitteisesti käy ilmi muusta kuvailusta.</description>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+          <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+          <description>Esim. yhteisön tarkoitusta kuvaava yleismääre, jos tarkoitus ei ilmene yhteisönnimestä; yhteisön sijaintipaikan nimi tai perustamisvuosi, joka erottaa toisistaan kaksi samankaltaista yhteisönimeä; sopimuksen <em>toisen osapuolen</em> nimi; tieto, joka ei paremmin sovellu osakenttiin &#8225;c, &#8225;d tai &#8225;n, kun kyseessä on yhteisönnimen alle kirjattu kokous; muut tiedot, jotka eivät sovellu muun tyyppisiin yhteisönnimien otsikkomuotoihin.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+          <description>Esimerkiksi <em>käsikirjoitus</em>, <em>pöytäkirja</em>, <em>valikoima</em>.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+          <description>Kieli tai kielet, joita käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+          <description>Yhteisön alle kirjatun kokouksen järjestysnumero tai numero teoksen osalle, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä. Käytetään arabialaisia numeroita.</description>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+          <description>Lyhennettä <em>arr.</em> käytettään yhtenäistetyn nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+          <description>Teoksen osan nimeke, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+          <description>Yhtenäistetyn nimekkeen kanssa käytetty sävellaji tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+          <description>Versio-, painos - tms. tieto, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+          <description>Yhtenäistetty nimeke, nimiösivun nimeke tai sarjan nimeke, jota käytetään tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Arlington National Cemetery (Va.)</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Nigel Brooks Chorale</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Field &amp; Young (Jersey City, N.J.)</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Pennsylvania.<strong>&#8225;b</strong>State Board of Examiners of Nursing Home Administrators</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Jalisco (Mexico).<strong>&#8225;t</strong>Ley que aprueba el plan regional urbano de Guadalajara, 1979-1983</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>University of Illinois at Urbana-Champaign.<strong>&#8225;b</strong>Experimental Music Studios</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Arizona Family Planning Council</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>PRONAPADE (Firm)</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Notre-Dame de Laeken (Belgium : Parish)</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Labour Party (Great Britain).<strong>&#8225;b</strong>Conference<strong>&#8225;n</strong>(71st :<strong>&#8225;c</strong>Blackpool)</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>New Hampshire.<strong>&#8225;b</strong>Constitutional Convention<strong>&#8225;d</strong>(1781)</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Algeria.<strong>&#8225;t</strong>Treaties, etc.<strong>&#8225;g</strong>England and Wales,<strong>&#8225;d</strong>1682 Apr. 20</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Raleigh Publishing Company.<strong>&#8225;t</strong>Works.<strong>&#8225;f</strong>1979</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>France.<strong>&#8225;t</strong>Constitution (1946)</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Minnesota.<strong>&#8225;b</strong>Constitutional Convention<strong>&#8225;d</strong>(1857 :<strong>&#8225;g</strong>Republican)</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Great Britain.<strong>&#8225;t</strong>Treaties, etc.<strong>&#8225;g</strong>Poland,<strong>&#8225;d</strong>1948 Mar. 2.<strong>&#8225;k</strong>Protocols, etc.<strong>&#8225;d</strong>1951 Mar. 6</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Pearls Before Swine (Musical group).<strong>&#8225;t</strong>One nation underground.<strong>&#8225;h</strong>Sound recording</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>British Library.<strong>&#8225;k</strong>Manuscript.<strong>&#8225;n</strong>Arundel 384</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Library of Congress. <strong>&#8225;b</strong>Congressional Research Service.<strong>&#8225;b</strong>Senior Specialist Division.<strong>&#8225;t</strong>Soviet diplomacy and negotiating behavior.<strong>&#8225;l</strong>Japanese.<strong>&#8225;k</strong>Selections</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>United States.<strong>&#8225;b</strong>Congress<strong>&#8225;n</strong>(97th, 2nd session :<strong>&#8225;d</strong>1982).<strong>&#8225;b</strong>House</text>
+        </example>
+        <example>
+          <text><strong>110 1#&#8225;a</strong>Philippines.<strong>&#8225;t</strong>Labor Code of the Philippines.<strong>&#8225;n</strong>Book 5,<strong>&#8225;p</strong>Labor Relations</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>United Nations<strong>&#8225;x</strong>Economic assistance<strong>&#8225;v</strong>Periodicals</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Catholic Church<strong>&#8225;z</strong>Germany<strong>&#8225;x</strong>History<strong>&#8225;y</strong>1933-1945</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Real Academia de la Historia (Spain).<strong>&#8225;k</strong>Manuscript.<strong>&#8225;n</strong>H.</text>
+        </example>
+        <example>
+          <text><strong>110 2#&#8225;a</strong>Society of Friends<strong>&#8225;z</strong>Pennsylvania<strong>&#8225;x</strong>History<strong>&#8225;v</strong>Maps</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="111" repeatable="N">
+      <name>Otsikkomuoto - kokouksen nimi</name>
+      <description paragraph="1">Vahvistettu kokouksen nimi, jota käytetään nimen, tekijä/nimekkeen tai asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen tietueissa tai vahvistamaton kokouksen nimi, jota käytetään viittaustietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen<br /> Kokouksen nimi alkaa henkilönnimellä, joka esitetään käänteisessä järjestyksessä sukunimi ensin.</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi<br /> Kirjauksen alkuun tulee hallintoalueen nimi.</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys on suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Kokouksen tai hallintoalueen nimi</name>
+          <description>Kun kyseessä on useampia alayksiköitä, tallennetaan ensimmäisen kokonaisuuden nimi ensin; tai hallintoalueen nimi, jonka alle kokouksen nimi kirjataan.</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Kokouksen aika</name>
+          <description>Merkitään pelkkä vuosiluku.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+          <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+          <description>Tiedot, jotka eivät sovellu muihin osakenttiin.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+          <description>Yleismääre, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+          <description>Esimerkiksi <em>valikoima</em>.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+          <description>Kieli tai kielet, joita käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+          <description>Kokouksen numero merkitään arabialaisin numeroin. Teoksen osan numero, opus- tai järjestysnumero, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+          <description>Teoksen osan nimeke, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Hallintoalueen nimeä seuraava kokouksen nimi</name>
+          <description>Osakentässä &#8225;a olevaa hallintoaluetta seuraava kokouksen nimi.</description>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+          <description>Versio-, painos - tms. tieto, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+          <description>Yhtenäistetty nimeke, nimiösivun nimeke tai sarjan nimeke, jota käytetään tekijä/nimeke -otsikkomuodossa.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>Symposium Internacional "Manuel Pedroso" In Memoriam<strong>&#8225;d</strong>(1976 :<strong>&#8225;c</strong>Guanajuato, Mexico)</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>Wittenberg University Luther Symposium<strong>&#8225;d</strong>(1983)</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>International Symposium on Quality Control (1974- ) <strong>&#8225;n</strong>(6th : <strong>&#8225;d</strong>1987 : <strong>&#8225;c</strong>Osaka, Japan)</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>Illinois White House Conference on Children<strong>&#8225;d</strong>(1980 :<strong>&#8225;c</strong>Springfield, Ill.).<strong>&#8225;e</strong>Chicago Regional Committee</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>Symposium on Nonsteady Fluid Dynamics,<strong>&#8225;c</strong>San Francisco,<strong>&#8225;d</strong>1978<strong>&#8225;g</strong>(Projected, not held)</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>International Conference on Safety of Life at Sea<strong>&#8225;d</strong>(1960 :<strong>&#8225;c</strong>London, England).<strong>&#8225;t</strong>Final act of conference with annexes including the International Convention for the Safety of Life at Sea, signed in London, 17 June, 1960.<strong>&#8225;l</strong>Chinese &amp; English.<strong>&#8225;k</strong>Selections</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>Conference on the Limitation of Armament<strong>&#8225;d</strong>(1921-1922 :<strong>&#8225;c</strong>Washington, D.C.).<strong>&#8225;t</strong>Washington Kaigi keika.<strong>&#8225;n</strong>1.<strong>&#8225;p</strong>Gunbi seigen ni kansuru mondai</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>Olympics<strong>&#8225;x</strong>History<strong>&#8225;v</strong>Juvenile literature</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>New York World's Fair<strong>&#8225;d</strong>(1939-1940)<strong>&#8225;x</strong>Buildings</text>
+        </example>
+        <example>
+          <text><strong>111 2#&#8225;a</strong>La Crosse Health and Sports Science Symposium</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="130" repeatable="N">
+      <name>Otsikkomuoto - yhtenäistetty nimeke</name>
+      <description paragraph="1">Vahvistettu yhtenäistetty nimeke, jota käytetään nimekkeen tai asiasanaketjun otsikkomuotona vahvistettujen otsikkomuotojen tietueissa tai vahvistamaton yhtenäistetty nimeke, jota käytetään viittaustietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description><a href="../ohitus.htm">Ohitusindikaattori</a></description>
+          <values>
+            <value code="0-9">
+              <description>Ohitettavien merkkien määrä</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+          <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+          <description>Tiedot, jotka eivät sovellu muihin osakenttiin.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+          <description>Esimerkiksi <em>käsikirjoitus</em>, <em>pöytäkirja</em>, <em>valikoima</em>.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+          <description>Nimiösivun nimeke.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>"Hsuan lai hsi kan" hsi lieh</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Songs, unacc.</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Bastard</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Habakkuk commentary</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Beowulf</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Resources information series</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Imago (Series)</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Socialist thought and practice (Belgrade, Serbia)</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Economia (Franco Angeli editore : 1985)</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Inter-American Treaty of Reciprocal Assistance<strong>&#8225;d</strong>(1947)</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Bible.<strong>&#8225;l</strong>Latin.<strong>&#8225;s</strong>Vulgate.<strong>&#8225;f</strong>1454</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>New-York statesman (1823)</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Gone with the wind (Motion picture).<strong>&#8225;h</strong>Sound recording</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Bible.<strong>&#8225;p</strong>O.T.<strong>&#8225;p</strong>Five Scrolls.<strong>&#8225;l</strong>Hebrew.<strong>&#8225;s</strong>Biblioteca apostolica Vaticana.<strong>&#8225;k</strong>Manuscript.<strong>&#8225;n</strong>Urbaniti Hebraicus 1</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Convention for the Protection of Human Rights and Fundamental Freedoms<strong>&#8225;d</strong>(1950).<strong>&#8225;k</strong>Protocols, etc.</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Vedas.<strong>&#8225;p</strong>Rgveda.<strong>&#8225;l</strong>Italian &amp; Sanskrit.<strong>&#8225;k</strong>Selections</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Concerto,<strong>&#8225;m</strong>violin, string orchestra,<strong>&#8225;r</strong>D major</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Annale Universiteit van Stellenbosch.<strong>&#8225;n</strong>Serie A2,<strong>&#8225;p</strong>Soölogie</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>God save the king;<strong>&#8225;o</strong>arr.</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Questoes internacionais.<strong>&#8225;p</strong>Série Estudos</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Talmud Yerushalmi.<strong>&#8225;p</strong>Nezikin.<strong>&#8225;l</strong>German.<strong>&#8225;k</strong>Selections</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>American Convention on Human Rights<strong>&#8225;d</strong>(1969).<strong>&#8225;n</strong>Part 2,<strong>&#8225;p</strong>Means of Protection.<strong>&#8225;l</strong>Spanish</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Beowulf<strong>&#8225;x</strong>Language<strong>&#8225;v</strong>Glossaries, etc.</text>
+        </example>
+        <example>
+          <text><strong>130 #0&#8225;a</strong>Koran<strong>&#8225;x</strong>Criticism, interpretation, etc.<strong>&#8225;x</strong>History<strong>&#8225;y</strong>19th century</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="148" repeatable="N">
+      <name>Otsikkomuoto - aikaa ilmaiseva termi</name>
+      <description paragraph="1">Aikaa ilmaiseva termi, jota käytetään otsikkomuotona. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, viittaus ja lisämääre.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aikaa ilmaiseva termi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>148 ##&#8225;a</strong>1710-1714</text>
+        </example>
+        <example>
+          <text><strong>148 ##&#8225;a</strong>1500-1700</text>
+        </example>
+        <example>
+          <text><strong>148 ##&#8225;a</strong>1863</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="150" repeatable="N">
+      <name>Otsikkomuoto - aihetta ilmaiseva termi</name>
+      <description paragraph="1">Vahvistettu aihetta ilmaiseva termi, jota käytetään asiasanan tai asiasanaketjun vahvistettujen otsikkomuotojen tietueissa tai vahvistamaton aihetta ilmaiseva termi, jota käytetään seuraavissa tietuelajeissa: lisämääre, viittaus, alanmukaisen ryhmän otsikko.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aihetta ilmaiseva termi tai maantieteellinen nimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Maantieteellistä nimeä seuraava aihetta ilmaiseva termi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Blood</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Catalogs by source</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Characters and characteristics in literature</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Bull Run, 2nd Battle of, Va., 1862</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Scuba diving <strong>&#8225;v</strong>Periodicals</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Conflict of laws<strong>&#8225;x</strong>Support (Domestic relations)</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>God<strong>&#8225;x</strong>History of doctrines<strong>&#8225;y</strong>Middle Ages, 600-1500</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Music<strong>&#8225;y</strong>500-1400</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Painting, Chinese<strong>&#8225;y</strong>Sung-Yüan dynasties, 960-1368<strong>&#8225;x</strong>Societies, etc.</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Chapels<strong>&#8225;z</strong>Germany (West)</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>John, the Baptist, Saint, in the Koran</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Catholic Church in art</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Bible and atheism</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Greece in textbooks</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Hurricane Flora, 1963</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Überhaupt (The German word)</text>
+        </example>
+        <example>
+          <text><strong>150 ##&#8225;a</strong>Afrihili (Artificial language)</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="151" repeatable="N">
+      <name>Otsikkomuoto - maantieteellinen nimi</name>
+      <description paragraph="1">Maantieteellinen nimi, jota käytetään otsikkomuotona. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, viittaus ja lisämääre.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Maantieteellinen nimi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Amazon River</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Communist countries</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Halley's comet</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Interstate 70</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Mason and Dixon's Line</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Himalaya Mountains</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Irrawaddy Division (Burma)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Leesville (S.C.)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Palenque Site (Mexico)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Pompeii (Extinct city)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Altamira Cave (Spain)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Antietam National Battlefield (Md.)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Greenwich Village (New York, N.Y.)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>King Ranch (Tex.)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Warm Springs Indian Reservation (Or.)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Delaware Memorial Bridge (Del. and N.J.)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Paris (France)<strong>&#8225;v</strong>Guidebooks</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Russia<strong>&#8225;x</strong>Territorial expansion<strong>&#8225;v</strong>Maps, Pictorial</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>United States<strong>&#8225;x</strong>History<strong>&#8225;y</strong>Civil War, 1861-1865<strong>&#8225;x</strong>Conscientious objectors</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Venus (Planet)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Green River (Ky. : River)</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>Casper (Wyo.)<strong>&#8225;v</strong>Maps</text>
+        </example>
+        <example>
+          <text><strong>151 ##&#8225;a</strong>United States<strong>&#8225;x</strong>Foreign relations<strong>&#8225;y</strong>1993-<strong>&#8225;v</strong>Periodicals</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="155" repeatable="N">
+      <name>Otsikkomuoto - lajityyppiä/muotoa ilmaiseva termi</name>
+      <description paragraph="1">Lajityyppiä tai muotoa ilmaisevan termi, jota käytetään otsikkomuotona. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, viittaus ja lisämääre. Termi voi sisältää useampia sanoja.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Lajityyppiä/muotoa kuvaava termi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>155 ##&#8225;a</strong>Bird's-eye views<strong>&#8225;y</strong>1874</text>
+        </example>
+        <example>
+          <text><strong>155 ##&#8225;a</strong>Cartoons<strong>&#8225;y</strong>1952</text>
+        </example>
+        <example>
+          <text><strong>155 ##&#8225;a</strong>Dictionaries<strong>&#8225;x</strong>French<strong>&#8225;y</strong>18th century</text>
+        </example>
+        <example>
+          <text><strong>155 ##&#8225;a</strong>Hymnals<strong>&#8225;z</strong>Massachusetts<strong>&#8225;y</strong>18th century</text>
+        </example>
+        <example>
+          <text><strong>155 ##&#8225;a</strong>Photographs<strong>&#8225;v</strong>Periodicals</text>
+        </example>
+        <example>
+          <text><strong>155 ##&#8225;a</strong>Agenda<strong>&#8225;x</strong>Weekly<strong>&#8225;y</strong>1980-1985</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="162" repeatable="N">
+      <name>Otsikkomuoto - esityskokoonpanoa ilmaiseva termi</name>
+      <description paragraph="1">Esiintymiskokoonpanoa ilmaiseva termi, jota käytetään otsikkomuotona. Termi voi koostua useammasta kuin yhdestä sanasta.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="">
+          <name>Esityskokoonpanoa ilmaiseva termi(ET)</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>162 ##&#8225;a</strong>viulu</text>
+        </example>
+        <example>
+          <text><strong>162 ##&#8225;a</strong>orkesteri</text>
+        </example>
+        <example>
+          <text><strong>162 ##&#8225;a</strong>sekakuoro</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="180" repeatable="N">
+      <name>Otsikkomuoto - yleinen lisämääre</name>
+      <description paragraph="1">Aihetta, muotoa tai kieltä ilmaiseva termi, jota käytetään otsikkomuotona lisämääretietueessa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>Russian<strong>&#8225;v</strong>Dictionaries</text>
+        </example>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>Political aspects</text>
+        </example>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>Rhetoric<strong>&#8225;x</strong>Ability testing</text>
+        </example>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>Arabic [or, Italian, etc.]</text>
+        </example>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>Civilization<strong>&#8225;y</strong>16th century</text>
+        </example>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>History<strong>&#8225;y</strong>18th century<strong>&#8225;x</strong>Exhibitions</text>
+        </example>
+        <example>
+          <text><strong>180 ##&#8225;x</strong>Nuclear reactor safety<strong>&#8225;y</strong>1975-1985<strong>&#8225;z</strong>United States</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="181" repeatable="N">
+      <name>Otsikkomuoto - maantieteellinen lisämääre</name>
+      <description paragraph="1">Maantieteellinen nimi tai termi, jota käytetään otsikkomuotona lisämääretietueessa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Paris (France)<strong>&#8225;v</strong>Photographs</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Mississippi<strong>&#8225;z</strong>Tippah County<strong>&#8225;x</strong>History</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Washington (D.C.)<strong>&#8225;y</strong>1890-1910</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Hudson River Valley (N.Y. and N.J.)</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>New York (State)<strong>&#8225;z</strong>Buffalo</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Foreign countries<strong>&#8225;x</strong>History and criticism</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Antarctica<strong>&#8225;z</strong>Weddell Sea Region</text>
+        </example>
+        <example>
+          <text><strong>181 ##&#8225;z</strong>Germany<strong>&#8225;x</strong>History<strong>&#8225;y</strong>1933-1945</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="182" repeatable="N">
+      <name>Otsikkomuoto - aikaa ilmaiseva lisämääre</name>
+      <description paragraph="1">Aikaa ilmaiseva termi, jota käytetään otsikkomuotona lisämääretietueessa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>1981-<strong>&#8225;v</strong>Periodicals</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>To 1500</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>18th century</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>Early church, ca. 30-600</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>Great War, 1843-1852</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>Geometric period, ca. 900-700 B.C.</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>Middle Ages, 600-1500</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>Sung-Yüan dynasties, 960-1368</text>
+        </example>
+        <example>
+          <text><strong>182 ##&#8225;y</strong>Civil War, 1861-1865<strong>&#8225;x</strong>Conscientious objectors</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="185" repeatable="N">
+      <name>Otsikkomuoto - muotoa ilmaiseva lisämääre</name>
+      <description paragraph="1">Muotoa tai lajityyppiä ilmaiseva termi, jota käytetään otsikkomuotona lisämääretietueessa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>Fiction</text>
+        </example>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>Abbreviations</text>
+        </example>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>Indexes<strong>&#8225;v</strong>Periodicals</text>
+        </example>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>case studies<strong>&#8225;v</strong>software</text>
+        </example>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>Dictionaries<strong>&#8225;x</strong>Spanish</text>
+        </example>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>Poetry<strong>&#8225;y</strong>To 1500</text>
+        </example>
+        <example>
+          <text><strong>185 ##&#8225;v</strong>Catalogs and collections<strong>&#8225;z</strong>United States</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="046" repeatable="Y">
+      <name>Erikoiskoodatut ajankohdat</name>
+      <description paragraph="1">Ajankohdat, jotka liittyvät tietueessa kuvailtuun entiteettiin. Näitä ovat:</description>
+      <description paragraph="2"><a><em>Henkilön nimi:</em> syntymäaika, kuolinaika ja aika tai aikaväli, jolloin henkilö on toiminut aktiivisesti.</a></description>
+      <description paragraph="3"><a><em>Yhteisön nimi:</em> aika tai aikaväli, jolloin konferenssi tms. on pidetty, tai muu yhteisöön liittyvä ajankohta (esim. perustamisaika, lopettamisaika).</a></description>
+      <description paragraph="4"><a><em>Suvun nimi:</em> suvun nimeen liittyvä ajankohta.</a></description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="f" repeatable="N">
+          <name>Henkilön syntymäaika</name>
+          <description>Muodossa vvvv, vvvkk tai vvvkkpp.</description>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Henkilön kuolinaika</name>
+          <description>Muodossa vvvv, vvvkk tai vvvkkpp.</description>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Teoksen synty- tai aloitusaika</name>
+          <description>Teoksen kirjoitus/sävellysaika, julkaisuaika tai vastaavan ajanjakson ensimmäinen vuosi. Ekspression ensimmäinen ilmestymisaika.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen lopullinen valmistumisaika.</name>
+          <description>Tähän vain osakentässä &#8225;k alkavan ajanjakson viimeinen vuosi.</description>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Ajanjakson alku</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Ajanjakson loppu</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="N">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Päiväyksen muodon lähde</name>
+          <description>Lähde merkitään, jos päiväyksen muoto on muu kuin osakentissä &#8225;f ja &#8225;g määritelty vvvvkkpp. Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/date-time.html">Date and Time Scheme Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>046 ## &#8225;f</strong> 1931<br /> 100 1# &#8225;a Munro, Alice, &#8225;d 1931-</text>
+        </example>
+        <example>
+          <text><strong>046 ## &#8225;f</strong> 19360505<br /> 100 1# &#8225;a Smith, John, &#8225;d 1936 May 5-</text>
+        </example>
+        <example>
+          <text><strong>046 ## &#8225;f</strong> 1899 <strong>046 ## &#8225;g</strong> 1961<br /> 100 1# &#8225;a Hemingway, Ernest, &#8225;d 1899-1961</text>
+        </example>
+        <example>
+          <text><strong>046 ## &#8225;s</strong> 1977<br /> 110 2# &#8225;a Double Image (Musical group : 1977-)</text>
+        </example>
+        <example>
+          <text><strong>046 ## &#8225;s</strong> 1925 <strong>&#8225;t</strong> 1979<br /> 100 3# &#8225;a Pahlavi (Dynasty : 1925-1979)</text>
+        </example>
+        <example>
+          <text><strong>046 ## &#8225;f</strong> 1831? <strong>&#8225;2</strong> edtf<br /> 100 1# &#8225;a Smith, James, &#8225;d born 1831?[probable year of birth]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="336" repeatable="Y">
+      <name>Sisältötyyppi</name>
+      <description paragraph="1">Teoksen sisällön muoto. Käytetään nimeke- tai tekijä-nimeke-auktoriteettien yhteydessä.<br /></description>
+      <description paragraph="2">Saman sanaston tai koodilistan sisältötyypit voidaan merkitä samaan kenttään osakenttien &#8225;a tai &#8225;b toistumiin. Eri sanastoista otetut termit merkitään koko kentän toistumiin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Sisältötyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Sisältötyypin koodi</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Päiväyksen muodon lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>336 ## &#8225;a</strong> performed music <strong>&#8225;2</strong> marccontent</text>
+        </example>
+        <example>
+          <text><strong>336 ## &#8225;b</strong> txt <strong>&#8225;2</strong> marccontent <strong>&#8225;3</strong> liner notes</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="368" repeatable="Y">
+      <name>Henkilön tai yhteisön ominaisuuksia</name>
+      <description paragraph="1">Mikä tahansa termi, jolla erotetaan henkilö tai yhteisö muista henkilöistä tai yhteisöistä ja jolle ei ole määritelty erillistä sisältötarkennetta.<br /></description>
+      <description paragraph="2"><a><em>Henkilön nimi:</em> voi sisältää tarkenteita arvonimestä tai muita määreitä.</a></description>
+      <description paragraph="3"><a><em>Yhteisön nimi:</em> voi sisältää tarkenteita yhteisön tai hallintoalueen tyypistä tai muita määreitä.</a></description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Yhteisön tyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Hallintoalueen tyyppi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Muu tarkenne</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Arvonimi</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Lähde</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>368 ## &#8225;a</strong> Radioasema </text>
+        </example>
+        <example>
+          <text><strong>368 ## &#8225;a</strong> Yritys </text>
+        </example>
+        <example>
+          <text><strong>368 ## &#8225;b</strong> Maakunta </text>
+        </example>
+        <example>
+          <text><strong>368 ## &#8225;b</strong> Kylä </text>
+        </example>
+        <example>
+          <text><strong>368 ## &#8225;c</strong> Katolinen seurakunta</text>
+        </example>
+        <example>
+          <text><strong>368 ## &#8225;c</strong> Pyhimys </text>
+        </example>
+        <example>
+          <text><strong>368 ## &#8225;d</strong> Prinsessa </text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="370" repeatable="Y">
+      <name>Paikannimi</name>
+      <description paragraph="1">Kylä, kaupunki, maakunta, osavaltio tai maa, joka liittyy henkilöihin, yhteisöihin, sukuihin, teoksiin ja ekspressioihin.</description>
+      <description paragraph="2"><a><em>Henkilön nimi:</em> henkilön syntymä-, kuolin- tai asuinpaikka tai muu identifioiva paikkakunta.</a></description>
+      <description paragraph="3"><a><em>Yhteisön nimi:</em> yhteisöön liittyvä merkittävä paikka (esim. kongressin pitopaikka tai organisaation pääkonttorin sijaintipaikka).</a></description>
+      <description paragraph="4"><a><em>Suvun nimi:</em> paikka, jossa suku asuu tai on asunut tai johon suvulla on yhteyksiä.</a></description>
+      <description paragraph="5"><a><em>Teos tai ekspressio:</em> maa tai muu alue, jossa teos tai ekspressio on syntynyt.</a></description>
+      <description paragraph="6">Kenttää 370 toistetaan, kun alkamis- ja loppumisajat osakentissä &#8225;s ja &#8225;t liittyvät eri paikkakuntaan. Jos paikannimi otetaan kontrolloidusta sanastosta, sanasto kerrotaan osakentässä &#8225;2 (Termin lähde).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Syntymäpaikka</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Kuolinpaikka</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Maa</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Asuinpaikka tai pääkonttorin paikka</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Muu paikka</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Teoksen syntypaikka</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Kertoo kontrolloidun sanastolähteen, jota käytetään osakentissä &#8225;a, &#8225;b, &#8225;c, &#8225;e, &#8225;f ja &#8225;g. Osakenttä &#8225;2 merkitään vastaavan osakentän jälkeen. Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>370 ## &#8225;a</strong> Radzimyn, Poland <strong>&#8225;b</strong> Surfside, Fla., USA</text>
+        </example>
+        <example>
+          <text><strong>370 ## &#8225;e</strong> Pagsanjan, Philippines [suku asunut Filippiinien Pagsanjanissa]</text>
+        </example>
+        <example>
+          <text><strong>370 ## &#8225;e</strong> England <strong>&#8225;s</strong> 1954 <strong>&#8225;t</strong> 1962</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="371" repeatable="Y">
+      <name>Osoite</name>
+      <description paragraph="1">Tietueessa kuvailtuun entiteettiin liittyvä osoite (myös sähköinen saavutettavuus kuten sähköposti, puhelinnumero, faksinumero tms.). Eri osoitteet, kuten postiosoite ja kohteen sijaintiosoite, merkitään 371-kentän eri toistumiin.</description>
+      <description paragraph="2"><a><em>Henkilön nimi:</em> henkilön asuin- tai työpaikan osoite, sähköposti tai internet-osoite.</a></description>
+      <description paragraph="3"><a><em>Yhteisön nimi:</em> yhteisön pääkonttorin tai toimistojen osoite, yhteisön sähköposti tai internet-osoite.</a></description>
+      <description paragraph="4">Kentän 371 (Osoite) ja 370 (Paikka) ero: Kentässä 370 on tietoa henkilöön tai yhteisöön liittyvistä paikkakunnista valtakunnan tai kaupungin tasolla. Kentän 371 sisältö kertoo, mistä henkilön tai yhteisön löytää tai tavoittaa (esim. postiosoite, sähköpostiosoite tms.).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Osoite</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Kaupunki</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Maakunnan- tai läänintason hallintoalue</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Maa</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Postinumero</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Sähköinen osoite</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Funktiokoodi</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.kansalliskirjasto.fi/extra/marc21/funktiot.htm">MARC 21 -funktiokoodit</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>371 ## &#8225;a</strong> Arkadiankatu 14 B <strong>&#8225;b</strong> Helsinki <strong>&#8225;e</strong> 00100 <strong>&#8225;m</strong> (09) 458 7421 <strong>&#8225;m</strong> helsinki@levykauppax.fi</text>
+        </example>
+        <example>
+          <text><strong>371 ## &#8225;a</strong> Suite 600 <strong>&#8225;a</strong> 119 Spadina Avenue <strong>&#8225;b</strong> Toronto <strong>&#8225;c</strong> ON <strong>&#8225;d</strong> Canada <strong>&#8225;e</strong> M5V 2LI</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="372" repeatable="Y">
+      <name>Toiminta-ala</name>
+      <description paragraph="1"><a><em>Henkilön nimi:</em> henkilön ammattiala, asiantuntijuusalue tms.</a></description>
+      <description paragraph="2"><a><em>Yhteisön nimi:</em> yhteisön liiketoiminnan ala, vastuualue, hallinnonala tms.</a></description>
+      <description paragraph="3">Kenttää toistetaan, jos entiteetillä on ollut useita toiminta-aloja eri aikoina.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Toiminta-ala</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>372 ## &#8225;a</strong> Kansanmuusikko</text>
+        </example>
+        <example>
+          <text><strong>372 ## &#8225;a</strong> The North Atlantic Treaty Organization (NATO) is a political and military alliance of 26 countries from North America and Europe committed to fulfilling the goals of the North Atlantic Treaty signed on 4 April 1949.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="373" repeatable="Y">
+      <name>Yhteys ryhmään</name>
+      <description paragraph="1">Tietoa ryhmästä, yhteisöstä, seurasta tms, johon 1xx-kentässä kuvailtu entiteetti jollain tavalla liittyy. Tässä voi olla myös ryhmä, johon henkilö kuuluu tai on kuulunut (affiliation), sekä ajankohdat. </description>
+      <description paragraph="2">Kenttää toistetaan, jos henkilöllä on ollut useita yhteyksiä eri aikoina.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Ryhmän tai yhteisön nimi</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html">Name and Title Authority Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text>100 1# &#8225;a Ashton, John<br /><strong>373 ## &#8225;a</strong> Faculty of Biological Science, Leeds University <strong>&#8225;s</strong> 2000 <strong>&#8225;t</strong> 2005</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="374" repeatable="Y">
+      <name>Ammatti</name>
+      <description paragraph="1">Tietoa ammatista tai elinkeinosta, jossa henkilö toimii tai on toiminut, sekä ammatissa toimimisen aika. </description>
+      <description paragraph="2">Kenttää toistetaan, jos henkilöllä on ollut useita ammatteja eri aikoina.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Ammatti</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/occupation.html">Occupation Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>374 ## &#8225;a</strong> Säveltäjä <strong>&#8225;2</strong> [kontrolloidun sanaston koodi]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="375" repeatable="Y">
+      <name>Sukupuoli</name>
+      <description paragraph="1">Tieto henkilön sukupuolesta sekä soveltuvat ajanmääreet. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Sukupuoli</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/gender.html">Gender Code and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>375 ## &#8225;a</strong> Mies</text>
+        </example>
+        <example>
+          <text><strong>375 ## &#8225;a</strong> Male <strong>&#8225;s</strong> 1926 <strong>&#8225;2</strong> iso5218<br /><strong>375 ## &#8225;a</strong> Female <strong>&#8225;s</strong> 1972? <strong>&#8225;2</strong> iso5218</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="376" repeatable="Y">
+      <name>Tietoa suvusta</name>
+      <description paragraph="1">Lisätietoja suvuista, esim. suvun tyyppi, suvun merkittävä jäsen tai periytyvä arvonimi. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Suvun tyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Merkittävän jäsenen nimi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Periytyvä arvonimi</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Alkamisaika</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Loppumisaika</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html">Name and Title Authority Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>376 ## &#8225;a</strong> Dynastia</text>
+        </example>
+        <example>
+          <text><strong>376 ## &#8225;a</strong> Royal house <strong>&#8225;b</strong> Medici, Lorenzo de', 1449-1492</text>
+        </example>
+        <example>
+          <text><strong>376 ## &#8225;a</strong> Family <strong>&#8225;c</strong> Marquesses of Cholmondeley</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="377" repeatable="Y">
+      <name>Kieli</name>
+      <description paragraph="1">Kielikoodeja, jotka liittyvät tietueessa kuvailtuun entiteettiin. Esimerkiksi henkilön kirjoissaan tai äänitteillä käyttämä kieli, yhteisön tiedotuksessaan käyttämä kieli, suvun kieli tai ekspression kieli.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Kielikoodin lähde</description>
+          <values>
+            <value code="#">
+              <description>MARC-kielikoodi<br /> Koodi otetaan listalta, ks. <em><a href="http://www.kansalliskirjasto.fi/extra/marc21/kielet.htm">MARC 21 Kielikoodit</a></em>.</description>
+            </value>
+            <value code="7">
+              <description>Organisaatio merkitään osakenttään &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Kielikoodi</name>
+        </subfield>
+        <subfield code="l" repeatable="Y">
+          <name>Kielen nimi</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>377 ## &#8225;a</strong> rus <strong>&#8225;a</strong> eng</text>
+        </example>
+        <example>
+          <text><strong>377 ## &#8225;a</strong> bnt <strong>&#8225;l</strong> lenje</text>
+        </example>
+        <example>
+          <text><strong>377 ## &#8225;a</strong> eng</text>
+        </example>
+        <example>
+          <text><strong>377 ## &#8225;a</strong> nya <strong>&#8225;l</strong> tsewa</text>
+        </example>
+        <example>
+          <text><strong>377 ## &#8225;a</strong> en <strong>&#8225;a</strong> fr <strong>&#8225;2</strong> iso639-1</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="378" repeatable="Y">
+      <name>Henkilönnimen täydellisempi muoto</name>
+      <description paragraph="1">Nimen elementti, jota käytetään erottamaan henkilö toisesta samannimisestä henkilöstä. Sitä voidaan tarvita, kun käytettävässä nimenmuodossa on vain nimikirjaimet tai nimen lyhenne tai jokin nimen osa ei ole käytössä. Tämä kenttä liittyy vain 1XX-kentässä olevaan nimeen. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="q" repeatable="N">
+          <name>Henkilönnimen täydellisempi muoto</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>378 ## &#8225;q</strong> Hilda Doolittle</text>
+        </example>
+        <example>
+          <text><strong>378 ## &#8225;q</strong> Mauri Antero</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="380" repeatable="Y">
+      <name>Teoksen muoto</name>
+      <description paragraph="1">Luokka tai lajityyppi, johon teos kuuluu. Voidaan käyttää erottamaan samannimisiä teoksia.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Teoksen muoto</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>380 ## &#8225;a</strong> Näytelmä</text>
+        </example>
+        <example>
+          <text><strong>380 ## &#8225;a</strong> Koreografia</text>
+        </example>
+        <example>
+          <text><strong>380 ## &#8225;a</strong> Televisio-ohjelma</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="381" repeatable="Y">
+      <name>Teoksen tai ekspression muut erityispiirteet</name>
+      <description paragraph="1">Mikä tahansa teoksen tai ekspression erityispiirre, jota ei ilmoiteta omassa kentässään. Esimerkkejä ovat julkaiseva yhteisö, musiikin sovitusmerkintö, versio tai maantieteellinen termi. Voidaan käyttää erottamaan samannimisiä teoksia.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Muu erityispiirre</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>381 ## &#8225;a</strong> Douglas</text>
+        </example>
+        <example>
+          <text><strong>381 ## &#8225;a</strong> Sovitus</text>
+        </example>
+        <example>
+          <text><strong>381 ## &#8225;a</strong> Valikoima</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="382" repeatable="Y">
+      <name>Esityskokoonpano</name>
+      <description paragraph="1">Instrumentaali-, laulu-, tai muu esityskokoonpano, jolle musiikkiteos alkujaan on tarkoitettu tai jolle musiikkiekspressio on sävelletty tai jolla se esitetään. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia tai -ekspressioita toisistaan.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Esityskokoonpano</description>
+            </value>
+            <value code="1">
+              <description>Osittainen esityskokoonpano</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Esityskokoonpano</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Solisti</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Kaksintava soitin/lauluääni</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Yksittäisten soitinten/lauluäänten lukumäärä</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Vaihtoehtoinen esityskokoonpano</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/musical-instrumentation.html">Musical Instrumentation and Voice Code Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>382 ## &#8225;a</strong> Sekakuoro <strong>&#8225;a</strong> urut</text>
+        </example>
+        <example>
+          <text><strong>382 ## &#8225;a</strong> Piano</text>
+        </example>
+        <example>
+          <text><strong>382 0# &#8225;b</strong> Huilu <strong>&#8225;a</strong> orkesteri</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="383" repeatable="Y">
+      <name>Musiikkiteoksen numerointimerkintö</name>
+      <description paragraph="1">Säveltäjän, julkaisijan tai musiikintutkijan musiikkiteokselle antama järjestys-, opus- tai teosluettelonumero. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia toisistaan.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Järjestysnumero</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Opusnumero</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Teosluettelonumero</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Teosluettelon tunnus</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Järjestys- tai opusnumeroon liittyvä kustantaja</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tunnuksen lähde</name>
+          <description><br /> Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/thematic-index.html">Thematic Index Code Source Codes</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>383 ## &#8225;a</strong> Nro 14, <strong>&#8225;b</strong> op. 27, nro 2</text>
+        </example>
+        <example>
+          <text><strong>383 ## &#8225;c</strong> BWV211</text>
+        </example>
+        <example>
+          <text><strong>383 ## &#8225;c</strong> RV269, <strong>&#8225;c</strong> RV315, <strong>&#8225;c</strong> RV293, <strong>&#8225;c</strong> RV297 <strong>&#8225;d</strong> Ryom <strong>&#8225;2</strong> mlati</text>
+        </example>
+        <example>
+          <text><strong>383 ## &#8225;b</strong> Op. 5 <strong>&#8225;e</strong> Hummel </text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="384" repeatable="Y">
+      <name>Sävellaji</name>
+      <description paragraph="1">Sävelten suhdejärjestelmä. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia tai -ekspressioita toisistaan..</description>
+      <indicators>
+        <indicator num="1">
+          <description>Sävellajin tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Suhdetta alkuperäiseen ei tiedetä</description>
+            </value>
+            <value code="0">
+              <description>Alkuperäinen sävellaji</description>
+            </value>
+            <value code="1">
+              <description>Transponoitu sävellaji</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>384 0# &#8225;a</strong> D-duuri</text>
+        </example>
+        <example>
+          <text><strong>384 1# &#8225;a</strong> D-duuri</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="385" repeatable="Y">
+      <name>Kohderyhmän ominaisuudet</name>
+      <description paragraph="1">Ryhmittely henkilöille, joille aineisto on tarkoitettu tai jotka edustavat aineiston sisällön edellyttämää tasoa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Kohderyhmä</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Kohderyhmän koodi</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Väestöryhmä</name>
+          <description>Määre väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien a ja b termit ja koodit kuuluvat.</description>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Väestöryhmän koodi</name>
+          <description>Koodi väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien a ja b termit ja koodit kuuluvat.</description>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin/koodin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em> tai <em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>385 ## &#8225;a</strong> Children <strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>385 ## &#8225;m</strong> Age group <strong>&#8225;a</strong> Young adults<strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>385 ## &#8225;m</strong> Educational level group <strong>&#8225;a</strong> College Freshmen<strong>&#8225;2</strong> ericd</text>
+        </example>
+        <example>
+          <text><strong>385 ## &#8225;m</strong> Age group <strong>&#8225;a</strong> Children<strong>&#8225;2</strong> ericd</text>
+        </example>
+        <example>
+          <text><strong>385 ## &#8225;m</strong> Language group <strong>&#8225;a</strong> Spanish Speaking<strong>&#8225;2</strong> ericd</text>
+        </example>
+        <example>
+          <text><strong>385 ## &#8225;n</strong> occ <strong>&#8225;a</strong> Police <strong>&#8225;a</strong> Lawyers <strong>&#8225;a</strong> Judges<strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>385 ## &#8225;a</strong> Actors <strong>&#8225;2</strong> lcsh<strong>&#8225;0</strong> (DLC)sh 85000744</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="386" repeatable="Y">
+      <name>Tekijän ominaisuudet</name>
+      <description paragraph="1"></description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tekijä</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Tekijän koodi</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Väestöryhmä</name>
+          <description>Määre väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien a ja b termit ja koodit kuuluvat.</description>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Väestöryhmän koodi</name>
+          <description>Koodi väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien a ja b termit ja koodit kuuluvat.</description>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin/koodin lähde</name>
+          <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em> tai <em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>386 ## &#8225;a</strong> Americans <strong>&#8225;a</strong> Women<strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;a</strong> Child composers <strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;m</strong> Gender group <strong>&#8225;a</strong> Women<strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;m</strong> Nationality/regional group <strong>&#8225;a</strong> Americans<strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;m</strong> Nationality/regional group <strong>&#8225;a</strong> Polish people<strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;m</strong> Educational level group <strong>&#8225;a</strong> Elementary School Students <strong>&#8225;2</strong> ericd</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;m</strong> Age group <strong>&#8225;a</strong> Children <strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;n</strong> nat <strong>&#8225;a</strong> Polish people <strong>&#8225;2</strong> lcsh</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;a</strong> North Americans <strong>&#8225;2</strong> ericd</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;a</strong> Females <strong>&#8225;2</strong> ericd</text>
+        </example>
+        <example>
+          <text><strong>386 ## &#8225;a</strong> Chinese Canadians <strong>&#8225;2</strong> cash</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

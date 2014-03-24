@@ -1,0 +1,901 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 17.2.2012.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Luokituskentät (05X-08X)</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kentät 050-08X sisältävät kuvailun kohteeseen liittyviä luokitustietoja. Myös tietueessa käytetyt merkistöt identifioidaan
+         tähän ryhmään kuuluvassa kentässä.
+      </p>
+      <ul>
+         <li><a href="#050">050 - LIBRARY OF CONGRESS -LUOKITUS</a> (T)
+         </li>
+         <li><a href="#051">051 - LIBRARY OF CONGRESS, TIEDOT KAPPALEESTA, NUMEROSTA, ERIPAINOKSESTA</a> (T)
+         </li>
+         <li><a href="#052">052 - MAANTIETEELLINEN LUOKITUS</a> (T)
+         </li>
+         <li><a href="#055">055 - KANADALAISTEN KIRJASTOJEN LUOKITUKSET</a> (T)
+         </li>
+         <li><a href="#060">060 - NATIONAL LIBRARY OF MEDICINE -LUOKITUS</a> (T)
+         </li>
+         <li><a href="#061">061 - NATIONAL LIBRARY OF MEDICINE, TIEDOT KAPPALEESTA</a> (T)
+         </li>
+         <li><a href="#066">066 - MERKISTÖT</a> (ET)
+         </li>
+         <li><a href="#070">070 - NATIONAL AGRICULTURAL LIBRARY -LUOKITUS</a> (T)
+         </li>
+         <li><a href="#071">071 - NATIONAL AGRICULTURAL LIBRARY, TIEDOT KAPPALEESTA</a> (T)
+         </li>
+         <li><a href="#072">072 - AIHEALUEKOODI</a> (T)
+         </li>
+         <li><a href="#074">074 - U.S. GOVERNMENT PRINTING OFFICE -KAPPALENUMERO</a> (T)
+         </li>
+         <li><a href="#080">080 - YLEINEN KYMMENLUOKITUS, UDK</a> (T)
+         </li>
+         <li><a href="#082">082 - DEWEYN LUOKITUS, DDC</a> (T)
+         </li>
+         <li><a href="#083">083 - DEWEYN LUOKITUS, LISÄLUOKKA</a> (T)
+         </li>
+         <li><a href="#084">084 - MUU LUOKITUS</a> (T)
+         </li>
+         <li><a href="#085">085 - SYNTEETTISEN LUOKITUKSEN RAKENNE</a> (T)
+         </li>
+         <li><a href="#086">086 - VIRALLISJULKAISUJEN LUOKITUS</a> (T)
+         </li>
+         <li><a href="#088">088 - RAPORTTINUMERO</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="050"></a>050 - LIBRARY OF CONGRESS -LUOKITUS (T)
+      </h3>
+      <p>Luokitus on peräsin dokumentista <em>Library of Congress Classification</em> tai <em>LC Classification Additions and Changes</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Kuuluuko kuvailun kohde LC:n kokoelmiin
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - On LC:ssa
+               </li>
+               <li><strong>1</strong> - Ei ole LC:ssa
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp;Luokituksen antaja
+            <ul>
+               <li><strong>0</strong> - LC:n antama luokka
+               </li>
+               <li><strong>4</strong> - Muun kuin LC:n antama luokka
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - LC-luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>050 #4 ‡a</strong> NB933.F44 <strong>‡b</strong> T6
+      </p>
+      <p><strong>050 10 ‡a</strong> BJ1533.C4 <strong>‡b</strong> L49
+      </p>
+      <p><strong>050 00 ‡a</strong> JK609 <strong>‡b</strong> .M2
+      </p>
+      <p><strong>050 00 ‡a</strong> Z7164.N3 <strong>‡b</strong> L34 no. 9 <strong>‡a</strong> Z7165.R42 <strong>‡a</strong> HC517.R42
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="051"></a>051 - LIBRARY OF CONGRESS, TIEDOT KAPPALEESTA, NUMEROSTA, ERIPAINOKSESTA (T)
+      </h3>
+      <p>LC:n lisäämiä tietoja kuvailun kohteen muista kappaleista, numeroista ja/tai eripainoksista, joita sen kokoelmista löytyy.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokka (ET)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡c</strong> - Kappaleen tiedot (ET)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>051 ## ‡a</strong> QE75 <strong>‡b</strong> .G4 <strong>‡c</strong> 2d set.
+      </p>
+      <p><strong>051 ## ‡a</strong> Microfilm <strong>‡b</strong> 3741 HV <strong>‡c</strong> Microfilm.
+      </p>
+      <p><strong>051 ## ‡a</strong> RC310 <strong>‡b</strong> .W59 <strong>‡c</strong> Offprint. Cover dated 1947.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="052"></a>052 - MAANTIETEELLINEN LUOKITUS (T)
+      </h3>
+      <p>Kuvailun kohteeseen liittyvän pääasiallisen maantietueellisen alueen ja kaikkien soveltuvien osa-alueiden koodit.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Luokituksen lähde
+            <ul>
+               <li><strong>#</strong> - Library of Congress -luokitus
+               </li>
+               <li><strong>1</strong> - U.S. Dept. of Defense -luokitus
+               </li>
+               <li><strong>7</strong> - Lähde merkitään osakenttään ‡2
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Maantieteellisen alueen luokkakoodi (ET)<br>Neljästä kuuteen merkin pituinen koodi, joka otetaan listalta <em>Library of Congress Classification Class G</em>.
+         </li>
+         <li><strong>‡b</strong> - Maantieteellisen osa-alueen luokkakoodi (T)<br>Osakentässä ‡a annetun alueen osa-alue merkitään aakkosnumeerisella Cutter-numerolla. Cutter-numerot löytyvät Library of Congressin
+            listalta <em>Geographic Cutters. Class G, Geographic Cutters</em> sekä laajennetuilta Cutter-listoilta.
+         </li>
+         <li><strong>‡d</strong> - Asutun alueen nimi (T)
+         </li>
+         <li><strong>‡2</strong> - Luokituksen lähde (ET)<br>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>052 ## ‡a</strong> 3810
+      </p>
+      <p><strong>052 1# ‡a</strong> BK
+      </p>
+      <p><strong>052 ## ‡a</strong> 4034 <strong>‡b</strong> R4 <strong>‡b</strong> R8
+      </p>
+      <p><strong>052 ## ‡a</strong> 4033 <strong>‡b</strong> F65
+      </p>
+      <p><strong>052 1# ‡a</strong> US <strong>‡b</strong> 51
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="055"></a>055 - KANADALAISTEN KIRJASTOJEN LUOKITUKSET (T)
+      </h3>
+      <p>Luokitus, jonka on antanut <em>Library and Archives Canada</em> tai jokin muu kanadalainen kirjasto.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Kuuluuko kuvailun kohde LAC:n kokoelmiin
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - On LAC:ssa
+               </li>
+               <li><strong>1</strong> - Ei ole LAC:ssa
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Luokituksen tyyppi, täydellisyys ja lähde<br> Koodeilla 6-9 merkitään muut luokitukset kuin LC (050), NLM (060), UDK (080) tai Dewey (082).
+            <ul>
+               <li><strong>0</strong> - LAC:n antama LC-luokitukseen pohjautuva luokka
+               </li>
+               <li><strong>1</strong> - LAC:n antama täydellinen LC-luokka
+               </li>
+               <li><strong>2</strong> - LAC:n antama epätäydellinen LC-luokka
+               </li>
+               <li><strong>3</strong> - Muun kirjaston antama LC-luokitukseen pohjautuva luokka
+               </li>
+               <li><strong>4</strong> - Muun kirjaston antama täydellinen LC-luokka
+               </li>
+               <li><strong>5</strong> - Muun kirjaston antama epätäydellinen LC-luokka
+               </li>
+               <li><strong>6</strong> - LAC:n antama muu signum
+               </li>
+               <li><strong>7</strong> - LAC:n antama muu luokka
+               </li>
+               <li><strong>8</strong> - Muun kirjaston antama muu signum
+               </li>
+               <li><strong>9</strong> - Muun kirjaston antama muu luokka
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokka (ET)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡2</strong> - Luokituksen tai signumin lähde (ET)<br>Kun toisen indikaattorin arvo on 6, 7, 8 tai 9, tähän merkitään luokituksen tai signumin lähde. Koodi otetaan listalta, ks.
+            <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>055 #5 ‡a</strong> HT154
+      </p>
+      <p><strong>055 12 ‡a</strong> TS800
+      </p>
+      <p><strong>055 00 ‡a</strong> JK609 <strong>‡b</strong> M2
+      </p>
+      <p><strong>055 01 ‡a</strong> M1679.18
+      </p>
+      <p><strong>055 #3 ‡a</strong> DS598 S7 <strong>‡b</strong> .B34
+      </p>
+      <p><strong>055 18 ‡a</strong> KF385 ZB5 <strong>‡b</strong> C6 <strong>‡2</strong> kfmod
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="060"></a>060 - NATIONAL LIBRARY OF MEDICINE -LUOKITUS (T)
+      </h3>
+      <p>Luokitus on peräsin dokumentista <em>National Library of Medicine Classification</em>, liitteistä QS-QZ ja W, tai dokumentin <em>Library of Congress Classification</em> liitteistä, joita NLM käyttää oman luokituksensa lisänä.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Kuuluuko kuvailun kohde NLM:n kokoelmiin
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - On NLM:ssa
+               </li>
+               <li><strong>1</strong> - Ei ole NLM:ssa
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Luokituksen antaja
+            <ul>
+               <li><strong>0</strong> - NLM:n antama luokka
+               </li>
+               <li><strong>4</strong> - Muun kuin NLM:n antama luokka
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - NML-luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>060 #4 ‡a</strong> W1 <strong>‡b</strong> JO706M
+      </p>
+      <p><strong>060 00 ‡a</strong> WM 270 <strong>‡b</strong> MP16 no. 4 1969
+      </p>
+      <p><strong>060 10 ‡a</strong> WA 540 AA1 <strong>‡b</strong> B8p 1972
+      </p>
+      <p><strong>060 00 ‡a</strong> W1 <strong>‡b</strong> DE111AL v.4 pt.A 1990 <strong>‡a</strong> TP 248.2 D293b 1990
+      </p>
+      <p><strong>060 00 ‡a</strong> KK1110 <strong>‡a</strong> WD 320
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="061"></a>061 - NATIONAL LIBRARY OF MEDICINE, TIEDOT KAPPALEESTA (T)
+      </h3>
+      <p>NLM:n lisäämiä tietoja kuvailun kohteen muista kappaleista, joita sen kokoelmista löytyy.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡c</strong> - Kappaleen tiedot (ET)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="066"></a>066 - MERKISTÖT (ET)
+      </h3>
+      <p>Tietoja tietueessa esiintyvistä merkistöistä, kun siinä on käytetty muitakin merkistöjä kuin ISO 10646 tai Unicode. Tarkka
+         kuvaus muiden merkistöjen tallentamisesta MARC-tietueisiin löytyy dokumentista <em><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Vaihto tapahtuu G0-alueen oletusmerkistöön, jos se ei ole ASCII (ET)
+         </li>
+         <li><strong>‡b</strong> - Vaihto tapahtuu G1-alueen oletusmerkistöön, jos se ei ole ANSEL (ET)
+         </li>
+         <li><strong>‡c</strong> - Vaihto tapahtuu muihin merkistöihin (T)
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>066 ## ‡a</strong> (N
+      </p>
+      <p><strong>066 ## ‡b</strong> $)1
+      </p>
+      <p><strong>066 ## ‡c</strong> (N)Q
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="070"></a>070 - NATIONAL AGRICULTURAL LIBRARY -LUOKITUS (T)
+      </h3>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Kuuluuko kuvailun kohde NAL:n kokoelmiin
+            <ul>
+               <li><strong>0</strong> - On NAL:ssa
+               </li>
+               <li><strong>1</strong> - Ei ole NAL:ssa
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - NAL-luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>070 0# ‡a</strong> 105.2 <strong>‡b</strong> W122
+      </p>
+      <p><strong>070 1# ‡a</strong> HD281.I5 <strong>‡b</strong> no. 5
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="071"></a>071 - NATIONAL AGRICULTURAL LIBRARY, TIEDOT KAPPALEESTA (T)
+      </h3>
+      <p>NAL:n lisäämiä tietoja kuvailun kohteen muista kappaleista, joita sen kokoelmista löytyy.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡c</strong> - Kappaleen tiedot (ET)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="072"></a>072 - AIHEALUEKOODI (T)
+      </h3>
+      <p>Kuvailun kohteeseen liittyvä aihealuekoodi.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Koodin lähde
+            <ul>
+               <li><strong>0</strong> - NAL:n aihealuekoodien lista<br><em>AGRIS: Subject Categories</em> on NAL:n ylläpitämä lista.
+               </li>
+               <li><strong>7</strong> - Lähde merkitään osakenttään ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Aihealuekoodi (ET)<br>Kohteeseen liittyvän laajan aihealueen koodi.
+         </li>
+         <li><strong>‡x</strong> - Aihealuekoodin alaryhmä (T)<br>Osakenttään ‡a tallennetun aihealuekoodin tarkkuustaso.
+         </li>
+         <li><strong>‡2</strong> - Koodin lähde (ET)<br>MARC-koodi asiasanastolle, jota on käytetty aihealuekoodin antamisessa, kun toisen indikaattorin arvo on 7. Koodi otetaan
+            listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/subject-category.html">Subject Category Code Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>072 #0 ‡a</strong> K800
+      </p>
+      <p><strong>072 #7 ‡a</strong> E5 <strong>‡x</strong> .510 <strong>‡2</strong> mesh
+      </p>
+      <p><strong>072 #7 ‡a</strong> 17 <strong>‡x</strong> 02.1 <strong>‡2</strong> cosatisc
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="074"></a>074 - U.S. GOVERNMENT PRINTING OFFICE -KAPPALENUMERO (T)
+      </h3>
+      <p>GPO:n julkaisuilleen antama numero vapaakappaleiden hallintaa varten.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - GPO kappalenumero (ET)<br><strong>‡z</strong> - Peruttu tai virheellinen GPO-kappalenumero (T)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>074 ## ‡a</strong> 334-C-1
+      </p>
+      <p><strong>074 ## ‡a</strong> 277-A-2 (MF)
+      </p>
+      <p><strong>074 ## ‡a</strong> 1022-A <strong>‡z</strong> 1012-A
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="080"></a>080 - YLEINEN KYMMENLUOKITUS, UDK (T)
+      </h3>
+      <p>Luokituksen lähde: <em>Universal Decimal Classification</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Laitoksen tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Täysi laitos
+               </li>
+               <li><strong>1</strong> - Lyhennetty laitos
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - UDK-luokka (ET)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡x</strong> - Lisäluku (T)
+         </li>
+         <li><strong>‡2</strong> - Painoksen tunnistetiedot (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>080 ## ‡a</strong> 971.1/.2
+      </p>
+      <p><strong>080 ## ‡a</strong> 631.321:631.411.3
+      </p>
+      <p><strong>080 ## ‡a</strong> 821.113.1 <strong>‡x</strong> (494) <strong>‡2</strong> [painoksen tunnistetiedot]
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="082"></a>082 - DEWEYN LUOKITUS, DDC (T)
+      </h3>
+      <p>Luokituksen lähde: <em>Dewey Decimal Classification and Relative Index</em>, <em>Abridged Dewey Decimal Classification and Relative Index</em>, ja näiden elektroniset päivitykset. Vuodesta 1997 lähtien päivitykset on annettu dokumentissa <em>DC&amp;: Dewey Decimal Classification Additions, Notes and Decisions</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Laitoksen tyyppi
+            <ul>
+               <li><strong>0</strong> - Täysi laitos
+               </li>
+               <li><strong>1</strong> - Lyhennetty laitos
+               </li>
+               <li><strong>7</strong> - Muu painos määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Luokituksen antaja
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - LC:n antama luokka
+               </li>
+               <li><strong>4</strong> - Muun kuin LC:n antama luokka
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - DDC-luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡m</strong> - Standardi- tai valinnainen muoto (ET)<br>Seuraavia koodeja käytetään: a (standardi) ja b (valinnainen).
+         </li>
+         <li><strong>‡q</strong> - Luokittava organisaatio (ET)<br>Koodi otetaan listalta: <em> <a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Painoksen numero (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>082 00 ‡a</strong> 388/.0919 <strong>‡2</strong> 22
+      </p>
+      <p><strong>082 10 ‡a</strong> 914.3 <strong>‡2</strong> 13
+      </p>
+      <p><strong>082 00 ‡a</strong> 343.7306/8 <strong>‡a</strong> 347.30368 <strong>‡2</strong> 20
+      </p>
+      <p><strong>082 74 ‡a</strong> 839.82 <strong>‡2</strong> 5/nor <strong>‡q</strong> NO-OsNB
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="083"></a>083 - DEWEYN LUOKITUS, LISÄLUOKKA (T)
+      </h3>
+      <p>Luokkanumeroa käytetään asiahakuun. Luokituksen lähde: <em>Dewey Decimal Classification and Relative Index</em>, <em>Abridged Dewey Decimal Classification and Relative Index</em>, ja näiden elektroniset päivitykset. Vuodesta 1997 lähtien päivitykset on annettu dokumentissa <em>DC&amp;: Dewey Decimal Classification Additions, Notes and Decisions</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Laitoksen tyyppi
+            <ul>
+               <li><strong>0</strong> - Täysi laitos
+               </li>
+               <li><strong>1</strong> - Lyhennetty laitos
+               </li>
+               <li><strong>7</strong> - Muu painos määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokkanumero (T)
+         </li>
+         <li><strong>‡b</strong> - Luokkanumero: alueen loppunumero (T)
+         </li>
+         <li><strong>‡m</strong> - Standardi- tai valinnainen muoto (ET)<br>Seuraavia koodeja käytetään: a (standardi) ja b (valinnainen).
+         </li>
+         <li><strong>‡q</strong> - Luokittava organisaatio (ET)<br>Koodi otetaan listalta: <em> <a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em>.
+         </li>
+         <li><strong>‡y</strong> - Taulun järjestysnumero rai lisätaulu (T)
+         </li>
+         <li><strong>‡z</strong> - Taulun tunniste (T)
+         </li>
+         <li><strong>‡2</strong> - Painoksen numero (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>083 0# ‡z</strong> 2 <strong>‡a</strong> 4947 <strong>‡2</strong> 22
+      </p>
+      <p><strong>083 0# ‡a</strong> 598.099 <strong>‡2</strong> 22
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="084"></a>084 - MUU LUOKITUS (T)
+      </h3>
+      <p>Luokitus, jolle ei ole omaa kenttää. Tätä kenttää ei saisi käyttää luokituksille, joille ei annettaisi omaa koodia osakentässä
+         ‡2 käytettäväksi.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+               <li><strong>9</strong> - YKL-luokituksen fiktiivisen aineiston lisäluokka -- suomalainen indikaattori
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokka (T)
+         </li>
+         <li><strong>‡b</strong> - Kappalenumero (ET)
+         </li>
+         <li><strong>‡q</strong> - Luokittava organisaatio (ET)<br>Koodi otetaan listalta: <em> <a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Luokituksen lähde (ET)<br>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>084 ## ‡a</strong> 37.8 <strong>‡2</strong> ykl
+      </p>
+      <p><strong>084 ## ‡a</strong> 79.109 <strong>‡2</strong> ykl
+      </p>
+      <p><strong>084 ## ‡a</strong> 016 <strong>‡a</strong> 014 <strong>‡a</strong> 018 <strong>‡a</strong> 122 <strong>‡2</strong> frbnpnav
+      </p>
+      <p><strong>084 ## ‡a</strong> KB112.554 <strong>‡b</strong> U62 1980 <strong>‡2</strong> laclaw
+      </p>
+      <p><strong>084 ## ‡a</strong> 330 <strong>‡a</strong> 380 <strong>‡a</strong> 650 <strong>‡a</strong> 670 <strong>‡q</strong> DE-101 <strong>‡2</strong> sdnb
+      </p>
+      <p><strong>084 ## ‡a</strong> 125 <strong>‡a</strong> 631 <strong>‡q</strong> DE-600 <strong>‡2</strong> zdbs
+      </p>
+      <p><strong>084 ## ‡a</strong> 8501(043) <strong>‡2</strong> rueskl
+      </p>
+      <p><strong>084 ## ‡a</strong> CA2 PQ C07 81P52 <strong>‡2</strong> cacodoc
+      </p>
+      <p><strong>084 9# ‡a</strong> Historia <strong>‡2</strong> ykl
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="085"></a>085 - SYNTEETTISEN LUOKITUKSEN RAKENNE (T)
+      </h3>
+      <p>Tietoa siitä, miten synteettinen luokkanumero tai sen osa on muodostettu.  Tässä eritellään synteettisen numeron eri osat
+         ja kerrotaan lisäysohjeiden sijainti.  Jos numero on muodostettu käyttämällä kahta tai useampaa ohjetta, jokainen ohje merkitään
+         omaan 085-kenttäänsä.  Käytetään yleisimmin Deweyn luokituksen yhteydessä.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen -   Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - "Number where instructions are found-single number or beginning number of span" (T)
+         </li>
+         <li><strong>‡b</strong> - "Base number" (T)
+         </li>
+         <li><strong>‡c</strong> - "Classification number-ending number of span" (T)
+         </li>
+         <li><strong>‡f</strong> - "Facet designator" (T)
+         </li>
+         <li><strong>‡r</strong> - "Root number" (T)
+         </li>
+         <li><strong>‡s</strong> - "Digits added from classification number in schedule or external table" (T)
+         </li>
+         <li><strong>‡t</strong> - "Digits added from internal subarrangement or add table" (T)
+         </li>
+         <li><strong>‡u</strong> - "Number being analyzed" (T)
+         </li>
+         <li><strong>‡v</strong> - "Number in internal subarrangement or add table where instructions are found" (T)
+         </li>
+         <li><strong>‡w</strong> - "Table identification-Internal subarrangement or add table" (T)
+         </li>
+         <li><strong>‡y</strong> - "Table sequence number for internal subarrangement or add table" (T)
+         </li>
+         <li><strong>‡z</strong> - "Table identification" (T)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>085 ## ‡8</strong> 1.1 <strong>‡b</strong> 346.046 <strong>‡a</strong> 346.046 <strong>‡s</strong> 95
+      </p>
+      <p><strong>085 ## ‡8</strong> 1.2 <strong>‡b</strong> 599.09 <strong>‡z</strong> 1 <strong>‡a</strong> 093 <strong>‡c</strong> 099 <strong>‡z</strong> 2 <strong>‡s</strong> 94
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="086"></a>086 - VIRALLISJULKAISUJEN LUOKITUS (T)
+      </h3>
+      <p>Virallisen tahon antama luokitus maissa, joissa virallisjulkaisujen luokitus on käytössä.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Luokituksen lähde
+            <ul>
+               <li><strong>#</strong> - Lähde merkitään osakenttään ‡2<br> Luokitus perustuu muihin kuin Yhdysvaltain tai Kanadan käyttämiin kaavioihin.
+               </li>
+               <li><strong>0</strong> - Superintendent of Documents Classification System<br> Antajana U.S. Government Printing Office.
+               </li>
+               <li><strong>1</strong> - Government of Canada Publications: Outline of Classification
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luokka (ET)
+         </li>
+         <li><strong>‡z</strong> - Virheellinen tai peruttu luokka (T)
+         </li>
+         <li><strong>‡2</strong> - Luokituksen lähde (ET)<br>MARC-koodi käytetylle virallisjulkaisujen luokituskaaviolle, kun ensimmäisen indikaattorin arvo on #. Koodi otetaan listalta,
+            ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>086 ## ‡a</strong> HEU/G74.3C49 <strong>‡2</strong> ordocs
+      </p>
+      <p><strong>086 0# ‡a</strong> A13.28:F 61/2/981 Glacier
+      </p>
+      <p><strong>086 0# ‡a</strong> HE 20.6209:13/45
+      </p>
+      <p><strong>086 0# ‡a</strong> ITC 1.12:TA-503 (A)-18 AND 332-279
+      </p>
+      <p><strong>086 0# ‡a</strong> A 1.1: <strong>‡z</strong> A 1.1/3:984
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="088"></a>088 - RAPORTTINUMERO (T)
+      </h3>
+      <p>Raporttinumero, joka ei ole minkään standardin mukainen. ISRN-tunnus ja muut standardoidut raporttinumerot merkitään kenttään
+         <a href="01X-04X.htm#027">027</a> (ISRN-tunnus tai muu standardoitu raporttinumero).
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - &nbsp; Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Raporttinumero (ET)
+         </li>
+         <li><strong>‡z</strong> - Virheellinen tai peruttu raporttinumero (T)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>088 ## ‡a</strong> STRATLAB-71-98
+      </p>
+      <p><strong>088 ## ‡a</strong> NASA-RP-1124-REV-3 <strong>‡z</strong> NASA-RP-1124-REV-2
+      </p>
+      <p><strong>088 ## ‡z</strong> NASA-TN-D-8008
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

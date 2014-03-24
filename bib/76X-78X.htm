@@ -1,0 +1,1635 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 5.6.2012.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Linkkikentät (76X-78X)</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kentät 760-78X sisältävät tietoja kuvailun kohteeseen liittyvistä muista
+         		bibliografisista kohteista. Jokainen linkkikenttä kuvaa erilaista suhdetta
+         		tietueessa <a href="#kuvailunkohde">kuvaillun kohteen</a> ja siihen
+         		<a href="#liittyvakohde">liittyvän kohteen</a> välillä. Suhteita on kolmea
+         		laatua: 1) tiedot suhteista voivat auttaa käyttäjää jatkamaan tiedonhakua ilman,
+         		että liittyvä kohde hankitaan fyysisesti käsiin (esim. jatkuvien julkaisujen
+         		edeltäjä tai kuvailun kohteen käännös); 2) liittyvä kohde täytyy hankkia
+         		fyysisesti käsiin, jotta kuvailtua kohdetta voidaan käyttää (<a href="#osakohde">osakohteen</a>
+         		<a href="#emo">emokohde</a>, esim. lehden numero joka
+         		sisältää tietyn artikkelin); 3) liittyvä kohde on isomman
+         		<a href="#kokonaisuudenosa">kokonaisuuden osa</a>
+         		(esim. yksittäiset valokuvat, jotka sisältyvät visuaalisen aineiston
+         		kokoelmaan). Linkkikenttien tarkoitus on mahdollistaa vakionäyttötekstien muodostaminen
+         		tietueeseen, johon ne on tallennettu, sekä järjestelmän avulla tapahtuva toisiinsa
+         		liittyvien tietueiden välinen linkitys ja/tai tiedonhaku näillä tiedoilla.
+         
+      </p>
+      <ul>
+         <li><a href="#yleista">TIETUELINKIT JA VAKIONÄYTTÖTEKSTIT--YLEISTÄ TIETOA</a></li>
+         <li><a href="#760">760 - LINKKIKENTTÄ - PÄÄSARJA</a> (T)
+         </li>
+         <li><a href="#762">762 - LINKKIKENTTÄ - ALASARJA</a> (T)
+         </li>
+         <li><a href="#765">765 - LINKKIKENTTÄ - ALKUKIELINEN JULKAISU</a> (T)
+         </li>
+         <li><a href="#767">767 - LINKKIKENTTÄ - KÄÄNNÖS</a> (T)
+         </li>
+         <li><a href="#770">770 - LINKKIKENTTÄ - SUPLEMENTTI/ERIKOISNUMERO</a> (T)
+         </li>
+         <li><a href="#772">772 - LINKKIKENTTÄ - SUPLEMENTIN PÄÄJULKAISU</a> (T)
+         </li>
+         <li><a href="#773">773 - LINKKIKENTTÄ - EMOKOHDE</a> (T)
+         </li>
+         <li><a href="#774">774 - LINKKIKENTTÄ - OSAKOHDE</a> (T)
+         </li>
+         <li><a href="#775">775 - LINKKIKENTTÄ - MUU PAINOS</a> (T)
+         </li>
+         <li><a href="#776">776 - LINKKIKENTTÄ - TOINEN ILMIASU</a> (T)
+         </li>
+         <li><a href="#777">777 - LINKKIKENTTÄ - KANSSAJULKAISU</a> (T)
+         </li>
+         <li><a href="#780">780 - LINKKIKENTTÄ - EDELTÄJÄ</a> (T)
+         </li>
+         <li><a href="#785">785 - LINKKIKENTTÄ - SEURAAJA</a> (T)
+         </li>
+         <li><a href="#786">786 - LINKKIKENTTÄ - TIETOLÄHDE</a> (T)
+         </li>
+         <li><a href="#787">787 - LINKKIKENTTÄ - MUU SUHDE</a> (T)
+         </li>
+      </ul>
+      <p>Linkkikentissä käytettyä terminologiaa:</p>
+      <p><a name="kuvailunkohde"></a><strong>Kuvailun kohde</strong> - kohde, jota tietueen pääasiallinen kuvailu koskee.
+         			Nimiön merkkipaikkojen /06 (Tietueen tyyppi) ja /07 (Tietueen bibliografinen
+         			taso) tiedot koskevat kuvailun kohdetta ja tietueen kentässä 245 on kuvailun
+         			kohteen nimeke.
+         		
+      </p>
+      <p><a name="liittyvakohde"></a><strong>Liittyvä kohde</strong> - kohde, jolla on joko ajallinen, horisontaalinen tai vertikaalinen
+         	    	suhde kuvailun kohteeseen.
+         		
+      </p>
+      <p><a name="osakohde"></a><strong>Osakohde</strong> - kohde, joka on fyysisesti osa toista bibliografista kohdetta
+         	    	(emojulkaisua) siten, että hankkiakseen käsiinsä osakohteen on paikannettava
+         	    	ja hankittava myös emojulkaisu (esim. luku kirjassa, artikkeli lehdessä).
+         	    	(Kenttä 774)
+         		
+      </p>
+      <p><a name="kokonaisuudenosa"></a><strong>Kokonaisuuden osa</strong> - kohde, jota voidaan pitää toisen kohteen (esim. emokokoelman) osana,
+         	    	mutta on siitä fyysisesti erillinen. (Kentät 770, 774)
+         		
+      </p>
+      <p><a name="emo"></a><strong>Emokohde</strong> - kohde, joka sisältää joko fyysisesti (osakohde) tai bibliografisesti
+         	    	(kokonaisuuden osa) kuvailun kohteen. Esimerkki: jos tietue kuvailee lehtiartikkelia,
+         	    	kyseinen lehti on sen emojulkaisu. (Kentät 772, 773)
+         		
+      </p>
+      <p><a name=""></a><strong>Ajallinen suhde</strong> - esimerkiksi jatkuvan julkaisun suhde edeltäjiinsä ja seuraajiinsa.
+         	  		(Kentät 777, 780, 785)
+         	  	
+      </p>
+      <p><a name=""></a><strong>Horisontaalinen suhde</strong> - bibliografisten kohteiden rinnakkaisten versioiden suhde, esimerkiksi
+         	  	erikieliset, eri muotoiset, eri viestimellä välitetyt. (Kentät 765, 767, 775, 776)
+         	  	
+      </p>
+      <p><a name=""></a><strong>Vertikaalinen suhde</strong> - hierarkkinen suhde kokonaisuudesta sen osiin tai osista kokonaisuuteen
+         	  	(esim. lehtiartikkelista lehteen, alasarjasta pääsarjaan). (Kentät 760, 762, 770, 772, 773, 774)
+         	  	
+      </p>
+      <hr>
+      <h3><a name="yleista"></a>TIETUELINKIT JA VAKIONÄYTTÖTEKSTIT--YLEISTÄ TIETOA
+      </h3>
+      <p>MARC-formaatissa käytetty tietueiden linkitystekniikka kuvataan alla.</p>
+      <p><strong>Linkkikentät (kentät 760-787)</strong></p>
+      <blockquote>
+         <p>Nämä kentät sisältävät liittyvän kohteen kuvailua tai sen
+            	kontrollinumeron (001) tai molemmat. Linkkikenttiin sisältyy vain
+            	vähimmäismäärä liittyvän kohteen kuvailua, ja täydellisempään kuvailuun
+            	voidaan muodostaa linkki osakenttään ‡w tallennetun liittyvän kohteen
+            	kontrollinumeron avulla.
+         </p>
+         <p>Lisäksi, kooditiedot osakentässä ‡7 mahdollistavat jonkintasoisen
+            	tiedonhaun myös ilman viittausta liittyvään tietueeseen. Linkkikenttien
+            	ensimmäisen indikaattorin arvo määrittelee muodostetaanko kentästä
+            	vakionäyttöteksti.
+         </p>
+      </blockquote>
+      <p><strong>Huomautus linkitysten monitahoisuudesta (kenttä 580)</strong></p>
+      <blockquote>
+         <p>Linkkikentät on suunniteltu siten, että niiden avulla on mahdollista
+            	muodostaa kuvailun kohteen tietueeseen vakionäyttöteksti liittyvästä kohteesta. Kun
+            	suhde on liian monitahoinen ilmaistavaksi vakionäyttötekstin ja linkkikentän
+            	sisältämien tietojen avulla, tieto tallennetaan kenttään 580 (Huomautus
+            	linkitysten monitahoisuudesta). Kun huomautuskenttää käytetään jonkin
+            	tarkoitukseen sopivan linkkikentän 760-780 kanssa, tällöin linkkikentästä ei
+            	muodosteta näyttötekstiä.
+         </p>
+      </blockquote>
+      <p><strong>Linkitys (nimiö/19)</strong></p>
+      <blockquote>
+         <p>Tämä koodi ilmaisee, sisältääkö linkkikenttä tarpeeksi tietoa, jotta
+            	liittyvää kohdetta koskeva ymmärrettävä näyttöteksti voidaan muodostaa, vai onko
+            	linkkikenttään tallennettu vain liittyvän kohteen tietueen kontrollinumero. Jos
+            	tietueesta löytyy vain kontrollinumero, järjestelmän pitää noutaa
+            	näyttöön tarvittavat tiedot liittyvän kohteen tietueesta.
+         </p>
+         <p>Seuraavat osakentät tai osakenttäyhdistelmät ovat riittäviä näytön
+            	muodostamiseen:
+         </p>
+         <ul>
+            <li>Osakenttä ‡a + ‡t (Pääkirjauksen otsikko + Nimeke)</li>
+            <li>Osakenttä ‡a + ‡s (Pääkirjauksen otsikko + Yhtenäistetty nimeke)</li>
+            <li>Osakenttä ‡t (Nimeke)</li>
+            <li>Osakenttä ‡u (ISRN-tunnus, International Standard Technical Report Number)</li>
+            <li>Osakenttä ‡r (Raporttinumero)</li>
+         </ul>
+      </blockquote>
+      <p><strong>Lisäkirjauskentät (kentät 700-730)</strong></p>
+      <blockquote>
+         <p>Kun luettelointisääntöjen mukaan linkkikentässä käytetylle nimekkeelle
+            	tarvitaan lisäkirjaus, se tallennetaan sopivaan lisäkirjauskenttään 700-730.
+            	Linkkikenttiä ei voi käyttää lisäkirjausten sijaan. Niin ikään lisäkirjausta
+            	ei voida käyttää linkkikenttänä, koska sen avulla ei voida muodostaa
+            	näyttötekstiä tai linkkiä liittyvään tietueeseen.
+         </p>
+      </blockquote>
+      <p><strong>Osakohteet / Kokonaisuuden osat</strong></p>
+      <blockquote>
+         <p>Kenttää 773 (Linkkikenttä - emokohde) käytetään linkittämään osakohde
+            	tai kokonaisuuden osa liittyvään kohteeseen eli emokohteeseen. Esimerkiksi lehtiartikkelia kuvailevassa
+            	tietueessa kenttä 773 sisältää kyseisen lehden tiedot. Osakenttään ‡g
+            	tallennetaan artikkelin tarkka sijainti lehdessä. Emokohdetta (esim.
+            	julkaisua tai kokoelmaa) kuvaileva tietue voi sisältää tietoja osakohteista
+            	tai kokonaisuuden osista toistetuissa kentissä 774 (Linkkikenttä - osakohde). Tiedot jokaisesta
+            	osasta tallennetaan erillisiin 774-kenttiin.
+         </p>
+      </blockquote>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="760"></a>760 - LINKKIKENTTÄ - PÄÄSARJA (T)
+      </h3>
+      <p>Kun kuvailun kohteena on alasarja, tähän kenttään merkitään siihen liittyvän pääsarjan tietoja (vertikaalinen suhde). Kun
+         tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Pääsarja:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Pääsarja</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)<br>Pääkirjaus liittyvän tietueen kentästä <a href="1XX.htm#100">100</a> (Pääkirjaus henkilönnimestä), <a href="1XX.htm#110">110</a> (Pääkirjaus yhteisönnimestä), <a href="1XX.htm#111">111</a> (Pääkirjaus kokouksen nimestä) tai <a href="1XX.htm#130">130</a> (Pääkirjaus yhtenäistetystä nimekkeestä).
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)<br>Painoksen nimi liittyvän tietueen kentästä <a href="250-270.htm#250">250</a> (Painosmerkintö).
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)<br>Suluissa oleva erottava lisäys liittyvän tietueen kentän <a href="20X-24X.htm#222">222</a> (Avainnimeke) osakentästä ‡b (Erottava lisäys) tai muuta tietoa, joka tekee nimekkeestä uniikin.
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)<br>Julkaisutiedot liittyvän tietueen kentän <a href="250-270.htm#260">260</a> (Julkaisutiedot) osakentistä ‡a, ‡b ja/tai ‡c.
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)<br>Tiedot ilmaisevat liittyvän aineiston osan tai osat, jotka ovat yhteydessä kuvailun kohteeseen, esim. vuosiluvut ja volyymit.
+            Osakenttään kirjataan myös osakohteen sijainti kuvailun kohteessa.
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>Kuvaus kentässä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen
+            tai kontrolloitu. Sijoitetaan kentässä ensimmäiseksi. Tällöin toisen indikaattorin arvo on 8.
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)<br>Nimeke liittyvän tietueen kentästä <a href="20X-24X.htm#240">240</a> (Yhtenäistetty nimeke) tai kentästä <a href="20X-24X.htm#243">243</a> (Kokoava yhtenäistetty nimeke).
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)<br>Nimeke liittyvän tietueen kentän <a href="20X-24X.htm#245">245</a> (Nimeke- ja vastuullisuusmerkintö) osakentistä ‡a, ‡n ja ‡p tai kentän <a href="20X-24X.htm#222">222</a> (Avainnimeke) osakentästä ‡a.
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)<br>Liittyvän tietueen kontrollinumero, jota edeltää suluissa oleva koodi organisaatiolle, jolta kontrollinumero on peräisin.
+            Organisaation koodina käytetään ISIL-tunnusta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>. Huomioi, että kopioiduissa tietueissa kontrollinumeroksi on vaihdettava oman tietokannan liittyvän tietueen kontrollinumero.
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)<br>ISSN-tunnus liittyvän tietueen kentästä <a href="01X-04X.htm#022">022</a> (ISSN-tunnus, International Standard Serial Number). Etuteksti <em>ISSN</em> voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)<br>CODEN-tunnus liittyvän tietueen kentsätä <a href="01X-04X.htm#030">030</a> (CODEN-tunnus). Lyhenne <em> CODEN</em> voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br>Neljä merkkipaikkaa (merkitään ‡7/0, ‡7/1 jne.), joiden koodimuotoisilla tiedoilla kuvataan linkkikirjauksen erityispiirteitä.
+            Koska koodien merkitys määräytyy niiden merkkipaikan perusteella, kaikki edeltävät merkkipaikat on täytettävä tarvittaessa
+            täyttömerkillä (|); jälkimmäisiä merkkipaikkoja ei tarvitse täyttää.
+            <ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi<br> Yksimerkkinen koodi, joka kuvaa osakentässä ‡a olevan nimen tyyppiä. Koodi vastaa liittyvän kohteen tietueen 1XX kenttää.
+                  <ul>
+                     <li><strong>p</strong> - Henkilönnimi
+                     </li>
+                     <li><strong>c</strong> - Yhteisönnimi
+                     </li>
+                     <li><strong>m</strong> - Kokouksen nimi
+                     </li>
+                     <li><strong>u</strong> - Yhtenäistetty nimeke
+                     </li>
+                     <li><strong>n</strong> - Soveltumaton
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>/1</strong> - Nimen muoto<br> Yksimerkkinen koodi, joka kuvaa osakentässä ‡a olevan nimen muotoa. Koodi vastaa liittyvän kohteen tietueen 1XX kentän ensimmäisen
+                  indikaattorin arvoa ja tulkitaan yhdessä arvon ‡7/0 kanssa.
+                  <ul>
+                     <li><em>Jos $7/0 = p (Henkilönnimi)</em><ul>
+                           <li><strong>0</strong> - Etunimi
+                           </li>
+                           <li><strong>1</strong> - Sukunimi
+                           </li>
+                           <li><strong>3</strong> - Suvun nimi
+                           </li>
+                        </ul>
+                     </li>
+                     <li><em>Jos $7/0 = c (Yhteisönnimi) tai m (Kokouksen nimi)</em><ul>
+                           <li><strong>0</strong> - Nimen osien järjestys käänteinen
+                           </li>
+                           <li><strong>1</strong> - Hallintoalueen nimi
+                           </li>
+                           <li><strong>2</strong> - Nimen osien järjestys suora
+                           </li>
+                        </ul>
+                     </li>
+                     <li><em>Jos $7/0 = u (Yhtenäistetty nimeke) tai n (Soveltumaton)</em><ul>
+                           <li><strong>n</strong> - Soveltumaton
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <ul></ul>
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi<br> Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tyyppiä. Koodi vastaa liittyvän kohteen tietueen Nimiö/06 (Tietueen
+                  tyyppi) arvoa.
+                  <ul>
+                     <li><strong>a</strong> - Tekstiaineisto
+                     </li>
+                     <li><strong>c</strong> - Nuottijulkaisu
+                     </li>
+                     <li><strong>d</strong> - Nuottikäsikirjoitus
+                     </li>
+                     <li><strong>e</strong> - Kartta-aineisto
+                     </li>
+                     <li><strong>f</strong> - Karttakäsikirjoitus
+                     </li>
+                     <li><strong>g</strong> - Heijastettava kuva tai viestin
+                     </li>
+                     <li><strong>i</strong> - Puheäänite
+                     </li>
+                     <li><strong>j</strong> - Musiikkiäänite
+                     </li>
+                     <li><strong>k</strong> - Kuva
+                     </li>
+                     <li><strong>m</strong> - Elektroninen aineisto
+                     </li>
+                     <li><strong>o</strong> - Moniviestin
+                     </li>
+                     <li><strong>p</strong> - Sekalainen aineisto
+                     </li>
+                     <li><strong>r</strong> - Esine
+                     </li>
+                     <li><strong>t</strong> - Tekstikäsikirjoitus
+                     </li>
+                  </ul>
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso<br> Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tasoa. Koodi vastaa liittyvän kohteen tietueen Nimiö/07 (Tietueen
+                  bibliografinen taso) arvoa.
+                  <ul>
+                     <li><strong>a</strong> - Osakohde monografiassa
+                     </li>
+                     <li><strong>b</strong> - Osakohde kausijulkaisussa
+                     </li>
+                     <li><strong>c</strong> - Kokoelma
+                     </li>
+                     <li><strong>d</strong> - Osakohde kokoelmassa
+                     </li>
+                     <li><strong>i</strong> - Päivittyvä julkaisu
+                     </li>
+                     <li><strong>m</strong> - Monografia
+                     </li>
+                     <li><strong>s</strong> - Kausijulkaisu
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Tieliikenneonnettomuudet <strong>‡h</strong> [Elektroninen aineisto] / <strong>‡c</strong> Tilastokeskus.<br><strong>760 0# ‡t</strong> Suomen virallinen tilasto. <strong>‡c</strong> Verkkojulkaisu <strong>‡x</strong> 1796-0479
+      </p>
+      <p><strong>245 00 ‡a</strong> Gaging stations maintained by the Unites States geological survey 1888-1910 and Survey publications relating to water resources.<br><strong>760 0# ‡7</strong> c1as <strong>‡a</strong> United States. Geological Survey. <strong>‡t</strong> Water supply papers
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="762"></a>762 - LINKKIKENTTÄ - ALASARJA (T)
+      </h3>
+      <p>Kun kuvailun kohteena on pääsarja tai ylempi alasarja, tähän kenttään merkitään siihen liittyvän alasarjan tietoja (vertikaalinen
+         suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Alasarja:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br>Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Alasarja</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Suomen virallinen tilasto / <strong>‡c</strong> Tilastokeskus.<br><strong>762 0# ‡t</strong> Tietilasto
+      </p>
+      <p><strong>245 00 ‡a</strong> Tulot ja kulutus / <strong>‡c</strong> Tilastokeskus.<br><strong>762 0# ‡t</strong> Tulonjakotilasto. <strong>‡c</strong> Painettu <strong>‡x</strong> 0785-9880
+      </p>
+      <p><strong>245 00 ‡a</strong> Helsinki suunnittelee / <strong>‡c</strong> Helsingin kaupunki, kaupunkisuunnitteluvirasto.<br><strong>762 0# ‡t</strong> Helsingin kaavoituskatsaus <strong>‡x</strong> 1239-8845
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="765"></a>765 - LINKKIKENTTÄ - ALKUKIELINEN JULKAISU (T)
+      </h3>
+      <p>Kun kuvailun kohteena on käännös, tähän kenttään merkitään sen alkukieliseen julkaisuun liittyviä tietoja (horisontaalinen
+         suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Alkukielinen julkaisu:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Alkukielinen julkaisu</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)<br>Sarjakirjaus liittyvän kohteen tietueen kentästä 4XX (Sarjamerkinnöt) tai 8XX (Sarjalisäkirjaukset).
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)<br>Raporttinumero liittyvän kohteen tietueen kentästä <a href="05X-08X.htm#088">088</a> (Raporttinumero).
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)<br>ISRN-tunnus liittyvän kohteen tietueen kentästä <a href="01X-04X.htm#027">027</a> (ISRN-tunnus, International Standard Technical Report Number). Etuteksti <em>ISRN:</em> voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)<br>ISBN-tunnus liittyvän tietueen kentästä <a href="01X-04X.htm#020">020</a> (ISBN-tunnus, International Standard Book Number). Etuteksti <em>ISBN</em> voidaan muodostaa näyttöön.
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Meie Atrium : <strong>‡b</strong> Atria kontserni personaliajakiri / <strong>‡c</strong> väljaandja Atria Yhtymä oyj.<br><strong>765 0# ‡t</strong> Meidän Atrium <strong>‡c</strong> (Suomenkielinen p.) <strong>‡x</strong> 1796-5748
+      </p>
+      <p><strong>245 00 ‡a</strong> Annual report of the Ombudsman for Minorities <strong>‡h</strong> [Elektroninen aineisto]<br><strong>765 0# ‡t</strong> Vähemmistövaltuutetun vuosikertomus <strong>‡c</strong> (Verkkojulkaisu) <strong>‡x</strong> 1796-4091
+      </p>
+      <p><strong>245 00 ‡a</strong> Russian journal of coordination chemistry.<br><strong>765 0# ‡t</strong> Koordinacionnaâ himiâ
+      </p>
+      <p><strong>130 0# ‡a</strong> Kunststoffe, <strong>‡l</strong> englanti.<br><strong>245 10 ‡a</strong> Kunststoffe international.<br><strong>765 0# ‡t</strong> Kunststoffe <strong>‡x</strong> 0023-5563
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="767"></a>767 - LINKKIKENTTÄ - KÄÄNNÖS (T)
+      </h3>
+      <p>Kun kuvailun kohteena on alkukielinen julkaisu tai sen muunkielinen käännös, tähän kenttään merkitään sen ei-alkukieliseen
+         julkaisuun liittyviä tietoja (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla
+         <em>Käännös:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Käännös</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Meidän Atrium : <strong>‡b</strong> Atria-konsernin henkilöstölehti / <strong>‡c</strong> julkaisija Atria Yhtymä oyj.<br><strong>767 0 #‡t</strong> Musu? Atrium <strong>‡c</strong> (Lietuvis?kas leidim) <strong>‡x</strong> 1796-5756<br><strong>767 0# ‡t</strong> Nas? Atrium <strong>‡c</strong> (Russkoe izd.) <strong>‡x</strong> 1796-5764<br><strong>767 0# ‡t</strong> Meie Atrium <strong>‡c</strong> (Eesti välj.) <strong>‡x</strong> 1796-5772<br><strong>767 0# ‡t</strong> Vårt Atrium <strong>‡c</strong> (Svensk utg.) <strong>‡x</strong> 1796-5780
+      </p>
+      <p><strong>245 00 ‡a</strong> Eduskunnan oikeusasiamiehen kertomus toiminnastaan.<br><strong>767 0# ‡t</strong> Riksdagens justitieombudsmans berättelse över sin verksamhet <strong>‡x</strong> 0356-3006<br><strong>767 0# ‡t</strong> Report of the Parliamentary Ombudsman <strong>‡x</strong> 0355-9211<br><strong>767 0# ‡t</strong> Report of the Finnish Parliamentary Ombudsman <strong>‡x</strong> 0784-5677
+      </p>
+      <p><strong>245 00‡a</strong> Tilastokatsaus <strong>‡h</strong> [Elektroninen aineisto] / <strong>‡c</strong> Tilastokeskus.<br><strong>767 0# ‡t</strong> Bulletin of Statistics / Central Statistical Office of Finland <strong>‡x</strong> 0788-4761
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="770"></a>770 - LINKKIKENTTÄ - SUPLEMENTTI/ERIKOISNUMERO (T)
+      </h3>
+      <p>Tähän kenttään merkitään kuvailun kohteeseen liittyvän, mutta erikseen luetteloidun suplementtijulkaisun tai erikoisnumeron
+         tietoja (vertikaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Suplementti:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Suplementti</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00‡a</strong> Helsingin sanomat.<br><strong>770 0# ‡t</strong> Helsingin sanomat. Kuukausiliite <strong>‡x</strong> 0780-0096
+      </p>
+      <p><strong>245 00‡a</strong> Computer physics communications <strong>‡h</strong> [Elektroninen aineisto]<br><strong>770 0# ‡t</strong> Computer physics communications program library <strong>‡x</strong> 1386 9485
+      </p>
+      <p><strong>245 00‡a</strong> Journal of cellular biochemistry.<br><strong>770 0# ‡t</strong> Journal of cellular biochemistry. Supplement <strong>‡x</strong> 0733-1959
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="772"></a>772 - LINKKIKENTTÄ - SUPLEMENTIN PÄÄJULKAISU (T)
+      </h3>
+      <p>Kun kuvailun kohteena on yksittäinen numero, suplementtijulkaisu tai erikoisnumero, tähän kenttään merkitään siihen liittyvän
+         pääjulkaisun tietoja (vertikaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Liittyy julkaisuun:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Liittyy julkaisuun:</em></li>
+               <li><strong>0</strong> - <em>Pääjulkaisu:</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Helsingin sanomat, <strong>‡p</strong> Kuukausiliite.<br><strong>772 0# ‡t</strong> Helsingin sanomat <strong>‡x</strong> 0355-2047
+      </p>
+      <p><strong>245 00 ‡a</strong> Donne?es statistiques pour la Haute-Normandie. <strong>772 1#‡t</strong> Statistiques pour l'économie normande <strong>‡g</strong> 1979- <strong>‡w</strong> (OCoLC)6260766<br><strong>772 1# ‡t</strong> Aval <strong>‡g</strong> [1982-]
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="773"></a>773 - LINKKIKENTTÄ - EMOKOHDE (T)
+      </h3>
+      <p>Kun kuvailun kohteena on osakohde (nimiö/07 on a, b tai d), tähän kenttään merkitään sen emojulkaisuun tai -kokoelmaan liittyviä
+         tietoja (vertikaalinen suhde). Kun emojulkaisu on sarja tai moniosainen teos, osakenttien ‡g ja ‡q tiedot ovat oleellisia
+         osoittamaan osakohteen tarkka sijainti. Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Sisältyy tähän:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Sisältyy tähän</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡p</strong> - Lyhennetty nimeke (ET)<br>Lyhennetty nimeke liittyvän kohteen tietueen kentästä <a href="20X-24X.htm#210">210</a> (Lyhennetty nimeke).
+         </li>
+         <li><strong>‡q</strong> - Osakohteen sijainti (ET)<br>Volyymi-, vihko- ja sivumerkinnöt tallennetaan ANSI/NISO Z39.56-1996 (<em>Serial Item and Contribution Identifier, SICI</em>) -standardin mukaisessa muodossa: <em>[volyymi]:[vihko]&lt;[ensimmäinen sivu]</em>. Voidaan haluttaessa käyttää täydentämään osakentän ‡g tietoja.
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 10 ‡a</strong> Puuvene muutti elämäni! / <strong>‡c</strong> Markku Vento.<br><strong>773 0# ‡7</strong> nnas <strong>‡w</strong> 1059288 <strong>‡t</strong> Venemaailma <strong>‡d</strong> Helsinki <strong>‡x</strong> 0783-5124. <strong>‡g</strong> 11(1995) : 9, s.29-31
+      </p>
+      <p><strong>245 00 ‡a</strong> "Siihen aikaan kun TKAY mikron osti" ... <strong>‡h</strong> [Kuva] : <strong>‡b</strong> Antti Soini ja Incoterm.<br><strong>773 0# ‡7</strong> nnas <strong>‡w</strong> 1054352 <strong>‡t</strong> Tietolinja <strong>‡h</strong> Painettu julkaisu <strong>‡x</strong> 0358-268X. <strong>‡g</strong> 1994:2, s. 11
+      </p>
+      <p><strong>245 00 ‡a</strong> Stora Rövaren.<br><strong>255 ## ‡a</strong> 1:10000<br><strong>300 ## ‡a</strong> 1 kartta ; <strong>‡c</strong> 44 x 39 cm.<br><strong>773 0# ‡7</strong> nnem <strong>‡w</strong> 2335148 <strong>‡t</strong> Merikartta : Tiiskeri, Digiskär – Kaunissaari <strong>‡m</strong> 1:50000 <strong>‡d</strong> [Helsinki] : Merenkulkuhallitus, 1989 <strong>‡o</strong> fc958819
+      </p>
+      <p><strong>245 00 ‡a</strong> Enkä minä itkenyt silloinkaan <strong>‡h</strong> [Nuottijulkaisu]<br><strong>773 0# ‡7</strong> nncm <strong>‡w</strong> M042086155 <strong>‡t</strong> Suuri kansanlaulukirja : 500 suomalaista kansanlaulua. - <strong>‡d</strong> [Espoo] : Warner/Chappell Music Finland, 1996. - <strong>‡m</strong> 1 sävelmäkokoelma. - <strong>‡z</strong> 951-757-357-X, <strong>‡o</strong> M-042-08615-5, <strong>‡o</strong> Warner/Chappell 08615, <strong>‡g</strong> s. 26
+      </p>
+      <p><strong>100 1# ‡a</strong> Sibelius, Jean, <strong>‡e</strong> säv. <br><strong>240 10 ‡a</strong> Laulut, <strong>‡m</strong> lauluääni, piano, <strong>‡n</strong> op57<br><strong>245 00 ‡a</strong> 6 laulua, op. 57 <strong>‡h</strong> [Äänite].<br><strong>505 0# ‡a</strong> Osat: 1. Älven och snigeln (2’36) ; 2. En blomma stod vid vägen (1’53) ; 3. Kvarnhjulet (2’28) ; 4. Maj (3’17) ; 5. Jag är
+         ett träd (2’24) ; 6. Hertig Magnus (4’07) ; 7. Vänskapens blomma (2’39) ; 8. Näcken (3’03)<br><strong>773 0# ‡7</strong> nnjm <strong>‡w</strong> 659107 <strong>‡a</strong> Sibelius, Jean, säv.: <strong>‡t</strong> Complete songs. - <strong>‡d</strong> [London] : Universal Classics UK, p2004. - <strong>‡m</strong> 4 CD-äänilevyä. - <strong>‡o</strong> Decca 4761725, <strong>‡g</strong> levy 3, raidat 9-16
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="774"></a>774 - LINKKIKENTTÄ - OSAKOHDE (T)
+      </h3>
+      <p>Tietoja osakohteesta, joka liittyy kuvailun kohteena olevaan emokohteeseen (vertikaalinen suhde); esim. tietoja kokoelmaan
+         (nimiö/07=c) kuuluvista osakohteista (nimiö/07=d). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Tämä sisältää:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Tämä sisältää</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>774 00 ‡8</strong> 1\c <strong>‡o</strong> .1993.010.00130. <strong>‡n</strong> [DIAPimage] <strong>‡t</strong> Map of area with highlighted street<br><strong>774 00 ‡8</strong> 2\c <strong>‡o</strong> NYDA.1993.010.00131. <strong>‡n</strong> [DIAPimage] <strong>‡t</strong> View of Mill Brook Houses from one of the houses <strong>‡d</strong> 89/05<br><strong>774 00 ‡8</strong> 3\c <strong>‡o</strong> NYDA.1993.010.00132. <strong>‡n</strong> [DIAPimage] <strong>‡t</strong> View SE from Mill Brook Houses on rooftop on Cypress Ave. Between 136th St. and 137th St., <strong>‡d</strong> 93/05
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="775"></a>775 - LINKKIKENTTÄ - MUU PAINOS (T)
+      </h3>
+      <p>Tietoja kuvailun kohteeseen liittyvästä muusta painoksesta (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö,
+         vakionäyttötekstinä voi olla <em>Muu painos:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Muu painos</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡e</strong> - Kielikoodi (ET)<br>Kielikoodi liittyvän kohteen tietueen merkkipaikoista <a href="008.htm#kaikki">008/35-37</a> (Kieli). Koodi otetaan listalta, ks. <em> <a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.
+         </li>
+         <li><strong>‡f</strong> - Maakoodi (ET)<br>Maakoodi liittyvän kohteen tietueen merkkipaikoista <a href="008.htm#kaikki">008/15-17</a> (Julkaisu-, tuotanto- tai toteuttamismaa). Koodi otetaan listalta, ks. <em> <a href="../maat.htm">MARC21 Maakoodit</a></em>.
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Cuba economic news.<br><strong>775 1# ‡i</strong> Issued also in Spanish. <strong>‡e</strong> spa <strong>t</strong> Cuba economic news. Spanish. Cuba noticias econo?micas <strong>‡x</strong> 0590-2932 <strong>‡e</strong> eng <strong>‡w</strong> (OCoLC)2259984
+      </p>
+      <p><strong>245 00 ‡a</strong> Modern maturity.<br><strong>775 1# ‡t</strong> Modern maturity <strong>‡b</strong> NRTA edition <strong>‡w</strong> (DLC)sn 84010086 <strong>‡w</strong> (OCoLC)8255338
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="776"></a>776 - LINKKIKENTTÄ - TOINEN ILMIASU (T)
+      </h3>
+      <p>Tietoja kuvailun kohteeseen liittyvästä muusta ilmiasusta (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö,
+         vakionäyttötekstinä voi olla <em>Muu ilmiasu:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Muu ilmiasu</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Työterveiset <strong>‡h</strong> [Elektroninen aineisto] <br><strong>530 ## ‡a</strong> Julkaistu myös paperimuodossa.<br><strong>776 0# ‡t</strong> Työterveiset <strong>‡c</strong> Painettu <strong>‡x</strong> 0359-1255
+      </p>
+      <p><strong>245 00 ‡a</strong> Tiedotus : <strong>‡b</strong> VTT Tietopalvelun asiakaslehti.<br><strong>530 ## ‡a</strong> Myös Internet-julkaisuna 1996-<br><strong>776 0# ‡t</strong> Tiedotus <strong>‡c</strong> Verkkolehti
+      </p>
+      <p><strong>245 00 ‡a</strong> Tietokone <strong>‡h</strong> [Elektroninen aineisto] : <strong>‡b</strong> Online.<br><strong>776 0# ‡t</strong> Tietokone <strong>‡c</strong> Painettu <strong>‡x</strong> 0359-49473<br><strong>776 0# ‡t</strong> Tietokone <strong>‡c</strong> CD-ROM <strong>‡x</strong> 1238-7584
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="777"></a>777 - LINKKIKENTTÄ - KANSSAJULKAISU (T)
+      </h3>
+      <p>Tietoja kuvailun kohteen kanssa julkaistusta tai siihen sisältyvästä, mutta erikseen luetteloidusta julkaisusta (horisontaalinen
+         suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Kanssajulkaisu:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Kanssajulkaisu</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> LC-uutiset / <strong>‡c</strong> Ladie's Circle Suomi Finland.<br><strong>777 0# ‡a</strong> Vipunen
+      </p>
+      <p><strong>245 00 ‡a</strong> Mythprint : <strong>‡b</strong> the monthly bulletin of the Mythopoeic Society.<br><strong>777 1# ‡t</strong> Mythlore <strong>‡x</strong> 0146-9339
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="780"></a>780 - LINKKIKENTTÄ - EDELTÄJÄ (T)
+      </h3>
+      <p>Tietoja kuvailun kohteen välittömästä edeltäjästä (ajallinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttöteksti
+         voi perustua toisen indikaattorin arvoon.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Yhteyden tyyppi<br> Kuvaa kuvailun kohteen ja sen edeltäjän välisen yhteyden luonnetta. Voidaan käyttää vakionäyttötekstin muodostamiseen.
+            <ul>
+               <li><strong>0</strong> - <em>Jatkaa julkaisua</em></li>
+               <li><strong>1</strong> - <em>Jatkaa osittain julkaisua</em><br><strong>2</strong> - <em>Korvaa julkaisun</em></li>
+               <li><strong>3</strong> - <em>Korvaa osittain julkaisun</em></li>
+               <li><strong>4</strong> - <em>Yhdistynyt julkaisuista ... ja ...</em></li>
+               <li><strong>5</strong> - <em>Julkaisuun on sulautunut</em></li>
+               <li><strong>6</strong> - <em>Julkaisuun on osittain sulautunut</em></li>
+               <li><strong>7</strong> - <em>Eronnut julkaisusta</em></li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Hiidenkivi : <strong>‡b</strong> suomalainen kulttuurilehti / <strong>‡c</strong> julkaisijat: Suomalaisen Kirjallisuuden Seura, Suomen kotiseutuliitto, Kotimaisten kielten tutkimuskeskus.<br><strong>780 04 ‡t</strong> Kieliposti <strong>‡x</strong> 0783-2958<br><strong>780 04 ‡t</strong> Elias <strong>‡c</strong> Helsinki. 1988 <strong>‡x</strong> 0785-5249<br><strong>780 04 ‡t</strong> Kotiseutu<strong>‡x</strong>0047-3677
+      </p>
+      <p><strong>245 04 ‡a</strong> The European physical journal <strong>‡h</strong> [Elektroninen aineisto]. <strong>‡n</strong> D, <strong>‡p</strong> Atoms, molecules and clusters.<br><strong>780 04 ‡t</strong> Journal de physique. II <strong>‡c</strong> Online<br><strong>780 04 ‡t</strong> Zeitschrift für Physik. D. Atoms, molecules and clusters <strong>‡c</strong> Online <strong>‡x</strong> 1431-5866
+      </p>
+      <p><strong>245 00 ‡a</strong> Kone &amp; kuljetus : <strong>‡b</strong> raskas kalusto, tavaran kuljetus ja käsittely, huolto ja lisälaitteet.<br><strong>780 05 ‡t</strong> Rahti &amp; huolinta <strong>‡x</strong> 1457-4160
+      </p>
+      <p><strong>245 00 ‡a</strong> EMMA - Espoon modernin taiteen museon julkaisuja.<br><strong>780 00 ‡t</strong> Espoon taidemuseon julkaisuja <strong>‡x</strong> 1459-6946
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="785"></a>785 - LINKKIKENTTÄ - SEURAAJA (T)
+      </h3>
+      <p>Tietoja kuvailun kohteen välittömästä seuraajasta (ajallinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttöteksti
+         voi perustua toisen indikaattorin arvoon.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Yhteyden tyyppi<br> Kuvaa kuvailun kohteen ja sen edeltäjän välisen yhteyden luonnetta. Voidaan käyttää vakionäyttötekstin muodostamiseen.
+            <ul>
+               <li><strong>0</strong> - <em>Jatkuu nimellä</em></li>
+               <li><strong>1</strong> - <em>Jatkuu osittain nimellä</em></li>
+               <li><strong>2</strong> - <em>Korvattu nimellä</em></li>
+               <li><strong>3</strong> - <em>Korvattu osittain nimellä</em></li>
+               <li><strong>4</strong> - <em>Sulautunut julkaisuun</em></li>
+               <li><strong>5</strong> - <em>Sulautunut osittain julkaisuun</em></li>
+               <li><strong>6</strong> - <em>Jakautunut julkaisuiksi ... ja ...</em></li>
+               <li><strong>7</strong> - <em>Yhdistynyt julkaisuun ... ja muodostanut julkaisun ...</em></li>
+               <li><strong>8</strong> - <em>Jatkaa aikaisemmalla nimellä</em></li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> Fundamental and applied toxicology <strong>‡h</strong> [Elektroninen aineisto] <br><strong>785 00 ‡t</strong> Toxicological sciences <strong>‡c</strong> Online
+      </p>
+      <p><strong>245 00 ‡a</strong> Kieliposti : <strong>‡b</strong> kielen elämän ja tutkimuksen aikakauslehti / <strong>‡c</strong> Kotimaisten kielten tutkimuskeskus.<br><strong>785 07 ‡t</strong> Kotiseutu <strong>‡x</strong> 0047-3677<br><strong>785 07 ‡t</strong> Elias <strong>‡c</strong> Helsinki. 1988 <strong>‡x</strong> 0785-5249<br><strong>785 07 ‡t</strong> Hiidenkivi <strong>‡c</strong> Helsinki <strong>‡x</strong> 1236-794X<br><em>'Kieliposti', 'Kotiseutu', ja 'Elias' yhdistyivät ja muodostivat julkaisun 'Hiidenkivi'.</em></p>
+      <p><strong>245 00 ‡a</strong> Zeitschrift für Physik <strong>‡h</strong> [Elektroninen aineisto]. <strong>‡n</strong> D, <strong>‡p</strong> Atoms, molecules and clusters.<br><strong>785 07 ‡t</strong> Journal de physique II <strong>‡c</strong> Online<br><strong>785 07 ‡t</strong> European physical journal. D <strong>‡c</strong> Online <strong>‡x</strong> 1434-6079<br><em>'Zeitschrift für Physik' ja 'Journal de physique. II' yhdistyivät ja muodostivat julkaisun '[The] European physicaljournal.
+            D'.</em></p>
+      <p><strong>245 00 ‡a</strong> Rahti &amp; huolinta : <strong>‡b</strong> kuljetukset, rahdinkäsittely, huolinta, satamat, logistiikka.<br><strong>785 04 ‡t</strong> Kone &amp; kuljetus <strong>‡x</strong> 1457-4179
+      </p>
+      <p><strong>245 00 ‡a</strong> Opinto-opas / <strong>‡c</strong> Helsingin kauppakorkeakoulu.<br><strong>785 06 ‡t</strong> Opinto-opas / Helsingin kauppakorkeakoulu. A <strong>‡x</strong> 0782-971X<br><strong>785 06 ‡t</strong> Opinto-opas / Helsingin kauppakorkeakoulu. B <strong>‡x</strong> 0782-9728
+      </p>
+      <p><strong>245 04 ‡a</strong> The Southeastern college art review and newsletter.<br><strong>785 01 ‡a</strong> Southeastern College Art Conference. <strong>‡t</strong> SECAC newsletter <strong>‡w</strong> (OCoLC)4973820
+      </p>
+      <p><strong>245 04 ‡a</strong> The Metal worker, plumber, and steam fitter.<br><strong>785 00 ‡t</strong> Plumber and steamfitter <strong>‡w</strong> (OCoLC)7933179 <strong>‡w</strong> (DLC)sf 84008067<br><strong>785 05 ‡t</strong> Sheet metal worker <strong>‡x</strong> 0096-9249 <strong>‡w</strong> (OCoLC)2054610
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="786"></a>786 - LINKKIKENTTÄ - TIETOLÄHDE (T)
+      </h3>
+      <p>Tietoja tietolähteestä, johon kuvailun kohde liittyy. Kenttä voi sisältää tietoja muista tiedostoista, painetuista lähteistä
+         tai kokoelman menettelytavoista.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Tietolähde</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡j</strong> - Sisällön kattama ajankohta tai ajanjakso (ET)<br>Liittyvän kohteen alku- ja soveltuvissa tapauksissa myös loppuaika. Tieto tallennetaan ISO 8601 (<em>Representation of Dates and Times</em>) -standardin mukaisesti muodossa <em>vvvvkkpp</em>.
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡p</strong> - Lyhennetty nimeke (ET)<br>Lyhennetty nimeke liittyvän kohteen tietueen kentästä <a href="20X-24X.htm#210">210</a> (Lyhennetty nimeke).
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡v</strong> - Lähteen osuus (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>786 0# ‡a</strong> United States. Defense Mapping Agency. <strong>‡t</strong> Reno, NV-CA west digital terrain elevation data <strong>‡v</strong> Data for reformatting to DEM format
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="787"></a>787 - LINKKIKENTTÄ - MUU SUHDE (T)
+      </h3>
+      <p>Tietoja kohteesta, joka liittyy kuvailun kohteeseen, mutta suhde ei sovellu mihinkään kentistä 760-786.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Näyttöindikaattori
+            <ul>
+               <li><strong>0</strong> - Linkkikentän tiedot näytetään
+               </li>
+               <li><strong>1</strong> - Linkkikentän tietoja ei näytetä<br> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.htm#580">580</a> (Huomautus linkitysten monitahoisuudesta).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Vakionäyttöindikaattori
+            <ul>
+               <li><strong>#</strong> - <em>Liittyvää aineistoa</em></li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta / Näytön teksti osakentässä ‡i
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Pääkirjaus (ET)
+         </li>
+         <li><strong>‡b</strong> - Painos (ET)
+         </li>
+         <li><strong>‡c</strong> - Erottava lisäys (ET)
+         </li>
+         <li><strong>‡d</strong> - Paikka, kustantaja ja julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Yhteys, sijainti (T)
+         </li>
+         <li><strong>‡h</strong> - Fyysinen kuvailu (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)
+         </li>
+         <li><strong>‡k</strong> - Sarjatiedot (T)
+         </li>
+         <li><strong>‡m</strong> - Aineistokohtaiset yksityiskohdat (ET)
+         </li>
+         <li><strong>‡n</strong> - Huomautus (T)
+         </li>
+         <li><strong>‡o</strong> - Muu kohteen tunniste (T)
+         </li>
+         <li><strong>‡r</strong> - Raporttinumero (T)
+         </li>
+         <li><strong>‡s</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡t</strong> - Nimeke (ET)
+         </li>
+         <li><strong>‡u</strong> - ISRN-tunnus, International Standard Technical Report Number (ET)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - ISSN-tunnus, International Standard Serial Number (ET)
+         </li>
+         <li><strong>‡y</strong> - CODEN-tunnus (ET)
+         </li>
+         <li><strong>‡z</strong> - ISBN-tunnus, International Standard Book Number (T)
+         </li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡7</strong> - Kontrolliosakenttä (ET)<br><em>Ks. osakentän ‡7 kuvaus kentästä <a href="#760">760</a>.</em><ul>
+               <li><strong>/0</strong> - Pääkirjauksen tyyppi
+               </li>
+               <li><strong>/1</strong> - Nimen muoto
+               </li>
+               <li><strong>/2</strong> - Tietueen tyyppi
+               </li>
+               <li><strong>/3</strong> - Tietueen bibliografinen taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>245 00 ‡a</strong> HELECON international <strong>‡h</strong> [Elektroninen aineisto] : <strong>‡b</strong> European and international economic and business administration information / <strong>‡c</strong> Helsinki School of Economics and Business Administration.<br><strong>787 0# ‡t</strong> Helecon uutiset <strong>‡x</strong> 1239-9353<br><strong>787 0# ‡t</strong> Helecon news <strong>‡x</strong> 1455-6529
+      </p>
+      <p><strong>245 00 ‡a</strong> Empire State report.<br><strong>787 1# ‡a</strong> Empire State report (1982) <strong>‡x</strong> 0747-0711 <strong>‡w</strong> (DLC)###84647292# <strong>‡w</strong> (OCoLC)8541622<br><strong>787 1# ‡t</strong> Empire State report weekly <strong>‡x</strong> 0745-8622 <strong>‡w</strong> (DLC)###84647299# <strong>‡w</strong> (OCoLC)9403759
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

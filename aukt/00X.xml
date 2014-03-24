@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>29.1.2009</modified>
+  <controlfields>
+    <title>Kontrollikentät (00X)</title>
+    <description>Kentät 001-008 sisältävät kontrollinumeroita ja kooditietoa, jota käytetään MARC-auktoriteettitietueiden käsittelyssä. Jokaisella kentällä on oma kenttäkoodi hakemistossa ja tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Vaihtuvamittaisissa kontrollikentissä ei ole indikaattoreita eikä osakenttäkoodeja.</description>
+    <controlfield tag="001" repeatable="N">
+      <name>Tietueen kontrollinumero, bib-id</name>
+      <description paragraph="1">Tietueen kontrollinumeron antaa organisaatio, joka tuottaa, käyttää tai jakaa tietueita. Kyseisen organisaation koodi tallennetaan kenttään 003 (Tietueen kontrollinumeron tunniste).</description>
+      <examples>
+        <example>
+          <text><strong>001</strong> n##86742756#</text>
+        </example>
+        <example>
+          <text><strong>001</strong> 0010C0086##</text>
+        </example>
+      </examples>
+    </controlfield>
+    <controlfield tag="003" repeatable="N">
+      <name>Tietueen kontrollinumeron tunniste</name>
+      <description paragraph="1">Koodi organisaatiolle, joka on antanut tietueen kontrollinumeron kenttään 001 (Tietueen kontrollinumero). Organisaatiokoodina käytetään ISIL-tunnusta, <em>ks. <a href="../organisaatiot.htm">Organisaatiot</a></em>. Ulkomaisista tietokannoista kopioidut tietueet sisältävät yleensä koodin, joka on peräisin listalta <em>MARC code list for organizations</em>.</description>
+      <examples>
+        <example>
+          <text><strong>003</strong> DLC</text>
+        </example>
+        <example>
+          <text><strong>003</strong> CaOONL</text>
+        </example>
+      </examples>
+    </controlfield>
+    <controlfield tag="005" repeatable="N">
+      <name>Viimeisimmän päivityksen ajankohta</name>
+      <description paragraph="1">Kuusitoista merkkiä, jotka ilmaisevat päivän ja kellonajan jolloin tietuetta on viimeksi käsitelty, ja auttavat tietueen versioiden erottelussa. Tieto noudattaa ISO 8601 -standardin mallia: <em>vvvvkkppttmmss.s</em> (vuosi, kuukausi, päivä, tunti 00-23, minuutti, sekunti, kymmenesosasekunti).</description>
+      <examples>
+        <example>
+          <text><strong>005</strong> 19940223151047.0</text>
+        </example>
+      </examples>
+    </controlfield>
+    <controlfield tag="008" repeatable="">
+      <name>Informaatiokoodit</name>
+      <description paragraph="1">Kenttä sisältää 40 merkkipaikkaa (00-39), joihin tallennetaan koodimuotoista informaatiota tietueesta kokonaisuutena tai otsikkomuotojen kenttien (1XX) tai viittauskenttien (4XX/5XX) erityisaspekteista. Tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Määrittelemättömät merkkipaikat sisältävät tyhjämerkin (#) tai täyttömerkin (|). Kaikissa määritellyissä merkkipaikoissa pitää olla koodi tai täyttömerkki. Täyttömerkkiä voidaan käyttää tietyissä merkkipaikoissa, kun luetteloiva organisaatio ei niitä koodaa. Kenttää 008 ei saa toistaa.</description>
+      <positions>
+        <position pos="00-05">
+          <name>Luontipäivä</name>
+          <description>Järjestelmän tuottama kuusimerkkinen numerojono, joka ilmaisee milloin MARC-tietue on alunperin tehty. Päivämäärä on muodossa <em>vvkkpp</em> (vuosi, kuukausi, päivä), eikä se muutu koskaan.</description>
+        </position>
+        <position pos="06">
+          <name>Maantieteellisen lisämääreen käyttö</name>
+          <description>Voidaanko asiasanana käytettyyn 1XX otsikkomuotoon liittää maantieteellinen lisämääre ja jos voidaan, miten.</description>
+          <values>
+            <value code="#">
+              <name>Ei maantieteellistä lisämäärettä</name>
+            </value>
+            <value code="d">
+              <name>Lisämääre voidaan liittää suoraan</name>
+              <description> Otsikkomuotoon liittyvä tarkka maantieteellinen paikka voi seurata välittömästi sen jälkeen, ilman niiden väliin tulevaa laajempaa maantieteellistä kokonaisuutta.</description>
+            </value>
+            <value code="i">
+              <name>Lisämääre voidaan liittää epäsuorasti (hierarkkisesti)</name>
+              <description> Laajemman maantieteellisen kokonaisuus asetetaan otsikkomuodon ja siihen liittyvän tarkan maantieteellisen paikan väliin.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Otsikkomuoto on vahvistamaton, tai vahvistettu otsikkomuoto ei sovellu käytettäväksi asiasanana bibliografisissa tietueissa (008/15, koodi <strong>b</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Romanisointi</name>
+          <description>Sisältääkö 1XX kenttä otsikkomuodon romanisoituna ja minkä tyyppistä standardia romanisoinnissa on käytetty.</description>
+          <values>
+            <value code="a">
+              <name>Kansainvälinen standardi</name>
+            </value>
+            <value code="b">
+              <name>Kansallinen standardi</name>
+            </value>
+            <value code="c">
+              <name>Kansallisen kirjasto-organisaation standardi</name>
+            </value>
+            <value code="d">
+              <name>Kansalliskirjaston tai bibliografisen instanssin standardi</name>
+            </value>
+            <value code="e">
+              <name>Paikallinen standardi</name>
+            </value>
+            <value code="f">
+              <name>Standardin alkuperä tuntematon</name>
+            </value>
+            <value code="g">
+              <name>Totuttu romanisointitapa tai totuttu nimen muoto luetteloivan organisaation kielellä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> 1XX otsikkomuotoa ei ole romanisoitu.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="08">
+          <name>Luettelon kieli</name>
+          <description>Soveltuuko 1XX kentän otsikkomuoto ja siihen liittyvä viittausrakenne englannin ja/tai ranskankielisiin luetteloihin.</description>
+          <values>
+            <value code="#">
+              <name>Tieto puuttuu</name>
+            </value>
+            <value code="b">
+              <name>Englanti ja ranska</name>
+            </value>
+            <value code="e">
+              <name>Vain englanti</name>
+            </value>
+            <value code="f">
+              <name>Vain ranska</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09">
+          <name>Tietueen laji</name>
+          <description>Onko tietueen 1XX otsikkomuoto vahvistettu vai vahvistamaton.</description>
+          <values>
+            <value code="a">
+              <name>Vahvistettu otsikkomuoto</name>
+              <description> Kenttä 100-15X sisältää <strong>vahvistetun</strong> nimen, tekijä/nimekkeen, yhtenäistetyn nimekkeen, asiasanan tai yhden näistä osana asiasanaketjua.</description>
+            </value>
+            <value code="b">
+              <name>Ei käytetty viittauksena</name>
+              <description> Kenttä 100-15X sisältää <strong>vahvistamattoman</strong> otsikkomuodon, jota ei ole käytetty minkään vahvistetun otsikkomuodon 4XX-kentässä. Tietue sisältää kentän <a href="2XX-3XX.xml#260">260</a> tai <a href="663-666.xml#666">666</a>.</description>
+            </value>
+            <value code="c">
+              <name>Käytetty viittauksena</name>
+              <description> Kenttä 100-15X sisältää <strong>vahvistamattoman</strong> otsikkomuodon, jota käytetään kaikkien niiden vahvistettujen otsikkomuotojen tietueiden 4XX-kentissä, jotka on mainittu kentissä <a href="2XX-3XX.xml#260">260</a> tai <a href="663-666.xml#664">664</a>.</description>
+            </value>
+            <value code="d">
+              <name>Lisämääre</name>
+              <description> Kenttä 18X sisältää <strong>vahvistamattoman</strong> otsikkomuodon, jota voidaan käyttää vahvistetun otsikkomuodon asialisämääreenä.</description>
+            </value>
+            <value code="e">
+              <name>Alanmukaisen ryhmän otsikko</name>
+              <description> Kenttä 15X sisältää <strong>vahvistamattoman</strong> termin, jota voidaan käyttää asiasanaston systemaattisessa osassa otsikkona ilmaisemassa termikategorioiden jakoperusteita. Alanmukaisen ryhmän otsikkoa ei voi käyttää hakuterminä.</description>
+            </value>
+            <value code="f">
+              <name>Vahvistettu otsikkomuoto ja lisämääre</name>
+              <description> Kenttä 15X sisältää <strong>vahvistetun</strong> otsikkomuodon, jota voidaan käyttää pääterminä ja asialisämääreenä.</description>
+            </value>
+            <value code="g">
+              <name>Viittaus ja lisämääre</name>
+              <description> Kenttä 15X sisältää <strong>vahvistamattoman</strong> otsikkomuodon, jota voidaan käyttää viittausterminä ja asialisämääreenä.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Luettelointisäännöt</name>
+          <description>Identifioi luettelointisäännöt, joita on käytetty 1XX-kentässä olevan nimen, tekijä/nimekkeen tai yhtenäistetyn nimekkeen otsikkomuodon laadinnassa. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, viittaus.</description>
+          <values>
+            <value code="a">
+              <name>Aikaisemmat säännöt</name>
+              <description> 1XX otsikkomuoto noudattaa totuttua kuvailutapaa joka oli käytössä ennen kuin AACR 1 julkaistiin 1967.</description>
+            </value>
+            <value code="b">
+              <name>AACR 1</name>
+              <description>1XX otsikkomuoto noudattaa Anglo-American Cataloging Rules -sääntöjä vuodelta 1967.</description>
+            </value>
+            <value code="c">
+              <name>AACR 2</name>
+              <description> 1XX otsikkomuoto noudattaa Anglo-American Cataloging Rules -sääntöjen toista laitosta.</description>
+            </value>
+            <value code="d">
+              <name>AACR 2 yhteensopiva</name>
+              <description> 1XX otsikkomuoto ei noudata AACR 2 -sääntöjä, mutta katsotaan yhteensopivaksi niiden kanssa.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> 1XX otsikkomuoto ei ole luettelointisääntöjen mukainen nimi, tekijä/nimeke tai yhtenäistetty nimeke eikä siten käytettävissä bibliografisen tietueen pää- tai lisäkirjauksena.</description>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> 1XX otsikkomuoto noudattaa muita luettelointisääntöjä, kuin tässä on mainittu.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="11">
+          <name>Sanasto</name>
+          <description>Identifioi asiasanaston, jonka käytäntöjä on noudatettu 1XX-kentän otsikkomuodon laadinnassa. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, viittaus, lisämääre, alanmukaisen ryhmän otsikko.</description>
+          <values>
+            <value code="a">
+              <name>Library of Congress Subject Headings (LCSH)</name>
+            </value>
+            <value code="b">
+              <name>LC subject headings for children's literature</name>
+            </value>
+            <value code="c">
+              <name>Medical Subject Headings (MeSH)</name>
+            </value>
+            <value code="d">
+              <name>National Agricultural Library subject authority file (NAL)</name>
+            </value>
+            <value code="k">
+              <name>Canadian Subject Headings</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> 1XX otsikkomuoto ei ole asiasanaston mukainen eikä siten käytettävissä bibliografisen tietueen asiasanana.</description>
+            </value>
+            <value code="r">
+              <name>Art and Architecture Thesaurus</name>
+            </value>
+            <value code="s">
+              <name>Sears List of Subject Headings</name>
+            </value>
+            <value code="v">
+              <name>Répertoire de vedettes-matière</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> 1XX otsikkomuoto on muun asiasanaston kuin tässä mainittujen asiasanastojen mukainen. Tieto asiasanastosta voidaan merkitä kenttään 040&#8225;f.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="12">
+          <name>Sarjan tyyppi</name>
+          <description>1XX kentään merkityn sarjan tyyppi. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto.</description>
+          <values>
+            <value code="a">
+              <name>Monografiasarja</name>
+            </value>
+            <value code="b">
+              <name>Moniosainen teos</name>
+            </value>
+            <value code="c">
+              <name>Sarjan kaltainen ilmaisu</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Kenttä 1XX ei sisällä sarjaa tai sarjan kaltaista ilmaisua eikä siten ole käytettävissä bibliografisen tietueen sarjalisäkirjauksena.</description>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> Kenttä 1XX sisältää otsikkomuodon julkaisulle, jolle muut koodit eivät sovellu, mutta joka vaatii sarjoille sopivan käsittelyn.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="13">
+          <name>Sarjan numerointi</name>
+          <values>
+            <value code="a">
+              <name>Numeroitu</name>
+            </value>
+            <value code="b">
+              <name>Numeroimaton</name>
+            </value>
+            <value code="c">
+              <name>Numerointi vaihtelee</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> 1XX otsikkomuoto ei ole sarja (008/12, koodi <strong>n</strong>).</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="14">
+          <name>Otsikkomuodon käyttö pää- tai lisäkirjauksena</name>
+          <values>
+            <value code="a">
+              <name>Soveltuu</name>
+              <description> 1XX otsikkomuoto noudattaa luettelointisääntöjen käytäntöjä.</description>
+            </value>
+            <value code="b">
+              <name>Ei sovellu</name>
+              <description> 1XX otsikkomuoto ei noudata luettelointisääntöjen käytäntöjä tai se on vahvistamaton otsikkomuoto. Koskee seuraavia tietuelajeja: viittaus, lisämääre, alanmukaisen ryhmän otsikko.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="15">
+          <name>Otsikkomuodon käyttö asiasanana</name>
+          <values>
+            <value code="a">
+              <name>Soveltuu</name>
+              <description> 1XX otsikkomuoto noudattaa asiasanaston käytäntöjä.</description>
+            </value>
+            <value code="b">
+              <name>Ei sovellu</name>
+              <description> 1XX otsikkomuoto ei noudata asiasanaston käytäntöjä tai se on vahvistamaton otsikkomuoto. Koskee seuraavia tietuelajeja: viittaus, lisämääre, alanmukaisen ryhmän otsikko.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="16">
+          <name>Otsikkomuodon käyttö sarjalisäkirjauksena</name>
+          <values>
+            <value code="a">
+              <name>Soveltuu</name>
+              <description> 1XX sarja on tyypiltään jokin seuraavista: 008/12 <strong>a</strong>, <strong>b</strong>, <strong>c</strong> tai <strong>z</strong>.</description>
+            </value>
+            <value code="b">
+              <name>E sovellu</name>
+              <description> 1XX sarja on tyypiltään 008/12 <strong>n</strong> tai se on vahvistamaton otsikkomuoto. Koskee seuraavia tietuelajeja: viittaus, lisämääre, alanmukaisen ryhmän otsikko.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="17">
+          <name>Asialisämääreen tyyppi</name>
+          <description>Lisämääretietueen 1XX-kentässä olevan asialisämääreen tyyppi. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto ja lisämääre, viittaus ja lisämääre.</description>
+          <values>
+            <value code="a">
+              <name>Aiheenmukainen</name>
+            </value>
+            <value code="b">
+              <name>Muotoa ilmaiseva</name>
+            </value>
+            <value code="c">
+              <name>Aikaa ilmaiseva</name>
+            </value>
+            <value code="d">
+              <name>Maantieteellinen</name>
+            </value>
+            <value code="e">
+              <name>Kieltä ilmaiseva</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> 1XX otsikkomuoto ei ole asialisämääre.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="18-27">
+          <name>Määrittelemätön</name>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="28">
+          <name>Virallisen tahon tyyppi</name>
+          <description>Edustaako 1XX otsikkomuoto virallista tai julkishallinnollista tahoa ja mikä on kyseisen tahon toimivalta.</description>
+          <values>
+            <value code="#">
+              <name>Ei virallinen taho</name>
+            </value>
+            <value code="a">
+              <name>Itsehallinnollinen tai puoli-itsehallinnollinen</name>
+            </value>
+            <value code="c">
+              <name>Monta paikallista yksikköä</name>
+              <description> Esim. kuntayhtymä.</description>
+            </value>
+            <value code="f">
+              <name>Kansallinen</name>
+            </value>
+            <value code="i">
+              <name>Kansainvälinen, hallitusten välinen</name>
+              <description> Esim. Yhdistyneet kansakunnat.</description>
+            </value>
+            <value code="l">
+              <name>Paikallishallinto</name>
+              <description> Esim. kunta.</description>
+            </value>
+            <value code="m">
+              <name>Monta aluetta</name>
+            </value>
+            <value code="o">
+              <name>Virallinen taho--tyyppi määrittelemätön</name>
+            </value>
+            <value code="s">
+              <name>Alueellinen</name>
+            </value>
+            <value code="u">
+              <name>Ei tiedetä onko otsikkomuoto virallinen taho</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="29">
+          <name>Viittausten arviointi</name>
+          <description>Onko tietueen 4XX/5XX viittauskenttien sisältö muodostettu samojen sääntöjen mukaisesti kuin 1XX-kentän sisältö.</description>
+          <values>
+            <value code="a">
+              <name>Viittaukset on muodostettu samojen sääntöjen mukaan</name>
+            </value>
+            <value code="b">
+              <name>Viittauksia ei ole muodostettu samojen sääntöjen mukaan</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description>Tietue ei sisällä viittauskenttiä 4XX/5XX.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="30">
+          <name>Määrittelemätön</name>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="31">
+          <name>Tietueen päivitys meneillään</name>
+          <description>Harkitaanko tietueen johonkin kenttään muutosta.</description>
+          <values>
+            <value code="a">
+              <name>Tietueen tietoja voidaan käyttää</name>
+            </value>
+            <value code="b">
+              <name>Tietuetta päivitetään parhaillaan</name>
+              <description>Varoittaa käyttäjiä mahdollisesta muutoksesta ja siitä, että 1XX otsikkomuotoa ei kannata käyttää bibliografisessa tietueessa.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="32">
+          <name>Samat henkilönnimet</name>
+          <description>Käyttääkö kentän 100 henkilönnimeä yksi tai useampi henkilö. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, viittaus.</description>
+          <values>
+            <value code="a">
+              <name>Erottuva henkilönnimi</name>
+              <description>Nimeä käyttää vain yksi henkilö.</description>
+            </value>
+            <value code="b">
+              <name>Nimi kuuluu usealle henkilölle</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description>1XX otsikkomuoto ei ole henkilönnimi tai se on suvun nimi.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="33">
+          <name>Vahvistamisen taso</name>
+          <description>Millä tasolla 100-15X otsikkomuodot noudattavat luettelointisääntöjä, jotka on merkitty merkkipaikkaan 008/10 ja/tai asiasanastoa, joka on merkitty merkkipaikkaan 008/11.</description>
+          <values>
+            <value code="a">
+              <name>Täysin vahvistettu</name>
+            </value>
+            <value code="b">
+              <name>Muistiinpano</name>
+              <description>100-15X otsikkomuoto on täysin vahvistettu, mutta sitä ei ole käytetty bibliografisessa tietueessa. Kun otsikkomuotoa käytetään bibliografisessa tietueessa, koodi <strong>b</strong> voidaan vaihtaa koodiksi <strong>a</strong> tai <strong>c</strong>.</description>
+            </value>
+            <value code="c">
+              <name>Vahvistamaton</name>
+              <description>100-15X otsikkomuotoa ei voida muotoilla tyydyttävästi riittämättömien tietojen vuoksi. Kun tarvittavat tiedot ovat saatavilla, koodi <strong>c</strong> voidaan vaihtaa koodiksi <strong>a</strong>.</description>
+            </value>
+            <value code="d">
+              <name>Alustava</name>
+              <description>100-15X otsikkomuoto on otettu bibliografisesta tietueesta, koska kuvailun kohde ei ole ollut käsillä kun otsikkomuoto on vahvistettu. Kun otsikkomuotoa käytetään luetteloitaessa käsillä olevaa kohdetta, koodi <strong>d</strong> voidaan vaihtaa koodiksi <strong>a</strong>.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description>1XX sisältää vahvistamattoman otsikkomuodon. Koskee seuraavia tietuelajeja: viittaus, lisämääre, viittaus ja lisämääre, alanmukaisen ryhmän otsikko.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="34-37">
+          <name>Määrittelemätön</name>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="38">
+          <name>Tietueen muokkaus</name>
+          <description>Onko auktoriteettitietuetta muokattu esim. järjestelmäteknisistä syistä.</description>
+          <values>
+            <value code="#">
+              <name>Ei muokattu</name>
+            </value>
+            <value code="s">
+              <name>Lyhennetty</name>
+              <description>Osa tiedoista on jätetty pois, koska muuten tietueen pituus olisi ylittänyt jonkin järjestelmän sallitun pituusrajan.</description>
+            </value>
+            <value code="x">
+              <name>Merkkejä puuttuu</name>
+              <description>Kaikkia merkkejä ei ole voitu muuntaa koneluettavaan muotoon ja ne puuttuvat tietueesta.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="39">
+          <name>Luetteloiva organisaatio</name>
+          <description>Auktoriteettitietueen tehnyt organisaatio. Jos luetteloiva organisaatio tunnetaan, se kerrotaan kentän 040 (Luetteloiva organisaatio) osakentässä &#8225;a. MARC auktoriteettitietueesta vastuulliset osapuolet kerrotaan koodilla merkkipaikassa 008/39 sekä koodeilla tai nimillä kentässä 040.</description>
+          <values>
+            <value code="#">
+              <name>Kansallisbibliografia</name>
+            </value>
+            <value code="c">
+              <name>Luettelointiyhteistyö</name>
+              <description>Auktoriteettitietueen tekijä (muu kuin kansallisbibliografia) osallistuu luettelointiyhteistyöhön.</description>
+            </value>
+            <value code="d">
+              <name>Muu</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+  </controlfields>
+</fields>

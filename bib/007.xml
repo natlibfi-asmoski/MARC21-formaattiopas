@@ -1,0 +1,3571 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <modified>14.10.2010</modified>
+  <controlfields>
+    <title>Kontrollikenttä 007</title>
+    <controlfield tag="007" type="yleista" repeatable="Y">
+      <name>Ulkoasua koskevat informaatiokoodit--yleistä tietoa</name>
+      <description paragraph="1">Toistettava kenttä sisältää koodimuotoista erikoistietoa kuvailun kohteen ulkoasusta. Tiedot voivat koskea koko kohdetta tai sen osia kuten liiteaineistoa.</description>
+      <description paragraph="2">Tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Kentän 007 merkkipaikkojen lukumäärä riippuu 007/00 koodista, joka ilmaisee aineistoluokan. Täyttömerkin käyttö ei ole sallittua merkkipaikassa 007/00. Täyttömerkkiä voidaan kuitenkin käyttää kaikissa muissa merkkipaikoissa, kun luetteloiva organisaatio ei niitä koodaa.</description>
+      <description paragraph="3">Eri aineistoluokat esitetään seuraavaksi merkkipaikan 007/00 aineistoluokkakoodin mukaisessa aakkosjärjestyksessä.</description>
+    </controlfield>
+    <controlfield tag="007" type="a" repeatable="">
+      <name>(a) Kartta</name>
+      <description paragraph="1">Kartografinen aineisto <a href="#d">karttapalloja</a> lukuun ottamatta.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="a">
+              <name>Kartta</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="d">
+              <name>Kartasto, atlas</name>
+            </value>
+            <value code="g">
+              <name>Diagrammi</name>
+              <description> Kartta on luonteeltaan yksinkertaistettu ja kaavamainen.</description>
+            </value>
+            <value code="j">
+              <name>Kartta</name>
+              <description> Taivaankappaleen pinta, kokonaan tai osittain, kaksiulotteinen kartta.</description>
+            </value>
+            <value code="k">
+              <name>Profiili</name>
+              <description> Mittakaavan mukainen esitys taivaankappaleen pystysuoran pinnan poikkileikkauksesta.</description>
+            </value>
+            <value code="q">
+              <name>Malli</name>
+              <description> Kolmiulotteinen esitys.</description>
+            </value>
+            <value code="r">
+              <name>Kaukokartoituskuva</name>
+              <description> Kuva on tuotettu tallennuslaitteella, joka ei ole fyysisessä kosketuksessa kohteeseen.</description>
+            </value>
+            <value code="s">
+              <name>Leikkaus</name>
+              <description> Mittakaavan mukainen esitys pystysuoran pinnan poikkileikkauksesta, maapohjan rakenteet mukana.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="y">
+              <name>Näkymä</name>
+              <description> Kuin kaltevalle pinnalle heijastettu perspektiivimäinen esitys maisemasta.</description>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="a">
+              <name>Yksivärinen (esim. mustavalkoinen, sinivalkoinen)</name>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Valmistusmateriaali</name>
+          <values>
+            <value code="a">
+              <name>Paperi</name>
+              <description>Kaikki selluloosapohjaiset paperit, myös pahvi.</description>
+            </value>
+            <value code="b">
+              <name>Puu</name>
+              <description> Sisältää kuitu- ja lastulevyn, mutta ei välttämättä muita puulastuihin tai -kuituihin perustuvia materiaaleja.</description>
+            </value>
+            <value code="c">
+              <name>Kivi</name>
+            </value>
+            <value code="d">
+              <name>Metalli</name>
+            </value>
+            <value code="e">
+              <name>Synteettinen</name>
+              <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
+            </value>
+            <value code="f">
+              <name>Vuota ("Skin")</name>
+              <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
+            </value>
+            <value code="g">
+              <name>Tekstiili</name>
+              <description>Sisältää kaikki luonnonmateriaaleista valmistetut ja keinokuitukankaat, maalauskangasta lukuun ottamatta.</description>
+            </value>
+            <value code="i">
+              <name>Muovi</name>
+            </value>
+            <value code="j">
+              <name>Lasi</name>
+            </value>
+            <value code="l">
+              <name>Vinyyli</name>
+            </value>
+            <value code="n">
+              <name>Veliini</name>
+            </value>
+            <value code="p">
+              <name>Kipsi</name>
+              <description>Sisältää kipsiseokset, joissa mukana maa-aineksia, myös sementti.</description>
+            </value>
+            <value code="q">
+              <name>Joustava, pehmeäpohjainen valokuvapositiivi</name>
+              <description> Esim. diapositiivi filmillä.</description>
+            </value>
+            <value code="r">
+              <name>Joustava, pehmeäpohjainen valokuvanegatiivi</name>
+              <description> esim. valokuvanegatiivi filmillä.</description>
+            </value>
+            <value code="s">
+              <name>Joustamaton, kovapohjainen valokuvapositiivi</name>
+              <description> Esim. diapositiivi lasisella valokuvauslevyllä.</description>
+            </value>
+            <value code="t">
+              <name>Joustamaton, kovapohjainen valokuvanegatiivi</name>
+              <description> Esim. valokuvauslevynegatiivi.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Nahka ("Leather")</name>
+            </value>
+            <value code="w">
+              <name>Pergamentti</name>
+            </value>
+            <value code="y">
+              <name>Muu valokuvamainen materiaali</name>
+              <description> Muu kuin koodit q, r, s, tai t.</description>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Jäljennetyyppi</name>
+          <values>
+            <value code="f">
+              <name>Näköispainos</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Aineisto ei ole jäljenne.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Valmistusmenetelmä</name>
+          <values>
+            <value code="a">
+              <name>Sinikopio</name>
+            </value>
+            <value code="b">
+              <name>Valokopio</name>
+            </value>
+            <value code="c">
+              <name>Esituotanto</name>
+            </value>
+            <value code="d">
+              <name>Filmi</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Polariteetti</name>
+          <description>Onko kyseessä positiivi- vai negatiivifilmi.</description>
+          <values>
+            <value code="a">
+              <name>Positiivifilmi</name>
+              <description> Viivat ja hahmot ovat tummina vaalealla pohjalla.</description>
+            </value>
+            <value code="b">
+              <name>Negatiivifilmi</name>
+              <description> Viivat ja hahmot ovat vaaleina tummalla pohjalla.</description>
+            </value>
+            <value code="m">
+              <name>Sekalainen polariteetti</name>
+              <description> Positiivi- ja negatiivikuvien sekoitus.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="c" repeatable="">
+      <name>(c) Elektroninen aineisto</name>
+      <description paragraph="1">Käytetään kaikille elektronisille aineistoille (esim. ohjelmat, tiedostot jne.), jotka sisältävät koneluettavaa dataa tai tietokoneella suoritettavaksi/käytettäväksi tarkoitettua ohjelmakoodia. Tähän määritelmään sopivat paitsi ne aineistot, joille on annettu koodi <strong>m</strong> merkkipaikassa 000/06, myös teksti- ja kuvatiedostot sekä sellaiset digitaaliset video- ja äänitiedostot, joiden käyttöön vaaditaan tietokone (ei tavallinen toistolaite). Esimerkiksi tavallinen musiikkia sisältävä CD-levy käsitetään siis äänitteeksi eikä elektroniseksi aineistoksi.</description>
+      <description paragraph="2">Jos käytetään vain merkkipaikkoja 00-05, merkkipaikat 06-13 täytetään täyttömerkeillä (|). Jos johonkin merkkipaikkaan 06-13 annetaan jokin koodi, muutkin merkkipaikat pitää täyttää.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="c">
+              <name>Elektroninen aineisto</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="a">
+              <name>Nauhakasetti</name>
+            </value>
+            <value code="b">
+              <name>Sirukasetti ("Chip cartridge")</name>
+            </value>
+            <value code="c">
+              <name>Optinen levykasetti ("Computer optical disc cartridge")</name>
+            </value>
+		<value code="d">
+              <name>Levyke ("Computer disc"), tyyppi määrittelemätön</name>
+            </value>
+            <value code="e">
+              <name>Levykekasetti ("Computer disc cartridge"), tyyppi määrittelemätön</name>
+            </value>
+            <value code="f">
+              <name>DAT-kasetti</name>
+            </value>
+            <value code="h">
+              <name>Magneettinauha</name>
+            </value>
+            <value code="j">
+              <name>Levyke</name>
+            </value>
+            <value code="k">
+              <name>Reikäkortti, magneettikortti ("Computer card")</name>
+            </value>
+            <value code="m">
+              <name>Magneetti-optinen levy ("Magneto-optical disc")</name>
+            </value>
+            <value code="o">
+              <name>Optinen levy</name>
+              <description> Esim. CD-A, CD-R, CD-ROM.</description>
+            </value>
+            <value code="r">
+              <name>Suorakäyttö, online</name>
+              <description> Palvelimella sijaitseva aineisto, jota käytetään tietoverkon kautta. Esim. elektroniset aikakauslehdet ja sähkökirjat.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="a">
+              <name>Yksi väri</name>
+              <description> Muu kuin musta.</description>
+            </value>
+            <value code="b">
+              <name>Mustavalkoinen</name>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+            </value>
+            <value code="g">
+              <name>Harmaasävy</name>
+            </value>
+            <value code="m">
+              <name>Mustavalkoisen ja monivärisen yhdistelmä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Esim. puheäänite, jonka ohessa ei ole tietokoneen näytölle ilmestyviä tietoja.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> Sisältää värjätyt tai sävytetyt.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Mitat</name>
+          <values>
+            <value code="a">
+              <name>3 1/2 tuumaa</name>
+              <description> Esim. "korppu".</description>
+            </value>
+            <value code="e">
+              <name>12 tuumaa tai 30 cm</name>
+            </value>
+            <value code="g">
+              <name>4 3/4 tuumaa tai 12 cm</name>
+              <description> Esim. CD-levy.</description>
+            </value>
+            <value code="i">
+              <name>1 1/8 x 2 3/8 tuumaa</name>
+              <description> Esim. nauhakasetti.</description>
+            </value>
+            <value code="j">
+              <name>3 7/8 x 2 1/2 tuumaa</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Esim. suorakäyttöiset aineistot.</description>
+            </value>
+            <value code="o">
+              <name>5 1/4 tuumaa</name>
+              <description> Esim. "lerppu".</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>8 tuumaa</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Ääni</name>
+          <description>Tuottaako elektroninen aineisto ääntä.</description>
+          <values>
+            <value code="#">
+              <name>Äänetön</name>
+            </value>
+            <value code="a">
+              <name>Tuottaa ääntä</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06-08">
+          <name>Kuvan bittitarkkuus</name>
+          <description>Skannatun kuvan/kuvien bittitarkkuus voidaan merkitä kolmella numerolla. Jos tarkkuutta ei tiedetä, käytetään kirjainkoodeja. Koska bittitarkkuus on merkittävä tieto, puuttuvia numeroita ei saa korvata tavuviivoilla (-).</description>
+          <values>
+            <value code="001-999">
+              <name>Bittitarkkuus</name>
+            </value>
+            <value code="mmm">
+              <name>Useita tarkkuuksia</name>
+            </value>
+            <value code="nnn">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="---">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09">
+          <name>Tiedostomuodot</name>
+          <description>Sisältääkö elektroninen aineisto yhden vai useampia tiedostomuotoja.</description>
+          <values>
+            <value code="a">
+              <name>Yksi</name>
+            </value>
+            <value code="m">
+              <name>Useita</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Laadunvarmistus</name>
+          <description>Onko laadunvarmistus olemassa.</description>
+          <values>
+            <value code="a">
+              <name>Puuttuu</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="p">
+              <name>Tehty</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="11">
+          <name>Aineiston alkuperä</name>
+          <description>Alkuperätiedolla on merkitystä, kun digitoituja aineistoja tuotetaan, käytetään ja hallinnoidaan.</description>
+          <values>
+            <value code="a">
+              <name>Alkuperäisteos, originaali</name>
+            </value>
+            <value code="b">
+              <name>Mikrotallenne</name>
+            </value>
+            <value code="c">
+              <name>Elektroninen aineisto</name>
+            </value>
+            <value code="d">
+              <name>Välimuoto (ei mikrotallenne)</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="12">
+          <name>Pakkaustaso</name>
+          <values>
+            <value code="a">
+              <name>Pakkaamaton</name>
+            </value>
+            <value code="b">
+              <name>Pakattu, palautettavissa kokonaan</name>
+            </value>
+            <value code="d">
+              <name>Pakattu, ei kokonaan palautettavissa</name>
+              <description> Esim. JPEG, MPEG.</description>
+            </value>
+            <value code="m">
+              <name>Sekalainen</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="13">
+          <name>Laatu ja käyttötarkoitus</name>
+          <values>
+            <value code="a">
+              <name>Riittävä nykyiseen käyttöön, mutta ei riittävä pitkäaikaissäilytykseen</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="p">
+              <name>Tuotettu korvaamaan säilytettävä alkuperäiskohde</name>
+            </value>
+            <value code="r">
+              <name>Korkeatasoinen, alkuperäisen veroinen</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="d" repeatable="">
+      <name>(d) Karttapallo</name>
+      <description paragraph="1">Taivaankappaleen kuvaus pallon pinnalla. <em>Ks. merkkipaikkojen 01-05 tarkemmat kuvaukset jaksosta <a href="#kartta">007--KARTTA</a></em>.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="d">
+              <name>Karttapallo</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="a">
+              <name>Taivas-/tähtikarttapallo</name>
+            </value>
+            <value code="b">
+              <name>Planeetta- tai kuukarttapallo</name>
+              <description> Muu kuin Maapallo tai sen kuu.</description>
+            </value>
+            <value code="c">
+              <name>Maapallon karttapallo</name>
+            </value>
+            <value code="e">
+              <name>Maapallon kuun karttapallo</name>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="a">
+              <name>Yksivärinen (esim. mustavalkoinen, sinivalkoinen)</name>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Valmistusmateriaali</name>
+          <values>
+            <value code="a">
+              <name>Paperi, pahvi</name>
+              <description> Kaikki selluloosapohjainen puuta lukuun ottamatta.</description>
+            </value>
+            <value code="b">
+              <name>Puu</name>
+              <description> Myös lastulevy.</description>
+            </value>
+            <value code="c">
+              <name>Kivi</name>
+            </value>
+            <value code="d">
+              <name>Metalli</name>
+            </value>
+            <value code="e">
+              <name>Synteettinen</name>
+              <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
+            </value>
+            <value code="f">
+              <name>Vuota ("Skin")</name>
+              <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
+            </value>
+            <value code="g">
+              <name>Tekstiili</name>
+              <description> Luonnon- tai keinokuitu.</description>
+            </value>
+            <value code="i">
+              <name>Muovi</name>
+            </value>
+            <value code="l">
+              <name>Vinyyli</name>
+            </value>
+            <value code="n">
+              <name>Veliini</name>
+            </value>
+            <value code="p">
+              <name>Kipsi</name>
+              <description> Sisältää kipsiseokset, joissa mukana maa-aineksia.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Nahka</name>
+            </value>
+            <value code="w">
+              <name>Pergamentti</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Jäljennetyyppi</name>
+          <values>
+            <value code="f">
+              <name>Näköispainos</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="f" repeatable="">
+      <name>(f) Tunnusteluaineisto</name>
+      <description paragraph="1">Pistekirjoitus ja muut aineistot, jotka on tarkoitettu luettaviksi tunnustelemalla.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="f">
+              <name>Tunnusteluaineisto</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="a">
+              <name>Moonin kirjoitus</name>
+            </value>
+            <value code="b">
+              <name>Pistekirjoitus, Braillen kirjoitus</name>
+            </value>
+            <value code="c">
+              <name>Yhdistelmä</name>
+            </value>
+            <value code="d">
+              <name>Kohokirjoitus, ei kirjoitusjärjestelmää</name>
+              <description> Kaaviot, piirrokset jne.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03-04">
+          <name>Kohokirjoituksen laji</name>
+          <description>Voidaan tallentaa ainoastaan hallitsevin koodi tai kaksi koodia tärkeysjärjestyksessä. Jos tallennetaan vain yksi koodi, se tasataan vasemmalle ja käyttämättömässä merkkipaikassa on tyhjä (#).</description>
+          <values>
+            <value code="#">
+              <name>Kohokirjoituksen lajia ei ole määritelty</name>
+            </value>
+            <value code="a">
+              <name>Kirjallinen</name>
+              <description> Merkit vastaavat normaalia tekstiä.</description>
+            </value>
+            <value code="b">
+              <name>Salakirjoitus, koodit</name>
+            </value>
+            <value code="c">
+              <name>Matematiikka ja tieteellinen</name>
+            </value>
+            <value code="d">
+              <name>Tietojenkäsittely tai ohjelmointi</name>
+            </value>
+            <value code="e">
+              <name>Nuottijulkaisu</name>
+            </value>
+            <value code="m">
+              <name>Monia eri tyyppejä</name>
+              <description> Jos mikään laji ei ole hallitseva tai lajeja on enemmän kuin kaksi.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Tiivistämisen taso</name>
+          <values>
+            <value code="a">
+              <name>Tiivistämätön</name>
+            </value>
+            <value code="b">
+              <name>Tiivistetty</name>
+            </value>
+            <value code="m">
+              <name>Yhdistelmä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06-08">
+          <name>Pistenuottikirjoituksen muoto</name>
+          <description>Miten tahdit, sektiot, äänet ja muut niihin liittyvä tieto kuten sanat esitetään suhteessa toisiinsa. Voidaan tallentaa kolme koodia tärkeysjärjestyksessä. Jos tallennetaan vähemmän kuin kolme koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#). Jos koodausta ei tehdä, käytetään täyttömerkkejä (|||).</description>
+          <values>
+            <value code="#">
+              <name>Pistenuottikirjoituksen muotoa ei ole määritelty</name>
+            </value>
+            <value code="a">
+              <name>Tahdit päällekkäin "Bar over bar"</name>
+            </value>
+            <value code="b">
+              <name>Tahdit peräkkäin "Bar by bar"</name>
+            </value>
+            <value code="c">
+              <name>Nuottiviivat päällekkäin "Line over line"</name>
+            </value>
+            <value code="d">
+              <name>Kappaleittain "Paragraph"</name>
+            </value>
+            <value code="e">
+              <name>Yksittäinen nuottiviiva "Single line"</name>
+            </value>
+            <value code="f">
+              <name>Sektiot peräkkäin "Section by section"</name>
+            </value>
+            <value code="g">
+              <name>Nuottiviivat peräkkäin "Line by line"</name>
+            </value>
+            <value code="h">
+              <name>Avoin partituuri "Open score"</name>
+            </value>
+            <value code="i">
+              <name>"Spanner short form scoring"</name>
+            </value>
+            <value code="j">
+              <name>"Short form scoring"</name>
+            </value>
+            <value code="k">
+              <name>Luonnos "Outline"</name>
+            </value>
+            <value code="l">
+              <name>Vertikaalinen partituuri "Vertical score"</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09">
+          <name>Ulkoasun erityispiirteet</name>
+          <values>
+            <value code="a">
+              <name>Painettu teksti ja pistekirjoitus rinnakkain</name>
+            </value>
+            <value code="b">
+              <name>Suurikokoinen pistekirjoitus</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="g" repeatable="">
+      <name>(g) Heijastettava kuva</name>
+      <description paragraph="1">Kaksiulotteinen liikkeetön kuva/esitys, joka on tarkoitettu heijastettavaksi optisen laitteen avulla.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="g">
+              <name>Heijastettava kuva</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="c">
+              <name>Rainakasetti</name>
+            </value>
+            <value code="d">
+              <name>Filminauha</name>
+              <description>Lyhyt raina, joka ei ole rullalla.</description>
+            </value>
+            <value code="f">
+              <name>Raina, tyyppi määrittelemätön</name>
+            </value>
+            <value code="o">
+              <name>Rainarulla</name>
+            </value>
+            <value code="s">
+              <name>Dia</name>
+            </value>
+            <value code="t">
+              <name>Kalvo</name>
+              <description>Myös röntgenkuvat.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="a">
+              <name>Yksi väri</name>
+              <description>Muu kuin musta.</description>
+            </value>
+            <value code="b">
+              <name>Mustavalkoinen</name>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+            </value>
+            <value code="h">
+              <name>Käsin väritetty</name>
+            </value>
+            <value code="m">
+              <name>Mustavalkoisen ja monivärisen yhdistelmä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Ei kuvia.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description>Sisältää värjätyt tai sävytetyt, esim. seepiasävytetyt.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Kuvan pohjan materiaali</name>
+          <values>
+            <value code="d">
+              <name>Lasi</name>
+            </value>
+            <value code="e">
+              <name>Synteettinen</name>
+              <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
+            </value>
+            <value code="j">
+              <name>Filmi (tavallinen, nitraatiton)</name>
+            </value>
+            <value code="k">
+              <name>Filmi (muu kuin tavallinen, nitraatiton)</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen kokoelma</name>
+              <description> Kokoelman eri kohteissa on erilaisia pohjamateriaaleja.</description>
+            </value>
+            <value code="o">
+              <name>Paperi</name>
+              <description>Kaikki selluloosapohjaiset paperilaadut.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Ääni mukana tai erikseen</name>
+          <values>
+            <value code="#">
+              <name>Ei ääntä (mykkä)</name>
+            </value>
+            <value code="a">
+              <name>Ääni mukana samalla viestimellä</name>
+            </value>
+            <value code="b">
+              <name>Ääni erikseen toisella viestimellä</name>
+              <description> Esim. diasarjalle tarkoitettu äänikasetti, jossa mukana signaalit dian vaihtamiselle.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Äänilähde</name>
+          <values>
+            <value code="#">
+              <name>Ei ääntä (mykkä)</name>
+            </value>
+            <value code="a">
+              <name>Optinen ääniraita</name>
+            </value>
+            <value code="b">
+              <name>Magneettinen ääniraita</name>
+            </value>
+            <value code="c">
+              <name>Äänisilmukkakasetti</name>
+            </value>
+            <value code="d">
+              <name>Äänilevy</name>
+            </value>
+            <value code="e">
+              <name>Magneettinen ääninauha</name>
+            </value>
+            <value code="f">
+              <name>Magneettinen äänikasetti</name>
+            </value>
+            <value code="g">
+              <name>Optinen ja magneettinen ääniraita</name>
+            </value>
+            <value code="h">
+              <name>Videonauha</name>
+            </value>
+            <value code="i">
+              <name>Videolevy</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Mitat</name>
+          <description>Heijastettavan kuvan leveys tai mitat. Filminauhoille annetaan leveys, muille korkeus x leveys. Jos tarkkaa koodia ei ole, käytetään koodia <strong>z</strong>; kuitenkin piirtoheitinkalvoille käytetään lähimmäksi sopivaa koodia.</description>
+          <values>
+            <value code="a">
+              <name>Standardi 8 mm</name>
+            </value>
+            <value code="b">
+              <name>Super 8 mm, Single 8 mm</name>
+            </value>
+            <value code="c">
+              <name>9,5 mm</name>
+            </value>
+            <value code="d">
+              <name>16 mm</name>
+            </value>
+            <value code="e">
+              <name>28 mm</name>
+            </value>
+            <value code="f">
+              <name>35 mm</name>
+            </value>
+            <value code="g">
+              <name>70 mm</name>
+            </value>
+            <value code="j">
+              <name>2x2 tuumaa tai 5x5 cm</name>
+            </value>
+            <value code="k">
+              <name>2 1/4 x 2 1/4 tuumaa tai 6x6 cm</name>
+            </value>
+            <value code="s">
+              <name>4x5 tuumaa tai 10x13 cm</name>
+            </value>
+            <value code="t">
+              <name>5x7 tuumaa tai 13x18 cm</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="v">
+              <name>8x10 tuumaa tai 21x26 cm</name>
+            </value>
+            <value code="w">
+              <name>9x9 tuumaa tai 23x23 cm</name>
+            </value>
+            <value code="x">
+              <name>10x10 tuumaa tai 26x26 cm</name>
+            </value>
+            <value code="y">
+              <name>7x7 tuumaa tai 18x18 cm</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="08">
+          <name>Kehys, tuki tai kokoonpano</name>
+          <values>
+            <value code="#">
+              <name>Kehys tai tuki puuttuu</name>
+              <description> Tyyppiesimerkkinä kuvanauha.</description>
+            </value>
+            <value code="c">
+              <name>Kartonki</name>
+              <description> Diapositiivin pahvikehys.</description>
+            </value>
+            <value code="d">
+              <name>Lasi</name>
+              <description> Lasi, joka suojaa kuvaa, mutta ei toimi kuvan pohjamateriaalina.</description>
+            </value>
+            <value code="e">
+              <name>Synteettinen</name>
+              <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
+            </value>
+            <value code="h">
+              <name>Metalli</name>
+            </value>
+            <value code="j">
+              <name>Metalli ja lasi</name>
+              <description> Metalli toimii kehyksenä lasille, joka suojaa kuvaa.</description>
+            </value>
+            <value code="k">
+              <name>Synteettinen ja lasi</name>
+              <description>Esim. muovi toimii kehyksenä lasille, joka suojaa kuvaa.</description>
+            </value>
+            <value code="m">
+              <name>Sekalainen kokoelma</name>
+              <description> Kehys, tuki ja/tai kokoonpano vaihtelee kokoelman eri kohteissa.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="h" repeatable="">
+      <name>(h) Mikrotallenne</name>
+      <description paragraph="1">Läpinäkyvä tai -näkymätön viestin, joka sisältää suurennuslaitteen avulla luettavia mikrokuvia. Mikrotallenne voi olla alkuperäisjulkaisu tai kopio olemassa olevasta teksti- tai graafisesta aineistosta.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="h">
+              <name>Mikrotallenne</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="a">
+              <name>Reikäkortti "Aperture card"</name>
+            </value>
+            <value code="b">
+              <name>Mikrofilmisilmukkakasetti</name>
+            </value>
+            <value code="c">
+              <name>Mikrofilmikasetti</name>
+            </value>
+            <value code="d">
+              <name>Mikrofilmikela</name>
+            </value>
+            <value code="e">
+              <name>Mikrokuultokortti</name>
+            </value>
+            <value code="f">
+              <name>Mikrokuultokorttikasetti</name>
+            </value>
+            <value code="g">
+              <name>Mikrokortti (läpinäkymätön)</name>
+            </value>
+            <value code="h">
+              <name>Mikrofilmiliuska</name>
+            </value>
+            <value code="j">
+              <name>Mikrofilmirulla</name>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> Sisältää mikrosirut, mikropisteet ja mikrorullafilmit.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Polariteetti</name>
+          <description>Onko kyseessä positiivi- vai negatiivimikrotallenne.</description>
+          <values>
+            <value code="a">
+              <name>Positiivi</name>
+              <description>Viivat ja hahmot ovat tummina vaalealla pohjalla.</description>
+            </value>
+            <value code="b">
+              <name>Negatiivi</name>
+              <description>Viivat ja hahmot ovat vaaleina tummalla pohjalla.</description>
+            </value>
+            <value code="m">
+              <name>Sekalainen polariteetti</name>
+              <description>Positiivi- ja negatiivikuvien sekoitus.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Mitat</name>
+          <description>Mikrotallenteen mitat, ei kuvan.</description>
+          <values>
+            <value code="a">
+              <name>8 mm</name>
+            </value>
+            <value code="d">
+              <name>16 mm</name>
+            </value>
+            <value code="f">
+              <name>35 mm</name>
+            </value>
+            <value code="g">
+              <name>70 mm</name>
+            </value>
+            <value code="h">
+              <name>105 mm</name>
+            </value>
+            <value code="l">
+              <name>3x5 tuumaa tai 8x13 cm</name>
+            </value>
+            <value code="m">
+              <name>4x6 tuumaa tai 11x15 cm</name>
+            </value>
+            <value code="o">
+              <name>6x9 tuumaa tai 16x23 cm</name>
+            </value>
+            <value code="p">
+              <name>3 1/4 x 7 3/8 tuumaa tai 9x19 cm</name>
+              <description> Normaalikoko erityismääreelle "Aperture card".</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Pienennyskerroinalue</name>
+          <description>Tarkka pienennyskerroin tallennetaan merkkipaikkoihin 007/06-08 (Pienennyskerroin).</description>
+          <values>
+            <value code="a">
+              <name>Alhainen pienennyskerroin</name>
+              <description> Alle 16:1 (vähemmän kuin 016).</description>
+            </value>
+            <value code="b">
+              <name>Normaali pienennyskerroin</name>
+              <description> 16:1-30:1 (016-030).</description>
+            </value>
+            <value code="c">
+              <name>Korkea pienennyskerroin</name>
+              <description> 31:1-60:1 (031-060).</description>
+            </value>
+            <value code="d">
+              <name>Hyvin korkea pienennyskerroin</name>
+              <description> 61:1-90:1 (061-090).</description>
+            </value>
+            <value code="e">
+              <name>Erittäin korkea pienennyskerroin</name>
+              <description> Yli 90:1 (yli 090).</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Pienennyskerroin vaihtelee</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06-08">
+          <name>Pienennyskerroin</name>
+          <description>Tarkka pienennyskerroin merkitään kolmella numerolla. Numero tasataan oikealle ja käyttämättömissä merkkipaikoissa on nolla. Tavuviivoja käytetään pienennyskertoimen niissä kohdissa joita ei tiedetä.</description>
+          <values>
+            <value code="---">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09">
+          <name>Väritys</name>
+          <values>
+            <value code="b">
+              <name>Mustavalkoinen (tai yksivärinen)</name>
+              <description> Yksi värisävy. Sisältää kaikki läpinäkymättömät mikrokortit.</description>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+            </value>
+            <value code="m">
+              <name>Monivärisen ja yksivärisen yhdistelmä</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Filmin emulsio</name>
+          <description>Filmin valoherkän materiaalin laatu.</description>
+          <values>
+            <value code="a">
+              <name>Hopeagelatiini</name>
+            </value>
+            <value code="b">
+              <name>Diatso</name>
+            </value>
+            <value code="c">
+              <name>Vesikulaari emulsio</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen emulsio</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Käytetään läpinäkymättömille mikrokorteille.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="11">
+          <name>Sukupolvi</name>
+          <values>
+            <value code="a">
+              <name>Ensimmäinen sukupolvi, master</name>
+            </value>
+            <value code="b">
+              <name>Painomaster</name>
+              <description> Master, jota käytetään käyttökopioiden tuottamiseen.</description>
+            </value>
+            <value code="c">
+              <name>Käyttökopio</name>
+              <description> Tarkoitettu pääasiassa käyttöön eikä muiden mikrotallenteiden tuottamiseen. Tätä koodia käytetään läpinäkymättömille mikrokorteille.</description>
+            </value>
+            <value code="m">
+              <name>Sekalainen sukupolvi</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="12">
+          <name>Filmin pohjan materiaali</name>
+          <values>
+            <value code="a">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="c">
+              <name>Asetaattipohjainen</name>
+            </value>
+            <value code="d">
+              <name>Diasetaattipohjainen</name>
+            </value>
+            <value code="i">
+              <name>Nitraattipohjainen</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen (nitraatti ja nitraatiton)</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Mikrotallenne paremminkin heijastavalla kuin läpinäkyvällä pohjalla (esim. läpinäkymätön mikrokortti)</description>
+            </value>
+            <value code="p">
+              <name>Polyesteripohjainen</name>
+            </value>
+            <value code="r">
+              <name>Sekalainen</name>
+              <description> Erilaisia nitraatittomia filmejä liitettynä yhteen.</description>
+            </value>
+            <value code="t">
+              <name>Triasetaattipohjainen</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="k" repeatable="">
+      <name>(k) Kuva</name>
+      <description paragraph="1">Käytetään kaksiulotteisille kuville, joita ei ole tarkoitettu heijastettaviksi tai luettaviksi suurennuslaitteen avulla. Myös valokuvanegatiivit.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="k">
+              <name>Kuva</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="a">
+              <name>Toimintakortti, tarinakortti</name>
+            </value>
+            <value code="c">
+              <name>Kollaasi</name>
+            </value>
+            <value code="d">
+              <name>Piirustus</name>
+              <description> Alkuperäistaideteos.</description>
+            </value>
+            <value code="e">
+              <name>Maalaus</name>
+              <description> Alkuperäistaideteos.</description>
+            </value>
+            <value code="f">
+              <name>Fotomekaaninen painotuote</name>
+              <description> Esim. valokuvat, taidejäljennökset.</description>
+            </value>
+            <value code="g">
+              <name>Valokuvanegatiivi</name>
+              <description>Alkuperäisnegatiivi, joka on tarkoitettu positiivin tuottamiseen.</description>
+            </value>
+            <value code="h">
+              <name>Valokuvatuloste</name>
+            </value>
+            <value code="i">
+              <name>Kuva</name>
+              <description>Käytetään kun tarkempaa ryhmää ei tiedetä tai haluta määritellä.</description>
+            </value>
+            <value code="j">
+              <name>Painotuote</name>
+              <description>Alkuperäistaideteos, joka on tyypiltään etsaus, litografia, puupiirros jne.</description>
+            </value>
+            <value code="k">
+              <name>Juliste</name>
+            </value>
+            <value code="l">
+              <name>Tekninen piirustus</name>
+            </value>
+            <value code="n">
+              <name>Kaavio</name>
+            </value>
+            <value code="o">
+              <name>Sana- tai kuvakortti</name>
+              <description>Myös pelikortit tms.</description>
+            </value>
+            <value code="p">
+              <name>Postikortti</name>
+            </value>
+            <value code="q">
+              <name>Ikoni</name>
+            </value>
+            <value code="r">
+              <name>Röntgenkuva</name>
+              <description>Myös muut säteilyä käyttävällä menetelmällä otetut lääketieteelliset kuvat, kuten CT- ja gammakuvat.</description>
+            </value>
+            <value code="s">
+              <name>"Study print"</name>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="v">
+              <name>Valokuva, tyyppi määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> Sisältää yhdistelmät, joissa on käytetty sekä piirros- että painotekniikoita, joista mikään ei ole hallitseva.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="a">
+              <name>Yksi väri</name>
+              <description> Muu kuin musta. Ei sovellu valokuva-aineistoille.</description>
+            </value>
+            <value code="b">
+              <name>Mustavalkoinen</name>
+              <description> Erityisesti mustavalkoisille valokuville.</description>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+              <description> Myös värivalokuvat.</description>
+            </value>
+            <value code="h">
+              <name>Käsin väritetty</name>
+              <description> Koskee ainoastaan käsin väritettyä painokuvaa. Siksi esim. akvarelli koodataan <strong>c</strong>.</description>
+            </value>
+            <value code="m">
+              <name>Mustavalkoisen ja monivärisen yhdistelmä</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description> Sisältää värjätyt tai sävytetyt.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Kuvan pohjan ensisijainen materiaali</name>
+          <values>
+            <value code="a">
+              <name>Maalauskangas</name>
+            </value>
+            <value code="b">
+              <name>Maalausalusta</name>
+            </value>
+            <value code="c">
+              <name>Pahvi</name>
+            </value>
+            <value code="d">
+              <name>Lasi</name>
+            </value>
+            <value code="e">
+              <name>Synteettinen</name>
+              <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
+            </value>
+            <value code="f">
+              <name>Vuota ("Skin")</name>
+              <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
+            </value>
+            <value code="g">
+              <name>Tekstiili</name>
+              <description>Sisältää kaikki luonnonmateriaaleista valmistetut ja keinokuitukankaat, maalauskangasta lukuun ottamatta.</description>
+            </value>
+            <value code="h">
+              <name>Metalli</name>
+            </value>
+            <value code="i">
+              <name>Muovi</name>
+            </value>
+            <value code="l">
+              <name>Vinyyli</name>
+            </value>
+            <value code="n">
+              <name>Veliini</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen kokoelma</name>
+              <description> Pohjan ensisijainen materiaali vaihtelee kokoelman eri kohteissa.</description>
+            </value>
+            <value code="o">
+              <name>Paperi</name>
+              <description> Kaikki selluloosapohjaiset paperit.</description>
+            </value>
+            <value code="p">
+              <name>Kipsi</name>
+              <description> Sisältää kipsiseokset, joissa mukana maa-aineksia.</description>
+            </value>
+            <value code="q">
+              <name>Kovalevy</name>
+            </value>
+            <value code="r">
+              <name>Posliini</name>
+              <description> Vain savesta tehty posliini.</description>
+            </value>
+            <value code="s">
+              <name>Kivi</name>
+            </value>
+            <value code="t">
+              <name>Puu</name>
+              <description> Sisältää lastulevyn, mutta ei välttämättä sisällä muita puulastuihin tai -kuituihin perustuvia materiaaleja.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Nahka</name>
+            </value>
+            <value code="w">
+              <name>Pergamentti</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Kehys, tuki tai montaasi</name>
+          <values>
+            <value code="#">
+              <name>Kehys tai tukimateriaali puuttuu</name>
+            </value>
+            <value code="a">
+              <name>Maalauskangas</name>
+            </value>
+            <value code="b">
+              <name>Maalausalusta</name>
+            </value>
+            <value code="c">
+              <name>Pahvi</name>
+            </value>
+            <value code="d">
+              <name>Lasi</name>
+            </value>
+            <value code="e">
+              <name>Synteettinen</name>
+              <description>Muut keinotekoiset materiaalit kuin keinokuitukankaat, muovi ja vinyyli.</description>
+            </value>
+            <value code="f">
+              <name>Vuota ("Skin")</name>
+              <description>Ei sisällä nahkaa ("Leather"), pergamenttia eikä veliiniä.</description>
+            </value>
+            <value code="g">
+              <name>Tekstiili</name>
+              <description> Sisältää kaikki luonnonmateriaaleista valmistetut ja keinokuitukankaat, maalauskangasta lukuun ottamatta.</description>
+            </value>
+            <value code="h">
+              <name>Metalli</name>
+            </value>
+            <value code="i">
+              <name>Muovi</name>
+            </value>
+            <value code="l">
+              <name>Vinyyli</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen kokoelma</name>
+              <description> Pohjan toissijainen materiaali vaihtelee kokoelman eri kohteissa.</description>
+            </value>
+            <value code="n">
+              <name>Veliini</name>
+            </value>
+            <value code="o">
+              <name>Paperi</name>
+              <description> Kaikki selluloosapohjaiset paperit.</description>
+            </value>
+            <value code="p">
+              <name>Kipsi</name>
+              <description> Sisältää kipsiseokset, joissa mukana maa-aineksia.</description>
+            </value>
+            <value code="q">
+              <name>Kovalevy</name>
+            </value>
+            <value code="r">
+              <name>Posliini</name>
+              <description> Vain savesta tehty posliini.</description>
+            </value>
+            <value code="s">
+              <name>Kivi</name>
+            </value>
+            <value code="t">
+              <name>Puu</name>
+              <description> Sisältää lastulevyn, mutta ei välttämättä sisällä muita puulastuihin tai -kuituihin perustuvia materiaaleja.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Nahka</name>
+            </value>
+            <value code="w">
+              <name>Pergamentti</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="m" repeatable="">
+      <name>(m) Elokuva</name>
+      <description paragraph="1">Filminauhalla oleva sarja yksittäisiä kuvia (äänen kanssa tai ilman), joista muodostuu liikkeen vaikutelma heijastettaessa nopeasti peräkkäin. Videotekniikalla tallennetut elokuvat koodataan <a href="#video"> videotallenteisiin</a>.</description>
+      <description paragraph="2">Jos käytetään vain merkkipaikkoja 00-07, merkkipaikat 08-22 täytetään täyttömerkeillä (|). Jos johonkin merkkipaikkaan 08-22 annetaan jokin koodi, muutkin merkkipaikat pitää täyttää.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="m">
+              <name>Elokuva</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="c">
+              <name>Filmisilmukkakasetti</name>
+              <description> Filmi on kasettiin suljettu päättymätön silmukka, jota voidaan toistaa ilman takaisinkelausta.</description>
+            </value>
+            <value code="f">
+              <name>Filmikasetti</name>
+              <description> Filmi on kahdella kelalla kasetissa ja pitää kelata takaisin toistojen välillä.</description>
+            </value>
+            <value code="o">
+              <name>Filmirulla</name>
+              <description> Filmi ei ole kelalla, kasetilla tms.</description>
+            </value>
+            <value code="r">
+              <name>Filmikela</name>
+              <description> Filmi on avoimella kelalla, ja se esitetään projektorilla, jossa on oma vastaanottajakela. Myös ääniraita, joka on tarkoitettu muualla sijaitsevien kuvien kanssa esitettäväksi.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="b">
+              <name>Mustavalkoinen</name>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+              <description> Koskee valokuvausmenetelmällä tuotettuja värejä.</description>
+            </value>
+            <value code="h">
+              <name>Käsin väritetty</name>
+              <description> Mustavalkoinen originaalifilmi, joka on väritetty käsin.</description>
+            </value>
+            <value code="m">
+              <name>Mustavalkoisen ja monivärisen yhdistelmä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description>Koskee elokuvia, joissa on vain ääniraita.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+              <description>Sisältää värjätyt tai sävytetyt.</description>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Esitysmuoto</name>
+          <values>
+            <value code="a">
+              <name>Normaali kuvakoko, äänielokuva</name>
+              <description>Ei laajakangas.</description>
+            </value>
+            <value code="b">
+              <name>Laajakangas</name>
+              <description>Laajakangasvaikutelma ilman erikoistekniikkaa, voidaan esittää tavallisella projektorilla.</description>
+            </value>
+            <value code="c">
+              <name>Kolmiulotteinen, 3D</name>
+              <description> Yleensä esitetään kahdella projektorilla.</description>
+            </value>
+            <value code="d">
+              <name>Vaakatasossa levitetty laajakangas</name>
+              <description> Esim. Cinemascope, Techniscope. Esittämiseen tarvitaan erityisoptiikkaa.</description>
+            </value>
+            <value code="e">
+              <name>Muu esitysmuoto laajakankaalla</name>
+              <description> Esim. Cinerama, Viterama. Useita filmejä heijastetaan samanaikaisesti rinnakkain suurelle kankaalle.</description>
+            </value>
+            <value code="f">
+              <name>Mykkäelokuva, ei ääntä</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Ääni mukana tai erikseen</name>
+          <values>
+            <value code="#">
+              <name>Ei ääntä (mykkä)</name>
+            </value>
+            <value code="a">
+              <name>Ääni mukana samalla viestimellä</name>
+            </value>
+            <value code="b">
+              <name>Ääni erikseen toisella viestimellä</name>
+              <description> Esim. äänikasetti elokuvan mukana.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Äänilähde</name>
+          <description>Millaiselle viestimelle elokuvan ääni on tallennettu (joko mukana elokuvan viestimellä tai erikseen) ja millainen äänentoisto tarvitaan.</description>
+          <values>
+            <value code="#">
+              <name>Ei ääntä (mykkä)</name>
+            </value>
+            <value code="a">
+              <name>Optinen ääniraita</name>
+            </value>
+            <value code="b">
+              <name>Magneettinen ääniraita</name>
+            </value>
+            <value code="c">
+              <name>Äänisilmukkakasetti</name>
+            </value>
+            <value code="d">
+              <name>Äänilevy</name>
+            </value>
+            <value code="e">
+              <name>Magneettinen ääninauha</name>
+            </value>
+            <value code="f">
+              <name>Magneettinen äänikasetti</name>
+            </value>
+            <value code="g">
+              <name>Optinen ja magneettinen ääniraita</name>
+            </value>
+            <value code="h">
+              <name>Videonauha</name>
+            </value>
+            <value code="i">
+              <name>Videolevy</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Mitat</name>
+          <description>Filmin leveys.</description>
+          <values>
+            <value code="a">
+              <name>Standardi 8 mm</name>
+            </value>
+            <value code="b">
+              <name>Super 8 mm, Single 8 mm</name>
+            </value>
+            <value code="c">
+              <name>9,5 mm</name>
+            </value>
+            <value code="d">
+              <name>16 mm</name>
+            </value>
+            <value code="e">
+              <name>28 mm</name>
+            </value>
+            <value code="f">
+              <name>35 mm</name>
+            </value>
+            <value code="g">
+              <name>70 mm</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="08">
+          <name>Äänentoistokanavien konfiguraatio</name>
+          <values>
+            <value code="k">
+              <name>Sekalainen</name>
+            </value>
+            <value code="m">
+              <name>Yksikanavainen (mono)</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Elokuvassa ei ole ääntä tai ääni on erillisellä viestimellä.</description>
+            </value>
+            <value code="q">
+              <name>Nelikanavainen, monikanavainen tai surround</name>
+            </value>
+            <value code="s">
+              <name>Kaksikanavainen (stereo)</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09">
+          <name>Tuotantoon liittyviä tietoja</name>
+          <description>Koskee kohteita, jotka ovat peräisin tuotantoprosessista, eivät valmiista elokuvasta.</description>
+          <values>
+            <value code="a">
+              <name>Työkopio "Workprint"</name>
+              <description> Versio, jossa alkuperäistä filmausmateriaalia on editoitu lähemmäksi lopputulosta.</description>
+            </value>
+            <value code="b">
+              <name>Leikkaukset "Trims"</name>
+              <description> Työversion tekemisen jälkeen jäljelle jääneitä otosten osia.</description>
+            </value>
+            <value code="c">
+              <name>Poistot "Outtakes"</name>
+              <description> Lopullisesta versiosta hylättyjä osia.</description>
+            </value>
+            <value code="d">
+              <name>Katselukopiot "Rushes"</name>
+              <description> Ensimmäinen katseltava versio edellisen päivän kuvauksista.</description>
+            </value>
+            <value code="e">
+              <name>Miksausraidat "Mixing tracks"</name>
+              <description> Erilliset ääniraidat, jotka yhdistetään lopullista ääniraitaa varten.</description>
+            </value>
+            <value code="f">
+              <name>Otsikko- ja alkutekstirullat "Title bands, inter-title rolls"</name>
+              <description> Kuvistaan erotetut tekstit.</description>
+            </value>
+            <value code="g">
+              <name>Tuotantorullat</name>
+              <description> Erilaisia tuotannon osia ennen kuin ne on leikattu ja koostettu filmikeloille.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Polariteetti</name>
+          <description>Onko kyseessä positiivi- vai negatiivifilmi.</description>
+          <values>
+            <value code="a">
+              <name>Positiivifilmi</name>
+              <description> Värit ja värisävyt ovat samat kuin kuvatuissa kohteissa.</description>
+            </value>
+            <value code="b">
+              <name>Negatiivifilmi</name>
+              <description> Negatiivisen mustavalkofilmin värisävyt ovat päinvastaiset kuin kuvatuissa kohteissa. Negatiivisen värifilmin värisävyt toimivat täydentävänä kontrastina kuvattujen kohteiden väreille.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="11">
+          <name>Sukupolvi</name>
+          <description>Miten kaukana kuvailun kohde on alkuperäisestä aineistosta. Sukupolvitietoja käytetään hyväksi, kun arvioidaan saatavilla olevien kopioiden laatua, tehdään säilytystä koskevia päätöksiä tai identifioidaan katseluun ja tutkimukseen sopivia aineistoja.</description>
+          <values>
+            <value code="d">
+              <name>Kaksoisnegatiivi</name>
+            </value>
+            <value code="e">
+              <name>Ensikopio, master</name>
+              <description> Yleensä positiivikappale, jolla tehdään kaksoisnegatiivin kautta käyttökopioita.</description>
+            </value>
+            <value code="o">
+              <name>Alkuperäiskappale, originaali</name>
+              <description> Kamerasta otettu filmi.</description>
+            </value>
+            <value code="r">
+              <name>Referenssikappale/katselukopio</name>
+              <description> Arkistokopio eli katselukopio säilytetään vertailua tai tutkimusta varten.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="12">
+          <name>Filmin pohjan materiaali</name>
+          <values>
+            <value code="a">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="c">
+              <name>Asetaattipohjainen</name>
+            </value>
+            <value code="d">
+              <name>Diasetaattipohjainen</name>
+            </value>
+            <value code="p">
+              <name>Polyesteripohjainen</name>
+            </value>
+            <value code="r">
+              <name>Sekalainen</name>
+              <description> Erilaisia nitraatittomia filmejä liitettynä yhteen.</description>
+            </value>
+            <value code="t">
+              <name>Triasetaattipohjainen</name>
+            </value>
+            <value code="i">
+              <name>Nitraattipohjainen</name>
+            </value>
+            <value code="m">
+              <name>Sekalainen (nitraatti ja nitraatiton)</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Kuvailun kohde ei ole filminauhalla (esim. paperifilmi).</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="13">
+          <name>Tarkennettu värityksen määritys</name>
+          <description>Tarkempi kuin kohdassa 007/03 (Väritys). Koodeilla <strong>b</strong>-<strong>m</strong> on ainoastaan historiallista merkitystä.</description>
+          <values>
+            <value code="a">
+              <name>Yhtenäinen 3-kerroksinen väritys</name>
+              <description> Syaani, magenta ja keltainen. Normaali tekniikka alkaen n. vuodesta 1950.</description>
+            </value>
+            <value code="b">
+              <name>2-värinen, puna-vihreä Technicolor, samalla liuskalla</name>
+              <description> Käytettiin 1922-1936.</description>
+            </value>
+            <value code="c">
+              <name>Muu 2-värinen</name>
+              <description> Puna-sininen tai puna-vihreä.</description>
+            </value>
+            <value code="d">
+              <name>Muu 3-värinen kuin normaali</name>
+            </value>
+            <value code="e">
+              <name>Technicolor, jossa 3-liuskaväritys</name>
+              <description> Vihreä, punainen ja sininen erillisillä liuskoilla.</description>
+            </value>
+            <value code="f">
+              <name>2-liuskaväritys</name>
+              <description> Värivaikutelma syntyy kahden erillisen negatiivin yhteisvaikutuksena.</description>
+            </value>
+            <value code="g">
+              <name>Punainen, "Red strip"</name>
+            </value>
+            <value code="h">
+              <name>Sininen tai vihreä, "Blue Strip" tai "Green strip"</name>
+            </value>
+            <value code="i">
+              <name>Syaani, "Cyan strip"</name>
+            </value>
+            <value code="j">
+              <name>Magenta, "Magenta strip"</name>
+            </value>
+            <value code="k">
+              <name>Keltainen, "Yellow strip"</name>
+            </value>
+            <value code="l">
+              <name>"S E N 2"</name>
+            </value>
+            <value code="m">
+              <name>"S E N 3"</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="p">
+              <name>Seepian sävyinen mustavalkofilmi</name>
+            </value>
+            <value code="q">
+              <name>Muu sävy kuin seepia</name>
+            </value>
+            <value code="r">
+              <name>Värjätty upottamalla väriin</name>
+            </value>
+            <value code="s">
+              <name>Värjätty upottamalla ja sävytetty</name>
+            </value>
+            <value code="t">
+              <name>Sabloniväritys</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Käsin väritetty</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="14">
+          <name>Käyttökopion väritystekniikka</name>
+          <values>
+            <value code="a">
+              <name>Peräkkäinen kopiointi</name>
+              <description> Kaksi tai useampia erivärisiä kuvia kopioidaan samalle liuskalle.</description>
+            </value>
+            <value code="b">
+              <name>Yhtenäinen 3-kerroksinen väritys</name>
+              <description> Normaali tekniikka alkaen n. vuodesta 1950.</description>
+            </value>
+            <value code="c">
+              <name>Hiottu 3-kerroksinen väritys, "Low fade"</name>
+              <description> Kehitetty n. 1983. Jokainen kerros on stabilisoitu haalistumisen estämiseksi.</description>
+            </value>
+            <value code="d">
+              <name>Kaksipuolinen emulsio</name>
+              <description> Filmiliuska, jonka molemmilla puolilla on eri värinen emulsio.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="15">
+          <name>Heikentymisaste</name>
+          <description>Jos useampi koodi on sopiva, annetaan sopivista huonoin.</description>
+          <values>
+            <value code="a">
+              <name>Ei näkyvää heikentymistä</name>
+            </value>
+            <value code="b">
+              <name>Nitraatti: epäilyttävä tuoksu</name>
+            </value>
+            <value code="c">
+              <name>Nitraatti: pistävä tuoksu</name>
+            </value>
+            <value code="d">
+              <name>Nitraatti: ruskehtava, haalistunut, himmeä</name>
+            </value>
+            <value code="e">
+              <name>Nitraatti: tahmea</name>
+            </value>
+            <value code="f">
+              <name>Nitraatti: kuplia, kohoumia</name>
+            </value>
+            <value code="g">
+              <name>Nitraatti: jähmeä</name>
+            </value>
+            <value code="h">
+              <name>Nitraatti: jauhemainen</name>
+            </value>
+            <value code="k">
+              <name>Nitraatiton: havaittavissa heikentymistä (diasetaatin tuoksu)</name>
+            </value>
+            <value code="l">
+              <name>Nitraatiton: pitkälle edennyttä heikentymistä</name>
+            </value>
+            <value code="m">
+              <name>Nitraatiton: käyttökelvoton</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="16">
+          <name>Elokuvan täydellisyysaste</name>
+          <values>
+            <value code="c">
+              <name>Täydellinen</name>
+            </value>
+            <value code="i">
+              <name>Epätäydellinen</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="17-22">
+          <name>Filmin tarkastuspäivä</name>
+          <description>Kuusimerkkinen koodi ilmaisee milloin filmi on viimeksi tarkastettu; päivämäärä tallennetaan muodossa <em>vvvvkk</em> (vuosi/kuukausi). Tavuviivoja käytetään päivämäärän kohdissa, joita ei tiedetä. Jos koodausta ei tehdä, käytetään täyttömerkkejä (||||||).</description>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="o" repeatable="">
+      <name>(o) Moniviestin</name>
+      <description paragraph="1">Sisältää kahta tai useampaa aineistotyyppiä, joista mikään ei ole kokonaisuuden hallitseva osa. Esimerkiksi opetuspaketit, joissa mukana oppikirja ja kasettinauhoja.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="o">
+              <name>Moniviestin</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="q" repeatable="">
+      <name>(q) Nuottijulkaisu</name>
+      <description paragraph="1">Musiikkiteos graafisessa muodossa, painettuna tai elektronisena. Sisältää partituurit ja/tai äänet, kaavioesitykset, tabulatuurit, sattumamusiikkiohjeet, sävellyksiksi tarkoitetut kuvat tai maalaukset, mensuraalinuottikirjoituksen, "klavarskribo"-nuotinnokset, neumit, pistekirjoituksen ja muut tavat, joilla esitetään musiikillisen äänen komponentit: sävelkorkeus, kesto, sointi ja äänen voimakkuus.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="q">
+              <name>Nuottijulkaisu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="r" repeatable="">
+      <name>(r) Kaukokartoituskuva</name>
+      <description paragraph="1">Kartta tai kuva on tuotettu tallennuslaitteella, joka ei ole fyysisessä kosketuksessa kohteeseen. Tällaisia laitteita ovat esimerkiksi kamerat, tietokoneet, laserit, radiotaajuusvastaanottimet, tutkajärjestelmät, kaikuluotaimet, seismografit, painovoimamittarit, magnetometrit ja tuikelaskentamittarit.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="r">
+              <name>Kaukokartoituskuva</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Sensorin korkeus</name>
+          <description>Anturin asema kohteeseen nähden.</description>
+          <values>
+            <value code="a">
+              <name>Pinnalla</name>
+            </value>
+            <value code="b">
+              <name>Ilmassa, ilmakehässä</name>
+            </value>
+            <value code="c">
+              <name>Avaruudessa</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Sensorin asento</name>
+          <description>Missä kulmassa laite on ollut kuvattaessa.</description>
+          <values>
+            <value code="a">
+              <name>Matala viistokulma</name>
+              <description> Kulma 0-45 astetta.</description>
+            </value>
+            <value code="b">
+              <name>Korkea viistokulma</name>
+              <description> Kulma 45 asteesta ylöspäin, ei kuitenkaan pystysuora.</description>
+            </value>
+            <value code="c">
+              <name>Pystysuora</name>
+              <description> Kulma 90 astetta.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Pilvipeite kuvaushetkellä</name>
+          <values>
+            <value code="0">
+              <name>0-9 %</name>
+            </value>
+            <value code="1">
+              <name>10-19 %</name>
+            </value>
+            <value code="2">
+              <name>20-29 %</name>
+            </value>
+            <value code="3">
+              <name>30-39 %</name>
+            </value>
+            <value code="4">
+              <name>40-49 %</name>
+            </value>
+            <value code="5">
+              <name>50-59 %</name>
+            </value>
+            <value code="6">
+              <name>60-69 %</name>
+            </value>
+            <value code="7">
+              <name>70-79 %</name>
+            </value>
+            <value code="8">
+              <name>80-89 %</name>
+            </value>
+            <value code="9">
+              <name>90-100 %</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Alustan rakenne</name>
+          <description>Millaisella alustalla laite on ollut kuvattaessa. Alusta voi tässä viitata muihinkin kuin tasaisiin pintoihin.</description>
+          <values>
+            <value code="a">
+              <name>Kuumailmapallo</name>
+              <description> Myös muut ilmakehää kevyemmät.</description>
+            </value>
+            <value code="b">
+              <name>Ilma-alus--matala korkeus</name>
+              <description> Alle 9 000 metriä.</description>
+            </value>
+            <value code="c">
+              <name>Ilma-alus--keskikorkeus</name>
+              <description> 9 000 - 15 000 metriä.</description>
+            </value>
+            <value code="d">
+              <name>Ilma-alus--korkea korkeus</name>
+              <description> Yli 15 000 metriä.</description>
+            </value>
+            <value code="e">
+              <name>Miehitetty avaruusalus</name>
+            </value>
+            <value code="f">
+              <name>Miehittämätön avaruusalus</name>
+            </value>
+            <value code="g">
+              <name>Maa-alusta</name>
+            </value>
+            <value code="h">
+              <name>Veden pinta</name>
+            </value>
+            <value code="i">
+              <name>Vedenalainen</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Alustan käyttötarkoitus</name>
+          <description>Merkkipaikaan 007/06 (Alustan rakenne) merkityn alustan pääasiallinen käyttötarkoitus.</description>
+          <values>
+            <value code="a">
+              <name>Meteorologinen</name>
+            </value>
+            <value code="b">
+              <name>Pinnan tarkkailu</name>
+            </value>
+            <value code="c">
+              <name>Avaruuden tarkkailu</name>
+            </value>
+            <value code="m">
+              <name>Sekalaisia käyttötarkoituksia</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="08">
+          <name>Sensorin tyyppi</name>
+          <description>Kaukokartoituslaitteen tallennustapa, onko sensori tekemisissä lähetyksen kanssa.</description>
+          <values>
+            <value code="a">
+              <name>Aktiivinen</name>
+              <description> Mittaa heijastuneita kaikuja signaaleista, jotka se itse lähettää.</description>
+            </value>
+            <value code="b">
+              <name>Passiivinen</name>
+              <description> Mittaa saapuvia signaaleja vaikuttamatta itse kuvauksen kohteeseen.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09-10">
+          <name>Datan tyyppi</name>
+          <description>Onko kaukokartoituslaitteen vastaanottama data tyypiltään spektristä, akustista vai magneettista. Voidaan käyttää määrittämään sekä mitatun säteilyn aallon pituutta että mittauksessa käytetyn sensorin tyyppiä.</description>
+          <values>
+            <value code="aa">
+              <name>Näkyvä valo</name>
+            </value>
+            <value code="da">
+              <name>Lähi-infrapuna</name>
+            </value>
+            <value code="db">
+              <name>Keski-infrapuna</name>
+            </value>
+            <value code="dc">
+              <name>Kaukoinfrapuna</name>
+            </value>
+            <value code="dd">
+              <name>Lämpöinfrapuna</name>
+            </value>
+            <value code="de">
+              <name>Lyhytaaltoinfrapuna (SWIR)</name>
+            </value>
+            <value code="df">
+              <name>Heijastusinfrapuna</name>
+            </value>
+            <value code="dv">
+              <name>Yhdistelmät</name>
+            </value>
+            <value code="dz">
+              <name>Muu infrapunadata</name>
+            </value>
+            <value code="ga">
+              <name>Sivukulmatutka (SLAR)</name>
+            </value>
+            <value code="gb">
+              <name>Synteettisen aukon tutka (SAR) - yksitaajuus</name>
+            </value>
+            <value code="gc">
+              <name>SAR-monitaajuus (monikanava)</name>
+            </value>
+            <value code="gd">
+              <name>SAR-tutkan omainen polarisaatio</name>
+            </value>
+            <value code="ge">
+              <name>SAR-leikkauspolarisaatio</name>
+            </value>
+            <value code="gf">
+              <name>Infometrinen SAR</name>
+            </value>
+            <value code="gg">
+              <name>Polarmetrinen SAR</name>
+            </value>
+            <value code="gu">
+              <name>Passiivinen mikroaaltokartoitus</name>
+            </value>
+            <value code="gz">
+              <name>Muu mikroaaltodata</name>
+            </value>
+            <value code="ja">
+              <name>Kaukoultravioletti</name>
+            </value>
+            <value code="jb">
+              <name>Keskiultravioletti</name>
+            </value>
+            <value code="jc">
+              <name>Lähiultravioletti</name>
+            </value>
+            <value code="jv">
+              <name>Ultraviolettiyhdistelmät</name>
+            </value>
+            <value code="jz">
+              <name>Muu ultraviolettidata</name>
+            </value>
+            <value code="ma">
+              <name>Monispektrinen</name>
+            </value>
+            <value code="mb">
+              <name>Moniajallinen</name>
+            </value>
+            <value code="mm">
+              <name>Eri datatyyppien yhdistelmä</name>
+            </value>
+            <value code="nn">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="pa">
+              <name>Kaikuluotaus--veden syvyys</name>
+            </value>
+            <value code="pb">
+              <name>Kaikuluotaus--pohjan pinnanmuodostus, sivukuvaus</name>
+            </value>
+            <value code="pc">
+              <name>Kaikuluotaus--pohjan pinnanmuodostus, läheltä pintaa</name>
+            </value>
+            <value code="pd">
+              <name>Kaikuluotaus--pohjan pinnanmuodostus, läheltä pohjaa</name>
+            </value>
+            <value code="pe">
+              <name>Seismiset tutkimukset</name>
+            </value>
+            <value code="pz">
+              <name>Muu akustinen data</name>
+            </value>
+            <value code="ra">
+              <name>Painovoimapoikkeama</name>
+            </value>
+            <value code="rb">
+              <name>Free-air</name>
+            </value>
+            <value code="rc">
+              <name>Bouger</name>
+            </value>
+            <value code="rd">
+              <name>Isostaattinen</name>
+            </value>
+            <value code="sa">
+              <name>Magneettikenttä</name>
+            </value>
+            <value code="ta">
+              <name>Radiometriset tutkimukset</name>
+            </value>
+            <value code="uu">
+              <name>Tuntematon</name>
+            </value>
+            <value code="zz">
+              <name>Muu</name>
+            </value>
+            <value code="||">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="s" repeatable="">
+      <name>(s) Äänite</name>
+      <description paragraph="1">Levy, nauha, filmi, lieriö tai lanka, jolle on tallennettu äänen värähtelyä siten että ääni voidaan toistaa. Lisäksi paperirullat, joihin musiikkisävellyksen nuotit on rei'itetty ja joista ääntä voidaan tuottaa mekaanisesti.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="s">
+              <name>Äänite</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="d">
+              <name>Äänilevy</name>
+              <description> Sekä analogiset että digitaaliset.</description>
+            </value>
+            <value code="e">
+              <name>Äänilieriö</name>
+            </value>
+            <value code="g">
+              <name>Äänisilmukkakasetti</name>
+              <description> Sisältää päättymättömän ääninauhasilmukan.</description>
+            </value>
+            <value code="i">
+              <name>Ääniraitafilmi</name>
+              <description> Ei koske heijastettavien kuvien mukana seuraavaa ääniraitaa.</description>
+            </value>
+            <value code="q">
+              <name>Rulla</name>
+              <description> Mekaaniselle pianolle tms.</description>
+            </value>
+            <value code="s">
+              <name>Äänikasetti</name>
+              <description> Sisältää kaksi kelaa.</description>
+            </value>
+            <value code="t">
+              <name>Ääninauhakela</name>
+              <description> Avoin kela, joka vaatii toistolaitteistolta tyhjän kelan.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="w">
+              <name>Lankaäänite</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Nopeus</name>
+          <description>Levyn soitto/pyörimisnopeus.</description>
+          <values>
+            <value code="a">
+              <name>16 kierrosta minuutissa</name>
+            </value>
+            <value code="b">
+              <name>33 1/3 kierrosta minuutissa</name>
+            </value>
+            <value code="c">
+              <name>45 kierrosta minuutissa</name>
+            </value>
+            <value code="d">
+              <name>78 kierrosta minuutissa</name>
+            </value>
+            <value code="e">
+              <name>8 kierrosta minuutissa</name>
+            </value>
+            <value code="f">
+              <name>1,4 metriä sekunnissa</name>
+            </value>
+            <value code="h">
+              <name>120 kierrosta minuutissa</name>
+            </value>
+            <value code="i">
+              <name>160 kierrosta minuutissa</name>
+            </value>
+            <value code="k">
+              <name>15/16 tuumaa sekunnissa</name>
+            </value>
+            <value code="l">
+              <name>1 7/8 tuumaa sekunnissa</name>
+            </value>
+            <value code="m">
+              <name>3 3/4 tuumaa sekunnissa</name>
+            </value>
+            <value code="o">
+              <name>7 1/2 tuumaa sekunnissa</name>
+            </value>
+            <value code="p">
+              <name>15 tuumaa sekunnissa</name>
+            </value>
+            <value code="r">
+              <name>30 tuumaa sekunnissa</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Äänentoistokanavien konfiguraatio</name>
+          <values>
+            <value code="m">
+              <name>Yksikanavainen (mono)</name>
+            </value>
+            <value code="q">
+              <name>Nelikanavainen stereo</name>
+            </value>
+            <value code="s">
+              <name>Kaksikanavainen stereo</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Uran leveys tai kaltevuus</name>
+          <description>Uran leveys äänilevyssä tai uran kaltevuus äänilieriössä.</description>
+          <values>
+            <value code="m">
+              <name>Mikroura, ohut</name>
+              <description> Yleensä koskee 16, 33 ja 45 kierroksen levyjä.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Yleensä koskee ääninauhoja ja CD-levyjä.</description>
+            </value>
+            <value code="s">
+              <name>Karhea, standardi</name>
+              <description> Yleensä koskee rullia ja 78 kierroksen levyjä.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Mitat</name>
+          <description>Kelan tai levyn halkaisija, tai kasetin tai lieriön mitat.</description>
+          <values>
+            <value code="a">
+              <name>3 tuumaa</name>
+            </value>
+            <value code="b">
+              <name>5 tuumaa</name>
+            </value>
+            <value code="c">
+              <name>7 tuumaa</name>
+            </value>
+            <value code="d">
+              <name>10 tuumaa</name>
+            </value>
+            <value code="e">
+              <name>12 tuumaa</name>
+            </value>
+            <value code="f">
+              <name>16 tuumaa</name>
+            </value>
+            <value code="g">
+              <name>4 3/4 tuumaa tai 12 cm</name>
+            </value>
+            <value code="j">
+              <name>3 7/8 x 2 1/2 tuumaa</name>
+            </value>
+            <value code="o">
+              <name>5 1/4 x 3 7/8 tuumaa</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="s">
+              <name>2 3/4 x 4 tuumaa</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Nauhan leveys</name>
+          <values>
+            <value code="l">
+              <name>1/8 tuumaa</name>
+              <description> Standardi kaseteille.</description>
+            </value>
+            <value code="m">
+              <name>1/4 tuumaa</name>
+              <description> Tavallisin avoimille keloille.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="o">
+              <name>1/2 tuumaa</name>
+              <description> Tavallinen ammattimaisissa äänitteissä.</description>
+            </value>
+            <value code="p">
+              <name>1 tuuma</name>
+              <description> Studioäänitteet.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="08">
+          <name>Nauhan raitojen lukumäärä</name>
+          <values>
+            <value code="a">
+              <name>1 raita</name>
+            </value>
+            <value code="b">
+              <name>2 raitaa</name>
+              <description> Käytetään stereona yhteen suuntaan ja monona kahteen suuntaan.</description>
+            </value>
+            <value code="c">
+              <name>4 raitaa</name>
+              <description> Käytetään kaksikanavaisena stereona yhteen suuntaan tai nelikanavaisena stereona yhteen suuntaan.</description>
+            </value>
+            <value code="d">
+              <name>8 raitaa</name>
+            </value>
+            <value code="e">
+              <name>12 raitaa</name>
+            </value>
+            <value code="f">
+              <name>16 raitaa</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="09">
+          <name>Levyn, lieriön tai nauhan tyyppi tai sukupolvi</name>
+          <values>
+            <value code="a">
+              <name>Masternauha</name>
+              <description> Lopullinen tuotantonauha, josta valmistetaan levymaster tai nauhojen monistusmaster.</description>
+            </value>
+            <value code="b">
+              <name>Nauhojen monistusmaster</name>
+              <description> Ääninauha, joka on tuotettu masternauhasta.</description>
+            </value>
+            <value code="d">
+              <name>Levymaster (negatiivi)</name>
+              <description> Negatiivista levymasteria käytetään valmistettaessa emomatriisi, josta voidaan valmistaa käyttökelpoisempia ja kestävämpiä metallimatriiseja.</description>
+            </value>
+            <value code="i">
+              <name>Tallennettu välittömästi tapahtumapaikalla</name>
+            </value>
+            <value code="m">
+              <name>Massatuotettu</name>
+              <description> Myös levyt tai nauhat, joita on julkaistu rajoitettuna puristuksina tai yksityisenä rajoitettuna jakeluna.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="r">
+              <name>Emomatriisi (positivi)</name>
+              <description> Levymasterista puristettu tarkka kopio alkuperäisestä levystä, josta valmistetaan metallimatriisi jakeluun menevien levyjen puristusta varten.</description>
+            </value>
+            <value code="s">
+              <name>Matriisi (negatiivi)</name>
+              <description> Emomatriisista galvanoimalla tuotettu negatiivinen metalliosa, josta voidaan puristaa 500-750 levyä.</description>
+            </value>
+            <value code="t">
+              <name>Koepuriste</name>
+              <description> Rajoitetun puristuksen tuloksena joko yksi tai muutama levy, jotka on tarkoitettu tutkittavaksi kuulonvaraisesti ennen kuin puristusta jatketaan.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+              <description> Käytetään myös kun ei voida määritellä onko kyseessä välittömästi tapahtumapaikalla tehty tallennus vai massatuotanto.</description>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Valmistusmateriaali</name>
+          <values>
+            <value code="a">
+              <name>Lakkapinnoite</name>
+            </value>
+            <value code="b">
+              <name>Selluloosanitraatti</name>
+            </value>
+            <value code="c">
+              <name>Rautaoksidilla käsitelty asetaattinauha</name>
+            </value>
+            <value code="g">
+              <name>Lakattu lasi</name>
+            </value>
+            <value code="i">
+              <name>Lakattu alumiini</name>
+            </value>
+            <value code="l">
+              <name>Metalli</name>
+            </value>
+            <value code="m">
+              <name>Muovi ja metalli</name>
+              <description> Esim. CD-levy (metallifolio muovin päällä).</description>
+            </value>
+            <value code="p">
+              <name>Muovi</name>
+              <description> Esim. vinyyli (33 ja 45 kierroksen levyt).</description>
+            </value>
+            <value code="r">
+              <name>Lakattu tai rautaoksidilla käsitelty paperi</name>
+            </value>
+            <value code="s">
+              <name>Luonnonhartsi (sellakka)</name>
+              <description> Esim. 78 kierroksen levyt.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="w">
+              <name>Vaha</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="11">
+          <name>Leikkaustapa</name>
+          <description>Miten levyn urat on tehty.</description>
+          <values>
+            <value code="h">
+              <name>Pystysuora, kukkula-ja-laakso -leikkaus</name>
+            </value>
+            <value code="l">
+              <name>Vaakasuora tai yhdistetty leikkaus</name>
+              <description> Yksikanavaisilla levyillä on vaakasuora leikkaus, stereolevyissä on yleensä yhdistetty leikkaus.</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Tallenteet, joissa ei ole neulalla seurattavaa uraa. Esim. kasettinauhat ja CD-levyt.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="12">
+          <name>Äänentoiston erityispiirteet</name>
+          <description>Myös erikoislaitteet tai tasaus, joita tarvitaan kunnolliseen äänentoistoon. Koodilla ei ilmaista äänitteen valmistuksen aikana käytettyjä prosesseja, ellei niillä ole merkitystä äänentoiston kannalta.</description>
+          <values>
+            <value code="a">
+              <name>NAB-standardi</name>
+              <description> National Association of Broadcasters.</description>
+            </value>
+            <value code="b">
+              <name>CCIR-standardi</name>
+              <description> Comit, consultatif de la radiodiffusion.</description>
+            </value>
+            <value code="c">
+              <name>Dolby-B</name>
+            </value>
+            <value code="d">
+              <name>DBX</name>
+            </value>
+            <value code="e">
+              <name>Digitaalinen</name>
+            </value>
+            <value code="f">
+              <name>Dolby-A</name>
+            </value>
+            <value code="g">
+              <name>Dolby-C</name>
+            </value>
+            <value code="h">
+              <name>CX</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="13">
+          <name>Tallennus- ja säilytystekniikka</name>
+          <description>Miten ääni alunperin tallennettiin ja varastoitiin. Uudelleenjulkaistu äänite koodataan sen mukaan, miten ääni alunperin tallennettiin ja varastoitiin.</description>
+          <values>
+            <value code="a">
+              <name>Akustinen tallennus, suora varastointi</name>
+              <description> Levy- tai lieriöäänite, joka on tallennettu käyttäen kuulotorvea ja välikalvoa sekä varastoitu suoraan masterin pinnalle (useimmat on tehty ennen vuosia 1927/29).</description>
+            </value>
+            <value code="b">
+              <name>Suora varastointi, ei akustinen</name>
+              <description> Sähkölaitteita käyttäen tehty levytallennus, varastoitu suoraan masterin pinnalle. Kaikki äänitteet, jotka on tehty mikrofoneilla tai muilla sähkölaitteilla ennen 1940-luvulla kehitettyä magneettiäänitetekniikkaa, varastoitiin suoraan.</description>
+            </value>
+            <value code="d">
+              <name>Digitaalinen varastointi</name>
+              <description> Sähköinen tallennus ja varastointi digitaalitekniikalla. Vanhojen äänitteiden digitaalista päivitystä ei koodata tällä.</description>
+            </value>
+            <value code="e">
+              <name>Analoginen sähköinen varastointi</name>
+              <description> Sähkötekniikalla tallennettu äänite, joka on varastoitu sykäyksinä magneettipinnalle. Suurin osa äänitteistä jotka on tehty aikajaksolla 1940-luvun lopulta 1980-luvun alkuun ovat analogisia sähköisiä tallenteita.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="t" repeatable="">
+      <name>(t) Teksti</name>
+      <description paragraph="1">Silmin luettava painettu tai käsin kirjoitettu teksti.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="t">
+              <name>Teksti</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="a">
+              <name>Tavanomainen painotuote</name>
+            </value>
+            <value code="b">
+              <name>Isoteksti</name>
+            </value>
+            <value code="c">
+              <name>Pistekirjoitus, Braillen kirjoitus</name>
+            </value>
+            <value code="d">
+              <name>Teksti irtolehtikansiossa</name>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="v" repeatable="">
+      <name>(v) Videotallenne</name>
+      <description paragraph="1">(Liikkuvista) visuaalisista kuvista koostuva, yleensä myös ääntä sisältävä tallenne, joka on suunniteltu toistettavaksi televisiovastaanottimen tai videomonitorin kautta.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="v">
+              <name>Videotallenne</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="c">
+              <name>Videosilmukkakasetti</name>
+              <description> Sisältää päättymättömän videonauhan, jolla on yksi videotallenne.</description>
+            </value>
+            <value code="d">
+              <name>Videolevy</name>
+            </value>
+            <value code="f">
+              <name>Videokasetti</name>
+            </value>
+            <value code="r">
+              <name>Videokela</name>
+              <description> Avoin kela.</description>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="02">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="03">
+          <name>Väritys</name>
+          <values>
+            <value code="a">
+              <name>Yksi väri</name>
+            </value>
+            <value code="b">
+              <name>Mustavalkoinen</name>
+            </value>
+            <value code="c">
+              <name>Monivärinen</name>
+            </value>
+            <value code="m">
+              <name>Mustavalkoisen ja monivärisen yhdistelmä</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Kohteessa ei ole kuvia, esim. videotallenne jossa on vain ääntä.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="04">
+          <name>Videojärjestelmä</name>
+          <values>
+            <value code="a">
+              <name>Beta (1/2 tuuman videokasetti)</name>
+            </value>
+            <value code="b">
+              <name>VHS (1/2 tuuman videokasetti)</name>
+            </value>
+            <value code="c">
+              <name>U-matic (3/4 tuuman videokasetti)</name>
+            </value>
+            <value code="d">
+              <name>EIAJ (1/2 tuuman kela)</name>
+            </value>
+            <value code="e">
+              <name>C-formaatti (1 tuuman kela)</name>
+            </value>
+            <value code="f">
+              <name>Quadruplex (1 tai 2 tuuman kela)</name>
+            </value>
+            <value code="g">
+              <name>Optinen videolevy, Laserdisc</name>
+            </value>
+            <value code="h">
+              <name>CED-videolevy (Capacitance Electronic Disc)</name>
+            </value>
+            <value code="i">
+              <name>Betacam (1/2 tuuman videokasetti)</name>
+            </value>
+            <value code="j">
+              <name>Betacam SP (1/2 tuuman videokasetti)</name>
+            </value>
+            <value code="k">
+              <name>Super-VHS (1/2 tuuman videokasetti)</name>
+            </value>
+            <value code="m">
+              <name>M-II (1/2 tuuman videokasetti)</name>
+            </value>
+            <value code="o">
+              <name>D-2 (3/4 tuuman videokasetti)</name>
+            </value>
+            <value code="p">
+              <name>8 mm</name>
+            </value>
+            <value code="q">
+              <name>Hi-8</name>
+            </value>
+            <value code="s">
+              <name>Blu-ray-levy</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>DVD</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="05">
+          <name>Ääni mukana tai erikseen</name>
+          <values>
+            <value code="#">
+              <name>Ei ääntä (mykkä)</name>
+            </value>
+            <value code="a">
+              <name>Ääni mukana samalla viestimellä</name>
+            </value>
+            <value code="b">
+              <name>Ääni erikseen toisella viestimellä</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Äänilähde</name>
+          <description>Millaiselle viestimelle elokuvan ääni on tallennettu (joko mukana elokuvan viestimellä tai erikseen) ja millainen äänentoisto tarvitaan.</description>
+          <values>
+            <value code="#">
+              <name>Ei ääntä (mykkä)</name>
+            </value>
+            <value code="a">
+              <name>Optinen ääniraita</name>
+            </value>
+            <value code="b">
+              <name>Magneettinen ääniraita</name>
+            </value>
+            <value code="c">
+              <name>Äänisilmukkakasetti</name>
+            </value>
+            <value code="d">
+              <name>Äänilevy</name>
+            </value>
+            <value code="e">
+              <name>Magneettinen ääninauha</name>
+            </value>
+            <value code="f">
+              <name>Magneettinen äänikasetti</name>
+            </value>
+            <value code="g">
+              <name>Optinen ja magneettinen ääniraita</name>
+            </value>
+            <value code="h">
+              <name>Videonauha</name>
+            </value>
+            <value code="i">
+              <name>Videolevy</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07">
+          <name>Mitat</name>
+          <description>Videotallenteen nauhan leveys.</description>
+          <values>
+            <value code="a">
+              <name>8 mm</name>
+            </value>
+            <value code="m">
+              <name>1/4 tuumaa</name>
+            </value>
+            <value code="o">
+              <name>1/2 tuumaa</name>
+            </value>
+            <value code="p">
+              <name>1 tuuma</name>
+            </value>
+            <value code="q">
+              <name>2 tuumaa</name>
+            </value>
+            <value code="r">
+              <name>3/4 tuumaa</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+        <position pos="08">
+          <name>Äänentoistokanavien konfiguraatio</name>
+          <values>
+            <value code="k">
+              <name>Sekalainen</name>
+            </value>
+            <value code="m">
+              <name>Yksikanavainen (mono)</name>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
+              <description> Videotallenteessa ei ole ääntä tai ääni on erillisellä viestimellä.</description>
+            </value>
+            <value code="q">
+              <name>Nelikanavainen, monikanavainen tai surround</name>
+            </value>
+            <value code="s">
+              <name>Kaksikanavainen (stereo)</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+    <controlfield tag="007" type="z" repeatable="">
+      <name>(z) Määrittelemätön</name>
+      <description paragraph="1">Kohteen ulkoasu ei sovi mihinkään muuhun kentän 007 aineistoluokkaan. Tätä luokkaa käytetään myös kohteille joilla on useita ulkoasuja ja joita ei kuvailla erillisissä 007-kentissä.</description>
+      <positions>
+        <position pos="00">
+          <name>Aineistoluokka</name>
+          <values>
+            <value code="z">
+              <name>Määrittelemätön</name>
+            </value>
+          </values>
+        </position>
+        <position pos="01">
+          <name>Aineiston erityismääre</name>
+          <values>
+            <value code="m">
+              <name>Useita ulkoasuja</name>
+            </value>
+            <value code="u">
+              <name>Määrittelemätön</name>
+            </value>
+            <value code="z">
+              <name>Muu</name>
+            </value>
+            <value code="|">
+              <name>Ei koodattu</name>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </controlfield>
+  </controlfields>
+</fields>

@@ -1,0 +1,950 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Auktoriteettitiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		AUKTORITEETTITIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 20.6.2013.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Katso myös -viittausten kentät (5XX)</h2>
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Katso myös -viittausten kenttiä 500-585 käytetään 1XX-kentässä esiintyvään otsikkomuotoon liittyville muille ohjeellisille
+         otsikkomuodoille. Yleistä tietoa näistä tietoelementeistä löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.
+      </p>
+      <ul>
+         <li><a href="#500">500 - KATSO MYÖS -VIITTAUS - HENKILÖNNIMI</a> (T)
+         </li>
+         <li><a href="#510">510 - KATSO MYÖS -VIITTAUS - YHTEISÖNNIMI</a> (T)
+         </li>
+         <li><a href="#511">511 - KATSO MYÖS -VIITTAUS - KOKOUKSEN NIMI</a> (T)
+         </li>
+         <li><a href="#530">530 - KATSO MYÖS -VIITTAUS - YHTENÄISTETTY NIMEKE</a> (T)
+         </li>
+         <li><a href="#548">548 - KATSO MYÖS -VIITTAUS - AIKAA ILMAISEVA TERMI</a> (T)
+         </li>
+         <li><a href="#550">550 - KATSO MYÖS -VIITTAUS - AIHETTA ILMAISEVA TERMI</a> (T)
+         </li>
+         <li><a href="#551">551 - KATSO MYÖS -VIITTAUS - MAANTIETEELLINEN NIMI</a> (T)
+         </li>
+         <li><a href="#555">555 - KATSO MYÖS -VIITTAUS - LAJITYYPPIÄ/MUOTOA ILMAISEVA TERMI</a> (T)
+         </li>
+         <li><a href="#562">562 - KATSO MYÖS -VIITTAUS - ESIINTYMISKOKOONPANOA ILMAISEVA TERMI</a> (T)
+         </li>
+         <li><a href="#580">580 - KATSO MYÖS -VIITTAUS - YLEINEN LISÄMÄÄRE</a> (T)
+         </li>
+         <li><a href="#581">581 - KATSO MYÖS -VIITTAUS - MAANTIETEELLINEN LISÄMÄÄRE</a> (T)
+         </li>
+         <li><a href="#582">582 - KATSO MYÖS -VIITTAUS - AIKAA ILMAISEVA LISÄMÄÄRE</a> (T)
+         </li>
+         <li><a href="#585">585 - KATSO MYÖS -VIITTAUS - MUOTOA ILMAISEVA LISÄMÄÄRE</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="500"></a>500 - KATSO MYÖS -VIITTAUS - HENKILÖNNIMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus henkilönnimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia
+         tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien
+         selitykset kentästä <a href="1XX.htm#100">100</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto
+            <ul>
+               <li><strong>0</strong> - Nimen osien järjestys suora
+               </li>
+               <li><strong>1</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>3</strong> - Suvun nimi
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Henkilönnimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Numerointi (ET)
+         </li>
+         <li><strong>‡c</strong> - Arvonimet ja muut nimeen liittyvät sanat (T)
+         </li>
+         <li><strong>‡d</strong> - Nimeen liittyvät aikamääreet (ET)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡j</strong> - Nimen määrite (T)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡q</strong> - Henkilönnimen täydellisempi muoto (ET)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>500 1#‡w</strong>g<strong>‡a</strong>Long, Robert Alexander,<strong>‡d</strong>1850-1934<strong>‡x</strong>Homes and haunts<strong>‡z</strong>Missouri
+      </p>
+      <p><strong>500 1#‡a</strong>Fauré, Gabriel,<strong>‡d</strong>1845-1924.<strong>‡t</strong>Ballades,<strong>‡m</strong>piano<strong>‡n</strong>op. 19
+      </p>
+      <p><strong>500 3#‡a</strong>Horn family
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="510"></a>510 - KATSO MYÖS -VIITTAUS - YHTEISÖNNIMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus yhteisönimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia
+         tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien
+         selitykset kentästä <a href="1XX.htm#110">110</a>.
+      </p>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Yhteisönnimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Alayksikkö (T)
+         </li>
+         <li><strong>‡c</strong> - Kokouksen paikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Kokouksen tai sopimuksen allekirjoittamisen aika (T)
+         </li>
+         <li><strong>‡e</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Kokouksen numero tai muu numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>510 1#‡w</strong>a<strong>‡a</strong>Missouri.<strong>‡b</strong>State Highway Patrol.<strong>‡b</strong>Criminal Records Section
+      </p>
+      <p><strong>510 2#‡w</strong>anna<strong>‡a</strong>Karachi Entomological Society
+      </p>
+      <p><strong>510 2#‡w</strong>b<strong>‡a</strong>Oklahoma Council on Juvenile Delinquency
+      </p>
+      <p><strong>510 2#‡w</strong>b<strong>‡a</strong>Association for Computing Machinery.<strong>‡b</strong>Special Interest Group on Small and Personal Computing Systems and Applications
+      </p>
+      <p><strong>510 1#‡w</strong>a<strong>‡a</strong>Maryland.<strong>‡b</strong>Air Quality Programs
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="511"></a>511 - KATSO MYÖS -VIITTAUS - KOKOUKSEN NIMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus kokouksen nimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia
+         tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien
+         selitykset kentästä <a href="1XX.htm#111">111</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Nimikirjauksen muoto
+            <ul>
+               <li><strong>0</strong> - Nimen osien järjestys käänteinen
+               </li>
+               <li><strong>1</strong> - Hallintoalueen nimi
+               </li>
+               <li><strong>2</strong> - Nimen osien järjestys on suora
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Kokouksen tai hallintoalueen nimi (ET)
+         </li>
+         <li><strong>‡c</strong> - Kokouksen paikka (ET)
+         </li>
+         <li><strong>‡d</strong> - Kokouksen aika (ET)
+         </li>
+         <li><strong>‡e</strong> - Alayksikkö (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡j</strong> - Funktiotermi (T)
+         </li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡n</strong> - Kokouksen numero tai muu numerointitieto (T)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡q</strong> - Hallintoalueen nimeä seuraava kokouksen nimi (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>511 2#‡w</strong>a<strong>‡a</strong>International Drip Irrigation Meeting
+      </p>
+      <p><strong>511 2#‡w</strong>b<strong>‡a</strong>International Drip/Trickle Irrigation Congress
+      </p>
+      <p><strong>511 2#‡w</strong>a<strong>‡a</strong>Colloque européen de droit rural
+      </p>
+      <p><strong>511 2#‡w</strong>b<strong>‡a</strong>Entretiens de Bichat Pitié-Salpétrière
+      </p>
+      <p><strong>511 2#‡a</strong>Mexico-United States Interparliamentary Conference.<strong>‡e</strong>Delegations
+      </p>
+      <p><strong>511 2#‡w</strong>a<strong>‡a</strong>AIC Seminar.<strong>‡t</strong>Proceedings
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="530"></a>530 - KATSO MYÖS -VIITTAUS - YHTENÄISTETTY NIMEKE (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus yhtenäistetystä nimekkeestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee
+         seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien
+         osakenttien selitykset kentästä <a href="1XX.htm#130">130</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - <a href="../ohitus.htm">Ohitusindikaattori</a><ul>
+               <li><strong>0-9</strong> - Ohitettavien merkkien määrä
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Yhtenäistetty nimeke (ET)
+         </li>
+         <li><strong>‡d</strong> - Sopimuksen allekirjoittamisen aika (T)
+         </li>
+         <li><strong>‡f</strong> - Teoksen julkaisuaika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (ET)
+         </li>
+         <li><strong>‡h</strong> - Aineiston yleismääre (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡k</strong> - Muotoa kuvaava kokoava nimeke (T)
+         </li>
+         <li><strong>‡l</strong> - Teoksen kieli (ET)
+         </li>
+         <li><strong>‡m</strong> - Musiikin esityskokoonpano (T)
+         </li>
+         <li><strong>‡n</strong> - Numerointitieto (T)
+         </li>
+         <li><strong>‡o</strong> - Musiikin sovitusmerkintö (ET)
+         </li>
+         <li><strong>‡p</strong> - Teoksen osan nimeke (T)
+         </li>
+         <li><strong>‡r</strong> - Sävellaji (ET)
+         </li>
+         <li><strong>‡s</strong> - Versio (ET)
+         </li>
+         <li><strong>‡t</strong> - Teoksen nimeke (ET)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>530 #0‡a</strong>Dead Sea scrolls
+      </p>
+      <p><strong>530 #0‡a</strong>Reviews of national policies for education
+      </p>
+      <p><strong>530 #0‡w</strong>b<strong>‡a</strong>Data report (Maryland. Air Management Administration)
+      </p>
+      <p><strong>530 #0‡a</strong>Collection Cinéma d'aujourd'hui.<strong>‡p</strong>Dossiers
+      </p>
+      <p><strong>530 #0‡w</strong>b<strong>‡a</strong>Publicaciones del Archivo Histórico de la Provincia de Buenos Aires "Ricardo Levene."<strong>‡n</strong>III,<strong>‡p</strong>Documentos del archivo
+      </p>
+      <p><strong>530 #0‡w</strong>g<strong>‡a</strong>Vedas<strong>‡x</strong>Criticism, interpretation, etc.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="548"></a>548 - KATSO MYÖS -VIITTAUS - AIKAA ILMAISEVA TERMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus aikaa ilmaisevasta termistä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee
+         seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien
+         osakenttien selitykset kentästä <a href="1XX.htm#148">148</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Aikaa ilmaiseva termi (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>548 ##‡a</strong>1700-1799
+      </p>
+      <p><strong>548 ##‡a</strong>1800-1899
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="550"></a>550 - KATSO MYÖS -VIITTAUS - AIHETTA ILMAISEVA TERMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus aihetta ilmaisevasta termistä siihen liittyvään vahvistettuun otsikkomuotoon.
+         Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja
+         useimpien osakenttien selitykset kentästä <a href="1XX.htm#150">150</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Aihetta ilmaiseva termi tai maantieteellinen nimi (ET)
+         </li>
+         <li><strong>‡b</strong> - Maantieteellistä nimeä seuraava aihetta ilmaiseva termi (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>550 ##‡w</strong>g<strong>‡a</strong>God
+      </p>
+      <p><strong>550 ##‡w</strong>g<strong>‡a</strong>Indians of North America<strong>‡x</strong>Wars<strong>‡y</strong>1862-1865
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="551"></a>551 - KATSO MYÖS -VIITTAUS - MAANTIETEELLINEN NIMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus maantieteellisestä nimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee
+         seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien
+         osakenttien selitykset kentästä <a href="1XX.htm#151">151</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Maantieteellinen nimi (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>551 ##‡a</strong>Belgrano (Buenos Aires, Argentina)
+      </p>
+      <p><strong>551 ##‡a</strong>Kensington and Chelsea (London, England)
+      </p>
+      <p><strong>551 ##‡a</strong>London (England)
+      </p>
+      <p><strong>551 ##‡w</strong>g<strong>‡a</strong>Arctic Ocean
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="555"></a>555 - KATSO MYÖS -VIITTAUS - LAJITYYPPIÄ/MUOTOA ILMAISEVA TERMI (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus lajityyppiä/muotoa ilmaisevasta termistä siihen liittyvään vahvistettuun otsikkomuotoon.
+         Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja
+         useimpien osakenttien selitykset kentästä <a href="1XX.htm#155">155</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Lajityyppiä/muotoa kuvaava termi (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>555 ##‡w</strong>h<strong>‡a</strong>3-D films
+      </p>
+      <p><strong>555 ##‡w</strong>g<strong>‡a</strong>Serial publications
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="562"></a>562 - KATSO MYÖS -VIITTAUS - ESIINTYMISKOKOONPANOA ILMAISEVA TERMI (T)
+      </h3>
+      <p>Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.htm#162">162</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Esiintymiskokoonpanoa ilmaiseva termi (ET)
+         </li>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>562 ##‡w</strong>g<strong>‡a</strong>bowed string instrument
+      </p>
+      <p><strong>562 ##‡w</strong>g<strong>‡a</strong>lute
+      </p>
+      <p><strong>562 ##‡a</strong>saz
+      </p>
+      <p><strong>562 ##‡a</strong>tanbur
+      </p>
+      <p><strong>562 ##‡w</strong>g<strong>‡a</strong>keyboard instrument
+      </p>
+      <p><strong>562 ##‡w</strong>g<strong>‡a</strong>percussion instrument
+      </p>
+      <p><strong>562 ##‡a</strong>piano
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="580"></a>580 - KATSO MYÖS -VIITTAUS - YLEINEN LISÄMÄÄRE (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus yleisestä lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee
+         seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien
+         osakenttien selitykset kentästä <a href="1XX.htm#180">180</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>580 ##‡x</strong>Shrines
+      </p>
+      <p><strong>580 ##‡x</strong>Officials and employees<strong>‡x</strong>Leave regulations
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="581"></a>581 - KATSO MYÖS -VIITTAUS - MAANTIETEELLINEN LISÄMÄÄRE (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus maantieteellinen nimi -lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon.
+         Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja
+         useimpien osakenttien selitykset kentästä <a href="1XX.htm#181">181</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="582"></a>582 - KATSO MYÖS -VIITTAUS - AIKAA ILMAISEVA LISÄMÄÄRE (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus aikaa ilmaisevasta lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon.
+         Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja
+         useimpien osakenttien selitykset kentästä <a href="1XX.htm#182">182</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>582 ##‡w</strong>g<strong>‡y</strong>1961-1963
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="585"></a>585 - KATSO MYÖS -VIITTAUS - MUOTOA ILMAISEVA LISÄMÄÄRE (T)
+      </h3>
+      <p>Käytetään muodostamaan katso myös -viittaus muotoa ilmaisevasta lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon.
+         Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja
+         useimpien osakenttien selitykset kentästä <a href="1XX.htm#185">185</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡i</strong> - Suhdetta kuvaava ilmaus (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Erityissuhde
+               </li>
+               <li><strong>/1</strong> - Viittauksen käytön rajoitus
+               </li>
+               <li><strong>/2</strong> - Aikaisempi muoto
+               </li>
+               <li><strong>/3</strong> - Viittausnäyttö
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>585 ##‡v</strong>Abbreviations
+      </p>
+      <p><strong>585 ##‡v</strong>Microform catalogs
+      </p>
+      <p><strong>585 ##‡v</strong>Autobiographies
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

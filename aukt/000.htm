@@ -1,0 +1,132 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Auktoriteettitiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		AUKTORITEETTITIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 8.6.2007.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Nimiö ja hakemisto</h2>
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <ul>
+         <li><a href="#nimio">NIMIÖ</a></li>
+         <li><a href="#hakemisto">HAKEMISTO</a></li>
+      </ul>
+      <hr>
+      <h3><a name="nimio"></a>NIMIÖ
+      </h3>
+      <p>Kiinteä kenttä, joka käsittää jokaisen tietueen 24 ensimmäistä (00-23) merkkipaikkaa.</p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-04</strong> - Tietueen pituus<br>Järjestelmän tuottama viisimerkkinen numerojono, joka ilmaisee koko tietueen pituuden. Numero on tasattu oikealle ja käyttämättömissä
+            merkkipaikoissa on nolla.
+         </li>
+         <li><strong>05</strong> - Tietueen tila
+            <ul>
+               <li><strong>a</strong> - Koodaustason korotus<br> Tietueen koodaustasoa (nimiö/17) on korotettu.
+               </li>
+               <li><strong>c</strong> - Korjattu<br> Tietueeseen on tehty jokin muu muutos kuin koodaustason korotus.
+               </li>
+               <li><strong>d</strong> - Poistettu<br> Tätä koodia käytetään, kun koodit <strong>s</strong> tai <strong>x</strong> ovat soveltumattomia.
+               </li>
+               <li><strong>n</strong> - Uusi
+               </li>
+               <li><strong>o</strong> - Vanhentunut
+               </li>
+               <li><strong>s</strong> - Poistettu; otsikkomuoto jaettu kahteen tai useampaan otsikkomuotoon
+               </li>
+               <li><strong>x</strong> - Poistettu; otsikkomuoto korvattu toisella otsikkomuodolla
+               </li>
+            </ul>
+         </li>
+         <li><strong>06</strong> - Tietueen tyyppi
+            <ul>
+               <li><strong>z</strong> - Auktoriteettitietue
+               </li>
+            </ul>
+         </li>
+         <li><strong>07-08</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#)
+         </li>
+         <li><strong>09</strong> - Tietueen merkistö
+            <ul>
+               <li><strong>#</strong> - MARC-8
+               </li>
+               <li><strong>a</strong> - UCS/Unicode
+               </li>
+            </ul>
+         </li>
+         <li><strong>10</strong> - Indikaattorien määrä<br>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa indikaattoreille on varattu vaihtuvamittaisissa kentissä.
+         </li>
+         <li><strong>11</strong> - Osakenttäkoodin pituus<br>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa jokaiselle osakenttäkoodille on varattu vaihtuvamittaisissa
+            kentissä.
+         </li>
+         <li><strong>12-16</strong> - Tietojen kantaosoite<br>Järjestelmän tuottama viisimerkkinen numerojono ilmaisee tietueen ensimmäisen vaihtuvamittaisen kentän ensimmäisen merkkipaikan
+            (= nimiön ja hakemiston merkkien määrä sekä nimiön loppumerkki). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa
+            on nolla.
+         </li>
+         <li><strong>17</strong> - Koodaustaso<br>Kertoo onko tietue valmis/täydellinen.
+            <ul>
+               <li><strong>n</strong> - Valmis/täydellinen auktoriteettitietue<br> Tietue täyttää kansallisen tason vaatimukset.
+               </li>
+               <li><strong>o</strong> - Keskeneräinen/epätäydellinen auktoriteettitietue
+               </li>
+            </ul>
+         </li>
+         <li><strong>18-19</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#)
+         </li>
+         <li><strong>20-23</strong> - Kirjauskartta "Entry map"<br>Neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.
+            <ul>
+               <li><strong>20</strong> - 'Kentän pituus' -tiedon pituus<br>Sisältää numeron 4.
+               </li>
+               <li><strong>21</strong> - 'Kentän osoite' -tiedon pituus<br>Sisältää numeron 5.
+               </li>
+               <li><strong>22</strong> - Järjestelmän määrittelemän tiedon pituus<br>Sisältää numeron 0.
+               </li>
+               <li><strong>23</strong> - Määrittelemätön<br>Sisältää numeron 0.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="hakemisto"></a>HAKEMISTO
+      </h3>
+      <p>Järjestelmän tuottama hakemisto vaihtuvamittaisten kenttien sijainnista. Hakemisto alkaa heti nimiön jälkeen merkkipaikasta
+         24 lähtien ja koostuu 12 merkin mittaisista jaksoista, joissa kuvataan kenttäkoodi, kentän pituus ja kentän aloituskohta.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-02</strong> - Kenttäkoodi<br>Kolme numeroa, jotka kertovat mistä kentästä on kyse.
+         </li>
+         <li><strong>03-06</strong> - Kentän pituus<br>Neljä numeroa, jotka kertovat kentän pituuden mukaan lukien indikaattorit, osakenttäkoodit, tietosisällön ja kentän loppumerkin.
+            Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+         </li>
+         <li><strong>07-11</strong> - Kentän aloituskohta<br>Viisi numeroa, jotka kertovat mistä merkkipaikasta kenttä alkaa suhteessa tietojen kantaosoitteeseen (nimiö/12-16). Numero
+            on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

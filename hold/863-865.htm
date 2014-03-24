@@ -1,0 +1,329 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Varastotiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		VARASTOTIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 8.6.2007.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Määrämuotoisten varastotietojen kentät (863-865)</h2>
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p></p>
+      <ul>
+         <li><a href="#yleista">MÄÄRÄMUOTOISET VARASTOTIEDOT--YLEISTÄ TIETOA</a></li>
+         <li><a href="#863">863 - MÄÄRÄMUOTOISET VARASTOTIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ</a> (T)
+         </li>
+         <li><a href="#864">864 - MÄÄRÄMUOTOISET VARASTOTIEDOT--OHEISAINEISTO YMS.</a> (T)
+         </li>
+         <li><a href="#865">865 - MÄÄRÄMUOTOISET VARASTOTIEDOT--HAKEMISTO YMS.</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="yleista"></a>MÄÄRÄMUOTOISET VARASTOTIEDOT--YLEISTÄ TIETOA
+      </h3>
+      <p>Kentät 863-865 sisältävät omistajaorganisaation tekemän kuvauksen 
+         kokoelmiinsa sisältyvän bibliografisen kohteen varastotiedoista.
+      </p>
+      <p>Selosteet, joiden avulla tunnistetaan kohteen numerointi- ja 
+         julkaisuaikatasot, sekä koodit, jotka määrittelevät varastotietojen 
+         julkaisukaavan sisältyvät ilmestymistietojen kenttiin (853-855), jotka 
+         linkitetään niihin liittyviin 863-865 kenttiin osakenttään ‡8 (Linkki- ja 
+         järjestysnumero) tallennetun numeron avulla.
+      </p>
+      <p>Yleinen kuvaus varastotietokenttien neljästä eri tyypistä ja niiden suhteista 
+         toisiinsa löytyy osiosta <em><a href="yleista.htm">Varastotiedot--Yleistä tietoa</a></em>.<br>
+         Varastotietojen automaattisessa tiivistämisessä tai laajentamisessa tarvittavat tietoelementit on kuvattu osiossa <em><a href="853-855.htm#yleista">Ilmestymistiedot--yleistä tietoa</a></em>.<br>
+         Kuvaus tietojen tiivistettävyydestä ja laajennettavuudesta annetaan osiossa <em><a href="yleista.htm#tiivistys">Varastotiedot--Yleistä tietoa</a></em>.
+      </p>
+      <h3>Indikaattorit</h3>
+      <ul>
+         <li>Ensimmäinen - Kentän koodaustaso<br>Määrittelee ISO 10324 (ANSI/NISO Z39.71) 
+            	tai ANSI Z39.42 -standardin mukaisen tarkkuustason, jota kentän koodauksessa on noudatettu.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>3</strong> - Taso 3 <em>[863/864]</em><br>Kenttä sisältää joko bibliografista 
+                  perusyksikköä (863) tai oheisaineistoa (864) koskevat tiivistetyt numerointi- ja 
+                  julkaisuaikatiedot (vain ensimmäisestä tasosta).
+               </li>
+               <li><strong>4</strong> - Taso 4<br>Kenttä sisältää tiivistämättömät numerointi- ja 
+                  julkaisutiedot (sekä ensimmäisestä että sitä seuraavista tasoista).
+               </li>
+               <li><strong>5</strong> - Taso 4 lisättynä kappaleen tunnistustiedoilla<br>Kenttä sisältää 
+                  sekä tiivistämättömät varastotiedot että fyysisen kappaleen (esim. 
+                  		osa/volyymi/nide) tunnistustiedot 
+                  osakentässä ‡p (Kappaleen tunnistus).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Varastotietojen muoto<br>Merkitäänkö varastotiedot tiivistetyssä vai tiivistämättömässä muodossa ja 
+            pitäisikö näytön muodostamiseen käyttää tätä määrämuotoista varastotietojen 
+            kenttää vai vastaavaa vapaamuotoisten varastotietojen kenttää.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Tiivistetty <em>[863/864]</em></li>
+               <li><strong>1</strong> - Tiivistämätön
+               </li>
+               <li><strong>2</strong> - Tiivistetty, näytön muodostamiseen käytettävä vapaamuotoisia 
+                  varastotietoja <em>[863/864]</em></li>
+               <li><strong>3</strong> - Tiivistämätön, näytön muodostamiseen käytettävä vapaamuotoisia 
+                  varastotietoja
+               </li>
+               <li><strong>4</strong> - Kohdetta/kohteita ei ole julkaistu <em>[863/864]</em></li>
+            </ul>
+         </li>
+      </ul>
+      <h3>Osakenttäkoodit</h3>
+      <p><strong>‡a-‡h</strong> - Numerointi<br>
+         Numeroinnin tasot, jotka joko näkyvät kohteessa tai varastotietojen tallentaja on käyttänyt 
+         niitä ilmestymistietojen määrittelyssä. Nämä osakentät ovat vastaavuussuhteessa kenttien 
+         853-855 osakenttiin ‡a-‡h (selosteet), joskaan käytettyjen osakenttien ei tarvitse olla 
+         samat. Täydellistä vastaavuutta ei tarvita, kun numerointitasojen selosteita ei 
+         haluta käyttää näytöissä. Sen sijaan osakenttien on vastattava toisiaan 
+         täydellisesti, kun kentän 863 tai 864 tiedot halutaan tiivistää tai laajentaa 
+         automaattisesti. Tällöin mahdollinen puuttuva numerointi voidaan keksiä ja 
+         merkitä hakasulkeisiin ([ ]).
+      </p>
+      <p>Kun kohteeseen soveltuu vaihtoehtoisia numerointeja, ne 
+         	merkitään osakenttiin ‡g ja ‡h. Jos vaihtoehtoisia numerointitasoja on 
+         	enemmän kuin kaksi, käytetään kenttiä 866-868 (Vapaamuotoiset varastotiedot).
+      </p>
+      <p>Kun käytetään vain julkaisuaikatasoja (kohteessa ei ole numerointia), niitä 
+         ei merkitä osakenttiin ‡i-‡m, vaan ne merkitään asianomaisiin osakenttiin ‡a-‡h.
+      </p>
+      <ul>
+         <li><strong>‡a</strong> - Ensimmäinen numerointitaso (ET)
+         </li>
+         <li><strong>‡b</strong> - Toinen numerointitaso (ET)
+         </li>
+         <li><strong>‡c</strong> - Kolmas numerointitaso (ET)
+         </li>
+         <li><strong>‡d</strong> - Neljäs numerointitaso (ET)
+         </li>
+         <li><strong>‡e</strong> - Viides numerointitaso (ET)
+         </li>
+         <li><strong>‡f</strong> - Kuudes numerointitaso (ET)
+         </li>
+         <li><strong>‡g</strong> - Vaihtoehtoinen numerointi, ensimmäinen numerointitaso (ET)
+         </li>
+         <li><strong>‡h</strong> - Vaihtoehtoinen numerointi, toinen numerointitaso (ET)
+         </li>
+      </ul>
+      <p><strong>‡i-‡m</strong> - Julkaisuaika<br>
+         Julkaisuaikojen hierarkkiset tasot, jotka joko näkyvät kohteessa tai 
+         tallentajaorganisaatio on käyttänyt niitä ilmestymistietojen määrittelyssä. Nämä 
+         osakentät ovat vastaavuussuhteessa kenttien 853-855 osakenttiin ‡i-‡m 
+         (selosteet), joskaan käytettyjen osakenttien ei tarvitse olla samat. Täydellistä 
+         vastaavuutta ei tarvita, kun julkaisuaikatasojen selosteita ei haluta käyttää 
+         näytöissä. Sen sijaan osakenttien on vastattava toisiaan täydellisesti, kun 
+         kentän 863 tai 864 tiedot halutaan tiivistää tai laajentaa automaattisesti. 
+         Tällöin yleensä puuttuvat julkaisuaikatasojen selosteet voidaan keksiä ja 
+         merkitä hakasulkeisiin ([ ]).
+      </p>
+      <p>Kuukaudet ja vuodenajat voidaan merkitä joko luonnollisella kielellä tai 
+         seuraavilla koodeilla:
+      </p>
+      <ul>
+         <li><u>Kuukausi:</u><ul>
+               <li>01-12 - Kuukausi</li>
+            </ul>
+         </li>
+         <li><u>Vuodenaika:</u><ul>
+               <li>21 - Kevät</li>
+               <li>22 - Kesä</li>
+               <li>23 - Syksy</li>
+               <li>24 - Talvi</li>
+            </ul>
+         </li>
+      </ul>
+      <p>Kuukausikoodi tasataan oikealle ja käyttämättömässä merkkipaikassa on nolla.</p>
+      <p>Kun kohteeseen soveltuu vaihtoehtoinen julkaisuaika, se 
+         	merkitään osakenttään ‡m. Jos vaihtoehtoisia julkaisuaikatasoja on useita, 
+         	käytetään kenttiä 866-868 (Vapaamuotoiset varastotiedot).
+      </p>
+      <p>Kun käytetään vain julkaisuaikatasoja (kohteessa ei ole numerointia), niitä 
+         ei merkitä osakenttiin ‡i-‡m, vaan ne merkitään asianomaisiin osakenttiin ‡a-‡h.
+      </p>
+      <ul>
+         <li><strong>‡i</strong> - Ensimmäinen julkaisuaikataso (ET)
+         </li>
+         <li><strong>‡j</strong> - Toinen julkaisuaikataso (ET)
+         </li>
+         <li><strong>‡k</strong> - Kolmas julkaisuaikataso (ET)
+         </li>
+         <li><strong>‡l</strong> - Neljäs julkaisuaikataso (ET)
+         </li>
+         <li><strong>‡m</strong> - Vaihtoehtoinen numerointi, julkaisuaikataso (ET)<br></li>
+         <li><strong>‡n</strong> - Muunnettu gregoriaaninen vuosiluku (ET)<br>Jos osakentissä ‡i-‡m annettu vuosiluku ei ole gregoriaanisen ajanlaskun 
+            mukainen, tähän osakenttään tallennetaan sama vuosiluku muunnettuna 
+            gregoriaanisen ajanlaskun mukaiseksi.
+         </li>
+         <li><strong>‡o</strong> - Oheisaineiston nimeke (ET) <em>[864]</em><br>Esim. Ostajan opas. Kun osakenttää ‡o käytetään, se seuraa välittömästi sitä 
+            numerointia, johon se liittyy. Jos oheisaineiston nimeke on sama kuin seloste 
+            kentän 854 osakentässä ‡o (Oheisaineiston tyyppi), nimekettä ei tallenneta 
+            kenttään 864.
+         </li>
+         <li><strong>‡o</strong> - Hakemiston nimeke (ET) <em>[865]</em><br>Esim. Aihehakemisto. Kun osakenttää ‡o käytetään, se seuraa välittömästi sitä 
+            numerointia, johon se liittyy. Jos hakemiston nimeke on sama kuin seloste kentän 
+            855 osakentässä ‡o (Hakemiston tyyppi), nimekettä ei tallenneta kenttään 865.
+         </li>
+         <li><strong>‡p</strong> - Kappaleen tunnistus (ET)<br>Kappaleen (esim. 
+            		osa/volyymi/nide) tunnistustiedot, esim. viivakoodi- tai hankintanumero. 
+            Tunnistustietoja voi edeltää joko versaali B tai versaali U merkitsemässä onko 
+            		kappaleet sidottu (B=bound) vai sitomattomia (U=unbound). Osakenttään ‡p 
+            		voidaan merkitä myös kaksi kauttaviivaa (//) merkitsemään sitä, että 
+            		varastotiedot ovat kappalekohtaisia.<br>
+            		Kun kappaletiedot koskevat koko varastotietojen merkintöä, ne 
+            		tallennetaan kentän 852 (Sijainti) osakenttään ‡p (Kappaleen tunnistus). 
+            		Kun kappaleen tiedot koskevat numerointia ja julkaisuaikaa, ne merkitään 
+            		kenttiin 863-865. Kun kappaleen tiedot ovat päteviä ainoastaan 
+            		kappaletasolla, ne tallennetaan kappaletietojen kenttien (876-878) 
+            		osakenttään ‡p.
+         </li>
+         <li><strong>‡q</strong> - Kappaleen fyysinen kunto (ET)<br>
+            		Kun kappaleen fyysistä kuntoa kuvaava tieto koskee koko varastotietojen 
+            		merkintöä, se tallennetaan kentän 852 (Sijainti) osakenttään ‡q 
+            		(Kappaleen fyysinen kunto). Säilyttämistoimenpiteisiin vaikuttavat 
+            		fyysistä kuntoa koskevat tiedot tallennetaan kenttään 583 (Huomautus 
+            		toimenpiteistä).
+         </li>
+         <li><strong>‡s</strong> - Artikkelin tekijänoikeusmaksun koodi (T)<br>
+            		Ks. bibliografisen formaatin kenttä
+            		<a href="../bib/01X-04X.htm#018">018</a>.
+         </li>
+         <li><strong>‡t</strong> - Kappaleen numero (ET)<br>
+            		Yksittäisen kappaleen numero, tai numeroväli kappaleille, joilla on sama 
+            		sijainti ja luokitus.
+         </li>
+         <li><strong>‡v</strong> - Julkaisuvuosi (T) <em>[865]</em></li>
+         <li><strong>‡w</strong> - Puutemerkinnön tyyppi (ET)<br>Osoittaa varastotiedoissa 
+            		olevan aukon syyn.
+            <ul>
+               <li><strong>g</strong> - Osia puuttuu<br>Olemassa olevia osia puuttuu. Käytetään myös kun aukon syy on epävarma 
+                  		tai tuntematon.
+               </li>
+               <li><strong>n</strong> - Osia ei ole julkaistu<br>Puuttuvaa(ia) osaa(ia) ei ole julkaistu lainkaan tai ilmestymistiedot 
+                  		hyppäävät puuttuva(ie)n osa(ie)n yli.
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET) ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T) <em>ks. 
+               		<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="863"></a>863 - MÄÄRÄMUOTOISET VARASTOTIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvan bibliografisen perusyksikön määrämuotoiset varastotiedot. Näyttö voidaan
+         muodostaa yhdistämällä toisiinsa osakentän ‡8 avulla linkitettyjen kenttien 863 ja 853 tiedot.
+      </p>
+      <p>Tarkempi selostus kentän 863 osakentistä löytyy osiosta <em> <a href="#yleista">Määrämuotoiset varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>863 #0‡8</strong>1.1<strong>‡a</strong>5-12<strong>‡i</strong>1884-1892<strong>‡z</strong>v.9, Jan.1889 damaged
+      </p>
+      <p><strong>863 30‡8</strong>1.1<strong>‡a</strong>113-123<strong>‡i</strong>1923-1928
+      </p>
+      <p><strong>863 41‡8</strong>1.1<strong>‡a</strong>3<strong>‡b</strong>1
+      </p>
+      <p><strong>863 51‡8</strong>1.1<strong>‡a</strong>1<strong>‡b</strong>5<strong>‡i</strong>1976<strong>‡j</strong>01<strong>‡k</strong>16<strong>‡p</strong>1100026004
+      </p>
+      <p><strong>863 30‡8</strong>1.1<strong>‡a</strong>1-10<strong>‡i</strong>1943-1952<strong>‡z</strong>bound
+      </p>
+      <p><strong>863 41‡8</strong>1.1<strong>‡a</strong>3<strong>‡b</strong>2<strong>‡i</strong>1974<strong>‡j</strong>05
+      </p>
+      <p><strong>863 42‡8</strong>1.1<strong>‡a</strong>1-29
+      </p>
+      <p><strong>863 42‡8</strong>1.2<strong>‡a</strong>30-40
+      </p>
+      <p><strong>863 42‡8</strong>1.3<strong>‡a</strong>41-124
+      </p>
+      <p><strong>863 #3‡8</strong>1.1<strong>‡a</strong>1974
+      </p>
+      <p><strong>863 #1‡8</strong>1.1<strong>‡a</strong>1score
+      </p>
+      <p><strong>863 31‡8</strong>1.1<strong>‡a</strong>ca. 1000 items
+      </p>
+      <p><strong>863 40‡8</strong>1.1<strong>‡a</strong>1<strong>‡b</strong>4<strong>‡c</strong>4-7<strong>‡d</strong>15<strong>‡i</strong>1988<strong>‡j</strong>04<strong>‡k</strong>13-16<strong>‡l</strong>15
+      </p>
+      <p><strong>863 41‡8</strong>1.1<strong>‡a</strong>6<strong>‡p</strong>7312986<strong>‡q</strong>water damage
+      </p>
+      <p><strong>863 40‡8</strong>1.1<strong>‡a</strong>113<strong>‡b</strong>1-23<strong>‡i</strong>1989<strong>‡j</strong>01-05<strong>‡t</strong>2<strong>‡w</strong>n
+      </p>
+      <p><strong>863 30‡8</strong>1.2<strong>‡a</strong>72<strong>‡i</strong>1972<strong>‡z</strong>Apr.28 missing
+      </p>
+      <p><strong>863 40‡8</strong>1.1<strong>‡a</strong>1-19<strong>‡i</strong>1911-1920/1921<strong>‡w</strong>g
+      </p>
+      <p><strong>863 41‡8</strong>1.2<strong>‡a</strong>22<strong>‡i</strong>1924/1925
+      </p>
+      <p><strong>863 40‡8</strong>1.3<strong>‡a</strong>49-50<strong>‡i</strong>1985<strong>‡j</strong>01-02<strong>‡z</strong>Ceased publ. with issue no. 50
+      </p>
+      <p><strong>863 40‡8</strong>1.1<strong>‡a</strong>1989<strong>‡b</strong>02-05
+      </p>
+      <p><strong>863 30‡8</strong>1.1<strong>‡a</strong>1-20<strong>‡i</strong>1985-2005
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="864"></a>864 - MÄÄRÄMUOTOISET VARASTOTIEDOT--OHEISAINEISTO YMS. (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvan, erikseen luetteloimattoman oheisaineiston määrämuotoiset varastotiedot.
+         Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän ‡8 avulla linkitettyjen kenttien 864 ja 854 tiedot.
+      </p>
+      <p>Tarkempi selostus kentän 864 osakentistä löytyy osiosta <em> <a href="#yleista">Määrämuotoiset varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>864 30‡8</strong>3.1<strong>‡a</strong>1-3<strong>‡i</strong>1983-1985<strong>‡x</strong>bind in 1 v. when next issue arrives
+      </p>
+      <p><strong>864 30‡8</strong>1.1<strong>‡a</strong>1910-1988
+      </p>
+      <p><strong>864 40‡8</strong>1.1<strong>‡a</strong>1-3<strong>‡i</strong>1983-1985
+      </p>
+      <p><strong>864 ##‡z</strong>suppl.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="865"></a>865 - MÄÄRÄMUOTOISET VARASTOTIEDOT--HAKEMISTO YMS. (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvan, erikseen luetteloimattoman hakemiston määrämuotoiset varastotiedot. Näyttö
+         voidaan muodostaa yhdistämällä toisiinsa osakentän ‡8 avulla linkitettyjen kenttien 865 ja 855 tiedot.
+      </p>
+      <p>Tarkempi selostus kentän 865 osakentistä löytyy osiosta <em> <a href="#yleista">Määrämuotoiset varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>865 4#‡8</strong>1.1<strong>‡a</strong>1918-1921<strong>‡o</strong>Index<strong>‡z</strong>bound at end of volume to which it applies
+      </p>
+      <p><strong>865 4#‡8</strong>1.1<strong>‡a</strong>1969/1978<strong>‡o</strong>Ten year cumulative index
+      </p>
+      <p><strong>865 ##$a</strong>40<strong>‡i</strong>1989<strong>‡j</strong>01-12<strong>‡v</strong>June 1990
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

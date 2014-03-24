@@ -1,0 +1,119 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Varastotiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		VARASTOTIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 26.2.2013.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Muut kentät (88X)</h2>
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Tällä hetkellä ryhmästä 88X varastotietojen formaattiin on otettu vain kaksi kenttää.</p>
+      <ul>
+         <li><a href="#880">880 - TIEDOT VAIHTOEHTOISELLA KIRJAIMISTOLLA</a> (T)
+         </li>
+         <li><a href="#883">883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI)</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="880"></a>880 - TIEDOT VAIHTOEHTOISELLA KIRJAIMISTOLLA (T)
+      </h3>
+      <p>Jonkin samassa tietueessa esiintyvän vaihtuvamittaisen kentän tiedot toisella kirjaimistolla. Kenttä 880 linkitetään sitä
+         vastaavaan "tavalliseen" kenttään osakentän ‡6 (Linkitys) avulla. Tavallisen kentän osakentässä ‡6 on niin ikään linkki sitä
+         vastaavaan kenttään 880. Kun kenttään 880 liittyvää tavallista kenttää ei tietueessa ole, 880 rakennetaan kuin se olisi ja
+         osakentässä ‡6 käytetään tähän erityistarkoitukseen varattua esiintymänumeroa (00). Tiedot kentässä 880 voivat olla esitettynä
+         useammalla kuin yhdellä kirjaimistolla.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Sama kuin vastaavassa "tavallisessa" kentässä
+            <ul></ul>
+         </li>
+         <li>Toinen - Sama kuin vastaavassa "tavallisessa" kentässä
+            <ul></ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡a-z</strong> - Samat kuin vastaavassa "tavallisessa" kentässä
+         </li>
+         <li><strong>‡0-5</strong> - Samat kuin vastaavassa "tavallisessa" kentässä
+         </li>
+         <li><strong>‡7-9</strong> - Samat kuin vastaavassa "tavallisessa" kentässä
+         </li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>852 4#‡6</strong>880-01<strong>‡a</strong>[Sijainti laitinalaisella kirjaimistolla]<br><strong>880 2#‡6</strong>852-01/(2/r<strong>‡a</strong>[Sijainti heprealaisella kirjaimistolla linkitettynä siihen liittyvään kenttään 852]
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="883"></a>883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI) (T)
+      </h3>
+      <p>Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin
+         kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Luontitapa
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu/ ei ole sovellettavissa
+               </li>
+               <li><strong>0</strong> - Kokonaan koneellisesti luotu
+               </li>
+               <li><strong>1</strong> - Osittain koneellisesti luotu
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luontimenetelmä (ET)
+         </li>
+         <li><strong>‡c</strong> - Luotettavuusarvo (ET)
+         </li>
+         <li><strong>‡d</strong> - Luontipäivä (ET)<br>Tallennetaan muodossa vvvvkkpp, ISO 8601.
+         </li>
+         <li><strong>‡q</strong> - Metatiedon luonut organisaatio (ET)<br>Ks. <em> <a href="../organisaatiot.htm">Organisaatiot</a></em>.
+         </li>
+         <li><strong>‡x</strong> - Voimassaolon päättymispäivä (ET)
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (ET)
+         </li>
+         <li><strong>‡w</strong> - Bibliografisen tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

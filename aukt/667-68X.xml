@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>20.6.2013</modified>
+  <datafields>
+    <title>Huomautuskentät (667-68X)</title>
+    <description>Yleiset huomautukset tallennetaan kenttään 667 (Sisäinen yleinen huomautus) tai kenttään 680 (Julkinen yleinen huomautus). Muita 667-68X -kenttiä käytetään tarkempiin huomautuksiin. Lukuun ottamatta kenttiä 678 ja 680 huomautuksia ei yleensä kirjoiteta asiakasnäyttöön soveltuvalla tavalla.</description>
+    <datafield tag="667" repeatable="Y">
+      <name>Yleinen huomautus, sisäinen</name>
+      <description paragraph="1">Ei-julkinen, yleinen huomautus koskien 1XX otsikkomuotoa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sisäinen yleinen huomautus</name>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>667 ##&#8225;a</strong>Later arr. for string orchestra as part of the Adagio und Fuge, K. 546</text>
+        </example>
+        <example>
+          <text><strong>667 ##&#8225;a</strong>For works on relations with an individual man, assign an additional heading for the name of the man.</text>
+        </example>
+        <example>
+          <text><strong>667 ##&#8225;a</strong>Give phrase as quoted note.<strong>&#8225;5</strong>DLC</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="670" repeatable="Y">
+      <name>Huomautus tiedonlähteestä, josta otsikkomuotoa koskevaa tietoa löytyy</name>
+      <description paragraph="1">Maininta tiedonlähteestä, jossa on tietoja auktoriteettitietueen esittämästä entiteetistä tai siihen liittyvistä entiteeteistä. Lähteestä saadut tiedot voidaan myös mainita.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Saatu tieto</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Phone call to National Register of Historic Places</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Its Annual report, 1981:<strong>&#8225;b</strong>p.3 (The World Bank is a group of three institutions, the International Bank for Reconstruction and Development (IBRD), the International Development Association (IDA), and the International Finance Corporation (IFC))</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>[Added entry of Inside Japan]</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Inside Japan, 1981 (a.e.)<strong>&#8225;b</strong>verso t.p. (Howard Smith)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>[Author of Ireland]</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>His Ireland, 1974:<strong>&#8225;b</strong>t.p. (Howard Smith)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Harsch, Joseph C. Germany at war, 1942: ser. t.p. (Headline books)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>OCLC, Mar. 1, 2012<strong>&#8225;b</strong>(hdg.: Breay, Phillis)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>The official Stephen King web presence, viewed Oct. 26, 2001: <strong>&#8225;b</strong>The man (Stephen Edwin King; b. Portland, Maine, 1947) <strong>&#8225;u</strong>http://www.stephenking.com </text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>InU/Wing STC files<strong>&#8225;b</strong>(usage: a lay-hand in the country)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Lund, D.A. Billions for homes, c1980 (subj.)<strong>&#8225;b</strong>t.p. (TCF) verso t.p. (Twin City Federal) p. 11 (founded 4-2-23)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Billington, R. A.<strong>&#8225;b</strong>Local history is...1974.</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Its Guide to manuscripts in the Bentley Historical Library, 1976:<strong>&#8225;b</strong>t.p. (Bentley Historical Library, Michigan Historical Collections, Univ. of Mich.)</text>
+        </example>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Eicher, D.J. Beyond the solar system, c1992:<strong>&#8225;b</strong>t.p. (Astronomy library)</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="672" repeatable="">
+      <name>Huomautus entiteettiin liittyvästä nimekkeestä(t)</name>
+      <description paragraph="1">Maininta teoksesta, joka liittyy jollain tavalla auktoriteettitietueen kentässä 100, 110, 111 tai 151 esitettyyn entiteettiin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Ohitusindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Ei ohitettavia merkkejä</description>
+            </value>
+            <value code="1-9">
+              <description>Ohitettavien merkkien määrä</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Muut nimeketiedot</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Julkaisuvuosi</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Social psychology through literature</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Pathways through unemployment</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Rents and incentives</text>
+        </example>
+        <example>
+          <text><strong>672 #4&#8225;a</strong>The business case for Equal Opportunities</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Family-friendly working arrangements in Britain 1996</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Daily Northwestern</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>International perspectives on the school-to-work transition<strong>&#8225;f</strong>1999</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Active learning for students and teachers<strong>&#8225;f</strong>1997</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>School to work<strong>&#8225;b</strong>research on programs in the United States<strong>&#8225;f</strong>1995</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>School-based enterprise<strong>&#8225;b</strong>productive learning in American high schools<strong>&#8225;f</strong>1994</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Career academics<strong>&#8225;b</strong>partnerships for reconstructing American high schools<strong>&#8225;f</strong>1992</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Market failure in training<strong>&#8225;f</strong>1991</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Adolescence and work<strong>&#8225;b</strong>influences of social structure, labor markets and culture<strong>&#8225;f</strong>1989</text>
+        </example>
+        <example>
+          <text><strong>672 #0&#8225;a</strong>Techniques of biochemical and biophysical morphology<strong>&#8225;w</strong>(DLC)###72000153#<strong>&#8225;w</strong>(OCoLC)1021945 </text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="673" repeatable="Y">
+      <name>Huomautus nimekkeestä, joka ei liity entiteettiin</name>
+      <description paragraph="1">Maininta teoksesta, joka ei liity millään tapaa auktoriteettitietueen kentässä 100, 110, 111 tai 151 esitettyyn entiteettiin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Ohitusindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Ei ohitettavia merkkejä</description>
+            </value>
+            <value code="1-9">
+              <description>Ohitettavien merkkien määrä</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Muut nimeketiedot</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Julkaisuvuosi</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>673 #0&#8225;a</strong>Kaleidoscope</text>
+        </example>
+        <example>
+          <text><strong>673 #0&#8225;a</strong>Sir Eglamour of Artois</text>
+        </example>
+        <example>
+          <text><strong>673 #0&#8225;a</strong>Mathcounts</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="675" repeatable="N">
+      <name>Huomautus tiedonlähteestä, josta otsikkomuotoa koskevaa tietoa ei löydy</name>
+      <description paragraph="1">Maininta tiedonlähteestä, jossa ei ole tietoja auktoriteettitietueen esittämästä entiteetistä tai siihen liittyvistä entiteeteistä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>675 ##&#8225;a</strong>Lippincott;<strong>&#8225;a</strong>Rand McNally;<strong>&#8225;a</strong>Web. geog.;<strong>&#8225;a</strong>Rand McNally new international atlas</text>
+        </example>
+        <example>
+          <text><strong>675 ##&#8225;a</strong>Nat. reg. hist. pl.</text>
+        </example>
+        <example>
+          <text><strong>675 ##&#8225;a</strong>New Grove;<strong>&#8225;a</strong>Thompson, 10th ed.</text>
+        </example>
+        <example>
+          <text><strong>675 ##&#8225;a</strong>WW in world Jewry, 1965;<strong>&#8225;a</strong>Academic ww, 1973-74;<strong>&#8225;a</strong>WW in educ., 1974</text>
+        </example>
+        <example>
+          <text><strong>675 ##&#8225;a</strong>The mine explored, 1850</text>
+        </example>
+        <example>
+          <text><strong>675 ##&#8225;a</strong>Music by Texas composers [SR] 2011</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="678" repeatable="Y">
+      <name>Huomautus elämäkerta- tai historiatiedoista</name>
+      <description paragraph="1">Auktoriteettitietueen 1XX-kentän otsikkomuotoon liittyvien olennaisten elämäkerta- tai historiatietojen tiivistelmä. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, lisämääre.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Tietojen tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Elämäkerrallinen lyhennelmä</description>
+            </value>
+            <value code="1">
+              <description>Hallinnollinen tausta</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Elämäkerrallista tai historiallista tietoa</name>
+          <description>Lyhyet elämäkerralliset tiedot henkilöstä. Voi sisältää myös yhteisön tai organisaation historiatietoja tai hallinnollisia taustoja.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Laajennus</name>
+          <description>Osakentässä &#8225;a annettujen tietojen laajennus.</description>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>678 ##&#8225;a</strong>M.D., M.R.C.O.G.;<strong>&#8225;a</strong>Dept. of Obstetrics and Gynaecology, Birmingham Maternity Hosp., Queen Elizabeth Medical Center, Edgbaston.</text>
+        </example>
+        <example>
+          <text><strong>678 ##&#8225;a</strong>b. 1928</text>
+        </example>
+        <example>
+          <text><strong>678 ##&#8225;a</strong>The Faribault State School and Hospital provided care, treatment, training, and a variety of other services to mentally retarded individuals and their families. It was operated by the State of Minnesota from 1879 to 1998 under different administrative structures and with different names. A more detailed history of the Hospital may be found at<strong>&#8225;u</strong>http://www.mnhs.org/library/findaids/80881.html</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="680" repeatable="Y">
+      <name>Yleinen huomautus, julkinen</name>
+      <description paragraph="1">Julkinen, asiakasnäyttöön tarkoitettu yleinen huomautustieto koskien auktoriteettitietueen 1XX-kentän otsikkomuotoa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Otsikkomuoto tai lisämääre</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>Here are entered works on methane as a combustible gas formed in coal mines. Works on methane present in a stratum of coal are entered under<strong>&#8225;a</strong>Coalbed methane.</text>
+        </example>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>Here are entered works on Ukrainians and Carpatho-Rusyns residents in the territory comprising the former Austro-Hungarian Empire. Works on their descendants after 1918 are entered under<strong>&#8225;a</strong>Ukrainians<strong>&#8225;i</strong>or<strong>&#8225;a</strong>Carpatho-Rusyns.</text>
+        </example>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>Surgery performed on an outpatient basis. May be hospital-based or performed in an office or surgicenter.</text>
+        </example>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>outpatient surg performed in MD's office, surgicenter or hosp; only/econ/methods/psychol/stand/trends/util(if by MeSH definition)</text>
+        </example>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>Use under topical headings for works containing lists of abbreviations pertaining to the topic.</text>
+        </example>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>When Baroque is combined with style, it appears in the form<strong>&#8225;a</strong>Baroque style.<strong>&#8225;i</strong>May be combined with terms in the Objects facet, e.g., sculpture.</text>
+        </example>
+        <example>
+          <text><strong>680 ##&#8225;i</strong>May be combined with geographic name in the form<strong>&#8225;a</strong>Baroque sculpture--Germany.<strong>&#8225;5</strong>CaQMCCA</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="681" repeatable="Y">
+      <name>Huomautus asiasanaviittauksen esimerkistä</name>
+      <description paragraph="1">Kertoo, miten 1XX kentässä esiintyvää asiasanaa tai ohjeellista lisämääretermiä käytetään esimerkkinä tai viittauksena toisen auktoriteettitietueen kentissä 260, 360 ja/tai 680.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Asiasana tai lisämääretermi</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>681 ##&#8225;i</strong>Example under<strong>&#8225;a</strong>War</text>
+        </example>
+        <example>
+          <text><strong>681 ##&#8225;i</strong>Example under subdivision<strong>&#8225;a</strong>Officials and employees</text>
+        </example>
+        <example>
+          <text><strong>681 ##&#8225;i</strong>Note under<strong>&#8225;a</strong>Public officers</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="682" repeatable="N">
+      <name>Huomautus poistetusta otsikkomuodosta</name>
+      <description paragraph="1">Selitys sille, miksi vahvistettu otsikkomuodon tietue tai lisämääretietue on poistettu auktoriteettitiedostosta (Nimiö/05, arvo <strong>d</strong>). Korvaava(t) otsikkomuoto(dot) voidaan merkitä osakenttään(kenttiin) &#8225;a.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Korvaava otsikkomuoto</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Korvaavan auktoriteettitietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>682 ##&#8225;i</strong>This heading has been replaced by headings of the type<strong>&#8225;a</strong>Paleontologists--[place]<strong>&#8225;i</strong>for which individual subject authority records are not made.</text>
+        </example>
+        <example>
+          <text><strong>682 ##&#8225;i</strong>This heading has been removed from the subject authority file because it is not a valid AACR 2 heading.</text>
+        </example>
+        <example>
+          <text><strong>682 ##&#8225;i</strong>This heading has been removed from the subject authority file because it is covered by an identical heading in the name authority file (n81-18255).</text>
+        </example>
+        <example>
+          <text><strong>682 ##&#8225;i</strong>This subdivision is obsolete.</text>
+        </example>
+        <example>
+          <text><strong>682</strong> <strong>##</strong><strong>&#8225;</strong><strong>a</strong>Hohenberger, Werner<strong>&#8225;</strong><strong>0</strong>(DE-101b)132213052</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="688" repeatable="Y">
+      <name>Huomautus käytön historiasta</name>
+      <description paragraph="1">Tietoa siitä, miten 1XX kentän otsikkomuotoa on käytetty ja mitä muutoksia sen käytössä on tapahtunut.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus käytön historiasta</name>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>688 ##&#8225;a</strong>(91)75; was see under CYCLOHEXANES 1975-90</text>
+        </example>
+        <example>
+          <text><strong>688 ##&#8225;a</strong>March 1990 note added</text>
+        </example>
+        <example>
+          <text><strong>688 ##&#8225;a</strong>estab. 1975; heading was: Cruelty to children [1952-1975]</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

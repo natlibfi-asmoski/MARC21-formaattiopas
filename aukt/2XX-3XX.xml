@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>29.1.2009</modified>
+  <datafields>
+    <title>Monitahoisten asiasanaviittausten kentät (2XX-3XX)</title>
+    <description>Kenttiin 260 ja 360 tallennetaan tietoja asiasanojen ei-ohjeellisista muodoista tai asiasanan ohjeellisista eri muodoista ja muista varianteista, joita ei ole valittu ohjeellisiksi muodoiksi, kun asiasanojen suhteita ei voida kuvata yhden tai useamman ristiviittauksen avulla kyllin hyvin. Lisätietoja viittauksista löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.</description>
+    <datafield tag="260" repeatable="Y">
+      <name>Monitahoinen katso-viittaus, asiasana</name>
+      <description paragraph="1">Selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, jotka edellytetään asiasanojen viittaustietueissa silloin, kun vahvistamattomien ja vahvistettujen asiasanojen välillä on suhteita, joita ei voida kuvata yhden tai useamman yksinkertaisen <em>katso</em>-ristiviittauksen (4XX) avulla kyllin hyvin. Vakionäyttötekstinä voi olla <em>katso:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Viittauksen kohteena oleva otsikkomuoto</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>260 ##&#8225;i</strong>subject headings beginning with the word<strong>&#8225;a</strong>Catalog</text>
+        </example>
+        <example>
+          <text><strong>260 ##&#8225;i</strong>subdivisions<strong>&#8225;a</strong>Dialects<strong>&#8225;i</strong>and<strong>&#8225;a</strong>Provincialisms<strong>&#8225;i</strong>under<strong>&#8225;a</strong>Spanish language<strong>&#8225;i</strong>divided by United States or specific locality in the United States, e.g.<strong>&#8225;a</strong>Spanish language--Dialects--United States; Spanish language--Provincialisms--Southwestern States</text>
+        </example>
+        <example>
+          <text><strong>260 ##&#8225;i</strong>subdivision<strong>&#8225;a</strong>Amateurs' manuals<strong>&#8225;i</strong>under subjects, e.g.<strong>&#8225;a</strong>Radio--Amateurs' manuals</text>
+        </example>
+        <example>
+          <text><strong>260</strong> <strong>##</strong><strong>&#8225;</strong><strong>a</strong>Kostenrechnung<strong>&#8225;</strong><strong>0</strong>(DE-101b)4032592-1 </text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="360" repeatable="Y">
+      <name>Monitahoinen katso myös -viittaus, asiasana</name>
+      <description paragraph="1">Selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, jotka edellytetään asiasanojen viittaustietueissa silloin, kun vahvistamattomien ja vahvistettujen asiasanojen välillä on suhteita, joita ei voida kuvata yhden tai useamman yksinkertaisen <em> katso myös</em> -ristiviittauksen (5XX) avulla kyllin hyvin. Vakionäyttötekstinä voi olla <em>katso myös:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Viittauksen kohteena oleva otsikkomuoto</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>360 ##&#8225;i</strong>subject subdivision<strong>&#8225;a</strong>Management<strong>&#8225;i</strong>under types of industries</text>
+        </example>
+        <example>
+          <text><strong>360 ##&#8225;i</strong>names of particular apparitions and miracles, e.g.<strong>&#8225;a</strong>Fatima, Our Lady of</text>
+        </example>
+        <example>
+          <text><strong>360 ##&#8225;i</strong>subdivision<strong>&#8225;a</strong>Relation to [the Old Testament, Matthew, Psalms, etc.]<strong>&#8225;i</strong>under the Bible and parts of the Bible, e.g.<strong>&#8225;a</strong>Bible. N.T.--Relation to the Old Testament; Bible. N.T. Matthew--Relation to Psalms; Bible. O.T. Psalms--Relation to Mark;<strong>&#8225;i</strong>etc.</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

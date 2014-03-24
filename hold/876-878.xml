@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
+
+<fields>
+  <modified>8.6.2007</modified>
+  <datafields>
+    <title>Kappaletietojen kentät (876-878)</title>
+    <datafield tag="876" repeatable="Y">
+      <name>Kappaletiedot--bibliografinen perusyksikkö</name>
+      <description paragraph="1">Merkinnön tehneen organisaation kokoelmiin kuuluvaan bibliografiseen perusyksikköön liittyviä kappalekohtaisia tietoja. Näyttö voidaan muodostaa kentän 876 sisällöstä ja siihen joko osakentän &#8225;8 tai &#8225;3 avulla linkitetystä kentästä 852 (Sijainti), 853/863 (Ilmestymistiedot/Määrämuotoiset varastotiedot) tai 866 (Vapaamuotoiset varastotiedot).</description>
+      <description paragraph="2">Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista toisiinsa ja niiden toistettavuudesta löytyy osiosta <em><a href="yleista.htm"> Varastotiedot--yleistä tietoa</a></em>.</description>
+      <description paragraph="3">Lisätietoja kentän 876 osakentistä löytyy osiosta <em><a href="#yleista"> Kappaletiedot--yleistä tietoa</a></em>.</description>
+      <examples>
+        <example>
+          <text><strong>876 ##&#8225;a</strong>AAH8128-1-1<strong>&#8225;p</strong>A14802137389</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;a</strong>ABH8998-1-1<strong>&#8225;c</strong>$6.00 (discounted)</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;a</strong>XZX1222-1<strong>&#8225;d</strong>19940622<strong>&#8225;p</strong>A1234567</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;3</strong>SSRR copy<strong>&#8225;a</strong>00019779439<strong>&#8225;e</strong>CIP</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;3</strong>v.3/4<strong>&#8225;a</strong>ABH1332-1-2<strong>&#8225;h</strong>Room use only<strong>&#8225;p</strong>A14839283910</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;8</strong>1.6<strong>&#8225;a</strong>AAA1000-1-6<strong>&#8225;l</strong>Reference<strong>&#8225;p</strong>A1481283892</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;a</strong>AAH8128-1-1<strong>&#8225;c</strong>$13.75<strong>&#8225;p</strong>A14802137389</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;a</strong>AAH8128-2-1<strong>&#8225;c</strong>12.00<strong>&#8225;p</strong>A14812385910<strong>&#8225;r</strong>A14821385083<strong>&#8225;x</strong>Re-catalog as added copy for stacks when checked in.</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;a</strong>80006537<strong>&#8225;j</strong>Lost<strong>&#8225;t</strong>2</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;3</strong>v.5<strong>&#8225;a</strong>ABH1332-1-3<strong>&#8225;p</strong>A14828301589</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;8</strong>1.1<strong>&#8225;a</strong>AAA1000-1-1<strong>&#8225;p</strong>A1481283827</text>
+        </example>
+        <example>
+          <text><strong>876 ##&#8225;8</strong>1.2<strong>&#8225;a</strong>AAA1000-1-3<strong>&#8225;p</strong>A1481283831</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="877" repeatable="Y">
+      <name>Kappaletiedot--oheisaineisto yms.</name>
+      <description paragraph="1">Merkinnön tehneen organisaation kokoelmiin kuuluvaan, erikseen luetteloimattomaan oheisaineistoon liittyviä kappalekohtaisia tietoja. Näyttö voidaan muodostaa kentän 877 sisällöstä ja siihen joko osakentän &#8225;8 tai &#8225;3 avulla linkitetystä kentästä 852 (Sijainti), 854/864 (Ilmestymistiedot/Määrämuotoiset varastotiedot) tai 867 (Vapaamuotoiset varastotiedot).</description>
+      <description paragraph="2">Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista toisiinsa ja niiden toistettavuudesta löytyy osiosta <em><a href="yleista.htm"> Varastotiedot--yleistä tietoa</a></em>.</description>
+      <description paragraph="3">Lisätietoja kentän 877 osakentistä löytyy osiosta <em><a href="#yleista"> Kappaletiedot--yleistä tietoa</a></em>.</description>
+      <examples>
+        <example>
+          <text><strong>877 ##&#8225;3</strong>1986<strong>&#8225;a</strong>ACC8761-3-2<strong>&#8225;j</strong>Lost<strong>&#8225;p</strong>J87958763</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="878" repeatable="Y">
+      <name>Kappaletiedot--hakemisto yms.</name>
+      <description paragraph="1">Merkinnön tehneen organisaation kokoelmiin kuuluvaan, erikseen luetteloimattomaan hakemistoon liittyviä kappalekohtaisia tietoja. Näyttö voidaan muodostaa kentän 878 sisällöstä ja siihen joko osakentän &#8225;8 tai &#8225;3 avulla linkitetystä kentästä 852 (Sijainti), 855/865 (Ilmestymistiedot/Määrämuotoiset varastotiedot) tai 868 (Vapaamuotoiset varastotiedot).</description>
+      <description paragraph="2">Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista toisiinsa ja niiden toistettavuudesta löytyy osiosta <em><a href="yleista.htm"> Varastotiedot--yleistä tietoa</a></em>.</description>
+      <description paragraph="3">Lisätietoja kentän 878 osakentistä löytyy osiosta <em><a href="#yleista"> Kappaletiedot--yleistä tietoa</a></em>.</description>
+      <examples>
+        <example>
+          <text><strong>878 ##&#8225;3</strong>Chronological index<strong>&#8225;a</strong>ABH1332-1-4<strong>&#8225;p</strong>A14828301588</text>
+        </example>
+        <example>
+          <text><strong>878 ##&#8225;3</strong>Alphabetic index<strong>&#8225;a</strong>ABH1332-1-5<strong>&#8225;p</strong>A14801389752</text>
+        </example>
+        <example>
+          <text><strong>878 ##&#8225;8</strong>1.1<strong>&#8225;a</strong>ADF1383-1-2<strong>&#8225;p</strong>A14809183075</text>
+        </example>
+        <example>
+          <text><strong>878 ##&#8225;8</strong>2.1<strong>&#8225;a</strong>ADF1383-1-3<strong>&#8225;p</strong>A14809813780</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

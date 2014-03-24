@@ -1,0 +1,170 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Varastotiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		VARASTOTIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 10.2.2009.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Vapaamuotoisten varastotietojen kentät (866-868)</h2>
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p></p>
+      <ul>
+         <li><a href="#yleista">VAPAAMUOTOISET VARASTOTIEDOT--YLEISTÄ TIETOA</a></li>
+         <li><a href="#866">866 - VAPAAMUOTOISET VARASTOTIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ</a> (T)
+         </li>
+         <li><a href="#867">867 - VAPAAMUOTOISET VARASTOTIEDOT--OHEISAINEISTO YMS.</a> (T)
+         </li>
+         <li><a href="#868">868 - VAPAAMUOTOISET VARASTOTIEDOT--HAKEMISTO YMS.</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="yleista"></a>VAPAAMUOTOISET VARASTOTIEDOT--YLEISTÄ TIETOA
+      </h3>
+      <p>Kentät 866-868 sisältävät vapaamuotoisia varastotietoja, joissa voi olla 
+         mukana sekä selosteita että numerointi- ja julkaisuaikatietoja. Näitä kenttiä 
+         käytetään yleensä yksiosaisten monografioiden varastotietojen merkitsemiseen, 
+         tai moniosaisten monografioiden tai kausijulkaisujen kohdalla silloin, kun 
+         ilmestymistietojen (853-855) ja määrämuotoisten varastotietojen kentät (863-865) 
+         eivät sovellu niiden varastotietojen kuvailemiseen. Kenttiä 866-868 voidaan 
+         käyttää määrämuotoisten varastotietokenttien tai ilmestymistietojen kenttien 
+         lisäksi, kun niistä kaikista tai osasta niistä halutaan muodostaa vaihtoehtoisia 
+         näyttöjä.
+      </p>
+      <p>Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista 
+         toisiinsa ja niiden toistettavuudesta löytyy osiosta <em><a href="yleista.htm">
+               Varastotiedot--yleistä tietoa</a></em>.<br>
+         Ohjeet siitä, miten tallennetaan 866-868 
+         kenttiin liittyviä kappalekohtaisia tietoja, löytyy osiosta <em><a href="876-878.htm#yleista">Kappalekohtaiset tiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Kentän koodaustaso<br>Määrittelee kenttään merkittyjen 
+            	numerointi- ja julkaisuaikatietojen tarkkuustason.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>3</strong> - Taso 3<br>Kenttä sisältää tiivistetyt numerointi- ja 
+                  julkaisuaikatiedot (vain ensimmäisestä tasosta).
+               </li>
+               <li><strong>4</strong> - Taso 4<br>Kenttä sisältää tiivistämättömät numerointi- ja 
+                  julkaisutiedot (sekä ensimmäisestä että sitä seuraavista tasoista).
+               </li>
+               <li><strong>5</strong> - Taso 4 lisättynä kappaleen tunnistustiedoilla<br>Kenttä sisältää 
+                  sekä tiivistämättömät varastotiedot että fyysisen kappaleen tunnistusnumeron 
+                  osakentässä ‡a (Tiedot tekstinä).
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Merkintätavan tyyppi<br>
+            	Onko osakentän ‡a varastotiedot tallennettu jonkin standardoidun vai 
+            	standardoimattoman merkintätavan mukaan.
+            <ul>
+               <li><font color="#FF0000"><strong># - </strong>Määrittelemätön/ei koodattu - 
+                     		suomalainen koodi</font></li>
+               <li><strong>0</strong> - Standardoimaton
+               </li>
+               <li><strong>1</strong> - ISO 10324 (ANSI/NISO Z39.71)
+               </li>
+               <li><strong>2</strong> - ANSI Z39.42
+               </li>
+               <li><strong>7</strong> - Merkintätapa määritellään osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Tiedot tekstinä (ET)<br>
+            	Varastotiedot tekstimuodossa, joko kenttien 853-855 ja 863-865 sijasta tai 
+            	niiden lisäksi.
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)
+         </li>
+         <li><strong>‡2</strong> - Merkintätavan lähde (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET) ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T) <em>ks. 
+               	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="866"></a>866 - VAPAAMUOTOISET VARASTOTIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvan bibliografisen perusyksikön vapaamuotoiset varastotiedot tekstinä. Kenttää
+         voidaan käyttää joko kenttien 853 ja 863 sijasta tai niiden lisäksi muodostettaessa varastotietojen näyttöä.
+      </p>
+      <p>Lisätietoja kentän 866 osakentistä löytyy osiosta <em><a href="#yleista"> Vapaamuotoiset varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>866 31‡8</strong>0<strong>‡a</strong>1-86 (1941-1987)<strong>‡x</strong>bound in 2 v. per year<strong>‡z</strong>Some issues missing
+      </p>
+      <p><strong>866 31‡8</strong>0<strong>‡a</strong>1974-1981<strong>‡z</strong>Some issues lost
+      </p>
+      <p><strong>866 31‡8</strong>0<strong>‡a</strong>v. 36-49 (1961-1974)<strong>‡x</strong>incomplete vols. unbound<strong>‡z</strong>some issues missing
+      </p>
+      <p><strong>866 31‡8</strong>2<strong>‡a</strong>v. 37-52<strong>‡z</strong>Bound; some issues missing
+      </p>
+      <p><strong>866 31‡8</strong>0<strong>‡a</strong>v. 1-4 (1941-1943), v. 6-86 (1945-1987)<strong>‡x</strong>bound in 2 v. per year<strong>‡z</strong>Some issues missing
+      </p>
+      <p><strong>866 37‡8</strong>1<strong>‡a</strong>s=[1832:10:17-1899:3:31]<strong>‡z</strong>Scattered issues wanting<strong>‡2</strong>usnp
+      </p>
+      <p><strong>866 37‡8</strong>1<strong>‡a</strong>m,s=[1955:8:11-1956:11:22][1960:10:20-1984:2:2]<strong>‡2</strong>usnp
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="867"></a>867 - VAPAAMUOTOISET VARASTOTIEDOT--OHEISAINEISTO YMS. (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvan, erikseen luetteloimattoman oheisaineiston vapaamuotoiset varastotiedot
+         tekstinä. Kenttää voidaan käyttää joko kenttien 854 ja 864 sijasta tai niiden lisäksi muodostettaessa varastotietojen näyttöä.
+      </p>
+      <p>Lisätietoja kentän 867 osakentistä löytyy osiosta <em><a href="#yleista"> Vapaamuotoiset varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>867 30‡8</strong>0<strong>‡a</strong>Supplements to v. 1-7 (1942-1948)<strong>‡z</strong>bound in one volume
+      </p>
+      <p><strong>867 31‡8</strong>0<strong>‡a</strong>ca. 300 pieces
+      </p>
+      <p><strong>867 40‡8</strong>0<strong>‡a</strong>Supplements 1910-1916<strong>‡z</strong>Bound with other issues for the year
+      </p>
+      <p><strong>867 30‡8</strong>0<strong>‡a</strong>Supplements to v. 1-2 (1942-1944), 4-7 (1946-1948)<strong>‡z</strong>Bound in one volume
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="868"></a>868 - VAPAAMUOTOISET VARASTOTIEDOT--HAKEMISTO YMS. (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvan, erikseen luetteloimattoman hakemiston vapaamuotoiset varastotiedot tekstinä.
+         Kenttää voidaan käyttää joko kenttien 855 ja 865 sijasta tai niiden lisäksi muodostettaessa varastotietojen näyttöä.
+      </p>
+      <p>Lisätietoja kentän 868 osakentistä löytyy osiosta <em><a href="#yleista"> Vapaamuotoiset varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkki</h4>
+      <p><strong>868 40‡8</strong>0<strong>‡a</strong>1937-1942, 1946-1968, plus 1969/1978 cumulative vol.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

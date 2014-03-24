@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>26.2.2013</modified>
+  <datafields>
+    <title>Sijainti ja vaihtoehtoinen kirjaimisto (8XX)</title>
+    <description>8XX-kentistä vain kentät 856, 880 ja 883 ovat käytössä MARC 21 auktoriteettitietojen formaatissa. Bibliografisten tietojen formaatin vastaavat kentät sisältävät lähes täsmälleen samat tiedot.</description>
+    <datafield tag="856" repeatable="Y">
+      <name>Elektronisen aineiston sijainti ja käyttö</name>
+      <description paragraph="1">Tiedot, joita tarvitaan elektronisen aineiston paikantamiseen ja käyttöön. Kenttää voidaan käyttää auktoriteettitietueessa, kun halutaan tarjota elektronisessa muodossa olevia lisätietoja entiteetistä, jota varten auktoriteettitietue on tehty.</description>
+      <description paragraph="2">Kenttää 856 toistetaan, kun sijaintia koskevat tietoelementit vaihtelevat (osakentät &#8225;a, &#8225;b, &#8225;d). Sitä toistetaan myös, kun useampi kuin yksi yhteys-/käyttötapa on mahdollinen, kun aineiston eri osat ovat saatavana elektronisessa muodossa, kun tallennetaan tietoja peilatuista sivustoista, kun eri URL-osoitteille osoitetaan eri formaatteja tai resoluutioita, tai kun tallennetaan tietoja kuvailun kohteeseen liittyvistä kohteista.</description>
+      <description paragraph="3"><a href="http://www.loc.gov/marc/856guide.html">Ks. tarkemmat ohjeet kentän 856 käytöstä (englanniksi).</a></description>
+      <indicators>
+        <indicator num="1">
+          <description>Yhteys- tai käyttötapa<br /> Kenttää toistetaan, kun useampi kuin yksi yhteys- tai käyttötapa on mahdollinen. Kun osakenttään &#8225;u tallennetaan URL, indikaattorin arvo vastaa protokollaa, joka on myös osoitteen ensimmäinen elementti.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Sähköposti<br /> Yhteys/käyttö tapahtuu Mail Transfer protokollalla (MAILTP).</description>
+            </value>
+            <value code="1">
+              <description>FTP</description>
+            </value>
+            <value code="2">
+              <description>Etäpalvelin (Telnet)</description>
+            </value>
+            <value code="3">
+              <description>Modeemiyhteys<br /> Yhteys/käyttö tapahtuu tavallisen puhelinlinjan kautta.</description>
+            </value>
+            <value code="4">
+              <description>HTTP<br /> Yhteys/käyttö tapahtuu Hypertext Transfer protokollalla.</description>
+            </value>
+            <value code="7">
+              <description>Yhteys- tai käyttötapa merkitään osakenttään &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Suhde<br /> Indikaattorin arvoja ei käytetä auktoriteettitietueissa.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Palvelimen nimi</name>
+          <description>Toistetaan, jos samaa palvelinta voidaan kutsua useilla nimillä.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Palvelimen numeerinen osoite</name>
+          <description>Voi sisältää IP (Internet Protocol) -osoitteen, jos kyseessä on aineisto Internetissä, tai puhelinnumeron, jos käyttöyhteys tarjotaan modeemiyhteyden ja puhelinlinjan kautta. Tämä tieto voi muuttua usein ja sen automaattinen muodostaminen on suositeltavampaa kuin staattinen tallennus.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Tiedoston pakkausmenetelmä</name>
+          <description>Tietoja pakkausmenetelmästä ja tarvitaanko purkua varten erityinen ohjelma.</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Tiedoston hakemistopolku</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Tiedoston nimi</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Käsittelijä</name>
+          <description>Yleensä tieto joka edeltää @-merkkiä palvelimen osoitteessa.</description>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Komento</name>
+          <description>Komento, jolla etäpalvelinta ohjataan.</description>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Bittiä sekunnissa</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Salasana</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Käyttäjätunnus</name>
+          <description>Tähän osakenttään voidaan tallentaa yleisesti käytettyjä käyttäjätunnuksia, joita ei tarvitse erityisesti suojata.</description>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Käyttäjätuen yhteystiedot</name>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Palvelimen sijaintipaikka</name>
+          <description>Osakentässä &#8225;a mainitun palvelimen täydellinen sijainti, maantieteellinen sijainti mukaan luettuna.</description>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Palvelimen käyttöjärjestelmä</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Portti</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Tiedoston muoto</name>
+          <description>Esimerkiksi teksti/HTML, ASCII, Postscript-tiedosto, suoritettava ohjelma (exe) tai JPEG-kuva.</description>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Asetukset</name>
+        </subfield>
+        <subfield code="s" repeatable="Y">
+          <name>Tiedoston koko</name>
+        </subfield>
+        <subfield code="t" repeatable="Y">
+          <name>Pääte-emulointi</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Kenttä 856 on rakennettu siten, että URL voidaan muodostaa myös yhdistämällä eri osakenttien tietoja. Osakenttää &#8225;u voidaan käyttää niiden sijasta tai lisäksi. Osakenttää &#8225;u voidaan toistaa vain jos tallennetaan sekä URN että URL, tai useita URN:eja. <a href="../../../../julkaisuala/urn.htm"> Suomalainen URN, ks. ISBN- ja ISSN-keskus</a>.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Aineisto tavoitettavissa, aukioloaika</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Sisäinen huomautus</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Linkin teksti</name>
+          <description>Teksti, joka näkyy asiakkaalle ja toimii linkkinä osakentässä &#8225;u esitetyn URI:n sijaan.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Yhteys- tai käyttötapa</name>
+          <description>Kun ensimmäisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela856b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://plato.standford.edu/entries/russell/russell.jpeg<strong>&#8225;y</strong>photograph </text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://sunsite.unc.edu/wm/paint/auth/vinci/joconde/<strong>&#8225;y</strong>description</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;3</strong>image<strong>&#8225;u</strong>http://sunsite.unc.edu/wm/paint/auth/vinci/joconde/joconde.jpg</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://www.loc.gov/copyright</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://www.nlc-bnc.ca/jsc</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://www.firstladies.org/</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="880" repeatable="Y">
+      <name>Tiedot vaihtoehtoisella kirjaimistolla</name>
+      <description paragraph="1">Jonkin samassa tietueessa esiintyvän vaihtuvamittaisen kentän tiedot toisella kirjaimistolla. Kenttä 880 linkitetään sitä vastaavaan "tavalliseen" kenttään osakentän &#8225;6 (Linkitys) avulla. Kentän 880 ensimmäisellä ja toisella indikaattorilla on samat arvot kuin sitä vastaavan kentän indikaattoreilla. Osakenttäkoodit ovat myös samat lukuun ottamatta osakenttää &#8225;6. Tiedot kentässä 880 voivat olla esitettynä useammalla kuin yhdellä kirjaimistolla.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Sama kuin vastaavassa "tavallisessa" kentässä</description>
+        </indicator>
+        <indicator num="2">
+          <description>Sama kuin vastaavassa "tavallisessa" kentässä</description>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="a-z" repeatable="">
+          <name>Samat kuin vastaavassa "tavallisessa" kentässä</name>
+        </subfield>
+        <subfield code="0-5" repeatable="">
+          <name>Samat kuin vastaavassa "tavallisessa" kentässä</name>
+        </subfield>
+        <subfield code="7-9" repeatable="">
+          <name>Samat kuin vastaavassa "tavallisessa" kentässä</name>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>880 1#&#8225;6</strong>400-01/(2/r<strong>&#8225;a</strong>[Otsikkomuoto heprealaisella kirjaimistolla linkitettynä vastaavaan "tavalliseen" kenttään]</text>
+        </example>
+        <example>
+          <text><strong>880 1#&#8225;6</strong>100-01/(N<strong>&#8225;a</strong>[Otsikkomuoto kyrillisellä kirjaimistolla linkitettynä vastaavaan "tavalliseen" kenttään]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="883" repeatable="Y">
+      <name>Koneellisesti luodun metatiedon alkuperä (provenanssi)</name>
+      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Luontitapa</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu/ ei ole sovellettavissa</description>
+            </value>
+            <value code="0">
+              <description>Kokonaan koneellisesti luotu</description>
+            </value>
+            <value code="1">
+              <description>Osittain koneellisesti luotu</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Luontimenetelmä</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Luotettavuusarvo</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Luontipäivä</name>
+          <description>Tallennetaan muodossa vvvvkkpp, ISO 8601.</description>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Metatiedon luonut organisaatio</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>Voimassaolon päättymispäivä</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+    </datafield>
+  </datafields>
+</fields>

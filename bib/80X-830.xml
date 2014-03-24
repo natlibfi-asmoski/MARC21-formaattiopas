@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <modified>18.12.2013</modified>
+  <datafields>
+    <title>Sarjalisäkirjauskentät (80X-830)</title>
+    <description>Kentät 800-830 sisältävät tekijä/nimekkeen tai nimekkeen jota käytetään sarjalisäkirjauksena kun sarjamerkintö sisältyy kenttään 490 (Sarjamerkintö, ei lisäkirjaus) tai kenttään 500 (Yleinen huomautus) ja bibliografinen tietue vaatii sarjalisäkirjauksen. Joissakin näytöissä esiintyy numerointia ja sana <em>Sarja:</em> ennen sarjalisäkirjausta, mutta niitä ei tallenneta MARC-tietueeseen vaan ne voidaan muodostaa näyttöihin kenttäkoodin perusteella.</description>
+    <datafield tag="800" repeatable="Y">
+      <name>Sarjalisäkirjaus - henkilönnimi</name>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto<br /><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.xml#100">100</a>.</em></description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+            <value code="1">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="3">
+              <description>Suvun nimi</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Henkilönnimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Numerointi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Arvonimet ja muut nimeen liittyvät sanat</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Nimeen liittyvät aikamääreet</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Nimen määrite</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava alaotsikko</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Henkilönnimen täydellisempi muoto</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>Organisatorinen kytkös</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Sarjan sisäinen numerointi</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="Y">
+          <name>Aineisto, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Funktiokoodi</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description>Kaksi merkkipaikkaa (merkitään 0 ja 1), joiden koodimuotoisilla tiedoilla kuvataan linkkikirjauksen erityispiirteitä. Koska koodien merkitys määräytyy niiden merkkipaikan perusteella, kaikki edeltävät merkkipaikat on täytettävä tarvittaessa täyttömerkillä (|); jälkimmäisiä merkkipaikkoja ei tarvitse täyttää.</description>
+	  <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	      <description>Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tyyppiä. Koodi vastaa liittyvän kohteen tietueen Nimiö/06 (Tietueen tyyppi) arvoa.</description> 
+	      <values>
+				<value code="a">
+                  <name>Tekstiaineisto</name>
+                </value>
+				<value code="c">
+                  <name>Nuottijulkaisu</name>
+                </value>
+				<value code="d">
+                  <name>Nuottikäsikirjoitus</name>
+                </value>
+				<value code="e">
+                  <name>Kartta-aineisto</name>
+                </value>
+				<value code="f">
+                  <name>Karttakäsikirjoitus</name>
+                </value>
+				<value code="g">
+                  <name>Heijastettava kuva tai viestin</name>
+                </value>
+				<value code="i">
+                  <name>Puheäänite</name>
+                </value>
+				<value code="j">
+                  <name>Musiikkiäänite</name>
+                </value>
+				<value code="k">
+                  <name>Kuva</name>
+                </value>
+				<value code="m">
+                  <name>Elektroninen aineisto</name>
+                </value>
+				<value code="o">
+                  <name>Moniviestin</name>
+                </value>
+				<value code="p">
+                  <name>Sekalainen aineisto</name>
+                </value>
+				<value code="r">
+                  <name>Esine</name>
+                </value>
+				<value code="t">
+                  <name>Tekstikäsikirjoitus</name>
+                </value>
+              </values>
+	    </position>
+	    <position pos="/1">
+              <name>Tietueen bibliografinen taso</name>
+	      <description>Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tasoa. Koodi vastaa liittyvän kohteen tietueen Nimiö/07 (Tietueen bibliografinen taso) arvoa.</description>
+	      <values>
+				<value code="a">
+                  <name>Osakohde monografiassa</name>
+                </value>
+				<value code="b">
+                  <name>Osakohde kausijulkaisussa</name>
+                </value>
+				<value code="c">
+                  <name>Kokoelma</name>
+                </value>
+				<value code="d">
+                  <name>Osakohde kokoelmassa</name>
+                </value>
+				<value code="i">
+                  <name>Päivittyvä julkaisu</name>
+                </value>
+				<value code="m">
+                  <name>Monografia</name>
+                </value>
+				<value code="s">
+                  <name>Kausijulkaisu</name>
+                </value>
+              </values>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Teachings of the feathered serpent ; <strong>&#8225;v</strong> bk. 1<br /><strong>800 1# &#8225;a</strong> Berenholtz, Jim, <strong>&#8225;d</strong> 1957-. <strong>&#8225;t</strong> Teachings of the feathered serpent ; <strong>&#8225;v</strong> bk. 1.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Collected writings of Edgar Allan Poe ; <strong>&#8225;v</strong> v. 1<br /><strong>800 1# &#8225;a</strong> Poe, Edgar Allan, <strong>&#8225;d</strong> 1809-1849. <strong>&#8225;t</strong> Works. <strong>&#8225;f</strong> 1981 ; <strong>&#8225;v</strong> v. 1.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> The James Joyce archive<br /><strong>800 1# &#8225;a</strong> Joyce, James, <strong>&#8225;d</strong> 1882- 1941. <strong>&#8225;t</strong> James Joyce archive.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="810" repeatable="Y">
+      <name>Sarjalisäkirjaus - yhteisönnimi</name>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto<br /><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.xml#110">110</a>.</em></description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhteisönnimi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Kokouksen tai sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava alaotsikko</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>Organisatorinen kytkös</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Sarjan sisäinen numerointi</name>
+        </subfield>
+         <subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="Y">
+          <name>Aineisto, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Funktiokoodi</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+	  <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#800">800</a>.</em></description>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Tietueen bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Julkaisu / Teknillinen korkeakoulu, arkkitehtiosasto, rakennetun ympäristön tutkimuslaitos. <strong>&#8225;n</strong> B, <strong>&#8225;x</strong> 0783-3253 ; <strong>&#8225;v</strong> 22<br /><strong>810 2# &#8225;a</strong> Teknillinen korkeakoulu. <strong>&#8225;b</strong> Arkkitehtiosasto. <strong>&#8225;b</strong> Rakennetun ympäristön tutkimuslaitos. <strong>&#8225;t</strong> Julkaisu. <strong>&#8225;n</strong> B ; <strong>&#8225;v</strong> 22.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> World travel series ; <strong>&#8225;v</strong> 7<br /><strong> 810 2# &#8225;a</strong> John Bartholomew and Son. <strong>&#8225;t</strong> Bartholomew world travel series ; <strong>&#8225;v</strong> 7.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> CIIL linguistic atlas series ; <strong>&#8225;v</strong> 1<br /><strong>810 2# &#8225;a</strong> Central Institute of Indian Languages. <strong>&#8225;t</strong> CIIL linguistic atlas series ; <strong>&#8225;v</strong> 1.</text>
+        </example>
+	<example>
+          <text><strong>810 2# &#8225;a</strong> Deutsches Institut für Normung <strong>&#8225;4</strong> aut <strong>&#8225;t</strong> DIN-Taschenbuch <strong>&#8225;v</strong> 193 <strong>&#8225;w</strong> (DE-101)016034287 <strong>&#8225;w</strong> (DE-600)1072284-1 <strong>&#8225;7</strong> as</text>
+	</example>
+      </examples>
+    </datafield>
+    <datafield tag="811" repeatable="Y">
+      <name>Sarjalisäkirjaus - kokouksen nimi</name>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto<br /><em>Ks. ensimmäisen indikaattorin arvojen selitykset kentästä <a href="1XX.xml#111">111</a>.</em></description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Kokouksen tai hallintoalueen nimi</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Kokouksen aika</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava alaotsikko</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Hallintoalueen nimeä seuraava kokouksen nimi</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>Organisatorinen kytkös</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Sarjan sisäinen numerointi</name>
+        </subfield>
+         <subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="Y">
+          <name>Aineisto, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Funktiokoodi</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+	  <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#800">800</a>.</em></description>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Tietueen bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Actes du XVIIe?me Congre?s international de linguistique et philologie romanes ; <strong>&#8225;v</strong> vol. no 5<br /><strong>811 2# &#8225;a</strong> International Congress of Romance Linguistics and Philology <strong>&#8225;n</strong> (17th : <strong>&#8225;d</strong> 1983 : <strong>&#8225;c</strong> Aix-en-Provence, France). <strong>&#8225;t</strong> Actes du XVIIème Congrès international de linguistique et philologie romanes ; <strong>&#8225;v</strong> vol. no. 5.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Nutrition and food science ; <strong>&#8225;v</strong> v. 1<br /><strong>811 2# &#8225;a</strong> International Congress of Nutrition <strong>&#8225;n</strong> (11th : <strong>&#8225;d</strong> 1978 : <strong>&#8225;c</strong> Rio de Janeiro, Brazil). <strong>&#8225;t</strong> Nutrition and food science ; <strong>&#8225;v</strong> v. 1.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Delaware symposia on language studies ; <strong>&#8225;v</strong> 4 <br /><strong>811 2# &#8225;a</strong> Delaware Symposium on Language Studies. <strong>&#8225;t</strong> Delaware symposia on language studies ; <strong>&#8225;v</strong> 4.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="830" repeatable="Y">
+      <name>Sarjalisäkirjaus - yhtenäistetty nimeke</name>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description><a href="../ohitus.htm">Ohitusindikaattori</a></description>
+          <values>
+            <value code="0-9">
+              <description>Ohitettavien merkkien määrä</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava alaotsikko</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+          <description>Nimekesivun nimeke.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Sarjan sisäinen numerointi</name>
+        </subfield>
+         <subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="Y">
+          <name>Aineisto, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="5" repeatable="N">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>        
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+	  <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#800">800</a>.</em></description>
+          <positions>
+            <position pos="/0">
+              <name>Tietueen tyyppi</name>
+	     </position>
+	    <position pos="/1">
+              <name>Tietueen bibliografinen taso</name>
+	     </position>
+	  </positions>
+        </subfield>
+	<subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>490 0# &#8225;a</strong> Report / YJT, <strong>&#8225;x</strong> 0359-548X ; <strong>&#8225;v</strong> 1992, 12<br /><strong>830 #0 &#8225;a</strong> Raportti / Voimayhtiöiden ydinjätetoimikunta, YJT ; <strong>&#8225;v</strong> 1992, 12.</text>
+        </example>
+        <example>
+          <text><strong>830 #0 &#8225;a</strong> Tutkielmia / Jyväskylän yliopisto, opettajankoulutuslaitos.<strong>&#8225;n</strong> B ; <strong>&#8225;v</strong> 2.</text>
+        </example>
+        <example>
+          <text><strong>490 0# &#8225;a</strong> Research report / Department of Teacher Education, University of Helsinki, <strong>&#8225;x</strong> 0359-4203 ; <strong>&#8225;v</strong> 89 <br /><strong>830 #0 &#8225;a</strong> Tutkimuksia / Helsingin yliopiston opettajankoulutuslaitos ; <strong>&#8225;v</strong> 89.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Musica da camera ; <strong>&#8225;v</strong> 72<br /><strong>830 #0 &#8225;a</strong> Musica da camera (Oxford University Press) ; <strong>&#8225;v</strong> 72.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Turun yliopiston julkaisuja. Sarja D, Medica-Odontologica, <strong>&#8225;x</strong> 0355-9483 ; <strong>&#8225;v</strong> osa 852<br /><strong>830 #0 &#8225;a</strong> Turun yliopiston julkaisuja. <strong>&#8225;n</strong> Sarja D, <strong>&#8225;p</strong> Medica-Odontologica, <strong>&#8225;x</strong> 0355-9483 ; <strong>&#8225;v</strong> osa 852.</text>
+        </example>
+        <example>
+          <text><strong>490 1# &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. Sarja A, <strong>&#8225;x</strong> 1459-4870 ; <strong>&#8225;v</strong> 2:2009<br /><strong>830 #0 &#8225;a</strong> Turun kauppakorkeakoulun julkaisuja. <strong>&#8225;n</strong> Sarja A, <strong>&#8225;x</strong> 1459-4870 ; <strong>&#8225;v</strong>2:2009.</text>
+        </example>
+	<example>
+	  <text><strong>830 #0 &#8225;a</strong> Fasteners <strong>&#8225;v</strong> 5 <strong>&#8225;w</strong> (DE-101)550955267 <strong>&#8225;7</strong> am</text>
+	</example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

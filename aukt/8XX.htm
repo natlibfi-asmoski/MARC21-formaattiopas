@@ -1,0 +1,238 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Auktoriteettitiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		AUKTORITEETTITIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 26.2.2013.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Sijainti ja vaihtoehtoinen kirjaimisto (8XX)</h2>
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>8XX-kentistä vain kentät 856, 880 ja 883 ovat käytössä MARC 21 auktoriteettitietojen formaatissa. Bibliografisten tietojen
+         formaatin vastaavat kentät sisältävät lähes täsmälleen samat tiedot.
+      </p>
+      <ul>
+         <li><a href="#856">856 - ELEKTRONISEN AINEISTON SIJAINTI JA KÄYTTÖ</a> (T)
+         </li>
+         <li><a href="#880">880 - TIEDOT VAIHTOEHTOISELLA KIRJAIMISTOLLA</a> (T)
+         </li>
+         <li><a href="#883">883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI)</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="856"></a>856 - ELEKTRONISEN AINEISTON SIJAINTI JA KÄYTTÖ (T)
+      </h3>
+      <p>Tiedot, joita tarvitaan elektronisen aineiston paikantamiseen ja käyttöön. Kenttää voidaan käyttää auktoriteettitietueessa,
+         kun halutaan tarjota elektronisessa muodossa olevia lisätietoja entiteetistä, jota varten auktoriteettitietue on tehty.
+      </p>
+      <p>Kenttää 856 toistetaan, kun sijaintia koskevat tietoelementit vaihtelevat (osakentät ‡a, ‡b, ‡d). Sitä toistetaan myös, kun
+         useampi kuin yksi yhteys-/käyttötapa on mahdollinen, kun aineiston eri osat ovat saatavana elektronisessa muodossa, kun tallennetaan
+         tietoja peilatuista sivustoista, kun eri URL-osoitteille osoitetaan eri formaatteja tai resoluutioita, tai kun tallennetaan
+         tietoja kuvailun kohteeseen liittyvistä kohteista.
+      </p>
+      <p><a href="http://www.loc.gov/marc/856guide.html">Ks. tarkemmat ohjeet kentän 856 käytöstä (englanniksi).</a></p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Yhteys- tai käyttötapa<br> Kenttää toistetaan, kun useampi kuin yksi yhteys- tai käyttötapa on mahdollinen. Kun osakenttään ‡u tallennetaan URL, indikaattorin
+            arvo vastaa protokollaa, joka on myös osoitteen ensimmäinen elementti.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Sähköposti<br> Yhteys/käyttö tapahtuu Mail Transfer protokollalla (MAILTP).
+               </li>
+               <li><strong>1</strong> - FTP
+               </li>
+               <li><strong>2</strong> - Etäpalvelin (Telnet)
+               </li>
+               <li><strong>3</strong> - Modeemiyhteys<br> Yhteys/käyttö tapahtuu tavallisen puhelinlinjan kautta.
+               </li>
+               <li><strong>4</strong> - HTTP<br> Yhteys/käyttö tapahtuu Hypertext Transfer protokollalla.
+               </li>
+               <li><strong>7</strong> - Yhteys- tai käyttötapa merkitään osakenttään ‡2
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Suhde<br> Indikaattorin arvoja ei käytetä auktoriteettitietueissa.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Palvelimen nimi (T)<br>Toistetaan, jos samaa palvelinta voidaan kutsua useilla nimillä.
+         </li>
+         <li><strong>‡b</strong> - Palvelimen numeerinen osoite (T)<br>Voi sisältää IP (Internet Protocol) -osoitteen, jos kyseessä on aineisto Internetissä, tai puhelinnumeron, jos käyttöyhteys
+            tarjotaan modeemiyhteyden ja puhelinlinjan kautta. Tämä tieto voi muuttua usein ja sen automaattinen muodostaminen on suositeltavampaa
+            kuin staattinen tallennus.
+         </li>
+         <li><strong>‡c</strong> - Tiedoston pakkausmenetelmä (T)<br>Tietoja pakkausmenetelmästä ja tarvitaanko purkua varten erityinen ohjelma.
+         </li>
+         <li><strong>‡d</strong> - Tiedoston hakemistopolku (T)
+         </li>
+         <li><strong>‡f</strong> - Tiedoston nimi (T)
+         </li>
+         <li><strong>‡h</strong> - Käsittelijä (ET)<br>Yleensä tieto joka edeltää @-merkkiä palvelimen osoitteessa.
+         </li>
+         <li><strong>‡i</strong> - Komento (T)<br>Komento, jolla etäpalvelinta ohjataan.
+         </li>
+         <li><strong>‡j</strong> - Bittiä sekunnissa (ET)
+         </li>
+         <li><strong>‡k</strong> - Salasana (ET)
+         </li>
+         <li><strong>‡l</strong> - Käyttäjätunnus (ET)<br>Tähän osakenttään voidaan tallentaa yleisesti käytettyjä käyttäjätunnuksia, joita ei tarvitse erityisesti suojata.
+         </li>
+         <li><strong>‡m</strong> - Käyttäjätuen yhteystiedot (T)
+         </li>
+         <li><strong>‡n</strong> - Palvelimen sijaintipaikka (ET)<br>Osakentässä ‡a mainitun palvelimen täydellinen sijainti, maantieteellinen sijainti mukaan luettuna.
+         </li>
+         <li><strong>‡o</strong> - Palvelimen käyttöjärjestelmä (ET)
+         </li>
+         <li><strong>‡p</strong> - Portti (ET)
+         </li>
+         <li><strong>‡q</strong> - Tiedoston muoto (ET)<br>Esimerkiksi teksti/HTML, ASCII, Postscript-tiedosto, suoritettava ohjelma (exe) tai JPEG-kuva.
+         </li>
+         <li><strong>‡r</strong> - Asetukset (ET)
+         </li>
+         <li><strong>‡s</strong> - Tiedoston koko (T)
+         </li>
+         <li><strong>‡t</strong> - Pääte-emulointi (T)
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (T)<br>Kenttä 856 on rakennettu siten, että URL voidaan muodostaa myös yhdistämällä eri osakenttien tietoja. Osakenttää ‡u voidaan
+            käyttää niiden sijasta tai lisäksi. Osakenttää ‡u voidaan toistaa vain jos tallennetaan sekä URN että URL, tai useita URN:eja.
+            <a href="../../../../julkaisuala/urn.htm"> Suomalainen URN, ks. ISBN- ja ISSN-keskus</a>.
+         </li>
+         <li><strong>‡v</strong> - Aineisto tavoitettavissa, aukioloaika (T)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)
+         </li>
+         <li><strong>‡y</strong> - Linkin teksti (T)<br>Teksti, joka näkyy asiakkaalle ja toimii linkkinä osakentässä ‡u esitetyn URI:n sijaan.
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)
+         </li>
+         <li><strong>‡2</strong> - Yhteys- tai käyttötapa (ET)<br>Kun ensimmäisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela856b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>856 4#‡u</strong>http://plato.standford.edu/entries/russell/russell.jpeg<strong>‡y</strong>photograph 
+      </p>
+      <p><strong>856 4#‡u</strong>http://sunsite.unc.edu/wm/paint/auth/vinci/joconde/<strong>‡y</strong>description
+      </p>
+      <p><strong>856 4#‡3</strong>image<strong>‡u</strong>http://sunsite.unc.edu/wm/paint/auth/vinci/joconde/joconde.jpg
+      </p>
+      <p><strong>856 4#‡u</strong>http://www.loc.gov/copyright
+      </p>
+      <p><strong>856 4#‡u</strong>http://www.nlc-bnc.ca/jsc
+      </p>
+      <p><strong>856 4#‡u</strong>http://www.firstladies.org/
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="880"></a>880 - TIEDOT VAIHTOEHTOISELLA KIRJAIMISTOLLA (T)
+      </h3>
+      <p>Jonkin samassa tietueessa esiintyvän vaihtuvamittaisen kentän tiedot toisella kirjaimistolla. Kenttä 880 linkitetään sitä
+         vastaavaan "tavalliseen" kenttään osakentän ‡6 (Linkitys) avulla. Kentän 880 ensimmäisellä ja toisella indikaattorilla on
+         samat arvot kuin sitä vastaavan kentän indikaattoreilla. Osakenttäkoodit ovat myös samat lukuun ottamatta osakenttää ‡6. Tiedot
+         kentässä 880 voivat olla esitettynä useammalla kuin yhdellä kirjaimistolla.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Sama kuin vastaavassa "tavallisessa" kentässä
+            <ul></ul>
+         </li>
+         <li>Toinen - Sama kuin vastaavassa "tavallisessa" kentässä
+            <ul></ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡a-z</strong> - Samat kuin vastaavassa "tavallisessa" kentässä
+         </li>
+         <li><strong>‡0-5</strong> - Samat kuin vastaavassa "tavallisessa" kentässä
+         </li>
+         <li><strong>‡7-9</strong> - Samat kuin vastaavassa "tavallisessa" kentässä
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>880 1#‡6</strong>400-01/(2/r<strong>‡a</strong>[Otsikkomuoto heprealaisella kirjaimistolla linkitettynä vastaavaan "tavalliseen" kenttään]
+      </p>
+      <p><strong>880 1#‡6</strong>100-01/(N<strong>‡a</strong>[Otsikkomuoto kyrillisellä kirjaimistolla linkitettynä vastaavaan "tavalliseen" kenttään]
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="883"></a>883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI) (T)
+      </h3>
+      <p>Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin
+         kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Luontitapa
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu/ ei ole sovellettavissa
+               </li>
+               <li><strong>0</strong> - Kokonaan koneellisesti luotu
+               </li>
+               <li><strong>1</strong> - Osittain koneellisesti luotu
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luontimenetelmä (ET)
+         </li>
+         <li><strong>‡c</strong> - Luotettavuusarvo (ET)
+         </li>
+         <li><strong>‡d</strong> - Luontipäivä (ET)<br>Tallennetaan muodossa vvvvkkpp, ISO 8601.
+         </li>
+         <li><strong>‡q</strong> - Metatiedon luonut organisaatio (ET)
+         </li>
+         <li><strong>‡x</strong> - Voimassaolon päättymispäivä (ET)
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (ET)
+         </li>
+         <li><strong>‡w</strong> - Bibliografisen tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

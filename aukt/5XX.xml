@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>20.6.2013</modified>
+  <datafields>
+    <title>Katso myös -viittausten kentät (5XX)</title>
+    <description>Katso myös -viittausten kenttiä 500-585 käytetään 1XX-kentässä esiintyvään otsikkomuotoon liittyville muille ohjeellisille otsikkomuodoille. Yleistä tietoa näistä tietoelementeistä löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.</description>
+    <datafield tag="500" repeatable="Y">
+      <name>Katso myös -viittaus - henkilönnimi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus henkilönnimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#100">100</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+            <value code="1">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="3">
+              <description>Suvun nimi</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Henkilönnimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Numerointi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Arvonimet ja muut nimeen liittyvät sanat</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Nimeen liittyvät aikamääreet</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Nimen määrite</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Henkilönnimen täydellisempi muoto</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>500 1#&#8225;w</strong>g<strong>&#8225;a</strong>Long, Robert Alexander,<strong>&#8225;d</strong>1850-1934<strong>&#8225;x</strong>Homes and haunts<strong>&#8225;z</strong>Missouri</text>
+        </example>
+        <example>
+          <text><strong>500 1#&#8225;a</strong>Fauré, Gabriel,<strong>&#8225;d</strong>1845-1924.<strong>&#8225;t</strong>Ballades,<strong>&#8225;m</strong>piano<strong>&#8225;n</strong>op. 19</text>
+        </example>
+        <example>
+          <text><strong>500 3#&#8225;a</strong>Horn family</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="510" repeatable="Y">
+      <name>Katso myös -viittaus - yhteisönnimi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus yhteisönimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#110">110</a>.</description>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhteisönnimi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Kokouksen tai sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>510 1#&#8225;w</strong>a<strong>&#8225;a</strong>Missouri.<strong>&#8225;b</strong>State Highway Patrol.<strong>&#8225;b</strong>Criminal Records Section</text>
+        </example>
+        <example>
+          <text><strong>510 2#&#8225;w</strong>anna<strong>&#8225;a</strong>Karachi Entomological Society</text>
+        </example>
+        <example>
+          <text><strong>510 2#&#8225;w</strong>b<strong>&#8225;a</strong>Oklahoma Council on Juvenile Delinquency</text>
+        </example>
+        <example>
+          <text><strong>510 2#&#8225;w</strong>b<strong>&#8225;a</strong>Association for Computing Machinery.<strong>&#8225;b</strong>Special Interest Group on Small and Personal Computing Systems and Applications</text>
+        </example>
+        <example>
+          <text><strong>510 1#&#8225;w</strong>a<strong>&#8225;a</strong>Maryland.<strong>&#8225;b</strong>Air Quality Programs</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="511" repeatable="Y">
+      <name>Katso myös -viittaus - kokouksen nimi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus kokouksen nimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#111">111</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys on suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Kokouksen tai hallintoalueen nimi</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Kokouksen aika</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Hallintoalueen nimeä seuraava kokouksen nimi</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>511 2#&#8225;w</strong>a<strong>&#8225;a</strong>International Drip Irrigation Meeting</text>
+        </example>
+        <example>
+          <text><strong>511 2#&#8225;w</strong>b<strong>&#8225;a</strong>International Drip/Trickle Irrigation Congress</text>
+        </example>
+        <example>
+          <text><strong>511 2#&#8225;w</strong>a<strong>&#8225;a</strong>Colloque européen de droit rural</text>
+        </example>
+        <example>
+          <text><strong>511 2#&#8225;w</strong>b<strong>&#8225;a</strong>Entretiens de Bichat Pitié-Salpétrière</text>
+        </example>
+        <example>
+          <text><strong>511 2#&#8225;a</strong>Mexico-United States Interparliamentary Conference.<strong>&#8225;e</strong>Delegations</text>
+        </example>
+        <example>
+          <text><strong>511 2#&#8225;w</strong>a<strong>&#8225;a</strong>AIC Seminar.<strong>&#8225;t</strong>Proceedings</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="530" repeatable="Y">
+      <name>Katso myös -viittaus - yhtenäistetty nimeke</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus yhtenäistetystä nimekkeestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#130">130</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description><a href="../ohitus.htm">Ohitusindikaattori</a></description>
+          <values>
+            <value code="0-9">
+              <description>Ohitettavien merkkien määrä</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>530 #0&#8225;a</strong>Dead Sea scrolls</text>
+        </example>
+        <example>
+          <text><strong>530 #0&#8225;a</strong>Reviews of national policies for education</text>
+        </example>
+        <example>
+          <text><strong>530 #0&#8225;w</strong>b<strong>&#8225;a</strong>Data report (Maryland. Air Management Administration)</text>
+        </example>
+        <example>
+          <text><strong>530 #0&#8225;a</strong>Collection Cinéma d'aujourd'hui.<strong>&#8225;p</strong>Dossiers</text>
+        </example>
+        <example>
+          <text><strong>530 #0&#8225;w</strong>b<strong>&#8225;a</strong>Publicaciones del Archivo Histórico de la Provincia de Buenos Aires "Ricardo Levene."<strong>&#8225;n</strong>III,<strong>&#8225;p</strong>Documentos del archivo</text>
+        </example>
+        <example>
+          <text><strong>530 #0&#8225;w</strong>g<strong>&#8225;a</strong>Vedas<strong>&#8225;x</strong>Criticism, interpretation, etc.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="548" repeatable="Y">
+      <name>Katso myös -viittaus - aikaa ilmaiseva termi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus aikaa ilmaisevasta termistä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#148">148</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aikaa ilmaiseva termi</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>548 ##&#8225;a</strong>1700-1799</text>
+        </example>
+        <example>
+          <text><strong>548 ##&#8225;a</strong>1800-1899</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="550" repeatable="Y">
+      <name>Katso myös -viittaus - aihetta ilmaiseva termi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus aihetta ilmaisevasta termistä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#150">150</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aihetta ilmaiseva termi tai maantieteellinen nimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Maantieteellistä nimeä seuraava aihetta ilmaiseva termi</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>550 ##&#8225;w</strong>g<strong>&#8225;a</strong>God</text>
+        </example>
+        <example>
+          <text><strong>550 ##&#8225;w</strong>g<strong>&#8225;a</strong>Indians of North America<strong>&#8225;x</strong>Wars<strong>&#8225;y</strong>1862-1865</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="551" repeatable="Y">
+      <name>Katso myös -viittaus - maantieteellinen nimi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus maantieteellisestä nimestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#151">151</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Maantieteellinen nimi</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>551 ##&#8225;a</strong>Belgrano (Buenos Aires, Argentina)</text>
+        </example>
+        <example>
+          <text><strong>551 ##&#8225;a</strong>Kensington and Chelsea (London, England)</text>
+        </example>
+        <example>
+          <text><strong>551 ##&#8225;a</strong>London (England)</text>
+        </example>
+        <example>
+          <text><strong>551 ##&#8225;w</strong>g<strong>&#8225;a</strong>Arctic Ocean</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="555" repeatable="Y">
+      <name>Katso myös -viittaus - lajityyppiä/muotoa ilmaiseva termi</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus lajityyppiä/muotoa ilmaisevasta termistä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#155">155</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Lajityyppiä/muotoa kuvaava termi</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>555 ##&#8225;w</strong>h<strong>&#8225;a</strong>3-D films</text>
+        </example>
+        <example>
+          <text><strong>555 ##&#8225;w</strong>g<strong>&#8225;a</strong>Serial publications</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="562" repeatable="Y">
+      <name>Katso myös -viittaus - esiintymiskokoonpanoa ilmaiseva termi</name>
+      <description paragraph="1">Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#162">162</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Esiintymiskokoonpanoa ilmaiseva termi</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>562 ##&#8225;w</strong>g<strong>&#8225;a</strong>bowed string instrument</text>
+        </example>
+        <example>
+          <text><strong>562 ##&#8225;w</strong>g<strong>&#8225;a</strong>lute</text>
+        </example>
+        <example>
+          <text><strong>562 ##&#8225;a</strong>saz</text>
+        </example>
+        <example>
+          <text><strong>562 ##&#8225;a</strong>tanbur</text>
+        </example>
+        <example>
+          <text><strong>562 ##&#8225;w</strong>g<strong>&#8225;a</strong>keyboard instrument</text>
+        </example>
+        <example>
+          <text><strong>562 ##&#8225;w</strong>g<strong>&#8225;a</strong>percussion instrument</text>
+        </example>
+        <example>
+          <text><strong>562 ##&#8225;a</strong>piano</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="580" repeatable="Y">
+      <name>Katso myös -viittaus - yleinen lisämääre</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus yleisestä lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#180">180</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>580 ##&#8225;x</strong>Shrines</text>
+        </example>
+        <example>
+          <text><strong>580 ##&#8225;x</strong>Officials and employees<strong>&#8225;x</strong>Leave regulations</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="581" repeatable="Y">
+      <name>Katso myös -viittaus - maantieteellinen lisämääre</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus maantieteellinen nimi -lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#181">181</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="582" repeatable="Y">
+      <name>Katso myös -viittaus - aikaa ilmaiseva lisämääre</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus aikaa ilmaisevasta lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#182">182</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>582 ##&#8225;w</strong>g<strong>&#8225;y</strong>1961-1963</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="585" repeatable="Y">
+      <name>Katso myös -viittaus - muotoa ilmaiseva lisämääre</name>
+      <description paragraph="1">Käytetään muodostamaan katso myös -viittaus muotoa ilmaisevasta lisämääreestä siihen liittyvään vahvistettuun otsikkomuotoon. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#185">185</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>585 ##&#8225;v</strong>Abbreviations</text>
+        </example>
+        <example>
+          <text><strong>585 ##&#8225;v</strong>Microform catalogs</text>
+        </example>
+        <example>
+          <text><strong>585 ##&#8225;v</strong>Autobiographies</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

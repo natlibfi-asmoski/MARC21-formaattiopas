@@ -1,0 +1,155 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Varastotiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		VARASTOTIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 8.6.2007.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Nimiö ja hakemisto</h2>
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <ul>
+         <li><a href="#nimio">NIMIÖ</a></li>
+         <li><a href="#hakemisto">HAKEMISTO</a></li>
+      </ul>
+      <hr>
+      <h3><a name="nimio"></a>NIMIÖ
+      </h3>
+      <p>Kiinteä kenttä, joka käsittää jokaisen tietueen 24 ensimmäistä (00-23) merkkipaikkaa.</p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-04</strong> - Tietueen pituus<br>Järjestelmän tuottama viisimerkkinen numerojono, joka ilmaisee koko tietueen pituuden. Numero on tasattu oikealle ja käyttämättömissä
+            merkkipaikoissa on nolla.
+         </li>
+         <li><strong>05</strong> - Tietueen tila
+            <ul>
+               <li><strong>c</strong> - Korjattu tai parannettu<br> Tietueeseen on tehty jokin muu muutos kuin koodaustason korotus.
+               </li>
+               <li><strong>d</strong> - Poistettu
+               </li>
+               <li><strong>n</strong> - Uusi
+               </li>
+            </ul>
+         </li>
+         <li><strong>06</strong> - Tietueen tyyppi<br>Ilmaisee millaiseen kohteeseen varastotiedot liittyvät. Kun varastotiedot sisällytetään bibliografiseen MARC-tietueeseen,
+            nämä tiedot voidaan tallentaa kentän <a href="5XX-84X.htm#841">841</a> osakenttään ‡a (Varastotiedot koodeina, Tietueen tyyppi).
+            <ul>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>v</strong> - Varastotiedot liittyvät moniosaiseen monografiaan
+               </li>
+               <li><strong>x</strong> - Varastotiedot liittyvät yksiosaiseen monografiaan
+               </li>
+               <li><strong>y</strong> - Varastotiedot liittyvät kausijulkaisuun (jatkuva tai päivittyvä julkaisu)
+               </li>
+            </ul>
+         </li>
+         <li><strong>07-08</strong> - Määrittelemätön<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>09</strong> - Tietueen merkistö<br>Vrt. <em> <a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em> (Library of Congress).
+            <ul>
+               <li><strong>#</strong> - MARC-8
+               </li>
+               <li><strong>a</strong> - UCS/Unicode<br>UTF-8, "UCS Transformation Format 8" määritellään ISO/IEC 10646:2003 -standardin liitteessä D, vastaa teknisesti <a href="http://www.unicode.org">Unicode</a>-standardia.
+               </li>
+            </ul>
+         </li>
+         <li><strong>10</strong> - Indikaattorien määrä<br>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa indikaattoreille on varattu vaihtuvamittaisissa kentissä.
+         </li>
+         <li><strong>11</strong> - Osakenttäkoodin pituus<br>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa jokaiselle osakenttäkoodille on varattu vaihtuvamittaisissa
+            kentissä.
+         </li>
+         <li><strong>12-16</strong> - Tietojen kantaosoite<br>Järjestelmän tuottama viisimerkkinen numerojono ilmaisee tietueen ensimmäisen vaihtuvamittaisen kentän ensimmäisen merkkipaikan
+            (= nimiön ja hakemiston merkkien määrä sekä nimiön loppumerkki). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa
+            on nolla.
+         </li>
+         <li><strong>17</strong> - Koodaustaso<br>Varastotietojen tarkkuuden taso perustuu ISO 10324 (<em>Holdings Statements-Summary Level</em>) -standardiin,  vrt. ANSI/NISO Z39.71 (<em>Holdings Statements for Bibliographic Items</em>). Koodit 1, 2, 3 ja 4 vastaavat standardin tasoja 1, 2, 3 ja 4. Kun varastotiedot sisällytetään bibliografiseen MARC-tietueeseen,
+            nämä tiedot voidaan tallentaa kentän <a href="5XX-84X.htm#841">841</a> osakenttään ‡e (Varastotiedot koodeina, Koodaustaso).
+            <ul>
+               <li><strong>1</strong> - Taso 1<br> Perustaso, vain kenttä 852. Käytetään yleensä monografioille.
+               </li>
+               <li><strong>2</strong> - Taso 2
+               </li>
+               <li><strong>3</strong> - Taso 3<br> Tiivistetyt varastotiedot kentissä 853-855 ja/tai 86X. Käytetään yleensä jatkuville ja päivittyville julkaisuille. Varastotietueen,
+                  jolle on annettu taso 3, pitää sisältää vähintään yksi kenttä 866.
+               </li>
+               <li><strong>4</strong> - Taso 4<br> Tiivistämättömät varastotiedot kentissä 853-855 ja/tai 86X.
+               </li>
+               <li><strong>5</strong> - Taso 4 lisättynä kappaleen tunnistustiedoilla<br> Kappaleen (esim. osa/volyymi/nide) tunnistustiedot tallennetaan osakenttään ‡p joko kentässä 852 (Sijainti) tai jossakin
+                  kentistä 863-865 (Määrämuotoiset varastotiedot), tai osakenttään ‡a jossakin kentistä 866-868 (Vapaamuotoiset varastotiedot).
+               </li>
+               <li><strong>m</strong> - Taso vaihtelee<br> Varastotietoja on tallennettu useammalla kuin yhdellä tasolla. Kenttien 863-868 ensimmäinen indikaattori (Kentän koodaustaso)
+                  osoittaa jokaisen varastotietojen kentän tason.
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>z</strong> - Muu taso
+               </li>
+            </ul>
+         </li>
+         <li><strong>18</strong> - Kappaletiedot<br>Onko tietueeseen tallennettu kappaletietoja yhteen tai useampaan kenttään 876-878 (Kappaletietojen kentät).
+            <ul>
+               <li><strong>i</strong> - Kappaletietoja on tallennettu<br> Varastotietueessa on yksi tai useampi 87X-kenttä.
+               </li>
+               <li><strong>n</strong> - Kappaletietoja ei ole tallennettu<br> Varastotietueessa ei ole yhtään 87X-kenttää.
+               </li>
+            </ul>
+         </li>
+         <li><strong>19</strong> - Määrittelemätön<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>20-23</strong> - Kirjauskartta "Entry map"<br>Neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.
+            <ul>
+               <li><strong>20</strong> - 'Kentän pituus' -tiedon pituus<br>Sisältää numeron 4.
+               </li>
+               <li><strong>21</strong> - 'Kentän osoite' -tiedon pituus<br>Sisältää numeron 5.
+               </li>
+               <li><strong>22</strong> - Järjestelmän määrittelemän tiedon pituus<br>Sisältää numeron 0.
+               </li>
+               <li><strong>23</strong> - Määrittelemätön<br>Sisältää numeron 0.
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="hakemisto"></a>HAKEMISTO
+      </h3>
+      <p>Järjestelmän tuottama hakemisto vaihtuvamittaisten kenttien sijainnista. Hakemisto alkaa heti nimiön jälkeen merkkipaikasta
+         24 lähtien ja koostuu 12 merkin mittaisista jaksoista, joissa kuvataan kenttäkoodi, kentän pituus ja kentän aloituskohta.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-02</strong> - Kenttäkoodi<br>Kolme numeroa, jotka kertovat mistä kentästä on kyse.
+         </li>
+         <li><strong>03-06</strong> - Kentän pituus<br>Neljä numeroa, jotka kertovat kentän pituuden mukaan lukien indikaattorit, osakenttäkoodit, tietosisällön ja kentän loppumerkin.
+            Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+         </li>
+         <li><strong>07-11</strong> - Kentän aloituskohta<br>Viisi numeroa, jotka kertovat mistä merkkipaikasta kenttä alkaa suhteessa tietojen kantaosoitteeseen (nimiö/12-16). Numero
+            on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

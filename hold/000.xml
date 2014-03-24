@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
+
+<fields>
+  <modified>8.6.2007</modified>
+  <leader-directory>
+    <title>Nimiö ja hakemisto</title>
+    <leader>
+      <description paragraph="1">Kiinteä kenttä, joka käsittää jokaisen tietueen 24 ensimmäistä (00-23) merkkipaikkaa.</description>
+      <positions>
+        <position pos="00-04">
+          <name>Tietueen pituus</name>
+          <description>Järjestelmän tuottama viisimerkkinen numerojono, joka ilmaisee koko tietueen pituuden. Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+        <position pos="05">
+          <name>Tietueen tila</name>
+          <values>
+            <value code="c">
+              <name>Korjattu tai parannettu</name>
+              <description> Tietueeseen on tehty jokin muu muutos kuin koodaustason korotus.</description>
+            </value>
+            <value code="d">
+              <name>Poistettu</name>
+            </value>
+            <value code="n">
+              <name>Uusi</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Tietueen tyyppi</name>
+          <description>Ilmaisee millaiseen kohteeseen varastotiedot liittyvät. Kun varastotiedot sisällytetään bibliografiseen MARC-tietueeseen, nämä tiedot voidaan tallentaa kentän <a href="5XX-84X.xml#841">841</a> osakenttään &#8225;a (Varastotiedot koodeina, Tietueen tyyppi).</description>
+          <values>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="v">
+              <name>Varastotiedot liittyvät moniosaiseen monografiaan</name>
+            </value>
+            <value code="x">
+              <name>Varastotiedot liittyvät yksiosaiseen monografiaan</name>
+            </value>
+            <value code="y">
+              <name>Varastotiedot liittyvät kausijulkaisuun (jatkuva tai päivittyvä julkaisu)</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07-08">
+          <name>Määrittelemätön</name>
+          <description>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="09">
+          <name>Tietueen merkistö</name>
+          <description>Vrt. <em> <a href="http://www.loc.gov/marc/specifications/spechome.html">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em> (Library of Congress).</description>
+          <values>
+            <value code="#">
+              <name>MARC-8</name>
+            </value>
+            <value code="a">
+              <name>UCS/Unicode</name>
+              <description>UTF-8, "UCS Transformation Format 8" määritellään ISO/IEC 10646:2003 -standardin liitteessä D, vastaa teknisesti <a href="http://www.unicode.org">Unicode</a>-standardia.</description>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Indikaattorien määrä</name>
+          <description>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa indikaattoreille on varattu vaihtuvamittaisissa kentissä.</description>
+        </position>
+        <position pos="11">
+          <name>Osakenttäkoodin pituus</name>
+          <description>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa jokaiselle osakenttäkoodille on varattu vaihtuvamittaisissa kentissä.</description>
+        </position>
+        <position pos="12-16">
+          <name>Tietojen kantaosoite</name>
+          <description>Järjestelmän tuottama viisimerkkinen numerojono ilmaisee tietueen ensimmäisen vaihtuvamittaisen kentän ensimmäisen merkkipaikan (= nimiön ja hakemiston merkkien määrä sekä nimiön loppumerkki). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+        <position pos="17">
+          <name>Koodaustaso</name>
+          <description>Varastotietojen tarkkuuden taso perustuu ISO 10324 (<em>Holdings Statements-Summary Level</em>) -standardiin,  vrt. ANSI/NISO Z39.71 (<em>Holdings Statements for Bibliographic Items</em>). Koodit 1, 2, 3 ja 4 vastaavat standardin tasoja 1, 2, 3 ja 4. Kun varastotiedot sisällytetään bibliografiseen MARC-tietueeseen, nämä tiedot voidaan tallentaa kentän <a href="5XX-84X.xml#841">841</a> osakenttään &#8225;e (Varastotiedot koodeina, Koodaustaso).</description>
+          <values>
+            <value code="1">
+              <name>Taso 1</name>
+              <description> Perustaso, vain kenttä 852. Käytetään yleensä monografioille.</description>
+            </value>
+            <value code="2">
+              <name>Taso 2</name>
+            </value>
+            <value code="3">
+              <name>Taso 3</name>
+              <description> Tiivistetyt varastotiedot kentissä 853-855 ja/tai 86X. Käytetään yleensä jatkuville ja päivittyville julkaisuille. Varastotietueen, jolle on annettu taso 3, pitää sisältää vähintään yksi kenttä 866.</description>
+            </value>
+            <value code="4">
+              <name>Taso 4</name>
+              <description> Tiivistämättömät varastotiedot kentissä 853-855 ja/tai 86X.</description>
+            </value>
+            <value code="5">
+              <name>Taso 4 lisättynä kappaleen tunnistustiedoilla</name>
+              <description> Kappaleen (esim. osa/volyymi/nide) tunnistustiedot tallennetaan osakenttään &#8225;p joko kentässä 852 (Sijainti) tai jossakin kentistä 863-865 (Määrämuotoiset varastotiedot), tai osakenttään &#8225;a jossakin kentistä 866-868 (Vapaamuotoiset varastotiedot).</description>
+            </value>
+            <value code="m">
+              <name>Taso vaihtelee</name>
+              <description> Varastotietoja on tallennettu useammalla kuin yhdellä tasolla. Kenttien 863-868 ensimmäinen indikaattori (Kentän koodaustaso) osoittaa jokaisen varastotietojen kentän tason.</description>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+            <value code="z">
+              <name>Muu taso</name>
+            </value>
+          </values>
+        </position>
+        <position pos="18">
+          <name>Kappaletiedot</name>
+          <description>Onko tietueeseen tallennettu kappaletietoja yhteen tai useampaan kenttään 876-878 (Kappaletietojen kentät).</description>
+          <values>
+            <value code="i">
+              <name>Kappaletietoja on tallennettu</name>
+              <description> Varastotietueessa on yksi tai useampi 87X-kenttä.</description>
+            </value>
+            <value code="n">
+              <name>Kappaletietoja ei ole tallennettu</name>
+              <description> Varastotietueessa ei ole yhtään 87X-kenttää.</description>
+            </value>
+          </values>
+        </position>
+        <position pos="19">
+          <name>Määrittelemätön</name>
+          <description>Sisältää tyhjämerkin (#) tai täyttömerkin (|)</description>
+        </position>
+        <position pos="20-23">
+          <name>Kirjauskartta "Entry map"</name>
+          <description>Neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.</description>
+          <values>
+            <value code="20">
+              <name>'Kentän pituus' -tiedon pituus</name>
+              <description>Sisältää numeron 4.</description>
+            </value>
+            <value code="21">
+              <name>'Kentän osoite' -tiedon pituus</name>
+              <description>Sisältää numeron 5.</description>
+            </value>
+            <value code="22">
+              <name>Järjestelmän määrittelemän tiedon pituus</name>
+              <description>Sisältää numeron 0.</description>
+            </value>
+            <value code="23">
+              <name>Määrittelemätön</name>
+              <description>Sisältää numeron 0.</description>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </leader>
+    <directory>
+      <description paragraph="1">Järjestelmän tuottama hakemisto vaihtuvamittaisten kenttien sijainnista. Hakemisto alkaa heti nimiön jälkeen merkkipaikasta 24 lähtien ja koostuu 12 merkin mittaisista jaksoista, joissa kuvataan kenttäkoodi, kentän pituus ja kentän aloituskohta.</description>
+      <positions>
+        <position pos="00-02">
+          <name>Kenttäkoodi</name>
+          <description>Kolme numeroa, jotka kertovat mistä kentästä on kyse.</description>
+        </position>
+        <position pos="03-06">
+          <name>Kentän pituus</name>
+          <description>Neljä numeroa, jotka kertovat kentän pituuden mukaan lukien indikaattorit, osakenttäkoodit, tietosisällön ja kentän loppumerkin. Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+        <position pos="07-11">
+          <name>Kentän aloituskohta</name>
+          <description>Viisi numeroa, jotka kertovat mistä merkkipaikasta kenttä alkaa suhteessa tietojen kantaosoitteeseen (nimiö/12-16). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+      </positions>
+    </directory>
+  </leader-directory>
+</fields>

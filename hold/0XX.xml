@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
+
+<fields>
+  <modified>18.12.2013</modified>
+  <datafields>
+    <title>Numero- ja koodikentät (0XX)</title>
+    <description>Kentät 010-066 sisältävät standardinumeroita, joilla tunnistetaan varastotietueeseen liittyvä bibliografinen tietue.</description>
+    <datafield tag="010" repeatable="N">
+      <name>Library of congress kontrollinumero</name>
+      <description paragraph="1">Library of Congressin varastotietueeseen liittyvälle bibliografiselle MARC-tietueelle antama uniikki numero.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>LC kontrollinumero</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>NUCMC-kontrollinumero</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen LC kontrollinumero</name>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>010 ##&#8225;a</strong>###85153773#</text>
+        </example>
+        <example>
+          <text><strong>010 ##&#8225;b</strong>ms#78001237#<strong>&#8225;b</strong>ms#85000779#</text>
+        </example>
+        <example>
+          <text><strong>010 ##&#8225;a</strong>###76647633#<strong>&#8225;z</strong>sc#76000587#</text>
+        </example>
+        <example>
+          <text><strong>010 ##&#8225;a</strong>###81691938#<strong>&#8225;z</strong>###82692384#</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="014" repeatable="Y">
+      <name>Linkitysnumero</name>
+      <description paragraph="1">Varastotietueen tai siihen liittyvän bibliografisen tietueen kontrollinumero.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Linkitysnumeron tyyppi<br /> Onko kentän osakenttiin &#8225;a tai &#8225;z merkitty numero varastotietueen vai siihen liittyvän bibliografisen tietueen kontrollinumero.</description>
+          <values>
+            <value code="0">
+              <description>Varastotietueen kontrollinumero</description>
+            </value>
+            <value code="1">
+              <description>Bibliografisen tietueen kontrollinumero</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Linkitysnumero</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Numeron antajan koodi</name>
+          <description>Organisaation koodina käytetään ISIL-tunnusta, <em>ks. <a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen linkitysnumero</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>014 1#&#8225;a</strong>1605897<strong>&#8225;b</strong>OCoLC</text>
+        </example>
+        <example>
+          <text><strong>014 0#&#8225;a</strong>0000-49030<strong>&#8225;z</strong>0000-39730<strong>&#8225;b</strong>[organization code]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="016" repeatable="Y">
+      <name>Kansallisbibliografian kontrollinumero</name>
+      <description paragraph="1">Jonkin muun kansallisbibliografisen organisaation kuin Library of Congressin varastotietueeseen liittyvälle bibliografiselle MARC-tietueelle antama uniikki numero.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Kansallisbibliografinen organisaatio</description>
+          <values>
+            <value code="#">
+              <description>Library and Archives Canada</description>
+            </value>
+            <value code="7">
+              <description>Organisaatio merkitään osakenttään &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Organisaation koodi</name>
+          <description>Koodina käytetään ISIL-tunnusta, ks. <em><a href="../organisaatiot.htm"> Organisaatiot</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>016 7#&#8225;a</strong>PTBN000004618<strong>&#8225;2</strong>PoLiBN</text>
+        </example>
+        <example>
+          <text><strong>016 7#&#8225;a</strong>94.763966.1<strong>&#8225;2</strong>GyFmDB</text>
+        </example>
+        <example>
+          <text><strong>016 7#&#8225;a</strong>b9117951<strong>&#8225;z</strong>E000214460<strong>&#8225;2</strong>Uk</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="017" repeatable="Y">
+      <name>Tekijänoikeus- tai vapaakappaletunnus</name>
+      <description paragraph="1">Tekijänoikeus- tai vapaakappaletunnus kuvailun kohteelle, joka hankittiin tekijänoikeus- tai vapaakappaleena.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori </description>
+          <values>
+            <value code="#">
+              <description><em>Tekijänoikeus- tai vapaakappaletunnus</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tekijänoikeus- tai vapaakappaletunnus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Tunnuksen antanut organisaatio</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Päivämäärä</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Näyttöteksti</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen tekijänoikeus- tai vapaakappaletunnus</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tunnuksen antajan koodi</name>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela017b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>. </description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em> <a href="http://www.lib.helsinki.fi/kirjastoala/formaatti/MARC21/bib/kontrolliosakentat.htm#6"> Kontrolliosakentät</a></em>. </description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em> <a href="http://www.lib.helsinki.fi/kirjastoala/formaatti/MARC21/bib/kontrolliosakentat.htm#8"> Kontrolliosakentät</a></em>. </description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>017 ##&#8225;a</strong>EU781596<strong>&#8225;b</strong>U.S. CopyrightOffice </text>
+        </example>
+        <example>
+          <text><strong>017 ##&#8225;a</strong>VA26037<strong>&#8225;a</strong>VA26038<strong>&#8225;a</strong>VA26039<strong>&#8225;a</strong>VA26040<strong>&#8225;a</strong>VA26041<strong>&#8225;a</strong>VA26042<strong>&#8225;a</strong>VA26043<strong>&#8225;b</strong>U.S. Copyright Office </text>
+        </example>
+        <example>
+          <text><strong>017 #8&#8225;i</strong>Orig. reg.<strong>&#8225;a</strong>JP732<strong>&#8225;b</strong>U.S. Copyright Office<strong>&#8225;d</strong>19510504 </text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="020" repeatable="Y">
+      <name>Isbn-tunnus, international standard book number</name>
+      <description paragraph="1">Varastotietueeseen liittyvän bibliografisen MARC-tietueen ISBN-tunnus kentästä 020.<br /> Ks. <a href="../../../../julkaisuala/isbn/index.htm">Suomen ISBN-keskus</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Hinta- ja saatavuustiedot</name>
+        </subfield>
+        <subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
+          <description>Selittävät tiedot kappaleesta, joka liittyy osakenttään &#8225;a tai &#8225;z tallennettuun tunnukseen.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen ISBN-tunnus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>020 ##&#8225;a</strong>951-9422-82-X <strong>&#8225;q</strong>Virsikirja <strong>&#8225;q</strong>sid.</text>
+        </example>
+        <example>
+          <text><strong>020 ##&#8225;a</strong>951-776-249-4 <strong>&#8225;q</strong>osa 3 <strong>&#8225;q</strong>Tampereen kaupunginmuseo <strong>&#8225;q</strong>sid. :<strong>&#8225;c</strong>11 eur, vain virkakäyttöön</text>
+        </example>
+        <example>
+          <text><strong>020 ##&#8225;a</strong>951-861-386-9 <strong>&#8225;q</strong>sid. <strong>&#8225;z</strong>951-861-384-2 (virh.)</text>
+        </example>
+        <example>
+          <text><strong>020 ##&#8225;a</strong>0394170660<strong>&#8225;q</strong>Random House<strong>&#8225;q</strong>paperback<strong>&#8225;c</strong>$4.95</text>
+        </example>
+        <example>
+          <text><strong>020 ##&#8225;a</strong>0456789012<strong>&#8225;q</strong>reel 1</text>
+        </example>
+        <example>
+          <text><strong>020 ##&#8225;z</strong>0567890123<strong>&#8225;q</strong>reel 2</text>
+        </example>
+        <example>
+          <text><strong>020 ##&#8225;a</strong>9780060723804<strong>&#8225;q</strong>acid-free paper</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="022" repeatable="Y">
+      <name>Issn-tunnus, international standard serial number</name>
+      <description paragraph="1">Varastotietueeseen liittyvän bibliografisen MARC-tietueen ISSN-tunnus kentästä 022.<br /> Ks. <a href="../../../../julkaisuala/issn/index.htm">Suomen ISSN-keskus</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Kansainvälisen kiinnostavuuden taso</description>
+          <values>
+            <value code="#">
+              <description>Tasoa ei ole määritelty</description>
+            </value>
+            <value code="0">
+              <description>Jatkuvalla julkaisulla on kansainvälistä merkitystä</description>
+            </value>
+            <value code="1">
+              <description>Jatkuvalla julkaisulla ei ole kansainvälistä merkitystä</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Virheellinen ISSN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu ISSN-tunnus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>022 ##&#8225;a</strong>1455-8904</text>
+        </example>
+        <example>
+          <text><strong>022 ##&#8225;y</strong>0006-291X</text>
+        </example>
+        <example>
+          <text><strong>022 ##&#8225;a</strong>0786-5368<strong>&#8225;y</strong>0785-8015<strong>&#8225;z</strong>0785-9015 </text>
+        </example>
+        <example>
+          <text><strong>022 0#&#8225;a</strong>0145-0808<strong>&#8225;z</strong>0361-7106</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="024" repeatable="Y">
+      <name>Muut standarditunnukset</name>
+      <description paragraph="1">Varastotietueeseen liittyvän bibliografisen MARC-tietueen standarditunnus kentästä 024. Kyseessä on standarditunnus, jolle ei ole omaa kenttää kuten esim. ISBN-, ISSN- tai ISRN-tunnuksille. Tunnuksen lähde kerrotaan ensimmäisen indikaattorin avulla tai osakentässä &#8225;2 (Tunnuksen antajan koodi).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Standarditunnuksen tyyppi</description>
+          <values>
+            <value code="0">
+              <description>ISRC-tunnus, International Standard Recording Code<br /><em>ISO 3901: International Standard Recording Code</em> (<a href="http://www.ifpi.org/">ylläpitäjäorganisaatio IFPI</a>).<br /> Tunnus tallennetaan väliviivojen kanssa, esim. NL-C01-84-13261.</description>
+            </value>
+            <value code="1">
+              <description>UPC-tunnus, Universal Product Code</description>
+            </value>
+            <value code="2">
+              <description>ISMN-tunnus, International Standard Music Number<br /><em>ISO 10957: International Standard Music Number</em> (<a href="http://www.ismn-international.org/">ylläpitäjäorganisaatio The International ISMN Agency</a>).<br /><a href="../../../../julkaisuala/ismn/index.htm">Suomalaisia ISMN-tunnuksia</a> jakaa Suomen ISBN-keskus.<br /> Tunnus tallennetaan väliviivojen kanssa, esim. M-55009-375-1.</description>
+            </value>
+            <value code="3">
+              <description>EAN-tunnus, International Article Number<br /> 13-numeroinen EAN-tunnus on kansainvälinen tavaroita koskeva tunnusjärjestelmä. Suomessa järjestelmästä vastaa <a href="http://www.gs1.fi/">GS1 Finland Oy</a>.</description>
+            </value>
+            <value code="4">
+              <description>SICI-tunnus, Serial Item and Contribution Identifier<br /><em>ANSI/NISO Z39.56: Serial Item and Contribution Identifier</em>.<br />Tunnus tallennetaan väliviivojen kanssa, esim. 8756-2324(198603/04)65:2L.4:QTP:1-P.</description>
+            </value>
+            <value code="7">
+              <description>Tunnuksen antaja merkitään osakenttään &#8225;2</description>
+            </value>
+            <value code="8">
+              <description>Standarditunnuksen tyyppi määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Eroavuusindikaattori<br /> Onko skannatun numeron ja saman numeron silmin luettavan version välillä eroa.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Ei eroavuutta</description>
+            </value>
+            <value code="1">
+              <description>Eroavuus</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Standarditunnus tai -koodi</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Hinta- ja saatavuustiedot</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Lisämääreet</name>
+        </subfield>
+        <subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen standarditunnus tai -koodi</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tunnuksen antajan koodi</name>
+          <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela024b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>024 0#&#8225;a</strong>FILNM9500119<strong>&#8225;d</strong>osa 1<br /><em>ISRC-tunnus.</em></text>
+        </example>
+        <example>
+          <text><strong>024 0#&#8225;a</strong>NLC018413261<strong>&#8225;z</strong>NLC018403261<br /><em>ISRC-tunnus ja virheellinen ISRC-tunnus.</em></text>
+        </example>
+        <example>
+          <text><strong>024 10&#8225;a</strong>070993005955<strong>&#8225;d</strong>35740<br /><em>UPC-tunnus ja lisämääre.</em></text>
+        </example>
+        <example>
+          <text><strong>024 2#&#8225;a</strong>M-321-76543-1<br /><em>ISMN-tunnus.</em></text>
+        </example>
+        <example>
+          <text><strong>024 30&#8225;a</strong>9780449906200<strong>&#8225;d</strong>51000<br /><em>ISBN-tunnukseen pohjautuva EAN-koodi ja lisäkoodi.</em></text>
+        </example>
+        <example>
+          <text><strong>024 3#&#8225;a</strong>6414889981611<br /><em>ISSN-tunnukseen pohjautuva kansallinen EAN-koodi.</em></text>
+        </example>
+        <example>
+          <text><strong>024 3#&#8225;a</strong>9771444875007<br /><em>ISSN-tunnukseen pohjautuva kansainvälinen EAN-koodi.</em></text>
+        </example>
+        <example>
+          <text><strong>024 41&#8225;a</strong>875623247541986340134QTP1</text>
+        </example>
+        <example>
+          <text><strong>024 7#&#8225;a</strong>10.1228/0103000001002<strong>&#8225;2</strong>doi<br /><em>DOI-tunnus.</em></text>
+        </example>
+        <example>
+          <text><strong>024 2#&#8225;a</strong>M570406203<strong>&#8225;q</strong>score<strong>&#8225;q</strong>sewn<strong>&#8225;c</strong>EUR28.50</text>
+        </example>
+        <example>
+          <text><strong>024 2#&#8225;a</strong>M570406210<strong>&#8225;q</strong>parts<strong>&#8225;q</strong>sewn</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="027" repeatable="Y">
+      <name>Irsn-tunnus tai muu standardoitu raporttinumero</name>
+      <description paragraph="1">Varastotietueeseen liittyvän bibliografisen MARC-tietueen IRSN-tunnus kentästä 027.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>ISRN-tunnus tai muu standardoitu raporttinumero</name>
+        </subfield>
+        <subfield code="q" repeatable="Y">
+          <name>Tarkentava tieto</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen tunnus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>027 ##&#8225;a</strong>TKK-IGE-D</text>
+        </example>
+        <example>
+          <text><strong>027 ##&#8225;a</strong>DOE/GET</text>
+        </example>
+        <example>
+          <text><strong>027 ##&#8225;a</strong>IEEE-92CH3109-6 </text>
+        </example>
+        <example>
+          <text><strong>027 ##&#8225;a</strong>FOA―89-40265/C―SE</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="030" repeatable="Y">
+      <name>Coden-tunnus</name>
+      <description paragraph="1">Varastotietueeseen liittyvän bibliografisen MARC-tietueen CODEN-tunnus kentästä 030.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen CODEN-tunnus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>030 ##&#8225;a</strong>JACSAT</text>
+        </example>
+        <example>
+          <text><strong>030 ##&#8225;a</strong>ASIRAF<strong>&#8225;z</strong>ASITAF</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="035" repeatable="Y">
+      <name>Järjestelmän tuottama kontrollinumero</name>
+      <description paragraph="1">Kenttä sisältää muun järjestelmän tuottaman kontrollinumeron, eli muun kuin sen, jonka antama varastotietueen kontrollinumero on kentässä 001 tai jonka bibliografisen tietueen kontrollinumero on kentässä 004.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Järjestelmän tuottama kontrollinumero</name>
+          <description>Kontrollinumero koostuu toisesta järjestelmästä tulevan tietueen kentästä 003 (Tietueen kontrollinumeron tunniste, suluissa) ja kentästä 001 (Tietueen kontrollinumero). Ulkomaisista tietokannoista kopioidut tietueet sisältävät yleensä koodin, joka on peräisin listalta <em>MARC code list for organizations</em>, ks. <em><a href="../organisaatiot.htm"> Organisaatiot</a></em>.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Peruttu tai virheellinen kontrollinumero</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="040" repeatable="N">
+      <name>Luetteloiva organisaatio</name>
+      <description paragraph="1">Koodi tai nimi organisaatio(i)lle, joka loi alkuperäisen MARC-muotoisen tietueen tai muokkasi olemassa olevaa tietuetta.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Alkuperäinen luetteloiva organisaatio</name>
+          <description>Organisaation koodina käytetään ISIL-tunnusta, <em>ks. <a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Luettelointikieli</name>
+          <description>Mitä kieltä tietueen tekstillisissä osissa on käytetty. Koodi otetaan listalta, ks. <em><a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Transkriboiva organisaatio</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Muokkaava organisaatio</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>Mt<strong>&#8225;c</strong>Mt</text>
+        </example>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>DLC<strong>&#8225;c</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>CaOTY<strong>&#8225;b</strong>eng<strong>&#8225;c</strong>CaOTY</text>
+        </example>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>CaQQLA<strong>&#8225;b</strong>fre<strong>&#8225;c</strong>CaOONL</text>
+        </example>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>DLC<strong>&#8225;c</strong>DLC<strong>&#8225;d</strong>CtY</text>
+        </example>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>CaOONL<strong>&#8225;b</strong>eng<strong>&#8225;c</strong>CaOONL</text>
+        </example>
+        <example>
+          <text><strong>040 ##&#8225;a</strong>CaNSHD<strong>&#8225;b</strong>eng<strong>&#8225;c</strong>CaOONL</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="066" repeatable="N">
+      <name>Merkistöt</name>
+      <description paragraph="1">Tietoja tietueessa esiintyvistä merkistöistä kun siinä on käytetty muitakin merkistöjä kuin ISO 10646 tai Unicode. Tarkka kuvaus muiden merkistöjen tallentamisesta MARC-tietueisiin löytyy dokumentista <em><a href="http://www.loc.gov/marc/specifications/">MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media</a></em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Vaihto tapahtuu G0-alueen oletusmerkistöön, jos se ei ole ASCII</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Vaihto tapahtuu G1-alueen oletusmerkistöön, jos se ei ole ANSEL</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Vaihto tapahtuu muihin merkistöihin</name>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>066 ##&#8225;a</strong>(N</text>
+        </example>
+        <example>
+          <text><strong>066 ##&#8225;b</strong>$)1</text>
+        </example>
+        <example>
+          <text><strong>066 ##&#8225;a</strong>$1</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

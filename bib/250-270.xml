@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <modified>20.6.2013</modified>
+  <datafields>
+    <title>Julkaisu- ja jakelutietojen jne. kentät (250-270)</title>
+    <description>Kentät 250-270 sisältävät painos-, painopaikka-, osoite- ja muut julkaisija-/kustantajatiedot, jotka liittyvät bibliografisessa tietueessa kuvailtuun kohteeseen.</description>
+    <datafield tag="250" repeatable="Y">
+      <name>Painosmerkintö</name>
+      <description paragraph="1">Teoksen painostiedot käytössä olevien luettelointisääntöjen mukaisesti.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Painosmerkintö</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Muut painoskohtaiset tiedot</name>
+          <description>Yleensä vastuullisuusmerkintö ja/tai rinnakkainen painosmerkintö.</description>
+        </subfield>
+	<subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> 2nd, rev. and enl. ed.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> 2. preradeno i dopunjeno izd. = <strong>&#8225;b</strong> 2nd revised and enlarged version.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Lyh. p. = <strong>&#8225;b</strong> Förk. version.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> [Näköisp.] / <strong>&#8225;b</strong> jälkikirjoitus Petri Piiroinen.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Päällepainatus.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Uud. laitos / <strong>&#8225;b</strong> toimittanut Matti Konttinen.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> 2. uus. p.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Versio 1.5.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Updated on Jan. 23, 1996.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> World English ed.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Brief ed.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Internet-versio = <strong>&#8225;b</strong> Internet version = Internet edition / Toim. = red. = ed.: Riitta Lähdemäki-Taipalus, Anna Silvonen, Vuokko Palonen.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Rev. as of Jan. 1, 1958.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> 4th ed. / <strong>&#8225;b</strong> revised by J.G. Le Mesurier and E. McIntosh, Repr. with corrections.</text>
+        </example>
+        <example>
+          <text><strong>250 ## &#8225;a</strong> Rev. ed. / <strong>&#8225;b</strong> with revisions, an introduction, and a chapter on writing by E.B. White, 2nd ed. / with the assistance of Eleanor Gould Packard.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="254" repeatable="N">
+      <name>Nuottijulkaisun julkaisumuoto</name>
+      <description paragraph="1">Kuvaus painetun nuottijulkaisun tai nuottikäsikirjoituksen muodosta, joka voi erota saman teoksen eri painosten muodoista.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Nuottijulkaisun julkaisumuoto</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>254 ## &#8225;a</strong> Partituuri.</text>
+        </example>
+        <example>
+          <text><strong>254 ## &#8225;a</strong> Orchester-Partitur.</text>
+        </example>
+        <example>
+          <text><strong>254 ## &#8225;a</strong> Miniature score = Taschenpartitur.</text>
+        </example>
+        <example>
+          <text><strong>254 ## &#8225;a</strong> Composer's facsimile study score.</text>
+        </example>
+        <example>
+          <text><strong>254 ## &#8225;a</strong> Score and set of parts.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="255" repeatable="Y">
+      <name>Kartta-aineiston matemaattiset tiedot</name>
+      <description paragraph="1">Kartta-aineistoon liittyvät matemaattiset tiedot. Samat tiedot voidaan esittää koodimuotoisina kentässä <a href="01X-04X.xml#034">034</a> (Kartta-aineiston matemaattiset tiedot koodeina).</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Mittakaavamerkintö</name>
+          <description>Sisältää kaikki vastaavuusmerkinnöt, pystysuorat mittakaavat tai korkeuseromallien pystysuorat suurennosmerkinnöt ja muut kolmiulotteiset kohteet.</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Projektiomerkintö</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Koordinaattimerkintö</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Vyöhykemerkintö</name>
+          <description>Käytetään tähtikartoissa.</description>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Ekvinoktimerkintö</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Koordinaattiparit ulommalle G-kehälle</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Koordinaattiparit poissulkevalle G-kehälle</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> 1:10000.</text>
+        </example>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> 1:20000 - 1:8000000.</text>
+        </example>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> Mittakaava vaihtelee.</text>
+        </example>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> Mittakaavaa ei määritelty.</text>
+        </example>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> [N. 1:33000, n. 1:8800].<br /><strong>500 ## &#8225;a</strong> Mittakaavat laskettu janamittakaavasta.</text>
+        </example>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> 1:50000 ; <strong>&#8225;b</strong> [Mercator], keskiparalleeli 60º20' <strong>&#8225;c</strong> (E 25º43'-E26º21'/N 60º28'-N 60º1').</text>
+        </example>
+        <example>
+          <text><strong>255 ## &#8225;a</strong> Scales vary <strong>&#8225;d</strong> (Zones +90° to +81° to 63°, -81° to 98° <strong> &#8225;e</strong> eq. 1950).</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="256" repeatable="N">
+      <name>Elektronisen aineiston ominaisuudet</name>
+      <description paragraph="1">Esimerkiksi tiedoston tyyppi ja tietueiden määrä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Elektronisen aineiston ominaisuudet</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Tekstiä.</text>
+        </example>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Dataa (tiedosto, 800 tavua).</text>
+        </example>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Dataa ja ohjelma.</text>
+        </example>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Kuvia (2.3 MB).</text>
+        </example>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Bibliografista tietoa (1,8 milj. tietuetta).</text>
+        </example>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Suorakäyttöpalvelu.</text>
+        </example>
+        <example>
+          <text><strong>256 ## &#8225;a</strong> Verkkokirja (480 KB, 67 s.).</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="257" repeatable="Y">
+      <name>Tuottajan maa</name>
+      <description paragraph="1">Nimi tai lyhenne maalle, jossa liikkuvasta kuvasta koostuvan teoksen tuottajaorganisaation päätoimistot sijaitsevat.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tuottajan maa</name>
+          <description>Tässä ei käytetä maakoodeja. Voi sisältää lyhenteen [S.l.] kun maa on tuntematon.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Lähde</name>
+          <description>Osakentän &#8225;a tiedon lähde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>257 ## &#8225;a</strong> [S.l.]</text>
+        </example>
+        <example>
+          <text><strong>257 ## &#8225;a</strong> Italia ; Ranska.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="258" repeatable="Y">
+      <name>Filatelistisen julkaisun tiedot</name>
+      <description paragraph="1">Postimerkit, kirjepaperi ja muut dokumentit joita käytetään merkitsemään postipalvelujen ennakkomaksua; postimerkit tai muut merkit, jotka muistuttavat edellä kuvattua aineistoa, mutta joita ei voi käyttää postimaksuna; peruutukset tai muut postihallinnon tuottamat ja/tai käyttämät postikäyttöä osoittavat merkit; aineistot jotka käsittävät yhden tai useamman edellä mainituista.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Myöntävä hallintoalue</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Nimellisarvo</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>258 ## &#8225;a</strong> Newfoundland : <strong>&#8225;b</strong> 5 pence.</text>
+        </example>
+        <example>
+          <text><strong>258 ## &#8225;a</strong> United States of America and other jurisdictions : <strong>&#8225;b</strong> various denominations.</text>
+        </example>
+        <example>
+          <text><strong>258 ## &#8225;a</strong> Nippon : <strong>&#8225;b</strong> 120.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="260" repeatable="Y">
+      <name>Julkaisutiedot</name>
+      <description paragraph="1">Teoksen julkaisutiedot: kustannus-, paino-, jakelu-, julkistamis-, tai tuotantotiedot.</description>
+
+      <indicators>
+        <indicator num="1">
+          <description>Julkaisumerkintöjen järjestys</description>
+          <values>
+            <value code="#">
+              <description>Soveltumaton/Tietoa ei ole annettu/Aikaisin tiedossa oleva julkaisija</description>
+            </value>
+            <value code="2">
+              <description>Välijulkaisija</description>
+            </value>
+            <value code="3">
+              <description>Nykyinen/viimeisin julkaisija</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Julkaisu-/kustannus-, jakelu- jne. paikka</name>
+          <description>Voi sisältää lyhenteen <em>[S.l.]</em> kun paikka on tuntematon.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Julkaisijan/kustantajan, jakajan jne. nimi</name>
+          <description>Voi sisältää lyhenteen <em>[s.n.]</em> kun nimi on tuntematon.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Julkaisu-, jakelu- jne. aika</name>
+          <description>Voi sisältää useita vuosilukuja (esim. julkaisuaika ja tekijänoikeusvuosi), jotka merkitään aina arabialaisin numeroin. Osakentän tietojen tulee täsmätä <a href="008.xml#kaikki">008</a>/07-14 (Julkaisuvuosi 1 ja 2) tietojen kanssa, ks. <em><a href="esimerkit_julkaisuaika.htm">esimerkit</a></em>.</description>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Valmistuspaikka</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Valmistaja</name>
+          <description>Voi sisältää lyhenteen <em>[s.n.]</em> kun nimi on tuntematon.</description>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Valmistusaika</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Helsinki : <strong>&#8225;b</strong> Suomen atk-kustannus, <strong>&#8225;c</strong> 1982.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Helsinki : <strong>&#8225;b</strong> Vesi- ja ympäristöhallitus : <strong>&#8225;b</strong> Valtion painatuskeskus, jakaja, <strong>&#8225;c</strong> 1990.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Helsinki = Helsingfors : <strong>&#8225;b</strong> Schildt, <strong>&#8225;c</strong> 1990.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Åbo : <strong>&#8225;b</strong> Åbo Akademis förlag = Åbo Academy Press ; <strong>&#8225;a</strong> Pargas : <strong>&#8225;b</strong> distr. Tidningsbokhandeln = Lehtikirjakauppa, <strong>&#8225;c</strong> 1992.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> London : <strong>&#8225;b</strong> Hutchinson, <strong>&#8225;c</strong> 1968 <strong>&#8225;g</strong> (1971)</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Helsinki = Helsingfors : <strong>&#8225;b</strong> Kirjastonhoitajaliitto = Bibliotekarieförbundet, <strong>&#8225;c</strong> 1988.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Montreal : <strong>&#8225;b</strong> National Film Board of Canada, <strong>&#8225;c</strong> 1967 ; <strong>&#8225;a</strong> London : <strong>&#8225;b</strong> Guild Sound and Vision [distributor], <strong>&#8225;c</strong> 1968.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Helsinki : <strong>&#8225;b</strong> R. E. Westerlund, <strong>&#8225;c</strong> cop. 1921 <strong>&#8225;e</strong> (Leipzig : <strong>&#8225;f</strong> Breitkopf &amp; Härtel, <strong>&#8225;g</strong> 1925)</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> New York, N.Y. : <strong>&#8225;b</strong> Elsevier, <strong>&#8225;c</strong> 1984.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> [S.l.] : <strong>&#8225;b</strong> Insight Press, <strong>&#8225;c</strong> 1981.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Belfast [i.e. Dublin] : <strong>&#8225;b</strong> [s.n.], <strong>&#8225;c</strong> 1946 [reprinted 1965]</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> [S.l. : <strong>&#8225;b</strong> s.n., <strong>&#8225;c</strong> 15--?]</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> New York ; <strong>&#8225;a</strong> Berlin : <strong>&#8225;b</strong> Springer Verlag, <strong>&#8225;c</strong> 1977.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Paris : <strong>&#8225;b</strong> Gauthier-Villars ; <strong>&#8225;a</strong> Chicago : <strong>&#8225;b</strong> University of Chicago Press, <strong>&#8225;c</strong> 1955.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> London : <strong>&#8225;b</strong> Macmillan, <strong>&#8225;c</strong> 1971 <strong>&#8225;g</strong> (1973 printing)</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;c</strong> 1908-1924.</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> [S.l. : <strong>&#8225;b</strong> s.n.], <strong>&#8225;c</strong> 1970 <strong>&#8225;e</strong> (London : <strong>&#8225;f</strong> High Fidelity Sound Studios)</text>
+        </example>
+        <example>
+          <text><strong>260 ## &#8225;a</strong> Paris : <strong>&#8225;b</strong> Impr. Vincent, <strong>&#8225;c</strong> 1798 ; <strong>&#8225;a</strong> [i.e. Bruxelles : <strong>&#8225;b</strong> Moens,<strong>&#8225;c</strong> 1883]</text>
+        </example>
+        <example>
+          <text><strong>260 2# &#8225;3</strong> 1980-May 1993 <strong>&#8225;a</strong> London : <strong>&#8225;b</strong> Vogue</text>
+        </example>
+        <example>
+          <text><strong>260 3# &#8225;3</strong> June 1993- <strong>&#8225;a</strong> London : <strong>&#8225;b</strong> Elle</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="263" repeatable="N">
+      <name>Arvioitu julkaisuaika</name>
+      <description paragraph="1">Toistaiseksi julkaisemattomille teoksille bibliografisessa tietueessa annettu arvioitu julkaisuaika.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Arvioitu julkaisuaika</name>
+          <description>Kuusi merkkiä tallennetaan muodossa <em>vvvvkk</em>. Tuntemattomien numeroiden kohdalla käytetään tavuviivaa (-).</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>263 ## &#8225;a</strong> 199412</text>
+        </example>
+        <example>
+          <text><strong>263 ## &#8225;a</strong> 1998--</text>
+        </example>
+        <example>
+          <text><strong>263 ## &#8225;a</strong> 200102</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="264" repeatable="Y">
+      <name>Huomautus tuotanto-, kustannus-, jakelu-, valmistus- ja tekijänoikeustiedoista</name>
+      <description paragraph="1">Merkintö liittyy kustannus-, paino-, jakelu-, julkistamis- tai tuotantotietoihin.</description>
+      <indicators>
+	<indicator num="1">
+	  <description>Merkintöjen järjestys</description>
+	  <values>
+	    <value code="#">
+		<description>Soveltumaton/Tietoa ei ole annettu/Aikaisin</description>
+	    </value>
+	    <value code="2">
+	    <description>Välituottaja, -julkaisija, -jakelija tai -valmistaja<br /> Käytetään, kun tuottajan, julkaisijan/kustantajan, jakelijan tai valmistajan paikka tai nimi muuttuu. Myös täydentävät julkaisutiedot aikaisimman ja viimeisimmän välillä voidaan tallentaa tällä indikaattorin arvolla.</description>
+	    </value>
+	    <value code="3">
+	    <description>Nykyinen/viimeisin</description>
+	    </value>
+	  </values>
+	</indicator>
+	<indicator num="2">
+	  <description>Entiteetin tehtävä</description>
+	  <values>
+	  <value code="0">
+	    <description>Tuottaminen</description>
+	  </value>
+	  <value code="1">
+	    <description>Kustantaminen</description>
+	  </value>
+	  <value code="2">
+	    <description>Jakelu</description>
+	  </value>
+	  <value code="3">
+	    <description>Valmistaminen</description>
+	  </value>
+	  <value code="4">
+	    <description>Tekijänoikeusvuosi</description>
+	  </value>
+	</values>
+      </indicator>
+    </indicators>
+    <subfields>
+	<subfield code="a" repeatable="Y">
+	  <name>Tuotanto-, julkaisu-/kustannus-, jakelu- tai valmistuspaikka</name>
+	</subfield>
+	<subfield code="b" repeatable="Y">
+	  <name>Tuottajan, julkaisijan/kustantajan, jakajan tai valmistajan nimi</name>
+	</subfield>
+	<subfield code="c" repeatable="Y">
+	  <name>Tuotanto-, julkaisu-/kustannus-, jakelu- tai valmistusaika tai tekijänoikeusvuosi</name>
+	</subfield>
+	<subfield code="3" repeatable="N">
+	  <name>Aineiston osa, jota tiedot koskevat</name>
+	</subfield>
+	<subfield code="6" repeatable="N">
+	  <name>Linkitys</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+	<subfield code="8" repeatable="Y">
+	  <name>Linkki- ja järjestysnumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+	</subfield>
+    </subfields>
+    <examples>
+        <example>
+	  <text><strong>264 #1 &#8225;a</strong> Boston : <strong>&#8225;b</strong> [publisher not identified], <strong>&#8225;c</strong> 2010.</text>
+	</example>
+        <example>
+	  <text><strong>264 #3 &#8225;a</strong> Cambridge : <strong>&#8225;b</strong> Kinsey Printing Company</text>
+        </example>
+        <example>
+	  <text><strong>264 #1 &#8225;a</strong> [Place of publication not identified] : <strong>&#8225;b</strong> ABC Publishers, <strong>&#8225;c</strong> 2009.</text>
+        </example>
+        <example>
+	  <text><strong>264 #2 &#8225;a</strong> Seattle : <strong>&#8225;b</strong> Iverson Company</text>
+        </example>
+        <example>
+	  <text><strong>264 #4 &#8225;c</strong> ©2002</text>
+        </example>
+        <example>
+	  <text><strong>264 #4 &#8225;c</strong> p1983</text>
+        </example>
+        <example>
+	  <text><strong>264 #4 &#8225;c</strong> copyright 2005</text>
+        </example>
+      </examples>
+    </datafield>	
+    <datafield tag="270" repeatable="Y">
+      <name>Osoite</name>
+      <description paragraph="1">Bibliografiseen kohteeseen liittyvä osoite, myös elektroniseen saavutettavuuteen liittyviä tietoja kuten puhelin-, faksi- jne. numerot. Useammat osoitteet, kuten postiositteet tai kohteen fyysiseen sijaintiin viittaavat osoitteet tallennetaan kentän 270 toistoihin.</description>
+      <description paragraph="2">Puhelin-, faksi- ym. numeroiden eri osioiden merkitsemistapa vaihtelee suuresti (esim. maanumero, suuntanumero, alanumero). Kentässä 270 käytetään ainoastaan tavuviivoja numeron osioiden välimerkkeinä. Osakenttiin &#8225;j, &#8225;k, &#8225;l ja &#8225;n numeroiden osiot tallennetaan järjestyksessä <em>[maanumero]-[suuntanumero]-[vaihde-/linjanumero]</em>. Vaihde-/linjanumeron sisältämät välimerkit korvataan tavuviivoilla. Jos numeron yhteydessä annetaan myös alanumero, se liitetään puhelinnumeroon etuliitteellä välilyönti ja x (" x").</description>
+      <indicators>
+        <indicator num="1">
+          <description>Taso</description>
+          <values>
+            <value code="#">
+              <description>Tasoa ei ole määritelty</description>
+            </value>
+            <value code="1">
+              <description>Ensisijainen</description>
+            </value>
+            <value code="2">
+              <description>Toissijainen</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Osoitteen tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Tyyppiä ei ole määritelty</description>
+            </value>
+            <value code="0">
+              <description>Postiosoite</description>
+            </value>
+            <value code="7">
+              <description>Tyyppi merkitään osakenttään &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Osoite</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Kaupunki, kunta</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Osavaltio tai maakunta</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Maa</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Postinumero</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Vastaanottajan nimeä edeltävät termit</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Vastaanottajan nimi</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Vastaanottajan nimen jäljessä seuraava toimi tai asema</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Osoitteen tyyppi</name>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Erityinen puhelinnumero</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Puhelinnumero</name>
+        </subfield>
+        <subfield code="l" repeatable="Y">
+          <name>Faksinumero</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Sähköpostiosoite</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Tekstipuhelinnumero TDD tai TTY</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Yhteyshenkilö</name>
+        </subfield>
+        <subfield code="q" repeatable="Y">
+          <name>Yhteyshenkilön arvo tai ammatti</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Kellonajat</name>
+          <description>Aika, jolloin puhelinnumeroon vastataan tai yhteyshenkilö on tavoitettavissa.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Funktiokoodi</name>
+          <description> Koodi otetaan listalta. Ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>270 ## &#8225;a</strong> Kansalliskirjasto <strong>&#8225;a</strong> (Teollisuuskatu 23) PL 26 <strong>&#8225;b</strong> Helsinki <strong>&#8225;e</strong> 00014<strong>&#8225;p</strong> Nanna Jokinen</text>
+        </example>
+        <example>
+          <text><strong>270 ## &#8225;a</strong> National Bureau of Economic Research <strong>&#8225;a</strong> 1050 Massachusetts Ave. <strong>&#8225;b</strong> Cambridge <strong>&#8225;c</strong> MA <strong>&#8225;e</strong> 02138-5398 <strong>&#8225;k</strong> 1-617-868-3900 <strong>&#8225;m</strong> webmaster@nber.org</text>
+        </example>
+         <example>
+          <text><strong>270 20 &#8225;a</strong> National Labor Relations Board <strong>&#8225;a</strong> 1099 14th St., N.W. <strong>&#8225;b</strong> Washington <strong>&#8225;c</strong> DC <strong>&#8225;e</strong> 20570-0001</text>
+        </example>
+        <example>
+          <text><strong>270 27 &#8225;i</strong> U.S. business address <strong>&#8225;a</strong> Editorial Inca <strong>&#8225;a</strong> 9610 SW 58th St. <strong>&#8225;b</strong> Miami <strong>&#8225;c</strong> FL <strong>&#8225;e</strong> 33173</text>
+        </example>
+        <example>
+          <text><strong>270 ## &#8225;a</strong> No address given/sindirección</text>
+        </example>
+        <example>
+          <text><strong>270 1# &#8225;f</strong> Dr. <strong>&#8225;g</strong> George Smith <strong>&#8225;h</strong> Director <strong>&#8225;a</strong> 8899 South Lobo St. <strong>&#8225;b</strong> Vancouver <strong>&#8225;c</strong> BC <strong>&#8225;d</strong> Canada <strong>&#8225;e</strong> V2N 1Z5 <strong>&#8225;j</strong> 1-800-543-1234 <strong>&#8225;k</strong> 1-604-947-1255 <strong>&#8225;l</strong> 1-604-947-0505</text>
+        </example>
+        <example>
+          <text><strong>270 1# &#8225;a</strong> OCLC Online Computer Library Center <strong>&#8225;a</strong> 6565 Frantz Rd. <strong>&#8225;b</strong> Dublin <strong>&#8225;c</strong> OH <strong>&#8225;e</strong> 43017 <strong>&#8225;4</strong> org</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

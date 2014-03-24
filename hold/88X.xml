@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
+
+<fields>
+  <modified>26.2.2013</modified>
+  <datafields>
+    <title>Muut kentät (88X)</title>
+    <description>Tällä hetkellä ryhmästä 88X varastotietojen formaattiin on otettu vain kaksi kenttää.</description>
+    <datafield tag="880" repeatable="Y">
+      <name>Tiedot vaihtoehtoisella kirjaimistolla</name>
+      <description paragraph="1">Jonkin samassa tietueessa esiintyvän vaihtuvamittaisen kentän tiedot toisella kirjaimistolla. Kenttä 880 linkitetään sitä vastaavaan "tavalliseen" kenttään osakentän &#8225;6 (Linkitys) avulla. Tavallisen kentän osakentässä &#8225;6 on niin ikään linkki sitä vastaavaan kenttään 880. Kun kenttään 880 liittyvää tavallista kenttää ei tietueessa ole, 880 rakennetaan kuin se olisi ja osakentässä &#8225;6 käytetään tähän erityistarkoitukseen varattua esiintymänumeroa (00). Tiedot kentässä 880 voivat olla esitettynä useammalla kuin yhdellä kirjaimistolla.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Sama kuin vastaavassa "tavallisessa" kentässä</description>
+        </indicator>
+        <indicator num="2">
+          <description>Sama kuin vastaavassa "tavallisessa" kentässä</description>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="a-z" repeatable="">
+          <name>Samat kuin vastaavassa "tavallisessa" kentässä</name>
+        </subfield>
+        <subfield code="0-5" repeatable="">
+          <name>Samat kuin vastaavassa "tavallisessa" kentässä</name>
+        </subfield>
+        <subfield code="7-9" repeatable="">
+          <name>Samat kuin vastaavassa "tavallisessa" kentässä</name>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>852 4#&#8225;6</strong>880-01<strong>&#8225;a</strong>[Sijainti laitinalaisella kirjaimistolla]<br /><strong>880 2#&#8225;6</strong>852-01/(2/r<strong>&#8225;a</strong>[Sijainti heprealaisella kirjaimistolla linkitettynä siihen liittyvään kenttään 852]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="883" repeatable="Y">
+      <name>Koneellisesti luodun metatiedon alkuperä (provenanssi)</name>
+      <description paragraph="1">Käytetään tietueen kenttien sisältämän, koneellisesti luodun metatiedon alkuperän ilmaisemiseen. Kenttä 883 sisältää linkin kenttään, johon se liittyy. Käytetään kokonaan tai osittain koneellisesti luotujen kenttien kanssa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Luontitapa</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu/ ei ole sovellettavissa</description>
+            </value>
+            <value code="0">
+              <description>Kokonaan koneellisesti luotu</description>
+            </value>
+            <value code="1">
+              <description>Osittain koneellisesti luotu</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Luontimenetelmä</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Luotettavuusarvo</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Luontipäivä</name>
+          <description>Tallennetaan muodossa vvvvkkpp, ISO 8601.</description>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Metatiedon luonut organisaatio</name>
+          <description>Ks. <em> <a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>Voimassaolon päättymispäivä</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Bibliografisen tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+    </datafield>
+  </datafields>
+</fields>

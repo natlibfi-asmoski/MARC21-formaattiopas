@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>20.6.2013</modified>
+  <datafields>
+    <title>Linkkikentät (7XX)</title>
+    <description>Kenttiin 700-788 tallennetaan tietoja, joiden avulla toisiaan vastaavien otsikkomuotojen automaattinen linkittäminen toisiinsa on mahdollista riippumatta siitä ovatko ne rakenteeltaan saman vai eri muotoisia, samasta vai eri asiasanastosta tai auktoriteettitiedostosta, tai ovatko ne olemassa erillisinä auktoriteettitietueina.</description>
+    <datafield tag="700" repeatable="Y">
+      <name>Linkkikenttä - henkilönnimi</name>
+      <description paragraph="1">Henkilönnimi, joka vastaa saman tietueen 100-kentän otsikkomuotoa. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#100">100</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+            <value code="1">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="3">
+              <description>Suvun nimi</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br /> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Henkilönnimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Numerointi</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Arvonimet ja muut nimeen liittyvät sanat</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Nimeen liittyvät aikamääreet</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Nimen määrite</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Henkilönnimen täydellisempi muoto</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>700 05&#8225;w</strong>a<strong>&#8225;a</strong>Augustin<strong>&#8225;c</strong>saint, évêque d'Hippone.<strong>&#8225;0</strong>(CaOONL)0053A1978F#</text>
+        </example>
+        <example>
+          <text><strong>700 11&#8225;w</strong>a<strong>&#8225;a</strong>Dostoyevsky, Fyodor,<strong>&#8225;d</strong>1821-1881.<strong>&#8225;t</strong>Crime and punishment[LC name/title (as subject) heading for children's literature]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="710" repeatable="Y">
+      <name>Linkkikenttä - yhteisönnimi</name>
+      <description paragraph="1">Yhteisönnimi, joka vastaa saman tietueen 110-kentän otsikkomuotoa. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#110">110</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br /> Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhteisönnimi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Kokouksen tai sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>710 25&#8225;w</strong>a<strong>&#8225;a</strong>National Gallery of Canada<strong>&#8225;0</strong>(CaOONL)0000J0193E#</text>
+        </example>
+        <example>
+          <text><strong>710 27&#8225;w</strong>a<strong>&#8225;a</strong>Royal Society of Medicine<strong>&#8225;2</strong>[source code]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="711" repeatable="Y">
+      <name>Linkkikenttä - kokouksen nimi</name>
+      <description paragraph="1">Kokouksen nimi, joka vastaa saman tietueen 111-kentän otsikkomuotoa. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#111">111</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Nimikirjauksen muoto</description>
+          <values>
+            <value code="0">
+              <description>Nimen osien järjestys käänteinen</description>
+            </value>
+            <value code="1">
+              <description>Hallintoalueen nimi</description>
+            </value>
+            <value code="2">
+              <description>Nimen osien järjestys on suora</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Kokouksen tai hallintoalueen nimi</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Kokouksen paikka</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Kokouksen aika</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alayksikkö</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="j" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Kokouksen numero tai muu numerointitieto</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Hallintoalueen nimeä seuraava kokouksen nimi</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>711 25&#8225;w</strong>a<strong>&#8225;a</strong>Conférence canadienne des sciences de I'information<strong>&#8225;n</strong>(10e : <strong>&#8225;d</strong>1982 : <strong>&#8225;c</strong>Ottawa, Ont.)<strong>&#8225;0</strong>(CaOONL)0014G4758F#</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="730" repeatable="Y">
+      <name>Linkkikenttä - yhtenäistetty nimeke</name>
+      <description paragraph="1">Yhtenäistetty nimeke, joka vastaa saman tietueen 130-kentän otsikkomuotoa. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#130">130</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Sopimuksen allekirjoittamisen aika</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Teoksen julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Aineiston yleismääre</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Muotoa kuvaava kokoava nimeke</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Teoksen kieli</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Musiikin esityskokoonpano</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Numerointitieto</name>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Musiikin sovitusmerkintö</name>
+        </subfield>
+        <subfield code="p" repeatable="Y">
+          <name>Teoksen osan nimeke</name>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Sävellaji</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Versio</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Teoksen nimeke</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>730 #5&#8225;w</strong>a<strong>&#8225;a</strong>Bible.<strong>&#8225;p</strong>A.T.<strong>&#8225;0</strong>(CaOONL)0004E5217F#</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="748" repeatable="Y">
+      <name>Linkkikenttä - aikaa ilmaiseva termi</name>
+      <description paragraph="1">Aikaa ilmaiseva termi, joka vastaa saman tietueen 148-kentän otsikkomuotoa. Se linkittää otsikkomuotoja järjestelmän sisällä, tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#148">148</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aikaa ilmaiseva termi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>748 #7&#8225;a</strong>1710-1714<strong>&#8225;w</strong>na<strong>&#8225;2</strong>fast</text>
+        </example>
+        <example>
+          <text><strong>748 #7&#8225;a</strong>1800-1899<strong>&#8225;w</strong>nb<strong>&#8225;2</strong>fast</text>
+        </example>
+        <example>
+          <text><strong>748 #7&#8225;a</strong>1862<strong>&#8225;w</strong>nb<strong>&#8225;2</strong>fast</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="750" repeatable="Y">
+      <name>Linkkikenttä - aihetta ilmaiseva termi</name>
+      <description paragraph="1">Aihetta ilmaiseva termi, joka vastaa saman tietueen 150-kentän termiä tai 180-kentän yleistä lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#150">150</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aihetta ilmaiseva termi tai maantieteellinen nimi</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Maantieteellistä nimeä seuraava aihetta ilmaiseva termi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>750 #0&#8225;8</strong>1<strong>&#8225;w</strong>b<strong>&#8225;a</strong>Medical referral</text>
+        </example>
+        <example>
+          <text><strong>750 #0&#8225;8</strong>1<strong>&#8225;w</strong>b<strong>&#8225;a</strong>Medical consultation</text>
+        </example>
+        <example>
+          <text><strong>750 #2&#8225;8</strong>1<strong>&#8225;w</strong>b<strong>&#8225;a</strong>Orthopedics</text>
+        </example>
+        <example>
+          <text><strong>750 #2&#8225;8</strong>1<strong>&#8225;w</strong>b<strong>&#8225;a</strong>Radiography</text>
+        </example>
+        <example>
+          <text><strong>750 #0&#8225;a</strong>Cancer<strong>&#8225;x</strong>Nursing</text>
+        </example>
+        <example>
+          <text><strong>750 #2&#8225;a</strong>Neoplasms<strong>&#8225;x</strong>Nursing</text>
+        </example>
+        <example>
+          <text><strong>750 #2&#8225;a</strong>Oncologic Nursing</text>
+        </example>
+        <example>
+          <text><strong>750 #7&#8225;a</strong>Military training<strong>&#8225;2</strong>lctgm</text>
+        </example>
+        <example>
+          <text><strong>750 #0&#8225;a</strong>Drill and minor tactics</text>
+        </example>
+        <example>
+          <text><strong>750 #0&#8225;a</strong>Uniforms<strong>&#8225;0</strong>[record control number]</text>
+        </example>
+        <example>
+          <text><strong>750 #0&#8225;a</strong>Summer resorts<strong>&#8225;0</strong>(DLC)sh#85130430#<strong>&#8225;w</strong>na</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="751" repeatable="Y">
+      <name>Linkkikenttä - maantieteellinen nimi</name>
+      <description paragraph="1">Maantieteellinen nimi, joka vastaa saman tietueen 151-kentän otsikkomuotoa tai 181-kentän maantieteellistä lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#151">151</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Maantieteellinen nimi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>751 #2&#8225;a</strong>New York City</text>
+        </example>
+        <example>
+          <text><strong>751 #0&#8225;a</strong>New York (N.Y.)</text>
+        </example>
+        <example>
+          <text><strong>751 #0&#8225;a</strong>Charlevoix (Mich.)<strong>&#8225;0</strong>(DLC)n##82062705#<strong>&#8225;w</strong>nb</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="755" repeatable="Y">
+      <name>Linkkikenttä - lajityyppiä/muotoa ilmaiseva termi</name>
+      <description paragraph="1">Lajityyppiä tai muotoa ilmaiseva termi, joka vastaa saman tietueen 155-kentän termiä tai 185-kentän muotoa ilmaisevaa lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#155">155</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Lajityyppiä/muotoa kuvaava termi</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>755 #6&#8225;a</strong>Périodiques<strong>&#8225;v</strong>Index</text>
+        </example>
+        <example>
+          <text><strong>755 #0&#8225;a</strong>Periodicals<strong>&#8225;v</strong>Indexes</text>
+        </example>
+        <example>
+          <text><strong>755 #7&#8225;a</strong>atlases<strong>&#8225;0</strong>[record control number]<strong>&#8225;2</strong>aat</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="762" repeatable="Y">
+      <name>Linkkikenttä - esityskokoonpanoa ilmaiseva termi</name>
+      <description paragraph="1">Esityskokoonpanoa kuvaava termi, joka vastaa saman tietueen 162-kentän termiä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#162">162</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Esityskokoonpanoa ilmaiseva termi</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>762 #7&#8225;a</strong>Violine<strong>&#8225;2</strong>gnd</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="780" repeatable="Y">
+      <name>Linkkikenttä - yleinen lisämääre</name>
+      <description paragraph="1">Yleinen lisämääretermi, joka vastaa saman tietueen 150-kentän termiä tai 180-kentän yleistä lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#180">180</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>780 #0&#8225;w</strong>c<strong>&#8225;x</strong>Corrosion</text>
+        </example>
+        <example>
+          <text><strong>780 #0&#8225;x</strong>Uniforms<strong>&#8225;0</strong>[record control number]</text>
+        </example>
+        <example>
+          <text><strong>780 #0&#8225;w</strong>a<strong>&#8225;x</strong>History</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="781" repeatable="Y">
+      <name>Linkkikenttä - maantieteellinen lisämääre</name>
+      <description paragraph="1">Maantieteellinen lisämääre, joka vastaa saman tietueen 151-kentän maantieteellistä nimeä tai 181-kentän maantieteellistä lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#181">181</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>781 #0&#8225;z</strong>Ukraine, Southern</text>
+        </example>
+        <example>
+          <text><strong>781 #0&#8225;z</strong>New York (State)<strong>&#8225;z</strong>Rome</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="782" repeatable="Y">
+      <name>Linkkikenttä - aikaa ilmaiseva lisämääre</name>
+      <description paragraph="1">Aikaa ilmaiseva lisämääre, joka vastaa saman tietueen 150-kentän aihetta ilmaisevaa termiä tai 182-kentän aikaa ilmaisevaa lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#182">182</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>782 #0&#8225;w</strong>a<strong>&#8225;y</strong>20th century</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="785" repeatable="Y">
+      <name>Linkkikenttä - muotoa ilmaiseva lisämääre</name>
+      <description paragraph="1">Muotoa ilmaiseva lisämääretermi, joka vastaa saman tietueen 155-kentän lajityyppiä/muotoa ilmaisevaa termiä tai 185-kentän muotoa ilmaisevaa lisämäärettä. Se linkittää otsikkomuotoja järjestelmän sisällä, tai muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#185">185</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Linkkinäyttö</name>
+            </value>
+            <value code="/1">
+              <name>Korvaamisen monitahoisuus</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>785 #7&#8225;v</strong>atlases<strong>&#8225;0</strong>[record control number]<strong>&#8225;2</strong>aat</text>
+        </example>
+        <example>
+          <text><strong>785 #0&#8225;w</strong>a<strong>&#8225;v</strong>Periodicals</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="788" repeatable="N">
+      <name>Monitahoinen linkkikenttä</name>
+      <description paragraph="1">Kenttään tallennetaan selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, kun eri järjestelmistä tai asiasanastoista peräisin olevien muotojen suhdetta ei voida kuvata 700-785 -kenttien avulla kyllin hyvin. Viittauksen kohteena olevien muotojen lisämääreillä ei ole erillisiä osakenttiä, joten nimet ja asiasanat lisämääreineen voidaan kaikki tallentaa yhteen osakenttään &#8225;a. Viittauksen kohteena voi olla vahvistettu otsikkomuoto tai asialisämääre, joka ei ole vastaava kuin 1XX-kentän otsikkomuoto, mutta liittyy siihen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br />Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.</description>
+          <values>
+            <value code="0">
+              <description>Library of Congress Subject Headings (LCSH) / LC name authority file</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description>Medical Subject Headings (MeSH) / NLM name authority file</description>
+            </value>
+            <value code="3">
+              <description>National Agricultural Library subject authority file (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole määritelty</description>
+            </value>
+            <value code="5">
+              <description>Canadian Subject Headings / LAC name authority file</description>
+            </value>
+            <value code="6">
+              <description>Répertoire de vedettes-matière</description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto määritelty osakentässä &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Otsikkomuoto, johon viitataan</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>788 #0&#8225;i</strong>subdivision<strong>&#8225;a</strong>Foreign bodies<strong>&#8225;i</strong>under names of organs, e.g.<strong>&#8225;a</strong>Eye--Foreign bodies</text>
+        </example>
+        <example>
+          <text><strong>788 #7&#8225;i</strong>terms<strong>&#8225;a</strong>Chinese<strong>&#8225;i</strong>and<strong>&#8225;a</strong>Furniture<strong>&#8225;i</strong>are separate facets.<strong>&#8225;2</strong>aat</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

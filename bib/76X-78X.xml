@@ -1,0 +1,2174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <modified>5.6.2012</modified>
+  <datafields>
+    <title>Linkkikentät (76X-78X)</title>
+    <description>Kentät 760-78X sisältävät tietoja kuvailun kohteeseen liittyvistä muista
+		bibliografisista kohteista. Jokainen linkkikenttä kuvaa erilaista suhdetta
+		tietueessa <a href="#kuvailunkohde">kuvaillun kohteen</a> ja siihen
+		<a href="#liittyvakohde">liittyvän kohteen</a> välillä. Suhteita on kolmea
+		laatua: 1) tiedot suhteista voivat auttaa käyttäjää jatkamaan tiedonhakua ilman,
+		että liittyvä kohde hankitaan fyysisesti käsiin (esim. jatkuvien julkaisujen
+		edeltäjä tai kuvailun kohteen käännös); 2) liittyvä kohde täytyy hankkia
+		fyysisesti käsiin, jotta kuvailtua kohdetta voidaan käyttää (<a href="#osakohde">osakohteen</a>
+		<a href="#emo">emokohde</a>, esim. lehden numero joka
+		sisältää tietyn artikkelin); 3) liittyvä kohde on isomman
+		<a href="#kokonaisuudenosa">kokonaisuuden osa</a>
+		(esim. yksittäiset valokuvat, jotka sisältyvät visuaalisen aineiston
+		kokoelmaan). Linkkikenttien tarkoitus on mahdollistaa vakionäyttötekstien muodostaminen
+		tietueeseen, johon ne on tallennettu, sekä järjestelmän avulla tapahtuva toisiinsa
+		liittyvien tietueiden välinen linkitys ja/tai tiedonhaku näillä tiedoilla.
+    </description>
+	<terminology>
+	  <description>Linkkikentissä käytettyä terminologiaa</description>
+	  <term id="kuvailunkohde">
+	    <name>Kuvailun kohde</name>
+	    <description>kohde, jota tietueen pääasiallinen kuvailu koskee.
+			Nimiön merkkipaikkojen /06 (Tietueen tyyppi) ja /07 (Tietueen bibliografinen
+			taso) tiedot koskevat kuvailun kohdetta ja tietueen kentässä 245 on kuvailun
+			kohteen nimeke.
+		</description>
+	  </term>
+	  <term id="liittyvakohde">
+	    <name>Liittyvä kohde</name>
+	    <description>kohde, jolla on joko ajallinen, horisontaalinen tai vertikaalinen
+	    	suhde kuvailun kohteeseen.
+		</description>
+	  </term>
+	  <term id="osakohde">
+	    <name>Osakohde</name>
+	    <description>kohde, joka on fyysisesti osa toista bibliografista kohdetta
+	    	(emojulkaisua) siten, että hankkiakseen käsiinsä osakohteen on paikannettava
+	    	ja hankittava myös emojulkaisu (esim. luku kirjassa, artikkeli lehdessä).
+	    	(Kenttä 774)
+		</description>
+	  </term>
+	  <term id="kokonaisuudenosa">
+	    <name>Kokonaisuuden osa</name>
+	    <description>kohde, jota voidaan pitää toisen kohteen (esim. emokokoelman) osana,
+	    	mutta on siitä fyysisesti erillinen. (Kentät 770, 774)
+		</description>
+	  </term>
+	  <term id="emo">
+	    <name>Emokohde</name>
+	    <description>kohde, joka sisältää joko fyysisesti (osakohde) tai bibliografisesti
+	    	(kokonaisuuden osa) kuvailun kohteen. Esimerkki: jos tietue kuvailee lehtiartikkelia,
+	    	kyseinen lehti on sen emojulkaisu. (Kentät 772, 773)
+		</description>
+	  </term>
+	  <term>
+	  	<name>Ajallinen suhde</name>
+	  	<description>esimerkiksi jatkuvan julkaisun suhde edeltäjiinsä ja seuraajiinsa.
+	  		(Kentät 777, 780, 785)
+	  	</description>
+	  </term>
+	  <term>
+	  	<name>Horisontaalinen suhde</name>
+	  	<description>bibliografisten kohteiden rinnakkaisten versioiden suhde, esimerkiksi
+	  	erikieliset, eri muotoiset, eri viestimellä välitetyt. (Kentät 765, 767, 775, 776)
+	  	</description>
+	  </term>
+	  <term>
+	  	<name>Vertikaalinen suhde</name>
+	  	<description>hierarkkinen suhde kokonaisuudesta sen osiin tai osista kokonaisuuteen
+	  	(esim. lehtiartikkelista lehteen, alasarjasta pääsarjaan). (Kentät 760, 762, 770, 772, 773, 774)
+	  	</description>
+	  </term>
+	</terminology>
+    <datafield tag="760" repeatable="Y">
+      <name>Linkkikenttä - pääsarja</name>
+      <description paragraph="1">Kun kuvailun kohteena on alasarja, tähän kenttään merkitään siihen liittyvän pääsarjan tietoja (vertikaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Pääsarja:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Pääsarja</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+          <description>Pääkirjaus liittyvän tietueen kentästä <a href="1XX.xml#100">100</a> (Pääkirjaus henkilönnimestä), <a href="1XX.xml#110">110</a> (Pääkirjaus yhteisönnimestä), <a href="1XX.xml#111">111</a> (Pääkirjaus kokouksen nimestä) tai <a href="1XX.xml#130">130</a> (Pääkirjaus yhtenäistetystä nimekkeestä).</description>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+          <description>Painoksen nimi liittyvän tietueen kentästä <a href="250-270.xml#250">250</a> (Painosmerkintö).</description>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+          <description>Suluissa oleva erottava lisäys liittyvän tietueen kentän <a href="20X-24X.xml#222">222</a> (Avainnimeke) osakentästä &#8225;b (Erottava lisäys) tai muuta tietoa, joka tekee nimekkeestä uniikin.</description>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+          <description>Julkaisutiedot liittyvän tietueen kentän <a href="250-270.xml#260">260</a> (Julkaisutiedot) osakentistä &#8225;a, &#8225;b ja/tai &#8225;c.</description>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+          <description>Tiedot ilmaisevat liittyvän aineiston osan tai osat, jotka ovat yhteydessä kuvailun kohteeseen, esim. vuosiluvut ja volyymit. Osakenttään kirjataan myös osakohteen sijainti kuvailun kohteessa.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>Kuvaus kentässä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu. Sijoitetaan kentässä ensimmäiseksi. Tällöin toisen indikaattorin arvo on 8.</description>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+          <description>Nimeke liittyvän tietueen kentästä <a href="20X-24X.xml#240">240</a> (Yhtenäistetty nimeke) tai kentästä <a href="20X-24X.xml#243">243</a> (Kokoava yhtenäistetty nimeke).</description>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+          <description>Nimeke liittyvän tietueen kentän <a href="20X-24X.xml#245">245</a> (Nimeke- ja vastuullisuusmerkintö) osakentistä &#8225;a, &#8225;n ja &#8225;p tai kentän <a href="20X-24X.xml#222">222</a> (Avainnimeke) osakentästä &#8225;a.</description>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+          <description>Liittyvän tietueen kontrollinumero, jota edeltää suluissa oleva koodi organisaatiolle, jolta kontrollinumero on peräisin. Organisaation koodina käytetään ISIL-tunnusta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>. Huomioi, että kopioiduissa tietueissa kontrollinumeroksi on vaihdettava oman tietokannan liittyvän tietueen kontrollinumero.</description>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+          <description>ISSN-tunnus liittyvän tietueen kentästä <a href="01X-04X.xml#022">022</a> (ISSN-tunnus, International Standard Serial Number). Etuteksti <em>ISSN</em> voidaan muodostaa näyttöön.</description>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+          <description>CODEN-tunnus liittyvän tietueen kentsätä <a href="01X-04X.xml#030">030</a> (CODEN-tunnus). Lyhenne <em> CODEN</em> voidaan muodostaa näyttöön.</description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description>Neljä merkkipaikkaa (merkitään &#8225;7/0, &#8225;7/1 jne.), joiden koodimuotoisilla tiedoilla kuvataan linkkikirjauksen erityispiirteitä. Koska koodien merkitys määräytyy niiden merkkipaikan perusteella, kaikki edeltävät merkkipaikat on täytettävä tarvittaessa täyttömerkillä (|); jälkimmäisiä merkkipaikkoja ei tarvitse täyttää.</description>
+          <positions>
+            <position pos="/0">
+              <name>Pääkirjauksen tyyppi</name>
+              <description> Yksimerkkinen koodi, joka kuvaa osakentässä &#8225;a olevan nimen tyyppiä. Koodi vastaa liittyvän kohteen tietueen 1XX kenttää.</description>
+              <values>
+                <value code="p">
+                  <name>Henkilönnimi</name>
+                </value>
+		<value code="c">
+                  <name>Yhteisönnimi</name>
+                </value>
+		<value code="m">
+                  <name>Kokouksen nimi</name>
+                </value>
+		<value code="u">
+                  <name>Yhtenäistetty nimeke</name>
+                </value>
+		<value code="n">
+                  <name>Soveltumaton</name>
+                </value>
+              </values>
+            </position>
+            <position pos="/1">
+              <name>Nimen muoto</name>
+              <description> Yksimerkkinen koodi, joka kuvaa osakentässä &#8225;a olevan nimen muotoa. Koodi vastaa liittyvän kohteen tietueen 1XX kentän ensimmäisen indikaattorin arvoa ja tulkitaan yhdessä arvon &#8225;7/0 kanssa.</description>
+              <alternatives>
+                <alternative num="1">
+                  <name>Jos $7/0 = p (Henkilönnimi)</name>
+                  <values>
+		  	<value code="0">
+	                  <name>Etunimi</name>
+	                </value>
+			<value code="1">
+	                  <name>Sukunimi</name>
+	                </value>
+			<value code="3">
+	                  <name>Suvun nimi</name>
+	                </value>
+	              </values>
+                </alternative>
+                <alternative num="2">
+                  <name>Jos $7/0 = c (Yhteisönnimi) tai m (Kokouksen nimi)</name>
+                  <values>
+			<value code="0">
+	                  <name>Nimen osien järjestys käänteinen</name>
+	                </value>
+			<value code="1">
+	                  <name>Hallintoalueen nimi</name>
+	                </value>
+			<value code="2">
+	                  <name>Nimen osien järjestys suora</name>
+	                </value>
+                  </values>
+                </alternative>
+			<alternative num="3">
+			  <name>Jos $7/0 = u (Yhtenäistetty nimeke) tai n (Soveltumaton)</name>
+                  <values>
+			<value code="n">
+	                  <name>Soveltumaton</name>
+	                </value>
+                  </values>
+                </alternative>
+              </alternatives>
+              <values>
+              </values>
+            </position>
+            <position pos="/2">
+              <name>Tietueen tyyppi</name>
+              <description> Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tyyppiä. Koodi vastaa liittyvän kohteen tietueen Nimiö/06 (Tietueen tyyppi) arvoa.</description>
+              <values>
+				<value code="a">
+                  <name>Tekstiaineisto</name>
+                </value>
+				<value code="c">
+                  <name>Nuottijulkaisu</name>
+                </value>
+				<value code="d">
+                  <name>Nuottikäsikirjoitus</name>
+                </value>
+				<value code="e">
+                  <name>Kartta-aineisto</name>
+                </value>
+				<value code="f">
+                  <name>Karttakäsikirjoitus</name>
+                </value>
+				<value code="g">
+                  <name>Heijastettava kuva tai viestin</name>
+                </value>
+				<value code="i">
+                  <name>Puheäänite</name>
+                </value>
+				<value code="j">
+                  <name>Musiikkiäänite</name>
+                </value>
+				<value code="k">
+                  <name>Kuva</name>
+                </value>
+				<value code="m">
+                  <name>Elektroninen aineisto</name>
+                </value>
+				<value code="o">
+                  <name>Moniviestin</name>
+                </value>
+				<value code="p">
+                  <name>Sekalainen aineisto</name>
+                </value>
+				<value code="r">
+                  <name>Esine</name>
+                </value>
+				<value code="t">
+                  <name>Tekstikäsikirjoitus</name>
+                </value>
+              </values>
+            </position>
+            <position pos="/3">
+              <name>Tietueen bibliografinen taso</name>
+              <description> Yksimerkkinen koodi, joka kuvaa liittyvän kohteen tietueen tasoa. Koodi vastaa liittyvän kohteen tietueen Nimiö/07 (Tietueen bibliografinen taso) arvoa.</description>
+              <values>
+				<value code="a">
+                  <name>Osakohde monografiassa</name>
+                </value>
+				<value code="b">
+                  <name>Osakohde kausijulkaisussa</name>
+                </value>
+				<value code="c">
+                  <name>Kokoelma</name>
+                </value>
+				<value code="d">
+                  <name>Osakohde kokoelmassa</name>
+                </value>
+				<value code="i">
+                  <name>Päivittyvä julkaisu</name>
+                </value>
+				<value code="m">
+                  <name>Monografia</name>
+                </value>
+				<value code="s">
+                  <name>Kausijulkaisu</name>
+                </value>
+              </values>
+            </position>
+          </positions>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Tieliikenneonnettomuudet <strong>&#8225;h</strong> [Elektroninen aineisto] / <strong>&#8225;c</strong> Tilastokeskus.<br /><strong>760 0# &#8225;t</strong> Suomen virallinen tilasto. <strong>&#8225;c</strong> Verkkojulkaisu <strong>&#8225;x</strong> 1796-0479</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Gaging stations maintained by the Unites States geological survey 1888-1910 and Survey publications relating to water resources.<br /><strong>760 0# &#8225;7</strong> c1as <strong>&#8225;a</strong> United States. Geological Survey. <strong>&#8225;t</strong> Water supply papers</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="762" repeatable="Y">
+      <name>Linkkikenttä - alasarja</name>
+      <description paragraph="1">Kun kuvailun kohteena on pääsarja tai ylempi alasarja, tähän kenttään merkitään siihen liittyvän alasarjan tietoja (vertikaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Alasarja:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br />Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Alasarja</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Suomen virallinen tilasto / <strong>&#8225;c</strong> Tilastokeskus.<br /><strong>762 0# &#8225;t</strong> Tietilasto</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Tulot ja kulutus / <strong>&#8225;c</strong> Tilastokeskus.<br /><strong>762 0# &#8225;t</strong> Tulonjakotilasto. <strong>&#8225;c</strong> Painettu <strong>&#8225;x</strong> 0785-9880</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Helsinki suunnittelee / <strong>&#8225;c</strong> Helsingin kaupunki, kaupunkisuunnitteluvirasto.<br /><strong>762 0# &#8225;t</strong> Helsingin kaavoituskatsaus <strong>&#8225;x</strong> 1239-8845</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="765" repeatable="Y">
+      <name>Linkkikenttä - alkukielinen julkaisu</name>
+      <description paragraph="1">Kun kuvailun kohteena on käännös, tähän kenttään merkitään sen alkukieliseen julkaisuun liittyviä tietoja (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Alkukielinen julkaisu:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Alkukielinen julkaisu</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+          <description>Sarjakirjaus liittyvän kohteen tietueen kentästä 4XX (Sarjamerkinnöt) tai 8XX (Sarjalisäkirjaukset).</description>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+          <description>Raporttinumero liittyvän kohteen tietueen kentästä <a href="05X-08X.xml#088">088</a> (Raporttinumero).</description>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+          <description>ISRN-tunnus liittyvän kohteen tietueen kentästä <a href="01X-04X.xml#027">027</a> (ISRN-tunnus, International Standard Technical Report Number). Etuteksti <em>ISRN:</em> voidaan muodostaa näyttöön.</description>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+          <description>ISBN-tunnus liittyvän tietueen kentästä <a href="01X-04X.xml#020">020</a> (ISBN-tunnus, International Standard Book Number). Etuteksti <em>ISBN</em> voidaan muodostaa näyttöön.</description>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Meie Atrium : <strong>&#8225;b</strong> Atria kontserni personaliajakiri / <strong>&#8225;c</strong> väljaandja Atria Yhtymä oyj.<br /><strong>765 0# &#8225;t</strong> Meidän Atrium <strong>&#8225;c</strong> (Suomenkielinen p.) <strong>&#8225;x</strong> 1796-5748</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Annual report of the Ombudsman for Minorities <strong>&#8225;h</strong> [Elektroninen aineisto]<br /><strong>765 0# &#8225;t</strong> Vähemmistövaltuutetun vuosikertomus <strong>&#8225;c</strong> (Verkkojulkaisu) <strong>&#8225;x</strong> 1796-4091</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Russian journal of coordination chemistry.<br /><strong>765 0# &#8225;t</strong> Koordinacionnaâ himiâ</text>
+        </example>
+        <example>
+          <text><strong>130 0# &#8225;a</strong> Kunststoffe, <strong>&#8225;l</strong> englanti.<br /><strong>245 10 &#8225;a</strong> Kunststoffe international.<br /><strong>765 0# &#8225;t</strong> Kunststoffe <strong>&#8225;x</strong> 0023-5563</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="767" repeatable="Y">
+      <name>Linkkikenttä - käännös</name>
+      <description paragraph="1">Kun kuvailun kohteena on alkukielinen julkaisu tai sen muunkielinen käännös, tähän kenttään merkitään sen ei-alkukieliseen julkaisuun liittyviä tietoja (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Käännös:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Käännös</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Meidän Atrium : <strong>&#8225;b</strong> Atria-konsernin henkilöstölehti / <strong>&#8225;c</strong> julkaisija Atria Yhtymä oyj.<br /><strong>767 0 #&#8225;t</strong> Musu? Atrium <strong>&#8225;c</strong> (Lietuvis?kas leidim) <strong>&#8225;x</strong> 1796-5756<br /><strong>767 0# &#8225;t</strong> Nas? Atrium <strong>&#8225;c</strong> (Russkoe izd.) <strong>&#8225;x</strong> 1796-5764<br /><strong>767 0# &#8225;t</strong> Meie Atrium <strong>&#8225;c</strong> (Eesti välj.) <strong>&#8225;x</strong> 1796-5772<br /><strong>767 0# &#8225;t</strong> Vårt Atrium <strong>&#8225;c</strong> (Svensk utg.) <strong>&#8225;x</strong> 1796-5780</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Eduskunnan oikeusasiamiehen kertomus toiminnastaan.<br /><strong>767 0# &#8225;t</strong> Riksdagens justitieombudsmans berättelse över sin verksamhet <strong>&#8225;x</strong> 0356-3006<br /><strong>767 0# &#8225;t</strong> Report of the Parliamentary Ombudsman <strong>&#8225;x</strong> 0355-9211<br /><strong>767 0# &#8225;t</strong> Report of the Finnish Parliamentary Ombudsman <strong>&#8225;x</strong> 0784-5677</text>
+        </example>
+        <example>
+          <text><strong>245 00&#8225;a</strong> Tilastokatsaus <strong>&#8225;h</strong> [Elektroninen aineisto] / <strong>&#8225;c</strong> Tilastokeskus.<br /><strong>767 0# &#8225;t</strong> Bulletin of Statistics / Central Statistical Office of Finland <strong>&#8225;x</strong> 0788-4761</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="770" repeatable="Y">
+      <name>Linkkikenttä - suplementti/erikoisnumero</name>
+      <description paragraph="1">Tähän kenttään merkitään kuvailun kohteeseen liittyvän, mutta erikseen luetteloidun suplementtijulkaisun tai erikoisnumeron tietoja (vertikaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Suplementti:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Suplementti</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00&#8225;a</strong> Helsingin sanomat.<br /><strong>770 0# &#8225;t</strong> Helsingin sanomat. Kuukausiliite <strong>&#8225;x</strong> 0780-0096</text>
+        </example>
+        <example>
+          <text><strong>245 00&#8225;a</strong> Computer physics communications <strong>&#8225;h</strong> [Elektroninen aineisto]<br /><strong>770 0# &#8225;t</strong> Computer physics communications program library <strong>&#8225;x</strong> 1386 9485</text>
+        </example>
+        <example>
+          <text><strong>245 00&#8225;a</strong> Journal of cellular biochemistry.<br /><strong>770 0# &#8225;t</strong> Journal of cellular biochemistry. Supplement <strong>&#8225;x</strong> 0733-1959</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="772" repeatable="Y">
+      <name>Linkkikenttä - suplementin pääjulkaisu</name>
+      <description paragraph="1">Kun kuvailun kohteena on yksittäinen numero, suplementtijulkaisu tai erikoisnumero, tähän kenttään merkitään siihen liittyvän pääjulkaisun tietoja (vertikaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Liittyy julkaisuun:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Liittyy julkaisuun:</em></description>
+            </value>
+            <value code="0">
+              <description><em>Pääjulkaisu:</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Helsingin sanomat, <strong>&#8225;p</strong> Kuukausiliite.<br /><strong>772 0# &#8225;t</strong> Helsingin sanomat <strong>&#8225;x</strong> 0355-2047</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Donne?es statistiques pour la Haute-Normandie. <strong>772 1#&#8225;t</strong> Statistiques pour l'économie normande <strong>&#8225;g</strong> 1979- <strong>&#8225;w</strong> (OCoLC)6260766<br /><strong>772 1# &#8225;t</strong> Aval <strong>&#8225;g</strong> [1982-]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="773" repeatable="Y">
+      <name>Linkkikenttä - emokohde</name>
+      <description paragraph="1">Kun kuvailun kohteena on osakohde (nimiö/07 on a, b tai d), tähän kenttään merkitään sen emojulkaisuun tai -kokoelmaan liittyviä tietoja (vertikaalinen suhde). Kun emojulkaisu on sarja tai moniosainen teos, osakenttien &#8225;g ja &#8225;q tiedot ovat oleellisia osoittamaan osakohteen tarkka sijainti. Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Sisältyy tähän:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Sisältyy tähän</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Lyhennetty nimeke</name>
+          <description>Lyhennetty nimeke liittyvän kohteen tietueen kentästä <a href="20X-24X.xml#210">210</a> (Lyhennetty nimeke).</description>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Osakohteen sijainti</name>
+          <description>Volyymi-, vihko- ja sivumerkinnöt tallennetaan ANSI/NISO Z39.56-1996 (<em>Serial Item and Contribution Identifier, SICI</em>) -standardin mukaisessa muodossa: <em>[volyymi]:[vihko]&lt;[ensimmäinen sivu]</em>. Voidaan haluttaessa käyttää täydentämään osakentän &#8225;g tietoja.</description>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 10 &#8225;a</strong> Puuvene muutti elämäni! / <strong>&#8225;c</strong> Markku Vento.<br /><strong>773 0# &#8225;7</strong> nnas <strong>&#8225;w</strong> 1059288 <strong>&#8225;t</strong> Venemaailma <strong>&#8225;d</strong> Helsinki <strong>&#8225;x</strong> 0783-5124. <strong>&#8225;g</strong> 11(1995) : 9, s.29-31</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> "Siihen aikaan kun TKAY mikron osti" ... <strong>&#8225;h</strong> [Kuva] : <strong>&#8225;b</strong> Antti Soini ja Incoterm.<br /><strong>773 0# &#8225;7</strong> nnas <strong>&#8225;w</strong> 1054352 <strong>&#8225;t</strong> Tietolinja <strong>&#8225;h</strong> Painettu julkaisu <strong>&#8225;x</strong> 0358-268X. <strong>&#8225;g</strong> 1994:2, s. 11</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Stora Rövaren.<br /><strong>255 ## &#8225;a</strong> 1:10000<br /><strong>300 ## &#8225;a</strong> 1 kartta ; <strong>&#8225;c</strong> 44 x 39 cm.<br /><strong>773 0# &#8225;7</strong> nnem <strong>&#8225;w</strong> 2335148 <strong>&#8225;t</strong> Merikartta : Tiiskeri, Digiskär &#8211; Kaunissaari <strong>&#8225;m</strong> 1:50000 <strong>&#8225;d</strong> [Helsinki] : Merenkulkuhallitus, 1989 <strong>&#8225;o</strong> fc958819</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Enkä minä itkenyt silloinkaan <strong>&#8225;h</strong> [Nuottijulkaisu]<br /><strong>773 0# &#8225;7</strong> nncm <strong>&#8225;w</strong> M042086155 <strong>&#8225;t</strong> Suuri kansanlaulukirja : 500 suomalaista kansanlaulua. - <strong>&#8225;d</strong> [Espoo] : Warner/Chappell Music Finland, 1996. - <strong>&#8225;m</strong> 1 sävelmäkokoelma. - <strong>&#8225;z</strong> 951-757-357-X, <strong>&#8225;o</strong> M-042-08615-5, <strong>&#8225;o</strong> Warner/Chappell 08615, <strong>&#8225;g</strong> s. 26</text>
+        </example>
+        <example>
+          <text><strong>100 1# &#8225;a</strong> Sibelius, Jean, <strong>&#8225;e</strong> säv. <br /><strong>240 10 &#8225;a</strong> Laulut, <strong>&#8225;m</strong> lauluääni, piano, <strong>&#8225;n</strong> op57<br /><strong>245 00 &#8225;a</strong> 6 laulua, op. 57 <strong>&#8225;h</strong> [Äänite].<br /><strong>505 0# &#8225;a</strong> Osat: 1. Älven och snigeln (2’36) ; 2. En blomma stod vid vägen (1’53) ; 3. Kvarnhjulet (2’28) ; 4. Maj (3’17) ; 5. Jag är ett träd (2’24) ; 6. Hertig Magnus (4’07) ; 7. Vänskapens blomma (2’39) ; 8. Näcken (3’03)<br /><strong>773 0# &#8225;7</strong> nnjm <strong>&#8225;w</strong> 659107 <strong>&#8225;a</strong> Sibelius, Jean, säv.: <strong>&#8225;t</strong> Complete songs. - <strong>&#8225;d</strong> [London] : Universal Classics UK, p2004. - <strong>&#8225;m</strong> 4 CD-äänilevyä. - <strong>&#8225;o</strong> Decca 4761725, <strong>&#8225;g</strong> levy 3, raidat 9-16</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="774" repeatable="Y">
+      <name>Linkkikenttä - osakohde</name>
+      <description paragraph="1">Tietoja osakohteesta, joka liittyy kuvailun kohteena olevaan emokohteeseen (vertikaalinen suhde); esim. tietoja kokoelmaan (nimiö/07=c) kuuluvista osakohteista (nimiö/07=d). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Tämä sisältää:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Tämä sisältää</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>774 00 &#8225;8</strong> 1\c <strong>&#8225;o</strong> .1993.010.00130. <strong>&#8225;n</strong> [DIAPimage] <strong>&#8225;t</strong> Map of area with highlighted street<br /><strong>774 00 &#8225;8</strong> 2\c <strong>&#8225;o</strong> NYDA.1993.010.00131. <strong>&#8225;n</strong> [DIAPimage] <strong>&#8225;t</strong> View of Mill Brook Houses from one of the houses <strong>&#8225;d</strong> 89/05<br /><strong>774 00 &#8225;8</strong> 3\c <strong>&#8225;o</strong> NYDA.1993.010.00132. <strong>&#8225;n</strong> [DIAPimage] <strong>&#8225;t</strong> View SE from Mill Brook Houses on rooftop on Cypress Ave. Between 136th St. and 137th St., <strong>&#8225;d</strong> 93/05</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="775" repeatable="Y">
+      <name>Linkkikenttä - muu painos</name>
+      <description paragraph="1">Tietoja kuvailun kohteeseen liittyvästä muusta painoksesta (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Muu painos:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Muu painos</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Kielikoodi</name>
+          <description>Kielikoodi liittyvän kohteen tietueen merkkipaikoista <a href="008.xml#kaikki">008/35-37</a> (Kieli). Koodi otetaan listalta, ks. <em> <a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.</description>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Maakoodi</name>
+          <description>Maakoodi liittyvän kohteen tietueen merkkipaikoista <a href="008.xml#kaikki">008/15-17</a> (Julkaisu-, tuotanto- tai toteuttamismaa). Koodi otetaan listalta, ks. <em> <a href="../maat.htm">MARC21 Maakoodit</a></em>.</description>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Cuba economic news.<br /><strong>775 1# &#8225;i</strong> Issued also in Spanish. <strong>&#8225;e</strong> spa <strong>t</strong> Cuba economic news. Spanish. Cuba noticias econo?micas <strong>&#8225;x</strong> 0590-2932 <strong>&#8225;e</strong> eng <strong>&#8225;w</strong> (OCoLC)2259984</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Modern maturity.<br /><strong>775 1# &#8225;t</strong> Modern maturity <strong>&#8225;b</strong> NRTA edition <strong>&#8225;w</strong> (DLC)sn 84010086 <strong>&#8225;w</strong> (OCoLC)8255338</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="776" repeatable="Y">
+      <name>Linkkikenttä - toinen ilmiasu</name>
+      <description paragraph="1">Tietoja kuvailun kohteeseen liittyvästä muusta ilmiasusta (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Muu ilmiasu:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Muu ilmiasu</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Työterveiset <strong>&#8225;h</strong> [Elektroninen aineisto] <br /><strong>530 ## &#8225;a</strong> Julkaistu myös paperimuodossa.<br /><strong>776 0# &#8225;t</strong> Työterveiset <strong>&#8225;c</strong> Painettu <strong>&#8225;x</strong> 0359-1255</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Tiedotus : <strong>&#8225;b</strong> VTT Tietopalvelun asiakaslehti.<br /><strong>530 ## &#8225;a</strong> Myös Internet-julkaisuna 1996-<br /><strong>776 0# &#8225;t</strong> Tiedotus <strong>&#8225;c</strong> Verkkolehti</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Tietokone <strong>&#8225;h</strong> [Elektroninen aineisto] : <strong>&#8225;b</strong> Online.<br /><strong>776 0# &#8225;t</strong> Tietokone <strong>&#8225;c</strong> Painettu <strong>&#8225;x</strong> 0359-49473<br /><strong>776 0# &#8225;t</strong> Tietokone <strong>&#8225;c</strong> CD-ROM <strong>&#8225;x</strong> 1238-7584</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="777" repeatable="Y">
+      <name>Linkkikenttä - kanssajulkaisu</name>
+      <description paragraph="1">Tietoja kuvailun kohteen kanssa julkaistusta tai siihen sisältyvästä, mutta erikseen luetteloidusta julkaisusta (horisontaalinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttötekstinä voi olla <em>Kanssajulkaisu:</em>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Kanssajulkaisu</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> LC-uutiset / <strong>&#8225;c</strong> Ladie's Circle Suomi Finland.<br /><strong>777 0# &#8225;a</strong> Vipunen</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Mythprint : <strong>&#8225;b</strong> the monthly bulletin of the Mythopoeic Society.<br /><strong>777 1# &#8225;t</strong> Mythlore <strong>&#8225;x</strong> 0146-9339</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="780" repeatable="Y">
+      <name>Linkkikenttä - edeltäjä</name>
+      <description paragraph="1">Tietoja kuvailun kohteen välittömästä edeltäjästä (ajallinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttöteksti voi perustua toisen indikaattorin arvoon.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Yhteyden tyyppi<br /> Kuvaa kuvailun kohteen ja sen edeltäjän välisen yhteyden luonnetta. Voidaan käyttää vakionäyttötekstin muodostamiseen.</description>
+          <values>
+            <value code="0">
+              <description><em>Jatkaa julkaisua</em></description>
+            </value>
+            <value code="1">
+              <description><em>Jatkaa osittain julkaisua</em><br /><strong>2</strong> - <em>Korvaa julkaisun</em></description>
+            </value>
+            <value code="3">
+              <description><em>Korvaa osittain julkaisun</em></description>
+            </value>
+            <value code="4">
+              <description><em>Yhdistynyt julkaisuista ... ja ...</em></description>
+            </value>
+            <value code="5">
+              <description><em>Julkaisuun on sulautunut</em></description>
+            </value>
+            <value code="6">
+              <description><em>Julkaisuun on osittain sulautunut</em></description>
+            </value>
+            <value code="7">
+              <description><em>Eronnut julkaisusta</em></description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Hiidenkivi : <strong>&#8225;b</strong> suomalainen kulttuurilehti / <strong>&#8225;c</strong> julkaisijat: Suomalaisen Kirjallisuuden Seura, Suomen kotiseutuliitto, Kotimaisten kielten tutkimuskeskus.<br /><strong>780 04 &#8225;t</strong> Kieliposti <strong>&#8225;x</strong> 0783-2958<br /><strong>780 04 &#8225;t</strong> Elias <strong>&#8225;c</strong> Helsinki. 1988 <strong>&#8225;x</strong> 0785-5249<br /><strong>780 04 &#8225;t</strong> Kotiseutu<strong>&#8225;x</strong>0047-3677</text>
+        </example>
+        <example>
+          <text><strong>245 04 &#8225;a</strong> The European physical journal <strong>&#8225;h</strong> [Elektroninen aineisto]. <strong>&#8225;n</strong> D, <strong>&#8225;p</strong> Atoms, molecules and clusters.<br /><strong>780 04 &#8225;t</strong> Journal de physique. II <strong>&#8225;c</strong> Online<br /><strong>780 04 &#8225;t</strong> Zeitschrift für Physik. D. Atoms, molecules and clusters <strong>&#8225;c</strong> Online <strong>&#8225;x</strong> 1431-5866</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Kone &amp; kuljetus : <strong>&#8225;b</strong> raskas kalusto, tavaran kuljetus ja käsittely, huolto ja lisälaitteet.<br /><strong>780 05 &#8225;t</strong> Rahti &amp; huolinta <strong>&#8225;x</strong> 1457-4160</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> EMMA - Espoon modernin taiteen museon julkaisuja.<br /><strong>780 00 &#8225;t</strong> Espoon taidemuseon julkaisuja <strong>&#8225;x</strong> 1459-6946</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="785" repeatable="Y">
+      <name>Linkkikenttä - seuraaja</name>
+      <description paragraph="1">Tietoja kuvailun kohteen välittömästä seuraajasta (ajallinen suhde). Kun tästä kentästä muodostetaan näyttö, vakionäyttöteksti voi perustua toisen indikaattorin arvoon.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Yhteyden tyyppi<br /> Kuvaa kuvailun kohteen ja sen edeltäjän välisen yhteyden luonnetta. Voidaan käyttää vakionäyttötekstin muodostamiseen.</description>
+          <values>
+            <value code="0">
+              <description><em>Jatkuu nimellä</em></description>
+            </value>
+            <value code="1">
+              <description><em>Jatkuu osittain nimellä</em></description>
+            </value>
+            <value code="2">
+              <description><em>Korvattu nimellä</em></description>
+            </value>
+            <value code="3">
+              <description><em>Korvattu osittain nimellä</em></description>
+            </value>
+            <value code="4">
+              <description><em>Sulautunut julkaisuun</em></description>
+            </value>
+            <value code="5">
+              <description><em>Sulautunut osittain julkaisuun</em></description>
+            </value>
+            <value code="6">
+              <description><em>Jakautunut julkaisuiksi ... ja ...</em></description>
+            </value>
+            <value code="7">
+              <description><em>Yhdistynyt julkaisuun ... ja muodostanut julkaisun ...</em></description>
+            </value>
+            <value code="8">
+              <description><em>Jatkaa aikaisemmalla nimellä</em></description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Fundamental and applied toxicology <strong>&#8225;h</strong> [Elektroninen aineisto] <br /><strong>785 00 &#8225;t</strong> Toxicological sciences <strong>&#8225;c</strong> Online</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Kieliposti : <strong>&#8225;b</strong> kielen elämän ja tutkimuksen aikakauslehti / <strong>&#8225;c</strong> Kotimaisten kielten tutkimuskeskus.<br /><strong>785 07 &#8225;t</strong> Kotiseutu <strong>&#8225;x</strong> 0047-3677<br /><strong>785 07 &#8225;t</strong> Elias <strong>&#8225;c</strong> Helsinki. 1988 <strong>&#8225;x</strong> 0785-5249<br /><strong>785 07 &#8225;t</strong> Hiidenkivi <strong>&#8225;c</strong> Helsinki <strong>&#8225;x</strong> 1236-794X<br /><em>'Kieliposti', 'Kotiseutu', ja 'Elias' yhdistyivät ja muodostivat julkaisun 'Hiidenkivi'.</em></text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Zeitschrift für Physik <strong>&#8225;h</strong> [Elektroninen aineisto]. <strong>&#8225;n</strong> D, <strong>&#8225;p</strong> Atoms, molecules and clusters.<br /><strong>785 07 &#8225;t</strong> Journal de physique II <strong>&#8225;c</strong> Online<br /><strong>785 07 &#8225;t</strong> European physical journal. D <strong>&#8225;c</strong> Online <strong>&#8225;x</strong> 1434-6079<br /><em>'Zeitschrift für Physik' ja 'Journal de physique. II' yhdistyivät ja muodostivat julkaisun '[The] European physicaljournal. D'.</em></text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Rahti &amp; huolinta : <strong>&#8225;b</strong> kuljetukset, rahdinkäsittely, huolinta, satamat, logistiikka.<br /><strong>785 04 &#8225;t</strong> Kone &amp; kuljetus <strong>&#8225;x</strong> 1457-4179</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Opinto-opas / <strong>&#8225;c</strong> Helsingin kauppakorkeakoulu.<br /><strong>785 06 &#8225;t</strong> Opinto-opas / Helsingin kauppakorkeakoulu. A <strong>&#8225;x</strong> 0782-971X<br /><strong>785 06 &#8225;t</strong> Opinto-opas / Helsingin kauppakorkeakoulu. B <strong>&#8225;x</strong> 0782-9728</text>
+        </example>
+        <example>
+          <text><strong>245 04 &#8225;a</strong> The Southeastern college art review and newsletter.<br /><strong>785 01 &#8225;a</strong> Southeastern College Art Conference. <strong>&#8225;t</strong> SECAC newsletter <strong>&#8225;w</strong> (OCoLC)4973820</text>
+        </example>
+        <example>
+          <text><strong>245 04 &#8225;a</strong> The Metal worker, plumber, and steam fitter.<br /><strong>785 00 &#8225;t</strong> Plumber and steamfitter <strong>&#8225;w</strong> (OCoLC)7933179 <strong>&#8225;w</strong> (DLC)sf 84008067<br /><strong>785 05 &#8225;t</strong> Sheet metal worker <strong>&#8225;x</strong> 0096-9249 <strong>&#8225;w</strong> (OCoLC)2054610</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="786" repeatable="Y">
+      <name>Linkkikenttä - tietolähde</name>
+      <description paragraph="1">Tietoja tietolähteestä, johon kuvailun kohde liittyy. Kenttä voi sisältää tietoja muista tiedostoista, painetuista lähteistä tai kokoelman menettelytavoista.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Tietolähde</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Sisällön kattama ajankohta tai ajanjakso</name>
+          <description>Liittyvän kohteen alku- ja soveltuvissa tapauksissa myös loppuaika. Tieto tallennetaan ISO 8601 (<em>Representation of Dates and Times</em>) -standardin mukaisesti muodossa <em>vvvvkkpp</em>.</description>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Lyhennetty nimeke</name>
+          <description>Lyhennetty nimeke liittyvän kohteen tietueen kentästä <a href="20X-24X.xml#210">210</a> (Lyhennetty nimeke).</description>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="v" repeatable="N">
+          <name>Lähteen osuus</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>786 0# &#8225;a</strong> United States. Defense Mapping Agency. <strong>&#8225;t</strong> Reno, NV-CA west digital terrain elevation data <strong>&#8225;v</strong> Data for reformatting to DEM format</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="787" repeatable="Y">
+      <name>Linkkikenttä - muu suhde</name>
+      <description paragraph="1">Tietoja kohteesta, joka liittyy kuvailun kohteeseen, mutta suhde ei sovellu mihinkään kentistä 760-786.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Näyttöindikaattori</description>
+          <values>
+            <value code="0">
+              <description>Linkkikentän tiedot näytetään</description>
+            </value>
+            <value code="1">
+              <description>Linkkikentän tietoja ei näytetä<br /> Näytettävä teksti tallennetaan kenttään <a href="53X-58X.xml#580">580</a> (Huomautus linkitysten monitahoisuudesta).</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Vakionäyttöindikaattori</description>
+          <values>
+            <value code="#">
+              <description><em>Liittyvää aineistoa</em></description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta / Näytön teksti osakentässä &#8225;i</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkirjaus</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Painos</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Erottava lisäys</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Paikka, kustantaja ja julkaisuaika</name>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Yhteys, sijainti</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Fyysinen kuvailu</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Sarjatiedot</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Aineistokohtaiset yksityiskohdat</name>
+        </subfield>
+        <subfield code="n" repeatable="Y">
+          <name>Huomautus</name>
+        </subfield>
+        <subfield code="o" repeatable="Y">
+          <name>Muu kohteen tunniste</name>
+        </subfield>
+        <subfield code="r" repeatable="Y">
+          <name>Raporttinumero</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>ISRN-tunnus, International Standard Technical Report Number</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>ISSN-tunnus, International Standard Serial Number</name>
+        </subfield>
+        <subfield code="y" repeatable="N">
+          <name>CODEN-tunnus</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>ISBN-tunnus, International Standard Book Number</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="7" repeatable="N">
+          <name>Kontrolliosakenttä</name>
+          <description><em>Ks. osakentän &#8225;7 kuvaus kentästä <a href="#760">760</a>.</em></description>
+          <values>
+            <value code="/0">
+              <name>Pääkirjauksen tyyppi</name>
+            </value>
+            <value code="/1">
+              <name>Nimen muoto</name>
+            </value>
+            <value code="/2">
+              <name>Tietueen tyyppi</name>
+            </value>
+            <value code="/3">
+              <name>Tietueen bibliografinen taso</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> HELECON international <strong>&#8225;h</strong> [Elektroninen aineisto] : <strong>&#8225;b</strong> European and international economic and business administration information / <strong>&#8225;c</strong> Helsinki School of Economics and Business Administration.<br /><strong>787 0# &#8225;t</strong> Helecon uutiset <strong>&#8225;x</strong> 1239-9353<br /><strong>787 0# &#8225;t</strong> Helecon news <strong>&#8225;x</strong> 1455-6529</text>
+        </example>
+        <example>
+          <text><strong>245 00 &#8225;a</strong> Empire State report.<br /><strong>787 1# &#8225;a</strong> Empire State report (1982) <strong>&#8225;x</strong> 0747-0711 <strong>&#8225;w</strong> (DLC)###84647292# <strong>&#8225;w</strong> (OCoLC)8541622<br /><strong>787 1# &#8225;t</strong> Empire State report weekly <strong>&#8225;x</strong> 0745-8622 <strong>&#8225;w</strong> (DLC)###84647299# <strong>&#8225;w</strong> (OCoLC)9403759</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

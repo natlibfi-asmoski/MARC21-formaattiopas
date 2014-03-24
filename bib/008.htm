@@ -1,0 +1,1803 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Bibliografiset tiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#66CCFF">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		BIBLIOGRAFISET TIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 20.6.2013.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Kontrollikenttä 008</h2>
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p></p>
+      <ul>
+         <li><a href="#yleista">008 - INFORMAATIOKOODIT--YLEISTÄ TIETOA</a> (ET)
+         </li>
+         <li><a href="#kaikki">008 - KAIKKI AINEISTOT</a></li>
+         <li><a href="#BK">008 - (BK) KIRJAT</a></li>
+         <li><a href="#CF">008 - (CF) ELEKTRONISET AINEISTOT</a></li>
+         <li><a href="#CR">008 - (CR) JATKUVAT JULKAISUT</a></li>
+         <li><a href="#MP">008 - (MP) KARTAT</a></li>
+         <li><a href="#MU">008 - (MU) MUSIIKKI</a></li>
+         <li><a href="#MX">008 - (MX) SEKALAISET AINEISTOT</a></li>
+         <li><a href="#VM">008 - (VM) VISUAALISET AINEISTOT</a></li>
+      </ul>
+      <hr>
+      <h3><a name="yleista"></a>008 - INFORMAATIOKOODIT--YLEISTÄ TIETOA (ET)
+      </h3>
+      <p>Kenttä sisältää 40 merkkipaikkaa (00-39), joihin tallennetaan koodimuotoista informaatiota tietueesta ja kuvailun kohteen
+         bibliografisista piirteistä. Koodeja voidaan hyödyntää tiedonhaussa ja tietojen käsittelyssä.
+      </p>
+      <p>Tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Määrittelemättömät merkkipaikat sisältävät tyhjämerkin
+         (#). Kaikissa määritellyissä merkkipaikoissa pitää olla koodi; joissakin kentän 008 merkkipaikoissa se voi olla täyttömerkki
+         (|). Täyttömerkkiä voidaan käyttää tietyissä merkkipaikoissa, kun luetteloiva organisaatio ei niitä koodaa. Täyttömerkkiä
+         ei saa käyttää kentän 008 merkkipaikoissa 00-05 (Luontipäivä). Sen käyttöä ei suositella myöskään merkkipaikoissa 07-10 (Julkaisuvuosi
+         1), 15-17 (Julkaisu-, tuotanto- tai toteuttamismaa) eikä myöskään kentän 008&nbsp; ilmiasulle tarkoitetussa merkkipaikassa (joko
+         merkkipaikka 23 tai 29, riippuen aineistolajista).
+      </p>
+      <p>Merkkipaikat 00-17 ja 35-39 on määritelty samalla tavalla kaikille aineistotyypeille. Merkkipaikkojen 18-34 määrittelyt on
+         tehty toisistaan riippumatta, vaikka toisiaan vastaavien merkkipaikkojen määrittelyt ovatkin samat usealle aineistotyypille.
+      </p>
+      <p>Seuraavassa kuvataan ensin <strong>kaikille aineistoille</strong> yhteiset merkkipaikat 00-17 ja 35-39, ja sen jälkeen seitsemän eri aineistotyypin (<strong>kirjat (BK), elektroniset aineistot (CF), jatkuvat julkaisut (CR), kartat (MP), musiikki (MU), sekalaiset (MX) ja visuaaliset
+            aineistot (VM)</strong>) merkkipaikat 18-34.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="kaikki"></a>008 - KAIKKI AINEISTOT
+      </h3>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>00-05</strong> - Luontipäivä<br>Järjestelmän tuottama kuusimerkkinen numerojono, joka ilmaisee milloin MARC-tietue on alunperin tehty. Päivämäärä on muodossa
+            <em>vvkkpp</em> (vuosi, kuukausi, päivä), eikä se muutu koskaan. Viimeisimmän päivityksen ajankohta löytyy kentästä <a href="001-006.htm#005"> 005</a>.
+         </li>
+         <li><strong>06</strong> - Julkaisuajan tyyppi/Julkaisun tila<br>Ks. <a href="esimerkit_julkaisuaika.htm"> <em> esimerkit</em></a>. Luokittelee merkkipaikkoihin 008/07-10 (Julkaisuvuosi 1) ja 008/11-14 (Julkaisuvuosi 2) merkittävien julkaisuaikojen tyypin.
+            Jatkuville julkaisuille 008/06 ilmaisee myös julkaisun tilan. 008/06 koodi valitaan samalla kun määritellään sopivat vuodet
+            merkkipaikkoihin 008/07-14. Yleensä vuosiluku on sama kuin kentässä <a href="250-270.htm#260">260</a> (Julkaisutiedot), kentässä <a href="3XX.htm#362">362</a> (Numerointitiedot) tai huomautuskentissä.
+            <ul>
+               <li><strong>b</strong> - Julkaisuvuotta ei annettu, vuosiluku eKr.<br> Merkkipaikkoihin 008/07-14 tallennetaan tyhjämerkkejä (########). Ks. kenttä <a href="01X-04X.htm#046">046</a> (Erikoiskoodattu julkaisuaika).
+               </li>
+               <li><strong>c</strong> - Jatkuva julkaisu, ilmestyy edelleen<br> Merkkipaikkoihin 008/07-10 tallennetaan julkaisun alkamisvuosi; merkkipaikkoihin 008/11-14 tallennetaan vuosiluku 9999.
+               </li>
+               <li><strong>d</strong> - Jatkuva julkaisu, lakannut ilmestymästä<br> Merkkipaikkoihin 008/07-10 tallennetaan julkaisun alkamisvuosi; merkkipaikkoihin 008/11-14 tallennetaan julkaisun päättymisvuosi.
+               </li>
+               <li><strong>e</strong> - Tarkka päivämäärä<br> Merkkipaikkoihin 008/07-10 tallennetaan vuosi ja merkkipaikkoihin 008/11-14 tallennetaan kuukausi ja päivä muodossa <em>kkpp</em>.
+               </li>
+               <li><strong>i</strong> - Kokoelman kattama ajanjakso<br><a href="000.htm#nimio">Nimiö/07</a> koodi on <strong>c</strong> tai <strong>d</strong>.
+               </li>
+               <li><strong>k</strong> - Kokoelman merkittävimmän osan kattama ajanjakso<br><a href="000.htm#nimio">Nimiö/07</a> koodi on <strong>c</strong> tai <strong>d</strong>.
+               </li>
+               <li><strong>m</strong> - Jakautuu usealle vuodelle<br> Yleensä merkkipaikkoihin 008/07-10 tallennetaan alkamisvuosi ja merkkipaikkoihin 008/11-14 päättymisvuosi.
+               </li>
+               <li><strong>n</strong> - Tuntematon<br> Sopivia julkaisuvuosia merkkipaikkoihin 008/07-14 ei tunneta (esim. kentässä <a href="250-270.htm#260">260</a> ei ole annettu vuosilukua).
+               </li>
+               <li><strong>p</strong> - Julkaisuvuosi poikkeaa tuotanto- tai äänitysajankohdasta
+               </li>
+               <li><strong>q</strong> - Epävarma julkaisuaika<br> Merkkipaikkoihin 008/07-10 tallennetaan aikaisin mahdollinen vuosi ja merkkipaikkoihin 008/11-14 myöhäisin mahdollinen vuosi.
+               </li>
+               <li><strong>r</strong> - Näköispainos ja alkuperäinen julkaisuvuosi<br> Merkkipaikkoihin 008/07-10 tallennetaan näköispainoksen julkaisuvuosi ja merkkipaikkoihin 008/11-14 tallennetaan alkuperäisen
+                  julkaisun julkaisuvuosi, jos se on tiedossa; jos alkuperäistä julkaisuvuotta ei tiedetä, käytetään koodia <strong>u</strong> (uuuu).
+               </li>
+               <li><strong>s</strong> - Yksi julkaisuvuosi<br> Merkkipaikkoihin 008/07-10 tallennetaan vuosi; merkkipaikkoihin 008/11-14 tallennetaan tyhjämerkkejä (####).
+               </li>
+               <li><strong>t</strong> - Julkaisuvuosi ja tekijänoikeusvuosi
+               </li>
+               <li><strong>u</strong> - Jatkuva julkaisu, tila tuntematon<br> Merkkipaikkoihin 008/07-10 tallennetaan julkaisun alkamisvuosi; merkkipaikkoihin 008/11-14 tallennetaan koodi <strong>u</strong> (uuuu).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>07-10</strong> - Julkaisuvuosi 1<br>Ks. <em><a href="esimerkit_julkaisuaika.htm"> esimerkit</a></em>. Ensimmäinen tai ainoa julkaisuvuosi. Vuosiluku on gregoriaanisen ajanlaskun mukainen ja jälkeen Kristuksen syntymän. Vuosiluvun
+            määrittely merkkipaikkoihin 008/07-10 tehdään samalla kun valitaan koodi merkkipaikkaan 008/06 (Julkaisuajan tyyppi/Julkaisun
+            tila). Vaikka täyttömerkkien (|) käyttö on mahdollista, sitä ei suositella ensimmäisen julkaisuvuoden kohdalla, koska monissa
+            järjestelmissä sitä käytetään tiedonhakuun ja tuplakontrolliin. Jos täyttömerkkiä kuitenkin käytetään, se pitää tallentaa
+            jokaiseen neljään merkkipaikkaan.
+            <ul>
+               <li><strong>1-9</strong> - Vuosiluku
+               </li>
+               <li><strong>#</strong> - Vuosiluku on soveltumaton<br> Käytetään, kun 008/06 on <strong>b</strong>.
+               </li>
+               <li><strong>u</strong> - Vuosiluku on kokonaan tai osittain epävarma tai tuntematon
+               </li>
+               <li><strong>||||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>11-14</strong> - Julkaisuvuosi 2<br>Ks. <em><a href="esimerkit_julkaisuaika.htm"> esimerkit</a></em>. Toinen/täydentävä julkaisuvuosi tai julkaisupäivämäärä. Vuosiluku on gregoriaanisen ajanlaskun mukainen ja jälkeen Kristuksen
+            syntymän. Vuosiluvun määrittely merkkipaikkoihin 008/11-14 tehdään samalla kun valitaan koodi merkkipaikkaan 008/06 (Julkaisuajan
+            tyyppi/Julkaisun tila). Jos käytetään täyttömerkkiä, se pitää tallentaa jokaiseen neljään merkkipaikkaan.
+            <ul>
+               <li><strong>1-9</strong> - Vuosiluku
+               </li>
+               <li><strong>#</strong> - Vuosiluku on soveltumaton<br> Käytetään, kun 008/06 on <strong>b</strong>, <strong>e</strong> tai <strong>s</strong>.
+               </li>
+               <li><strong>u</strong> - Vuosiluku on kokonaan tai osittain epävarma tai tuntematon
+               </li>
+               <li><strong>||||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>15-17</strong> - Julkaisu-, tuotanto- tai toteuttamismaa<br>Julkaisu-, tuotanto- tai toteuttamismaan ilmaiseva kaksi- tai kolmikirjaiminen maakoodi. Koodi otetaan listalta, ks. <em> <a href="../maat.htm"> MARC 21 Maakoodit</a></em>. Kun kyseessä on kaksimerkkinen koodi, merkkipaikka 008/17 jätetään tyhjäksi (#). Maakoodin valinta on yleensä sidoksissa
+            kentän <a href="250-270.htm#260">260</a> (Julkaisutiedot) tietoihin. Kun useampi maakoodi on tarpeen kuvailun kohteen kannalta, 008/15-17 maakoodia käytetään yhdessä
+            kentän <a href="01X-04X.htm#044">044</a> (Julkaisijan/tuottajan maakoodi) kanssa; tällöin osakentän 044‡a ensimmäinen maakoodi tallennetaan merkkipaikkoihin 008/15-17.
+            Täyttömerkkien (|||) käyttöä ei suositella, koska monissa järjestelmissä maakoodia käytetään tiedonhakuun ja tuplakontrolliin.
+         </li>
+         <li><strong>35-37</strong> - Kieli<br>Kuvailun kohteessa käytetty pääasiallinen kieli ilmaistaan kolmikirjaimisella kielikoodilla. Koodi otetaan listalta, ks. <em><a href="../kielet.htm">MARC 21 Kielikoodit</a></em>.&nbsp; Täyttömerkkejä (|||) voidaan käyttää, jos koodausta ei tehdä tai kun ei haluta käyttää MARC-kielikoodeja (ja käytetään
+            kenttää <a href="01X-04X.htm#041">041</a> (Kielikoodi)).
+         </li>
+         <li><strong>38</strong> - Muunneltu tietue<br>Onko tietueessa muunneltua tietoa verrattuna kuvailun kohteeseen. Koodia ei käytetä jatkuvassa luetteloinnissa, vaan lähinnä
+            takautuvissa konversioissa. Seuraavassa listassa koodit listataan tärkeysjärjestyksessä, jota noudatetaan kun useampi koodi
+            olisi sopiva.
+            <ul>
+               <li><strong>#</strong> - Ei muunneltu
+               </li>
+               <li><strong>s</strong> - Lyhennetty<br> Joitakin tietoja on jätetty pois, koska tietue olisi ylittänyt tietyn järjestelmän salliman enimmäispituuden.
+               </li>
+               <li><strong>d</strong> - Välimerkit jätetty pois
+               </li>
+               <li><strong>x</strong> - Merkkejä puuttuu<br> Merkistöjärjestelmän rajoituksista johtuen osa merkeistä on jätetty pois.
+               </li>
+               <li><strong>r</strong> - Voi sisältää ei-latinalaisia merkkejä
+               </li>
+               <li><strong>o</strong> - Kokonaan translitteroitu, vaikka kuvailun kohteessa voi olla ei-latinalaisia merkkejä
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>39</strong> - Luetteloiva organisaatio<br>Mikä organisaatio on tehnyt alkuperäisen tietueen. Jos luetteloiva organisaatio tunnetaan, se kerrotaan kentän <a href="01X-04X.htm#040">040</a> (Luetteloiva organisaatio) osakentässä ‡a.
+            <ul>
+               <li><strong>#</strong> - Kansallisbibliografia
+               </li>
+               <li><strong>c</strong> - Luettelointiyhteistyö<br> Bibliografisen tietueen tekijä (muu kuin kansallisbibliografia) osallistuu luettelointiyhteistyöhön.
+               </li>
+               <li><strong>d</strong> - Muu
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="BK"></a>008 - (BK) KIRJAT
+      </h3>
+      <p>Käytetään tietueissa, joissa<br> I) <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on joko <strong>a</strong> tai <strong>t</strong> JA<br> II) <strong>nimiö/07</strong> (Tietueen bibliografinen taso) koodi EI OLE mikään seuraavista: <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>a</strong> tai <strong>t</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18-21</strong> - Kuvitus (= 006/01-04)<br>Aakkosjärjestyksessä voidaan tallentaa neljä eri koodia, jotka ilmaisevat minkä tyyppistä kuvitusta kuvailun kohteeseen sisältyy.
+            Jos tallennetaan vähemmän kuin neljä koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).
+            Koodien täytyy olla yhtäpitäviä osakentässä <a href="3XX.htm#300">300</a>‡b annettujen tietojen kanssa.
+            <ul>
+               <li><strong>#</strong> - Ei kuvitusta
+               </li>
+               <li><strong>a</strong> - Kuvitusta, tyyppiä ei määritelty
+               </li>
+               <li><strong>b</strong> - Kuvituksena vähintään yksi kartta
+               </li>
+               <li><strong>c</strong> - Kuvituksena vähintään yksi muotokuva
+               </li>
+               <li><strong>d</strong> - Kuvituksena vähintään yksi kaavio tms. graafinen esitys
+               </li>
+               <li><strong>e</strong> - Kuvituksena vähintään yksi asemakaava tai pohjapiirros
+               </li>
+               <li><strong>f</strong> - Kuvituksena vähintään yksi kuvasivu (planssi)
+               </li>
+               <li><strong>g</strong> - Kuvituksena vähintään yksi nuotteja esittävä kuva
+               </li>
+               <li><strong>h</strong> - Kuvituksena vähintään yksi jäljennös
+               </li>
+               <li><strong>i</strong> - Kuvituksena vähintään yksi vaakuna
+               </li>
+               <li><strong>j</strong> - Kuvituksena vähintään yksi sukutaulukko<br> Muut taulukkomuotoiset esitykset merkitään koodilla <strong>a</strong>.
+               </li>
+               <li><strong>k</strong> - Kuvituksena vähintään yksi lomake tai kaavake
+               </li>
+               <li><strong>l</strong> - Kuvituksena vähintään yksi mallikappale tai näyte
+               </li>
+               <li><strong>m</strong> - Kuvituksena vähintään yksi äänitys<br>Koskee äänitteitä, jotka on liitetty esim. kansitaskuun. Käytetään, kun kentässä 300 esiintyy seuraavia termejä: äänilevy,
+                  äänisilmukkakasetti, ääninauhakela, äänikasetti, rulla, äänilieriö. Aiemmin käytettiin aina kun kentässä 300 esiintyi mikä
+                  tahansa fono-alkuinen termi.
+               </li>
+               <li><strong>o</strong> - Kuvituksena vähintään yksi valokuva
+               </li>
+               <li><strong>p</strong> - Kuvituksena vähintään yksi piirroskuva
+               </li>
+               <li><strong>||||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>22</strong> - Kohderyhmä (= 006/05)<br>Millaiselle kohderyhmälle kuvailun kohde on suunnattu. Koodeja <strong>a-d</strong> käytetään oppikirjoille.
+            <ul>
+               <li><strong>#</strong> - Tuntematon tai ei eritelty
+               </li>
+               <li><strong>a</strong> - Esikouluikäiset
+               </li>
+               <li><strong>b</strong> - Ala-asteikäiset
+               </li>
+               <li><strong>c</strong> - Yläasteikäiset
+               </li>
+               <li><strong>d</strong> - Lukioikäiset ja vastaavat
+               </li>
+               <li><strong>e</strong> - Aikuiset
+               </li>
+               <li><strong>f</strong> - Erityisryhmä<br> Esim. selkokirjat, tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen
+                  materiaali.
+               </li>
+               <li><strong>g</strong> - Yleinen<br> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.
+               </li>
+               <li><strong>j</strong> - Lapset ja nuoret<br> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>23</strong> - Ilmiasu (= 006/06)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus<br> Tarvittaessa tehdään kenttä <a href="007.htm#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>r</strong> - Tavanomainen painojäljenne<br> Silmin luettavaa painettua tekstiä, esim. valokopio.
+               </li>
+               <li><strong>s</strong> - Elektroninen<br> Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>24-27</strong> - Sisältö (= 006/07-10)<br>Aakkosjärjestyksessä voidaan tallentaa neljä eri koodia, jotka ilmaisevat aineiston sisältöä. Jos tallennetaan vähemmän kuin
+            neljä koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).
+            <ul>
+               <li><strong>#</strong> - Sisältöä ei ole määritelty
+               </li>
+               <li><strong>a</strong> - Tiivistelmät, lyhennelmät<br>Sisältää tiivistelmiä tai lyhennelmiä <em>muista</em> julkaisuista kuin kuvailun kohteesta.
+               </li>
+               <li><strong>b</strong> - Bibliografiat<br>Kuvailun kohde tai sen osa on bibliografia. Käytetään vain, kun bibliografia on tarpeeksi olennainen tullakseen mainituksi
+                  bibliografisessa kuvailussa. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.
+               </li>
+               <li><strong>c</strong> - Luettelot, kuvastot<br>Sisältää myös keräilyesineiden, kuten postimerkkien tai kolikoiden, listat. Kirjaluetteloille tallennetaan sekä koodit <strong>b</strong> että <strong>c</strong>, ääniteluetteloille sekä koodit <strong>k</strong> että <strong>c</strong> ja elokuvaluetteloille sekä koodit <strong>q</strong> että <strong>c</strong>.
+               </li>
+               <li><strong>d</strong> - Sanakirjat, sanastot<br>Sanahakemistoille annetaan koodi <strong>i</strong> (Hakemistot, indeksit). Monografisille elämäkerrallisille sanakirjoille annetaan koodi <strong>c</strong> merkkipaikassa 008/34 (Elämäkerta).
+               </li>
+               <li><strong>e</strong> - Tietosanakirjat, hakuteokset
+               </li>
+               <li><strong>f</strong> - Käsikirjat
+               </li>
+               <li><strong>g</strong> - Artiklat, pykälät
+               </li>
+               <li><strong>i</strong> - Hakemistot, indeksit<br>Ei koske kuvailun kohteen omaa hakemistoa.
+               </li>
+               <li><strong>j</strong> - Patentit
+               </li>
+               <li><strong>k</strong> - Diskografiat<br>Kuvailun kohde tai merkittävä osa siitä on diskografia tai muu äänitebibliografia. Käytetään vain, kun diskografia on tarpeeksi
+                  olennainen tullakseen mainituksi bibliografisessa kuvailussa. Diskografioille, jotka ovat myös luetteloita, annetaan sekä
+                  koodit <strong>k</strong> että <strong>c</strong>.
+               </li>
+               <li><strong>l</strong> - Lait, säädökset
+               </li>
+               <li><strong>m</strong> - Väitöskirjat tai muut opinnäytteet<br>Väitöskirjat, lisensiaatintyöt, pro gradut tai muut eritasoisia tutkintoja varten tehdyt julkaisut.
+               </li>
+               <li><strong>n</strong> - Kirjallisuuskatsaukset<br>Kuvailun kohde koostuu kokonaisuudessaan kirjallisuuskatsauksesta tiettyyn aihealueeseen. Yleensä sisältää lähdeluettelon
+                  tai bibliografian. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.
+               </li>
+               <li><strong>o</strong> - Arvostelut<br>Sisältää arvosteluita julkaistuista tai esitetyistä teoksista. Arvostelua kuvailevassa osakohdetietueessa (<a href="000.htm#nimio">nimiö</a>/07 on <strong>a</strong> tai <strong>b</strong>) täytyy olla linkkikentät sekä emokohteeseen (<a href="76X-78X.htm#773">773</a>) että arvostelun kohteeseen (<a href="76X-78X.htm#787">787</a>).
+               </li>
+               <li><strong>p</strong> - Ohjelmoidut tekstit
+               </li>
+               <li><strong>q</strong> - Filmografiat<br>Kuvailun kohde tai merkittävä osa siitä on filmografia tai muu elokuvabibliografia. Käytetään vain, kun filmografia on tarpeeksi
+                  olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Filmografioille, jotka ovat myös luetteloita, annetaan sekä
+                  koodit <strong>q</strong> että <strong>c</strong>.
+               </li>
+               <li><strong>r</strong> - Henkilö- tai yhteisöhakemistot, matrikkelit, jäsenluettelot
+               </li>
+               <li><strong>s</strong> - Tilastot
+               </li>
+               <li><strong>t</strong> - Tekniset raportit
+               </li>
+               <li><strong>u</strong> - Standardit, tekniset spesifikaatiot
+               </li>
+               <li><strong>v</strong> - Oikeustapauskeskustelut
+               </li>
+               <li><strong>w</strong> - Tuomioistuinpäätökset
+               </li>
+               <li><strong>y</strong> - Vuosikirjat
+               </li>
+               <li><strong>z</strong> - Sopimukset<br>Sopimus, joka on neuvoteltu kahden tai useamman osapuolen välillä esim. erimielisyydestä sopimisen, suhteiden luomisen tai
+                  etujen takaamisen vuoksi.
+               </li>
+               <li><strong>2</strong> - Eripainokset<br>Julkaistu alunperin artikkelina monografiassa tai sarjajulkaisussa ja myös erillisenä.
+               </li>
+               <li><strong>5</strong> - Kalenterit
+               </li>
+               <li><strong>6</strong> - Sarjakuva-albumit, sarjakuvaromaanit
+               </li>
+               <li><strong>||||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>28</strong> - Virallisjulkaisu (= 006/11)<br>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.
+            <ul>
+               <li><strong>#</strong> - Ei virallisjulkaisu
+               </li>
+               <li><strong>a</strong> - Itsehallinnollinen tai puoli-itsehallinnollinen
+               </li>
+               <li><strong>c</strong> - Monta paikallista yksikköä<br> Esim. kuntayhtymän julkaisu.
+               </li>
+               <li><strong>f</strong> - Kansallinen
+               </li>
+               <li><strong>i</strong> - Kansainvälinen, hallitusten välinen<br> Esim. Yhdistyneiden kansakuntien julkaisu.
+               </li>
+               <li><strong>l</strong> - Paikallishallinto<br> Esim. kunnan julkaisu.
+               </li>
+               <li><strong>m</strong> - Monta aluetta
+               </li>
+               <li><strong>o</strong> - Virallisjulkaisu--toimivalta määrittelemätön
+               </li>
+               <li><strong>s</strong> - Alueellinen
+               </li>
+               <li><strong>u</strong> - Ei tiedetä onko kohde virallisjulkaisu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>29</strong> - Kokousjulkaisu (= 006/12)<br>Sisältääkö kuvailun kohde kokouksen tai konferenssin pöytäkirjat, selonteot tai yhteenvedot.
+            <ul>
+               <li><strong>0</strong> - Ei kokousjulkaisu
+               </li>
+               <li><strong>1</strong> - Kokousjulkaisu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>30</strong> - Juhlajulkaisu (= 006/13)<br>Onko kuvailun kohde juhlajulkaisu.
+            <ul>
+               <li><strong>0</strong> - Ei juhlajulkaisu
+               </li>
+               <li><strong>1</strong> - Juhlajulkaisu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>31</strong> - Hakemisto (= 006/14)<br>Sisältääkö kuvailun kohde itseään koskevan hakemiston.
+            <ul>
+               <li><strong>0</strong> - Ei hakemistoa
+               </li>
+               <li><strong>1</strong> - Hakemisto
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>32</strong> - Määrittelemätön (= 006/15)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>33</strong> - Kirjallisuuslaji (= 006/16)<br>Numerokoodeilla 0 ja 1 voidaan määritellä onko kuvailun kohde kauno- vai tietokirjallisuutta. Kirjainkoodeja voidaan käyttää
+            tarkempien kirjallisuuslajien määrittelyyn.
+            <ul>
+               <li><strong>0</strong> - Tietokirjallisuus (ei tarkkaa määritelmää)
+               </li>
+               <li><strong>1</strong> - Kaunokirjallisuus (ei tarkkaa määritelmää)<br> Esim. aforismit.
+               </li>
+               <li><strong>d</strong> - Draama<br> Esim. näytelmät, elokuvakäsikirjoitukset, kuunnelmat.
+               </li>
+               <li><strong>e</strong> - Esseet
+               </li>
+               <li><strong>f</strong> - Romaanit
+               </li>
+               <li><strong>h</strong> - Huumori, satiiri jne.
+               </li>
+               <li><strong>i</strong> - Kirjeet<br> Kuvailun kohde on yksittäinen kirje tai kirjeenvaihtokokoelma.
+               </li>
+               <li><strong>j</strong> - Novellit, kertomukset tai niiden kokoelmat
+               </li>
+               <li><strong>m</strong> - Yhdistelmä<br> Kuvailun kohde sisältää monia kirjallisuuden lajeja (esim. runoja ja novelleja).
+               </li>
+               <li><strong>p</strong> - Runot
+               </li>
+               <li><strong>s</strong> - Puheet, esitelmät
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>34</strong> - Elämäkerta (= 006/17)<br>Sisältääkö kuvailun kohde elämäkerrallista aineistoa ja minkä tyyppistä se on.
+            <ul>
+               <li><strong>#</strong> - Ei elämäkerrallista aineistoa
+               </li>
+               <li><strong>a</strong> - Omaelämäkerta, muistelmat
+               </li>
+               <li><strong>b</strong> - Yhden henkilön elämäkerta
+               </li>
+               <li><strong>c</strong> - Useampien henkilöiden elämäkertoja
+               </li>
+               <li><strong>d</strong> - Sisältää elämäkerrallisia tietoja
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="CF"></a>008 - (CF) ELEKTRONISET AINEISTOT
+      </h3>
+      <p>Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>m</strong>.<br> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös 006/00 koodi <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>m</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18-21</strong> - Määrittelemätön (= 006/01-04)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>22</strong> - Kohderyhmä (= 006/05)<br>Millaiselle kohderyhmälle kuvailun kohde on suunnattu.
+            <ul>
+               <li><strong>#</strong> - Tuntematon tai ei eritelty
+               </li>
+               <li><strong>a</strong> - Esikouluikäiset
+               </li>
+               <li><strong>b</strong> - Ala-asteikäiset
+               </li>
+               <li><strong>c</strong> - Yläasteikäiset
+               </li>
+               <li><strong>d</strong> - Lukioikäiset ja vastaavat
+               </li>
+               <li><strong>e</strong> - Aikuiset
+               </li>
+               <li><strong>f</strong> - Erityisryhmä<br> Esim. tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.
+               </li>
+               <li><strong>g</strong> - Yleinen<br> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.
+               </li>
+               <li><strong>j</strong> - Lapset ja nuoret<br> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>23</strong> - Ilmiasu (= 006/06)
+            <ul>
+               <li><strong>#</strong> - Tuntematon tai ei eritelty
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen tallenne
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>24-25</strong> - Määrittelemätön (= 006/06-08)<br>Kumpikin sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>26</strong> - Elektronisen aineiston tyyppi (= 006/09)<br>Koodi voi vastata tietueen vaihtuvamittaisissa kentissä annettuja tietoja, esim. <a href="50X-53X.htm#516">516</a>.
+            <ul>
+               <li><strong>a</strong> - Numeerinen
+               </li>
+               <li><strong>b</strong> - Tietokoneohjelma
+               </li>
+               <li><strong>c</strong> - Esittävä<br> Kuvat tai grafiikka, joita voidaan manipuloida muiden tiedostojen yhteydessä kuvaamaan niitä siten, että tietoja on helpompi
+                  tulkita.
+               </li>
+               <li><strong>d</strong> - Asiakirja
+               </li>
+               <li><strong>e</strong> - Bibliografia
+               </li>
+               <li><strong>f</strong> - Kirjasinlaji
+               </li>
+               <li><strong>g</strong> - Peli
+               </li>
+               <li><strong>h</strong> - Ääni
+               </li>
+               <li><strong>i</strong> - Interaktiivinen multimedia
+               </li>
+               <li><strong>j</strong> - Verkossa oleva järjestelmä tai palvelu
+               </li>
+               <li><strong>m</strong> - Yhdistelmä
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>27</strong> - Määrittelemätön (= 006/10)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>28</strong> - Virallisjulkaisu (= 006/11)<br>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.
+            <ul>
+               <li><strong>#</strong> - Ei virallisjulkaisu
+               </li>
+               <li><strong>a</strong> - Itsehallinnollinen tai puoli-itsehallinnollinen
+               </li>
+               <li><strong>c</strong> - Monta paikallista yksikköä<br> Esim. kuntayhtymän julkaisu.
+               </li>
+               <li><strong>f</strong> - Kansallinen
+               </li>
+               <li><strong>i</strong> - Kansainvälinen, hallitusten välinen<br> Esim. Yhdistyneiden kansakuntien julkaisu.
+               </li>
+               <li><strong>l</strong> - Paikallishallinto<br> Esim. kunnan julkaisu.
+               </li>
+               <li><strong>m</strong> - Monta aluetta
+               </li>
+               <li><strong>o</strong> - Virallisjulkaisu--toimivalta määrittelemätön
+               </li>
+               <li><strong>s</strong> - Alueellinen
+               </li>
+               <li><strong>u</strong> - Ei tiedetä onko kohde virallisjulkaisu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>29-34</strong> - Määrittelemätön (= 006/12-17)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="CR"></a>008 - (CR) JATKUVAT JULKAISUT
+      </h3>
+      <p>Käytetään tietueissa, joissa<br> I) <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on joko <strong>a</strong> tai <strong>t</strong> JA<br> II) <strong>nimiö/07</strong> (Tietueen bibliografinen taso) koodi ON jokin seuraavista: <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>s</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18</strong> - Ilmestymistiheys (= 006/01)<br>Miten usein julkaisu ilmestyy; käytetään yhdessä merkkipaikan 008/19 (Säännöllisyys) kanssa. Koodin pitäisi olla yhtäpitävä
+            myös osakentän <a href="3XX.htm#310">310</a>‡a tietojen kanssa.
+            <ul>
+               <li><strong>#</strong> - Ei määriteltävää ilmestymistiheyttä<br> Ilmestymistiheys on tarkoituksellisen epäsäännöllinen.
+               </li>
+               <li><strong>a</strong> - Kerran vuodessa
+               </li>
+               <li><strong>b</strong> - Joka toinen kuukausi<br> Sisältää 6, 7 tai 8 numeroa vuodessa.
+               </li>
+               <li><strong>c</strong> - Kaksi kertaa viikossa
+               </li>
+               <li><strong>d</strong> - Päivittäin
+               </li>
+               <li><strong>e</strong> - Kerran kahdessa viikossa<br> Vrt. koodi <strong>s</strong>, jolla on melkein sama sisältö. Julkaisun omat merkinnät ratkaisevat.
+               </li>
+               <li><strong>f</strong> - Puolivuosittain<br> Sisältää kaksi numeroa vuodessa.
+               </li>
+               <li><strong>g</strong> - Kerran kahdessa vuodessa
+               </li>
+               <li><strong>h</strong> - Kerran kolmessa vuodessa
+               </li>
+               <li><strong>i</strong> - Kolme kertaa viikossa
+               </li>
+               <li><strong>j</strong> - Kolme kertaa kuukaudessa
+               </li>
+               <li><strong>k</strong> - Jatkuva päivitys
+               </li>
+               <li><strong>m</strong> - Kerran kuukaudessa<br> Sisältää 9, 10, 11 tai 12 numeroa vuodessa.
+               </li>
+               <li><strong>q</strong> - Neljäsosavuosittain<br> Sisältää 4 numeroa vuodessa.
+               </li>
+               <li><strong>s</strong> - Kaksi kertaa kuukaudessa<br> Vrt. koodi <strong>e</strong>, jolla on melkein sama sisältö. Julkaisun omat merkinnät ratkaisevat.
+               </li>
+               <li><strong>t</strong> - Kolme kertaa vuodessa
+               </li>
+               <li><strong>u</strong> - Tuntematon<br> Jos käytetään tätä koodia, myös merkkipaikassa 008/19 (Säännöllisyys) annetaan <strong>u</strong>.
+               </li>
+               <li><strong>w</strong> - Kerran viikossa
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>19</strong> - Säännöllisyys (= 006/02)<br>Miten säännöllisesti julkaisu ilmestyy; käytetään yhdessä merkkipaikan 008/18 (Ilmestymistiheys) kanssa. Koodin pitäisi olla
+            yhtäpitävä myös osakentän <a href="3XX.htm#310">310</a>‡a tietojen kanssa.
+            <ul>
+               <li><strong>n</strong> - Normaalin epäsäännöllinen<br> Ennustettava epäsäännöllisyys. Esim. joka kuukausi lukuun ottamatta heinä- ja elokuuta (008/18-19, koodit <strong>mn</strong>).
+               </li>
+               <li><strong>r</strong> - Säännöllinen
+               </li>
+               <li><strong>u</strong> - Tuntematon<br> Kenttä <a href="3XX.htm#310">310</a> puuttuu ja myös merkkipaikassa 008/18 on <strong>u</strong>.
+               </li>
+               <li><strong>x</strong> - Täysin epäsäännöllinen<br> Ilmestymistiheyden tiedetään olevan tarkoituksellisen epäsäännöllinen (008/18, koodi <strong>#</strong>) tai ilmestymistiheys kerrotaan julkaisussa <em>numeroina per vuosi</em>.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>20</strong> - Määrittelemätön (= 006/03)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>21</strong> - Jatkuvan julkaisun tyyppi (= 006/04)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista<br> Tätä koodia käytetään myös vuosikirjoille ja vuosiraporteille.
+               </li>
+               <li><strong>d</strong> - Päivittyvä tietokanta
+               </li>
+               <li><strong>l</strong> - Päivittyvä irtolehtijulkaisu
+               </li>
+               <li><strong>m</strong> - Monografiasarja
+               </li>
+               <li><strong>n</strong> - Sanomalehti
+               </li>
+               <li><strong>p</strong> - Aikakauslehti
+               </li>
+               <li><strong>w</strong> - Päivittyvä verkkosivu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>22</strong> - Alkuperäisen julkaisun ilmiasu (= 006/05)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>e</strong> - Sanomalehti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne
+               </li>
+               <li><strong>s</strong> - Elektroninen
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>23</strong> - Ilmiasu (= 006/06)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus<br> Tarvittaessa tehdään kenttä <a href="007.htm#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>r</strong> - Tavanomainen painojäljenne<br> Silmin luettavaa painettua tekstiä, esim. valokopio.
+               </li>
+               <li><strong>s</strong> - Elektroninen<br>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>24</strong> - Koko sisältö (= 006/07)<br>Koodia käytetään, kun kuvailun kohteen koko sisältö koostuu samantyyppisestä aineistosta. Jos useampi kuin yksi koodi olisi
+            sopiva, merkkipaikkaan 008/24 tallennetaan tyhjä (#) ja merkkipaikkoihin 008/25-27 (Sisältö) voidaan merkitä kolme eri sisältökoodia.
+            <ul>
+               <li><strong>#</strong> - Koko sisältöä ei voida määritellä yhdellä koodilla
+               </li>
+               <li><strong>a</strong> - Tiivistelmät, lyhennelmät<br>Sisältää tiivistelmiä tai lyhennelmiä <em>muista</em> julkaisuista.
+               </li>
+               <li><strong>b</strong> - Bibliografiat
+               </li>
+               <li><strong>c</strong> - Luettelot, kuvastot<br>Listat kokoelmaan kuuluvista kohteista, esim. lista kirja- tai taidekokoelman sisällöstä.
+               </li>
+               <li><strong>d</strong> - Sanakirjat, sanastot<br>Sanahakemistoille annetaan koodi <strong>i</strong> (Hakemistot, indeksit). Jatkuville elämäkerrallisille sanakirjoille annetaan koodi <strong>h</strong> (Elämäkerrat).
+               </li>
+               <li><strong>e</strong> - Tietosanakirjat, hakuteokset
+               </li>
+               <li><strong>f</strong> - Käsikirjat
+               </li>
+               <li><strong>g</strong> - Artiklat, pykälät
+               </li>
+               <li><strong>h</strong> - Elämäkerrat<br>Elämäkerrallista aineistoa (omaelämäkerta, yksilön tai yhteisön elämäkerta). Sukuselvitystä ei koodata elämäkerraksi.
+               </li>
+               <li><strong>i</strong> - Hakemistot, indeksit<br>Ei koske kohteen omaa hakemistoa.
+               </li>
+               <li><strong>k</strong> - Diskografiat<br>Sisältää diskografian tai muun äänitebibliografian.
+               </li>
+               <li><strong>l</strong> - Lait, säädökset
+               </li>
+               <li><strong>m</strong> - Väitöskirjat tai muut opinnäytteet<br> Väitöskirjat, lisensiaatintyö, pro gradut tai muut eritasoisia tutkintoja varten tehdyt julkaisut.
+               </li>
+               <li><strong>n</strong> - Kirjallisuuskatsaukset<br>Kuvailun kohde koostuu kokonaisuudessaan kirjallisuuskatsauksesta tiettyyn aihealueeseen. Yleensä sisältää lähdeluettelon
+                  tai bibliografian.
+               </li>
+               <li><strong>o</strong> - Arvostelut<br>Sisältää arvosteluita julkaistuista tai esitetyistä teoksista. Arvostelua kuvailevassa osakohdetietueessa (<a href="000.htm#nimio">nimiö</a>/07 on <strong>a</strong> tai <strong>b</strong>) täytyy olla linkkikentät sekä emokohteeseen (<a href="76X-78X.htm#773">773</a>) että arvostelun kohteeseen (<a href="76X-78X.htm#787">787</a>).
+               </li>
+               <li><strong>p</strong> - Ohjelmoidut tekstit
+               </li>
+               <li><strong>q</strong> - Filmografiat<br>Sisältää filmografian tai muun elokuvabibliografian.
+               </li>
+               <li><strong>r</strong> - Henkilö- tai yhteisöhakemistot, matrikkelit, jäsenluettelot
+               </li>
+               <li><strong>s</strong> - Tilastot
+               </li>
+               <li><strong>t</strong> - Tekniset raportit
+               </li>
+               <li><strong>u</strong> - Standardit, tekniset spesifikaatiot
+               </li>
+               <li><strong>v</strong> - Oikeustapauskeskustelut
+               </li>
+               <li><strong>w</strong> - Tuomioistuinpäätökset
+               </li>
+               <li><strong>y</strong> - Vuosikirjat
+               </li>
+               <li><strong>z</strong> - Sopimukset<br>Sopimus, joka on neuvoteltu kahden tai useamman osapuolen välillä esim. erimielisyydestä sopimisen, suhteiden luomisen tai
+                  etujen takaamisen vuoksi.
+               </li>
+               <li><strong>5</strong> - Kalenterit
+               </li>
+               <li><strong>6</strong> - Sarjakuva-albumit, sarjakuvaromaanit
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>25-27</strong> - Sisältö (= 006/08-10)<br>Aakkosjärjestyksessä voidaan tallentaa kolme eri koodia, jotka ilmaisevat aineiston sisältöä. Jos tallennetaan vähemmän kuin
+            kolme koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).
+            <ul>
+               <li><strong>#</strong> - Sisältöä ei ole määritelty
+               </li>
+               <li><strong>a</strong> - Tiivistelmät, lyhennelmät<br>Sisältää tiivistelmiä tai lyhennelmiä <em>muista</em> julkaisuista.
+               </li>
+               <li><strong>b</strong> - Bibliografiat<br>Kuvailun kohde tai sen osa on bibliografia. Käytetään vain, kun bibliografia on tarpeeksi olennainen tullakseen mainituksi
+                  bibliografisessa kuvailussa. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.
+               </li>
+               <li><strong>c</strong> - Luettelot, kuvastot<br>Listat kokoelmaan kuuluvista kohteista. Sisältää myös keräilyesineiden, kuten postimerkkien tai kolikoiden, listat. Kirjaluetteloille
+                  tallennetaan sekä koodit <strong>b</strong> että <strong>c</strong>, ääniteluetteloille sekä koodit <strong>k</strong> että <strong>c</strong> ja elokuvaluetteloille sekä koodit <strong>q</strong> että <strong>c</strong>.
+               </li>
+               <li><strong>d</strong> - Sanakirjat, sanastot<br>Sanahakemistoille annetaan koodi <strong>i</strong> (Hakemistot, indeksit). Jatkuville elämäkerrallisille sanakirjoille annetaan koodi <strong>h</strong> (Elämäkerrat).
+               </li>
+               <li><strong>e</strong> - Tietosanakirjat, hakuteokset
+               </li>
+               <li><strong>f</strong> - Käsikirjat
+               </li>
+               <li><strong>g</strong> - Artiklat, pykälät
+               </li>
+               <li><strong>h</strong> - Elämäkerrat<br>Elämäkerrallista aineistoa (omaelämäkerta, yksilön tai yhteisön elämäkerta). Sukuselvitystä ei koodata elämäkerraksi.
+               </li>
+               <li><strong>i</strong> - Hakemistot, indeksit<br>Ei koske kohteen omaa hakemistoa.
+               </li>
+               <li><strong>k</strong> - Diskografiat<br>Kuvailun kohde tai merkittävä osa siitä on diskografia tai muu äänitebibliografia. Käytetään vain, kun diskografia on tarpeeksi
+                  olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Diskografioille, jotka ovat myös luetteloita, annetaan sekä
+                  koodit <strong>k</strong> että <strong>c</strong>.
+               </li>
+               <li><strong>l</strong> - Lait, säädökset
+               </li>
+               <li><strong>m</strong> - Väitöskirjat tai muut opinnäytteet<br> Väitöskirjat, lisensiaatintyöt, pro gradut tai muut eritasoisia tutkintoja varten tehdyt julkaisut.
+               </li>
+               <li><strong>n</strong> - Kirjallisuuskatsaukset<br>Kuvailun kohde koostuu kokonaisuudessaan kirjallisuuskatsauksesta tiettyyn aihealueeseen. Yleensä sisältää lähdeluettelon
+                  tai bibliografian. Huom, koska bibliografiat sisältyvät koodin <strong>n</strong> määritelmään, koodia <strong>b</strong> ei tule käyttää samanaikaisesti koodin <strong>n</strong> kanssa.
+               </li>
+               <li><strong>o</strong> - Arvostelut<br>Sisältää arvosteluita julkaistuista tai esitetyistä teoksista. Arvostelua kuvailevassa osakohdetietueessa (<a href="000.htm#nimio">nimiö</a>/07 on <strong>a</strong> tai <strong>b</strong>) täytyy olla linkkikentät sekä emokohteeseen (<a href="76X-78X.htm#773">773</a>) että arvostelun kohteeseen (<a href="76X-78X.htm#787">787</a>).
+               </li>
+               <li><strong>p</strong> - Ohjelmoidut tekstit
+               </li>
+               <li><strong>q</strong> - Filmografiat<br>Kuvailun kohde tai merkittävä osa siitä on filmografia tai muu elokuvabibliografia. Käytetään vain, kun filmografia on tarpeeksi
+                  olennainen tullakseen mainituksi bibliografisessa kkuvailussa. Filmografioille, jotka ovat myös luetteloita, annetaan sekä
+                  koodit <strong>q</strong> että <strong>c</strong>.
+               </li>
+               <li><strong>r</strong> - Henkilö- tai yhteisöhakemistot, matrikkelit, jäsenluettelot
+               </li>
+               <li><strong>s</strong> - Tilastot
+               </li>
+               <li><strong>t</strong> - Tekniset raportit
+               </li>
+               <li><strong>u</strong> - Standardit, tekniset spesifikaatiot
+               </li>
+               <li><strong>v</strong> - Oikeustapauskeskustelut
+               </li>
+               <li><strong>w</strong> - Tuomioistuinpäätökset
+               </li>
+               <li><strong>y</strong> - Vuosikirjat
+               </li>
+               <li><strong>z</strong> - Sopimukset<br>Sopimus, joka on neuvoteltu kahden tai useamman osapuolen välillä esim. erimielisyydestä sopimisen, suhteiden luomisen tai
+                  etujen takaamisen vuoksi.
+               </li>
+               <li><strong>5</strong> - Kalenterit
+               </li>
+               <li><strong>6</strong> - Sarjakuva-albumit, sarjakuvaromaanit
+               </li>
+               <li><strong>|||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>28</strong> - Virallisjulkaisu (= 006/11)<br>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.
+            <ul>
+               <li><strong>#</strong> - Ei virallisjulkaisu
+               </li>
+               <li><strong>a</strong> - Itsehallinnollinen tai puoli-itsehallinnollinen
+               </li>
+               <li><strong>c</strong> - Monta paikallista yksikköä<br> Esim. kuntayhtymän julkaisu.
+               </li>
+               <li><strong>f</strong> - Kansallinen
+               </li>
+               <li><strong>i</strong> - Kansainvälinen, hallitusten välinen<br> Esim. Yhdistyneiden kansakuntien julkaisu.
+               </li>
+               <li><strong>l</strong> - Paikallishallinto<br> Esim. kunnan julkaisu.
+               </li>
+               <li><strong>m</strong> - Monta aluetta
+               </li>
+               <li><strong>o</strong> - Virallisjulkaisu--toimivalta määrittelemätön
+               </li>
+               <li><strong>s</strong> - Alueellinen
+               </li>
+               <li><strong>u</strong> - Ei tiedetä onko kohde virallisjulkaisu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>29</strong> - Kokousjulkaisu (= 006/12)<br>Sisältääkö kuvailun kohde kokouksen tai konferenssin pöytäkirjat, selonteot tai yhteenvedot.
+            <ul>
+               <li><strong>0</strong> - Ei kokousjulkaisu
+               </li>
+               <li><strong>1</strong> - Kokousjulkaisu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>30-32</strong> - Määrittelemätön (= 006/13-15)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>33</strong> - Nimekkeen alkuperäinen aakkosto tai kirjaimisto (= 006/16)<br>Ilmaisee alkuperäisen aakkoston tai kirjaimiston nimekkeelle, johon avainnimeke (kenttä <a href="20X-24X.htm#222">222</a>) perustuu.
+            <ul>
+               <li><strong>#</strong> - Aakkostoa tai kirjaimistoa ei ole annettu / ei avainnimekettä<br>Koodi voi olla yhteydessä myös nimeke- ja vastuullisuustietoihin kentässä <a href="20X-24X.htm#245">245</a>, kun avainnimekettä ei ole.
+               </li>
+               <li><strong>a</strong> - Latinalainen<br>Ei sisällä diakriittejä tai erikoismerkkejä.
+               </li>
+               <li><strong>b</strong> - Laajennettu latinalainen<br>Sisältää diakriitit ja erikoismerkit.
+               </li>
+               <li><strong>c</strong> - Kyrillinen
+               </li>
+               <li><strong>d</strong> - Japanilainen
+               </li>
+               <li><strong>e</strong> - Kiinalainen
+               </li>
+               <li><strong>f</strong> - Arabialainen
+               </li>
+               <li><strong>g</strong> - Kreikkalainen
+               </li>
+               <li><strong>h</strong> - Heprealainen
+               </li>
+               <li><strong>i</strong> - Thaimaalainen
+               </li>
+               <li><strong>j</strong> - Devanagari
+               </li>
+               <li><strong>k</strong> - Korealainen
+               </li>
+               <li><strong>l</strong> - Tamili
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>z</strong> - Muu<br>Sisältää nimekkeet, joihin kuuluu useammilla aakkostoilla tai kirjaimistoilla kirjoitettuja sanoja.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>34</strong> - Kirjauskäytäntö (= 006/17)<br>Onko kohde luetteloitu peräkkäisten, viimeisimpien vai yhdistettyjen kirjausten luettelointisääntöjen mukaan.
+            <ul>
+               <li><strong>0</strong> - Peräkkäinen kirjaus<br>Uusi bibliografinen tietue tehdään aina kun nimeke, pääkirjauksena käytetty yhteisö tai yhtenäistetyn nimekkeen määre muuttuu.
+               </li>
+               <li><strong>1</strong> - Viimeisin kirjaus<br>Kohde luetteloidaan viimeisimmän nimekkeen tai yhteisön alle. Kaikki aikaisemmat nimekkeet ja/tai yhteisöt annetaan huomautuskentissä
+                  (<a href="20X-24X.htm#247">247</a>, <a href="53X-58X.htm#547">547</a> ja <a href="53X-58X.htm#550">550</a>).
+               </li>
+               <li><strong>2</strong> - Yhdistetty kirjaus<br>Kohde luetteloidaan viimeisimmän nimekkeen ja/tai yhteisön tai henkilötekijän alle. Käytetään päivittyville julkaisuille ja
+                  elektronisille sarjoille, joiden aikaisempia nimekkeitä ei säilytetä.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="MP"></a>008 - (MP) KARTAT
+      </h3>
+      <p>Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>e</strong> tai <strong>f</strong>.<br> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>e</strong> tai <strong>f</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18-21</strong> - Korkeustietojen esitystapa (= 006/01-04)<br>Nelimerkkinen koodi ilmaisee miten korkeuserot on esitetty. Koodit luetteloidaan tärkeysjärjestyksessä. Jos tallennetaan vähemmän
+            kuin neljä koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa on tyhjä (#).
+            <ul>
+               <li><strong>#</strong> - Korkeuseroja ei määritelty
+               </li>
+               <li><strong>a</strong> - Korkeuskäyrät
+               </li>
+               <li><strong>b</strong> - Varjostus
+               </li>
+               <li><strong>c</strong> - Korkeuserot värisävyin
+               </li>
+               <li><strong>d</strong> - Rinteen suuntaa osoittavat viivat
+               </li>
+               <li><strong>e</strong> - Luotauspisteet
+               </li>
+               <li><strong>f</strong> - Muotoa kuvaavat viivat
+               </li>
+               <li><strong>g</strong> - Korkeuspisteet
+               </li>
+               <li><strong>i</strong> - Korkeuserot kuvin
+               </li>
+               <li><strong>j</strong> - Viivakuvat
+               </li>
+               <li><strong>k</strong> - Syvyyskäyrät
+               </li>
+               <li><strong>m</strong> - Maisemapiirrokset
+               </li>
+               <li><strong>z</strong> - Muu korkeuserotyyppi
+               </li>
+               <li><strong>||||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>22-23</strong> - Projektio (= 006/05-06)
+            <ul>
+               <li><strong>##</strong> - Projektiota ei määritelty<br><em>Tasoprojektiot</em></li>
+               <li><strong>aa</strong> - Aitoff
+               </li>
+               <li><strong>ab</strong> - Gnomoninen
+               </li>
+               <li><strong>ac</strong> - Lambertin oikeapintainen
+               </li>
+               <li><strong>ad</strong> - Ortografinen
+               </li>
+               <li><strong>ae</strong> - Oikeapituinen
+               </li>
+               <li><strong>af</strong> - Stereografinen
+               </li>
+               <li><strong>ag</strong> - Oikeapintainen, muu
+               </li>
+               <li><strong>am</strong> - Modifioitu stereografinen Alaskalle
+               </li>
+               <li><strong>an</strong> - Chamberlinin trimetrinen
+               </li>
+               <li><strong>ap</strong> - Polaarinen stereografinen
+               </li>
+               <li><strong>au</strong> - Tasoprojektio, erikoistyyppi tuntematon
+               </li>
+               <li><strong>az</strong> - Tasoprojektio, muu<br><em>Lieriöprojektiot</em></li>
+               <li><strong>ba</strong> - Gall
+               </li>
+               <li><strong>bb</strong> - Gooden oikeapintainen
+               </li>
+               <li><strong>bc</strong> - Lambertin oikeapintainen
+               </li>
+               <li><strong>bd</strong> - Mercator
+               </li>
+               <li><strong>be</strong> - Miller
+               </li>
+               <li><strong>bf</strong> - Mollweide
+               </li>
+               <li><strong>bg</strong> - Sinusoidi
+               </li>
+               <li><strong>bh</strong> - Poikittainen "Transverse Mercator"
+               </li>
+               <li><strong>bi</strong> - Gauss-Krügerin poikittaisasentoinen
+               </li>
+               <li><strong>bj</strong> - Pallopanoraama
+               </li>
+               <li><strong>bk</strong> - Krovak
+               </li>
+               <li><strong>bl</strong> - Cassini-Soldner
+               </li>
+               <li><strong>bo</strong> - "Oblique Mercator"
+               </li>
+               <li><strong>br</strong> - Robinson
+               </li>
+               <li><strong>bs</strong> - "Space Oblique Mercator"
+               </li>
+               <li><strong>bu</strong> - Lieriöprojektio, erikoistyyppi tuntematon
+               </li>
+               <li><strong>bz</strong> - Lieriöprojektio, muu<br><em>Kartioprojektiot</em></li>
+               <li><strong>ca</strong> - Albersin oikeapintainen
+               </li>
+               <li><strong>cb</strong> - Bonne
+               </li>
+               <li><strong>cc</strong> - Lambertin oikeakulmainen
+               </li>
+               <li><strong>ce</strong> - Oikeapituinen
+               </li>
+               <li><strong>cp</strong> - Monikartioinen
+               </li>
+               <li><strong>cu</strong> - Kartioprojektio, erikoistyyppi tuntematon
+               </li>
+               <li><strong>cz</strong> - Kartioprojektio, muu<br><em>Muut projektiot</em></li>
+               <li><strong>da</strong> - Armadillo
+               </li>
+               <li><strong>db</strong> - Monilohkoinen
+               </li>
+               <li><strong>dc</strong> - Eckert
+               </li>
+               <li><strong>dd</strong> - Gooden lohkottu
+               </li>
+               <li><strong>de</strong> - Millerin kaksinapainen vinoasentoinen oikeakulmainen kartioprojektio
+               </li>
+               <li><strong>df</strong> - Van der Grinten
+               </li>
+               <li><strong>dg</strong> - Robinsonin oikeapintainen "Dimaxion"
+               </li>
+               <li><strong>dh</strong> - Kaksoissydänprojektio
+               </li>
+               <li><strong>dl</strong> - Trapetsoidi "Lambert conformal"
+               </li>
+               <li><strong>zz</strong> - Muu projektio
+               </li>
+               <li><strong>||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>24</strong> - Määrittelemätön (= 006/07)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>25</strong> - Kartta-aineiston tyyppi (= 006/08)
+            <ul>
+               <li><strong>a</strong> - Yksittäinen kartta<br> Ei käytetä kartastoille tai atlaksille, ks. koodi <strong>e</strong>.
+               </li>
+               <li><strong>b</strong> - Karttasarja<br> Joukko toisiinsa liittyviä mutta fyysisesti ja bibliografisesti erillisiä yksiköitä, jotka tuottaja on tarkoittanut yhdeksi
+                  ryhmäksi. Ei käytetä kartastoille tai atlaksille, ks. koodi <strong>e</strong>.
+               </li>
+               <li><strong>c</strong> - Jatkuva karttajulkaisu<br> Kartografinen julkaisu ilmestyy toisiaan seuraavissa numeroiduissa osissa, joiden on tarkoitus jatkua määräämättömästi. Tietueessa
+                  täytyy olla kenttä <a href="001-006.htm#CR">006 jatkuville julkaisuille</a>.
+               </li>
+               <li><strong>d</strong> - Karttapallo
+               </li>
+               <li><strong>e</strong> - Kartasto, atlas<br> Myös kartasto/atlas-tyyppiset jatkuvat karttajulkaisut, tällöin tietueessa täytyy olla kenttä <a href="001-006.htm#CR">006 jatkuville julkaisuille</a>.
+               </li>
+               <li><strong>f</strong> - Toisen teoksen erillinen karttaliite
+               </li>
+               <li><strong>g</strong> - Toiseen teokseen sidottu karttaosa
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>26-27</strong> - Määrittelemätön (= 006/09-10)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>28</strong> - Virallisjulkaisu (= 006/11)<br>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.
+            <ul>
+               <li><strong>#</strong> - Ei virallisjulkaisu
+               </li>
+               <li><strong>a</strong> - Itsehallinnollinen tai puoli-itsehallinnollinen
+               </li>
+               <li><strong>c</strong> - Monta paikallista yksikköä<br> Esim. kuntayhtymän julkaisu.
+               </li>
+               <li><strong>f</strong> - Kansallinen
+               </li>
+               <li><strong>i</strong> - Kansainvälinen, hallitusten välinen<br> Esim. Yhdistyneiden kansakuntien julkaisu.
+               </li>
+               <li><strong>l</strong> - Paikallishallinto<br> Esim. kunnan julkaisu.
+               </li>
+               <li><strong>m</strong> - Monta aluetta
+               </li>
+               <li><strong>o</strong> - Virallisjulkaisu--toimivalta määrittelemätön
+               </li>
+               <li><strong>s</strong> - Alueellinen
+               </li>
+               <li><strong>u</strong> - Ei tiedetä onko kohde virallisjulkaisu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>29</strong> - Ilmiasu (= 006/12)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus<br> Tarvittaessa tehdään kenttä <a href="007.htm#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>r</strong> - Tavanomainen painojäljenne<br> Silmin luettavaa painettua tekstiä, esim. valokopio.
+               </li>
+               <li><strong>s</strong> - Elektroninen<br>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>30</strong> - Määrittelemätön (= 006/13)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>31</strong> - Hakemisto (= 006/14)<br>Sisältyykö kuvailun kohteeseen tai sen liitteisiin paikkahakemisto.
+            <ul>
+               <li><strong>0</strong> - Ei hakemistoa
+               </li>
+               <li><strong>1</strong> - Hakemisto
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>32</strong> - Määrittelemätön (= 006/15)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>33-34</strong> - Ilmiasun erityispiirteet (= 006/16-17)<br>Kahdella koodilla voidaan ilmaista kartan ilmiasun erityispiirteitä. Koodit luetteloidaan tärkeysjärjestyksessä. Jos tallennetaan
+            vain yksi koodi, se tasataan vasemmalle ja käyttämättömässä merkkipaikassa on tyhjä (#).
+            <ul>
+               <li><strong>#</strong> - Ilmiasun erityispiirteitä ei ole määritelty
+               </li>
+               <li><strong>e</strong> - Käsin piirretty
+               </li>
+               <li><strong>j</strong> - Kuvakortti, postikortti
+               </li>
+               <li><strong>k</strong> - Kalenteri
+               </li>
+               <li><strong>l</strong> - Palapeli
+               </li>
+               <li><strong>n</strong> - Peli
+               </li>
+               <li><strong>o</strong> - Seinäkartta
+               </li>
+               <li><strong>p</strong> - Pelikortit
+               </li>
+               <li><strong>r</strong> - Irtolehtikartta
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="MU"></a>008 - (MU) MUSIIKKI
+      </h3>
+      <p>Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>c</strong>, <strong>d</strong>, <strong>i</strong> tai <strong>j</strong>.<br> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>c</strong>, <strong>d</strong>, <strong>i</strong> tai <strong>j</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18-19</strong> - Musiikinlaji (= 006/01-02)<br>Musiikinlajit perustuvat Library of Congressin asiasanoihin. Jos useampi kuin yksi koodi olisi sopiva, merkkipaikoissa 008/18-19
+            käytetään koodia <em>mu</em> (Useita lajeja) ja kaikki sopivat koodit annetaan kentässä <a href="01X-04X.htm#047">047</a> (Musiikinlajikoodi). Koodi <em>mu</em> voi myös osoittaa että kenttä 047 sisältää muita kuin MARC-musiikinlajikoodeja.
+            <ul>
+               <li><strong>an</strong> - Anthemit
+               </li>
+               <li><strong>bd</strong> - Balladit
+               </li>
+               <li><strong>bg</strong> - Bluegrass-musiikki
+               </li>
+               <li><strong>bl</strong> - Blues
+               </li>
+               <li><strong>bt</strong> - Baletti
+               </li>
+               <li><strong>ca</strong> - Chaconnet
+               </li>
+               <li><strong>cb</strong> - Muiden uskontojen rituaalilaulu
+               </li>
+               <li><strong>cc</strong> - Kristillinen kirkkolaulu
+               </li>
+               <li><strong>cg</strong> - Concerto grossot
+               </li>
+               <li><strong>ch</strong> - Koraalit
+               </li>
+               <li><strong>cl</strong> - Koraalialkusoitot
+               </li>
+               <li><strong>cn</strong> - Kaanonit
+               </li>
+               <li><strong>co</strong> - Konsertot
+               </li>
+               <li><strong>cp</strong> - Moniääniset chansonit
+               </li>
+               <li><strong>cr</strong> - Carolit
+               </li>
+               <li><strong>cs</strong> - Sattumamusiikki
+               </li>
+               <li><strong>ct</strong> - Kantaatit
+               </li>
+               <li><strong>cy</strong> - Kantrimusiikki
+               </li>
+               <li><strong>cz</strong> - Canzonat
+               </li>
+               <li><strong>df</strong> - Tanssimusiikki<br> Huom! Monille tansseille on omat koodit.
+               </li>
+               <li><strong>dv</strong> - Divertimentot, serenadit, kassaatiot, notturnot
+               </li>
+               <li><strong>fg</strong> - Fuugat
+               </li>
+               <li><strong>fl</strong> - Flamenco
+               </li>
+               <li><strong>fm</strong> - Kansanmusiikki
+               </li>
+               <li><strong>ft</strong> - Fantasiat
+               </li>
+               <li><strong>gm</strong> - Hengellinen musiikki
+               </li>
+               <li><strong>hy</strong> - Virret
+               </li>
+               <li><strong>jz</strong> - Jazz
+               </li>
+               <li><strong>mc</strong> - Musiikkirevyyt
+               </li>
+               <li><strong>md</strong> - Madrigaalit
+               </li>
+               <li><strong>mi</strong> - Menuetit
+               </li>
+               <li><strong>mo</strong> - Motetit
+               </li>
+               <li><strong>mp</strong> - Elokuvamusiikki
+               </li>
+               <li><strong>mr</strong> - Marssit
+               </li>
+               <li><strong>ms</strong> - Messut
+               </li>
+               <li><strong>mu</strong> - Useita lajeja
+               </li>
+               <li><strong>mz</strong> - Masurkat
+               </li>
+               <li><strong>nc</strong> - Nocturnet
+               </li>
+               <li><strong>nn</strong> - Soveltumaton
+               </li>
+               <li><strong>op</strong> - Oopperat
+               </li>
+               <li><strong>or</strong> - Oratoriot
+               </li>
+               <li><strong>ov</strong> - Alkusoitot
+               </li>
+               <li><strong>pg</strong> - Ohjelmamusiikki
+               </li>
+               <li><strong>pm</strong> - Passiomusiikki
+               </li>
+               <li><strong>po</strong> - Poloneesit
+               </li>
+               <li><strong>pp</strong> - Viihdemusiikki
+               </li>
+               <li><strong>pr</strong> - Preludit
+               </li>
+               <li><strong>ps</strong> - Passacagliat
+               </li>
+               <li><strong>pt</strong> - Moniääniset laulut
+               </li>
+               <li><strong>pv</strong> - Pavanat
+               </li>
+               <li><strong>rc</strong> - Rock
+               </li>
+               <li><strong>rd</strong> - Rondot
+               </li>
+               <li><strong>rg</strong> - Ragtime
+               </li>
+               <li><strong>ri</strong> - Ricercaret
+               </li>
+               <li><strong>rp</strong> - Rapsodiat
+               </li>
+               <li><strong>rq</strong> - Requiemit
+               </li>
+               <li><strong>sd</strong> - Kontratanssit ja country-dancet
+               </li>
+               <li><strong>sg</strong> - Laulut
+               </li>
+               <li><strong>sn</strong> - Sonaatit
+               </li>
+               <li><strong>sp</strong> - Sinfoniset runoelmat
+               </li>
+               <li><strong>st</strong> - Etydit ja harjoitukset
+               </li>
+               <li><strong>su</strong> - Sarjat
+               </li>
+               <li><strong>sy</strong> - Sinfoniat
+               </li>
+               <li><strong>tc</strong> - Toccatat
+               </li>
+               <li><strong>tl</strong> - Teatro lirico
+               </li>
+               <li><strong>ts</strong> - Triosonaatit
+               </li>
+               <li><strong>uu</strong> - Tuntematon
+               </li>
+               <li><strong>vi</strong> - Villancicot
+               </li>
+               <li><strong>vr</strong> - Muunnelmat
+               </li>
+               <li><strong>wz</strong> - Valssit
+               </li>
+               <li><strong>za</strong> - Zarzuelat
+               </li>
+               <li><strong>zz</strong> - Muut
+               </li>
+               <li><strong>||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>20</strong> - Nuottijulkaisun tyyppi (= 006/03)
+            <ul>
+               <li><strong>a</strong> - Partituuri "Full score"
+               </li>
+               <li><strong>b</strong> - Pienoispartituuri
+               </li>
+               <li><strong>c</strong> - Pianopartituuri
+               </li>
+               <li><strong>d</strong> - Partituuri, jossa vain lauluäänet ilman säestystä "Voice score"
+               </li>
+               <li><strong>e</strong> - Partituurin tiivistelmä tai johtoääni<br>Käytä koodeja <strong>i</strong> ja <strong>j</strong>, jos erottelun voi tehdä.
+               </li>
+               <li><strong>g</strong> - Partiselli
+               </li>
+               <li><strong>h</strong> - Kuoropartituuri
+               </li>
+               <li><strong>i</strong> - Partituurin tiivistelmä
+               </li>
+               <li><strong>j</strong> - Johtoääni
+               </li>
+               <li><strong>k</strong> - Laulupartituuri "Vocal score"
+               </li>
+               <li><strong>l</strong> - Partituuri (esim. soolopartituuri) "Score"
+               </li>
+               <li><strong>m</strong> - Useita tyyppejä
+               </li>
+               <li><strong>n</strong> - Soveltumaton
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>21</strong> - Äänet (= 006/04)
+            <ul>
+               <li><strong>#</strong> - Ei ääniä tai ei määritelty
+               </li>
+               <li><strong>d</strong> - Soitin- ja lauluäänet
+               </li>
+               <li><strong>e</strong> - Soitinäänet
+               </li>
+               <li><strong>f</strong> - Lauluäänet
+               </li>
+               <li><strong>n</strong> - Soveltumaton
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>22</strong> - Kohderyhmä (= 006/05)<br>Millaiselle kohderyhmälle kuvailun kohde on suunnattu.
+            <ul>
+               <li><strong>#</strong> - Tuntematon tai ei eritelty
+               </li>
+               <li><strong>a</strong> - Esikouluikäiset
+               </li>
+               <li><strong>b</strong> - Ala-asteikäiset
+               </li>
+               <li><strong>c</strong> - Yläasteikäiset
+               </li>
+               <li><strong>d</strong> - Lukioikäiset ja vastaavat
+               </li>
+               <li><strong>e</strong> - Aikuiset
+               </li>
+               <li><strong>f</strong> - Erityisryhmä<br> Esim. tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.
+               </li>
+               <li><strong>g</strong> - Yleinen<br> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.
+               </li>
+               <li><strong>j</strong> - Lapset ja nuoret<br> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>23</strong> - Ilmiasu (= 006/06)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi<br>Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti<br>Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)<br>Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus<br>Tarvittaessa tehdään kenttä <a href="007.htm#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>r</strong> - Tavanomainen painojäljenne<br> Silmin luettavaa painettua tekstiä, esim. valokopio.
+               </li>
+               <li><strong>s</strong> - Elektroninen<br>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>24-29</strong> - Liiteaineisto (= 006/07-12)<br>Aakkosjärjestyksessä voidaan tallentaa kuusi eri koodia, jotka ilmaisevat äänitteen, nuottikäsikirjoituksen tai nuottijulkaisun
+            liiteaineiston sisältöä. Jos tallennetaan vähemmän kuin kuusi koodia, koodit tasataan vasemmalle ja käyttämättömissä merkkipaikoissa
+            on tyhjä (#).
+            <ul>
+               <li><strong>#</strong> - Ei liiteaineistoa
+               </li>
+               <li><strong>a</strong> - Diskografia
+               </li>
+               <li><strong>b</strong> - Bibliografia
+               </li>
+               <li><strong>c</strong> - Teemahakemisto
+               </li>
+               <li><strong>d</strong> - Libretto tai teksti
+               </li>
+               <li><strong>e</strong> - Säveltäjän tai tekijän elämäkerta
+               </li>
+               <li><strong>f</strong> - Esittäjän tai yhtyeen elämäkerta
+               </li>
+               <li><strong>g</strong> - Teknistä ja/tai historiallista tietoa soittimista
+               </li>
+               <li><strong>h</strong> - Teknistä tietoa musiikista
+               </li>
+               <li><strong>i</strong> - Historiallista tietoa
+               </li>
+               <li><strong>k</strong> - Etnologista tietoa
+               </li>
+               <li><strong>r</strong> - Opetusaineistoa
+               </li>
+               <li><strong>s</strong> - Nuottijulkaisu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>||||||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>30-31</strong> - Kirjallisuuslaji (= 006/13-14)<br>Koodit luetteloidaan seuraavan listan mukaisessa järjestyksessä. Jos tallennetaan vain yksi koodi, se tasataan vasemmalle
+            ja käyttämättömässä merkkipaikassa on tyhjä (#).
+            <ul>
+               <li><strong>#</strong> - Kohde on musiikkiäänite
+               </li>
+               <li><strong>a</strong> - Omaelämäkerta
+               </li>
+               <li><strong>b</strong> - Elämäkerta
+               </li>
+               <li><strong>c</strong> - Tallenne kokouksesta
+               </li>
+               <li><strong>d</strong> - Tallenne draamallisesta teatterinäytelmästä
+               </li>
+               <li><strong>e</strong> - Essee, yksi tai useampi
+               </li>
+               <li><strong>f</strong> - Kaunokirjallisuus<br>Esim. romaani, novelli, pakina.
+               </li>
+               <li><strong>g</strong> - Esittely, reportaasi
+               </li>
+               <li><strong>h</strong> - Kertomukset<br>Historiallista sisältöä.
+               </li>
+               <li><strong>i</strong> - Ohjeet
+               </li>
+               <li><strong>j</strong> - Kielten opetus
+               </li>
+               <li><strong>k</strong> - Hupailut
+               </li>
+               <li><strong>l</strong> - Luennot, puheet
+               </li>
+               <li><strong>m</strong> - Muistelmat
+               </li>
+               <li><strong>n</strong> - Soveltumaton
+               </li>
+               <li><strong>o</strong> - Kansantarinat
+               </li>
+               <li><strong>p</strong> - Runo, yksi tai useampi
+               </li>
+               <li><strong>r</strong> - Harjoitukset ilman musiikkia
+               </li>
+               <li><strong>s</strong> - Äänet
+               </li>
+               <li><strong>t</strong> - Haastattelut
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>32</strong> - Määrittelemätön (= 006/15)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>33</strong> - Transponointi ja sovitus (= 006/16)
+            <ul>
+               <li><strong>#</strong> - Ei transponointia tai sovitusta tai ei määritelty
+               </li>
+               <li><strong>a</strong> - Transponointi
+               </li>
+               <li><strong>b</strong> - Sovitus
+               </li>
+               <li><strong>c</strong> - Sekä transponoitu että sovitettu
+               </li>
+               <li><strong>n</strong> - Soveltumaton
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>34</strong> - Määrittelemätön (= 006/17)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="MX"></a>008 - (MX) SEKALAISET AINEISTOT
+      </h3>
+      <p>Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>p</strong>.<br> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>p</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18-22</strong> - Määrittelemätön (= 006/01-05)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>23</strong> - Ilmiasu (= 006/06)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus<br> Tarvittaessa tehdään kenttä <a href="007.htm#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>r</strong> - Tavanomainen painojäljenne<br> Silmin luettavaa painettua tekstiä, esim. valokopio.
+               </li>
+               <li><strong>s</strong> - Elektroninen<br>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>24-34</strong> - Määrittelemätön (= 006/07-17)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="VM"></a>008 - (VM) VISUAALISET AINEISTOT
+      </h3>
+      <p>Käytetään tietueissa, joissa <strong>nimiö/06</strong> (Tietueen tyyppi) koodi on <strong>g</strong>, <strong>k</strong>, <strong>o</strong> tai <strong>r</strong>.<br> Jos <strong>nimiö/07</strong> (Tietueen bibliografinen taso) sisältää jonkin koodeista <strong>b</strong>, <strong>i</strong> tai <strong>s</strong>, tietueessa pitää olla myös <strong>006/00</strong> koodi <strong>s</strong>.
+      </p>
+      <p>Koodien kuvaukset koskevat myös kenttää 006, kun <strong>006/00</strong> on <strong>g</strong>, <strong>k</strong>, <strong>o</strong> tai <strong>r</strong>. Merkkipaikat 008/18-34 vastaavat merkkipaikkoja 006/01-17.
+      </p>
+      <h4>Merkkipaikat</h4>
+      <ul>
+         <li><strong>18-20</strong> - Kesto (= 006/01-03)<br>Elokuvan tai videotallenteen kokonaiskesto. Numero tasataan oikealle ja käyttämättömissä merkkipaikoissa on nolla.
+            <ul>
+               <li><strong>000</strong> - Kesto ylittää 999 minuuttia
+               </li>
+               <li><strong>001-999</strong> - Kesto
+               </li>
+               <li><strong>---</strong> - Kesto tuntematon
+               </li>
+               <li><strong>nnn</strong> - Soveltumaton
+               </li>
+               <li><strong>|||</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>21</strong> - Määrittelemätön (= 006/04)<br>Sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>22</strong> - Kohderyhmä (= 006/05)<br>Millaiselle kohderyhmälle kuvailun kohde on suunnattu.
+            <ul>
+               <li><strong>#</strong> - Tuntematon tai ei eritelty
+               </li>
+               <li><strong>a</strong> - Esikouluikäiset
+               </li>
+               <li><strong>b</strong> - Ala-asteikäiset
+               </li>
+               <li><strong>c</strong> - Yläasteikäiset
+               </li>
+               <li><strong>d</strong> - Lukioikäiset ja vastaavat
+               </li>
+               <li><strong>e</strong> - Aikuiset
+               </li>
+               <li><strong>f</strong> - Erityisryhmä<br> Esim. tietyn laitteen käyttäjille tarkoitetut ohjeet tai jonkin organisaation työntekijöille tarkoitettu sisäinen materiaali.
+               </li>
+               <li><strong>g</strong> - Yleinen<br> Käytetään, kun koodit <strong>a-e</strong> tai <strong>j</strong> eivät ole sopivia.
+               </li>
+               <li><strong>j</strong> - Lapset ja nuoret<br> Käytetään, kun koodit <strong>a-d</strong> eivät ole mahdollisia tai toivottavia.
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>23-27</strong> - Määrittelemätön (= 006/06-10)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>28</strong> - Virallisjulkaisu (= 006/11)<br>Onko kohde virallisen tai julkishallinnollisen tahon tuottama tai sen käyttöön tarkoitettu ja mikä on kyseisen tahon toimivalta.
+            <ul>
+               <li><strong>#</strong> - Ei virallisjulkaisu
+               </li>
+               <li><strong>a</strong> - Itsehallinnollinen tai puoli-itsehallinnollinen
+               </li>
+               <li><strong>c</strong> - Monta paikallista yksikköä<br> Esim. kuntayhtymän julkaisu.
+               </li>
+               <li><strong>f</strong> - Kansallinen
+               </li>
+               <li><strong>i</strong> - Kansainvälinen, hallitusten välinen<br> Esim. Yhdistyneiden kansakuntien julkaisu.
+               </li>
+               <li><strong>l</strong> - Paikallishallinto<br> Esim. kunnan julkaisu.
+               </li>
+               <li><strong>m</strong> - Monta aluetta
+               </li>
+               <li><strong>o</strong> - Virallisjulkaisu--toimivalta määrittelemätön
+               </li>
+               <li><strong>s</strong> - Alueellinen
+               </li>
+               <li><strong>u</strong> - Ei tiedetä onko kohde virallisjulkaisu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>29</strong> - Ilmiasu (= 006/12)
+            <ul>
+               <li><strong>#</strong> - Ei mikään seuraavista
+               </li>
+               <li><strong>a</strong> - Mikrofilmi<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>b</strong> - Mikrokuultokortti<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>c</strong> - Mikrokortti (läpinäkymätön)<br> Tarvittaessa tehdään kenttä <a href="007.htm#h">007 mikrotallenteelle</a> (mp. 00, koodi <strong>h</strong>).
+               </li>
+               <li><strong>d</strong> - Isoteksti
+               </li>
+               <li><strong>f</strong> - Pistekirjoitus<br> Tarvittaessa tehdään kenttä <a href="007.htm#f">007 tunnusteluaineistolle</a> (mp. 00, koodi <strong>f</strong>).
+               </li>
+               <li><strong>o</strong> - Verkkoaineisto<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>q</strong> - Paikalliskäyttöinen elektroninen tallenne<br> Ellei elektronista aineistoa haluta koodata tarkkaan, voidaan käyttää koodia <strong>s</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>r</strong> - Tavanomainen painojäljenne<br> Silmin luettavaa painettua tekstiä, esim. valokopio.
+               </li>
+               <li><strong>s</strong> - Elektroninen<br>Elektroninen aineisto voidaan koodata tarkemmin koodeilla <strong>o</strong> ja <strong>q</strong>. Tarvittaessa tehdään kenttä <a href="007.htm#c">007 elektroniselle aineistolle</a> (mp. 00, koodi <strong>c</strong>).
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>30-32</strong> - Määrittelemätön (= 006/13-15)<br>Jokainen sisältää tyhjämerkin (#) tai täyttömerkin (|)
+         </li>
+         <li><strong>33</strong> - Visuaalisen aineiston tyyppi (= 006/16)
+            <ul>
+               <li><strong>a</strong> - Taideteos, alkuperäinen
+               </li>
+               <li><strong>b</strong> - Moniviestin<br> Sisältää kahta tai useampaa aineistotyyppiä, joista mikään ei ole kokonaisuuden hallitseva osa, esim. opetuspaketti.
+               </li>
+               <li><strong>c</strong> - Taidejäljennös
+               </li>
+               <li><strong>d</strong> - Dioraama
+               </li>
+               <li><strong>f</strong> - Raina<br> Stillkuvia äänen kanssa tai ilman.
+               </li>
+               <li><strong>g</strong> - Peli
+               </li>
+               <li><strong>i</strong> - Kuva<br> Kaksiulotteiset kuvat läpinäkymättömällä pohjalla.
+               </li>
+               <li><strong>k</strong> - Grafiikka
+               </li>
+               <li><strong>l</strong> - Tekninen piirustus
+               </li>
+               <li><strong>m</strong> - Elokuva<br> Filminauhalla oleva sarja yksittäisiä kuvia (äänen kanssa tai ilman), joista muodostuu liikkeen vaikutelma heijastettaessa
+                  nopeasti peräkkäin.
+               </li>
+               <li><strong>n</strong> - Kaavio
+               </li>
+               <li><strong>o</strong> - Sana- tai kuvakortti
+               </li>
+               <li><strong>p</strong> - Mikroskoopin preparaatti
+               </li>
+               <li><strong>q</strong> - Malli
+               </li>
+               <li><strong>r</strong> - Esine
+               </li>
+               <li><strong>s</strong> - Dia
+               </li>
+               <li><strong>t</strong> - Kalvo
+               </li>
+               <li><strong>v</strong> - Videotallenne
+               </li>
+               <li><strong>w</strong> - Lelu
+               </li>
+               <li><strong>z</strong> - Muu
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+         <li><strong>34</strong> - Menetelmä (= 006/17)<br>Menetelmä, jota on käytetty liikkeen vaikutelman muodostamiseen elokuvassa tai videotallenteessa.
+            <ul>
+               <li><strong>a</strong> - Animaatio
+               </li>
+               <li><strong>c</strong> - Animaatio ja elävät näyttelijät
+               </li>
+               <li><strong>l</strong> - Elävät näyttelijät
+               </li>
+               <li><strong>n</strong> - Soveltumaton<br> Kuvailun kohde ei ole elokuva tai videotallenne.
+               </li>
+               <li><strong>u</strong> - Tuntematon
+               </li>
+               <li><strong>z</strong> - Muu menetelmä
+               </li>
+               <li><strong>|</strong> - Ei koodattu
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Bibliografiset tiedot -etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

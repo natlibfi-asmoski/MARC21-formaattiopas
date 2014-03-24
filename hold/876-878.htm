@@ -1,0 +1,231 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Varastotiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		VARASTOTIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 8.6.2007.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Kappaletietojen kentät (876-878)</h2>
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p></p>
+      <ul>
+         <li><a href="#yleista">KAPPALETIEDOT--YLEISTÄ TIETOA</a></li>
+         <li><a href="#876">876 - KAPPALETIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ</a> (T)
+         </li>
+         <li><a href="#877">877 - KAPPALETIEDOT--OHEISAINEISTO YMS.</a> (T)
+         </li>
+         <li><a href="#878">878 - KAPPALETIEDOT--HAKEMISTO YMS.</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="yleista"></a>KAPPALETIEDOT--YLEISTÄ TIETOA
+      </h3>
+      <p>Kentät 876-878 sisältävät kappaletason tietoja varastotietueessa 
+         tarkoitetusta kohteesta. Kentät sisältävät monia erilaisia tietoelementtejä, 
+         jota voivat olla käyttökelpoisia mm. hankinnassa tai lainauksessa.
+      </p>
+      <h3>Kappaletietojen linkittäminen kohteeseen, jota varastotiedot koskevat</h3>
+      <h4>Kohteessa, jota varastotiedot koskevat, on yksi fyysinen osa:</h4>
+      <blockquote>
+         <p><em>Yksi kappale, yksi 852 kenttä</em><br>
+            	Kappaletietojen kentissä ei tarvita linkitysosakenttiä, koska kaikki tiedot 
+            	liittyvät yhteen varastotietojen kohteeseen. (Varastotiedot on tallennettu 
+            	tasolla 1 tai 2 nimiön merkkipaikassa 17.)
+         </p>
+         <p><em>Useita kappaleita, yksi tai useampia 852 kenttiä</em><br>
+            	Osakenttää ‡3 käytetään linkittämään kappaletiedot niihin liittyvän 
+            	kappaleen 852 kenttään/kenttiin. (Varastotiedot on tallennettu tasolla 1 tai 
+            	2 nimiön merkkipaikassa 17.)
+         </p>
+      </blockquote>
+      <h4>Kohteessa, jota varastotiedot koskevat, on useita fyysisiä osia:</h4>
+      <blockquote>
+         <p><em>Vapaamuotoiset varastotiedot kentissä 866-868</em><br>
+            	Osakenttää ‡3 käytetään linkittämään kappaletiedot niihin liittyvän osan 
+            	tietoihin kentissä 866-868. (Varastotiedot on tallennettu tasolla 3 tai 4 
+            	nimiön merkkipaikassa 17.)
+         </p>
+         <p><em>Määrämuotoiset varastotiedot kentissä 863-865</em><br>
+            	Osakenttää ‡8 käytetään linkittämään kappaletiedot niihin liittyvän osan 
+            	tietoihin kentissä 863-865. Jokainen osa (volyymi tai volyymit) johon 
+            	sisällytetään kappaletason tietoja, vaatii erillisen 863-865 kentän. 
+            	(Varastotiedot on tallennettu tasolla 3 tai 4 nimiön merkkipaikassa 17.)
+         </p>
+      </blockquote>
+      <h4>Bibliografiseen tietueeseen sisällytetyt varastotiedot:</h4>
+      <p>Kun varastotiedot sisällytetään 
+         bibliografiseen MARC-tietueeseen, useita 876-878 kenttiä voidaan käyttää vain 
+         silloin, kun varastotiedot eivät sisällä muita kenttiä, jotka pitäisi linkittää 
+         johonkin kentistä 876-878. Kun linkitystä tarvitaan, vain yksi 876-878 kenttä ja 
+         siihen liittyvät varastotietojen kentät voidaan sisällyttää bibliografiseen 
+         tietueeseen. Muista 876-878 kentistä ja niihin liittyvistä kentistä täytyy tehdä 
+         erilliset varastotietueet.
+      </p>
+      <p>Kuitenkin, bibliografisessa tietueessa voi olla useita 852 kenttiä ja niihin 
+         liittyviä 876-878 kenttiä, joissa määritellään joko kappaleen numero osakentässä 
+         ‡t tai aineiston osa, jota tiedot koskevat osakentässä ‡3.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Kohteen sisäinen numero (ET)<br>Uniikki identifikaationumero 
+            	kohteelle.
+         </li>
+         <li><strong>‡b</strong> - Virheellinen tai peruttu kohteen sisäinen numero. (T)
+         </li>
+         <li><strong>‡c</strong> - Kustannus (T)<br>Hinta tai kohteen korvaamisen kustannus. 
+            	Kustannuksen laatu voidaan merkitä sulkeisiin, esim. normaali, alennettu.
+         </li>
+         <li><strong>‡d</strong> - Hankinta-aika (T)<br>Kohteen hankintapäivä ISO 8601 (<em>Representations of Dates 
+               	and Times</em>) -standardin mukaisessa muodossa <em>vvvvkkpp</em>. Jos 
+            	päiväykseen liittyy kustannus, osakenttä ‡d seuraa sitä osakenttää ‡c, johon 
+            	se liittyy.
+         </li>
+         <li><strong>‡e</strong> - Hankintapaikka (T)
+         </li>
+         <li><strong>‡h</strong> - Käyttörajoitukset (T)<br>Tietoja mistä tahansa kappaleen 
+            	käyttöä koskevista rajoituksista. Tätä osakenttää käytetään tiedoille, jotka 
+            	ovat liian kappalekohtaisia voidakseen sopia bibliografisen tietueen 
+            	kenttään 506 (Huomautus käyttörajoituksista).
+         </li>
+         <li><strong>‡j</strong> - Kappaleen tila (T)<br>
+            	Tietoa kappaleen tilasta, esim. kadonnut tai poistettu.
+         </li>
+         <li><strong>‡l</strong> - Väliaikainen sijainti (T)<br>
+            	Pysyvään, kentässä 852 merkittyyn sijaintiin liittyvää tietoa tilapäisestä 
+            	sijainnista.
+         </li>
+         <li><strong>‡p</strong> - Kappaleen tunnistus (T)<br>
+            	Kappaleen (esim. osa/volyymi/nide) tunnistustiedot, esim. viivakoodi- tai 
+            	hankintanumero.
+         </li>
+         <li><strong>‡r</strong> - Virheellinen tai peruttu kappaleen tunnistus (T)
+         </li>
+         <li><strong>‡t</strong> - Kappaleen numero (ET)
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET) ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T) <em>ks. 
+               	<a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="876"></a>876 - KAPPALETIEDOT--BIBLIOGRAFINEN PERUSYKSIKKÖ (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvaan bibliografiseen perusyksikköön liittyviä kappalekohtaisia tietoja. Näyttö
+         voidaan muodostaa kentän 876 sisällöstä ja siihen joko osakentän ‡8 tai ‡3 avulla linkitetystä kentästä 852 (Sijainti), 853/863
+         (Ilmestymistiedot/Määrämuotoiset varastotiedot) tai 866 (Vapaamuotoiset varastotiedot).
+      </p>
+      <p>Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista toisiinsa ja niiden toistettavuudesta löytyy
+         osiosta <em><a href="yleista.htm"> Varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <p>Lisätietoja kentän 876 osakentistä löytyy osiosta <em><a href="#yleista"> Kappaletiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>876 ##‡a</strong>AAH8128-1-1<strong>‡p</strong>A14802137389
+      </p>
+      <p><strong>876 ##‡a</strong>ABH8998-1-1<strong>‡c</strong>$6.00 (discounted)
+      </p>
+      <p><strong>876 ##‡a</strong>XZX1222-1<strong>‡d</strong>19940622<strong>‡p</strong>A1234567
+      </p>
+      <p><strong>876 ##‡3</strong>SSRR copy<strong>‡a</strong>00019779439<strong>‡e</strong>CIP
+      </p>
+      <p><strong>876 ##‡3</strong>v.3/4<strong>‡a</strong>ABH1332-1-2<strong>‡h</strong>Room use only<strong>‡p</strong>A14839283910
+      </p>
+      <p><strong>876 ##‡8</strong>1.6<strong>‡a</strong>AAA1000-1-6<strong>‡l</strong>Reference<strong>‡p</strong>A1481283892
+      </p>
+      <p><strong>876 ##‡a</strong>AAH8128-1-1<strong>‡c</strong>$13.75<strong>‡p</strong>A14802137389
+      </p>
+      <p><strong>876 ##‡a</strong>AAH8128-2-1<strong>‡c</strong>12.00<strong>‡p</strong>A14812385910<strong>‡r</strong>A14821385083<strong>‡x</strong>Re-catalog as added copy for stacks when checked in.
+      </p>
+      <p><strong>876 ##‡a</strong>80006537<strong>‡j</strong>Lost<strong>‡t</strong>2
+      </p>
+      <p><strong>876 ##‡3</strong>v.5<strong>‡a</strong>ABH1332-1-3<strong>‡p</strong>A14828301589
+      </p>
+      <p><strong>876 ##‡8</strong>1.1<strong>‡a</strong>AAA1000-1-1<strong>‡p</strong>A1481283827
+      </p>
+      <p><strong>876 ##‡8</strong>1.2<strong>‡a</strong>AAA1000-1-3<strong>‡p</strong>A1481283831
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="877"></a>877 - KAPPALETIEDOT--OHEISAINEISTO YMS. (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvaan, erikseen luetteloimattomaan oheisaineistoon liittyviä kappalekohtaisia
+         tietoja. Näyttö voidaan muodostaa kentän 877 sisällöstä ja siihen joko osakentän ‡8 tai ‡3 avulla linkitetystä kentästä 852
+         (Sijainti), 854/864 (Ilmestymistiedot/Määrämuotoiset varastotiedot) tai 867 (Vapaamuotoiset varastotiedot).
+      </p>
+      <p>Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista toisiinsa ja niiden toistettavuudesta löytyy
+         osiosta <em><a href="yleista.htm"> Varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <p>Lisätietoja kentän 877 osakentistä löytyy osiosta <em><a href="#yleista"> Kappaletiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkki</h4>
+      <p><strong>877 ##‡3</strong>1986<strong>‡a</strong>ACC8761-3-2<strong>‡j</strong>Lost<strong>‡p</strong>J87958763
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="878"></a>878 - KAPPALETIEDOT--HAKEMISTO YMS. (T)
+      </h3>
+      <p>Merkinnön tehneen organisaation kokoelmiin kuuluvaan, erikseen luetteloimattomaan hakemistoon liittyviä kappalekohtaisia tietoja.
+         Näyttö voidaan muodostaa kentän 878 sisällöstä ja siihen joko osakentän ‡8 tai ‡3 avulla linkitetystä kentästä 852 (Sijainti),
+         855/865 (Ilmestymistiedot/Määrämuotoiset varastotiedot) tai 868 (Vapaamuotoiset varastotiedot).
+      </p>
+      <p>Yleinen kuvaus varastotietojen neljästä eri kenttäryhmästä, niiden suhteista toisiinsa ja niiden toistettavuudesta löytyy
+         osiosta <em><a href="yleista.htm"> Varastotiedot--yleistä tietoa</a></em>.
+      </p>
+      <p>Lisätietoja kentän 878 osakentistä löytyy osiosta <em><a href="#yleista"> Kappaletiedot--yleistä tietoa</a></em>.
+      </p>
+      <h4>Esimerkkejä</h4>
+      <p><strong>878 ##‡3</strong>Chronological index<strong>‡a</strong>ABH1332-1-4<strong>‡p</strong>A14828301588
+      </p>
+      <p><strong>878 ##‡3</strong>Alphabetic index<strong>‡a</strong>ABH1332-1-5<strong>‡p</strong>A14801389752
+      </p>
+      <p><strong>878 ##‡8</strong>1.1<strong>‡a</strong>ADF1383-1-2<strong>‡p</strong>A14809183075
+      </p>
+      <p><strong>878 ##‡8</strong>2.1<strong>‡a</strong>ADF1383-1-3<strong>‡p</strong>A14809813780
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

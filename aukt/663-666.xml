@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>8.6.2007</modified>
+  <datafields>
+    <title>Nimien monitahoisten viittausten kentät (663-666)</title>
+    <description>Kenttiin 663-666 tallennetaan tietoja ei-ohjeellisista nimimuodoista tai toisistaan poikkeavista ohjeellisista nimimuodoista ja muista varianteista, joita ei ole valittu ohjeellisiksi nimimuodoiksi, kun suhteita ei voida kuvata yhden tai useamman yksinkertaisen ristiviittauksen avulla kyllin hyvin. Lisätietoja viittauksista löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>. Monitahoinen nimiviittaus tallennetaan yhteen seuraavista kentistä:</description>
+    <datafield tag="663" repeatable="N">
+      <name>Monitahoinen katso myös -viittaus, nimi</name>
+      <description paragraph="1">Selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, joita käytetään kun vahvistetun nimimuodon ja muiden vahvistettujen nimimuotojen välillä on suhteita, joita ei voida kuvata yhden tai useamman yksinkertaisen <em> katso myös</em> -viittauksen (5XX) avulla kyllin hyvin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Nimi, johon viitataan</name>
+        </subfield>
+        <subfield code="t" repeatable="Y">
+          <name>Nimeke, johon viitataan</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>663 ##&#8225;a</strong>For works of this author written under pseudonyms, search also under<strong>&#8225;b</strong>Gray, E. Condor, 1839-1905<strong>&#8225;a</strong>and<strong>&#8225;b</strong>Page, H. A., 1839-1905</text>
+        </example>
+        <example>
+          <text><strong>663 ##&#8225;a</strong>For works of this author written under his real name, search also under<strong>&#8225;b</strong>Japp, Alexander H. (Alexander Hay), 1839-1905.<strong>&#8225;a</strong>For works written under another pseudonym, search also under<strong>&#8225;b</strong>Page, H. A., 1839-1905</text>
+        </example>
+        <example>
+          <text><strong>663 ##&#8225;a</strong>For works of this author written under his real name, search also under<strong>&#8225;b</strong>Japp, Alexander H. (Alexander Hay), 1839-1905.<strong>&#8225;a</strong>For works written under another pseudonym, search also under<strong>&#8225;b</strong>Gray, E. Condor, 1839-1905</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="664" repeatable="N">
+      <name>Monitahoinen katso-viittaus, nimi</name>
+      <description paragraph="1">Selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, joita käytetään nimien viittaustietueissa, kun vahvistamattoman nimimuodon ja yhden tai useamman vahvistetun nimimuodon välillä on suhteita, joita ei voida kuvata yhden tai useamman yksinkertaisen <em>katso</em>-viittauksen (4XX) avulla kyllin hyvin vahvistetun nimimuodon tietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Selittävä teksti</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Nimi, johon viitataan</name>
+        </subfield>
+        <subfield code="t" repeatable="Y">
+          <name>Nimeke, johon viitataan</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>664 ##&#8225;a</strong>For this movement included in the composer's unfinished Requiem search under<strong>&#8225;b</strong>Reger, Max, 1873-1916.<strong>&#8225;t</strong>Requiem (Mass)</text>
+        </example>
+        <example>
+          <text><strong>664 ##&#8225;a</strong>search under<strong>&#8225;b</strong>Mahfuz, Najib, 1882-<strong>&#8225;b</strong>Mahfuz, Najib, 1912-</text>
+        </example>
+        <example>
+          <text><strong>664 ##&#8225;a</strong>For collections beginning with this title search under<strong>&#8225;b</strong>Arlen, Harold, 1905-1986<strong>&#8225;t</strong>Musical comedies. Selections</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="665" repeatable="N">
+      <name>Historiaviittaus</name>
+      <description paragraph="1">Historiaviittausta käytetään kuvaamaan kolmen tai useamman vahvistetun nimimuodon (yleensä yhteisönnimen) välisiä suhteita, kun niitä ei voida kuvata yksinkertaisten viittausten (5XX) avulla kyllin hyvin vahvistetun nimimuodon tietueissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Historiaviittaus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>665 ##&#8225;a</strong>In Jan. 1979 the Connecticut Dept. of Social Services split to form the Dept. of Human Resources and the Dept. of Income Maintenance.<strong>&#8225;a</strong>Works by these bodies are found under the following headings according to the name used at the time of publication:<strong>&#8225;a</strong>Connecticut. Dept. of Social Services.<strong>&#8225;a</strong>Connecticut. Dept. of Human Resources.<strong>&#8225;a</strong>Connecticut. Dept. of Income Maintenance.<strong>&#8225;a</strong>SUBJECT ENTRY: Works about these bodies are entered under one or more of the names resulting from the separation. Works limited in coverage to the pre-separation period are entered under the name of the original body.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="666" repeatable="N">
+      <name>Yleinen selittävä viittaus, nimi</name>
+      <description paragraph="1">Viittaustietueessa käytettävä huomautus, joka selittää miten erilaisten nimien yhteisiä osioita (esim. sukunimien erillisiä etuliitteitä) tallennetaan.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Yleinen selittävä viittaus</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>666 ##&#8225;a</strong>Names beginning with this prefix are also entered under La (e.g., La Bretèque, Pierre de) or under the name following the prefix (e.g., Torre, Marie de la)</text>
+        </example>
+        <example>
+          <text><strong>666 ##&#8225;a</strong>Names of corporate bodies beginning with this word are entered under the next word in the name.</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>8.6.2007</modified>
+  <datafields>
+    <title>Sarjojen käsittelyä koskevat kentät (64X)</title>
+    <description>Kentissä 640-646 on tietoja saman tietueen kentässä 1XX esiintyvän sarjan tai moniosaisen teoksen käsittelystä. Sarjojen käsittelyä koskevia tietoja tallennetaan myös kolmeen merkkipaikkaan kentässä 008, sekä linkitys-, standardinumero-, ja luokituskenttiin 01X-09X.</description>
+    <datafield tag="640" repeatable="Y">
+      <name>Sarjan julkaisuaika ja/tai järjestys</name>
+      <description paragraph="1">Sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainitun sarjan julkaisemisen alkamis-/päättymisaika ja/tai sen osissa ilmenevä järjestys. Voidaan merkitä myös millä perusteella kuvailu on tehty.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Tietojen muoto</description>
+          <values>
+            <value code="0">
+              <description>Määrämuotoinen</description>
+            </value>
+            <value code="1">
+              <description>Vapaamuotoinen</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sarjan julkaisuaika ja/tai järjestys</name>
+        </subfield>
+        <subfield code="z" repeatable="N">
+          <name>Kuvailun perusta</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>640 0#&#8225;a</strong>v. 1- Apr. 1970-</text>
+        </example>
+        <example>
+          <text><strong>640 0#&#8225;a</strong>1972-</text>
+        </example>
+        <example>
+          <text><strong>640 1#&#8225;a</strong>Vols. published for the years 1953-1966</text>
+        </example>
+        <example>
+          <text><strong>640 1#&#8225;a</strong>Complete in 15 v.</text>
+        </example>
+        <example>
+          <text><strong>640 1#&#8225;a</strong>Calendar year 1982 pub. in 1983<strong>&#8225;z</strong>p. 3</text>
+        </example>
+        <example>
+          <text><strong>640 1#&#8225;a</strong>Vol. 1 pub. in 1954<strong>&#8225;z</strong>p. 2 of cov., v. 15</text>
+        </example>
+        <example>
+          <text><strong>640 1#&#8225;a</strong>Projected in 6 v.<strong>&#8225;z</strong>v. 1, p. 316</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="641" repeatable="Y">
+      <name>Sarjan numeroinnin epäsäännöllisyys</name>
+      <description paragraph="1">Sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainitun sarjan kattavuudessa ja/tai numeroinnissa ilmeneviä epäsäännöllisyyksiä kuvaava huomautus. Voidaan merkitä myös millä perusteella kuvailu on tehty.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Huomautus numeroinnin epäsäännöllisyydestä</name>
+        </subfield>
+        <subfield code="z" repeatable="N">
+          <name>Kuvailun perusta</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Each issue covers: Apr. 1-Mar. 31</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Some items issued: with numeric/alpha or alpha numeric designation (447P; X042); some with double numbering (3092R-3092T); and some with numeric sub-subdivision (825/1)</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Introd. and concluding vols. unnumb.</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Numbering begins with no. 3</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Double numbering discontinued with t. 179<strong>&#8225;z</strong>t. 179, t.p.</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>No. 7 never published<strong>&#8225;z</strong>no. 11, t.p. verso</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Numbering does not begin with v. 1<strong>&#8225;z</strong>LC data base, 8-5-85</text>
+        </example>
+        <example>
+          <text><strong>641 ##&#8225;a</strong>Publication suspended 1922-29<strong>&#8225;z</strong>Union list of serials</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="642" repeatable="Y">
+      <name>Sarjan numerointiesimerkki</name>
+      <description paragraph="1">Sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainitun sarjan numerointia kuvaileva esimerkki, jota on noudatettava bibliografisen tietueen sarjalisäkirjauksen järjestystä kuvailevassa osakentässä, kun kuvaillaan sarjan yksittäisiä osia. Voidaan merkitä myös ne volyymit/vuosiluvut ja/tai organisaatio/kappale, johon numerointiesimerkki pätee.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Esimerkki sarjan numeroinnista</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Volyymit/vuosiluvut joita numerointiesimerkki koskee</name>
+          <description>Tätä merkintöä käytetään vain, kun osakentässä &#8225;a annetut tiedot eivät koske sarjan kaikkia osia.</description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio/kappale, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>79/2<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>no. AK-RD-86-14<strong>&#8225;5</strong>DI</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>no. 19<strong>&#8225;d</strong>items published [1982 - ]<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>v. 3, no. 4<strong>&#8225;d</strong>items published before [1979 - ]<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>vol. 6<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>DLC photo-offset reprint</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>no. 4<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>MH</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>no. 34<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>642 ##&#8225;a</strong>1992, no. 1<strong>&#8225;5</strong>DI</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="643" repeatable="Y">
+      <name>Sarjan julkaisupaikka ja julkaisija</name>
+      <description paragraph="1">Sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainitun sarjan julkaisupaikka ja julkaisija. MARC-tietueeseen ei tallenneta painostietoihin liittyviä välimerkkejä, vaan ne muodostetaan osakenttien perusteella. Voidaan merkitä myös ne volyymit/vuosiluvut, joihin julkaisutiedot pätevät.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Julkaisupaikka</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Julkaisija</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Volyymit/vuosiluvut joita julkaisutiedot koskevat</name>
+          <description>Tätä merkintöä käytetään vain, kun osakentässä &#8225;a annetut tiedot eivät koske sarjan kaikkia osia.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>Quito<strong>&#8225;b</strong>s.n.</text>
+        </example>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>London, England<strong>&#8225;a</strong>Dover, N.H.<strong>&#8225;b</strong>Manchester University Press</text>
+        </example>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>Madrid<strong>&#8225;b</strong>J. &amp; A. Garrigues</text>
+        </example>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>Bowling Green, OH<strong>&#8225;b</strong>Social Philosophy and Policy Center<strong>&#8225;a</strong>New Brunswick, USA<strong>&#8225;b</strong>Transaction Books</text>
+        </example>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>Lisboa<strong>&#8225;b</strong>Instituto de Investigaçaõ Científica Tropical/Junta de Investigações Científicas do Ultramar<strong>&#8225;d</strong>no. 137-</text>
+        </example>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>Lisboa<strong>&#8225;b</strong>Junta de Investigações Científicas do Ultramar<strong>&#8225;d</strong>no.[130]-136</text>
+        </example>
+        <example>
+          <text><strong>643 ##&#8225;a</strong>Lisboa<strong>&#8225;b</strong>Ministério do Ultramar, Junta de Investigações do Ultramar<strong>&#8225;d</strong>[no. 3-127]</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="644" repeatable="Y">
+      <name>Sarjan erittelykäytäntö</name>
+      <description paragraph="1">Koodi, joka ilmaisee tietyn organisaation erittelykäytännön koskien sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainittua sarjaa. Voidaan merkitä myös ne volyymit/vuosiluvut ja/tai organisaatio/kappale, joita erittelykäytäntö koskee.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sarjan erittelykäytäntö</name>
+          <values>
+            <value code="f">
+              <name>Eritellään kokonaan</name>
+            </value>
+            <value code="p">
+              <name>Eritellään osittain</name>
+            </value>
+            <value code="n">
+              <name>Ei eritellä</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Poikkeukset erittelykäytäntöön</name>
+          <description>Merkitään ne sarjan osat, joita osakenttään &#8225;a merkitty erittelykäytäntö ei koske.</description>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Volyymit/vuosiluvut joita erittelykäytäntö koskee</name>
+          <description>Tätä merkintöä käytetään vain, kun osakentässä &#8225;a annetut tiedot eivät koske sarjan kaikkia osia.</description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio/kappale, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>f<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>p<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>n<strong>&#8225;d</strong>v. 49-<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>f<strong>&#8225;d</strong>v. 1-48<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>n<strong>&#8225;b</strong>except v. 10, no. 1-3, v. 19, no. 4<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>f<strong>&#8225;d</strong>analyzable parts<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>n<strong>&#8225;d</strong>items processed after May 27, 1993<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>f<strong>&#8225;d</strong>items processed before May 28, 1993<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>f<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>DLC photo-offset reprint</text>
+        </example>
+        <example>
+          <text><strong>644 ##&#8225;a</strong>f<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>MH</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="645" repeatable="Y">
+      <name>Sarjan viittauskäytäntö</name>
+      <description paragraph="1">Koodi, joka ilmaisee tietyn organisaation viittauskäytännön koskien sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainittua sarjaa. Voidaan merkitä myös ne volyymit/vuosiluvut ja/tai organisaatio/kappale, joita viittauskäytäntö koskee.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sarjan viittauskäytäntö</name>
+          <values>
+            <value code="t">
+              <name>Käytetään sarjalisäkirjauksena</name>
+            </value>
+            <value code="n">
+              <name>Ei käytetä sarjalisäkirjauksena</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Volyymit/vuosiluvut joita viittauskäytäntö koskee</name>
+          <description>Tätä merkintöä käytetään vain, kun osakentässä &#8225;a annetut tiedot eivät koske sarjan kaikkia osia.</description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio/kappale, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>645 ##&#8225;a</strong>t<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>645 ##&#8225;a</strong>t<strong>&#8225;d</strong>items cataloged after Dec. 31, 1980<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>645 ##&#8225;a</strong>n<strong>&#8225;d</strong>items cataloged before Jan. 1, 1981<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>645 ##&#8225;a</strong>n<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>645 ##&#8225;a</strong>n<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>MH</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="646" repeatable="Y">
+      <name>Sarjan luokituskäytäntö</name>
+      <description paragraph="1">Koodi, joka ilmaisee tietyn organisaation luokituskäytännön koskien sarjan vahvistetun otsikkomuodon tietueen kentässä 1XX mainittua sarjaa. Voidaan merkitä myös ne volyymit/vuosiluvut ja/tai organisaatio/kappale, joita luokituskäytäntö koskee.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sarjan luokituskäytäntö</name>
+          <values>
+            <value code="c">
+              <name>Volyymit on luokitettu kokoelmaksi</name>
+            </value>
+            <value code="m">
+              <name>Volyymit on luokitettu yhteen pääsarjan tai muun sarjan kanssa</name>
+            </value>
+            <value code="s">
+              <name>Volyymit on luokitettu erikseen</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Volyymit/vuosiluvut joita luokituskäytäntö koskee</name>
+          <description>Tätä merkintöä käytetään vain, kun osakentässä &#8225;a annetut tiedot eivät koske sarjan kaikkia osia.</description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description><em>ks. <a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>s<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>c<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>m<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>s<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>c<strong>&#8225;5</strong>DI</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>c<strong>&#8225;d</strong>no. 65-<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>s<strong>&#8225;d</strong>no. 1-64<strong>&#8225;5</strong>DLC</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>s<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>ICU</text>
+        </example>
+        <example>
+          <text><strong>646 ##&#8225;a</strong>s<strong>&#8225;5</strong>DLC<strong>&#8225;5</strong>DLC photo-offset reprint</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

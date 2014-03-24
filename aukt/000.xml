@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
+
+<fields>
+  <modified>8.6.2007</modified>
+  <leader-directory>
+    <title>Nimiö ja hakemisto</title>
+    <leader>
+      <description paragraph="1">Kiinteä kenttä, joka käsittää jokaisen tietueen 24 ensimmäistä (00-23) merkkipaikkaa.</description>
+      <positions>
+        <position pos="00-04">
+          <name>Tietueen pituus</name>
+          <description>Järjestelmän tuottama viisimerkkinen numerojono, joka ilmaisee koko tietueen pituuden. Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+        <position pos="05">
+          <name>Tietueen tila</name>
+          <values>
+            <value code="a">
+              <name>Koodaustason korotus</name>
+              <description> Tietueen koodaustasoa (nimiö/17) on korotettu.</description>
+            </value>
+            <value code="c">
+              <name>Korjattu</name>
+              <description> Tietueeseen on tehty jokin muu muutos kuin koodaustason korotus.</description>
+            </value>
+            <value code="d">
+              <name>Poistettu</name>
+              <description> Tätä koodia käytetään, kun koodit <strong>s</strong> tai <strong>x</strong> ovat soveltumattomia.</description>
+            </value>
+            <value code="n">
+              <name>Uusi</name>
+            </value>
+            <value code="o">
+              <name>Vanhentunut</name>
+            </value>
+            <value code="s">
+              <name>Poistettu; otsikkomuoto jaettu kahteen tai useampaan otsikkomuotoon</name>
+            </value>
+            <value code="x">
+              <name>Poistettu; otsikkomuoto korvattu toisella otsikkomuodolla</name>
+            </value>
+          </values>
+        </position>
+        <position pos="06">
+          <name>Tietueen tyyppi</name>
+          <values>
+            <value code="z">
+              <name>Auktoriteettitietue</name>
+            </value>
+          </values>
+        </position>
+        <position pos="07-08">
+          <name>Määrittelemätön</name>
+          <description>Jokainen sisältää tyhjämerkin (#)</description>
+        </position>
+        <position pos="09">
+          <name>Tietueen merkistö</name>
+          <values>
+            <value code="#">
+              <name>MARC-8</name>
+            </value>
+            <value code="a">
+              <name>UCS/Unicode</name>
+            </value>
+          </values>
+        </position>
+        <position pos="10">
+          <name>Indikaattorien määrä</name>
+          <description>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa indikaattoreille on varattu vaihtuvamittaisissa kentissä.</description>
+        </position>
+        <position pos="11">
+          <name>Osakenttäkoodin pituus</name>
+          <description>Järjestelmän tuottama numero 2, joka merkitsee miten monta merkkipaikkaa jokaiselle osakenttäkoodille on varattu vaihtuvamittaisissa kentissä.</description>
+        </position>
+        <position pos="12-16">
+          <name>Tietojen kantaosoite</name>
+          <description>Järjestelmän tuottama viisimerkkinen numerojono ilmaisee tietueen ensimmäisen vaihtuvamittaisen kentän ensimmäisen merkkipaikan (= nimiön ja hakemiston merkkien määrä sekä nimiön loppumerkki). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+        <position pos="17">
+          <name>Koodaustaso</name>
+          <description>Kertoo onko tietue valmis/täydellinen.</description>
+          <values>
+            <value code="n">
+              <name>Valmis/täydellinen auktoriteettitietue</name>
+              <description> Tietue täyttää kansallisen tason vaatimukset.</description>
+            </value>
+            <value code="o">
+              <name>Keskeneräinen/epätäydellinen auktoriteettitietue</name>
+            </value>
+          </values>
+        </position>
+        <position pos="18-19">
+          <name>Määrittelemätön</name>
+          <description>Jokainen sisältää tyhjämerkin (#)</description>
+        </position>
+        <position pos="20-23">
+          <name>Kirjauskartta "Entry map"</name>
+          <description>Neljä järjestelmän tuottamaa numeroa, jotka merkitsevät hakemiston tietojen rakennetta.</description>
+          <values>
+            <value code="20">
+              <name>'Kentän pituus' -tiedon pituus</name>
+              <description>Sisältää numeron 4.</description>
+            </value>
+            <value code="21">
+              <name>'Kentän osoite' -tiedon pituus</name>
+              <description>Sisältää numeron 5.</description>
+            </value>
+            <value code="22">
+              <name>Järjestelmän määrittelemän tiedon pituus</name>
+              <description>Sisältää numeron 0.</description>
+            </value>
+            <value code="23">
+              <name>Määrittelemätön</name>
+              <description>Sisältää numeron 0.</description>
+            </value>
+          </values>
+        </position>
+      </positions>
+    </leader>
+    <directory>
+      <description paragraph="1">Järjestelmän tuottama hakemisto vaihtuvamittaisten kenttien sijainnista. Hakemisto alkaa heti nimiön jälkeen merkkipaikasta 24 lähtien ja koostuu 12 merkin mittaisista jaksoista, joissa kuvataan kenttäkoodi, kentän pituus ja kentän aloituskohta.</description>
+      <positions>
+        <position pos="00-02">
+          <name>Kenttäkoodi</name>
+          <description>Kolme numeroa, jotka kertovat mistä kentästä on kyse.</description>
+        </position>
+        <position pos="03-06">
+          <name>Kentän pituus</name>
+          <description>Neljä numeroa, jotka kertovat kentän pituuden mukaan lukien indikaattorit, osakenttäkoodit, tietosisällön ja kentän loppumerkin. Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+        <position pos="07-11">
+          <name>Kentän aloituskohta</name>
+          <description>Viisi numeroa, jotka kertovat mistä merkkipaikasta kenttä alkaa suhteessa tietojen kantaosoitteeseen (nimiö/12-16). Numero on tasattu oikealle ja käyttämättömissä merkkipaikoissa on nolla.</description>
+        </position>
+      </positions>
+    </directory>
+  </leader-directory>
+</fields>

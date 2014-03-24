@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
+
+<fields>
+  <modified>29.1.2009</modified>
+  <datafields>
+    <title>Sijainti- ja käyttötietojen kentät (852 &amp; 856)</title>
+    <description>Kentät 852 ja 856 sisältävät tietoja kohteen fyysisestä sijainnista ja miten siihen päästään käsiksi joko fyysisesti tai elektronisesti. Kun 852-kenttiä ja niihin liittyviä kenttiä tallennetaan useita, on noudatettava tiettyjä periaatteita, jotka löytyvät varastotietojen formaatin <a href="johdanto.htm#periaatteet">johdanto-osuudesta</a>.</description>
+    <datafield tag="852" repeatable="Y">
+      <name>Sijainti</name>
+      <description paragraph="1">Sisältää kohteen paikantamiseen tarvittavat tiedot. Kenttää voidaan toistaa useiden sijaintipaikkojen merkitsemiseksi vain silloin, kun kohteen ilmiasu ei muutu ja kun siitä ei ole annettu ilmestymis- tai varastotietoja kentissä 853-855, 863-865 tai 866-868. Muulloin kunkin sijaintipaikan varastotiedot tallennetaan erillisiin varastotietueisiin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Hyllyluokitus</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Library of Congress -luokitus</description>
+            </value>
+            <value code="1">
+              <description>Deweyn luokitus, DDC</description>
+            </value>
+            <value code="2">
+              <description>National Library of Medicine -luokitus</description>
+            </value>
+            <value code="3">
+              <description>Superintendent of Documents -luokitus</description>
+            </value>
+            <value code="4">
+              <description>Hyllyluokitus numerus currensin mukaan</description>
+            </value>
+            <value code="5">
+              <description>Hyllyluokitus nimekkeen mukaan<br /> Tarpeen mukaan hyllytysnimeke tallennetaan osakenttään &#8225;l.</description>
+            </value>
+            <value code="6">
+              <description>Hyllytetty erikseen</description>
+            </value>
+            <value code="7">
+              <description>Luokitus määritelty osakentässä &#8225;2</description>
+            </value>
+            <value code="8">
+              <description>Muu järjestelmä</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Hyllytysjärjestys<br /> Hyllytetäänkö kohde ensisijaisen vai vaihtoehtoisen numeroinnin mukaan.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Ei hyllytetä numeroinnin mukaan</description>
+            </value>
+            <value code="1">
+              <description>Hyllytetään ensisijaisen numeroinnin mukaan.</description>
+            </value>
+            <value code="2">
+              <description>Hyllytetään vaihtoehtoisen numeroinnin mukaan</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Sijainti</name>
+          <description>Organisaatio tai henkilö, joka omistaa kohteen tai tarjoaa sen käyttöön. Organisaation koodina käytetään ISIL-tunnusta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>. Voidaan merkitä myös henkilön tai organisaation nimi.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Alayksikkö tai kokoelma</name>
+          <description>Omistavan organisaation osasto, kirjasto, kokoelma jne. jossa kohde sijaitsee tai josta se on saatavana. Osakenttä &#8225;b ei saa esiintyä ilman osakenttää &#8225;a. Jos kohteella on useita sijaintikokoelmia, tehdään jokaista kokoelmaa kohden yksi varastotietue.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Sijainti hyllyssä</name>
+          <description>Tarpeen vaatiessa merkitään kokoelman tms. sisäinen hyllytyspaikan tunnus.</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Entinen sijainti hyllyssä</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Osoite</name>
+          <description>Kohteen nykyisen fyysisen sijaintipaikan katuosoite, postinumero, kaupunki ja maa.</description>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Poikkeava sijainti koodina</name>
+          <description>Koodimuotoiset tiedot yksittäisistä osista, numeroista tms., joiden sijainti poikkeaa muiden vastaavien sijainnista. Osakenttä &#8225;f merkitään heti siihen liittyvän osakentän &#8225;a, &#8225;b tai &#8225;c jälkeen. Tietojen merkitsemiseen käytetään samoja koodeja kuin kentän <a href="001-008.xml#008"> 008</a> merkkipaikoissa 13-15 (Eritelty säilytysmerkintö).</description>
+          <values>
+            <value code="13">
+              <name>Määreen tyyppi</name>
+            </value>
+            <value code="14">
+              <name>Yksiköiden määrä</name>
+            </value>
+            <value code="15">
+              <name>Yksikön tyyppi</name>
+              <description>Kertoo joko säilytyksen aikayksikön tai osat, joita säilytetään.</description>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="g" repeatable="Y">
+          <name>Poikkeava sijainti tekstinä</name>
+          <description>Vapaata tekstiä käytetään, kun osakentän &#8225;f koodit eivät riitä. Osakenttä &#8225;g merkitään heti siihen liittyvän osakentän &#8225;a, &#8225;b tai &#8225;c jälkeen.</description>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Paikkamerkin hyllyluokka</name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Kappaletta koskevat tiedot</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Paikkamerkin kontrollinumero</name>
+        </subfield>
+        <subfield code="k" repeatable="Y">
+          <name>Paikkamerkin etuliite</name>
+          <description>Etuliitteellä voidaan osoittaa mm. osakokoelman tai alayksikön tunniste. Osakenttä &#8225;k tallennetaan ennen osakenttiä &#8225;h ja &#8225;i.</description>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Hyllytysnimeke</name>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Paikkamerkin loppuliite</name>
+          <description>Osakenttä &#8225;m tallennetaan osakenttien &#8225;h ja &#8225;i jälkeen.</description>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Maakoodi</name>
+          <description>Osakentässä &#8225;a identifioidun sijainnin maakoodi. Koodi otetaan listalta, ks. <em><a href="../maat.htm">MARC 21 Maakoodit</a></em>.</description>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Kappaleen tunnistus</name>
+          <description>Kun varastotiedot eivät sisällä kenttiä 863-865 (Määrämuotoiset varastotiedot) tai 876-878 (Kappaletiedot), joihin sisältyy osakenttä &#8225;p (Kappaleen tunnistus), tähän tallennetaan yksittäisen kappaleen (esim. osa/volyymi/nide) tunnistustiedot.</description>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Kappaleen fyysinen kunto</name>
+          <description>Kun varastotiedot eivät sisällä kenttiä 863-865 (Määrämuotoiset varastotiedot) tai 876-878 (Kappaletiedot), joihin sisältyy osakenttä &#8225;q (Kappaleen fyysinen kunto), tähän tallennetaan kuvaus kappaleen fyysiseen kuntoon liittyvistä epätavallisista piirteistä.</description>
+        </subfield>
+        <subfield code="s" repeatable="Y">
+          <name>Artikkelin tekijänoikeusmaksun koodi</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Kappaleen numero</name>
+          <description>Kun varastotiedot eivät sisällä kenttiä 863-865 (Määrämuotoiset varastotiedot), joihin sisältyy osakenttä &#8225;t (Kappaleen numero), tähän tallennetaan sen kappaleen numero, jota annetut tiedot koskevat. Jos kappaleita on useita, annetaan pelkkä numeroväli. Kappaleiden kokonaismäärä annetaan kentän <a href="001-008.xml#008">008</a> merkkipaikoissa 17-19 (Kappalemäärä). Jos kohdetta saadaan vain yksi, osakenttää &#8225;t ei tarvitse käyttää. Kun kohteita saadaan useita eri sijaintipaikkoihin, on tarkistettava muissa saman kohteen varastotiedoissa jo käytetyt kappalenumerot päällekkäisyyksien välttämiseksi.</description>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Esimerkiksi URL tai URN, joka tarjoaa pääsyn elektroniseen aineistoon. URI linkittää käyttäjän varastoon, jossa kohde sijaitsee (huolimatta siitä onko kohde analoginen vai digitaalinen). Tämä tieto voidaan tallentaa myös organisaatiokoodina tai tekstinä osakenttään &#8225;a (Sijainti) ja (mikäli soveltuu) osakenttään &#8225;b (Alayksikkö tai kokoelma).</description>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Sisäinen huomautus</name>
+          <description>Kappaleeseen tai kappaleisiin liittyvä luetteloivan organisaation sisäinen huomautus. Yksittäisiin jaksoihin liittyvät sisäiset huomautukset tallennetaan asianomaisten 86X-kenttien osakenttiin &#8225;x.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+          <description>Kappaleeseen tai kappaleisiin liittyvä julkinen huomautus. Yksittäisiin jaksoihin liittyvät julkiset huomautukset tallennetaan asianomaisten 86X-kenttien osakenttiin &#8225;z.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Hyllyluokituksen lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaclas.html#rela852">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em> <a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="N">
+          <name>Järjestysnumero</name>
+          <description>Tieto, jonka avulla toisiinsa liittyvät varastotiedot järjestetään. Vaihtuvamittainen järjestysnumero kontrolloi näyttöä ja useiden, identtisiä osakenttiä &#8225;a, &#8225;b ja &#8225;t sisältävien 852-kenttien järjestämistä. Osakenttä &#8225;8 on aina kentän ensimmäinen osakenttä.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>852 8#&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>Lehdet<strong>&#8225;b</strong>Varasto</text>
+        </example>
+        <example>
+          <text><strong>852 81&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>Lehdet<strong>&#8225;e</strong>Teollisuuskatu 23-25, 00510 Hki<strong>&#8225;h</strong>681.3<strong>&#8225;n</strong>fi</text>
+        </example>
+        <example>
+          <text><strong>852 ##&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>Lehdet<strong>&#8225;b</strong>Lukusali<strong>&#8225;f</strong>12y</text>
+        </example>
+        <example>
+          <text><strong>852 ##&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>Varasto<strong>&#8225;b</strong>Käsikirjasto<strong>&#8225;g</strong>15 viimeisintä vuosikertaa</text>
+        </example>
+        <example>
+          <text><strong>852 81&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>K<strong>&#8225;k</strong>REF<strong>&#8225;h</strong>502<strong>&#8225;i</strong>Ambio</text>
+        </example>
+        <example>
+          <text><strong>852 81&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>K<strong>&#8225;h</strong>5<strong>&#8225;i</strong>Nature<strong>&#8225;m</strong>Holvi</text>
+        </example>
+        <example>
+          <text><strong>852 81&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>0131<strong>&#8225;p</strong>1100064014</text>
+        </example>
+        <example>
+          <text><strong>852 81&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>Lehdet<strong>&#8225;t</strong>1<strong>&#8225;h</strong>614<strong>&#8225;i</strong>Terveys 2000</text>
+        </example>
+        <example>
+          <text><strong>852 4#&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>Lehdet<strong>&#8225;c</strong>Foliohylly<strong>&#8225;t</strong>2-3<strong>&#8225;i</strong>909843</text>
+        </example>
+        <example>
+          <text><strong>852 51&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>K<strong>&#8225;g</strong>Uusimmat numerot lukusalissa<strong>&#8225;i</strong>Ambio<strong>&#8225;x</strong>vol. 1-7 on tilattu mikrofilminä</text>
+        </example>
+        <example>
+          <text><strong>852 51&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>2100<strong>&#8225;i</strong>Soundi<strong>&#8225;z</strong>Pyydä lehti musiikkiosaston valvojalta<strong>&#8225;q</strong>loppusivuilla lapsen piirroksia</text>
+        </example>
+        <example>
+          <text><strong>852 51&#8225;a</strong>[Sijainti]<strong>&#8225;b</strong>0108<strong>&#8225;l</strong>NYT MAG</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="856" repeatable="Y">
+      <name>Elektronisen aineiston sijainti ja käyttö</name>
+      <description paragraph="1">Tiedot, joita tarvitaan elektronisen aineiston paikantamiseen ja käyttöön. Käytetään yleensä varastotietueessa vain silloin, kun paikallisesti käytetty osoite lisensoituun elektroniseen aineistoon eroaa yleisesti käytössä olevasta osoitteesta. Joissakin tapauksissa voidaan tallentaa vain tiedot, joiden avulla päästään toisella palvelimella sijaitseviin tarkempiin käytön mahdollistaviin tietoihin.</description>
+      <description paragraph="2">Kenttää 856 toistetaan, kun sijaintia koskevat tietoelementit vaihtelevat (osakentät &#8225;a, &#8225;b, &#8225;d) ja kun useampi kuin yksi yhteys-/käyttötapa on mahdollinen. Sitä toistetaan myös, kun tiedoston nimi (&#8225;f) vaihtelee, lukuun ottamatta tilannetta jolloin yksittäinen teos on jaettu useisiin osiin online-käyttöä varten.</description>
+      <description paragraph="3"><a href="http://www.loc.gov/marc/856guide.html">Ks. tarkemmat ohjeet kentän 856 käytöstä (englanniksi).</a></description>
+      <indicators>
+        <indicator num="1">
+          <description>Yhteys- tai käyttötapa<br /> Kenttää toistetaan, kun useampi kuin yksi yhteys- tai käyttötapa on mahdollinen. Kun osakenttään &#8225;u tallennetaan URL, indikaattorin arvo vastaa protokollaa, joka on myös osoitteen ensimmäinen elementti.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Sähköposti<br /> Yhteys/käyttö tapahtuu Mail Transfer protokollalla (MAILTP).</description>
+            </value>
+            <value code="1">
+              <description>FTP</description>
+            </value>
+            <value code="2">
+              <description>Etäpalvelin (Telnet)</description>
+            </value>
+            <value code="3">
+              <description>Modeemiyhteys<br /> Yhteys/käyttö tapahtuu tavallisen puhelinlinjan kautta.</description>
+            </value>
+            <value code="4">
+              <description>HTTP<br /> Yhteys/käyttö tapahtuu Hypertext Transfer protokollalla.</description>
+            </value>
+            <value code="7">
+              <description>Yhteys- tai käyttötapa merkitään osakenttään &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Suhde<br /> Indikaattorin arvo ilmaisee mikä suhde kenttään 856 merkityllä elektronisella aineistolla on tietueessa kuvailtuun kohteeseen. Osakenttään &#8225;3 voidaan tallentaa tarkempia tietoja suhteesta, kun kyseessä ei ole aineistojen yksi-yhteen vastaavuus.</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="0">
+              <description>Vastaa kuvailun kohdetta<br /> Tässä tapauksessa bibliografinen tietue kuvailee samaa elektronista aineistoa, jonka sijainti merkitään kenttään 856. Jos kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston osakohteeseen, osakenttään &#8225;3 merkitään aineiston osa, jota tiedot koskevat.</description>
+            </value>
+            <value code="1">
+              <description>Kuvailun kohteen toinen versio<br /> Tässä tapauksessa bibliografisessa tietueessa kuvailtu kohde ei ole elektroninen, mutta elektroninen versio on saatavana ja sen sijainti merkitään kenttään 856. Jos kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston osakohteeseen, osakenttään &#8225;3 merkitään aineiston osa, jota tiedot koskevat.</description>
+            </value>
+            <value code="2">
+              <description>Kuvailun kohteeseen liittyvä aineisto<br /> Tässä tapauksessa bibliografisessa tietueessa kuvailtu kohde ei ole sama kuin elektroninen aineisto (vaan esim. sen tiivistelmä tai sisällysluettelo). Osakentässä &#8225;3 voidaan tarkemmin kuvata elektronisen aineiston ja kuvailun kohteen suhdetta.</description>
+            </value>
+            <value code="8">
+              <description>Vakionäyttöä ei muodosteta</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Palvelimen nimi</name>
+          <description>Toistetaan, jos samaa palvelinta voidaan kutsua useilla nimillä.</description>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Palvelimen numeerinen osoite</name>
+          <description>Voi sisältää IP (Internet Protocol) -osoitteen, jos kyseessä on aineisto Internetissä, tai puhelinnumeron, jos käyttöyhteys tarjotaan modeemiyhteyden ja puhelinlinjan kautta. Tämä tieto voi muuttua usein ja sen automaattinen muodostaminen on suositeltavampaa kuin staattinen tallennus.</description>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Tiedoston pakkausmenetelmä</name>
+          <description>Tietoja pakkausmenetelmästä ja tarvitaanko purkua varten erityinen ohjelma.</description>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Tiedoston hakemistopolku</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Tiedoston nimi</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Käsittelijä</name>
+          <description>Yleensä tieto joka edeltää @-merkkiä palvelimen osoitteessa.</description>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Komento</name>
+          <description>Komento, jolla etäpalvelinta ohjataan.</description>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Bittiä sekunnissa</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Salasana</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Käyttäjätunnus</name>
+          <description>Tähän osakenttään voidaan tallentaa yleisesti käytettyjä käyttäjätunnuksia, joita ei tarvitse erityisesti suojata.</description>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Käyttäjätuen yhteystiedot</name>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Palvelimen sijaintipaikka</name>
+          <description>Osakentässä &#8225;a mainitun palvelimen täydellinen sijainti, maantieteellinen sijainti mukaan luettuna.</description>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Palvelimen käyttöjärjestelmä</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Portti</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Tiedoston muoto</name>
+          <description>Esimerkiksi teksti/HTML, ASCII, Postscript-tiedosto, suoritettava ohjelma (exe) tai JPEG-kuva.</description>
+        </subfield>
+        <subfield code="m" repeatable="Y">
+          <name>Käyttäjätuen yhteystiedot</name>
+        </subfield>
+        <subfield code="n" repeatable="N">
+          <name>Palvelimen sijaintipaikka</name>
+          <description>Osakentässä &#8225;a mainitun palvelimen täydellinen sijainti, maantieteellinen sijainti mukaan luettuna.</description>
+        </subfield>
+        <subfield code="o" repeatable="N">
+          <name>Palvelimen käyttöjärjestelmä</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Portti</name>
+        </subfield>
+        <subfield code="q" repeatable="N">
+          <name>Tiedoston muoto</name>
+          <description>Esimerkiksi teksti/HTML, ASCII, Postscript-tiedosto, suoritettava ohjelma (exe) tai JPEG-kuva.</description>
+        </subfield>
+        <subfield code="r" repeatable="N">
+          <name>Asetukset</name>
+        </subfield>
+        <subfield code="s" repeatable="Y">
+          <name>Tiedoston koko</name>
+        </subfield>
+        <subfield code="t" repeatable="Y">
+          <name>Pääte-emulointi</name>
+        </subfield>
+        <subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+          <description>Kenttä 856 on rakennettu siten, että URL voidaan muodostaa myös yhdistämällä eri osakenttien tietoja. Osakenttää &#8225;u voidaan käyttää niiden sijasta tai lisäksi. Osakenttää &#8225;u voidaan toistaa vain jos tallennetaan sekä URN että URL, tai useita URN:eja. <a href="../../../../julkaisuala/urn.htm"> Suomalainen URN, ks. ISBN- ja ISSN-keskus</a>.</description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Aineisto tavoitettavissa, aukioloaika</name>
+        </subfield>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Sisäinen huomautus</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Linkin teksti</name>
+          <description>Teksti, joka näkyy asiakkaalle ja toimii linkkinä osakentässä &#8225;u esitetyn URI:n sijaan.</description>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Julkinen huomautus</name>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Yhteys- tai käyttötapa</name>
+          <description>Kun ensimmäisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela856b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>856 2#&#8225;a</strong>anthrax.micro.umn.edu<strong>&#8225;b</strong>128.101.95.23</text>
+        </example>
+        <example>
+          <text><strong>856 1#&#8225;a</strong>maine.maine.edu<strong>&#8225;c</strong>Pakattu tiedosto purettava PKUNZIP-ohjelmalla<strong>&#8225;f</strong>resource.zip</text>
+        </example>
+        <example>
+          <text><strong>856 1#&#8225;u</strong>ftp://harvada.harvard.edu<strong>&#8225;k</strong>guest</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://herkules.oulu.fi/raiskio/<strong>&#8225;q</strong>PDF ja HTML</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://www.edita.fi/sk/<strong>&#8225;u</strong>URN:ISSN:1455-8904<strong>&#8225;q</strong>HTML ja PDF</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://www.edita.fi/edi/cash2/compop/index.html<strong>&#8225;u</strong>URN:NBN:fi-fe19976255<strong>&#8225;c</strong>Zip<strong>&#8225;q</strong>HTML</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://docuweb.jyu.fi/scripts/webmain.dll<strong>&#8225;q</strong>JPEG</text>
+        </example>
+        <example>
+          <text><strong>856 1#&#8225;u</strong>ftp://wuarchive.wustl.edu/mirrors2/win3/games/atmoids.zip<strong>&#8225;c</strong>decompress with PKUNZIP.exe<strong>&#8225;x</strong>cannot verify because of transfer difficulty</text>
+        </example>
+        <example>
+          <text><strong>856 0#&#8225;a</strong>kentvm.bitnet<strong>&#8225;f</strong>acadlist file1<strong>&#8225;f</strong>acadlist file2<strong>&#8225;f</strong>acadlist file3</text>
+        </example>
+        <example>
+          <text><strong>856 42&#8225;3</strong>Finding aid<strong>&#8225;u</strong>http://lcweb2.loc.gov/ammem/ead/jackson.sgm</text>
+        </example>
+        <example>
+          <text><strong>856 0#&#8225;a</strong>uicvm.bitnet<strong>&#8225;f</strong>AN2<strong>&#8225;h</strong>Listserv</text>
+        </example>
+        <example>
+          <text><strong>856 2#&#8225;a</strong>madlab.sprl.umich.edu<strong>&#8225;n</strong>University of Michigan Weather Underground<strong>&#8225;p</strong>3000</text>
+        </example>
+        <example>
+          <text><strong>856 41&#8225;u</strong>http://www.jstor.org/journals/0277903x.html</text>
+        </example>
+        <example>
+          <text><strong>856 40&#8225;u</strong>http://www.cdc.gov/ncidod/EID/eid.htm<strong>&#8225;q</strong>text/html</text>
+        </example>
+        <example>
+          <text><strong>856 42&#8225;3</strong>Essays from annual reports<strong>&#8225;u</strong>woodrow.mpls.frb.fed.us/pubs/ar/index.html</text>
+        </example>
+        <example>
+          <text><strong>856 1#&#8225;u</strong>ftp://wuarchive.wustl.edu/mirrors/info-mac/util/color-system-icons.hqx<strong>&#8225;s</strong>16874 bytes</text>
+        </example>
+        <example>
+          <text><strong>856 41&#8225;u</strong>http://purl.oclc.org/OCLC/OLUC/34907403/1<strong>&#8225;x</strong>export.uswest.com/</text>
+        </example>
+        <example>
+          <text><strong>856 40&#8225;u</strong>http://www.ref.oclc.org:2000<strong>&#8225;z</strong>Address for accessing the journal using authorization number and password through OCLC FirstSearch Electronic Collections Online. Subscription to online journal required for access to abstracts and full text</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;z</strong>Part of the Ovid Mental Health Collection (MHC). Follow instructions on MedMenu page for Ovid login.<strong>&#8225;u</strong>http://info.med.yale.edu/medmenu/info%5Fcbc.html</text>
+        </example>
+        <example>
+          <text><strong>856 42&#8225;3</strong>French version<strong>&#8225;u</strong>http://www.cgiar.org/ifpri/reports/0297rpt/0297-fr.htm</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://susdl.fcla.edu/cgi-bin/cgiwrap/~fdl/fdlcgi?FA00000011%2Fjpg<strong>&#8225;y</strong>Electronic resource (JPEG)</text>
+        </example>
+        <example>
+          <text><strong>856 4#&#8225;u</strong>http://susdl.fcla.edu/cgi-bin/cgiwrap/~fdl/fdlcgi?FA00000011%2Fpdf<strong>&#8225;y</strong>Electronic resource (PDF)</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>

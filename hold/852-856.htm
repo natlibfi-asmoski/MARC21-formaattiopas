@@ -1,0 +1,368 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Varastotiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#FFCC00">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		VARASTOTIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 29.1.2009.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Sijainti- ja käyttötietojen kentät (852 &amp; 856)</h2>
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kentät 852 ja 856 sisältävät tietoja kohteen fyysisestä sijainnista ja miten siihen päästään käsiksi joko fyysisesti tai elektronisesti.
+         Kun 852-kenttiä ja niihin liittyviä kenttiä tallennetaan useita, on noudatettava tiettyjä periaatteita, jotka löytyvät varastotietojen
+         formaatin <a href="johdanto.htm#periaatteet">johdanto-osuudesta</a>.
+      </p>
+      <ul>
+         <li><a href="#852">852 - SIJAINTI</a> (T)
+         </li>
+         <li><a href="#856">856 - ELEKTRONISEN AINEISTON SIJAINTI JA KÄYTTÖ</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="852"></a>852 - SIJAINTI (T)
+      </h3>
+      <p>Sisältää kohteen paikantamiseen tarvittavat tiedot. Kenttää voidaan toistaa useiden sijaintipaikkojen merkitsemiseksi vain
+         silloin, kun kohteen ilmiasu ei muutu ja kun siitä ei ole annettu ilmestymis- tai varastotietoja kentissä 853-855, 863-865
+         tai 866-868. Muulloin kunkin sijaintipaikan varastotiedot tallennetaan erillisiin varastotietueisiin.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Hyllyluokitus
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Library of Congress -luokitus
+               </li>
+               <li><strong>1</strong> - Deweyn luokitus, DDC
+               </li>
+               <li><strong>2</strong> - National Library of Medicine -luokitus
+               </li>
+               <li><strong>3</strong> - Superintendent of Documents -luokitus
+               </li>
+               <li><strong>4</strong> - Hyllyluokitus numerus currensin mukaan
+               </li>
+               <li><strong>5</strong> - Hyllyluokitus nimekkeen mukaan<br> Tarpeen mukaan hyllytysnimeke tallennetaan osakenttään ‡l.
+               </li>
+               <li><strong>6</strong> - Hyllytetty erikseen
+               </li>
+               <li><strong>7</strong> - Luokitus määritelty osakentässä ‡2
+               </li>
+               <li><strong>8</strong> - Muu järjestelmä
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Hyllytysjärjestys<br> Hyllytetäänkö kohde ensisijaisen vai vaihtoehtoisen numeroinnin mukaan.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Ei hyllytetä numeroinnin mukaan
+               </li>
+               <li><strong>1</strong> - Hyllytetään ensisijaisen numeroinnin mukaan.
+               </li>
+               <li><strong>2</strong> - Hyllytetään vaihtoehtoisen numeroinnin mukaan
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Sijainti (ET)<br>Organisaatio tai henkilö, joka omistaa kohteen tai tarjoaa sen käyttöön. Organisaation koodina käytetään ISIL-tunnusta, ks.
+            <em><a href="../organisaatiot.htm">Organisaatiot</a></em>. Voidaan merkitä myös henkilön tai organisaation nimi.
+         </li>
+         <li><strong>‡b</strong> - Alayksikkö tai kokoelma (T)<br>Omistavan organisaation osasto, kirjasto, kokoelma jne. jossa kohde sijaitsee tai josta se on saatavana. Osakenttä ‡b ei saa
+            esiintyä ilman osakenttää ‡a. Jos kohteella on useita sijaintikokoelmia, tehdään jokaista kokoelmaa kohden yksi varastotietue.
+         </li>
+         <li><strong>‡c</strong> - Sijainti hyllyssä (T)<br>Tarpeen vaatiessa merkitään kokoelman tms. sisäinen hyllytyspaikan tunnus.
+         </li>
+         <li><strong>‡d</strong> - Entinen sijainti hyllyssä (T)
+         </li>
+         <li><strong>‡e</strong> - Osoite (T)<br>Kohteen nykyisen fyysisen sijaintipaikan katuosoite, postinumero, kaupunki ja maa.
+         </li>
+         <li><strong>‡f</strong> - Poikkeava sijainti koodina (T)<br>Koodimuotoiset tiedot yksittäisistä osista, numeroista tms., joiden sijainti poikkeaa muiden vastaavien sijainnista. Osakenttä
+            ‡f merkitään heti siihen liittyvän osakentän ‡a, ‡b tai ‡c jälkeen. Tietojen merkitsemiseen käytetään samoja koodeja kuin
+            kentän <a href="001-008.htm#008"> 008</a> merkkipaikoissa 13-15 (Eritelty säilytysmerkintö).
+            <ul>
+               <li><strong>13</strong> - Määreen tyyppi
+               </li>
+               <li><strong>14</strong> - Yksiköiden määrä
+               </li>
+               <li><strong>15</strong> - Yksikön tyyppi<br>Kertoo joko säilytyksen aikayksikön tai osat, joita säilytetään.
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡g</strong> - Poikkeava sijainti tekstinä (T)<br>Vapaata tekstiä käytetään, kun osakentän ‡f koodit eivät riitä. Osakenttä ‡g merkitään heti siihen liittyvän osakentän ‡a,
+            ‡b tai ‡c jälkeen.
+         </li>
+         <li><strong>‡h</strong> - Paikkamerkin hyllyluokka (ET)
+         </li>
+         <li><strong>‡i</strong> - Kappaletta koskevat tiedot (T)
+         </li>
+         <li><strong>‡j</strong> - Paikkamerkin kontrollinumero (ET)
+         </li>
+         <li><strong>‡k</strong> - Paikkamerkin etuliite (T)<br>Etuliitteellä voidaan osoittaa mm. osakokoelman tai alayksikön tunniste. Osakenttä ‡k tallennetaan ennen osakenttiä ‡h ja
+            ‡i.
+         </li>
+         <li><strong>‡l</strong> - Hyllytysnimeke (ET)
+         </li>
+         <li><strong>‡m</strong> - Paikkamerkin loppuliite (T)<br>Osakenttä ‡m tallennetaan osakenttien ‡h ja ‡i jälkeen.
+         </li>
+         <li><strong>‡n</strong> - Maakoodi (ET)<br>Osakentässä ‡a identifioidun sijainnin maakoodi. Koodi otetaan listalta, ks. <em><a href="../maat.htm">MARC 21 Maakoodit</a></em>.
+         </li>
+         <li><strong>‡p</strong> - Kappaleen tunnistus (ET)<br>Kun varastotiedot eivät sisällä kenttiä 863-865 (Määrämuotoiset varastotiedot) tai 876-878 (Kappaletiedot), joihin sisältyy
+            osakenttä ‡p (Kappaleen tunnistus), tähän tallennetaan yksittäisen kappaleen (esim. osa/volyymi/nide) tunnistustiedot.
+         </li>
+         <li><strong>‡q</strong> - Kappaleen fyysinen kunto (ET)<br>Kun varastotiedot eivät sisällä kenttiä 863-865 (Määrämuotoiset varastotiedot) tai 876-878 (Kappaletiedot), joihin sisältyy
+            osakenttä ‡q (Kappaleen fyysinen kunto), tähän tallennetaan kuvaus kappaleen fyysiseen kuntoon liittyvistä epätavallisista
+            piirteistä.
+         </li>
+         <li><strong>‡s</strong> - Artikkelin tekijänoikeusmaksun koodi (T)
+         </li>
+         <li><strong>‡t</strong> - Kappaleen numero (ET)<br>Kun varastotiedot eivät sisällä kenttiä 863-865 (Määrämuotoiset varastotiedot), joihin sisältyy osakenttä ‡t (Kappaleen numero),
+            tähän tallennetaan sen kappaleen numero, jota annetut tiedot koskevat. Jos kappaleita on useita, annetaan pelkkä numeroväli.
+            Kappaleiden kokonaismäärä annetaan kentän <a href="001-008.htm#008">008</a> merkkipaikoissa 17-19 (Kappalemäärä). Jos kohdetta saadaan vain yksi, osakenttää ‡t ei tarvitse käyttää. Kun kohteita saadaan
+            useita eri sijaintipaikkoihin, on tarkistettava muissa saman kohteen varastotiedoissa jo käytetyt kappalenumerot päällekkäisyyksien
+            välttämiseksi.
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (T)<br>Esimerkiksi URL tai URN, joka tarjoaa pääsyn elektroniseen aineistoon. URI linkittää käyttäjän varastoon, jossa kohde sijaitsee
+            (huolimatta siitä onko kohde analoginen vai digitaalinen). Tämä tieto voidaan tallentaa myös organisaatiokoodina tai tekstinä
+            osakenttään ‡a (Sijainti) ja (mikäli soveltuu) osakenttään ‡b (Alayksikkö tai kokoelma).
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)<br>Kappaleeseen tai kappaleisiin liittyvä luetteloivan organisaation sisäinen huomautus. Yksittäisiin jaksoihin liittyvät sisäiset
+            huomautukset tallennetaan asianomaisten 86X-kenttien osakenttiin ‡x.
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)<br>Kappaleeseen tai kappaleisiin liittyvä julkinen huomautus. Yksittäisiin jaksoihin liittyvät julkiset huomautukset tallennetaan
+            asianomaisten 86X-kenttien osakenttiin ‡z.
+         </li>
+         <li><strong>‡2</strong> - Hyllyluokituksen lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/marc/relators/relaclas.html#rela852">MARC Code Lists for Relators, Sources, Description Conventions: PART III: Classification Sources</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em> <a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Järjestysnumero (ET)<br>Tieto, jonka avulla toisiinsa liittyvät varastotiedot järjestetään. Vaihtuvamittainen järjestysnumero kontrolloi näyttöä ja
+            useiden, identtisiä osakenttiä ‡a, ‡b ja ‡t sisältävien 852-kenttien järjestämistä. Osakenttä ‡8 on aina kentän ensimmäinen
+            osakenttä.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>852 8#‡a</strong>[Sijainti]<strong>‡b</strong>Lehdet<strong>‡b</strong>Varasto
+      </p>
+      <p><strong>852 81‡a</strong>[Sijainti]<strong>‡b</strong>Lehdet<strong>‡e</strong>Teollisuuskatu 23-25, 00510 Hki<strong>‡h</strong>681.3<strong>‡n</strong>fi
+      </p>
+      <p><strong>852 ##‡a</strong>[Sijainti]<strong>‡b</strong>Lehdet<strong>‡b</strong>Lukusali<strong>‡f</strong>12y
+      </p>
+      <p><strong>852 ##‡a</strong>[Sijainti]<strong>‡b</strong>Varasto<strong>‡b</strong>Käsikirjasto<strong>‡g</strong>15 viimeisintä vuosikertaa
+      </p>
+      <p><strong>852 81‡a</strong>[Sijainti]<strong>‡b</strong>K<strong>‡k</strong>REF<strong>‡h</strong>502<strong>‡i</strong>Ambio
+      </p>
+      <p><strong>852 81‡a</strong>[Sijainti]<strong>‡b</strong>K<strong>‡h</strong>5<strong>‡i</strong>Nature<strong>‡m</strong>Holvi
+      </p>
+      <p><strong>852 81‡a</strong>[Sijainti]<strong>‡b</strong>0131<strong>‡p</strong>1100064014
+      </p>
+      <p><strong>852 81‡a</strong>[Sijainti]<strong>‡b</strong>Lehdet<strong>‡t</strong>1<strong>‡h</strong>614<strong>‡i</strong>Terveys 2000
+      </p>
+      <p><strong>852 4#‡a</strong>[Sijainti]<strong>‡b</strong>Lehdet<strong>‡c</strong>Foliohylly<strong>‡t</strong>2-3<strong>‡i</strong>909843
+      </p>
+      <p><strong>852 51‡a</strong>[Sijainti]<strong>‡b</strong>K<strong>‡g</strong>Uusimmat numerot lukusalissa<strong>‡i</strong>Ambio<strong>‡x</strong>vol. 1-7 on tilattu mikrofilminä
+      </p>
+      <p><strong>852 51‡a</strong>[Sijainti]<strong>‡b</strong>2100<strong>‡i</strong>Soundi<strong>‡z</strong>Pyydä lehti musiikkiosaston valvojalta<strong>‡q</strong>loppusivuilla lapsen piirroksia
+      </p>
+      <p><strong>852 51‡a</strong>[Sijainti]<strong>‡b</strong>0108<strong>‡l</strong>NYT MAG
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="856"></a>856 - ELEKTRONISEN AINEISTON SIJAINTI JA KÄYTTÖ (T)
+      </h3>
+      <p>Tiedot, joita tarvitaan elektronisen aineiston paikantamiseen ja käyttöön. Käytetään yleensä varastotietueessa vain silloin,
+         kun paikallisesti käytetty osoite lisensoituun elektroniseen aineistoon eroaa yleisesti käytössä olevasta osoitteesta. Joissakin
+         tapauksissa voidaan tallentaa vain tiedot, joiden avulla päästään toisella palvelimella sijaitseviin tarkempiin käytön mahdollistaviin
+         tietoihin.
+      </p>
+      <p>Kenttää 856 toistetaan, kun sijaintia koskevat tietoelementit vaihtelevat (osakentät ‡a, ‡b, ‡d) ja kun useampi kuin yksi
+         yhteys-/käyttötapa on mahdollinen. Sitä toistetaan myös, kun tiedoston nimi (‡f) vaihtelee, lukuun ottamatta tilannetta jolloin
+         yksittäinen teos on jaettu useisiin osiin online-käyttöä varten.
+      </p>
+      <p><a href="http://www.loc.gov/marc/856guide.html">Ks. tarkemmat ohjeet kentän 856 käytöstä (englanniksi).</a></p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Yhteys- tai käyttötapa<br> Kenttää toistetaan, kun useampi kuin yksi yhteys- tai käyttötapa on mahdollinen. Kun osakenttään ‡u tallennetaan URL, indikaattorin
+            arvo vastaa protokollaa, joka on myös osoitteen ensimmäinen elementti.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Sähköposti<br> Yhteys/käyttö tapahtuu Mail Transfer protokollalla (MAILTP).
+               </li>
+               <li><strong>1</strong> - FTP
+               </li>
+               <li><strong>2</strong> - Etäpalvelin (Telnet)
+               </li>
+               <li><strong>3</strong> - Modeemiyhteys<br> Yhteys/käyttö tapahtuu tavallisen puhelinlinjan kautta.
+               </li>
+               <li><strong>4</strong> - HTTP<br> Yhteys/käyttö tapahtuu Hypertext Transfer protokollalla.
+               </li>
+               <li><strong>7</strong> - Yhteys- tai käyttötapa merkitään osakenttään ‡2
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Suhde<br> Indikaattorin arvo ilmaisee mikä suhde kenttään 856 merkityllä elektronisella aineistolla on tietueessa kuvailtuun kohteeseen.
+            Osakenttään ‡3 voidaan tallentaa tarkempia tietoja suhteesta, kun kyseessä ei ole aineistojen yksi-yhteen vastaavuus.
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>0</strong> - Vastaa kuvailun kohdetta<br> Tässä tapauksessa bibliografinen tietue kuvailee samaa elektronista aineistoa, jonka sijainti merkitään kenttään 856. Jos
+                  kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston osakohteeseen, osakenttään ‡3 merkitään aineiston osa, jota tiedot
+                  koskevat.
+               </li>
+               <li><strong>1</strong> - Kuvailun kohteen toinen versio<br> Tässä tapauksessa bibliografisessa tietueessa kuvailtu kohde ei ole elektroninen, mutta elektroninen versio on saatavana
+                  ja sen sijainti merkitään kenttään 856. Jos kentän 856 tiedot liittyvät tietueessa kuvaillun aineiston osakohteeseen, osakenttään
+                  ‡3 merkitään aineiston osa, jota tiedot koskevat.
+               </li>
+               <li><strong>2</strong> - Kuvailun kohteeseen liittyvä aineisto<br> Tässä tapauksessa bibliografisessa tietueessa kuvailtu kohde ei ole sama kuin elektroninen aineisto (vaan esim. sen tiivistelmä
+                  tai sisällysluettelo). Osakentässä ‡3 voidaan tarkemmin kuvata elektronisen aineiston ja kuvailun kohteen suhdetta.
+               </li>
+               <li><strong>8</strong> - Vakionäyttöä ei muodosteta
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Palvelimen nimi (T)<br>Toistetaan, jos samaa palvelinta voidaan kutsua useilla nimillä.
+         </li>
+         <li><strong>‡b</strong> - Palvelimen numeerinen osoite (T)<br>Voi sisältää IP (Internet Protocol) -osoitteen, jos kyseessä on aineisto Internetissä, tai puhelinnumeron, jos käyttöyhteys
+            tarjotaan modeemiyhteyden ja puhelinlinjan kautta. Tämä tieto voi muuttua usein ja sen automaattinen muodostaminen on suositeltavampaa
+            kuin staattinen tallennus.
+         </li>
+         <li><strong>‡c</strong> - Tiedoston pakkausmenetelmä (T)<br>Tietoja pakkausmenetelmästä ja tarvitaanko purkua varten erityinen ohjelma.
+         </li>
+         <li><strong>‡d</strong> - Tiedoston hakemistopolku (T)
+         </li>
+         <li><strong>‡f</strong> - Tiedoston nimi (T)
+         </li>
+         <li><strong>‡h</strong> - Käsittelijä (ET)<br>Yleensä tieto joka edeltää @-merkkiä palvelimen osoitteessa.
+         </li>
+         <li><strong>‡i</strong> - Komento (T)<br>Komento, jolla etäpalvelinta ohjataan.
+         </li>
+         <li><strong>‡j</strong> - Bittiä sekunnissa (ET)
+         </li>
+         <li><strong>‡k</strong> - Salasana (ET)
+         </li>
+         <li><strong>‡l</strong> - Käyttäjätunnus (ET)<br>Tähän osakenttään voidaan tallentaa yleisesti käytettyjä käyttäjätunnuksia, joita ei tarvitse erityisesti suojata.
+         </li>
+         <li><strong>‡m</strong> - Käyttäjätuen yhteystiedot (T)
+         </li>
+         <li><strong>‡n</strong> - Palvelimen sijaintipaikka (ET)<br>Osakentässä ‡a mainitun palvelimen täydellinen sijainti, maantieteellinen sijainti mukaan luettuna.
+         </li>
+         <li><strong>‡o</strong> - Palvelimen käyttöjärjestelmä (ET)
+         </li>
+         <li><strong>‡p</strong> - Portti (ET)
+         </li>
+         <li><strong>‡q</strong> - Tiedoston muoto (ET)<br>Esimerkiksi teksti/HTML, ASCII, Postscript-tiedosto, suoritettava ohjelma (exe) tai JPEG-kuva.
+         </li>
+         <li><strong>‡m</strong> - Käyttäjätuen yhteystiedot (T)
+         </li>
+         <li><strong>‡n</strong> - Palvelimen sijaintipaikka (ET)<br>Osakentässä ‡a mainitun palvelimen täydellinen sijainti, maantieteellinen sijainti mukaan luettuna.
+         </li>
+         <li><strong>‡o</strong> - Palvelimen käyttöjärjestelmä (ET)
+         </li>
+         <li><strong>‡p</strong> - Portti (ET)
+         </li>
+         <li><strong>‡q</strong> - Tiedoston muoto (ET)<br>Esimerkiksi teksti/HTML, ASCII, Postscript-tiedosto, suoritettava ohjelma (exe) tai JPEG-kuva.
+         </li>
+         <li><strong>‡r</strong> - Asetukset (ET)
+         </li>
+         <li><strong>‡s</strong> - Tiedoston koko (T)
+         </li>
+         <li><strong>‡t</strong> - Pääte-emulointi (T)
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (T)<br>Kenttä 856 on rakennettu siten, että URL voidaan muodostaa myös yhdistämällä eri osakenttien tietoja. Osakenttää ‡u voidaan
+            käyttää niiden sijasta tai lisäksi. Osakenttää ‡u voidaan toistaa vain jos tallennetaan sekä URN että URL, tai useita URN:eja.
+            <a href="../../../../julkaisuala/urn.htm"> Suomalainen URN, ks. ISBN- ja ISSN-keskus</a>.
+         </li>
+         <li><strong>‡v</strong> - Aineisto tavoitettavissa, aukioloaika (T)
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero (T)
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus (T)
+         </li>
+         <li><strong>‡y</strong> - Linkin teksti (T)<br>Teksti, joka näkyy asiakkaalle ja toimii linkkinä osakentässä ‡u esitetyn URI:n sijaan.
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus (T)
+         </li>
+         <li><strong>‡2</strong> - Yhteys- tai käyttötapa (ET)<br>Kun ensimmäisen indikaattorin arvo on 7. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/marc/relators/relaothr.html#rela856b">MARC Code Lists for Relators, Sources, Description Conventions: PART VII: Other Sources</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>856 2#‡a</strong>anthrax.micro.umn.edu<strong>‡b</strong>128.101.95.23
+      </p>
+      <p><strong>856 1#‡a</strong>maine.maine.edu<strong>‡c</strong>Pakattu tiedosto purettava PKUNZIP-ohjelmalla<strong>‡f</strong>resource.zip
+      </p>
+      <p><strong>856 1#‡u</strong>ftp://harvada.harvard.edu<strong>‡k</strong>guest
+      </p>
+      <p><strong>856 4#‡u</strong>http://herkules.oulu.fi/raiskio/<strong>‡q</strong>PDF ja HTML
+      </p>
+      <p><strong>856 4#‡u</strong>http://www.edita.fi/sk/<strong>‡u</strong>URN:ISSN:1455-8904<strong>‡q</strong>HTML ja PDF
+      </p>
+      <p><strong>856 4#‡u</strong>http://www.edita.fi/edi/cash2/compop/index.html<strong>‡u</strong>URN:NBN:fi-fe19976255<strong>‡c</strong>Zip<strong>‡q</strong>HTML
+      </p>
+      <p><strong>856 4#‡u</strong>http://docuweb.jyu.fi/scripts/webmain.dll<strong>‡q</strong>JPEG
+      </p>
+      <p><strong>856 1#‡u</strong>ftp://wuarchive.wustl.edu/mirrors2/win3/games/atmoids.zip<strong>‡c</strong>decompress with PKUNZIP.exe<strong>‡x</strong>cannot verify because of transfer difficulty
+      </p>
+      <p><strong>856 0#‡a</strong>kentvm.bitnet<strong>‡f</strong>acadlist file1<strong>‡f</strong>acadlist file2<strong>‡f</strong>acadlist file3
+      </p>
+      <p><strong>856 42‡3</strong>Finding aid<strong>‡u</strong>http://lcweb2.loc.gov/ammem/ead/jackson.sgm
+      </p>
+      <p><strong>856 0#‡a</strong>uicvm.bitnet<strong>‡f</strong>AN2<strong>‡h</strong>Listserv
+      </p>
+      <p><strong>856 2#‡a</strong>madlab.sprl.umich.edu<strong>‡n</strong>University of Michigan Weather Underground<strong>‡p</strong>3000
+      </p>
+      <p><strong>856 41‡u</strong>http://www.jstor.org/journals/0277903x.html
+      </p>
+      <p><strong>856 40‡u</strong>http://www.cdc.gov/ncidod/EID/eid.htm<strong>‡q</strong>text/html
+      </p>
+      <p><strong>856 42‡3</strong>Essays from annual reports<strong>‡u</strong>woodrow.mpls.frb.fed.us/pubs/ar/index.html
+      </p>
+      <p><strong>856 1#‡u</strong>ftp://wuarchive.wustl.edu/mirrors/info-mac/util/color-system-icons.hqx<strong>‡s</strong>16874 bytes
+      </p>
+      <p><strong>856 41‡u</strong>http://purl.oclc.org/OCLC/OLUC/34907403/1<strong>‡x</strong>export.uswest.com/
+      </p>
+      <p><strong>856 40‡u</strong>http://www.ref.oclc.org:2000<strong>‡z</strong>Address for accessing the journal using authorization number and password through OCLC FirstSearch Electronic Collections
+         Online. Subscription to online journal required for access to abstracts and full text
+      </p>
+      <p><strong>856 4#‡z</strong>Part of the Ovid Mental Health Collection (MHC). Follow instructions on MedMenu page for Ovid login.<strong>‡u</strong>http://info.med.yale.edu/medmenu/info%5Fcbc.html
+      </p>
+      <p><strong>856 42‡3</strong>French version<strong>‡u</strong>http://www.cgiar.org/ifpri/reports/0297rpt/0297-fr.htm
+      </p>
+      <p><strong>856 4#‡u</strong>http://susdl.fcla.edu/cgi-bin/cgiwrap/~fdl/fdlcgi?FA00000011%2Fjpg<strong>‡y</strong>Electronic resource (JPEG)
+      </p>
+      <p><strong>856 4#‡u</strong>http://susdl.fcla.edu/cgi-bin/cgiwrap/~fdl/fdlcgi?FA00000011%2Fpdf<strong>‡y</strong>Electronic resource (PDF)
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Varastotiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

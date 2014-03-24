@@ -1,0 +1,126 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Language" content="fi">
+      <title>MARC 21: Auktoriteettitiedot</title>
+   </head>
+   <body><a name="alku"></a><center>
+         <table border="2" width="600" bordercolor="#000000" id="table1" bgcolor="#996633">
+            <tr>
+               <td>
+                  <p align="center">Kansalliskirjasto</p>
+                  <h1 align="center">MARC 21 -formaatti:<br>
+                     		AUKTORITEETTITIEDOT
+                  </h1>
+               </td>
+            </tr>
+         </table>
+      </center>
+      
+      <p align="center"><i><span style="background-color: #FFFF00">
+               Päivitetty viimeksi 29.1.2009.<br>
+               Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
+      
+      <h2 align="left">Monitahoisten asiasanaviittausten kentät (2XX-3XX)</h2>
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> |
+         <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>Kenttiin 260 ja 360 tallennetaan tietoja asiasanojen ei-ohjeellisista muodoista tai asiasanan ohjeellisista eri muodoista
+         ja muista varianteista, joita ei ole valittu ohjeellisiksi muodoiksi, kun asiasanojen suhteita ei voida kuvata yhden tai useamman
+         ristiviittauksen avulla kyllin hyvin. Lisätietoja viittauksista löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.
+      </p>
+      <ul>
+         <li><a href="#260">260 - MONITAHOINEN KATSO-VIITTAUS, ASIASANA</a> (T)
+         </li>
+         <li><a href="#360">360 - MONITAHOINEN KATSO MYÖS -VIITTAUS, ASIASANA</a> (T)
+         </li>
+      </ul>
+      <hr>
+      <h3><a name="260"></a>260 - MONITAHOINEN KATSO-VIITTAUS, ASIASANA (T)
+      </h3>
+      <p>Selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, jotka edellytetään asiasanojen viittaustietueissa silloin,
+         kun vahvistamattomien ja vahvistettujen asiasanojen välillä on suhteita, joita ei voida kuvata yhden tai useamman yksinkertaisen
+         <em>katso</em>-ristiviittauksen (4XX) avulla kyllin hyvin. Vakionäyttötekstinä voi olla <em>katso:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Viittauksen kohteena oleva otsikkomuoto (T)
+         </li>
+         <li><strong>‡i</strong> - Selittävä teksti (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>260 ##‡i</strong>subject headings beginning with the word<strong>‡a</strong>Catalog
+      </p>
+      <p><strong>260 ##‡i</strong>subdivisions<strong>‡a</strong>Dialects<strong>‡i</strong>and<strong>‡a</strong>Provincialisms<strong>‡i</strong>under<strong>‡a</strong>Spanish language<strong>‡i</strong>divided by United States or specific locality in the United States, e.g.<strong>‡a</strong>Spanish language--Dialects--United States; Spanish language--Provincialisms--Southwestern States
+      </p>
+      <p><strong>260 ##‡i</strong>subdivision<strong>‡a</strong>Amateurs' manuals<strong>‡i</strong>under subjects, e.g.<strong>‡a</strong>Radio--Amateurs' manuals
+      </p>
+      <p><strong>260</strong> <strong>##</strong><strong>‡</strong><strong>a</strong>Kostenrechnung<strong>‡</strong><strong>0</strong>(DE-101b)4032592-1 
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="360"></a>360 - MONITAHOINEN KATSO MYÖS -VIITTAUS, ASIASANA (T)
+      </h3>
+      <p>Selittävä teksti ja viittauksen kohteena olevat otsikkomuodot, jotka edellytetään asiasanojen viittaustietueissa silloin,
+         kun vahvistamattomien ja vahvistettujen asiasanojen välillä on suhteita, joita ei voida kuvata yhden tai useamman yksinkertaisen
+         <em> katso myös</em> -ristiviittauksen (5XX) avulla kyllin hyvin. Vakionäyttötekstinä voi olla <em>katso myös:</em>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Viittauksen kohteena oleva otsikkomuoto (T)
+         </li>
+         <li><strong>‡i</strong> - Selittävä teksti (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>360 ##‡i</strong>subject subdivision<strong>‡a</strong>Management<strong>‡i</strong>under types of industries
+      </p>
+      <p><strong>360 ##‡i</strong>names of particular apparitions and miracles, e.g.<strong>‡a</strong>Fatima, Our Lady of
+      </p>
+      <p><strong>360 ##‡i</strong>subdivision<strong>‡a</strong>Relation to [the Old Testament, Matthew, Psalms, etc.]<strong>‡i</strong>under the Bible and parts of the Bible, e.g.<strong>‡a</strong>Bible. N.T.--Relation to the Old Testament; Bible. N.T. Matthew--Relation to Psalms; Bible. O.T. Psalms--Relation to Mark;<strong>‡i</strong>etc.
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      
+      <p><a href="index.htm">Auktoriteettitiedot-etusivulle</a> | <a href="../index.htm">MARC 21 -etusivulle</a></p>
+      <hr>
+      <p>&nbsp;</p>
+   </body>
+</html>

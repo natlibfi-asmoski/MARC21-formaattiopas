@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
+
+<fields>
+  <modified>8.6.2007</modified>
+  <datafields>
+    <title>Ilmestymistietojen kentät (853-855)</title>
+    <datafield tag="853" repeatable="Y">
+      <name>Ilmestymistiedot--bibliografinen perusyksikkö</name>
+      <description paragraph="1">Tähän kenttään tallennetaan selosteet, jotka soveltuvat kentän 863 (Määrämuotoiset varastotiedot--Bibliografinen perusyksikkö) numerointi- ja julkaisuaikatasojen merkitsemiseen, sekä julkaisukaavaan liittyvät koodit. Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän &#8225;8 avulla linkitettyjen kenttien 853 ja 863 tiedot.</description>
+      <description paragraph="2">Tarkempi selostus kentän 853 osakentistä löytyy osiosta <em> <a href="#yleista">Ilmestymistiedot--yleistä tietoa</a></em>.</description>
+      <examples>
+        <example>
+          <text><strong>853 02&#8225;a</strong>v<strong>&#8225;i</strong>(year)<strong>&#8225;w</strong>g<strong>&#8225;y</strong>pyyyy1/yyy2</text>
+        </example>
+        <example>
+          <text><strong>853 20&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>2<strong>&#8225;v</strong>r<strong>&#8225;c</strong>pt.<strong>&#8225;u</strong>2<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;k</strong>(day)<strong>&#8225;w</strong>j<strong>&#8225;y</strong>pd01,10,20</text>
+        </example>
+        <example>
+          <text><strong>853 20&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>12<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;w</strong>m<strong>&#8225;x</strong>11</text>
+        </example>
+        <example>
+          <text><strong>853 23&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>4<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(season)<strong>&#8225;w</strong>q<strong>&#8225;x</strong>21</text>
+        </example>
+        <example>
+          <text><strong>853 00&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;w</strong>4</text>
+        </example>
+        <example>
+          <text><strong>853 01&#8225;8</strong>2<strong>&#8225;a</strong>new ser.:v.</text>
+        </example>
+        <example>
+          <text><strong>853 03&#8225;8</strong>1<strong>&#8225;a</strong>(unit)</text>
+        </example>
+        <example>
+          <text><strong>853 03&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.</text>
+        </example>
+        <example>
+          <text><strong>853 00&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>sect.<strong>&#8225;u</strong>12<strong>&#8225;v</strong>r<strong>&#8225;c</strong>no.<strong>&#8225;u</strong>7<strong>&#8225;v</strong>r<strong>&#8225;d</strong>pt.<strong>&#8225;u</strong>var<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;k</strong>(day)<strong>&#8225;l</strong>week<strong>&#8225;w</strong>d<strong>&#8225;x</strong>01</text>
+        </example>
+        <example>
+          <text><strong>853 22&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>12<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;k</strong>(day)<strong>&#8225;w</strong>m<strong>&#8225;x</strong>01</text>
+        </example>
+        <example>
+          <text><strong>853 22&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>04<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;w</strong>q<strong>&#8225;x</strong>12<strong>&#8225;t</strong>c</text>
+        </example>
+        <example>
+          <text><strong>853 10&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>8<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;w</strong>m<strong>&#8225;x</strong>01<strong>&#8225;y</strong>pm 01/02, 03, 04, 05, 06/07, 08/09, 10, 11/12</text>
+        </example>
+        <example>
+          <text><strong>853 03&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;w</strong>w<strong>&#8225;y</strong>ow01,0699we,0700we,0801we,0802we,0803we,0804we,98we,99we</text>
+        </example>
+        <example>
+          <text><strong>853 20&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>48<strong>&#8225;v</strong>r<strong>&#8225;w</strong>w<strong>&#8225;x</strong>0101<strong>&#8225;y</strong>ow05we</text>
+        </example>
+        <example>
+          <text><strong>853 20&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>issue<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;k</strong>(day)<strong>&#8225;w</strong>w<strong>&#8225;z</strong>aaarab</text>
+        </example>
+        <example>
+          <text><strong>853 20&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>48<strong>&#8225;v</strong>r<strong>&#8225;w</strong>w<strong>&#8225;x</strong>0101<strong>&#8225;y</strong>ow05we<strong>&#8225;z</strong>aaan##</text>
+        </example>
+        <example>
+          <text><strong>853 02&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>52<strong>&#8225;v</strong>c<strong>&#8225;w</strong>w<strong>&#8225;y</strong>ce251/52</text>
+        </example>
+        <example>
+          <text><strong>853 02&#8225;a</strong>v. <strong>&#8225;i</strong>(year)<strong>&#8225;w</strong>g<strong>&#8225;y</strong>pyyyy1/yyy2</text>
+        </example>
+        <example>
+          <text><strong>853 02&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>6<strong>&#8225;v</strong>r<strong>&#8225;w</strong>s<strong>&#8225;x</strong>01,02,03,04,05,06,07,08,09,10,11,12<strong>&#8225;y</strong>pw02we,04we<strong>&#8225;y</strong>ce21/3,4/6</text>
+        </example>
+        <example>
+          <text><strong>853 02&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>365<strong>&#8225;v</strong>c<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;k</strong>(day)<strong>&#8225;w</strong>d<strong>&#8225;x</strong>0101<strong>&#8225;y</strong>cd1224/1225<strong>&#8225;y</strong>ce2358/359<strong>&#8225;n</strong>Based on v. 11, no. 2172/2173, December 24/December 25, 2001.</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="854" repeatable="Y">
+      <name>Ilmestymistiedot--oheisaineisto yms.</name>
+      <description paragraph="1">Tähän kenttään tallennetaan selosteet, jotka soveltuvat kentän 864 (Määrämuotoiset varastotiedot--Oheisaineisto yms.) numerointi- ja julkaisuaikatasojen merkitsemiseen, sekä julkaisukaavaan liittyvät koodit. Kenttää käytetään vain silloin, kun kyseistä oheisaineistoa ei ole luetteloitu erikseen. Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän &#8225;8 avulla linkitettyjen kenttien 854 ja 864 tiedot.</description>
+      <description paragraph="2">Tarkempi selostus kentän 854 osakentistä löytyy osiosta <em> <a href="#yleista">Ilmestymistiedot--yleistä tietoa</a></em>.</description>
+      <examples>
+        <example>
+          <text><strong>854 00&#8225;8</strong>1<strong>&#8225;a</strong>v.</text>
+        </example>
+        <example>
+          <text><strong>854 00&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>suppl.</text>
+        </example>
+        <example>
+          <text><strong>854 00&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;w</strong>a</text>
+        </example>
+        <example>
+          <text><strong>854 03&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;b</strong>(month)<strong>&#8225;c</strong>(day)<strong>&#8225;w</strong>d<strong>&#8225;y</strong>odsa</text>
+        </example>
+        <example>
+          <text><strong>854 02&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>11<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;w</strong>m<strong>&#8225;x</strong>01<strong>&#8225;y</strong>cm07/08</text>
+        </example>
+        <example>
+          <text><strong>854 03&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>10<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(month)<strong>&#8225;w</strong>m<strong>&#8225;x</strong>09<strong>&#8225;y</strong>om07,08</text>
+        </example>
+        <example>
+          <text><strong>854 23&#8225;8</strong>1<strong>&#8225;a</strong>v.<strong>&#8225;b</strong>no.<strong>&#8225;u</strong>3<strong>&#8225;v</strong>r<strong>&#8225;i</strong>(year)<strong>&#8225;j</strong>(season)<strong>&#8225;w</strong>3<strong>&#8225;x</strong>21<strong>&#8225;y</strong>ps21,22,23</text>
+        </example>
+        <example>
+          <text><strong>854 00&#8225;8</strong>1<strong>&#8225;a</strong>Supplement to v.<strong>&#8225;i</strong>(year)<strong>&#8225;w</strong>a</text>
+        </example>
+        <example>
+          <text><strong>854 33&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;b</strong>(month)</text>
+        </example>
+        <example>
+          <text><strong>854 00&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;o</strong>map supplement</text>
+        </example>
+      </examples>
+    </datafield>
+    <datafield tag="855" repeatable="Y">
+      <name>Ilmestymistiedot--hakemisto yms.</name>
+      <description paragraph="1">Tähän kenttään tallennetaan selosteet, jotka soveltuvat kentän 865 (Määrämuotoiset varastotiedot--Hakemisto yms.) numerointi- ja julkaisuaikatasojen merkitsemiseen, sekä julkaisukaavaan liittyvät koodit. Kenttää käytetään vain silloin, kun kyseistä hakemistoa ei ole luetteloitu erikseen. Näyttö voidaan muodostaa yhdistämällä toisiinsa osakentän &#8225;8 avulla linkitettyjen kenttien 855 ja 865 tiedot.</description>
+      <description paragraph="2">Tarkempi selostus kentän 855 osakentistä löytyy osiosta <em> <a href="#yleista">Ilmestymistiedot--yleistä tietoa</a></em>.</description>
+      <examples>
+        <example>
+          <text><strong>855 ##&#8225;8</strong>1<strong>&#8225;a</strong>v.</text>
+        </example>
+        <example>
+          <text><strong>855 ##&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;o</strong>alphabetical index</text>
+        </example>
+        <example>
+          <text><strong>855 ##&#8225;8</strong>1<strong>&#8225;a</strong>(year)<strong>&#8225;o</strong>ten year cumulation</text>
+        </example>
+      </examples>
+    </datafield>
+  </datafields>
+</fields>
