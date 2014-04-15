@@ -64,6 +64,9 @@ if [ $? -ne 0 ]; then error; fi
 java -jar saxon/saxon8.jar -t bib/9XX.xml     bib/marc21bib.xsl > bib/9XX.htm
 if [ $? -ne 0 ]; then error; fi
 
+java -jar saxon/saxon8.jar -t bib/omat.xml    bib/marc21bib.xsl > bib/omat.htm
+if [ $? -ne 0 ]; then error; fi
+
 # Authority
 
 java -jar saxon/saxon8.jar -t aukt/000.xml     aukt/marc21auth.xsl > aukt/000.htm

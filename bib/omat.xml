@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
+
+<fields>
+  <modified>18.12.2013</modified>
+  <datafields>
+    <title>Tietokanta- tai järjestelmäkohtaisia omia kenttiä</title>
+    <description>Tässä osiossa kuvataan kenttiä, joita on otettu käyttöön Voyager-järjestelmässä sekä yleisten kirjastojen tietokannoissa. Kentät tai osakentät sisältävät numeron 9 eli ovat MARC 21:ssa vapaasti käytettävissä. Kentät eivät ole varsinaisessa suomenkielisessä MARC 21 -formaatissa. </description>
+    <datafield tag="019" repeatable="N">
+      <name>Finuc-tunnus</name>
+      <description paragraph="1">Suomen kirjastoihin hankittujen ulkomaisten kausijulkaisujen yhteisluetteloa Finuc-S:ää varten aikanaan luotu julkaisun tunnusnumero. Tunnus alkaa pienillä fs-kirjaimilla, joita seuraa kuusi numeroa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Finuc-tunnus</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="035 &#8225;9" repeatable="">
+      <name>Järjestelmän tuottama kontrollinumero - voyager-osakenttä</name>
+      <description paragraph="1">Syntynyt Voyager-tietokantojen tietueisiin konversioissa edellisistä kirjastojärjestelmistä.</description>
+      <subfields>
+        <subfield code="9" repeatable="N">
+          <name>Voyager-osakenttä</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="090-099" repeatable="Y">
+      <name>Kirjastokohtaiset luokituskentät</name>
+      <description paragraph="1">Käytettävissä tarvittaessa kirjasto- tai tietokantakohtaisesti.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Luokituskoodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="130 2. indikaattori 9" repeatable="">
+      <name>Yhtenäistetty nimeke - voyager-indikaattori</name>
+      <description paragraph="1">Käytössä Fennica-tietokannassa.</description>
+      <indicators>
+        <indicator num="2">
+          <description>Kokoelma </description>
+          <values>
+            <value code="9">
+              <description>Kokoelma </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+    </datafield>
+    <datafield tag="579" repeatable="N">
+      <name>Tilastointimerkintä - voyager-kenttä</name>
+      <description paragraph="1">Käytössä LINDA-yhteisluetteloinnissa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tilastointimerkintä</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Tietokannan tunnus</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="590" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="591" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="592" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="593" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="594" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="595" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="596" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="597" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="598" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="599" repeatable="">
+      <name>Kirjastokohtainen huomautus</name>
+      <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
+    </datafield>
+    <datafield tag="600/610/611 &#8225;9" repeatable="">
+      <name>Asiasanakenttä - voyager-osakenttä</name>
+      <description paragraph="1">Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
+      <subfields>
+        <subfield code="9" repeatable="N">
+          <name>Artikkeli</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="653 &#8225;9" repeatable="">
+      <name>Kontrolloimaton hakutermi - voyager-osakenttä</name>
+      <description paragraph="1">Kirjaston omien asiasanojen koodi eräissä Voyager-tietokannoissa.</description>
+      <subfields>
+        <subfield code="9" repeatable="N">
+          <name>Sanastokoodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="700/710/711 &#8225;9" repeatable="">
+      <name>Lisäkirjauskenttä - voyager-osakenttä</name>
+      <description paragraph="1">Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
+      <subfields>
+        <subfield code="9" repeatable="N">
+          <name>Artikkeli</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="790" repeatable="N">
+      <name>Linkkikenttä - voyager-kenttä</name>
+      <description paragraph="1">Käytössä eräiden Voyager-tietokantojen osakohdelinkityksessä.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Linkkitieto</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>Järjestys</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="800/810/811 &#8225;9" repeatable="">
+      <name>Sarjakenttä - voyager-osakenttä</name>
+      <description paragraph="1">Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
+      <subfields>
+        <subfield code="9" repeatable="N">
+          <name>Artikkeli</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="901" repeatable="">
+      <name>Kirjastokohtainen koodi</name>
+      <description paragraph="1">Käytössä ainakin Fennica- ja Selma-tietokannoissa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="902" repeatable="Y">
+      <name>Painoskoodi</name>
+      <description paragraph="1">Käytössä ainakin Fennica-tietokannassa MARC 21 -formaatista puuttuvan painoskoodin ilmaisemiseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="903" repeatable="">
+      <name>Kirjastokohtainen koodi</name>
+      <description paragraph="1">Käytössä ainakin Fennica- ja Selma-tietokannoissa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="904" repeatable="Y">
+      <name>Pienpainatekoodi</name>
+      <description paragraph="1">Käytössä ainakin Fennica-tietokannassa ja Abilita-kirjastojärjestelmässä MARC 21 -formaatista puuttuvien pienpainatekoodien ilmaisemiseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="905" repeatable="Y">
+      <name>Jatkuvan julkaisun tyyppikoodi - voyager-kenttä</name>
+      <description paragraph="1">Käytetty Fennica-tietokannassa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="906" repeatable="Y">
+      <name>Jatkuvan julkaisun alueellinen ja kielellinen kattavuuskoodi - voyager-kenttä</name>
+      <description paragraph="1">Käytetty Fennica-tietokannassa MARC 21 -formaatista puuttuvien koodien ilmaisemiseen. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="907" repeatable="Y">
+      <name>Yle-koodi</name>
+      <description paragraph="1">Käytössä eräissä yleisten kirjastojen tietokannoissa Yleisradiosta hankitun aineiston ilmaisemiseen. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="908" repeatable="Y">
+      <name>Kansallisuuskoodi</name>
+      <description paragraph="1">Käytössä eräissä yleisten kirjastojen tietokannoissa ilmoittamaan julkaisun tekijän kansallisuutta. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="930" repeatable="Y">
+      <name>Komitean asettamispäivä - voyager-kenttä</name>
+      <description paragraph="1">Käytössä Selma-tietokannassa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Komitean asettamispäivä</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="931" repeatable="Y">
+      <name>Komitean mietinnön luovuttamispäivä - voyager-kenttä</name>
+      <description paragraph="1">Käytössä Selma-tietokannassa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Komiteanmietinnön luovuttamispäivä</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="932" repeatable="Y">
+      <name>Komitean puheenjohtaja - voyager-kenttä</name>
+      <description paragraph="1">Käytössä Selma-tietokannassa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Komitean puheenjohtaja: sukunimi, etunimi</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Muut lisäykset</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="933" repeatable="Y">
+      <name>Komitean sihteeri - voyager-kenttä</name>
+      <description paragraph="1">Käytössä Selma-tietokannassa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Komitean sihteeri: sukunimi, etunimi</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Muut lisäykset</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="935" repeatable="">
+      <name>Kirjastokohtainen koodi</name>
+      <description paragraph="1">Eri tietokannoissa käytetään eri tarkoituksiin. </description>
+    </datafield>
+    <datafield tag="960" repeatable="Y">
+      <name>Kokoelma</name>
+      <description paragraph="1">Käytössä vain Fennica-aineistossa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Kokoelma</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="971" repeatable="Y">
+      <name>Kaupalliset tiedot</name>
+      <description paragraph="1">Kaupallisten välittäjien, kuten Kirjavälityksen ja BTJ:n, tietoja julkaisusta. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tiedoston tuottaja</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Tiedoston tunnus</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Viimeinen tilauspäivä</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Tiedoston (listan) nimi ja numero</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Hinta ilman ALVia</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>ALV-prosentti</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Myyntialennus</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Erikoishinta</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Sidontakoodi</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Käyttöoikeus (videot)</name>
+        </subfield>
+        <subfield code="l" repeatable="N">
+          <name>Tekstitys (videot)</name>
+        </subfield>
+        <subfield code="m" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+        <subfield code="p" repeatable="N">
+          <name>Sidonnan hinta</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Järjestyskoodi listalla</name>
+        </subfield>
+        <subfield code="t" repeatable="N">
+          <name>Tuoteryhmä</name>
+        </subfield>
+        <subfield code="u" repeatable="N">
+          <name>Lisätiedot, URL</name>
+        </subfield>
+        <subfield code="x" repeatable="N">
+          <name>Lisätiedot, tyyppi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="972" repeatable="Y">
+      <name>Btj-koodi</name>
+      <description paragraph="1">Käytössä joissain yleisten kirjastojen tietokannoissa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+  </datafields>
+</fields>

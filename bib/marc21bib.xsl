@@ -199,7 +199,7 @@ varastotietojen formaatista.</p>
         		ks. <i><a href="../hold/876-878.htm#878">Varastotietojen formaatti</a></i></li>
         </xsl:when>
       </xsl:choose>
-      <li><a href="#{@tag}"><xsl:value-of select="@tag"/> - <xsl:call-template name="capitalize"><xsl:with-param name="str" select="name"/></xsl:call-template></a><xsl:choose><xsl:when test="@repeatable='Y'"> (T)</xsl:when><xsl:when test="@repeatable='N'"> (ET)</xsl:when></xsl:choose></li>
+      <li><a href="#{@tag}"><xsl:call-template name="capitalize"><xsl:with-param name="str" select="@tag"/></xsl:call-template> - <xsl:call-template name="capitalize"><xsl:with-param name="str" select="name"/></xsl:call-template></a><xsl:choose><xsl:when test="@repeatable='Y'"> (T)</xsl:when><xsl:when test="@repeatable='N'"> (ET)</xsl:when></xsl:choose></li>
       </xsl:for-each>
     </ul>
     <xsl:apply-templates select="terminology"/>

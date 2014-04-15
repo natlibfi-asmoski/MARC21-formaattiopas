@@ -36,6 +36,8 @@ java -jar saxon\saxon8.jar -t bib\841-88X.xml bib\marc21bib.xsl > bib\841-88X.ht
 @if errorlevel 1 goto error
 java -jar saxon\saxon8.jar -t bib\9XX.xml     bib\marc21bib.xsl > bib\9XX.htm
 @if errorlevel 1 goto error
+java -jar saxon\saxon8.jar -t bib\omat.xml    bib\marc21bib.xsl > bib\omat.htm
+@if errorlevel 1 goto error
 
 
 java -jar saxon\saxon8.jar -t aukt\000.xml     aukt\marc21auth.xsl > aukt\000.htm
