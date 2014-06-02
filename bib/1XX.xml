@@ -233,7 +233,7 @@
           <name>Alayksikkö</name>
           <description>Hallintoalueen tai yhteisön alayksikön/alahierarkian nimi tai kokouksen nimi.</description>
         </subfield>
-        <subfield code="c" repeatable="N">
+        <subfield code="c" repeatable="Y">
           <name>Kokouksen paikka</name>
           <description>Paikan- tai instituution nimi.</description>
         </subfield>
@@ -353,7 +353,7 @@
           <name>Kokouksen tai hallintoalueen nimi</name>
           <description>Kun kyseessä on useampia alayksiköitä, tallennetaan ensimmäisen kokonaisuuden nimi ensin; tai hallintoalueen nimi, jonka alle kokouksen nimi kirjataan.</description>
         </subfield>
-        <subfield code="c" repeatable="N">
+        <subfield code="c" repeatable="Y">
           <name>Kokouksen paikka</name>
           <description>Paikan- tai instituution nimi.</description>
         </subfield>
@@ -433,7 +433,10 @@
         <example>
           <text><strong>111 2# &#8225;a</strong> Symposium on the Underground Disposal of Radioactive Wastes <strong>&#8225;d</strong> (1979 : <strong>&#8225;c</strong> Otaniemi, Finland) <strong>&#8225;4</strong> fnd<br /><strong>245 10 &#8225;a</strong> Underground disposal of radioactive wastes : <strong>&#8225;b</strong> proceedings of a Symposium on the Underground Disposal of Radioactive Wastes /<strong>&#8225;c</strong>jointly organized by the International Atomic Energy Agency and the OEDC Nuclear Energy Agency and held at Otaniemi, Finland, 2-6 July 1979.</text>
         </example>
-        <example>
+	<example>
+          <text><strong>111 2# &#8225;a</strong> World Peace Conference <strong>&#8225;n</strong> (1st : <strong>&#8225;d</strong> 1949 : <strong>&#8225;c</strong> Paris, France;  <strong>&#8225;c</strong> Prague, Czechoslovakia) </text>
+        </example>
+	<example>
           <text><strong>111 2# &#8225;a</strong> Expo '70 <strong>&#8225;c</strong> (Osaka, Japan)<br /><strong>245 10 &#8225;a</strong> Japan World Exposition, Osaka, 1970: official report.</text>
         </example>
       </examples>
