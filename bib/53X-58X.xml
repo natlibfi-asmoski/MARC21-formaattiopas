@@ -1679,10 +1679,16 @@
       <description paragraph="1">Tietoa käytetään tietueen metadatan jäljittämiseen ja kontrollointiin.</description>
       <indicators>
         <indicator num="1">
-          <description>Määrittelemätön</description>
+          <description>Display constant controller</description>
           <values>
             <value code="#">
-              <description>Määrittelemätön</description>
+              <description>Tieto puuttuu</description>
+            </value>
+	     <value code="0">
+              <description>Kuvailun lähde</description>
+            </value>
+	     <value code="1">
+              <description>Latest issue consulted</description>
             </value>
           </values>
         </indicator>
@@ -1717,8 +1723,11 @@
           <text><strong>588 ## &#8225;a</strong> Kuvailun perusta: 1977, nro 2.</text>
         </example>
         <example>
-          <text><strong>588 ## &#8225;a</strong> Nimeke WWW-sivulta, kuvailu perustuu 6.7.2006 arkistoituun versioon.</text>
+          <text><strong>588 0# &#8225;a</strong> Nimeke WWW-sivulta, kuvailu perustuu 6.7.2006 arkistoituun versioon.</text>
         </example>
+	<example>
+	  <text><strong>588 0# &#8225;a</strong> Volume 2.</text>
+	</example>
       </examples>
     </datafield>
     <datafield tag="59X" type="59X" repeatable="">
