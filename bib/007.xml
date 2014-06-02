@@ -2867,7 +2867,7 @@
               <name>Yksikanavainen (mono)</name>
             </value>
             <value code="q">
-              <name>Nelikanavainen stereo</name>
+              <name>Nelikanavainen stereo, monikanavainen stereo tai surround</name>
             </value>
             <value code="s">
               <name>Kaksikanavainen stereo</name>
