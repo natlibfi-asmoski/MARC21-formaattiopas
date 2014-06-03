@@ -272,7 +272,7 @@
         <subfield code="b" repeatable="Y">
           <name>Alayksikkö</name>
         </subfield>
-        <subfield code="c" repeatable="N">
+        <subfield code="c" repeatable="Y">
           <name>Kokouksen paikka</name>
         </subfield>
         <subfield code="d" repeatable="Y">
@@ -455,7 +455,7 @@
         <subfield code="a" repeatable="N">
           <name>Kokouksen tai hallintoalueen nimi</name>
         </subfield>
-        <subfield code="c" repeatable="N">
+        <subfield code="c" repeatable="Y">
           <name>Kokouksen paikka</name>
         </subfield>
         <subfield code="d" repeatable="N">
