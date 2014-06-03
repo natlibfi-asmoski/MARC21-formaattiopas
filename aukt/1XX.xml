@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
@@ -255,7 +255,7 @@
           <name>Alayksikkö</name>
           <description>Hallintoalueen tai yhteisön alayksikön/alahierarkian nimi tai kokouksen nimi.</description>
         </subfield>
-        <subfield code="c" repeatable="N">
+        <subfield code="c" repeatable="Y">
           <name>Kokouksen paikka</name>
         </subfield>
         <subfield code="d" repeatable="Y">
@@ -443,7 +443,7 @@
           <name>Kokouksen tai hallintoalueen nimi</name>
           <description>Kun kyseessä on useampia alayksiköitä, tallennetaan ensimmäisen kokonaisuuden nimi ensin; tai hallintoalueen nimi, jonka alle kokouksen nimi kirjataan.</description>
         </subfield>
-        <subfield code="c" repeatable="N">
+        <subfield code="c" repeatable="Y">
           <name>Kokouksen paikka</name>
         </subfield>
         <subfield code="d" repeatable="N">
