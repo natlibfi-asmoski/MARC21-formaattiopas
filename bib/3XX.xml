@@ -1083,7 +1083,7 @@
           <name>Alueellinen koodaus</name>
         </subfield>
         <subfield code="f" repeatable="Y">
-          <name>Siirtonopeus</name>
+          <name>Pakattu bittivirta/bittinopeus</name>
         </subfield>
         <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
