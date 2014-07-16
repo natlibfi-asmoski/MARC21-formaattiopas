@@ -1679,7 +1679,7 @@
       <description paragraph="1">Tietoa käytetään tietueen metadatan jäljittämiseen ja kontrollointiin.</description>
       <indicators>
         <indicator num="1">
-          <description>Display constant controller</description>
+          <description>Vakionäyttöindikaattori</description>
           <values>
             <value code="#">
               <description>Tieto puuttuu</description>
@@ -1688,7 +1688,7 @@
               <description>Kuvailun lähde</description>
             </value>
 	     <value code="1">
-              <description>Latest issue consulted</description>
+              <description>Viimeisin tarkasteltu numero</description>
             </value>
           </values>
         </indicator>
