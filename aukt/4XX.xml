@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>20.6.2013</modified>
+  <modified>13.8.2014</modified>
   <datafields>
     <title>Katso-viittausten kentät (4XX)</title>
     <description>Katso-viittausten kenttiä 400-485 käytetään ei-ohjeellisille otsikkomuodoille ja muille varianteille, joita ei ole valittu ohjeellisiksi otsikkomuodoiksi. Yleistä tietoa näistä tietoelementeistä löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.</description>

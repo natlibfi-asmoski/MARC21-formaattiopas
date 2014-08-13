@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>20.6.2013</modified>
+  <modified>13.8.2014</modified>
   <datafields>
     <title>Otsikkomuotojen kentät (1XX ja 3XX)</title>
     <description>Kentät 100-185 sisältävät nimiä, yhtenäistettyjä nimekkeitä ja termejä, joita käytetään otsikkomuotoina tai otsikkomuotojen lisämääreinä. Tavallisesti ne on muodostettu yleisesti hyväksyttyjen luettelointisääntöjen ja asiasanastojen käytäntöjen mukaisesti. MARC 21 -auktoriteettitietueissa <strong>otsikkomuoto</strong> sisältyy kenttiin 1XX, 4XX tai 5XX, joihin on tallennettu tiedon tallennuksessa ja tiedonhaussa tai auktoriteettitiedoston järjestämisessä käytetty nimen, nimekkeen tai termin muoto. Otsikkomuotojen 1XX-kenttien sekä 4XX/5XX-viittauskenttien osakenttärakenteet ovat yhtenäiset.</description>
