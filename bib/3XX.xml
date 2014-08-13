@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>15.7.2014</modified>
+  <modified>13.8.2014</modified>
   <datafields>
     <title>Fyysisen kuvailun jne. kentät (3XX)</title>
     <description>Kentät sisältävät tietoja kuvailun kohteen fyysisistä ominaisuuksista, graafisesta ilmiasusta, fyysisistä järjestysperiaatteista, ilmestymistiheydestä ja turvaluokituksesta. Digitaalisen aineiston referenssi- ja järjestämistiedoille on tässä myös omat kenttänsä.</description>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>15.7.2014</modified>
+  <modified>13.8.2014</modified>
   <datafields>
     <title>Asiasanakentät (6XX)</title>
     <description paragraph="1">Kentät 600-662 sisältävät kuvailun kohteen sisältöä ja aihetta kuvaavia kontrolloituja asiasanoja tai hakutermejä, joiden avulla voidaan hakea bibliografisia tietueita. Käytetty asiasanasto merkitään toisen indikaattorin avulla. Jos toisen indikaattorin arvo on 7, osakenttään &#8225;2 merkitään käytetyn asiasanaston MARC-koodi. </description>

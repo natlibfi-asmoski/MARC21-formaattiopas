@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>15.7.2014</modified>
+  <modified>13.8.2014</modified>
   <controlfields>
     <title>Kontrollikenttä 007</title>
     <controlfield tag="007" type="yleista" repeatable="Y">
