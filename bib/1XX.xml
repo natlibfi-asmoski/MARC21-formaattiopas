@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.12.2013</modified>
+  <modified>15.7.2014</modified>
   <datafields>
     <title>Pääkirjauskentät (1XX)</title>
     <description>1XX-kentät sisältävät nimen tai yhtenäistetyn nimekkeen, joka toimii bibliografisen tietueen pääkirjauksena. Indikaattoreita ja osakenttäkoodeja lukuun ottamatta kaikkien nimekenttien ja yhtenäistetyn nimekkeen kenttien sisältö on sama pääkirjaus- (100-130), sarjamerkintö- (440-490), asiasana- (600-630), lisäkirjaus- (700-730) ja sarjalisäkirjauskentissä (800-830).</description>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.12.2013</modified>
+  <modified>15.7.2014</modified>
   <datafields>
     <title>Lisäkirjauskentät (70X-75X)</title>
     <description>Kentät 700-75X sisältävät nimiä ja/tai nimekkeitä ja/tai termejä, joilla bibliografinen tietue halutaan tarjota haettavaksi ja joita ei ole tallennettu pääkirjauksena (1XX), asiasanana (6XX), sarjamerkintönä (4XX), sarjalisäkirjauksena (8XX) tai nimekkeenä (20X-24X).</description>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.12.2013</modified>
+  <modified>15.7.2014</modified>
   <datafields>
     <title>Tietokanta- tai järjestelmäkohtaisia omia kenttiä</title>
     <description>Tässä osiossa kuvataan kenttiä, joita on otettu käyttöön Voyager-järjestelmässä sekä yleisten kirjastojen tietokannoissa. Kentät tai osakentät sisältävät numeron 9 eli ovat MARC 21:ssa vapaasti käytettävissä. Kentät eivät ole varsinaisessa suomenkielisessä MARC 21 -formaatissa. </description>
