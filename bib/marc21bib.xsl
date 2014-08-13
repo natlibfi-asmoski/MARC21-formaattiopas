@@ -38,7 +38,7 @@
   <xsl:template match="modified">
 <p align="center">
 <i><span style="background-color: #FFFF00">
-Päivitetty viimeksi <xsl:value-of select="15.7.2014"/>.<br/>
+Päivitetty viimeksi <xsl:value-of select="."/>.<br/>
 Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
   </xsl:template>
 
