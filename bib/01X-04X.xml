@@ -1685,7 +1685,7 @@
               <description>Kuvailun kohde ei ole käännös eikä sisällä käännöstä</description>
             </value>
             <value code="1">
-              <description>Kuvailun kohde on käännös tai sisältää käännöksen<br /> Tämän indikaattorin käyttö vaatii osakentän &#8225;h käyttöä.</description>
+              <description>Kuvailun kohde on käännös tai sisältää käännöksen</description>
             </value>
           </values>
         </indicator>
