@@ -57,7 +57,7 @@
           <name>Teoksen julkaisuaika</name>
           <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</description>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
           <description>Nimeen liittyvät tiedot, jotka eivät sovellu muihin osakenttiin.</description>
         </subfield>
@@ -249,7 +249,7 @@
           <name>Teoksen julkaisuaika</name>
           <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</description>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
           <description>Sopimuksen <em>toisen osapuolen</em> nimi; tieto, joka ei paremmin sovellu osakenttiin &#8225;c, &#8225;d tai &#8225;n, kun kyseessä on yhteisönnimen alle kirjattu kokous; muut tiedot, jotka eivät sovellu muihin yhteisönnimille tarkoitettuihin kenttiin ja osakenttiin.</description>
         </subfield>
@@ -368,7 +368,7 @@
           <name>Teoksen julkaisuaika</name>
           <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</description>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
           <description>Tiedot, jotka eivät sovellu muihin osakenttiin.</description>
         </subfield>
@@ -473,7 +473,7 @@
           <name>Teoksen julkaisuaika</name>
           <description>Julkaisuaika, jota käytetään teoksen nimekkeen kanssa tekijä/nimeke -kentässä.</description>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
           <description>Tiedot, jotka eivät sovellu muihin osakenttiin.</description>
         </subfield>
