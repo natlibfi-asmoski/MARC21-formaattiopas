@@ -1780,6 +1780,76 @@
         </example>
       </examples>
     </datafield>
+<datafield tag="370" repeatable="Y">
+      <name>Paikkamerkintö</name>
+      <description paragraph="1">Kaupunki, maakunta, osavaltio ja/tai valtio tai muu hallintoalue, joka liittyy teoksiin ja ekspressioihin, koskee myös teoksen syntypaikkaa.</description>
+      <description paragraph="2">Kenttää 370 toistetaan, kun ajanjakson alku- ja loppuajat osakentissä &#8225;s ja &#8225;t liittyvät eri paikkoihin. Jos paikkamerkintö on otettu kontrolloidusta sanastosta, merkitään sanasto osakenttään 2.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+	  <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+       <subfields>
+        <subfield code="c" repeatable="Y">
+          <name>Paikkamerkintö</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Muu paikkamerkintö</name>
+        </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Teoksen luontipaikka</name>
+        </subfield>
+        <subfield code="s" repeatable="N">
+          <name>Ajanjakson alku</name>
+        </subfield>
+	<subfield code="t" repeatable="N">
+          <name>Ajanjakson loppu</name>
+        </subfield>
+	<subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Tiedonlähde</name>
+        </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Tiedon lähde</name>
+          <description>Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+       </subfields>
+       <examples>
+        <example>
+          <text><strong>370 ## &#8225;g</strong> Boise,Idaho </text>
+        </example>
+        <example>
+          <text><strong>370 ## &#8225;g</strong> Nairobi, Kenya </text>
+        </example>
+       </examples>
+</datafield>
 <datafield tag="377" repeatable="Y">
       <name>Kielimerkintö</name>
       <description paragraph="1">Kielikoodeja, jotka liittyvät tietueessa kuvailtuun entiteettiin. Esimerkiksi henkilön kirjoissaan tai äänitteillä käyttämä kieli, yhteisön tiedotuksessaan käyttämä kieli, suvun kieli tai ekspression kieli.</description>
@@ -1916,7 +1986,7 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
-          <description>Koodi otetaan listalta, ks. <em><a            href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1989,7 +2059,7 @@
         <subfield code="p" repeatable="Y">
           <name>Vaihtoehtoinen esityskokoonpano</name>
         </subfield>
-        <subfield code="s" repeatable="Y">
+        <subfield code="s" repeatable="N">
           <name>Soitinten/lauluäänten kokonaismäärä</name>
         </subfield>
         <subfield code="v" repeatable="Y">
@@ -2332,6 +2402,63 @@
 	</example>
 	<example>
           <text><strong>386 ## &#8225;a</strong> Chinese Canadians <strong>&#8225;2</strong> cash</text>
+	</example>
+     </examples>
+    </datafield>
+<datafield tag="388" repeatable="Y">
+      <name>Teoksen luomisen ajanjakso</name>
+      <description paragraph="1">Ajanjakso, jolloin teos tai ekspressio on luotu tai jolta teos on peräisin (sisältää kokoomateokset) tai teokset tai ekspressiot, jotka sisältyvät kokoelmaan.</description> 
+      <indicators>
+        <indicator num="1">
+          <description>Ajanjakson tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="1">
+              <description>Teoksen luontiaika</description>
+            </value>
+            <value code="2">
+              <description>Kokoomateoksen luontiaika</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+	<subfield code="a" repeatable="Y">
+          <name>Luontiajanjakso</name>
+        </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/temporal.html">Temporal Term Source Codes</a></em>.</description>
+        </subfield>
+	<subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+	<subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>388 1# &#8225;a</strong> Anglo-Saxon period <strong>&#8225;2</strong> termi kontrolloidusta sanastosta </text>
 	</example>
      </examples>
     </datafield>
