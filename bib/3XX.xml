@@ -1829,7 +1829,7 @@
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
         </subfield>
         <subfield code="2" repeatable="N">
-          <name>Tiedon l‰hde</name>
+          <name>Termin l‰hde</name>
           <description>Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -2406,8 +2406,8 @@
      </examples>
     </datafield>
 <datafield tag="388" repeatable="Y">
-      <name>Teoksen luomisen ajanjakso</name>
-      <description paragraph="1">Ajanjakso, jolloin teos tai ekspressio on luotu tai jolta teos on per‰isin (sis‰lt‰‰ kokoomateokset) tai teokset tai ekspressiot, jotka sis‰ltyv‰t kokoelmaan.</description> 
+      <name>Teoksen luontiaika</name>
+      <description paragraph="1">Luonti- tai syntyaika teokselle tai ekspressiolle (mukaanlukien kokoomateokset) tai kokoomateokseen sis‰ltyville teoksille tai ekspressioille.</description> 
       <indicators>
         <indicator num="1">
           <description>Ajanjakson tyyppi</description>
@@ -2434,7 +2434,7 @@
       </indicators>
       <subfields>
 	<subfield code="a" repeatable="Y">
-          <name>Luontiajanjakso</name>
+          <name>Luontiaika</name>
         </subfield>
 	<subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero</name>
@@ -2458,7 +2458,25 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>388 1# &#8225;a</strong> Anglo-Saxon period <strong>&#8225;2</strong> termi kontrolloidusta sanastosta </text>
+          <text><strong>388 1# &#8225;a</strong> Anglo-Saxon period <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> Ancient period <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> 19th century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 2# &#8225;a</strong> 20th century <strong>&#8225;a</strong> 21st century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> 1781-1791 <strong>&#8225;2</strong>fast</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> 18th century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 2# &#8225;a</strong> 1980 <strong>&#8225;2</strong>fast</text>
 	</example>
      </examples>
     </datafield>
