@@ -51,7 +51,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -265,7 +265,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -404,7 +404,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -525,7 +525,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
