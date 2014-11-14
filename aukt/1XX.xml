@@ -2685,5 +2685,77 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="388" repeatable="Y">
+      <name>Teoksen luontiaika</name>
+      <description paragraph="1">Luonti- tai syntyaika teokselle tai ekspressiolle (mukaanlukien kokoomateokset) tai kokoomateokseen sisältyville teoksille tai ekspressioille.</description> 
+      <indicators>
+        <indicator num="1">
+          <description>Ajanjakson tyyppi</description>
+          <values>
+            <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
+            <value code="1">
+              <description>Teoksen luontiaika</description>
+            </value>
+            <value code="2">
+              <description>Kokoomateoksen luontiaika</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+	<subfield code="a" repeatable="Y">
+          <name>Luontiaika</name>
+        </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+	  <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/temporal.html">Temporal Term Source Codes</a></em>.</description>
+        </subfield>
+	<subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>388 1# &#8225;a</strong> Anglo-Saxon period <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> Ancient period <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> 19th century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 2# &#8225;a</strong> 20th century <strong>&#8225;a</strong> 21st century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> 1781-1791 <strong>&#8225;2</strong>fast</text>
+	</example>
+	<example>
+          <text><strong>388 1# &#8225;a</strong> 18th century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+	</example>
+	<example>
+          <text><strong>388 2# &#8225;a</strong> 1980 <strong>&#8225;2</strong>fast</text>
+	</example>
+     </examples>
+    </datafield>
   </datafields>
 </fields>
