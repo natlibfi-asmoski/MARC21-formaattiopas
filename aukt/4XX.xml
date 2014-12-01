@@ -52,7 +52,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -212,7 +212,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -366,7 +366,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -496,7 +496,7 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
@@ -710,6 +710,9 @@
         <subfield code="b" repeatable="N">
           <name>Maantieteellistä nimeä seuraava aihetta ilmaiseva termi</name>
         </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot</name>
+        </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
           <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
@@ -797,6 +800,9 @@
       <subfields>
         <subfield code="a" repeatable="N">
           <name>Maantieteellinen nimi</name>
+        </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot</name>
         </subfield>
         <subfield code="i" repeatable="Y">
           <name>Suhdetta kuvaava ilmaus</name>
