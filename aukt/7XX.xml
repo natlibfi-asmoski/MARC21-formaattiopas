@@ -73,11 +73,14 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
           <name>Aineiston yleismääre</name>
+        </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="j" repeatable="Y">
           <name>Nimen määrite</name>
@@ -142,6 +145,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -233,11 +240,14 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
           <name>Aineiston yleismääre</name>
+        </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Muotoa kuvaava kokoava nimeke</name>
@@ -296,6 +306,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -384,11 +398,14 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
           <name>Aineiston yleismääre</name>
+        </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="j" repeatable="Y">
           <name>Funktiotermi</name>
@@ -444,6 +461,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -517,11 +538,14 @@
         <subfield code="f" repeatable="N">
           <name>Teoksen julkaisuaika</name>
         </subfield>
-        <subfield code="g" repeatable="N">
+        <subfield code="g" repeatable="Y">
           <name>Muut tiedot</name>
         </subfield>
         <subfield code="h" repeatable="N">
           <name>Aineiston yleismääre</name>
+        </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Muotoa kuvaava kokoava nimeke</name>
@@ -580,6 +604,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -647,6 +675,9 @@
         <subfield code="a" repeatable="N">
           <name>Aikaa ilmaiseva termi</name>
         </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -677,6 +708,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -753,6 +788,12 @@
         <subfield code="b" repeatable="N">
           <name>Maantieteellistä nimeä seuraava aihetta ilmaiseva termi</name>
         </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot</name>
+        </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -783,6 +824,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -880,6 +925,12 @@
         <subfield code="a" repeatable="N">
           <name>Maantieteellinen nimi</name>
         </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot</name>
+        </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -910,6 +961,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -983,6 +1038,9 @@
         <subfield code="a" repeatable="N">
           <name>Lajityyppiä/muotoa kuvaava termi</name>
         </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -1013,6 +1071,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1086,6 +1148,9 @@
         <subfield code="a" repeatable="Y">
           <name>Esityskokoonpanoa ilmaiseva termi</name>
         </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="w" repeatable="N">
           <name>Kontrollitiedot</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
@@ -1104,6 +1169,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1168,6 +1237,9 @@
         </indicator>
       </indicators>
       <subfields>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -1268,6 +1340,9 @@
         </indicator>
       </indicators>
       <subfields>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -1298,6 +1373,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1365,6 +1444,9 @@
         </indicator>
       </indicators>
       <subfields>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -1395,6 +1477,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1459,6 +1545,9 @@
         </indicator>
       </indicators>
       <subfields>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="v" repeatable="Y">
           <name>Muotoa ilmaiseva lisämääre</name>
         </subfield>
@@ -1489,6 +1578,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1564,6 +1657,10 @@
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin lähde</name>
+          <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Koodi suhteelle</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
