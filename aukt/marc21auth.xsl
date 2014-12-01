@@ -174,6 +174,7 @@ Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
         <li><a href="#384">384 - SÄVELLAJI</a> (T)</li>
         <li><a href="#385">385 - KOHDERYHMÄN OMINAISUUDET</a> (T)</li>
         <li><a href="#386">386 - TEKIJÄN OMINAISUUDET</a> (T)</li>
+	<li><a href="#388">388 - TEOKSEN LUONTIAIKA</a> (T)</li>
       </ul>
     </xsl:when>
     <xsl:otherwise>
