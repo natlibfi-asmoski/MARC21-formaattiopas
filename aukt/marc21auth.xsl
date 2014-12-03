@@ -465,6 +465,9 @@ kohdalta.</p>
 joten selityksen voi tarkistaa sieltä. 7XX-kenttien osakenttien &#8225;w ja &#8225;2 
 kuvaukset löytyvät tästä osiosta.</p>
 <ul>
+	<li><strong>&#8225;i</strong> - Tieto suhteesta (T)<br/>
+	Osakenttä, johon tallennetaan tekstimuodossa kentässä 7XX olevan ...
+	</li>
 	<li><strong>&#8225;w</strong> - Kontrollitiedot (ET)<br/>
 	Kaksi kiinteätä merkkipaikkaa (merkitään &#8225;w/0 ja &#8225;w/1), jotka kontrolloivat 
 	linkkinäytön muodostumista tai kertovat 700-785 kenttien otsikkomuodon 
@@ -500,6 +503,9 @@ kuvaukset löytyvät tästä osiosta.</p>
 	MARC-koodi, joka identifioi käytetyn asiasanaston, kun toisen indikaattorin 
 	arvo on 7. Koodi otetaan listalta, ks. <em>
 	<a href="http://www.loc.gov/marc/relators/relasour.html">MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</li>
+	<li><strong>&#8225;4</strong> - Koodi suhteelle (T)<br/>
+	Koodatussa muodossa kentässä 7XX olevan ... Koodi otetaan listalta, ks. <em> ISO 25964-2: Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies,</em> Section 4, Table 1.
+	</li>
 </ul>
 <h4>Esimerkkejä</h4>
 <p><strong>785 #7&#8225;v</strong>atlases<strong>&#8225;0</strong>[record control number]<strong>&#8225;2</strong>att</p>
