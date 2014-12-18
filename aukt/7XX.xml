@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>13.8.2014</modified>
+  <modified>18.12.2014</modified>
   <datafields>
     <title>Linkkikentät (7XX)</title>
     <description>Kenttiin 700-788 tallennetaan tietoja, joiden avulla toisiaan vastaavien otsikkomuotojen automaattinen linkittäminen toisiinsa on mahdollista riippumatta siitä ovatko ne rakenteeltaan saman vai eri muotoisia, samasta vai eri asiasanastosta tai auktoriteettitiedostosta, tai ovatko ne olemassa erillisinä auktoriteettitietueina.</description>
@@ -148,7 +148,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -309,7 +309,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -464,7 +464,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -607,7 +607,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -711,7 +711,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -827,7 +827,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -964,7 +964,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1074,7 +1074,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1172,7 +1172,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1376,7 +1376,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1480,7 +1480,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1581,7 +1581,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
@@ -1660,7 +1660,7 @@
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
 	<subfield code="4" repeatable="Y">
-          <name>Koodi suhteelle</name>
+          <name>Suhdekoodi</name>
           <description>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">

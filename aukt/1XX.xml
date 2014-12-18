@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>13.8.2014</modified>
+  <modified>18.12.2014</modified>
   <datafields>
     <title>Otsikkomuotojen kentät (1XX ja 3XX)</title>
     <description>Kentät 100-185 sisältävät nimiä, yhtenäistettyjä nimekkeitä ja termejä, joita käytetään otsikkomuotoina tai otsikkomuotojen lisämääreinä. Tavallisesti ne on muodostettu yleisesti hyväksyttyjen luettelointisääntöjen ja asiasanastojen käytäntöjen mukaisesti. MARC 21 -auktoriteettitietueissa <strong>otsikkomuoto</strong> sisältyy kenttiin 1XX, 4XX tai 5XX, joihin on tallennettu tiedon tallennuksessa ja tiedonhaussa tai auktoriteettitiedoston järjestämisessä käytetty nimen, nimekkeen tai termin muoto. Otsikkomuotojen 1XX-kenttien sekä 4XX/5XX-viittauskenttien osakenttärakenteet ovat yhtenäiset.</description>
@@ -2695,8 +2695,8 @@
       </examples>
     </datafield>
     <datafield tag="388" repeatable="Y">
-      <name>Teoksen luontiaika</name>
-      <description paragraph="1">Luonti- tai syntyaika teokselle tai ekspressiolle (mukaanlukien kokoomateokset) tai kokoomateokseen sisältyville teoksille tai ekspressioille.</description> 
+      <name>Luomisaika</name>
+      <description paragraph="1">Teoksen tai ekspression (mukaanlukien kokoomateokset) tai kokoomateokseen sisältyvien teosten tai ekspressioiden luomis- tai syntyaika.</description> 
       <indicators>
         <indicator num="1">
           <description>Ajanjakson tyyppi</description>
@@ -2705,10 +2705,10 @@
               <description>Tieto puuttuu</description>
             </value>
             <value code="1">
-              <description>Teoksen luontiaika</description>
+              <description>Teoksen luomisaika</description>
             </value>
             <value code="2">
-              <description>Kokoomateoksen luontiaika</description>
+              <description>Kokoomateoksen luomisaika</description>
             </value>
           </values>
         </indicator>
@@ -2723,7 +2723,7 @@
       </indicators>
       <subfields>
 	<subfield code="a" repeatable="Y">
-          <name>Luontiaika</name>
+          <name>Luomisaika</name>
         </subfield>
 	<subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero</name>
@@ -2744,22 +2744,22 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>388 1# &#8225;a</strong> Anglo-Saxon period <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+          <text><strong>388 1# &#8225;a</strong> Anglo-Saxon period <strong>&#8225;2</strong>[kontrolloidun sanaston koodi]</text>
 	</example>
 	<example>
-          <text><strong>388 1# &#8225;a</strong> Ancient period <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+          <text><strong>388 1# &#8225;a</strong> Ancient period <strong>&#8225;2</strong>[kontrolloidun sanaston koodi]</text>
 	</example>
 	<example>
-          <text><strong>388 1# &#8225;a</strong> 19th century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+          <text><strong>388 1# &#8225;a</strong> 19th century <strong>&#8225;2</strong>[kontrolloidun sanaston koodi]</text>
 	</example>
 	<example>
-          <text><strong>388 2# &#8225;a</strong> 20th century <strong>&#8225;a</strong> 21st century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+          <text><strong>388 2# &#8225;a</strong> 20th century <strong>&#8225;a</strong> 21st century <strong>&#8225;2</strong>[kontrolloidun sanaston koodi]</text>
 	</example>
 	<example>
           <text><strong>388 1# &#8225;a</strong> 1781-1791 <strong>&#8225;2</strong>fast</text>
 	</example>
 	<example>
-          <text><strong>388 1# &#8225;a</strong> 18th century <strong>&#8225;2</strong>[koodi kontrolloidulle sanastolle]</text>
+          <text><strong>388 1# &#8225;a</strong> 18th century <strong>&#8225;2</strong>[kontrolloidun sanaston koodi]</text>
 	</example>
 	<example>
           <text><strong>388 2# &#8225;a</strong> 1980 <strong>&#8225;2</strong>fast</text>

@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>29.1.2009</modified>
+  <modified>18.12.2014</modified>
   <datafields>
-    <title>Monitahoisten asiasanaviittausten kentät (2XX-3XX)</title>
+    <title>Monitahoisten asiasanaviittausten kentät (260, 360)</title>
     <description>Kenttiin 260 ja 360 tallennetaan tietoja asiasanojen ei-ohjeellisista muodoista tai asiasanan ohjeellisista eri muodoista ja muista varianteista, joita ei ole valittu ohjeellisiksi muodoiksi, kun asiasanojen suhteita ei voida kuvata yhden tai useamman ristiviittauksen avulla kyllin hyvin. Lisätietoja viittauksista löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.</description>
     <datafield tag="260" repeatable="Y">
       <name>Monitahoinen katso-viittaus, asiasana</name>
