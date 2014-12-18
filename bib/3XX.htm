@@ -76,6 +76,8 @@
          </li>
          <li><a href="#366">366 - KAUPALLINEN SAATAVUUS</a> (T)
          </li>
+         <li><a href="#370">370 - PAIKKAMERKINTÖ</a> (T)
+         </li>
          <li><a href="#377">377 - KIELIMERKINTÖ</a> (T)
          </li>
          <li><a href="#380">380 - TEOKSEN MUOTO</a> (T)
@@ -91,6 +93,8 @@
          <li><a href="#385">385 - KOHDERYHMÄN OMINAISUUDET</a> (T)
          </li>
          <li><a href="#386">386 - TEKIJÄN OMINAISUUDET</a> (T)
+         </li>
+         <li><a href="#388">388 - LUOMISAIKA</a> (T)
          </li>
       </ul>
       <hr>
@@ -1404,6 +1408,62 @@
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
+      <h3><a name="370"></a>370 - PAIKKAMERKINTÖ (T)
+      </h3>
+      <p>Kaupunki, maakunta, osavaltio ja/tai valtio tai muu hallintoalue, joka liittyy teoksiin ja ekspressioihin, mukaanlukien teoksen
+         syntypaikka.
+      </p>
+      <p>Kenttää 370 toistetaan, kun ajanjakson alku- ja loppuajat osakentissä ‡s ja ‡t liittyvät eri paikkoihin. Jos paikkamerkintö
+         on otettu kontrolloidusta sanastosta, merkitään sanasto osakenttään 2.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡c</strong> - Maa (T)
+         </li>
+         <li><strong>‡f</strong> - Muu paikkamerkintö (T)
+         </li>
+         <li><strong>‡g</strong> - Teoksen luontipaikka (T)
+         </li>
+         <li><strong>‡s</strong> - Ajanjakson alku (ET)
+         </li>
+         <li><strong>‡t</strong> - Ajanjakson loppu (ET)
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (T)
+         </li>
+         <li><strong>‡v</strong> - Tiedonlähde (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Määrittää osakentissä ‡c, ‡f ja/tai ‡g olevaa kontrolloidun sanaston termiä. Osakenttä ‡2 merkitään vastaavan osakentän perään.
+            Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>370 ## ‡g</strong> Boise, Idaho 
+      </p>
+      <p><strong>370 ## ‡g</strong> Nairobi, Kenia 
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
       <h3><a name="377"></a>377 - KIELIMERKINTÖ (T)
       </h3>
       <p>Kielikoodeja, jotka liittyvät tietueessa kuvailtuun entiteettiin. Esimerkiksi henkilön kirjoissaan tai äänitteillä käyttämä
@@ -1568,7 +1628,7 @@
          </li>
          <li><strong>‡p</strong> - Vaihtoehtoinen esityskokoonpano (T)
          </li>
-         <li><strong>‡s</strong> - Soitinten/lauluäänten kokonaismäärä (T)
+         <li><strong>‡s</strong> - Soitinten/lauluäänten kokonaismäärä (ET)
          </li>
          <li><strong>‡v</strong> - Huomautus (T)
          </li>
@@ -1809,6 +1869,62 @@
       <p><strong>386 ## ‡n</strong> occ <strong>‡a</strong> Artists <strong>‡a</strong> Authors <strong>‡2</strong> ericd
       </p>
       <p><strong>386 ## ‡a</strong> Chinese Canadians <strong>‡2</strong> cash
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="388"></a>388 - LUOMISAIKA (T)
+      </h3>
+      <p>Teoksen tai ekspression (mukaanlukien kokoomateokset) tai kokoomateokseen sisältyvien teosten tai ekspressioiden luomis- tai
+         syntyaika.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Ajanjakson tyyppi
+            <ul>
+               <li><strong>#</strong> - Tieto puuttuu
+               </li>
+               <li><strong>1</strong> - Teoksen luomisaika
+               </li>
+               <li><strong>2</strong> - Kokoomateoksen luomisaika
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Luomisaika (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/temporal.html">Temporal Term Source Codes</a></em>.
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>388 1# ‡a</strong> Anglo-Saxon period <strong>‡2</strong>[kontrolloidun sanaston koodi]
+      </p>
+      <p><strong>388 1# ‡a</strong> Ancient period <strong>‡2</strong>[kontrolloidun sanaston koodi]
+      </p>
+      <p><strong>388 1# ‡a</strong> 19th century <strong>‡2</strong>[kontrolloidun sanaston koodi]
+      </p>
+      <p><strong>388 2# ‡a</strong> 20th century <strong>‡a</strong> 21st century <strong>‡2</strong>[kontrolloidun sanaston koodi]
+      </p>
+      <p><strong>388 1# ‡a</strong> 1781-1791 <strong>‡2</strong>fast
+      </p>
+      <p><strong>388 1# ‡a</strong> 18th century <strong>‡2</strong>[kontrolloidun sanaston koodi]
+      </p>
+      <p><strong>388 2# ‡a</strong> 1980 <strong>‡2</strong>fast
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>

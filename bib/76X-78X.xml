@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>5.6.2012</modified>
+  <modified>18.12.2014</modified>
   <datafields>
     <title>Linkkikentät (76X-78X)</title>
     <description>Kentät 760-78X sisältävät tietoja kuvailun kohteeseen liittyvistä muista
@@ -129,7 +129,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
           <description>Kuvaus kentässä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu. Sijoitetaan kentässä ensimmäiseksi. Tällöin toisen indikaattorin arvo on 8.</description>
         </subfield>
         <subfield code="m" repeatable="N">
@@ -376,7 +376,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="m" repeatable="N">
           <name>Aineistokohtaiset yksityiskohdat</name>
@@ -492,7 +492,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -627,7 +627,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -755,7 +755,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -886,7 +886,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1008,7 +1008,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1153,7 +1153,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1283,7 +1283,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1408,7 +1408,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1536,7 +1536,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1667,7 +1667,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1819,7 +1819,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>
@@ -1959,7 +1959,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="j" repeatable="N">
           <name>Sisällön kattama ajankohta tai ajanjakso</name>
@@ -2092,7 +2092,7 @@
           <name>Fyysinen kuvailu</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="k" repeatable="Y">
           <name>Sarjatiedot</name>

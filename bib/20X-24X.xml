@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>17.2.2012</modified>
+  <modified>18.12.2014</modified>
   <datafields>
     <title>Nimeke- ja nimekkeeseen liittyvät kentät (20X-24X)</title>
     <description>Kentät 210-24X sisältävät kuvailun kohteen nimekkeen sekä muut kohteeseen liittyvät nimekkeet.</description>

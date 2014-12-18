@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>13.8.2014</modified>
+  <modified>18.12.2014</modified>
   <datafields>
     <title>Lisäkirjauskentät (70X-75X)</title>
     <description>Kentät 700-75X sisältävät nimiä ja/tai nimekkeitä ja/tai termejä, joilla bibliografinen tietue halutaan tarjota haettavaksi ja joita ei ole tallennettu pääkirjauksena (1XX), asiasanana (6XX), sarjamerkintönä (4XX), sarjalisäkirjauksena (8XX) tai nimekkeenä (20X-24X).</description>
@@ -62,7 +62,7 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
           <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="j" repeatable="Y">
@@ -211,7 +211,7 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
           <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="k" repeatable="Y">
@@ -348,7 +348,7 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
           <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="j" repeatable="Y">
@@ -530,7 +530,7 @@
           <name>Aineiston yleismääre</name>
         </subfield>
         <subfield code="i" repeatable="Y">
-          <name>Suhdetta kuvaava ilmaus</name>
+          <name>Tieto suhteesta</name>
           <description>Kuvaus kentässä 7XX kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhteesta. Teksti voi olla vapaamuotoinen tai kontrolloitu.</description>
         </subfield>
         <subfield code="k" repeatable="Y">

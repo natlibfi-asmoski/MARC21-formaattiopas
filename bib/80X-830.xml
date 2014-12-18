@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>13.8.2014</modified>
+  <modified>18.12.2014</modified>
   <datafields>
     <title>Sarjalisäkirjauskentät (80X-830)</title>
     <description>Kentät 800-830 sisältävät tekijä/nimekkeen tai nimekkeen jota käytetään sarjalisäkirjauksena kun sarjamerkintö sisältyy kenttään 490 (Sarjamerkintö, ei lisäkirjaus) tai kenttään 500 (Yleinen huomautus) ja bibliografinen tietue vaatii sarjalisäkirjauksen. Joissakin näytöissä esiintyy numerointia ja sana <em>Sarja:</em> ennen sarjalisäkirjausta, mutta niitä ei tallenneta MARC-tietueeseen vaan ne voidaan muodostaa näyttöihin kenttäkoodin perusteella.</description>
