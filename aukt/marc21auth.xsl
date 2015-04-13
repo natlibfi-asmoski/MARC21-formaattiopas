@@ -504,7 +504,7 @@ kuvaukset löytyvät tästä osiosta.</p>
 	arvo on 7. Koodi otetaan listalta, ks. <em>
 	<a href="http://www.loc.gov/marc/relators/relasour.html">MARC Code Lists for Relators, Sources, Description Conventions: PART IV: Term, Name, Title Sources</a></em>.</li>
 	<li><strong>&#8225;4</strong> - Koodi suhteelle (T)<br/>
-	Koodatussa muodossa kentässä 7XX olevan ... Koodi otetaan listalta, ks. <em> ISO 25964-2: Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies,</em> Section 4, Table 1.
+	Koodatussa muodossa kentässä 7XX olevan ... Koodi otetaan listalta, ks. <em> ISO 25964-2: Thesauri and interoperability with other vocabularies - Part 2: Interoperability with other vocabularies,</em> Section 4, Table 1.
 	</li>
 </ul>
 <h4>Esimerkkejä</h4>
