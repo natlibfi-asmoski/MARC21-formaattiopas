@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
 
 <fields>
@@ -184,25 +184,25 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Lukuoikeus paperiversion tilaajalla</text>
+          <text><strong>506 ##&#8225;a</strong>Lukuoikeus paperiversion tilaajalla.</text>
         </example>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Ilmainen vuonna 1998</text>
+          <text><strong>506 ##&#8225;a</strong>Ilmainen vuonna 1998.</text>
         </example>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Verkkojulkaisu käytettävissä vain Jyväskylän yliopiston koneilta</text>
+          <text><strong>506 ##&#8225;a</strong>Verkkojulkaisu käytettävissä vain Jyväskylän yliopiston koneilta.</text>
         </example>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Kansallinen lisenssi</text>
+          <text><strong>506 ##&#8225;a</strong>Kansallinen lisenssi.</text>
         </example>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Maksullinen tietokanta, sopimus ja käyttäjätunnus pakollinen</text>
+          <text><strong>506 ##&#8225;a</strong>Maksullinen tietokanta, sopimus ja käyttäjätunnus pakollinen.</text>
         </example>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Kuva-arkiston käyttö mahdollista vain erikoisluvalla;<strong>&#8225;b</strong>Arkiston johtaja;<strong>&#8225;e</strong>Arkiston järjestely ja luettelointi käynnissä</text>
+          <text><strong>506 ##&#8225;a</strong>Kuva-arkiston käyttö mahdollista vain erikoisluvalla;<strong>&#8225;b</strong>Arkiston johtaja;<strong>&#8225;e</strong>Arkiston järjestely ja luettelointi käynnissä.</text>
         </example>
         <example>
-          <text><strong>506 ##&#8225;a</strong>Kartta vain virkakäyttöön ja nimettyjen henkilöiden tietoon 18.6.1995 asti;<strong>&#8225;e</strong>Sotilaiden suunnistuksen MM-kipailut Huovinrinteellä 12.-18.6.1995</text>
+          <text><strong>506 ##&#8225;a</strong>Kartta vain virkakäyttöön ja nimettyjen henkilöiden tietoon 18.6.1995 asti;<strong>&#8225;e</strong>Sotilaiden suunnistuksen MM-kipailut Huovinrinteellä 12.-18.6.1995.</text>
         </example>
       </examples>
     </datafield>

@@ -2473,7 +2473,7 @@
         </example>
       </examples>
     </datafield>
-    <datafield tag="384" repeatable="Y">
+    <datafield tag="384" repeatable="N">
       <name>Sävellaji</name>
       <description paragraph="1">Sävelten suhdejärjestelmä. Voidaan käyttää erottamaan samannimisiä musiikkiteoksia tai -ekspressioita toisistaan..</description>
       <indicators>
@@ -2501,7 +2501,7 @@
         </indicator>
       </indicators>
       <subfields>
-        <subfield code="a" repeatable="Y">
+        <subfield code="a" repeatable="N">
           <name>Sävellaji</name>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -2732,6 +2732,9 @@
 	<subfield code="2" repeatable="N">
           <name>Termin lähde</name>
 	  <description>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/temporal.html">Temporal Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
 	<subfield code="6" repeatable="N">
           <name>Linkitys</name>
