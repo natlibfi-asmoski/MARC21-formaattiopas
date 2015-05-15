@@ -421,7 +421,7 @@
         </subfield>
         <subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
-          <description>Linkki (URL tai URN) tiedostoon, jossa k‰yttˆoikeustiedot esitet‰‰n standardimuodossa. Kohdetiedosto sis‰lt‰‰ lis‰informaatiota k‰ytˆn rajoituksista.</description>
+          <description>Linkki (URL tai URN) tiedostoon, jossa tiedot esitet‰‰n standardimuodossa. Kohdetiedosto sis‰lt‰‰ lis‰informaatiota p‰‰syrajoituksista.</description>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Standarditerminologian l‰hde</name>
