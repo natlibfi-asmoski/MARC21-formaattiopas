@@ -1423,10 +1423,16 @@
       <description paragraph="1">Tietoa tarvitaan kohteen tai sen jäljenteen tilaamisessa.</description>
       <indicators>
         <indicator num="1">
-          <description>Määrittelemätön</description>
+          <description>Hankintapaikkojen järjestys</description>
           <values>
             <value code="#">
-              <description>Määrittelemätön</description>
+              <description> Ei sovellettavissa/Tieto puuttuu/Ensimmäinen hankintapaikka</description>
+            </value>
+            <value code="2">
+              <description> Välissä oleva hankintapaikka</description>
+            </value>
+            <value code="3">
+              <description> Nykyinen/Viimeisin hankintapaikka</description>
             </value>
           </values>
         </indicator>
@@ -1460,6 +1466,13 @@
         <subfield code="n" repeatable="Y">
           <name>Huomautus</name>
         </subfield>
+	<subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+	<subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description><em>Ks. <a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
+        </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
@@ -1470,6 +1483,9 @@
         </subfield>
       </subfields>
       <examples>
+	<example>
+          <text><strong>037 3# &#8225;a</strong> ISSN_12860042 <strong>&#8225;b</strong> Portico <strong>&#8225;n</strong> Cambridge University Press <strong>&#8225;5</strong> Uk</text>
+        </example>
         <example>
           <text><strong>037 ## &#8225;a</strong> 001689 E <strong>&#8225;b</strong> Vienna Tourist Board</text>
         </example>
@@ -1490,6 +1506,15 @@
         </example>
         <example>
           <text><strong>037 ## &#8225;b</strong> EROS Data Center <strong>&#8225;f</strong> 9-track tape; <strong>&#8225;g</strong> DEM; <strong>&#8225;c</strong> $40 (per file) <strong>&#8225;c</strong> $20 (per file in groups of 2 to 6) <strong>&#8225;c</strong> $90 base fee plus $7 per file (in groups of 7 or more). <strong>&#8225;g</strong> ASCII recording mode; available with no internal labels or with ANSI standard labels; logical record length is 1024 bytes; block size is a multiple of 1024 up to 31744 bytes; 1600 or 6250 characters per inch</text>
+        </example>
+	<example>
+          <text><strong>037 ## &#8225;3</strong> -2013<strong>&#8225;a</strong> ISSN_13693786_98 <strong>&#8225;b</strong> Portico <strong>&#8225;n</strong> Informa Healthcare <strong>&#8225;5</strong> Uk</text>
+        </example>
+	<example>
+          <text><strong>037 3# &#8225;3</strong> 2014<strong>&#8225;a</strong> ammy<strong>&#8225;b</strong> Oxford University Press <strong>&#8225;5</strong> Uk</text>
+        </example>
+	<example>
+          <text><strong>037 ## &#8225;a</strong> ISSN_23264624 <strong>&#8225;b</strong> Portico <strong>&#8225;n</strong> Wiley <strong>&#8225;5</strong> Uk</text>
         </example>
       </examples>
     </datafield>
