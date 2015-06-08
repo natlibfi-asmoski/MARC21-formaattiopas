@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
@@ -912,6 +912,12 @@
         </subfield>
         <subfield code="p" repeatable="N">
           <name>Kokoomateoksen sisällön loppupäivämäärä</name>
+        </subfield>
+	<subfield code="q" repeatable="N">
+          <name>Perustamisaika</name>
+        </subfield>
+	<subfield code="r" repeatable="N">
+          <name>Lopettamisaika</name>
         </subfield>
         <subfield code="s" repeatable="N">
           <name>Ajanjakson alku</name>
