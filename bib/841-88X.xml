@@ -590,6 +590,56 @@
  	</example>
       </examples>
     </datafield>
+    <datafield tag="884" repeatable="Y">
+      <name>Konversion tiedot </name>
+      <description paragraph="1"> Käytetään koneellisesti toisesta metadatarakenteesta konvertoidun MARC-tietueen alkuperän ilmaisemiseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Konversiomenetelmä</name>
+          </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Konversion päivämäärä</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Alkuperäisen/lähtömetadatan tunniste</name>
+        </subfield>
+	<subfield code="q" repeatable="N">
+          <name>Konversion tehnyt organisaatio</name>
+	  <description>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+	<subfield code="u" repeatable="N">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+      </subfields>
+      <examples>
+        <example><text><strong>884 ## &#8225;a</strong> Bibframe to MARC transformation version 1.011<strong>&#8225;g</strong> 20140910<strong>&#8225;k</strong> http://id.example.com/resources/bibs/5226.rdf <strong>&#8225;q</strong>DLC <strong>&#8225;u</strong> https://github.example.com/ld4l/bibframe2marcproject/tree/a9f03c8f86ffa1c8e2f41cbbec2d396a655a956d/</text>
+        </example>
+	<example><text><strong>884 ## &#8225;a</strong> Stanford Bibframe to MARC transformation, version 1<strong>&#8225;g</strong> 20141002<strong>&#8225;k</strong> stfbf1039806 <strong>&#8225;q</strong>CSt <strong>&#8225;u</strong> http://stanford.example.com/Bibframe2MARC_v1.xsl</text>
+        </example>
+	<example><text><strong>884 ## &#8225;a</strong> MODS 3.4 to MARC LC standard transformation<strong>&#8225;g</strong> 20140910<strong>&#8225;k</strong> http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.200033292/mods.xml <strong>&#8225;q</strong>DLC <strong>&#8225;u</strong> http://www.loc.gov/standards/mods/v3/MODS3-4_MARC21slim_XSLT1-0.xsl</text>
+        </example>
+	<example><text><strong>884 ## &#8225;a</strong> Custom MODS to MARC transformation for project A<strong>&#8225;g</strong> 20141208<strong>&#8225;k</strong> druid:ab123cd4567 <strong>&#8225;q</strong>CSt <strong>&#8225;u</strong> http://stanford.example.com/project/a/MODS2MARC_v3.xsl</text>
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="886" repeatable="Y">
       <name>Tiedot vieraiden marc-formaattien kentistä</name>
       <description paragraph="1">Käytetään muunnettaessa vieraiden MARC-formaattien tietoja MARC 21 -formaattiin, kun vieraan MARC-formaatin tiedoille ei löydy vastaavaa kenttää MARC 21 -formaatista.</description>
