@@ -2367,7 +2367,10 @@
         <subfield code="d" repeatable="Y">
           <name>Kaksintava soitin/lauluääni</name>
         </subfield>
-        <subfield code="n" repeatable="Y">
+        <subfield code="e" repeatable="Y">
+          <name>Yhtyeiden lukumäärä</name>
+        </subfield>
+	<subfield code="n" repeatable="Y">
           <name>Yksittäisten soitinten/lauluäänten lukumäärä</name>
         </subfield>
         <subfield code="p" repeatable="Y">
@@ -2405,6 +2408,12 @@
         </example>
         <example>
           <text><strong>382 0# &#8225;b</strong> Huilu <strong>&#8225;a</strong> orkesteri</text>
+        </example>
+	<example>
+          <text><strong>382 01 &#8225;a</strong> harpsichord <strong>&#8225;n</strong> 1 <strong>&#8225;b</strong> piano <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> chamber orchestra <strong>&#8225;e</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
+        </example>
+	<example>
+          <text><strong>382 01 &#8225;a</strong> violin <strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> soprano voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> alto voice <strong>&#8225;n</strong> 1<strong>&#8225;a</strong> tenor voice <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> bass voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 2 <strong>&#8225;a</strong> continuo <strong>&#8225;n</strong> 1 <strong>&#8225;2</strong> lcmpt</text>
         </example>
       </examples>
     </datafield>
