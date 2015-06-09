@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
 
 <fields>
@@ -160,6 +160,9 @@
             </value>
             <value code="p">
               <name>Osto</name>
+            </value>
+	    <value code="q">
+              <name>Vuokraus</name>
             </value>
             <value code="u">
               <name>Tuntematon</name>
