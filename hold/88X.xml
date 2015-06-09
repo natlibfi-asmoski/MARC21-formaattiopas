@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
 
 <fields>
   <modified>26.2.2013</modified>
   <datafields>
     <title>Muut kentät (88X)</title>
-    <description>Tällä hetkellä ryhmästä 88X varastotietojen formaattiin on otettu vain kaksi kenttää.</description>
+    <description>Tällä hetkellä ryhmästä 88X varastotietojen formaattiin on otettu vain kolme kenttää.</description>
     <datafield tag="880" repeatable="Y">
       <name>Tiedot vaihtoehtoisella kirjaimistolla</name>
       <description paragraph="1">Jonkin samassa tietueessa esiintyvän vaihtuvamittaisen kentän tiedot toisella kirjaimistolla. Kenttä 880 linkitetään sitä vastaavaan "tavalliseen" kenttään osakentän &#8225;6 (Linkitys) avulla. Tavallisen kentän osakentässä &#8225;6 on niin ikään linkki sitä vastaavaan kenttään 880. Kun kenttään 880 liittyvää tavallista kenttää ei tietueessa ole, 880 rakennetaan kuin se olisi ja osakentässä &#8225;6 käytetään tähän erityistarkoitukseen varattua esiintymänumeroa (00). Tiedot kentässä 880 voivat olla esitettynä useammalla kuin yhdellä kirjaimistolla.</description>
@@ -95,6 +95,46 @@
         <subfield code="8" repeatable="Y">
           <name>Linkki- ja järjestysnumero</name>
           <description>ks. <em> <a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="884" repeatable="Y">
+      <name>Konversion tiedot </name>
+      <description paragraph="1"> Käytetään koneellisesti toisesta metadatarakenteesta konvertoidun MARC-tietueen alkuperän ilmaisemiseen.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Konversiomenetelmä</name>
+          </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Konversion päivämäärä</name>
+        </subfield>
+        <subfield code="k" repeatable="N">
+          <name>Alkuperäisen/lähtömetadatan tunniste</name>
+        </subfield>
+	<subfield code="q" repeatable="N">
+          <name>Konversion tehnyt organisaatio</name>
+	  <description>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+        </subfield>
+	<subfield code="u" repeatable="N">
+          <name>URI, Uniform Resource Identifier</name>
         </subfield>
       </subfields>
     </datafield>
