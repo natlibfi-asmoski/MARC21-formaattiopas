@@ -869,7 +869,7 @@
       <name>Erikoiskoodatut ajankohdat</name>
       <description paragraph="1">Ajankohdat, jotka liittyvät tietueessa kuvailtuun entiteettiin. Näitä ovat:</description>
       <description paragraph="2"><a><em>Henkilön nimi:</em> syntymäaika, kuolinaika ja aika tai aikaväli, jolloin henkilö on toiminut aktiivisesti.</a></description>
-      <description paragraph="3"><a><em>Yhteisön nimi:</em> aika tai aikaväli, jolloin konferenssi tms. on pidetty, tai muu yhteisöön liittyvä ajankohta (esim. perustamisaika, lopettamisaika).</a></description>
+      <description paragraph="3"><a><em>Yhteisön nimi:</em> aika tai aikaväli, jolloin konferenssi tms. on pidetty, tai muu yhteisöön liittyvä ajankohta (esim. perustamisaika, lopettamisaika tai ajanjakso, jolloin yhteisö on toiminut aktiivisesti).</a></description>
       <description paragraph="4"><a><em>Suvun nimi:</em> suvun nimeen liittyvä ajankohta.</a></description>
       <description paragraph="5"><a><em>Teos tai ekspressio:</em> katso osakenttä &#8225;k (Teoksen synty- tai aloitusaika).</a></description>
       <indicators>
@@ -952,10 +952,13 @@
           <text><strong>046 ## &#8225;f</strong> 19360505<br /> 100 1# &#8225;a Smith, John, &#8225;d 1936 May 5-</text>
         </example>
         <example>
-          <text><strong>046 ## &#8225;f</strong> 1899 <strong>046 ## &#8225;g</strong> 1961<br /> 100 1# &#8225;a Hemingway, Ernest, &#8225;d 1899-1961</text>
+          <text><strong>046 ## &#8225;f</strong> 1899 <strong>&#8225;g</strong> 1961<br /> 100 1# &#8225;a Hemingway, Ernest, &#8225;d 1899-1961</text>
         </example>
         <example>
-          <text><strong>046 ## &#8225;s</strong> 1977<br /> 110 2# &#8225;a Double Image (Musical group : 1977-)</text>
+          <text><strong>046 ## &#8225;q</strong> 1977<br /> 110 2# &#8225;a Double Image (Musical group : 1977-)</text>
+        </example>
+	<example>
+          <text><strong>046 ## &#8225;q</strong> 1970 <strong>&#8225;r</strong>1972 <br /> 110 2# &#8225;a Brigham Young University. &#8225;b Department of Education (1970-1972)</text>
         </example>
         <example>
           <text><strong>046 ## &#8225;s</strong> 1925 <strong>&#8225;t</strong> 1979<br /> 100 3# &#8225;a Pahlavi (Dynasty : 1925-1979)</text>
