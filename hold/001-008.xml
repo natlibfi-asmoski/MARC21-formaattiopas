@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
 
 <fields>
-  <modified>27.11.2009</modified>
+  <modified>17.6.2015</modified>
   <controlfields>
     <title>Kontrollikentät 001-008</title>
     <description>Kentät 001-008 sisältävät kontrollinumeroita ja kooditietoa, jota käytetään MARC-varastotietueiden käsittelyssä. Jokaisella kentällä on oma kenttäkoodi hakemistossa ja tietoelementtien merkitys määräytyy niiden merkkipaikan perusteella. Kiinteämittaisissa kentissä ei ole indikaattoreita eikä osakenttäkoodeja.</description>
