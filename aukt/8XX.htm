@@ -35,6 +35,8 @@
          </li>
          <li><a href="#883">883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI)</a> (T)
          </li>
+         <li><a href="#884">884 - KONVERSION TIEDOT </a> (T)
+         </li>
       </ul>
       <hr>
       <h3><a name="856"></a>856 - ELEKTRONISEN AINEISTON SIJAINTI JA KÄYTTÖ (T)
@@ -228,6 +230,42 @@
          <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
          <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
       </ul>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="884"></a>884 - KONVERSION TIEDOT  (T)
+      </h3>
+      <p> Käytetään koneellisesti toisesta metadatarakenteesta konvertoidun MARC-tietueen alkuperän ilmaisemiseen.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Konversiomenetelmä (ET)
+         </li>
+         <li><strong>‡g</strong> - Konversion päivämäärä (ET)
+         </li>
+         <li><strong>‡k</strong> - Alkuperäisen/lähtömetadatan tunniste (ET)
+         </li>
+         <li><strong>‡q</strong> - Konversion tehnyt organisaatio (ET)<br>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.
+         </li>
+         <li><strong>‡u</strong> - URI, Uniform Resource Identifier (ET)
+         </li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>884 ## ‡a</strong> Bibframe to MARC Authority transformation version 1.011<strong>‡g</strong> 20140910<strong>‡k</strong> http://id.example.com/resources/works/5226.rdf <strong>‡q</strong> DLC <strong>‡u</strong> https://github.example.com/ld4l/bibframe2marcproject/tree/a9f03c8f86ffa1c8e2f41cbbec2d396a655a956d/ 
+      </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
       
