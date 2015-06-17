@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>26.2.2013</modified>
+  <modified>17.6.2015</modified>
   <datafields>
     <title>Varasto- ja sijainti- ym. tietojen kentät (841-88X)</title>
     <description>Kentät 841-88X sisältävät tietoelementtejä, jotka kuuluvat olennaisesti MARC 21 bibliografisiin tietoihin ja myös tietoelementtejä, jotka voivat sijaita joko bibliografisissa tietueissa tai erillisissä MARC-muotoisissa varastotietueissa.</description>
@@ -625,7 +625,7 @@
           <name>Konversion tehnyt organisaatio</name>
 	  <description>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
         </subfield>
-	<subfield code="u" repeatable="N">
+	<subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
         </subfield>
       </subfields>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.12.2013</modified>
+  <modified>17.6.2015</modified>
   <datafields>
     <title>Numero- ja koodikentät (01X-04X)</title>
     <description>Vaihtuvamittaiset kentät 010-04X sisältävät kontrolli- ja linkitysnumeroita, tunnuksia sekä koodeja, jotka liittyvät kuvailun kohteeseen.</description>
