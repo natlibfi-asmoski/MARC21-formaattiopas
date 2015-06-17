@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>18.12.2013</modified>
+  <modified>17.6.2015</modified>
   <datafields>
     <title>Numero- ja koodikentät (01X-09X)</title>
     <description>Kentät 010-09X sisältävät kontrolli- ja linkitysnumeroita, luokituksia, koodeja ja muita elementtejä, jotka liittyvät auktoriteettitietueeseen.</description>

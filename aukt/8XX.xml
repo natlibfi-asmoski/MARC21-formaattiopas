@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>26.2.2013</modified>
+  <modified>17.6.2015</modified>
   <datafields>
     <title>Sijainti ja vaihtoehtoinen kirjaimisto (8XX)</title>
     <description>8XX-kentistä vain kentät 856, 880 ja 883 ovat käytössä MARC 21 auktoriteettitietojen formaatissa. Bibliografisten tietojen formaatin vastaavat kentät sisältävät lähes täsmälleen samat tiedot.</description>
@@ -297,7 +297,7 @@
           <name>Konversion tehnyt organisaatio</name>
 	  <description>Koodi otetaan listalta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
         </subfield>
-	<subfield code="u" repeatable="N">
+	<subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
         </subfield>
       </subfields>
