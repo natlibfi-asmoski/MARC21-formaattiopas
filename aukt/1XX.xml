@@ -1530,6 +1530,72 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="348" repeatable="Y">
+      <name>Nuottiaineiston  muoto</name>
+      <description paragraph="1"> Aineistoon sisältyvän nuottikirjoituksen musiikillinen tai fyysinen taitto.</description>
+      <description paragraph="2"> Useat nuottiaineiston muodot samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän <strong>&#8225;a</strong> tai <strong>&#8225;b</strong> toistumina. Eri sanastoista olevat termit merkitään koko kentän toistumiin.</description> 
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Termi nuottiaineiston muodolle aineistossa</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Koodi nuottiaineiston muodolle aineistossa</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>348 ## &#8225;a</strong> vocal score <strong>&#8225;a</strong> piano conductor part <strong>&#8225;a</strong> part </text>
+        </example>
+	<example>
+          <text><strong>348 ## &#8225;a</strong> vocal score <strong>&#8225;b</strong> [code for vocal score] <strong>&#8225;2</strong> [code for source vocabulary] </text>
+        </example>
+	<example>
+          <text><strong>348 ## &#8225;a</strong> piano conductor part <strong>&#8225;b</strong> [code for piano conductor part] <strong>&#8225;2</strong> [code for source vocabulary] </text>
+        </example>
+	<example>
+          <text><strong>348 ## &#8225;a</strong> part <strong>&#8225;b</strong> [code for part] <strong>&#8225;2</strong> [code for source vocabulary] </text>
+        </example>
+	<example>
+          <text><strong>348 ## &#8225;a</strong> score <strong>&#8225;b</strong> [code for score] <strong>&#8225;2</strong> [code for source vocabulary] </text>
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="368" repeatable="Y">
       <name>Henkilön tai yhteisön ominaisuuksia</name>
       <description paragraph="1">Mikä tahansa termi, jolla erotetaan henkilö tai yhteisö muista henkilöistä tai yhteisöistä ja jolle ei ole määritelty erillistä sisältötarkennetta.<br /></description>
