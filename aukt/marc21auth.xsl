@@ -157,8 +157,9 @@ Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       <ul>
         <li><a href="#046">046 - ERIKOISKOODATUT AJANKOHDAT</a> (T)</li>
         <li><a href="#336">336 - SISÄLTÖTYYPPI</a> (T)</li>
+        <li><a href="#348">348 - NUOTTIAINEISTON MUOTO</a> (T)</li>
         <li><a href="#368">368 - HENKILÖN TAI YHTEISÖN OMINAISUUKSIA</a> (T)</li>
-        <li><a href="#370">370 - PAIKANNIMI</a> (T)</li>
+	<li><a href="#370">370 - PAIKANNIMI</a> (T)</li>
         <li><a href="#371">371 - OSOITE</a> (T)</li>
         <li><a href="#372">372 - TOIMINTA-ALA</a> (T)</li>
         <li><a href="#373">373 - YHTEYS RYHMÄÄN</a> (T)</li>
