@@ -35,6 +35,10 @@
         <subfield code="b" repeatable="Y">
           <name>Mediatyypin koodi</name>
         </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero </name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+        </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
           <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em></description>
@@ -86,7 +90,11 @@
         <subfield code="b" repeatable="Y">
           <name>Tallennetyypin koodi</name>
         </subfield>
-        <subfield code="2" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero </name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
           <name>Termin lähde</name>
           <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em></description>
         </subfield>
