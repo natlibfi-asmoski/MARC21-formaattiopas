@@ -1,4 +1,4 @@
-<html>
+﻿<html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta http-equiv="Content-Language" content="fi">
@@ -18,7 +18,7 @@
       </center>
       
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 17.6.2015.<br>
+               Päivitetty viimeksi 24.3.2016.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Otsikkomuotojen kentät (1XX ja 3XX)</h2>
@@ -65,6 +65,8 @@
          <li><a href="#046">046 - ERIKOISKOODATUT AJANKOHDAT</a> (T)
          </li>
          <li><a href="#336">336 - SISÄLTÖTYYPPI</a> (T)
+         </li>
+         <li><a href="#348">348 - NUOTTIAINEISTON MUOTO</a> (T)
          </li>
          <li><a href="#368">368 - HENKILÖN TAI YHTEISÖN OMINAISUUKSIA</a> (T)
          </li>
@@ -1245,6 +1247,8 @@
          </li>
          <li><strong>‡b</strong> - Sisältötyypin koodi (T)
          </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
          <li><strong>‡2</strong> - Päiväyksen muodon lähde (ET)<br>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em></li>
          <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
          </li>
@@ -1255,6 +1259,56 @@
       <p><strong>336 ## ‡a</strong> performed music <strong>‡2</strong> marccontent
       </p>
       <p><strong>336 ## ‡b</strong> txt <strong>‡2</strong> marccontent <strong>‡3</strong> liner notes
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="348"></a>348 - NUOTTIAINEISTON  MUOTO (T)
+      </h3>
+      <p> Aineistoon sisältyvän nuottikirjoituksen musiikillinen tai fyysinen taitto.</p>
+      <p> Useat nuottiaineiston muodot samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän <strong>‡a</strong> tai <strong>‡b</strong> toistumina. Eri sanastoista olevat termit merkitään koko kentän toistumiin.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Termi nuottiaineiston muodolle aineistossa (T)
+         </li>
+         <li><strong>‡b</strong> - Koodi nuottiaineiston muodolle aineistossa (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>348 ## ‡a</strong> vocal score <strong>‡a</strong> piano conductor part <strong>‡a</strong> part 
+      </p>
+      <p><strong>348 ## ‡a</strong> vocal score <strong>‡b</strong> [code for vocal score] <strong>‡2</strong> [code for source vocabulary] 
+      </p>
+      <p><strong>348 ## ‡a</strong> piano conductor part <strong>‡b</strong> [code for piano conductor part] <strong>‡2</strong> [code for source vocabulary] 
+      </p>
+      <p><strong>348 ## ‡a</strong> part <strong>‡b</strong> [code for part] <strong>‡2</strong> [code for source vocabulary] 
+      </p>
+      <p><strong>348 ## ‡a</strong> score <strong>‡b</strong> [code for score] <strong>‡2</strong> [code for source vocabulary] 
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
