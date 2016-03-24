@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>17.6.2015</modified>
+  <modified>24.3.2016</modified>
   <datafields>
     <title>Otsikkomuotojen kentät (1XX ja 3XX)</title>
     <description>Kentät 100-185 sisältävät nimiä, yhtenäistettyjä nimekkeitä ja termejä, joita käytetään otsikkomuotoina tai otsikkomuotojen lisämääreinä. Tavallisesti ne on muodostettu yleisesti hyväksyttyjen luettelointisääntöjen ja asiasanastojen käytäntöjen mukaisesti. MARC 21 -auktoriteettitietueissa <strong>otsikkomuoto</strong> sisältyy kenttiin 1XX, 4XX tai 5XX, joihin on tallennettu tiedon tallennuksessa ja tiedonhaussa tai auktoriteettitiedoston järjestämisessä käytetty nimen, nimekkeen tai termin muoto. Otsikkomuotojen 1XX-kenttien sekä 4XX/5XX-viittauskenttien osakenttärakenteet ovat yhtenäiset.</description>
@@ -1505,7 +1505,7 @@
         <subfield code="b" repeatable="Y">
           <name>Sisältötyypin koodi</name>
         </subfield>
-	<subfield code="0" repeatable="Y">
+        <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
           <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -1531,9 +1531,6 @@
         </example>
         <example>
           <text><strong>336 ## &#8225;b</strong> txt <strong>&#8225;2</strong> marccontent <strong>&#8225;3</strong> liner notes</text>
-        </example>
-	<example>
-          <text><strong>336 ## &#8225;a</strong> performed music <strong>&#8225;b</strong> prm <strong>&#8225;0</strong> (uri)http://id.loc.gov/vocabulary/contentTypes/prm <strong>&#8225;2</strong> rdacontent</text>
         </example>
       </examples>
     </datafield>
@@ -1603,6 +1600,7 @@
         </example>
       </examples>
     </datafield>
+
     <datafield tag="368" repeatable="Y">
       <name>Henkilön tai yhteisön ominaisuuksia</name>
       <description paragraph="1">Mikä tahansa termi, jolla erotetaan henkilö tai yhteisö muista henkilöistä tai yhteisöistä ja jolle ei ole määritelty erillistä sisältötarkennetta.<br /></description>

@@ -87,8 +87,8 @@
         <subfield code="u" repeatable="Y">
           <name>URI, Uniform Resource Identifier</name>
         </subfield>
-	<subfield code="w" repeatable="Y">
-          <name>Bibliografisen tietueen kontrollinumero</name>
+        <subfield code="w" repeatable="Y">
+          <name>Tietueen kontrollinumero</name>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -142,14 +142,8 @@
         <example>
           <text><strong>670 ##&#8225;a</strong>Eicher, D.J. Beyond the solar system, c1992:<strong>&#8225;b</strong>t.p. (Astronomy library)</text>
         </example>
-	<example>
-          <text><strong>670 ##&#8225;a</strong>Work cat: Year of the dunk, 2015<strong>&#8225;w</strong>(DLC)2014041716</text>
-        </example>
-	<example>
-          <text><strong>670 ##&#8225;a</strong>Bloom, H. Kabbalah and criticism, c1975<strong>&#8225;w</strong>(DLC)75012820<strong>&#8225;w</strong>(OCoLC)1339798</text>
-        </example>
-	<example>
-          <text><strong>670 ##&#8225;a</strong>Our soldier boys in khaki o'er in France, &#169;1918:<strong>&#8225;b</strong>t.p. (G. Irvin Snyder)<strong>&#8225;w</strong>(DLC)2014561136<strong>&#8225;w</strong>(OCoLC)899258216</text>
+        <example>
+          <text><strong>670 ##&#8225;a</strong>Work cat: Year of the dunk, 2015<strong>&#8225;w</strong>(DLC)20140141716</text>
         </example>
       </examples>
     </datafield>
