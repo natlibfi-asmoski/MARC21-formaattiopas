@@ -60,6 +60,8 @@
          </li>
          <li><a href="#347">347 - DIGITAALISEN TIEDOSTON OMINAISUUDET</a> (T)
          </li>
+         <li><a href="#348">348 - NUOTTIAINEISTON  MUOTO</a> (T)
+         </li>
          <li><a href="#351">351 - AINEISTON JÄRJESTYSPERIAATTEET</a> (T)
          </li>
          <li><a href="#352">352 - DIGITAALINEN GRAAFINEN ESITYS</a> (T)
@@ -358,6 +360,8 @@
          </li>
          <li><strong>‡b</strong> - Sisältötyypin koodi (T)
          </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
          <li><strong>‡2</strong> - Koodin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em>.
          </li>
          <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
@@ -372,11 +376,13 @@
       </p>
       <p><strong>336 ## ‡b</strong> txt <strong>‡2</strong> marccontent <strong>‡3</strong> liner notes
       </p>
+      <p><strong>336 ## ‡a</strong> performed music <strong>‡b</strong> prm <strong>‡0</strong> (uri)http://id.loc.gov/vocabulary/contentTypes/prm <strong>‡2</strong> rdacontent
+      </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
       <h3><a name="337"></a>337 - MEDIATYYPPI (T)
       </h3>
-      <p>Mediatyyppi ilmaisee yleistermin (tyypin) välineelle, jota tarvitaan julkaisun sisällön katsomiseen, soittamiseen tms.  Käytetään
+      <p>Mediatyyppi ilmaisee yleistermin (tyypin) välineelle, jota tarvitaan julkaisun sisällön katsomiseen, soittamiseen tms. Käytetään
          vaihtoehtoisesti tai yhdessä mediatyyppikoodin 007/00 (Aineistoluokka) kanssa. Kentässä 337 on mahdollista ilmoittaa tarkka
          mediatyyppi tai mediatyyppi joltakin koodilistalta.
       </p>
@@ -403,6 +409,8 @@
          </li>
          <li><strong>‡b</strong> - Mediatyypin koodi (T)
          </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
          <li><strong>‡2</strong> - Koodin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em>.
          </li>
          <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
@@ -416,6 +424,8 @@
       <p><strong>337 ## ‡a</strong> audio <strong>‡2</strong> marcmedia
       </p>
       <p><strong>337 ## ‡b</strong> u <strong>‡2</strong> marcmedia <strong>‡3</strong> liner notes
+      </p>
+      <p><strong>337 ## ‡a</strong> audio <strong>‡3b</strong> s <strong>‡0</strong> (uri)http://id.loc.gov/vocabulary/mediaTypes/s <strong>‡2</strong> rdamedia 
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
@@ -448,6 +458,8 @@
          </li>
          <li><strong>‡b</strong> - Tallennetyypin koodi (T)
          </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
          <li><strong>‡2</strong> - Koodin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/genre-form.html">Genre/Form Code and Term Source Codes</a></em>.
          </li>
          <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
@@ -461,6 +473,8 @@
       <p><strong>338 ## ‡a</strong> audio disc <strong>‡2</strong> marccarrier
       </p>
       <p><strong>338 ## ‡b</strong> sd <strong>‡2</strong> marccarrier
+      </p>
+      <p><strong>338 ## ‡a</strong> audio disc <strong>‡b</strong> sd <strong>‡0</strong> (uri)http://id.loc.gov/vocabulary/carriers/sd <strong>‡2</strong> radcarrier
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
@@ -513,7 +527,7 @@
          </li>
          <li><strong>‡o</strong> - Polariteetti (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).
          </li>
@@ -725,6 +739,9 @@
       <h3><a name="344"></a>344 - ÄÄNEN OMINAISUUDET (T)
       </h3>
       <p>Tekniset tiedot äänen koodaamiseen aineistossa.</p>
+      <p>Useat termit samasta sanastosta voidaan merkitä samaan kenttään osakenttien toistumina. Eri sanastoista olevat termit merkitään
+         koko kentän toistumiin.
+      </p>
       <h4>Indikaattorit</h4>
       <ul>
          <li>Ensimmäinen - Määrittelemätön
@@ -758,7 +775,7 @@
          </li>
          <li><strong>‡h</strong> - Äänentoiston erityisominaisuudet (T)<br>Taajuuskorjaus- ja kohinanvaimennusjärjestelmät
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).
          </li>
@@ -791,6 +808,8 @@
       <h3><a name="345"></a>345 - LIIKKUVAN KUVAN HEIJASTAMISOMINAISUUDET (T)
       </h3>
       <p>Liikkuvan kuvan heijastamiseen liittyvät tekniset tiedot.</p>
+      <p>Useat termit samasta sanastosta voidaan merkitä samaan kenttään osakentän <strong>‡a</strong> toistumina. Eri sanastoista olevat termit merkitään koko kentän toistumiin.
+      </p>
       <h4>Indikaattorit</h4>
       <ul>
          <li>Ensimmäinen - Määrittelemätön
@@ -812,7 +831,7 @@
          </li>
          <li><strong>‡b</strong> - Heijastamisnopeus (T)<br>Nopeus, jolla heijastuslaitteen tulee toimia, jotta se voi toistaa liikkuvan kuvan.
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Osakentissä käytettyjen termien lähde, jos ne on otettu kontrolloidusta sanastosta (esim. rda).
          </li>
@@ -833,6 +852,8 @@
       <h3><a name="346"></a>346 - VIDEOTALLENTEEN OMINAISUUDET (T)
       </h3>
       <p>Analogisten videoiden tekninen kuvaus.</p>
+      <p>Useat termit samasta sanastosta voidaan merkitä samaan kenttään osakentän <strong>‡a</strong> tai <strong>‡b</strong> toistumina. Eri sanastoista olevat termit merkitään koko kentän toistumiin.
+      </p>
       <h4>Indikaattorit</h4>
       <ul>
          <li>Ensimmäinen - Määrittelemätön
@@ -854,7 +875,7 @@
          </li>
          <li><strong>‡b</strong> - Lähetysstandardi (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Tiedon lähde (ET)
          </li>
@@ -876,6 +897,9 @@
       </h3>
       <p>Tekstin, kuvan, audion, videon tai muuntyyppisen datan digitaalisen koodauksen tekninen kuvaus. Nämä tiedot voidaan ilmoittaa
          myös kentän 300 (ulkoasutiedot) osakentässä ‡b (muut fyysiset yksityiskohdat).
+      </p>
+      <p>Useat termit samasta sanastosta voidaan merkitä samaan kenttään osakenttien toistumina. Eri sanastoista olevat termit merkitään
+         koko kentän toistumiin.
       </p>
       <h4>Indikaattorit</h4>
       <ul>
@@ -906,7 +930,7 @@
          </li>
          <li><strong>‡f</strong> - Koodattu bittinopeus (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)
          </li>
@@ -931,6 +955,56 @@
       <p><strong>347 ## ‡a</strong> video file <strong>‡b</strong> DVD video <strong>‡e</strong> region 4<strong>‡2</strong> rda
       </p>
       <p><strong>347 ## ‡a</strong> audio file <strong>‡b</strong> MP3 <strong>‡f</strong> 32 kbps <strong>‡2</strong> rda
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="348"></a>348 - NUOTTIAINEISTON  MUOTO (T)
+      </h3>
+      <p> Aineistoon sisältyvän nuottikirjoituksen musiikillinen tai fyysinen taitto.</p>
+      <p> Useat nuottiaineiston muodot samasta sanastosta tai koodilistalta voidaan merkitä samaan kenttään osakentän <strong>‡a</strong> tai <strong>‡b</strong> toistumina. Eri sanastoista olevat termit merkitään koko kentän toistumiin.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Termi nuottiaineiston muodolle aineistossa (T)
+         </li>
+         <li><strong>‡b</strong> - Koodi nuottiaineiston muodolle aineistossa (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Termin lähde (ET)
+         </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>348 ## ‡a</strong> vocal score <strong>‡a</strong> piano conductor part <strong>‡a</strong> part 
+      </p>
+      <p><strong>348 ## ‡a</strong> vocal score <strong>‡b</strong> [code for vocal score] <strong>‡2</strong> [code for source vocabulary] 
+      </p>
+      <p><strong>348 ## ‡a</strong> piano conductor part <strong>‡b</strong> [code for piano conductor part] <strong>‡2</strong> [code for source vocabulary] 
+      </p>
+      <p><strong>348 ## ‡a</strong> part <strong>‡b</strong> [code for part] <strong>‡2</strong> [code for source vocabulary] 
+      </p>
+      <p><strong>348 ## ‡a</strong> score <strong>‡b</strong> [code for score] <strong>‡2</strong> [code for source vocabulary] 
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
@@ -1447,7 +1521,7 @@
          </li>
          <li><strong>‡v</strong> - Tiedonlähde (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Määrittää osakentissä ‡c, ‡f ja/tai ‡g olevaa kontrolloidun sanaston termiä. Osakenttä ‡2 merkitään vastaavan osakentän perään.
             Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
@@ -1522,7 +1596,7 @@
       <ul>
          <li><strong>‡a</strong> - Teoksen muoto (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
          </li>
@@ -1568,7 +1642,7 @@
          </li>
          <li><strong>‡v</strong> - Tiedonlähde (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.
          </li>
@@ -1776,7 +1850,7 @@
          </li>
          <li><strong>‡n</strong> - Väestöryhmän koodi (ET)<br>Koodi väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien ‡a ja ‡b termit ja koodit kuuluvat.
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin/koodin lähde (ET)<br>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em> tai <em><a href="http://www.loc.gov/standards/sourcelist/target-audience.html">Target Audience Code and Term Source Codes</a></em>.
          </li>
@@ -1844,7 +1918,7 @@
          </li>
          <li><strong>‡n</strong> - Väestöryhmän koodi (ET)<br>Koodi väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien ‡a ja ‡b termit ja koodit kuuluvat.
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin/koodin lähde (ET)<br>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>.
          </li>
@@ -1906,7 +1980,7 @@
       <ul>
          <li><strong>‡a</strong> - Luomisaika (T)
          </li>
-         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi sivulta: <em><a href="http://www.loc.gov/standards/sourcelist/temporal.html">Temporal Term Source Codes</a></em>.
          </li>
