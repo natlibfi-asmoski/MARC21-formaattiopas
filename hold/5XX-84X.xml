@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21hold.xsl"?>
 
 <fields>
-  <modified>18.12.2013</modified>
+  <modified>24.3.2016</modified>
   <datafields>
     <title>Huomautuskentät (3XX &amp; 5XX &amp; 84X)</title>
     <description>Kentät 337-338, 506-583 ja 841-845 sisältävät huomautuksia varastotiedoissa tarkoitetun bibliografisen kohteen säilytyksestä, käytöstä, ulkoasusta jne.</description>
