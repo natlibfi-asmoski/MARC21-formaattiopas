@@ -295,6 +295,9 @@
               <name>Suorakäyttö, online</name>
               <description> Palvelimella sijaitseva aineisto, jota käytetään tietoverkon kautta. Esim. elektroniset aikakauslehdet ja sähkökirjat.</description>
             </value>
+	    <value code="s">
+              <name>Itsenäinen laite</name>
+            </value>
             <value code="u">
               <name>Määrittelemätön</name>
             </value>
@@ -2777,6 +2780,9 @@
               <name>Rulla</name>
               <description> Mekaaniselle pianolle tms.</description>
             </value>
+	     <value code="r">
+              <name>Suorakäyttö, online</name>
+            </value>
             <value code="s">
               <name>Äänikasetti</name>
               <description> Sisältää kaksi kelaa.</description>
@@ -2839,6 +2845,9 @@
             </value>
             <value code="m">
               <name>3 3/4 tuumaa sekunnissa</name>
+            </value>
+	    <value code="n">
+              <name>Soveltumaton</name>
             </value>
             <value code="o">
               <name>7 1/2 tuumaa sekunnissa</name>
@@ -3101,6 +3110,9 @@
             <value code="m">
               <name>Muovi ja metalli</name>
               <description> Esim. CD-levy (metallifolio muovin päällä).</description>
+            </value>
+            <value code="n">
+              <name>Soveltumaton</name>
             </value>
             <value code="p">
               <name>Muovi</name>
