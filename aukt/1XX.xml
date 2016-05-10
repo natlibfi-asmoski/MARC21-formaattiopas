@@ -2439,7 +2439,7 @@
           <name>Kaksintava soitin/lauluääni</name>
         </subfield>
         <subfield code="e" repeatable="Y">
-          <name>Yhtyeiden lukumäärä</name>
+          <name>Samantyyppisten yhtyeiden lukumäärä</name>
         </subfield>
 	<subfield code="n" repeatable="Y">
           <name>Yksittäisten soitinten/lauluäänten lukumäärä</name>
@@ -2447,10 +2447,16 @@
         <subfield code="p" repeatable="Y">
           <name>Vaihtoehtoinen esityskokoonpano</name>
         </subfield>
+	<subfield code="r" repeatable="N">
+          <name>Yhtyeiden kanssa esiintyvien solistien kokonaismäärä</name>
+        </subfield>
 	<subfield code="s" repeatable="N">
           <name>Soitinten/lauluäänten kokonaismäärä</name>
         </subfield>
-        <subfield code="v" repeatable="Y">
+        <subfield code="t" repeatable="N">
+          <name>Yhtyeiden kokonaismäärä</name>
+        </subfield>
+	<subfield code="v" repeatable="Y">
           <name>Huomautus</name>
         </subfield>
         <subfield code="0" repeatable="Y">
@@ -2481,10 +2487,19 @@
           <text><strong>382 0# &#8225;b</strong> Huilu <strong>&#8225;a</strong> orkesteri</text>
         </example>
 	<example>
-          <text><strong>382 01 &#8225;a</strong> harpsichord <strong>&#8225;n</strong> 1 <strong>&#8225;b</strong> piano <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> chamber orchestra <strong>&#8225;e</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
+          <text><strong>382 01 &#8225;a</strong> Harpsichord <strong>&#8225;n</strong> 1 <strong>&#8225;b</strong> piano <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> chamber orchestra <strong>&#8225;e</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
         </example>
 	<example>
-          <text><strong>382 01 &#8225;a</strong> violin <strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> soprano voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> alto voice <strong>&#8225;n</strong> 1<strong>&#8225;a</strong> tenor voice <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> bass voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 2 <strong>&#8225;a</strong> continuo <strong>&#8225;n</strong> 1 <strong>&#8225;2</strong> lcmpt</text>
+          <text><strong>382 01 &#8225;a</strong> Violin <strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> soprano voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> alto voice <strong>&#8225;n</strong> 1<strong>&#8225;a</strong> tenor voice <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> bass voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 2 <strong>&#8225;a</strong> continuo <strong>&#8225;n</strong> 1 <strong>&#8225;2</strong> lcmpt</text>
+        </example>
+	<example>
+          <text><strong>382 01 &#8225;b</strong> Speaker <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> mezzo-soprano voice<strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> baritone voice <strong>&#8225;n</strong> 1<strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 1 <strong>&#8225;a</strong> orchestra <strong>&#8225;e</strong> 1 <strong>&#8225;r</strong> 3 <strong>&#8225;t</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
+        </example>
+	<example>
+          <text><strong>382 01 &#8225;b</strong> Soprano voice <strong>&#8225;n</strong> 3 <strong>&#8225;b</strong> alto voice<strong>&#8225;n</strong> 2 <strong>&#8225;b</strong> tenor voice <strong>&#8225;n</strong> 1<strong>&#8225;b</strong> baritone voice <strong>&#8225;n</strong> 1 <strong>&#8225;b</strong> bass voice<strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 2 <strong>&#8225;v</strong> SATB, SATB <strong>&#8225;a</strong> children's chorus <strong>&#8225;e</strong> 1 <strong>&#8225;a</strong> orchestra <strong>&#8225;e</strong> 1 <strong>&#8225;r</strong> 8 <strong>&#8225;t</strong> 4 <strong>&#8225;2</strong> lcmpt</text>
+        </example>
+	<example>
+          <text><strong>382 01 &#8225;a</strong> Mixed chorus <strong>&#8225;e</strong> 2 <strong>&#8225;v</strong> SATB, SATB <strong>&#8225;t</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
         </example>
       </examples>
     </datafield>
