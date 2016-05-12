@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.12.2014</modified>
+  <modified>13.5.2016</modified>
   <datafields>
     <title>Lisäkirjauskentät (70X-75X)</title>
     <description>Kentät 700-75X sisältävät nimiä ja/tai nimekkeitä ja/tai termejä, joilla bibliografinen tietue halutaan tarjota haettavaksi ja joita ei ole tallennettu pääkirjauksena (1XX), asiasanana (6XX), sarjamerkintönä (4XX), sarjalisäkirjauksena (8XX) tai nimekkeenä (20X-24X).</description>
@@ -849,12 +849,12 @@
           <name>Käyttöjärjestelmä</name>
         </subfield>
 	<subfield code="0" repeatable="Y">
-          <name>Linkitys</name>
-          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
 	<subfield code="2" repeatable="N">
-          <name>Linkitys</name>
-          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
+          <name>Asiasanan tai termin lähde</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
