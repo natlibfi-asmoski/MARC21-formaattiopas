@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>13.8.2014</modified>
+  <modified>12.5.2016</modified>
   <controlfields>
     <title>Kontrollikenttä 007</title>
     <controlfield tag="007" type="yleista" repeatable="Y">
@@ -2811,7 +2811,7 @@
         </position>
         <position pos="03">
           <name>Nopeus</name>
-          <description>Levyn soitto/pyörimisnopeus.</description>
+          <description>Levyn soitto/pyörimisnopeus. Koodi on tarkoitettu ainoastaan mekaanisella laitteella käytettävien äänitteiden soittonopeutta varten.</description>
           <values>
             <value code="a">
               <name>16 kierrosta minuutissa</name>
@@ -3088,6 +3088,7 @@
         </position>
         <position pos="10">
           <name>Valmistusmateriaali</name>
+          <description>Äänitteiden valmistamisessa käytetyn materiaalin tyyppi (sekä massatuotannossa että yksittäisissä äänityksissä). Koodi on tarkoitettu ainoastaan mekaanisella laitteella käytettäville äänitteille.</description>
           <values>
             <value code="a">
               <name>Lakkapinnoite</name>

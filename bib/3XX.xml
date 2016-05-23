@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>9.5.2016</modified>
+  <modified>12.5.2016</modified>
   <datafields>
     <title>Fyysisen kuvailun jne. kent‰t (3XX)</title>
     <description>Kent‰t sis‰lt‰v‰t tietoja kuvailun kohteen fyysisist‰ ominaisuuksista, graafisesta ilmiasusta, fyysisist‰ j‰rjestysperiaatteista, ilmestymistiheydest‰ ja turvaluokituksesta. Digitaalisen aineiston referenssi- ja j‰rjest‰mistiedoille on t‰ss‰ myˆs omat kentt‰ns‰.</description>
@@ -66,13 +66,13 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>300 ## &#8225;a</strong> 1 opetustaulu.</text>
+          <text><strong>300 ## &#8225;a</strong> 1 opetustaulu</text>
         </example>
         <example>
           <text><strong>300 ## &#8225;a</strong> 1 videokas. (86 min)</text>
         </example>
         <example>
-          <text><strong>300 ## &#8225;a</strong> 740 s. : <strong>&#8225;b</strong> kuv., kartt., nuott. ; <strong>&#8225;c</strong> 25 cm.</text>
+          <text><strong>300 ## &#8225;a</strong> 740 s. : <strong>&#8225;b</strong> kuv., kartt., nuott. ; <strong>&#8225;c</strong> 25 cm</text>
         </example>
         <example>
           <text><strong>300 ## &#8225;a</strong> 5 nid. (90, 100, 85, 120, 105 s.)</text>
@@ -87,24 +87,21 @@
           <text><strong>300 ## &#8225;a</strong> 1 tekstivihko (119 s.), 1 nuotisto (67 s.), 2 C-kas., 1 videokas. (79 min 20 sek) : <strong>&#8225;b</strong> kuv., nuott.</text>
         </example>
         <example>
-          <text><strong>300 ## &#8225;a</strong> 1 partituuri (30 s.) ; <strong>&#8225;c</strong> 20 cm + <strong>&#8225;e</strong> 16 ‰‰nt‰ ; <strong>&#8225;c</strong> 32 cm.</text>
+          <text><strong>300 ## &#8225;a</strong> 1 partituuri (30 s.) ; <strong>&#8225;c</strong> 20 cm + <strong>&#8225;e</strong> 16 ‰‰nt‰ ; <strong>&#8225;c</strong> 32 cm</text>
         </example>
         <example>
-          <text><strong>300 ## &#8225;a</strong> 1 ‰‰nilevy (20&#8217;00) : <strong>&#8225;b</strong> 33 1/3 kierr./min, stereo.</text>
+          <text><strong>300 ## &#8225;a</strong> 1 ‰‰nilevy (20&#8217;00) : <strong>&#8225;b</strong> 33 1/3 kierr./min, stereo</text>
         </example>
         <example>
-          <text><strong>300 ## &#8225;a</strong> 1 optinen levy (CD-ROM) ; <strong>&#8225;c</strong> 12 cm + <strong>&#8225;e</strong> ohjevihko.</text>
+          <text><strong>300 ## &#8225;a</strong> 1 optinen levy (CD-ROM) ; <strong>&#8225;c</strong> 12 cm + <strong>&#8225;e</strong> ohjevihko</text>
         </example>
         <example>
           <text><strong>300 ## &#8225;a</strong> 160 slides : <strong>&#8225;b</strong> col. ; <strong>&#8225;c</strong> 2 x 2 in.</text>
         </example>
         <example>
-          <text><strong>300 ## &#8225;a</strong> diary <strong>&#8225;a</strong> 1 <strong>&#8225;f</strong> volume <strong>&#8225;a</strong> (463 <strong>&#8225;f</strong> pages) ; <strong>&#8225;c</strong> 17 cm x 34.5 cm.</text>
+          <text><strong>300 ## &#8225;a</strong> diary <strong>&#8225;a</strong> 1 <strong>&#8225;f</strong> volume <strong>&#8225;a</strong> (463 <strong>&#8225;f</strong> pages) ; <strong>&#8225;c</strong> 17 cm x 34.5 cm</text>
         </example>
-        <example>
-          <text><strong>300 ## &#8225;a</strong> 1 globe : <strong>&#8225;b</strong> col., wood, mounted on brass stand ; <strong>&#8225;c</strong> 12 cm. in diam.</text>
-        </example>
-      </examples>
+       </examples>
     </datafield>
     <datafield tag="306" repeatable="N">
       <name>Kesto</name>
@@ -2120,16 +2117,16 @@
           </values>
         </indicator>
         <indicator num="2">
-          <description>Saatavuus</description>
+          <description>Haettavuus</description>
           <values>
             <value code="#">
               <description>Tieto puuttuu</description>
             </value>
             <value code="0">
-              <description>Tieto ei saatavissa<br />Kentt‰‰ ei indeksoida hakuun.</description>
+              <description>Tieto ei haettavissa.</description>
             </value>
             <value code="1">
-              <description>Tieto saatavissa<br />Kentt‰ indeksoidaan hakuun.</description>
+              <description>Tieto haettavissa.</description>
             </value>
           </values>
         </indicator>

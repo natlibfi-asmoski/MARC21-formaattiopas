@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>17.6.2015</modified>
+  <modified>12.5.2016</modified>
   <datafields>
     <title>Numero- ja koodikent‰t (01X-04X)</title>
     <description>Vaihtuvamittaiset kent‰t 010-04X sis‰lt‰v‰t kontrolli- ja linkitysnumeroita, tunnuksia sek‰ koodeja, jotka liittyv‰t kuvailun kohteeseen.</description>
@@ -772,7 +772,7 @@
           <description>Julkaisijan tunnuksen tyyppi</description>
           <values>
             <value code="0">
-              <description><em>Tuotenumero</em></description>
+              <description><em>Tuotenumero</em><br /> Julkaisijan antama ‰‰nitteen tunnusnumero.</description>
             </value>
             <value code="1">
               <description><em>Matriisin numero</em><br /> ƒ‰nitteen valmistuksessa k‰ytetyn matriisin numero.</description>
@@ -2175,10 +2175,10 @@
           <name>Muokkausp‰iv‰m‰‰r‰</name>
         </subfield>
         <subfield code="k" repeatable="N">
-          <name>Tietueen aloitus- tai luontip‰iv‰m‰‰r‰</name>
+          <name>Aineiston luomisp‰iv‰m‰‰r‰ tai luomisen aloitusp‰iv‰m‰‰r‰</name>
         </subfield>
         <subfield code="l" repeatable="N">
-          <name>Tietueen luomisen lopetusp‰iv‰m‰‰r‰</name>
+          <name>Aineiston luomisen lopetusp‰iv‰m‰‰r‰</name>
         </subfield>
         <subfield code="m" repeatable="N">
           <name>Voimassaoloajan alkup‰iv‰m‰‰r‰</name>
