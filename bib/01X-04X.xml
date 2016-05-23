@@ -2175,10 +2175,10 @@
           <name>Muokkausp‰iv‰m‰‰r‰</name>
         </subfield>
         <subfield code="k" repeatable="N">
-          <name>Aineiston luomisp‰iv‰m‰‰r‰ tai luomisen aloitusp‰iv‰m‰‰r‰</name>
+          <name>Aineiston synty- tai aloitusaika</name>
         </subfield>
         <subfield code="l" repeatable="N">
-          <name>Aineiston luomisen lopetusp‰iv‰m‰‰r‰</name>
+          <name>Aineiston lopullinen valmistumisaika</name>
         </subfield>
         <subfield code="m" repeatable="N">
           <name>Voimassaoloajan alkup‰iv‰m‰‰r‰</name>
