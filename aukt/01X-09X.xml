@@ -868,10 +868,10 @@
     <datafield tag="046" repeatable="Y">
       <name>Erikoiskoodatut ajankohdat</name>
       <description paragraph="1">Ajankohdat, jotka liittyvät tietueessa kuvailtuun entiteettiin. Näitä ovat:</description>
-      <description paragraph="2"><a><em>Henkilön nimi:</em> syntymäaika, kuolinaika ja aika tai aikaväli, jolloin henkilö on toiminut aktiivisesti.</a></description>
-      <description paragraph="3"><a><em>Yhteisön nimi:</em> aika tai aikaväli, jolloin konferenssi tms. on pidetty, tai muu yhteisöön liittyvä ajankohta (esim. perustamisaika, lopettamisaika tai ajanjakso, jolloin yhteisö on toiminut aktiivisesti).</a></description>
-      <description paragraph="4"><a><em>Suvun nimi:</em> suvun nimeen liittyvä ajankohta.</a></description>
-      <description paragraph="5"><a><em>Teos tai ekspressio:</em> katso osakenttä &#8225;k (Teoksen synty- tai aloitusaika).</a></description>
+      <description paragraph="2"><em>Henkilön nimi:</em> syntymäaika, kuolinaika ja aika tai aikaväli, jolloin henkilö on toiminut aktiivisesti.</description>
+      <description paragraph="3"><em>Yhteisön nimi:</em> aika tai aikaväli, jolloin konferenssi tms. on pidetty, tai muu yhteisöön liittyvä ajankohta (esim. perustamisaika, lopettamisaika tai ajanjakso, jolloin yhteisö on toiminut aktiivisesti).</description>
+      <description paragraph="4"><em>Suvun nimi:</em> suvun nimeen liittyvä ajankohta.</description>
+      <description paragraph="5"><em>Teos tai ekspressio:</em> katso osakenttä &#8225;k (Teoksen synty- tai aloitusaika).</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
