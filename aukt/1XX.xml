@@ -1558,10 +1558,10 @@
       </indicators>
       <subfields>
         <subfield code="a" repeatable="Y">
-          <name>Termi nuottiaineiston muodolle aineistossa</name>
+          <name>Termi nuottiaineiston muodolle</name>
         </subfield>
         <subfield code="b" repeatable="Y">
-          <name>Koodi nuottiaineiston muodolle aineistossa</name>
+          <name>Koodi nuottiaineiston muodolle</name>
         </subfield>
         <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
