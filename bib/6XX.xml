@@ -705,6 +705,110 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="647" repeatable="Y">
+      <name>Tapahtuman nimi asiasanana</name>
+      <indicators>
+	<indicator num="1">
+          <description>M‰‰rittelem‰tˆn</description>
+          <values>
+            <value code="#">
+              <description>M‰‰rittelem‰tˆn</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Asiasanasto<br /> Asiasanasto tai auktoriteettitiedosto, josta asiasana on per‰isin.</description>
+          <values>
+            <value code="0">
+              <description><a href="http://authorities.loc.gov/">Library of Congress Subject Headings</a> (LCSH)</description>
+            </value>
+            <value code="1">
+              <description>LC subject headings for children's literature</description>
+            </value>
+            <value code="2">
+              <description><a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings</a> (MeSH)</description>
+            </value>
+            <value code="3">
+              <description><a href="http://www.nal.usda.gov/">National Agricultural Library subject authority file</a> (NAL)</description>
+            </value>
+            <value code="4">
+              <description>Asiasanastoa ei ole m‰‰ritelty<br /> Asiasana on per‰isin kontrolloidusta asiasanastosta tai auktoriteettitiedostosta, mutta mik‰‰n muista indikaattoriarvoista tai osakent‰n &#8225;2 koodeista ei ole sille soveltuva.</description>
+            </value>
+            <value code="5">
+              <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
+            </value>
+            <value code="6">
+              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">RÈpertoire de vedettes-matiËre</a></description>
+            </value>
+            <value code="7">
+              <description>Asiasanasto m‰‰ritelty osakent‰ss‰ &#8225;2</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tapahtuman nimi</name>
+        </subfield>
+	<subfield code="c" repeatable="Y">
+          <name>Tapahtuman paikka</name>
+        </subfield>
+	<subfield code="d" repeatable="N">
+          <name>Tapahtuman aika</name>
+        </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lis‰m‰‰re</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lis‰m‰‰re</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lis‰m‰‰re</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lis‰m‰‰re</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Asiasanan tai termin l‰hde</name>
+          <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/subject.html"> Subject Heading and Term Source Codes</a></em>.</description>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja j‰rjestysnumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>647 #7 &#8225;a</strong> Bunker Hill, Battle of <strong>&#8225;c</strong> (Boston, Massachusetts :<strong>&#8225;d</strong> 1775)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01710024</text>
+        </example>
+        <example>
+          <text><strong>647 #7 &#8225;a</strong>Coal Strike <strong>&#8225;c</strong> (Great Britain :<strong>&#8225;d</strong> 1984-1985)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst00865219</text>
+        </example>
+        <example>
+          <text><strong>647 #7 &#8225;a</strong>Hurricane Katrina <strong>&#8225;d</strong> (2005)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01755264</text>
+        </example>
+        <example>
+          <text><strong>647 #7 &#8225;a</strong>Famine <strong>&#8225;c</strong> (Ireland :<strong>&#8225;d</strong> 1845-1852)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01353092</text>
+        </example>
+        <example>
+          <text><strong>647 #7 &#8225;a</strong>Eruption of Mount Saint Helens <strong>&#8225;c</strong> (Washington :<strong>&#8225;d</strong> 1980)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01353018</text>
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="648" repeatable="Y">
       <name>Aikaa ilmaiseva termi asiasanana</name>
       <description paragraph="1">Aikaa ilmaiseva, numeerinen termi.</description>
@@ -765,7 +869,7 @@
         </subfield>
         <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero</name>
-          <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Asiasanan tai termin l‰hde</name>
