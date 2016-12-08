@@ -765,11 +765,11 @@
       </examples>
     </datafield>
     <datafield tag="028" repeatable="Y">
-      <name>Julkaisijan tunnus</name>
-      <description paragraph="1">Julkaisijat antavat m‰‰r‰tyn muotoisia numerotunnuksia ‰‰nitteille, nuottijulkaisuille ja videotallenteille. Jos tunnus poikkeaa m‰‰r‰tyst‰ muodosta, se tallennetaan kentt‰‰n <a href="50X-53X.xml#500">500</a> (Yleinen huomautus).</description>
+      <name>Julkaisijan tai jakajan tunnus</name>
+      <description paragraph="1">Julkaisijat ja jakajat antavat m‰‰r‰tyn muotoisia numerotunnuksia ‰‰nitteille, nuottijulkaisuille, muulle musiikkiin liittyv‰lle aineistolle sek‰ videotallenteille. Jos tunnus poikkeaa m‰‰r‰tyst‰ muodosta, se tallennetaan kentt‰‰n <a href="50X-53X.xml#500">500</a> (Yleinen huomautus). Kentt‰‰ voidaan toistaa, jos kappaleeseen liittyy useita tunnuksia.</description>
       <indicators>
         <indicator num="1">
-          <description>Julkaisijan tunnuksen tyyppi</description>
+          <description>Tunnuksen tyyppi</description>
           <values>
             <value code="0">
               <description><em>Tuotenumero</em><br /> Julkaisijan antama ‰‰nitteen tunnusnumero.</description>
@@ -781,13 +781,16 @@
               <description><em>Laatan numero</em><br /> Julkaisija antaa painetuille nuottijulkaisuille.</description>
             </value>
             <value code="3">
-              <description>Muu musiikkinumero</description>
+              <description>Muu musiikin julkaisijan numero</description>
             </value>
             <value code="4">
-              <description><em>Videotallenteen numero</em></description>
+              <description><em>Videotallenteen julkaisijan numero</em></description>
             </value>
             <value code="5">
               <description>Muu julkaisijan tunnus</description>
+            </value>
+	    <value code="6">
+              <description>Jakajan tunnus</description>
             </value>
           </values>
         </indicator>
@@ -811,10 +814,10 @@
       </indicators>
       <subfields>
         <subfield code="a" repeatable="N">
-          <name>Julkaisijan tunnus</name>
+          <name>Julkaisijan tai jakajan tunnus</name>
         </subfield>
         <subfield code="b" repeatable="N">
-          <name>Julkaisija</name>
+          <name>Julkaisija tai jakaja </name>
         </subfield>
 	<subfield code="q" repeatable="Y">
 	  <name>Tarkentava tieto</name>
@@ -1448,7 +1451,7 @@
       <subfields>
         <subfield code="a" repeatable="N">
           <name>Varastonumero</name>
-          <description>Myˆs esim. jakajan ja julkaisijan numerot tallennetaan t‰h‰n kentt‰‰n.</description>
+          <description>Myˆs esim. jakajan, julkaisijan ja myyj‰n numerot muulle aineistolle kuin musiikille, musiikkiin liittyv‰lle aineistolle tai av-aineistolle tallennetaan t‰h‰n osakentt‰‰n.</description>
         </subfield>
         <subfield code="b" repeatable="N">
           <name>Varastonumeron antaja, hankintapaikka</name>
@@ -2101,7 +2104,7 @@
     </datafield>
     <datafield tag="046" repeatable="Y">
       <name>Erikoiskoodattu julkaisuaika</name>
-      <description paragraph="1">Kuvailun kohteeseen liittyv‰t julkaisuaikatiedot, joita ei voida muotonsa vuoksi tallentaa merkkipaikkoihin <a href="008.xml#kaikki">008</a>/06-14 (Julkaisuajan tyyppi/julkaisun tila, Julkaisuvuosi 1, Julkaisuvuosi 2). Esimerkkej‰ t‰llaisista ovat vuosiluvut eKr., v‰‰r‰ julkaisuvuosi, luonti- tai muokkausp‰iv‰m‰‰r‰, tai tieto aikav‰list‰ jolloin kuvailun kohde on voimassa. Kun kentt‰‰n 046 tallennetaan vuosilukuja eKr., merkkipaikkaan 008/06 tallennetaan koodi b (Julkaisuvuotta ei annettu, vuosiluku eKr.) ja merkkipaikoissa 008/07-14 on tyhj‰merkkej‰ (########). Kun kentt‰‰n 046 tallennetaan v‰‰ri‰ julkaisuvuosia, merkkipaikkaan 008/06 tallennetaan korjatulle julkaisuvuodelle sopiva koodi ja merkkipaikkoihin 008/07-10 sek‰ 008/11-14 tallennetaan oikeat vuosiluvut.</description>
+      <description paragraph="1">Kuvailun kohteeseen liittyv‰t julkaisuaikatiedot, joita ei voida muotonsa vuoksi tallentaa merkkipaikkoihin <a href="008.xml#kaikki">008</a>/06-14 (Julkaisuajan tyyppi/julkaisun tila, Julkaisuvuosi 1, Julkaisuvuosi 2). Esimerkkej‰ t‰llaisista ovat vuosiluvut eKr., v‰‰r‰ julkaisuvuosi, luonti- tai muokkausp‰iv‰m‰‰r‰, tai tieto aikav‰list‰ jolloin kuvailun kohde on voimassa. Julkaisuaikatiedot voidaan tallentaa kentt‰‰n 046 merkkipaikkojen 008/06-14 lis‰ksi. Kun kentt‰‰n 046 tallennetaan vuosilukuja eKr., merkkipaikkaan 008/06 tallennetaan koodi b (Julkaisuvuotta ei annettu, vuosiluku eKr.) ja merkkipaikoissa 008/07-14 on tyhj‰merkkej‰ (########). Kun kentt‰‰n 046 tallennetaan v‰‰ri‰ julkaisuvuosia, merkkipaikkaan 008/06 tallennetaan korjatulle julkaisuvuodelle sopiva koodi ja merkkipaikkoihin 008/07-10 sek‰ 008/11-14 tallennetaan oikeat vuosiluvut.</description>
       <indicators>
         <indicator num="1">
           <description>M‰‰rittelem‰tˆn</description>
