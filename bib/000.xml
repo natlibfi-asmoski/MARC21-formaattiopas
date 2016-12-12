@@ -230,6 +230,10 @@
               <name>ISBD-v‰limerkitys</name>
               <description> V‰limerkitys noudattaa ISBD-s‰‰ntˆj‰.</description>
             </value>
+	    <value code="n">
+              <name>ei-ISBD, ei ISBD-v‰limerkityst‰</name>
+              <description> Luettelointi ei noudata International Standard Bibliographic Description (ISBD) -s‰‰ntˆj‰ ja v‰limerkityst‰, eik‰ osakent‰n lopussa ei ole ISBD-v‰limerkki‰.</description>
+            </value>
             <value code="u">
               <name>Tuntematon</name>
               <description> K‰ytet‰‰n l‰hetett‰viss‰ tai vastaanotettavissa tietueissa kun sopivaa koodia k‰ytetyille luettelointis‰‰nnˆille ei pystyt‰ m‰‰rittelem‰‰n. Koodia u voidaan k‰ytt‰‰ tietueissa, jotka on konvertoitu muista metadataformaateista kuin MARCista.</description>
