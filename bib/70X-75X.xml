@@ -767,6 +767,9 @@
         <subfield code="d" repeatable="N">
           <name>Kaupunki, kunta</name>
         </subfield>
+	<subfield code="e" repeatable="Y">
+          <name>Funktiotermi</name>
+        </subfield>
         <subfield code="f" repeatable="Y">
           <name>Kaupunginosa, kylä</name>
         </subfield>
@@ -784,7 +787,10 @@
           <name>Asiasanan tai termin lähde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.</description>
         </subfield>
-        <subfield code="6" repeatable="N">
+        <subfield code="4" repeatable="Y">
+          <name>Funktiokoodi</name>
+        </subfield>
+	<subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -810,10 +816,22 @@
           <text><strong>752 ## &#8225;a</strong> United States <strong>&#8225;b</strong> Maryland <strong>&#8225;c</strong> Montgomery County.</text>
         </example>
         <example>
+          <text><strong>752 ## &#8225;a</strong> England <strong>&#8225;d</strong> London, <strong>&#8225;e</strong> publication place.</text>
+        </example>
+	<example>
+          <text><strong>752 ## &#8225;a</strong> Scotland <strong>&#8225;d</strong> Edinburgh, <strong>&#8225;e</strong> manufacture place.</text>
+        </example>
+	<example>
           <text><strong>752 ## &#8225;a</strong> United States <strong>&#8225;b</strong> California <strong>&#8225;c</strong> Los Angeles (County) <strong>&#8225;d</strong> Los Angeles <strong>&#8225;f</strong> Little Tokyo. <strong>&#8225;2</strong> tgn</text>
         </example>
         <example>
           <text><strong>752 ## &#8225;h</strong> Mars <strong>&#8225;h</strong> Valles Marineris. <strong>&#8225;2</strong><em> MARC code for Gazetteer of Planetary Nomenclature</em></text>
+        </example>
+	<example>
+          <text><strong>752 ## &#8225;a</strong> England <strong>&#8225;d</strong> London. <strong>&#8225;4</strong> pup</text>
+        </example>
+	<example>
+          <text><strong>752 ## &#8225;a</strong> Scotland <strong>&#8225;d</strong> Edinburgh. <strong>&#8225;4</strong> mfp</text>
         </example>
       </examples>
     </datafield>
