@@ -309,6 +309,10 @@
           <name>Tuottajan maa</name>
           <description>T‰ss‰ ei k‰ytet‰ maakoodeja. Voi sis‰lt‰‰ lyhenteen [S.l.] kun maa on tuntematon.</description>
         </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. osakent‰n kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
         <subfield code="2" repeatable="N">
           <name>L‰hde</name>
           <description>Osakent‰n &#8225;a tiedon l‰hde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em>.</description>
@@ -328,6 +332,9 @@
         </example>
         <example>
           <text><strong>257 ## &#8225;a</strong> Italia ; Ranska.</text>
+        </example>
+	<example>
+          <text><strong>257 ## &#8225;a</strong> Germany <strong>&#8225;0</strong> http://id.loc.gov/authorities/names/n80125931 <strong>&#8225;2</strong> naf</text>
         </example>
       </examples>
     </datafield>
