@@ -55,9 +55,11 @@ sulkeissa kontrollinumeron antaneen organisaation MARC-koodi, <i>ks.
 <hr>
 <h3><a name="0">&#8225;0 - AUKTORITEETTITIETUEEN KONTROLLINUMERO TAI STANDARDINUMERO</a></h3>
 <p>Vastaavan auktoriteettitietueen kontrollinumero tai standarditunniste kuten International Standard Name Identifier (ISNI).&nbsp; Sitä edeltää sulkeissa 
-kontrollinumeron antaneen organisaation MARC-koodi tai standarditunnisteen lähde, ks. <i><a href="../organisaatiot.htm">Organisaatiot</a></i> ja tunnisteet <i><a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html">Standard Identifier Source Codes</a></i>.</p>
+kontrollinumeron antaneen organisaation MARC-koodi tai standarditunnisteen lähde, ks. <i><a href="../organisaatiot.htm">Organisaatiot</a></i> ja tunnisteet <i><a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html">Standard Identifier Source Codes</a></i>. 
+Tunnisteiden yhteydessä sulkeissa oleva “(uri)” on tarpeeton ja sitä ei tule lisätä, mikäli tunniste on HTTP URI:n muodossa.</p>
 <p>100 1# ‡a Bach, Johann Sebastian. ‡4 aut <b>‡0 (DE-101c)310008891</b></p>
 <p>100 1# ‡a Trollope, Anthony, ‡d 1815-1882. <b>‡0 (isni)1234567899999799</b></p>
+<p>710 2# ‡a California Poets in the Schools (Project), ‡e issuing body, ‡e publisher. <b>‡0 http://id.loc.gov/authorities/names/n85319780</b></p>
 <hr>
 <h3><a name="5"></a>&#8225;5 - ORGANISAATIO, JOHON KENTÄN TIEDOT PÄTEVÄT</h3>
 <p>Osakenttä &#8225;5 sisältää koodin organisaatiolle, joka 
@@ -291,8 +293,23 @@ microfilm reels ; 35 mm. &#8225;f (American periodical series, 1800-1850 : 164-1
 	</blockquote>
 </blockquote>
 <ul>
-	<li><b>x</b> - 
-Yleinen järjestäminen (General sequencing)<br>
+	<li><b>u</b> - Yleinen linkitys, tyyppi määrittelemätön (General linking, type unspecified)<br>
+	Koodia käytetään, kun täsmälliset
+ linkin tyypit eivät sovellu. Koodia ”u” voidaan käyttää oletusarvona, mikäli ei ole tietoa linkin syystä.</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>082 04 &#8225;81\u &#8225;a 779.994346228092 &#8225;q DE-101$222/ger</p>
+		<p>085 ## &#8225;81\u &#8225;b 779</p>
+		<p>085 ## &#8225;81\u &#8225;s 704.949</p>
+		<p>085 ## &#8225;81\u &#8225;s 943</p>
+		<p>085 ## &#8225;81\u &#8225;z 1 &#8225;s 092</p>
+		<p>085 ## &#8225;81\u &#8225;z 2 &#8225;s 4346228</p>
+		<p>245 10 &#8225;a -Der- Bodensee &#8225;b = Lake Constance &#8225;c Holger Spierling ; mit Texten von Iris Lemanczyk ; Übersetzung: Global-Text, Heidelberg, Timothy Gilfoid </p>
+	</blockquote>
+</blockquote>
+<ul>
+	<li><b>x</b> - Yleinen järjestäminen (General sequencing)<br>
 	Koodia käytetään tietueessa linkittämään kenttiä ja osoittamaan niiden 
 järjestystä. Järjestää voidaan esim. palasiin hajotetun pitkän kentän palasia, 
 kenttiä tärkeysjärjestykseen tms. Tämän koodin yhteydessä järjestysnumeron 
