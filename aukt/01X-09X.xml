@@ -1577,6 +1577,57 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="075" repeatable="Y">
+      <name>Entiteetin tyyppi</name>
+      <description paragraph="1">Entiteetin tyyppi, jonka auktoriteettitietue kuvaa kokonaisuutena.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Entiteettitermin tyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Entiteettikoodin tyyppi</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="2" repeatable="Y">
+          <name>Koodin lähde</name>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+         <text><strong>075 ##&#8225;a</strong> Person <strong>&#8225;b</strong> p <strong>&#8225;2</strong> [code for GND general type]</text> 
+        </example>
+	<example>
+         <text><strong>075 ##&#8225;a</strong> Gott <strong>&#8225;b</strong> pxg <strong>&#8225;2</strong> [code for GND specific type]</text> 
+        </example>
+	<example>
+         <text><strong>075 ##&#8225;a</strong> Körperschaft <strong>&#8225;b</strong> b <strong>&#8225;2</strong> [code for GND general type]</text> 
+        </example>
+	<example>
+         <text><strong>075 ##&#8225;a</strong> Projekt <strong>&#8225;b</strong> kip <strong>&#8225;2</strong> [code for GND specific type]</text> 
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="080" repeatable="Y">
       <name>Yleinen kymmenluokitus, udk</name>
       <description paragraph="1">Auktoriteettitietueen 1XX-kenttään liittyvä UDK-luokka.</description>
