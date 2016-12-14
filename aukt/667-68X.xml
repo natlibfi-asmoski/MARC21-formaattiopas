@@ -359,6 +359,54 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="677" repeatable="Y">
+      <name>Huomautus määritelmästä</name>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Määritelmä</name>
+        </subfield>
+	<subfield code="u" repeatable="Y">
+          <name>URI, Uniform Resource Identifier</name>
+        </subfield>
+        <subfield code="v" repeatable="N">
+          <name>Määritelmän lähde</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+      <example>
+          <text><strong>677 ##&#8225;a</strong> Volk in Papua-Neuguinea</text>
+        </example>
+        <example>
+          <text><strong>677 ##&#8225;a</strong> Abstrakte Modelle von Maschinen. Sie dienen in der Theoretischen Informatik als Konstrukt, um gewisse Eigenschaften von Problemen und Algorithmen zu analysieren und zu beweisen <strong>&#8225;v</strong> Wikipedia </text>
+        </example>
+        <example>
+          <text><strong>677 ##&#8225;a</strong> An automaton is a general term for any formal model of computation <strong>&#8225;v</strong> PlanetMath</text>
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="678" repeatable="Y">
       <name>Huomautus elämäkerta- tai historiatiedoista</name>
       <description paragraph="1">Auktoriteettitietueen 1XX-kentän otsikkomuotoon liittyvien olennaisten elämäkerta- tai historiatietojen tiivistelmä. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, lisämääre.</description>
@@ -409,13 +457,13 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>678 ##&#8225;a</strong>M.D., M.R.C.O.G.;<strong>&#8225;a</strong>Dept. of Obstetrics and Gynaecology, Birmingham Maternity Hosp., Queen Elizabeth Medical Center, Edgbaston.</text>
+          <text><strong>678 ##&#8225;a</strong> M.D., M.R.C.O.G.;<strong>&#8225;a</strong> Dept. of Obstetrics and Gynaecology, Birmingham Maternity Hosp., Queen Elizabeth Medical Center, Edgbaston. </text>
         </example>
         <example>
-          <text><strong>678 ##&#8225;a</strong>b. 1928</text>
+          <text><strong>678 ##&#8225;a</strong> b. 1928</text>
         </example>
         <example>
-          <text><strong>678 ##&#8225;a</strong>The Faribault State School and Hospital provided care, treatment, training, and a variety of other services to mentally retarded individuals and their families. It was operated by the State of Minnesota from 1879 to 1998 under different administrative structures and with different names. A more detailed history of the Hospital may be found at<strong>&#8225;u</strong>http://www.mnhs.org/library/findaids/80881.html</text>
+          <text><strong>678 ##&#8225;a</strong> The Faribault State School and Hospital provided care, treatment, training, and a variety of other services to mentally retarded individuals and their families. It was operated by the State of Minnesota from 1879 to 1998 under different administrative structures and with different names. A more detailed history of the Hospital may be found at<strong>&#8225;u</strong> http://www.mnhs.org/library/findaids/80881.html</text>
         </example>
       </examples>
     </datafield>
