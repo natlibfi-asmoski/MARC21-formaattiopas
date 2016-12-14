@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
@@ -89,9 +89,30 @@
             </value>
           </values>
         </position>
-        <position pos="18-19">
+	<position pos="18">
+          <name>Välimerkitys</name>
+          <values>
+            <value code="#">
+              <name>Tieto puuttuu</name>
+            </value>
+            <value code="c">
+              <name>Ei välimerkitystä</name>
+            </value>
+            <value code="i">
+              <name>Välimerkitys</name>
+            </value>
+            <value code="u">
+              <name>Tuntematon</name>
+            </value>
+          </values>
+        </position>
+	<position pos="19">
           <name>Määrittelemätön</name>
-          <description>Jokainen sisältää tyhjämerkin (#)</description>
+          <values>
+            <value code="#">
+              <name>Määrittelemätön</name>
+            </value>
+          </values>
         </position>
         <position pos="20-23">
           <name>Kirjauskartta "Entry map"</name>
