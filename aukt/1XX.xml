@@ -714,6 +714,76 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="147" repeatable="N">
+      <name>Otsikkomuoto - tapahtuman nimi</name>
+      <description paragraph="1">Tapahtuman nimi, jota käytetään otsikkomuotona. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, viittaus ja lisämääre.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tapahtuman nimi</name>
+        </subfield>
+	<subfield code="b" repeatable="Y">
+          <name>Tapahtuman paikka</name>
+        </subfield>
+	<subfield code="d" repeatable="N">
+          <name>Tapahtuman aika</name>
+        </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot</name>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>147 ##&#8225;a</strong> Eruption of Vesuvius <strong>&#8225;c</strong> (Italy :<strong>&#8225;d</strong> 79)</text>
+        </example>
+        <example>
+          <text><strong>147 ##&#8225;a</strong> Iroquois Theater Fire <strong>&#8225;c</strong> (Chicago, Illinois :<strong>&#8225;d</strong> 1903)</text>
+        </example>
+        <example>
+          <text><strong>147 ##&#8225;a</strong> Revolution <strong>&#8225;c</strong> (Armenia :<strong>&#8225;d</strong> 1917-1920)</text>
+        </example>
+	<example>
+          <text><strong>147 ##&#8225;a</strong> Stock Market Crash <strong>&#8225;d</strong> (1929)</text>
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="148" repeatable="N">
       <name>Otsikkomuoto - aikaa ilmaiseva termi</name>
       <description paragraph="1">Aikaa ilmaiseva termi, jota käytetään otsikkomuotona. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre, viittaus, viittaus ja lisämääre.</description>
@@ -2149,7 +2219,7 @@
         </subfield>
         <subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero</name>
-          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
         </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
@@ -2207,6 +2277,10 @@
         <subfield code="l" repeatable="Y">
           <name>Kielen nimi</name>
         </subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
+        </subfield>
         <subfield code="2" repeatable="N">
           <name>Termin lähde</name>
           <description>Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/language.html">Language Code and Term Source Codes</a></em></description>
@@ -2232,6 +2306,9 @@
         </example>
         <example>
           <text><strong>377 ## &#8225;a</strong> nya <strong>&#8225;l</strong> tsewa</text>
+        </example>
+	<example>
+          <text><strong>377 ## &#8225;a</strong> hun <strong>&#8225;0</strong> http://id.loc.gov/vocabulary/languages/hun</text>
         </example>
         <example>
           <text><strong>377 ## &#8225;a</strong> en <strong>&#8225;a</strong> fr <strong>&#8225;2</strong> iso639-1</text>
