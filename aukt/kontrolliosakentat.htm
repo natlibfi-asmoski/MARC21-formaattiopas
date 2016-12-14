@@ -45,7 +45,9 @@ useissa (&#8225;0 ja &#8225;5) tai l‰hes kaikissa (&#8225;6 ja &#8225;8) auktori
 
 <h3><a name="0"></a>&#8225;0 - TIETUEEN KONTROLLINUMERO TAI STANDARDINUMERO</h3>
 <p>Osakentt‰ &#8225;0 sis‰lt‰‰ liittyv‰n auktoriteettitietueen kontrollinumeron tai standarditunnisteen kuten International Standard Name Identifier (ISNI).&nbsp; Sit‰ edelt‰‰ sulkeissa 
-kontrollinumeron antaneen organisaation MARC-koodi tai standarditunnisteen l‰hde, ks. <i><a href="../organisaatiot.htm">Organisaatiot</a></i> ja tunnisteet <i><a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html">Standard Identifier Source Codes</a></i>.</p>
+kontrollinumeron antaneen organisaation MARC-koodi tai standarditunnisteen l‰hde, ks. <i><a href="../organisaatiot.htm">Organisaatiot</a></i> ja 
+tunnisteet <i><a href="http://www.loc.gov/standards/sourcelist/standard-identifier.html">Standard Identifier Source Codes</a></i>. Tunnisteiden yhteydess‰ sulkeissa oleva ì(uri)î on tarpeeton ja 
+sit‰ ei tule lis‰t‰, mik‰li tunniste on HTTP URI:n muodossa.</p>
 <p>710 20 &#8225;a Royal Society of Medicine Services (Great Britain) <b>&#8225;0</b> (DLC)n##86108151#</p>
 <p>511 21 &#8225;a CongrËs europÈen de droit rural <b>&#8225;0</b> (DLC)n##82111965#</p>
 <p>730 #0 &#8225;a Dead Sea scrolls <b>&#8225;0</b> (DLC)n##79071139#</p>
@@ -53,6 +55,7 @@ kontrollinumeron antaneen organisaation MARC-koodi tai standarditunnisteen l‰hde
 <p>024 #7 &#8225;a 8462832856536435 &#8225;2 isni  <i>[Ruth Rendellin ISNI]</i><br>
 100 1# &#8225;a Rendell, Ruth, &#8225;d 1930-<br>
 500 1# &#8225;a Vine, Barbara, &#8225;d 1940- <b>&#8225;0</b> (isni)1422458635730476  <i>[Barbara Vinen ISNI]</i></p>
+<p>380 ## &#8225;a Diaries &#8225;2 lcgft <b>&#8225;0</b> http://id.loc.gov/authorities/genreForms/gf2014026085</p>
 
 <hr>
 <h3><a name="5"></a>&#8225;5 - ORGANISAATIO, JOHON KENTƒN TIEDOT PƒTEVƒT</h3>
@@ -197,11 +200,13 @@ sis‰lt‰v‰t saman linkkinumeron.</p>
 <p>T‰m‰ koodi erotetaan edelt‰vist‰ tiedoista kenoviivalla (\). Koodi osoittaa 
 linkin syyn ja se seuraa linkkinumeroa tai j‰rjestysnumeroa silloin, kun sit‰ on 
 k‰ytetty.</p>
-<p>Osakent‰ss‰ &#8225;8 voidaan k‰ytt‰‰ seuraavaa linkin tyyppi‰ kuvaavaa 
-yksimerkkist‰ koodia:</p>
+<p>Osakent‰ss‰ &#8225;8 voidaan k‰ytt‰‰ seuraavia linkin tyyppi‰ kuvaavia 
+yksimerkkisi‰ koodeja:</p>
 <ul>
 	<li><b>p</b> - Metatiedon alkuper‰ (provenanssi)<br> 
 	K‰ytet‰‰n tietueessa linkitt‰m‰‰n kentt‰ toiseen kentt‰‰n, joka sis‰lt‰‰ tietoa linkitetyn kent‰n metatiedon alkuper‰st‰.</li>
+	<li><b>u</b> - Yleinen linkitys, tyyppi m‰‰rittelem‰tˆn (General linking, type unspecified)<br> 
+	Koodia k‰ytet‰‰n, kun t‰sm‰lliset linkin tyypit eiv‰t sovellu. Koodia îuî voidaan k‰ytt‰‰ oletusarvona, mik‰li ei ole tietoa linkin syyst‰. </li>
 </ul>
 
 <p><a href="#alku">Sivun alkuun</a></p>
