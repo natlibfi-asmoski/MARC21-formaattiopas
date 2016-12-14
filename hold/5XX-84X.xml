@@ -116,6 +116,67 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="347" repeatable="Y">
+      <name>Digitaalisen tiedoston ominaisuudet</name>
+      <description paragraph="1">Tekstin, kuvan, audion, videon tai muuntyyppisen datan digitaalisen koodauksen tekninen kuvaus.</description>
+      <description paragraph="2">Useat termit samasta sanastosta voidaan merkitä samaan kenttään osakenttien toistumina. Eri sanastoista olevat termit merkitään koko kentän toistumiin.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>Tiedoston tyyppi</name>
+        </subfield>
+        <subfield code="b" repeatable="Y">
+          <name>Koodausformaatti</name>
+        </subfield>
+        <subfield code="c" repeatable="Y">
+          <name>Tiedoston koko</name>
+        </subfield>
+        <subfield code="d" repeatable="Y">
+          <name>Resoluutio</name>
+        </subfield>
+        <subfield code="e" repeatable="Y">
+          <name>Alueellinen koodaus</name>
+        </subfield>
+        <subfield code="f" repeatable="Y">
+          <name>Koodattu bittinopeus</name>
+        </subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+        </subfield>
+        <subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>Ks. osakentän kuvaus <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+      </subfields>
+    </datafield>
     <datafield tag="506" repeatable="Y">
       <name>Huomautus käyttörajoituksista</name>
       <description paragraph="1">Tietoa kuvailun kohteen käyttörajoituksista tai rajoitetusta jakelusta.</description>
