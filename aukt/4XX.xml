@@ -598,6 +598,106 @@
         </example>
       </examples>
     </datafield>
+    <datafield tag="447" repeatable="Y">
+      <name>Katso-viittaus - Tapahtuman nimi</name>
+      <description paragraph="1">Käytetään muodostamaan katso-viittaus aikaa ilmaisevasta termistä, jota ei käytetä vahvistetussa otsikkomuodossa. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#147">147</a>.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön</description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön</description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Tapahtuman nimi</name>
+        </subfield>
+	<subfield code="c" repeatable="Y">
+          <name>Tapahtuman paikka</name>
+        </subfield>
+	<subfield code="c" repeatable="N">
+          <name>Tapahtuman aika</name>
+        </subfield>
+	<subfield code="g" repeatable="Y">
+          <name>Muut tiedot </name>
+        </subfield>
+        <subfield code="i" repeatable="Y">
+          <name>Suhdetta kuvaava ilmaus</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="v" repeatable="Y">
+          <name>Muotoa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="w" repeatable="N">
+          <name>Kontrollitiedot</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+          <values>
+            <value code="/0">
+              <name>Erityissuhde</name>
+            </value>
+            <value code="/1">
+              <name>Viittauksen käytön rajoitus</name>
+            </value>
+            <value code="/2">
+              <name>Aikaisempi muoto</name>
+            </value>
+            <value code="/3">
+              <name>Viittausnäyttö</name>
+            </value>
+          </values>
+        </subfield>
+        <subfield code="x" repeatable="Y">
+          <name>Yleinen lisämääre</name>
+        </subfield>
+        <subfield code="y" repeatable="Y">
+          <name>Aikaa ilmaiseva lisämääre</name>
+        </subfield>
+        <subfield code="z" repeatable="Y">
+          <name>Maantieteellinen lisämääre</name>
+        </subfield>
+        <subfield code="4" repeatable="Y">
+          <name>Suhdekoodi</name>
+          <description>ks. <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em></description>
+        </subfield>
+        <subfield code="5" repeatable="Y">
+          <name>Organisaatio, johon kentän tiedot pätevät</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="6" repeatable="N">
+          <name>Linkitys</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
+        </subfield>
+        <subfield code="8" repeatable="Y">
+          <name>Linkki- ja järjestysnumero</name>
+          <description>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></description>
+        </subfield>
+      </subfields>
+      <examples>
+        <example>
+          <text><strong>447 ##&#8225;a</strong>Breed's Hill, Battle of<strong>&#8225;c</strong> (Boston, Massachusetts :<strong>&#8225;d</strong> 1775)</text>
+        </example>
+        <example>
+          <text><strong>447 ##&#8225;a</strong>Potato famine <strong>&#8225;c</strong> (Ireland :<strong>&#8225;d</strong> 1845-1852)</text>
+        </example>
+	<example>
+          <text><strong>447 ##&#8225;a</strong>Subprime Mortgage Crisis <strong>&#8225;d</strong> (2008-2009)</text>
+        </example>
+	<example>
+          <text><strong>447 ##&#8225;a</strong>Sylmar Earthquake <strong>&#8225;c</strong> (California :<strong>&#8225;d</strong> (1971)</text>
+        </example>
+      </examples>
+    </datafield>
     <datafield tag="448" repeatable="Y">
       <name>Katso-viittaus - aikaa ilmaiseva termi</name>
       <description paragraph="1">Käytetään muodostamaan katso-viittaus aikaa ilmaisevasta termistä, jota ei käytetä vahvistetussa otsikkomuodossa. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#148">148</a>.</description>
