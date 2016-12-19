@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>12.5.2016</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Numero- ja koodikent‰t (01X-04X)</title>
     <description>Vaihtuvamittaiset kent‰t 010-04X sis‰lt‰v‰t kontrolli- ja linkitysnumeroita, tunnuksia sek‰ koodeja, jotka liittyv‰t kuvailun kohteeseen.</description>
@@ -766,7 +766,7 @@
     </datafield>
     <datafield tag="028" repeatable="Y">
       <name>Julkaisijan tai jakajan tunnus</name>
-      <description paragraph="1">Julkaisijat ja jakajat antavat m‰‰r‰tyn muotoisia numerotunnuksia ‰‰nitteille, nuottijulkaisuille, muulle musiikkiin liittyv‰lle aineistolle sek‰ videotallenteille. Jos tunnus poikkeaa m‰‰r‰tyst‰ muodosta, se tallennetaan kentt‰‰n <a href="50X-53X.xml#500">500</a> (Yleinen huomautus). Kentt‰‰ voidaan toistaa, jos kappaleeseen liittyy useita tunnuksia.</description>
+      <description paragraph="1">Julkaisijat ja jakajat antavat m‰‰r‰muotoisia numerotunnuksia ‰‰nitteille, nuottijulkaisuille, muulle musiikkiaineistolle sek‰ videotallenteille. Jos tunnus ei ole m‰‰r‰muotoinen, se tallennetaan kentt‰‰n <a href="50X-53X.xml#500">500</a> (Yleinen huomautus). Ensimm‰isen indikaattorin perusteella voidaan tuottaa vakion‰yttˆ, joka kertoo tunnuksen tyypin. Kentt‰‰ voidaan toistaa, jos kappaleeseen liittyy useita tunnuksia.</description>
       <indicators>
         <indicator num="1">
           <description>Tunnuksen tyyppi</description>
@@ -818,6 +818,7 @@
         </subfield>
         <subfield code="b" repeatable="N">
           <name>Julkaisija tai jakaja </name>
+         <description>Huom! Osakenttien j‰rjestys Suomessa poikkeaa alkuper‰isest‰ formaatista: &#8225;b, &#8225;a.</description>
         </subfield>
 	<subfield code="q" repeatable="Y">
 	  <name>Tarkentava tieto</name>

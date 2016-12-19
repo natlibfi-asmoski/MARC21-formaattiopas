@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>17.2.2012</modified>
+  <modified>15.12.2016</modified>
   <leader-directory>
     <title>Nimiö ja hakemisto</title>
     <leader>
@@ -231,7 +231,7 @@
               <description> Välimerkitys noudattaa ISBD-sääntöjä.</description>
             </value>
 	    <value code="n">
-              <name>ei-ISBD, ei ISBD-välimerkitystä</name>
+              <name>Ei-ISBD, ei ISBD-välimerkitystä</name>
               <description> Luettelointi ei noudata International Standard Bibliographic Description (ISBD) -sääntöjä ja välimerkitystä, eikä osakentän lopussa ei ole ISBD-välimerkkiä.</description>
             </value>
             <value code="u">

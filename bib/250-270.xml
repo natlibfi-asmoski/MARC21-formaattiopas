@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>20.6.2013</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Julkaisu- ja jakelutietojen jne. kent‰t (250-270)</title>
     <description>Kent‰t 250-270 sis‰lt‰v‰t painos-, painopaikka-, osoite- ja muut julkaisija-/kustantajatiedot, jotka liittyv‰t bibliografisessa tietueessa kuvailtuun kohteeseen.</description>
@@ -285,7 +285,7 @@
     </datafield>
     <datafield tag="257" repeatable="Y">
       <name>Tuottajan maa</name>
-      <description paragraph="1">Nimi tai lyhenne maalle, jossa liikkuvasta kuvasta koostuvan teoksen tuottajaorganisaation p‰‰toimistot sijaitsevat.</description>
+      <description paragraph="1">Nimi tai lyhenne maalle, jossa aineiston tuottajaorganisaation p‰‰toimistot sijaitsevat.</description>
       <indicators>
         <indicator num="1">
           <description>M‰‰rittelem‰tˆn</description>
@@ -307,7 +307,7 @@
       <subfields>
         <subfield code="a" repeatable="Y">
           <name>Tuottajan maa</name>
-          <description>T‰ss‰ ei k‰ytet‰ maakoodeja. Voi sis‰lt‰‰ lyhenteen [S.l.] kun maa on tuntematon.</description>
+          <description>T‰ss‰ ei k‰ytet‰ maakoodeja. Voi sis‰lt‰‰ lyhenteen [S.l.] kun maa on tuntematon [ei RDA-kuvailussa].</description>
         </subfield>
 	<subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
@@ -327,9 +327,6 @@
         </subfield>
       </subfields>
       <examples>
-        <example>
-          <text><strong>257 ## &#8225;a</strong> [S.l.]</text>
-        </example>
         <example>
           <text><strong>257 ## &#8225;a</strong> Italia ; Ranska.</text>
         </example>

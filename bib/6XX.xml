@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.12.2014</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Asiasanakentät (6XX)</title>
     <description paragraph="1">Kentät 600-662 sisältävät kuvailun kohteen sisältöä ja aihetta kuvaavia kontrolloituja asiasanoja tai hakutermejä, joiden avulla voidaan hakea bibliografisia tietueita. Käytetty asiasanasto merkitään toisen indikaattorin avulla. Jos toisen indikaattorin arvo on 7, osakenttään &#8225;2 merkitään käytetyn asiasanaston MARC-koodi. </description>
@@ -46,7 +46,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -257,7 +257,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -443,7 +443,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -575,7 +575,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -738,7 +738,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -793,19 +793,19 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>647 #7 &#8225;a</strong> Bunker Hill, Battle of <strong>&#8225;c</strong> (Boston, Massachusetts :<strong>&#8225;d</strong> 1775)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01710024</text>
+          <text><strong>647 #7 &#8225;a</strong> Bunker Hill, Battle of <strong>&#8225;c</strong> (Boston, Massachusetts :<strong>&#8225;d</strong> 1775) <strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01710024</text>
         </example>
         <example>
-          <text><strong>647 #7 &#8225;a</strong>Coal Strike <strong>&#8225;c</strong> (Great Britain :<strong>&#8225;d</strong> 1984-1985)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst00865219</text>
+          <text><strong>647 #7 &#8225;a</strong> Coal Strike <strong>&#8225;c</strong> (Great Britain :<strong>&#8225;d</strong> 1984-1985) <strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst00865219</text>
         </example>
         <example>
-          <text><strong>647 #7 &#8225;a</strong>Hurricane Katrina <strong>&#8225;d</strong> (2005)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01755264</text>
+          <text><strong>647 #7 &#8225;a</strong> Hurricane Katrina <strong>&#8225;d</strong> (2005) <strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01755264</text>
         </example>
         <example>
-          <text><strong>647 #7 &#8225;a</strong>Famine <strong>&#8225;c</strong> (Ireland :<strong>&#8225;d</strong> 1845-1852)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01353092</text>
+          <text><strong>647 #7 &#8225;a</strong> Famine <strong>&#8225;c</strong> (Ireland :<strong>&#8225;d</strong> 1845-1852) <strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01353092</text>
         </example>
         <example>
-          <text><strong>647 #7 &#8225;a</strong>Eruption of Mount Saint Helens <strong>&#8225;c</strong> (Washington :<strong>&#8225;d</strong> 1980)<strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01353018</text>
+          <text><strong>647 #7 &#8225;a</strong> Eruption of Mount Saint Helens <strong>&#8225;c</strong> (Washington :<strong>&#8225;d</strong> 1980) <strong>&#8225;2</strong> fast <strong>&#8225;0</strong> (OCoLC)fst01353018</text>
         </example>
       </examples>
     </datafield>
@@ -843,7 +843,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -950,7 +950,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -1107,7 +1107,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>
@@ -1413,7 +1413,7 @@
               <description><a href="http://www.collectionscanada.ca/csh/index-e.html">Canadian Subject Headings</a></description>
             </value>
             <value code="6">
-              <description><a href="http://www.collectionscanada.ca/rvm/index-e.html">Répertoire de vedettes-matière</a></description>
+              <description><a href="http://www.bibl.ulaval.ca/a-propos/repertoire-de-vedettes-matiere">Répertoire de vedettes-matière</a></description>
             </value>
             <value code="7">
               <description>Asiasanasto määritelty osakentässä &#8225;2</description>

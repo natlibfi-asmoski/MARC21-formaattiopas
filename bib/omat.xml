@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>23.5.2016</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Tietokanta- tai järjestelmäkohtaisia omia kenttiä</title>
     <description>Tässä osiossa kuvataan kenttiä, joita on otettu käyttöön Voyager-järjestelmässä sekä yleisten kirjastojen tietokannoissa. Kentät tai osakentät sisältävät numeron 9 eli ovat MARC 21:ssa vapaasti käytettävissä. Kentät eivät ole varsinaisessa suomenkielisessä MARC 21 -formaatissa. </description>
@@ -715,6 +715,117 @@
       <subfields>
         <subfield code="a" repeatable="N">
           <name>Koodi</name>
+        </subfield>
+      </subfields>
+    </datafield>
+    <datafield tag="976" repeatable="Y">
+      <name>Kategoria</name>
+      <description paragraph="1">Käytössä vain Finnan MetaLib-tietueissa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Pääkategoria</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Alakategoria</name>
+        </subfield>
+      </subfields>
+    </datafield>
+        <datafield tag="977" repeatable="Y">
+      <name>Aineistotyyppi</name>
+      <description paragraph="1">Käytössä vain Finnan MetaLib-tietueissa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Aineistotyyppi</name>
+        </subfield>
+       </subfields>
+    </datafield>
+        <datafield tag="979" repeatable="Y">
+      <name>Osakohteet</name>
+      <description paragraph="1">Käytössä vain Finnassa. </description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="N">
+          <name>Osakohdetietueen ID</name>
+        </subfield>
+        <subfield code="b" repeatable="N">
+          <name>Nimeke</name>
+        </subfield>
+        <subfield code="c" repeatable="N">
+          <name>Tekijä</name>
+        </subfield>
+        <subfield code="d" repeatable="N">
+          <name>Muut tekijät</name>
+        </subfield>
+        <subfield code="e" repeatable="N">
+          <name>Yhtenäistetty nimeke</name>
+        </subfield>
+        <subfield code="f" repeatable="N">
+          <name>Kestoaika</name>
+        </subfield>
+        <subfield code="g" repeatable="N">
+          <name>Muut nimekkeet</name>
+        </subfield>
+        <subfield code="h" repeatable="N">
+          <name>Kielet</name>
+        </subfield>
+        <subfield code="i" repeatable="N">
+          <name>Alkuperäiset kielet</name>
+        </subfield>
+        <subfield code="j" repeatable="N">
+          <name>Tekstityskielet</name>
         </subfield>
       </subfields>
     </datafield>
