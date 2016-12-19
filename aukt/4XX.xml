@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>18.12.2014</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Katso-viittausten kentät (4XX)</title>
     <description>Katso-viittausten kenttiä 400-485 käytetään ei-ohjeellisille otsikkomuodoille ja muille varianteille, joita ei ole valittu ohjeellisiksi otsikkomuodoiksi. Yleistä tietoa näistä tietoelementeistä löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.</description>
@@ -600,7 +600,7 @@
     </datafield>
     <datafield tag="447" repeatable="Y">
       <name>Katso-viittaus - Tapahtuman nimi</name>
-      <description paragraph="1">Käytetään muodostamaan katso-viittaus aikaa ilmaisevasta termistä, jota ei käytetä vahvistetussa otsikkomuodossa. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#147">147</a>.</description>
+      <description paragraph="1">Käytetään muodostamaan katso-viittaus tapahtuman nimestä, jota ei käytetä vahvistetussa otsikkomuodossa. Koskee seuraavia tietuelajeja: vahvistettu otsikkomuoto, vahvistettu otsikkomuoto ja lisämääre. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä <a href="1XX.xml#147">147</a>.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -626,7 +626,7 @@
 	<subfield code="c" repeatable="Y">
           <name>Tapahtuman paikka</name>
         </subfield>
-	<subfield code="c" repeatable="N">
+	<subfield code="d" repeatable="N">
           <name>Tapahtuman aika</name>
         </subfield>
 	<subfield code="g" repeatable="Y">

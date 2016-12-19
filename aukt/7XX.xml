@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>18.12.2014</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Linkkikentät (7XX)</title>
     <description>Kenttiin 700-788 tallennetaan tietoja, joiden avulla toisiaan vastaavien otsikkomuotojen automaattinen linkittäminen toisiinsa on mahdollista riippumatta siitä ovatko ne rakenteeltaan saman vai eri muotoisia, samasta vai eri asiasanastosta tai auktoriteettitiedostosta, tai ovatko ne olemassa erillisinä auktoriteettitietueina.</description>

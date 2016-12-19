@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>17.6.2015</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Sijainti ja vaihtoehtoinen kirjaimisto (8XX)</title>
     <description>8XX-kentistä vain kentät 856, 880 ja 883 ovat käytössä MARC 21 auktoriteettitietojen formaatissa. Bibliografisten tietojen formaatin vastaavat kentät sisältävät lähes täsmälleen samat tiedot.</description>
@@ -308,7 +308,7 @@
     </datafield>
     <datafield tag="885" repeatable="Y">
       <name>Tiedot tietueiden vastaavuudesta </name>
-      <description paragraph="1"> Auttaa kuvailijoita tietueiden vastaavuuden varmentamisessa.</description>
+      <description paragraph="1"> Tietoja vastintietueiden hakemisesta (matching). Auttaa kuvailijoita kahden tietueen vastaavuuden todentamisessa.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -330,30 +330,32 @@
       <subfields>
         <subfield code="a" repeatable="N">
           <name>Tiedot vastaavuudesta </name>
+          <description>Termi, koodi tai tunniste, jonka avulla vastintietueiden hakuprosessi tunnistetaan.</description>
           </subfield>
         <subfield code="b" repeatable="N">
           <name>Vastaavuuden tila ja sen varmennus </name>
+          <description>Voidaan merkitä koodimuodossa.</description>
         </subfield>
         <subfield code="c" repeatable="N">
           <name>Luotettavuusarvo</name>
         </subfield>
 	<subfield code="d" repeatable="N">
-          <name>Luontipäivä</name>
+          <name>Luomispäivä</name>
 	  <description>Tallennetaan muodossa vvvvkkpp, ISO 8601.</description>
         </subfield>
 	<subfield code="w" repeatable="Y">
           <name>Tietueen kontrollinumero </name>
-	  <description>Mahdollisesti vastaavan tietueen kontrollinumero, jota edeltää suluissa oleva koodi organisaatiolle, jolta kontrollinumero on peräisin. Organisaation koodina käytetään ISIL-tunnusta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
+	  <description>Mahdollisen vastintietueen kontrollinumero, jota edeltää suluissa oleva organisaatiokoodi. Organisaatiokoodina käytetään ISIL-tunnusta, ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.</description>
         </subfield>
 	<subfield code="x" repeatable="Y">
-          <name>Julkinen huomautus </name>
+          <name>Sisäinen huomautus </name>
         </subfield>
 	<subfield code="z" repeatable="Y">
-          <name>Sisäinen huomautus </name>
+          <name>Julkinen huomautus </name>
         </subfield>
 	<subfield code="0" repeatable="Y">
           <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
-	  <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+	  <description>Mahdollisen vastintietueen kontrollinumero tai standardinumero. Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
         </subfield>
 	<subfield code="2" repeatable="N">
           <name>Koodin lähde </name>
@@ -364,11 +366,7 @@
 	  <description>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.</description>
         </subfield>
       </subfields>
-      <examples>
-        <example>
-          <text><strong>885 ##&#8225;a</strong> GNDIMPTP <strong>&#8225;b</strong> P <strong>&#8225;c</strong> 69.231 <strong>&#8225;0</strong> (DE-588)123158621 <strong>&#8225;0</strong> (DE-101)123158621 <strong>&#8225;2</strong> gnd <strong>&#8225;5</strong> DE-101</text>
-        </example>
-      </examples>
     </datafield>
+
   </datafields>
 </fields>

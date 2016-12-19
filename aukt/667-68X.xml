@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>20.6.2013</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Huomautuskentät (667-68X)</title>
     <description>Yleiset huomautukset tallennetaan kenttään 667 (Sisäinen yleinen huomautus) tai kenttään 680 (Julkinen yleinen huomautus). Muita 667-68X -kenttiä käytetään tarkempiin huomautuksiin. Lukuun ottamatta kenttiä 678 ja 680 huomautuksia ei yleensä kirjoiteta asiakasnäyttöön soveltuvalla tavalla.</description>
@@ -388,7 +388,6 @@
         </subfield>
         <subfield code="v" repeatable="N">
           <name>Määritelmän lähde</name>
-          <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
         </subfield>
         <subfield code="5" repeatable="Y">
           <name>Organisaatio, johon kentän tiedot pätevät</name>

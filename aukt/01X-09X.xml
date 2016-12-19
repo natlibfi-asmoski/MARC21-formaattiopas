@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>17.6.2015</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Numero- ja koodikentät (01X-09X)</title>
     <description>Kentät 010-09X sisältävät kontrolli- ja linkitysnumeroita, luokituksia, koodeja ja muita elementtejä, jotka liittyvät auktoriteettitietueeseen.</description>
@@ -1579,7 +1579,7 @@
     </datafield>
     <datafield tag="075" repeatable="Y">
       <name>Entiteetin tyyppi</name>
-      <description paragraph="1">Entiteetin tyyppi, jonka auktoriteettitietue kuvaa kokonaisuutena.</description>
+      <description paragraph="1">Entiteetin tyyppi, jota auktoriteettitietue kuvaa kokonaisuutena.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön</description>
@@ -1606,7 +1606,7 @@
           <name>Entiteettikoodin tyyppi</name>
         </subfield>
         <subfield code="0" repeatable="Y">
-          <name>Linkitys</name>
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
           <description>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></description>
         </subfield>
         <subfield code="2" repeatable="Y">

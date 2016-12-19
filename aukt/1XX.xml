@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>12.5.2016</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Otsikkomuotojen kentät (1XX ja 3XX)</title>
     <description>Kentät 100-185 sisältävät nimiä, yhtenäistettyjä nimekkeitä ja termejä, joita käytetään otsikkomuotoina tai otsikkomuotojen lisämääreinä. Tavallisesti ne on muodostettu yleisesti hyväksyttyjen luettelointisääntöjen ja asiasanastojen käytäntöjen mukaisesti. MARC 21 -auktoriteettitietueissa <strong>otsikkomuoto</strong> sisältyy kenttiin 1XX, 4XX tai 5XX, joihin on tallennettu tiedon tallennuksessa ja tiedonhaussa tai auktoriteettitiedoston järjestämisessä käytetty nimen, nimekkeen tai termin muoto. Otsikkomuotojen 1XX-kenttien sekä 4XX/5XX-viittauskenttien osakenttärakenteet ovat yhtenäiset.</description>
@@ -1886,7 +1886,7 @@
           <name>Postinumero</name>
         </subfield>
         <subfield code="m" repeatable="Y">
-          <name>Sähköinen osoite</name>
+          <name>Sähköpostiosoite</name>
         </subfield>
         <subfield code="s" repeatable="N">
           <name>Alkamisaika</name>
@@ -2516,7 +2516,7 @@
           <name>Kaksintava soitin/lauluääni</name>
         </subfield>
         <subfield code="e" repeatable="Y">
-          <name>Samantyyppisten yhtyeiden lukumäärä</name>
+          <name>Samantyyppisten yhtyeiden, orkestereiden ja kuorojen lukumäärä</name>
         </subfield>
 	<subfield code="n" repeatable="Y">
           <name>Yksittäisten soitinten/lauluäänten lukumäärä</name>
@@ -2525,13 +2525,13 @@
           <name>Vaihtoehtoinen esityskokoonpano</name>
         </subfield>
 	<subfield code="r" repeatable="N">
-          <name>Yhtyeiden kanssa esiintyvien solistien kokonaismäärä</name>
+          <name>Yhtyeiden, orkestereiden tai kuorojen kanssa esiintyvien solistien kokonaismäärä</name>
         </subfield>
 	<subfield code="s" repeatable="N">
-          <name>Soitinten/lauluäänten kokonaismäärä</name>
+          <name>Esittäjien kokonaismäärä</name>
         </subfield>
         <subfield code="t" repeatable="N">
-          <name>Yhtyeiden kokonaismäärä</name>
+          <name>Yhtyeiden, orkestereiden ja kuorojen kokonaismäärä</name>
         </subfield>
 	<subfield code="v" repeatable="Y">
           <name>Huomautus</name>
@@ -2555,22 +2555,25 @@
       </subfields>
       <examples>
         <example>
-          <text><strong>382 ## &#8225;a</strong> Sekakuoro <strong>&#8225;a</strong> urut</text>
+          <text><strong>382 01 &#8225;a</strong> viulu <strong>&#8225;a</strong> piano <strong>&#8225;s</strong> 2 <strong>&#8225;2</strong> seko </text>
         </example>
         <example>
-          <text><strong>382 ## &#8225;a</strong> Piano</text>
+          <text><strong>382 01 &#8225;a</strong> viulu <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> piano <strong>&#8225;n</strong> 1 <strong>&#8225;s</strong> 2 <strong>&#8225;2</strong> seko </text>
         </example>
         <example>
-          <text><strong>382 0# &#8225;b</strong> Huilu <strong>&#8225;a</strong> orkesteri</text>
+          <text><strong>382 11 &#8225;a</strong> didgerido <strong>&#8225;n</strong> 1 <strong>&#8225;2</strong> seko </text>
         </example>
-	<example>
-          <text><strong>382 0# &#8225;a</strong> Harpsichord <strong>&#8225;n</strong> 1 <strong>&#8225;b</strong> piano <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> chamber orchestra <strong>&#8225;e</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
+        <example>
+          <text><strong>382 01 &#8225;b</strong> huilu <strong>&#8225;a</strong> orkesteri <strong>&#8225;2</strong> seko </text>
         </example>
-	<example>
-          <text><strong>382 0# &#8225;a</strong> Violin <strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> soprano voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> alto voice <strong>&#8225;n</strong> 1<strong>&#8225;a</strong> tenor voice <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> bass voice<strong>&#8225;n</strong> 2 <strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 2 <strong>&#8225;a</strong> continuo <strong>&#8225;n</strong> 1 <strong>&#8225;2</strong> lcmpt</text>
+        <example>
+          <text><strong>382 01 &#8225;a</strong> huilu <strong>&#8225;n</strong> 1 <strong>&#8225;d</strong> piccolo <strong>&#8225;n</strong> 1 <strong>&#8225;s</strong> 2 <strong>&#8225;2</strong> seko </text>
         </example>
-	<example>
-          <text><strong>382 0# &#8225;b</strong> Speaker <strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> mezzo-soprano voice<strong>&#8225;n</strong> 1 <strong>&#8225;a</strong> baritone voice <strong>&#8225;n</strong> 1<strong>&#8225;a</strong> mixed chorus <strong>&#8225;e</strong> 1 <strong>&#8225;a</strong> orchestra <strong>&#8225;e</strong> 1 <strong>&#8225;r</strong> 3 <strong>&#8225;t</strong> 2 <strong>&#8225;2</strong> lcmpt</text>
+        <example>
+          <text><strong>382 01 &#8225;b</strong> sopraano <strong>&#8225;b</strong> tenori <strong>&#8225;a</strong> sekakuoro <strong>&#8225;a</strong> orkesteri <strong>&#8225;r</strong> 2 <strong>&#8225;t</strong>            2 <strong>&#8225;2</strong> seko </text>
+        </example>
+       	<example>
+          <text><strong>382 ## &#8225;a</strong> didgerido <strong>&#8225;v</strong> Didgerido on hallitseva, muita soittimia ei tunnistettu <strong>&#8225;2</strong> seko</text>
         </example>
        </examples>
     </datafield>

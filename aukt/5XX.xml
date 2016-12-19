@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21auth.xsl"?>
 
 <fields>
-  <modified>18.12.2014</modified>
+  <modified>15.12.2016</modified>
   <datafields>
     <title>Katso myös -viittausten kentät (5XX)</title>
     <description>Katso myös -viittausten kenttiä 500-585 käytetään 1XX-kentässä esiintyvään otsikkomuotoon liittyville muille ohjeellisille otsikkomuodoille. Yleistä tietoa näistä tietoelementeistä löytyy osiosta <em><a href="yleista.htm">Viittaukset--yleistä tietoa</a></em>.</description>
