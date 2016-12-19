@@ -18,7 +18,7 @@
       </center>
       
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 17.6.2015.<br>
+               Päivitetty viimeksi 15.12.2016.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Numero- ja koodikentät (01X-09X)</h2>
@@ -74,6 +74,8 @@
          <li><a href="#072">072 - AIHEALUEKOODI</a> (T)
          </li>
          <li><a href="#073">073 - LISÄMÄÄREIDEN KÄYTTÖÄ KUVAAVA KOODI</a> (ET)
+         </li>
+         <li><a href="#075">075 - ENTITEETIN TYYPPI</a> (T)
          </li>
          <li><a href="#080">080 - YLEINEN KYMMENLUOKITUS, UDK</a> (T)
          </li>
@@ -1237,6 +1239,45 @@
       </ul>
       <h4>Esimerkki</h4>
       <p><strong>073 ##‡a</strong>E1<strong>‡a</strong>E2<strong>‡a</strong>E3<strong>‡a</strong>E4<strong>‡a</strong>E6<strong>‡a</strong>E7<strong>‡a</strong>N2<strong>‡z</strong>mesh
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="075"></a>075 - ENTITEETIN TYYPPI (T)
+      </h3>
+      <p>Entiteetin tyyppi, jota auktoriteettitietue kuvaa kokonaisuutena.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Entiteettitermin tyyppi (T)
+         </li>
+         <li><strong>‡b</strong> - Entiteettikoodin tyyppi (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡2</strong> - Koodin lähde (T)
+         </li>
+      </ul>
+      <h4>Esimerkkejä</h4>
+      <p><strong>075 ##‡a</strong> Person <strong>‡b</strong> p <strong>‡2</strong> [code for GND general type]
+      </p>
+      <p><strong>075 ##‡a</strong> Gott <strong>‡b</strong> pxg <strong>‡2</strong> [code for GND specific type]
+      </p>
+      <p><strong>075 ##‡a</strong> Körperschaft <strong>‡b</strong> b <strong>‡2</strong> [code for GND general type]
+      </p>
+      <p><strong>075 ##‡a</strong> Projekt <strong>‡b</strong> kip <strong>‡2</strong> [code for GND specific type]
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>

@@ -18,7 +18,7 @@
       </center>
       
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 18.12.2014.<br>
+               Päivitetty viimeksi 15.12.2016.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Linkkikentät (7XX)</h2>
@@ -38,6 +38,8 @@
          <li><a href="#711">711 - LINKKIKENTTÄ - KOKOUKSEN NIMI</a> (T)
          </li>
          <li><a href="#730">730 - LINKKIKENTTÄ - YHTENÄISTETTY NIMEKE</a> (T)
+         </li>
+         <li><a href="#747">747 - LINKKIKENTTÄ - TAPAHTUMAN NIMI</a> (T)
          </li>
          <li><a href="#748">748 - LINKKIKENTTÄ - AIKAA ILMAISEVA TERMI</a> (T)
          </li>
@@ -631,6 +633,80 @@
       </ul>
       <h4>Esimerkki</h4>
       <p><strong>730 #5‡w</strong>a<strong>‡a</strong>Bible.<strong>‡p</strong>A.T.<strong>‡0</strong>(CaOONL)0004E5217F#
+      </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="747"></a>747 - LINKKIKENTTÄ - TAPAHTUMAN NIMI (T)
+      </h3>
+      <p>Tapahtuman nimi, joka vastaa saman tietueen 147-kentän otsikkomuotoa. Se linkittää otsikkomuotoja järjestelmän sisällä, tai
+         muista asiasanastoista tai auktoriteettitiedostoista. Katso indikaattoreiden ja useimpien osakenttien selitykset kentästä
+         <a href="1XX.htm#147">147</a>.
+      </p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Asiasanasto<br>Asiasanasto tai auktoriteettitiedosto, josta asiasana on peräisin.
+            <ul>
+               <li><strong>0</strong> - Library of Congress Subject Headings (LCSH) / LC name authority file
+               </li>
+               <li><strong>1</strong> - LC subject headings for children's literature
+               </li>
+               <li><strong>2</strong> - Medical Subject Headings (MeSH) / NLM name authority file
+               </li>
+               <li><strong>3</strong> - National Agricultural Library subject authority file (NAL)
+               </li>
+               <li><strong>4</strong> - Asiasanastoa ei ole määritelty
+               </li>
+               <li><strong>5</strong> - Canadian Subject Headings / LAC name authority file
+               </li>
+               <li><strong>6</strong> - Répertoire de vedettes-matière
+               </li>
+               <li><strong>7</strong> - Asiasanasto määritelty osakentässä ‡2
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Tapahtuman nimi (ET)
+         </li>
+         <li><strong>‡c</strong> - Tapahtuman paikka (T)
+         </li>
+         <li><strong>‡d</strong> - Tapahtuman aika (ET)
+         </li>
+         <li><strong>‡g</strong> - Muut tiedot (T)
+         </li>
+         <li><strong>‡i</strong> - Tieto suhteesta (T)
+         </li>
+         <li><strong>‡v</strong> - Muotoa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡w</strong> - Kontrollitiedot (ET)<br>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em><ul>
+               <li><strong>/0</strong> - Linkkinäyttö
+               </li>
+               <li><strong>/1</strong> - Korvaamisen monitahoisuus
+               </li>
+            </ul>
+         </li>
+         <li><strong>‡x</strong> - Yleinen lisämääre (T)
+         </li>
+         <li><strong>‡y</strong> - Aikaa ilmaiseva lisämääre (T)
+         </li>
+         <li><strong>‡z</strong> - Maantieteellinen lisämääre (T)
+         </li>
+         <li><strong>‡0</strong> - Tietueen kontrollinumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em></li>
+         <li><strong>‡2</strong> - Asiasanan tai termin lähde (ET)<br>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></li>
+         <li><strong>‡4</strong> - Suhdekoodi (T)<br>ks. <em><a href="#yleista">Linkkikentät--yleistä tietoa</a></em></li>
+         <li><strong>‡5</strong> - Organisaatio, johon kentän tiedot pätevät (T)<br>ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em></li>
+         <li><strong>‡6</strong> - Linkitys (ET)<br>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></li>
+         <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em></li>
+      </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>747 #7‡a</strong> Bunker Hill, Battle of <strong>‡c</strong> (Boston, Massachusetts :<strong>‡d</strong> 1775) <strong>‡2</strong> fast <strong>‡0</strong> (OCoLC)fst01710024
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
