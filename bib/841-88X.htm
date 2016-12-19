@@ -18,7 +18,7 @@
       </center>
       
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 17.6.2015.<br>
+               Päivitetty viimeksi 15.12.2016.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Varasto- ja sijainti- ym. tietojen kentät (841-88X)</h2>
@@ -88,6 +88,8 @@
          <li><a href="#883">883 - KONEELLISESTI LUODUN METATIEDON ALKUPERÄ (PROVENANSSI)</a> (T)
          </li>
          <li><a href="#884">884 - KONVERSION TIEDOT </a> (T)
+         </li>
+         <li><a href="#885">885 - TIEDOT TIETUEIDEN VASTAAVUUDESTA </a> (T)
          </li>
          <li><a href="#886">886 - TIEDOT VIERAIDEN MARC-FORMAATTIEN KENTISTÄ</a> (T)
          </li>
@@ -579,6 +581,50 @@
       </p>
       <p><strong>884 ## ‡a</strong> Custom MODS to MARC transformation for project A<strong>‡g</strong> 20141208<strong>‡k</strong> druid:ab123cd4567 <strong>‡q</strong>CSt <strong>‡u</strong> http://stanford.example.com/project/a/MODS2MARC_v3.xsl
       </p>
+      <p><a href="#alku">Sivun alkuun</a></p>
+      <hr>
+      <h3><a name="885"></a>885 - TIEDOT TIETUEIDEN VASTAAVUUDESTA  (T)
+      </h3>
+      <p> Tietoja vastintietueiden hakemisesta (matching). Auttaa kuvailijoita kahden tietueen vastaavuuden todentamisessa.</p>
+      <h4>Indikaattorit</h4>
+      <ul>
+         <li>Ensimmäinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+         <li>Toinen - Määrittelemätön
+            <ul>
+               <li><strong>#</strong> - Määrittelemätön
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <h4>Osakenttäkoodit</h4>
+      <ul>
+         <li><strong>‡a</strong> - Tiedot vastaavuudesta  (ET)<br>Termi, koodi tai tunniste, jonka avulla vastintietueiden hakuprosessi tunnistetaan.
+         </li>
+         <li><strong>‡b</strong> - Vastaavuuden tila ja sen varmennus  (ET)<br>Voidaan merkitä koodimuodossa.
+         </li>
+         <li><strong>‡c</strong> - Luotettavuusarvo (ET)
+         </li>
+         <li><strong>‡d</strong> - Luomispäivä (ET)<br>Tallennetaan muodossa vvvvkkpp, ISO 8601.
+         </li>
+         <li><strong>‡w</strong> - Tietueen kontrollinumero  (T)<br>Mahdollisen vastintietueen kontrollinumero, jota edeltää suluissa oleva organisaatiokoodi. Organisaatiokoodina käytetään ISIL-tunnusta,
+            ks. <em><a href="../organisaatiot.htm">Organisaatiot</a></em>.
+         </li>
+         <li><strong>‡x</strong> - Sisäinen huomautus  (T)
+         </li>
+         <li><strong>‡z</strong> - Julkinen huomautus  (T)
+         </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Mahdollisen vastintietueen kontrollinumero tai standardinumero. Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
+         <li><strong>‡2</strong> - Koodin lähde  (ET)<br>Tietueen kontrollinumero osakentässä ‡w tai auktoriteettitietueen kontrollinumero osakentässä ‡0.
+         </li>
+         <li><strong>‡5</strong> - Linkki- ja järjestysnumero (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#5">Kontrolliosakentät</a></em>.
+         </li>
+      </ul>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
       <h3><a name="886"></a>886 - TIEDOT VIERAIDEN MARC-FORMAATTIEN KENTISTÄ (T)

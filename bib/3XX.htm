@@ -18,7 +18,7 @@
       </center>
       
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 12.5.2016.<br>
+               Päivitetty viimeksi 15.12.2016.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Fyysisen kuvailun jne. kentät (3XX)</h2>
@@ -1563,6 +1563,8 @@
          </li>
          <li><strong>‡l</strong> -  Kielen nimi (T)
          </li>
+         <li><strong>‡0</strong> - Auktoriteettitietueen kontrollinumero tai standardinumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.
+         </li>
          <li><strong>‡2</strong> - Tiedon lähde (ET)<br>Koodi listalta: <em><a href="http://www.loc.gov/standards/sourcelist/language.html"> Language Code and Term Source Codes</a></em>.
          </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
@@ -1570,6 +1572,9 @@
          <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
          </li>
       </ul>
+      <h4>Esimerkki</h4>
+      <p><strong>377 ## ‡a</strong> rus <strong>‡0</strong> http://id.loc.gov/vocabulary/languages/rus 
+      </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
       <h3><a name="380"></a>380 - TEOKSEN MUOTO (T)
@@ -1696,17 +1701,17 @@
          </li>
          <li><strong>‡d</strong> - Kaksintava soitin/lauluääni (T)
          </li>
-         <li><strong>‡e</strong> - Samantyyppisten yhtyeiden lukumäärä (T)
+         <li><strong>‡e</strong> - Samantyyppisten yhtyeiden, orkestereiden ja kuorojen lukumäärä (T)
          </li>
          <li><strong>‡n</strong> - Yksittäisten soitinten/lauluäänten lukumäärä (T)
          </li>
          <li><strong>‡p</strong> - Vaihtoehtoinen esityskokoonpano (T)
          </li>
-         <li><strong>‡r</strong> - Yhtyeiden kanssa esiintyvien solistien kokonaismäärä (ET)
+         <li><strong>‡r</strong> - Yhtyeiden, orkestereiden tai kuorojen kanssa esiintyvien solistien kokonaismäärä (ET)
          </li>
-         <li><strong>‡s</strong> - Soitinten/lauluäänten kokonaismäärä (ET)
+         <li><strong>‡s</strong> - Esittäjien kokonaismäärä (ET)
          </li>
-         <li><strong>‡t</strong> - Yhtyeiden kokonaismäärä (ET)
+         <li><strong>‡t</strong> - Yhtyeiden, orkestereiden ja kuorojen kokonaismäärä (ET)
          </li>
          <li><strong>‡v</strong> - Huomautus (T)
          </li>
@@ -1714,33 +1719,27 @@
          </li>
          <li><strong>‡2</strong> - Termin lähde (ET)<br>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/musical-instrumentation.html">Musical Instrumentation and Voice Code Source Codes</a></em>.
          </li>
+         <li><strong>‡3</strong> - Aineiston osa, jota tiedot koskevat (ET)
+         </li>
          <li><strong>‡6</strong> - Linkitys (ET)<br>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.
          </li>
          <li><strong>‡8</strong> - Linkki- ja järjestysnumero (T)<br>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakentät</a></em>.
          </li>
       </ul>
       <h4>Esimerkkejä</h4>
-      <p><strong>382 ## ‡a</strong> Sekakuoro <strong>‡a</strong> urut
+      <p><strong>382 01 ‡a</strong> viulu <strong>‡a</strong> piano <strong>‡s</strong> 2 <strong>‡2</strong> seko 
       </p>
-      <p><strong>382 ## ‡a</strong> Piano
+      <p><strong>382 01 ‡a</strong> viulu <strong>‡n</strong> 1 <strong>‡a</strong> piano <strong>‡n</strong> 1 <strong>‡s</strong> 2 <strong>‡2</strong> seko 
       </p>
-      <p><strong>382 11 ‡a</strong> Didgerido <strong>‡n</strong> 1 
+      <p><strong>382 11 ‡a</strong> didgerido <strong>‡n</strong> 1 <strong>‡2</strong> seko 
       </p>
-      <p><strong>382 01 ‡b</strong> Huilu <strong>‡a</strong> orkesteri 
+      <p><strong>382 01 ‡b</strong> huilu <strong>‡a</strong> orkesteri <strong>‡2</strong> seko 
       </p>
-      <p><strong>382 01 ‡a</strong> Huilu <strong>‡n</strong> 1 <strong>‡d</strong> piccolo <strong>‡n</strong> 1 
+      <p><strong>382 01 ‡a</strong> huilu <strong>‡n</strong> 1 <strong>‡d</strong> piccolo <strong>‡n</strong> 1 <strong>‡s</strong> 2 <strong>‡2</strong> seko 
       </p>
-      <p><strong>382 01 ‡a</strong> Harpsichord <strong>‡n</strong> 1 <strong>‡b</strong> piano <strong>‡n</strong> 1 <strong>‡a</strong> chamber orchestra <strong>‡e</strong> 2 <strong>‡2</strong> lcmpt
+      <p><strong>382 01 ‡b</strong> sopraano <strong>‡b</strong> tenori <strong>‡a</strong> sekakuoro <strong>‡a</strong> orkesteri <strong>‡r</strong> 2 <strong>‡t</strong>            2 <strong>‡2</strong> seko 
       </p>
-      <p><strong>382 01 ‡a</strong> Violin <strong>‡n</strong> 2 <strong>‡a</strong> soprano voice<strong>‡n</strong> 2 <strong>‡a</strong> alto voice <strong>‡n</strong> 1<strong>‡a</strong> tenor voice <strong>‡n</strong> 1 <strong>‡a</strong> bass voice<strong>‡n</strong> 2 <strong>‡a</strong> mixed chorus <strong>‡e</strong> 2 <strong>‡a</strong> continuo <strong>‡n</strong> 1 <strong>‡2</strong> lcmpt
-      </p>
-      <p><strong>382 01 ‡b</strong> Speaker <strong>‡n</strong> 1 <strong>‡a</strong> mezzo-soprano voice<strong>‡n</strong> 1 <strong>‡a</strong> baritone voice <strong>‡n</strong> 1<strong>‡a</strong> mixed chorus <strong>‡e</strong> 1 <strong>‡a</strong> orchestra <strong>‡e</strong> 1 <strong>‡r</strong> 3 <strong>‡t</strong> 2 <strong>‡2</strong> lcmpt
-      </p>
-      <p><strong>382 01 ‡b</strong> Soprano voice <strong>‡n</strong> 3 <strong>‡b</strong> alto voice<strong>‡n</strong> 2 <strong>‡b</strong> tenor voice <strong>‡n</strong> 1<strong>‡b</strong> baritone voice <strong>‡n</strong> 1 <strong>‡b</strong> bass voice<strong>‡n</strong> 1 <strong>‡a</strong> mixed chorus <strong>‡e</strong> 2 <strong>‡v</strong> SATB, SATB <strong>‡a</strong> children's chorus <strong>‡e</strong> 1 <strong>‡a</strong> orchestra <strong>‡e</strong> 1 <strong>‡r</strong> 8 <strong>‡t</strong> 4 <strong>‡2</strong> lcmpt
-      </p>
-      <p><strong>382 01 ‡a</strong> Mixed chorus <strong>‡e</strong> 2 <strong>‡v</strong> SATB, SATB <strong>‡t</strong> 2 <strong>‡2</strong> lcmpt
-      </p>
-      <p><strong>382 ## ‡a</strong> Didgerido <strong>‡v</strong> Didgerido on hallitseva, muita soittimia ei tunnistettu 
+      <p><strong>382 ## ‡a</strong> didgerido <strong>‡v</strong> Didgerido on hallitseva, muita soittimia ei tunnistettu <strong>‡2</strong> seko
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>

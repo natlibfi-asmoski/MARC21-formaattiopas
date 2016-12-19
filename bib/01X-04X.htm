@@ -18,7 +18,7 @@
       </center>
       
       <p align="center"><i><span style="background-color: #FFFF00">
-               Päivitetty viimeksi 12.5.2016.<br>
+               Päivitetty viimeksi 15.12.2016.<br>
                Ks. <a href="../ohje.htm">Ohjeita formaattien kommentointiin</a>.</span></i></p>
       
       <h2 align="left">Numero- ja koodikentät (01X-04X)</h2>
@@ -53,7 +53,7 @@
          </li>
          <li><a href="#027">027 - ISRN-TUNNUS TAI MUU STANDARDOITU RAPORTTINUMERO</a> (T)
          </li>
-         <li><a href="#028">028 - JULKAISIJAN TUNNUS</a> (T)
+         <li><a href="#028">028 - JULKAISIJAN TAI JAKAJAN TUNNUS</a> (T)
          </li>
          <li><a href="#030">030 - CODEN-TUNNUS</a> (T)
          </li>
@@ -655,14 +655,15 @@
       </p>
       <p><a href="#alku">Sivun alkuun</a></p>
       <hr>
-      <h3><a name="028"></a>028 - JULKAISIJAN TUNNUS (T)
+      <h3><a name="028"></a>028 - JULKAISIJAN TAI JAKAJAN TUNNUS (T)
       </h3>
-      <p>Julkaisijat antavat määrätyn muotoisia numerotunnuksia äänitteille, nuottijulkaisuille ja videotallenteille. Jos tunnus poikkeaa
-         määrätystä muodosta, se tallennetaan kenttään <a href="50X-53X.htm#500">500</a> (Yleinen huomautus).
+      <p>Julkaisijat ja jakajat antavat määrämuotoisia numerotunnuksia äänitteille, nuottijulkaisuille, muulle musiikkiaineistolle
+         sekä videotallenteille. Jos tunnus ei ole määrämuotoinen, se tallennetaan kenttään <a href="50X-53X.htm#500">500</a> (Yleinen huomautus). Ensimmäisen indikaattorin perusteella voidaan tuottaa vakionäyttö, joka kertoo tunnuksen tyypin. Kenttää
+         voidaan toistaa, jos kappaleeseen liittyy useita tunnuksia.
       </p>
       <h4>Indikaattorit</h4>
       <ul>
-         <li>Ensimmäinen - Julkaisijan tunnuksen tyyppi
+         <li>Ensimmäinen - Tunnuksen tyyppi
             <ul>
                <li><strong>0</strong> - <em>Tuotenumero</em><br> Julkaisijan antama äänitteen tunnusnumero.
                </li>
@@ -670,10 +671,12 @@
                </li>
                <li><strong>2</strong> - <em>Laatan numero</em><br> Julkaisija antaa painetuille nuottijulkaisuille.
                </li>
-               <li><strong>3</strong> - Muu musiikkinumero
+               <li><strong>3</strong> - Muu musiikin julkaisijan numero
                </li>
-               <li><strong>4</strong> - <em>Videotallenteen numero</em></li>
+               <li><strong>4</strong> - <em>Videotallenteen julkaisijan numero</em></li>
                <li><strong>5</strong> - Muu julkaisijan tunnus
+               </li>
+               <li><strong>6</strong> - Jakajan tunnus
                </li>
             </ul>
          </li>
@@ -692,9 +695,9 @@
       </ul>
       <h4>Osakenttäkoodit</h4>
       <ul>
-         <li><strong>‡a</strong> - Julkaisijan tunnus (ET)
+         <li><strong>‡a</strong> - Julkaisijan tai jakajan tunnus (ET)
          </li>
-         <li><strong>‡b</strong> - Julkaisija (ET)
+         <li><strong>‡b</strong> - Julkaisija tai jakaja  (ET)<br>Huom! Osakenttien järjestys Suomessa poikkeaa alkuperäisestä formaatista: ‡b, ‡a.
          </li>
          <li><strong>‡q</strong> - Tarkentava tieto (T)<br>Tarkenteet, jotka liittyvät tunnukseen, esim. osa jota tunnus koskee.
          </li>
@@ -1159,7 +1162,8 @@
       </ul>
       <h4>Osakenttäkoodit</h4>
       <ul>
-         <li><strong>‡a</strong> - Varastonumero (ET)<br>Myös esim. jakajan ja julkaisijan numerot tallennetaan tähän kenttään.
+         <li><strong>‡a</strong> - Varastonumero (ET)<br>Myös esim. jakajan, julkaisijan ja myyjän numerot muulle aineistolle kuin musiikille, musiikkiin liittyvälle aineistolle tai
+            av-aineistolle tallennetaan tähän osakenttään.
          </li>
          <li><strong>‡b</strong> - Varastonumeron antaja, hankintapaikka (ET)
          </li>
@@ -1639,11 +1643,11 @@
       <h3><a name="046"></a>046 - ERIKOISKOODATTU JULKAISUAIKA (T)
       </h3>
       <p>Kuvailun kohteeseen liittyvät julkaisuaikatiedot, joita ei voida muotonsa vuoksi tallentaa merkkipaikkoihin <a href="008.htm#kaikki">008</a>/06-14 (Julkaisuajan tyyppi/julkaisun tila, Julkaisuvuosi 1, Julkaisuvuosi 2). Esimerkkejä tällaisista ovat vuosiluvut eKr.,
-         väärä julkaisuvuosi, luonti- tai muokkauspäivämäärä, tai tieto aikavälistä jolloin kuvailun kohde on voimassa. Kun kenttään
-         046 tallennetaan vuosilukuja eKr., merkkipaikkaan 008/06 tallennetaan koodi b (Julkaisuvuotta ei annettu, vuosiluku eKr.)
-         ja merkkipaikoissa 008/07-14 on tyhjämerkkejä (########). Kun kenttään 046 tallennetaan vääriä julkaisuvuosia, merkkipaikkaan
-         008/06 tallennetaan korjatulle julkaisuvuodelle sopiva koodi ja merkkipaikkoihin 008/07-10 sekä 008/11-14 tallennetaan oikeat
-         vuosiluvut.
+         väärä julkaisuvuosi, luonti- tai muokkauspäivämäärä, tai tieto aikavälistä jolloin kuvailun kohde on voimassa. Julkaisuaikatiedot
+         voidaan tallentaa kenttään 046 merkkipaikkojen 008/06-14 lisäksi. Kun kenttään 046 tallennetaan vuosilukuja eKr., merkkipaikkaan
+         008/06 tallennetaan koodi b (Julkaisuvuotta ei annettu, vuosiluku eKr.) ja merkkipaikoissa 008/07-14 on tyhjämerkkejä (########).
+         Kun kenttään 046 tallennetaan vääriä julkaisuvuosia, merkkipaikkaan 008/06 tallennetaan korjatulle julkaisuvuodelle sopiva
+         koodi ja merkkipaikkoihin 008/07-10 sekä 008/11-14 tallennetaan oikeat vuosiluvut.
       </p>
       <h4>Indikaattorit</h4>
       <ul>
