@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>20.6.2013</modified>
+  <modified>15.12.2016</modified>
   <controlfields>
     <title>Kontrollikentt‰ 008</title>
     <controlfield tag="008" type="yleista" repeatable="N">
@@ -2030,7 +2030,7 @@
           </values>
         </position>
         <position pos="20">
-          <name>Nuottijulkaisun tyyppi</name>
+          <name>Nuottiaineiston muoto</name>
           <equals tag="006" positions="03"/>
           <values>
             <value code="a">
@@ -2040,13 +2040,13 @@
               <name>Pienoispartituuri</name>
             </value>
             <value code="c">
-              <name>Pianopartituuri</name>
+              <name>S‰estys sovitettu kosketinsoittimelle</name>
             </value>
             <value code="d">
               <name>Partituuri, jossa vain laulu‰‰net ilman s‰estyst‰ "Voice score"</name>
             </value>
             <value code="e">
-              <name>Partituurin tiivistelm‰ tai johto‰‰ni</name>
+              <name>Partituurin tiivistelm‰ tai pianojohtostemma</name>
               <description>K‰yt‰ koodeja <strong>i</strong> ja <strong>j</strong>, jos erottelun voi tehd‰.</description>
             </value>
             <value code="g">
@@ -2059,10 +2059,10 @@
               <name>Partituurin tiivistelm‰</name>
             </value>
             <value code="j">
-              <name>Johto‰‰ni</name>
+              <name>Johtostemma</name>
             </value>
 	    <value code="k">
-              <name>Laulupartituuri "Vocal score"</name>
+              <name>Vokaalipartituuri</name>
             </value>
 	    <value code="l">
              <name>Partituuri (esim. soolopartituuri) "Score"</name>

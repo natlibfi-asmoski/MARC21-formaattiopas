@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>18.6.2010</modified>
+  <modified>15.12.2016</modified>
   <controlfields>
     <title>Kontrollikent‰t 001-006</title>
     <description>Kent‰t 001-006 sis‰lt‰v‰t kontrollinumeroita ja kooditietoa, jota k‰ytet‰‰n MARC-tietueiden k‰sittelyss‰. Jokaisella kent‰ll‰ on oma kentt‰koodi hakemistossa ja tietoelementtien merkitys m‰‰r‰ytyy niiden merkkipaikan perusteella. Kiinte‰mittaisissa kentiss‰ ei ole indikaattoreita eik‰ osakentt‰koodeja.</description>
@@ -311,8 +311,8 @@
           <description>Ks. kuvaus merkkipaikoista 18-19 (Musiikin laji) kohdasta <a href="008.xml#MU">008 - (MU) MUSIIKKI</a>.</description>
         </position>
         <position pos="03">
-          <name>Nuottijulkaisun tyyppi</name>
-          <description>Ks. kuvaus merkkipaikasta 20 (Nuottijulkaisun tyyppi) kohdasta <a href="008.xml#MU">008 - (MU) MUSIIKKI</a>.</description>
+          <name>Nuottiaineiston muoto</name>
+          <description>Ks. kuvaus merkkipaikasta 20 (Nuottiaineiston muoto) kohdasta <a href="008.xml#MU">008 - (MU) MUSIIKKI</a>.</description>
         </position>
         <position pos="04">
           <name>ƒ‰net</name>
