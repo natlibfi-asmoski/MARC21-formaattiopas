@@ -85,7 +85,7 @@
     </datafield>
     <datafield tag="579" repeatable="N">
       <name>Tilastointimerkintä - voyager-kenttä</name>
-      <description paragraph="1">Käytössä LINDA-yhteisluetteloinnissa.</description>
+      <description paragraph="1">Käytössä Melinda-kuvailun tilastoinnissa vuoteen 2017 asti.</description>
       <indicators>
         <indicator num="1">
           <description>Määrittelemätön </description>
@@ -154,8 +154,8 @@
       <description paragraph="1">Käytetään eri tietokannoissa eri tarkoituksiin.</description>
     </datafield>
     <datafield tag="600/610/611 &#8225;9" repeatable="">
-      <name>Asiasanakenttä - voyager-osakenttä</name>
-      <description paragraph="1">Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
+      <name>Pääesittäjäkoodi</name>
+      <description paragraph="1"> Nuottiaineiston RDA-kuvailussa pääesittäjyys ilmaistaan merkitsemällä tähän kenttään arvo "1xx". Arsca-tietokannassa osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
       <subfields>
         <subfield code="9" repeatable="N">
           <name>Artikkeli</name>
@@ -172,8 +172,8 @@
       </subfields>
     </datafield>
     <datafield tag="700/710/711 &#8225;9" repeatable="">
-      <name>Lisäkirjauskenttä - voyager-osakenttä</name>
-      <description paragraph="1">Käytössä lähinnä Arsca-tietokannassa. Osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
+      <name>Pääesittäjäkoodi</name>
+      <description paragraph="1">Musiikkiaineiston RDA-kuvailussa pääesittäjyys ilmaistaan merkitsemällä tähän kenttään arvo "1xx". Arsca-tietokannassa osakenttään merkitään tekijä-nimeke-kirjauksissa nimekkeen alussa oleva artikkeli.</description>
       <subfields>
         <subfield code="9" repeatable="N">
           <name>Artikkeli</name>
