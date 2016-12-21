@@ -739,7 +739,7 @@
         <subfield code="a" repeatable="N">
           <name>Tapahtuman nimi</name>
         </subfield>
-	<subfield code="b" repeatable="Y">
+	<subfield code="c" repeatable="Y">
           <name>Tapahtuman paikka</name>
         </subfield>
 	<subfield code="d" repeatable="N">
