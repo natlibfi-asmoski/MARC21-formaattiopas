@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="marc21bib.xsl"?>
 
 <fields>
-  <modified>15.12.2016</modified>
+  <modified>24.3.2017</modified>
   <datafields>
     <title>Tietokanta- tai järjestelmäkohtaisia omia kenttiä</title>
     <description>Tässä osiossa kuvataan kenttiä, joita on otettu käyttöön Voyager-järjestelmässä sekä yleisten kirjastojen tietokannoissa. Kentät tai osakentät sisältävät numeron 9 eli ovat MARC 21:ssa vapaasti käytettävissä. Kentät eivät ole varsinaisessa suomenkielisessä MARC 21 -formaatissa. </description>
@@ -826,6 +826,33 @@
         </subfield>
         <subfield code="j" repeatable="N">
           <name>Tekstityskielet</name>
+        </subfield>
+      </subfields>
+        </datafield>
+        <datafield tag="995" repeatable="N">
+      <name>ARTOn tiedontuottajatunnus</name>
+      <description paragraph="1">Käytössä vain ARTO-tietokannassa.</description>
+      <indicators>
+        <indicator num="1">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+        <indicator num="2">
+          <description>Määrittelemätön </description>
+          <values>
+            <value code="#">
+              <description>Määrittelemätön </description>
+            </value>
+          </values>
+        </indicator>
+      </indicators>
+      <subfields>
+        <subfield code="a" repeatable="Y">
+          <name>ARTOn tiedontuottajatunnus</name>
         </subfield>
       </subfields>
     </datafield>
