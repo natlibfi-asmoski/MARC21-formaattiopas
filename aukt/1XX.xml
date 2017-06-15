@@ -47,7 +47,7 @@
         </subfield>
         <subfield code="d" repeatable="N">
           <name>Nimeen liittyvät aikamääreet</name>
-          <description>Syntymä- ja/tai kuolinvuodet, kukoistuskaudet tai muut nimeen liittyvät aikamääreet. Tietosuojavaltuutetun lausunnon mukaan suomalaisten henkilöiden syntymä- ja kuolinvuosia ei saa tallentaa, ellei kuolinvuosi ole 1899 tai varhaisempi.</description>
+          <description>Syntymä- ja/tai kuolinvuodet, kukoistuskaudet tai muut nimeen liittyvät aikamääreet.</description>
         </subfield>
         <subfield code="e" repeatable="Y">
           <name>Funktiotermi</name>
