@@ -43,7 +43,11 @@
         <subfield code="b" repeatable="N">
           <name>Kappalenumero</name>
         </subfield>
-        <subfield code="3" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -157,7 +161,11 @@
         <subfield code="d" repeatable="Y">
           <name>Asutun alueen nimi</name>
         </subfield>
-        <subfield code="2" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
           <name>Luokituksen l‰hde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
@@ -249,7 +257,11 @@
         <subfield code="b" repeatable="N">
           <name>Kappalenumero</name>
         </subfield>
-        <subfield code="2" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
           <name>Luokituksen tai signumin l‰hde</name>
           <description>Kun toisen indikaattorin arvo on 6, 7, 8 tai 9, t‰h‰n merkit‰‰n luokituksen tai signumin l‰hde. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
@@ -320,7 +332,11 @@
         <subfield code="b" repeatable="N">
           <name>Kappalenumero</name>
         </subfield>
-        <subfield code="8" repeatable="Y">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="8" repeatable="Y">
           <name>Linkki- ja j‰rjestysnumero</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakent‰t</a></em>.</description>
         </subfield>
@@ -430,6 +446,9 @@
         <indicator num="1">
           <description>Kuuluuko kuvailun kohde NAL:n kokoelmiin</description>
           <values>
+	    <value code="#">
+              <description>Tieto puuttuu</description>
+            </value>
             <value code="0">
               <description>On NAL:ssa</description>
             </value>
@@ -454,12 +473,19 @@
         <subfield code="b" repeatable="N">
           <name>Kappalenumero</name>
         </subfield>
-        <subfield code="8" repeatable="Y">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="8" repeatable="Y">
           <name>Linkki- ja j‰rjestysnumero</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#8">Kontrolliosakent‰t</a></em>.</description>
         </subfield>
       </subfields>
       <examples>
+	<example>
+          <text><strong>070 ## &#8225;a</strong> SB945.A5</text>
+        </example>
         <example>
           <text><strong>070 0# &#8225;a</strong> 105.2 <strong>&#8225;b</strong> W122</text>
         </example>
@@ -643,7 +669,11 @@
         <subfield code="x" repeatable="Y">
           <name>Lis‰luku</name>
         </subfield>
-        <subfield code="2" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
           <name>Painoksen tunnistetiedot</name>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -842,11 +872,15 @@
         <subfield code="b" repeatable="N">
           <name>Kappalenumero</name>
         </subfield>
-<subfield code="q" repeatable="N">
-<name>Luokittava organisaatio</name>
-<description>Koodi otetaan listalta: <em> <a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em>.</description>
-</subfield>
-        <subfield code="2" repeatable="N">
+	<subfield code="q" repeatable="N">
+	<name>Luokittava organisaatio</name>
+	<description>Koodi otetaan listalta: <em> <a href="http://www.loc.gov/marc/organizations/orgshome.html">MARC Code List for Organizations</a></em>.</description>
+	</subfield>
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
           <name>Luokituksen l‰hde</name>
           <description>Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
@@ -947,7 +981,11 @@
         <subfield code="z" repeatable="Y">
           <name>"Table identification"</name>
         </subfield>
-        <subfield code="6" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakent‰t</a></em>.</description>
         </subfield>
@@ -999,7 +1037,11 @@
         <subfield code="z" repeatable="Y">
           <name>Virheellinen tai peruttu luokka</name>
         </subfield>
-        <subfield code="2" repeatable="N">
+        <subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakent‰t</a></em>.</description>
+        </subfield>
+	<subfield code="2" repeatable="N">
           <name>Luokituksen l‰hde</name>
           <description>MARC-koodi k‰ytetylle virallisjulkaisujen luokituskaaviolle, kun ensimm‰isen indikaattorin arvo on #. Koodi otetaan listalta, ks. <em> <a href="http://www.loc.gov/standards/sourcelist/classification.html">Classification Scheme Source Codes</a></em>.</description>
         </subfield>
