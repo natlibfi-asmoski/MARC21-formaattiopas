@@ -113,7 +113,7 @@
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
         <subfield code="5" repeatable="N">
@@ -256,7 +256,7 @@
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
         <subfield code="5" repeatable="N">
@@ -390,7 +390,7 @@
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
         <subfield code="5" repeatable="N">
@@ -460,7 +460,7 @@
           <description>Kuvaa nimen suhdetta teokseen.</description>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -712,7 +712,7 @@
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description>Koodi otetaan listalta, ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -788,7 +788,7 @@
           <description>Koodi otetaan listalta, ks. <em><a href="http://www.loc.gov/standards/sourcelist/name-title.html"> Name and Title Authority Source Codes</a></em>.</description>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
         </subfield>
 	<subfield code="6" repeatable="N">
           <name>Linkitys</name>
