@@ -1761,11 +1761,11 @@
     </datafield>
     <datafield tag="370" repeatable="Y">
       <name>Paikannimi</name>
-      <description paragraph="1">Kylä, kaupunki, maakunta, osavaltio tai maa, joka liittyy henkilöihin, yhteisöihin, sukuihin, teoksiin ja ekspressioihin.</description>
+      <description paragraph="1">Paikka, joka liittyy henkilöihin, yhteisöihin, sukuihin, teoksiin ja ekspressioihin.</description>
       <description paragraph="2"><a><em>Henkilön nimi:</em> henkilön syntymä-, kuolin- tai asuinpaikka tai muu identifioiva paikkakunta.</a></description>
       <description paragraph="3"><a><em>Yhteisön nimi:</em> yhteisöön liittyvä merkittävä paikka (esim. kongressin pitopaikka tai organisaation pääkonttorin sijaintipaikka).</a></description>
       <description paragraph="4"><a><em>Suvun nimi:</em> paikka, jossa suku asuu tai on asunut tai johon suvulla on yhteyksiä.</a></description>
-      <description paragraph="5"><a><em>Teos tai ekspressio:</em> maa tai muu alue, jossa teos tai ekspressio on syntynyt.</a></description>
+      <description paragraph="5"><a><em>Teos tai ekspressio:</em> paikka, jossa teos tai ekspressio on syntynyt.</a></description>
       <description paragraph="6">Kenttää 370 toistetaan, kun alkamis- ja loppumisajat osakentissä &#8225;s ja &#8225;t liittyvät eri paikkakuntaan. Jos paikannimi otetaan kontrolloidusta sanastosta, sanasto kerrotaan osakentässä &#8225;2 (Termin lähde).</description>
       <indicators>
         <indicator num="1">
@@ -1802,7 +1802,10 @@
           <name>Muu paikka</name>
         </subfield>
         <subfield code="g" repeatable="Y">
-          <name>Teoksen syntypaikka</name>
+          <name>Teoksen tai ekspression syntypaikka</name>
+        </subfield>
+	 <subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
         </subfield>
         <subfield code="s" repeatable="N">
           <name>Alkamisaika</name>
@@ -1824,6 +1827,12 @@
           <name>Termin lähde</name>
           <description>Kertoo kontrolloidun sanastolähteen, jota käytetään osakentissä &#8225;a, &#8225;b, &#8225;c, &#8225;e, &#8225;f ja &#8225;g. Osakenttä &#8225;2 merkitään vastaavan osakentän jälkeen. Koodi otetaan listasta: <em><a href="http://www.loc.gov/standards/sourcelist/subject.html">Subject Heading and Term Source Codes</a></em></description>
         </subfield>
+	<subfield code="3" repeatable="N">
+          <name>Aineiston osa, jota tiedot koskevat</name>
+        </subfield>
+	<subfield code="4" repeatable="Y">
+          <name>Suhde</name>
+        </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
@@ -1840,8 +1849,20 @@
         <example>
           <text><strong>370 ## &#8225;e</strong> Pagsanjan, Philippines [suku asunut Filippiinien Pagsanjanissa]</text>
         </example>
-        <example>
+	<example>
+          <text><strong>370 ## &#8225;i</strong> Discovery place: <strong>&#8225;f</strong> Qumran Site (West Bank) <strong>&#8225;2</strong> lcsh</text>
+        </example>
+	<example>
           <text><strong>370 ## &#8225;e</strong> England <strong>&#8225;s</strong> 1954 <strong>&#8225;t</strong> 1962</text>
+        </example>
+	<example>
+          <text><strong>370 ## &#8225;3</strong> Music: <strong>&#8225;g</strong> United States <strong>&#8225;2</strong> naf</text>
+        </example>
+	<example>
+          <text><strong>370 ## &#8225;3</strong> Libretto <strong>&#8225;g</strong> Great Britain <strong>&#8225;2</strong> naf</text>
+        </example>
+	<example>
+          <text><strong>370 ## &#8225;4</strong> rpp <strong>&#8225;i</strong> Repository place: <strong>&#8225;f</strong> Washington (D.C.) <strong>&#8225;2</strong> naf</text>
         </example>
       </examples>
     </datafield>
@@ -1904,7 +1925,7 @@
           <name>Julkinen huomautus</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description>Koodi otetaan listasta: <em><a href="http://www.kansalliskirjasto.fi/extra/marc21/funktiot.htm">MARC 21 -funktiokoodit</a></em></description>
         </subfield>
         <subfield code="6" repeatable="N">
@@ -2799,6 +2820,9 @@
         <subfield code="b" repeatable="Y">
           <name>Tekijän koodi</name>
         </subfield>
+	<subfield code="i" repeatable="Y">
+          <name>Tieto suhteesta</name>
+        </subfield>
         <subfield code="m" repeatable="N">
           <name>Väestöryhmä</name>
           <description>Määre väestöryhmälle (esim. ikäryhmä, uskonnollinen ryhmä), jolle osakenttien a ja b termit ja koodit kuuluvat.</description>
@@ -2818,7 +2842,10 @@
         <subfield code="3" repeatable="N">
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
-        <subfield code="6" repeatable="N">
+        <subfield code="4" repeatable="Y">
+          <name>Suhde</name>
+        </subfield>
+	<subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em></description>
         </subfield>
@@ -2833,6 +2860,9 @@
         </example>
         <example>
           <text><strong>386 ## &#8225;a</strong> Child composers <strong>&#8225;2</strong> lcsh</text>
+        </example>
+	<example>
+          <text><strong>386 ## &#8225;i</strong> Performer: <strong>&#8225;a</strong> Children <strong>&#8225;a</strong> French <strong>&#8225;2</strong> [source code for controlled vocabulary]</text>
         </example>
         <example>
           <text><strong>386 ## &#8225;m</strong> Gender group <strong>&#8225;a</strong> Women<strong>&#8225;2</strong> lcsh</text>
