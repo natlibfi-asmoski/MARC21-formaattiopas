@@ -1243,7 +1243,19 @@
         <subfield code="a" repeatable="N">
           <name>Huomautus metodologiasta</name>
         </subfield>
-        <subfield code="6" repeatable="N">
+	<subfield code="b" repeatable="Y">
+          <name>Kontrolloitu termi</name>
+          <description>Hakutermi, joka kertoo käytetyn metodologian olevan asiasanastosta.</description>
+	</subfield>
+	<subfield code="0" repeatable="Y">
+          <name>Auktoriteettitietueen kontrollinumero tai standardinumero</name>
+          <description>Ks. <em><a href="kontrolliosakentat.htm#0">Kontrolliosakentät</a></em>.</description>
+        </subfield>
+        <subfield code="2" repeatable="N">
+          <name>Termin lähde</name>
+          <description>MARC-koodi identifioi metodologian tallennukseen osakentässä &#8225;b käytetyn termin lähteen.</description>
+        </subfield>
+	<subfield code="6" repeatable="N">
           <name>Linkitys</name>
           <description>Ks. <em><a href="kontrolliosakentat.htm#6">Kontrolliosakentät</a></em>.</description>
         </subfield>
@@ -1264,6 +1276,9 @@
         </example>
         <example>
           <text><strong>567 ## &#8225;a</strong> Continuous, deterministic, predictive.</text>
+        </example>
+	<example>
+          <text><strong>567 ## &#8225;b</strong> Narrative inquiry (Research method) <strong>&#8225;2</strong> lcsh</text>
         </example>
       </examples>
     </datafield>
