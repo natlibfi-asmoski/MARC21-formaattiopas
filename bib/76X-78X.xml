@@ -162,8 +162,8 @@
           <description>CODEN-tunnus liittyvän tietueen kentsätä <a href="01X-04X.xml#030">030</a> (CODEN-tunnus). Lyhenne <em> CODEN</em> voidaan muodostaa näyttöön.</description>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -403,8 +403,8 @@
           <name>CODEN-tunnus</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -535,8 +535,8 @@
           <description>ISBN-tunnus liittyvän tietueen kentästä <a href="01X-04X.xml#020">020</a> (ISBN-tunnus, International Standard Book Number). Etuteksti <em>ISBN</em> voidaan muodostaa näyttöön.</description>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -666,8 +666,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -794,8 +794,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -925,8 +925,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1058,8 +1058,8 @@
           <name>Aineiston osa, jota tiedot koskevat</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1192,8 +1192,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1322,8 +1322,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1447,8 +1447,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1566,8 +1566,8 @@
           <name>CODEN-tunnus</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1706,8 +1706,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -1858,8 +1858,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -2009,8 +2009,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
@@ -2131,8 +2131,8 @@
           <name>ISBN-tunnus, International Standard Book Number</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Suhdekoodi</name>
-          <description>Koodi, joka kuvaa kentissä 76X-78X kuvaillun kohteen ja kentissä 1XX/245 kuvaillun kohteen suhdetta.</description>
+          <name>Suhde</name>
+          <description>Koodi tai URI, joka kuvaa tietueessa kuvaillun entiteetin suhdetta entiteettiin, johon kentässä viitataan.</description>
         </subfield>
         <subfield code="6" repeatable="N">
           <name>Linkitys</name>
