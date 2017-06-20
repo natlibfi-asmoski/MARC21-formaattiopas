@@ -733,7 +733,7 @@
           <name>Julkinen huomautus</name>
         </subfield>
         <subfield code="4" repeatable="Y">
-          <name>Funktiokoodi</name>
+          <name>Suhde</name>
           <description> Koodi otetaan listalta. Ks. <em><a href="../funktiot.htm">MARC 21 Funktiokoodit</a></em>.</description>
         </subfield>
         <subfield code="6" repeatable="N">
